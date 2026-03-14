@@ -1,0 +1,30 @@
+{
+  "fips": "2501772600",
+  "name": "Waltham",
+  "county": "Middlesex County",
+  "population": 64711,
+  "grades": {
+    "zoning": "B",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 12.1,
+    "median_home_value": 798819.8680235561,
+    "rent_burden_pct": 40.7,
+    "permits_per_1000_residents": 1.14
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

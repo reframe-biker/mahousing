@@ -1,0 +1,30 @@
+{
+  "fips": "2501147835",
+  "name": "Northfield",
+  "county": "Franklin County",
+  "population": 2871,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 352774.1743159574,
+    "rent_burden_pct": 42.3,
+    "permits_per_1000_residents": 1.04
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

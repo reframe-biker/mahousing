@@ -1,0 +1,30 @@
+{
+  "fips": "2502734165",
+  "name": "Lancaster",
+  "county": "Worcester County",
+  "population": 8395,
+  "grades": {
+    "zoning": "F",
+    "mbta": "B",
+    "production": "B",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 588185.0373430544,
+    "rent_burden_pct": 48.4,
+    "permits_per_1000_residents": 3.93
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

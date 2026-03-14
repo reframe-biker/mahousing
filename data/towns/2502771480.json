@@ -1,0 +1,30 @@
+{
+  "fips": "2502771480",
+  "name": "Upton",
+  "county": "Worcester County",
+  "population": 8037,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "A",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 689602.1206450841,
+    "rent_burden_pct": 36.8,
+    "permits_per_1000_residents": 6.72
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

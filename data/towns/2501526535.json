@@ -1,0 +1,30 @@
+{
+  "fips": "2501526535",
+  "name": "Granby",
+  "county": "Hampshire County",
+  "population": 6096,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "D",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 386190.58397855447,
+    "rent_burden_pct": 26.0,
+    "permits_per_1000_residents": 1.48
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

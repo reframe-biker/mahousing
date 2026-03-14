@@ -1,0 +1,30 @@
+{
+  "fips": "2502769275",
+  "name": "Templeton",
+  "county": "Worcester County",
+  "population": 8157,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "D",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 399831.66311681067,
+    "rent_burden_pct": 30.6,
+    "permits_per_1000_residents": 1.1
+  },
+  "data_notes": {
+    "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

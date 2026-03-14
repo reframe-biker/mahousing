@@ -1,0 +1,30 @@
+{
+  "fips": "2501129475",
+  "name": "Hawley",
+  "county": "Franklin County",
+  "population": 374,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "C",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 345016.72428083856,
+    "rent_burden_pct": 14.3,
+    "permits_per_1000_residents": 2.67
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

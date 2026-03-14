@@ -1,0 +1,30 @@
+{
+  "fips": "2501739625",
+  "name": "Maynard",
+  "county": "Middlesex County",
+  "population": 10671,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 5.4,
+    "median_home_value": 586607.1902596247,
+    "rent_burden_pct": 42.2,
+    "permits_per_1000_residents": 0.09
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

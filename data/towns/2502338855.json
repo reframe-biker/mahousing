@@ -1,0 +1,30 @@
+{
+  "fips": "2502338855",
+  "name": "Marshfield",
+  "county": "Plymouth County",
+  "population": 25782,
+  "grades": {
+    "zoning": "F",
+    "mbta": "B",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 764400.0399991652,
+    "rent_burden_pct": 57.4,
+    "permits_per_1000_residents": 1.36
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

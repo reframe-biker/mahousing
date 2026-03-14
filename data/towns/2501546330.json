@@ -1,0 +1,30 @@
+{
+  "fips": "2501546330",
+  "name": "Northampton",
+  "county": "Hampshire County",
+  "population": 28245,
+  "grades": {
+    "zoning": "A",
+    "mbta": null,
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 58.4,
+    "median_home_value": 469119.8788938488,
+    "rent_burden_pct": 54.6,
+    "permits_per_1000_residents": 1.42
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

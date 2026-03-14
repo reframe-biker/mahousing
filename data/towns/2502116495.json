@@ -1,0 +1,30 @@
+{
+  "fips": "2502116495",
+  "name": "Dedham",
+  "county": "Norfolk County",
+  "population": 25150,
+  "grades": {
+    "zoning": "A",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 44.0,
+    "median_home_value": 736523.8966751727,
+    "rent_burden_pct": 51.2,
+    "permits_per_1000_residents": 0.95
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

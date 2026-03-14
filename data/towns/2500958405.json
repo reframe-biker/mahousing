@@ -1,0 +1,30 @@
+{
+  "fips": "2500958405",
+  "name": "Rowley",
+  "county": "Essex County",
+  "population": 6175,
+  "grades": {
+    "zoning": "F",
+    "mbta": "B",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 774556.8722995678,
+    "rent_burden_pct": 40.8,
+    "permits_per_1000_residents": 0.81
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2501771025",
+  "name": "Tyngsborough",
+  "county": "Middlesex County",
+  "population": 12371,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 487800.0,
+    "rent_burden_pct": 63.8,
+    "permits_per_1000_residents": 1.62
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

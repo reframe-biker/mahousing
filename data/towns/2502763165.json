@@ -1,0 +1,30 @@
+{
+  "fips": "2502763165",
+  "name": "Southborough",
+  "county": "Worcester County",
+  "population": 10421,
+  "grades": {
+    "zoning": "A",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 30.9,
+    "median_home_value": 923399.9376153344,
+    "rent_burden_pct": 25.6,
+    "permits_per_1000_residents": 0.38
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

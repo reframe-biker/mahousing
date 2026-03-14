@@ -1,0 +1,30 @@
+{
+  "fips": "2500932310",
+  "name": "Ipswich",
+  "county": "Essex County",
+  "population": 13791,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 4.1,
+    "median_home_value": 811865.6393658539,
+    "rent_burden_pct": 46.5,
+    "permits_per_1000_residents": 0.58
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

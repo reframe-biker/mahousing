@@ -1,0 +1,30 @@
+{
+  "fips": "2502167945",
+  "name": "Stoughton",
+  "county": "Norfolk County",
+  "population": 29051,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 3.0,
+    "median_home_value": 584338.5053068047,
+    "rent_burden_pct": 59.4,
+    "permits_per_1000_residents": 0.55
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

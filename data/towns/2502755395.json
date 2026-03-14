@@ -1,0 +1,30 @@
+{
+  "fips": "2502755395",
+  "name": "Princeton",
+  "county": "Worcester County",
+  "population": 3497,
+  "grades": {
+    "zoning": "F",
+    "mbta": "B",
+    "production": "B",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 613367.9413194583,
+    "rent_burden_pct": 59.6,
+    "permits_per_1000_residents": 3.15
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

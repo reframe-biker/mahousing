@@ -1,0 +1,30 @@
+{
+  "fips": "2501379740",
+  "name": "Wilbraham",
+  "county": "Hampden County",
+  "population": 14595,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 461089.58007767814,
+    "rent_burden_pct": 45.0,
+    "permits_per_1000_residents": 1.23
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

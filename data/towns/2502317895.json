@@ -1,0 +1,30 @@
+{
+  "fips": "2502317895",
+  "name": "Duxbury",
+  "county": "Plymouth County",
+  "population": 16041,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1062843.7584628847,
+    "rent_burden_pct": 45.4,
+    "permits_per_1000_residents": 1.87
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

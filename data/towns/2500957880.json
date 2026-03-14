@@ -1,0 +1,30 @@
+{
+  "fips": "2500957880",
+  "name": "Rockport",
+  "county": "Essex County",
+  "population": 6973,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 834181.2617944097,
+    "rent_burden_pct": 51.8,
+    "permits_per_1000_residents": 0.86
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

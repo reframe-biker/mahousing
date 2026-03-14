@@ -1,0 +1,30 @@
+{
+  "fips": "2502763345",
+  "name": "Southbridge Town",
+  "county": "Worcester County",
+  "population": 17669,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 254700.0,
+    "rent_burden_pct": 55.1,
+    "permits_per_1000_residents": 0.34
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

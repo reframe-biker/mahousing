@@ -1,0 +1,30 @@
+{
+  "fips": "2502354415",
+  "name": "Plympton",
+  "county": "Plymouth County",
+  "population": 2923,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 654147.8846302164,
+    "rent_burden_pct": 44.4,
+    "permits_per_1000_residents": 1.37
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2502107740",
+  "name": "Braintree Town",
+  "county": "Norfolk County",
+  "population": 38748,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 3.8,
+    "median_home_value": 596800.0,
+    "rent_burden_pct": 44.6,
+    "permits_per_1000_residents": 0.13
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2023-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

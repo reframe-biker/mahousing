@@ -1,0 +1,30 @@
+{
+  "fips": "2500905595",
+  "name": "Beverly",
+  "county": "Essex County",
+  "population": 42414,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 7.5,
+    "median_home_value": 731204.5596172643,
+    "rent_burden_pct": 50.8,
+    "permits_per_1000_residents": 2.69
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

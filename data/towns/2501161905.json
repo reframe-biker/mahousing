@@ -1,0 +1,30 @@
+{
+  "fips": "2501161905",
+  "name": "Shutesbury",
+  "county": "Franklin County",
+  "population": 1754,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "C",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 419962.8975037251,
+    "rent_burden_pct": 37.3,
+    "permits_per_1000_residents": 1.71
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

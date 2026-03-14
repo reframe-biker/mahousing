@@ -1,0 +1,30 @@
+{
+  "fips": "2501756130",
+  "name": "Reading",
+  "county": "Middlesex County",
+  "population": 25415,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 1.0,
+    "median_home_value": 878272.6854714965,
+    "rent_burden_pct": 35.3,
+    "permits_per_1000_residents": 1.85
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

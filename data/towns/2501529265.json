@@ -1,0 +1,30 @@
+{
+  "fips": "2501529265",
+  "name": "Hatfield",
+  "county": "Hampshire County",
+  "population": 3328,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "C",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 469903.9166128249,
+    "rent_burden_pct": 25.3,
+    "permits_per_1000_residents": 1.8
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

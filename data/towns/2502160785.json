@@ -1,0 +1,30 @@
+{
+  "fips": "2502160785",
+  "name": "Sharon",
+  "county": "Norfolk County",
+  "population": 18473,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 841272.0253251271,
+    "rent_burden_pct": 43.1,
+    "permits_per_1000_residents": 0.54
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

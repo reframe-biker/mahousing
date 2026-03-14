@@ -1,0 +1,30 @@
+{
+  "fips": "2500326815",
+  "name": "Great Barrington",
+  "county": "Berkshire County",
+  "population": 7184,
+  "grades": {
+    "zoning": "A",
+    "mbta": null,
+    "production": "B",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 62.5,
+    "median_home_value": 565792.232138363,
+    "rent_burden_pct": 50.8,
+    "permits_per_1000_residents": 4.87
+  },
+  "data_notes": {
+    "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

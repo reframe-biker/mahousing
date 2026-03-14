@@ -1,0 +1,30 @@
+{
+  "fips": "2500367595",
+  "name": "Stockbridge",
+  "county": "Berkshire County",
+  "population": 1933,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 713267.4759550989,
+    "rent_burden_pct": 65.5,
+    "permits_per_1000_residents": 2.07
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

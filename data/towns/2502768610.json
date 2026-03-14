@@ -1,0 +1,30 @@
+{
+  "fips": "2502768610",
+  "name": "Sutton",
+  "county": "Worcester County",
+  "population": 9357,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 618071.7670960256,
+    "rent_burden_pct": 16.7,
+    "permits_per_1000_residents": 1.92
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

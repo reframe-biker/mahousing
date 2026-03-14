@@ -1,0 +1,30 @@
+{
+  "fips": "2501731085",
+  "name": "Hopkinton",
+  "county": "Middlesex County",
+  "population": 18748,
+  "grades": {
+    "zoning": "F",
+    "mbta": "B",
+    "production": "B",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 931334.3648159668,
+    "rent_burden_pct": 68.1,
+    "permits_per_1000_residents": 3.04
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

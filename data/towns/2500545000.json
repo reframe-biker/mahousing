@@ -1,0 +1,30 @@
+{
+  "fips": "2500545000",
+  "name": "New Bedford",
+  "county": "Bristol County",
+  "population": 100620,
+  "grades": {
+    "zoning": "B",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 10.3,
+    "median_home_value": 425316.15666103846,
+    "rent_burden_pct": 44.3,
+    "permits_per_1000_residents": 0.2
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

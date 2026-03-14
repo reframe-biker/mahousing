@@ -1,0 +1,30 @@
+{
+  "fips": "2502333920",
+  "name": "Lakeville",
+  "county": "Plymouth County",
+  "population": 11625,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "B",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 609920.2918175509,
+    "rent_burden_pct": 65.8,
+    "permits_per_1000_residents": 3.87
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

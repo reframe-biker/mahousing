@@ -1,0 +1,30 @@
+{
+  "fips": "2501772215",
+  "name": "Wakefield",
+  "county": "Middlesex County",
+  "population": 27054,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "A",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 784326.7002645581,
+    "rent_burden_pct": 44.5,
+    "permits_per_1000_residents": 13.64
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

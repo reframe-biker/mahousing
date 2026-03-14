@@ -1,0 +1,30 @@
+{
+  "fips": "2502734795",
+  "name": "Leicester",
+  "county": "Worcester County",
+  "population": 11066,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 439534.32187508093,
+    "rent_burden_pct": 19.9,
+    "permits_per_1000_residents": 0.9
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

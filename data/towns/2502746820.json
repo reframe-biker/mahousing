@@ -1,0 +1,30 @@
+{
+  "fips": "2502746820",
+  "name": "Northborough",
+  "county": "Worcester County",
+  "population": 15647,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.5,
+    "median_home_value": 671993.7404116642,
+    "rent_burden_pct": 60.1,
+    "permits_per_1000_residents": 0.38
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

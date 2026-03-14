@@ -1,0 +1,30 @@
+{
+  "fips": "2500946365",
+  "name": "North Andover",
+  "county": "Essex County",
+  "population": 30847,
+  "grades": {
+    "zoning": "B",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 14.1,
+    "median_home_value": 782695.4572094735,
+    "rent_burden_pct": 50.2,
+    "permits_per_1000_residents": 0.23
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

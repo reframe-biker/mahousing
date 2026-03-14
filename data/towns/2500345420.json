@@ -1,0 +1,30 @@
+{
+  "fips": "2500345420",
+  "name": "New Marlborough",
+  "county": "Berkshire County",
+  "population": 1550,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 420500.0,
+    "rent_burden_pct": 41.9,
+    "permits_per_1000_residents": 0.65
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

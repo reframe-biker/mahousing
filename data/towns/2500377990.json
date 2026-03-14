@@ -1,0 +1,30 @@
+{
+  "fips": "2500377990",
+  "name": "West Stockbridge",
+  "county": "Berkshire County",
+  "population": 1220,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "C",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 651560.226366716,
+    "rent_burden_pct": 40.7,
+    "permits_per_1000_residents": 1.64
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

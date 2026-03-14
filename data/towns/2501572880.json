@@ -1,0 +1,30 @@
+{
+  "fips": "2501572880",
+  "name": "Ware",
+  "county": "Hampshire County",
+  "population": 10162,
+  "grades": {
+    "zoning": "A",
+    "mbta": null,
+    "production": "B",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 99.3,
+    "median_home_value": 335637.8079108883,
+    "rent_burden_pct": 57.3,
+    "permits_per_1000_residents": 4.72
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

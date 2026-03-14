@@ -1,0 +1,30 @@
+{
+  "fips": "2502707525",
+  "name": "Boylston",
+  "county": "Worcester County",
+  "population": 4855,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "C",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 612312.8602097128,
+    "rent_burden_pct": 40.2,
+    "permits_per_1000_residents": 2.47
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

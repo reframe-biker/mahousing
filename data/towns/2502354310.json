@@ -1,0 +1,30 @@
+{
+  "fips": "2502354310",
+  "name": "Plymouth",
+  "county": "Plymouth County",
+  "population": 61628,
+  "grades": {
+    "zoning": "F",
+    "mbta": "B",
+    "production": "B",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 622649.7197121079,
+    "rent_burden_pct": 49.1,
+    "permits_per_1000_residents": 4.27
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2502775155",
+  "name": "West Boylston",
+  "county": "Worcester County",
+  "population": 7695,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 8.8,
+    "median_home_value": 500757.51829860295,
+    "rent_burden_pct": 24.5,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

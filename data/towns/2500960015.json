@@ -1,0 +1,30 @@
+{
+  "fips": "2500960015",
+  "name": "Saugus",
+  "county": "Essex County",
+  "population": 28566,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 2.8,
+    "median_home_value": 666853.9742549501,
+    "rent_burden_pct": 50.7,
+    "permits_per_1000_residents": 0.07
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

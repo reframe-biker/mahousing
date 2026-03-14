@@ -1,0 +1,30 @@
+{
+  "fips": "2501768260",
+  "name": "Sudbury",
+  "county": "Middlesex County",
+  "population": 18926,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1109637.8669370224,
+    "rent_burden_pct": 38.2,
+    "permits_per_1000_residents": 1.06
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

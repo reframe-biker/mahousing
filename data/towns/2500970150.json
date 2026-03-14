@@ -1,0 +1,30 @@
+{
+  "fips": "2500970150",
+  "name": "Topsfield",
+  "county": "Essex County",
+  "population": 6532,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 933066.6836198696,
+    "rent_burden_pct": 45.9,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

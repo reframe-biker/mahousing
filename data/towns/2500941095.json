@@ -1,0 +1,30 @@
+{
+  "fips": "2500941095",
+  "name": "Middleton",
+  "county": "Essex County",
+  "population": 9668,
+  "grades": {
+    "zoning": "F",
+    "mbta": "F",
+    "production": "D",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 851208.1150534647,
+    "rent_burden_pct": 39.1,
+    "permits_per_1000_residents": 1.34
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "non-compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

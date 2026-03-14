@@ -1,0 +1,30 @@
+{
+  "fips": "2502318455",
+  "name": "East Bridgewater",
+  "county": "Plymouth County",
+  "population": 14382,
+  "grades": {
+    "zoning": "F",
+    "mbta": "F",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.5,
+    "median_home_value": 569067.7592431935,
+    "rent_burden_pct": 47.4,
+    "permits_per_1000_residents": 0.76
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "non-compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

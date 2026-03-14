@@ -1,0 +1,30 @@
+{
+  "fips": "2501748955",
+  "name": "North Reading",
+  "county": "Middlesex County",
+  "population": 15529,
+  "grades": {
+    "zoning": "A",
+    "mbta": "A",
+    "production": "A",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 75.8,
+    "median_home_value": 788471.6209506653,
+    "rent_burden_pct": 62.6,
+    "permits_per_1000_residents": 8.76
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

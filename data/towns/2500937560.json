@@ -1,0 +1,30 @@
+{
+  "fips": "2500937560",
+  "name": "Lynnfield",
+  "county": "Essex County",
+  "population": 12925,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1052527.2295030025,
+    "rent_burden_pct": 70.1,
+    "permits_per_1000_residents": 1.16
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

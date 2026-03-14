@@ -1,0 +1,30 @@
+{
+  "fips": "2501330665",
+  "name": "Holland",
+  "county": "Hampden County",
+  "population": 2585,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "F",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 361192.58605636103,
+    "rent_burden_pct": 26.7,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

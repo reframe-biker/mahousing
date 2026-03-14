@@ -1,0 +1,30 @@
+{
+  "fips": "2502556585",
+  "name": "Revere",
+  "county": "Suffolk County",
+  "population": 60577,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 4.9,
+    "median_home_value": 601285.748092359,
+    "rent_burden_pct": 52.0,
+    "permits_per_1000_residents": 1.93
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2023-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

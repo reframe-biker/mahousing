@@ -1,0 +1,30 @@
+{
+  "fips": "2501703005",
+  "name": "Ayer",
+  "county": "Middlesex County",
+  "population": 8408,
+  "grades": {
+    "zoning": "A",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 100.0,
+    "median_home_value": 547444.189321988,
+    "rent_burden_pct": 37.5,
+    "permits_per_1000_residents": 1.55
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

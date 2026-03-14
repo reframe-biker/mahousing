@@ -1,0 +1,30 @@
+{
+  "fips": "2501367000",
+  "name": "Springfield",
+  "county": "Hampden County",
+  "population": 155305,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 288598.0777526624,
+    "rent_burden_pct": 53.3,
+    "permits_per_1000_residents": 0.32
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

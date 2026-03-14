@@ -1,0 +1,30 @@
+{
+  "fips": "2502761800",
+  "name": "Shrewsbury",
+  "county": "Worcester County",
+  "population": 38734,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 673386.4770291854,
+    "rent_burden_pct": 37.9,
+    "permits_per_1000_residents": 0.34
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

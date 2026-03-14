@@ -1,0 +1,30 @@
+{
+  "fips": "2501700380",
+  "name": "Acton",
+  "county": "Middlesex County",
+  "population": 23864,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 1.4,
+    "median_home_value": 845140.5071329983,
+    "rent_burden_pct": 44.2,
+    "permits_per_1000_residents": 0.54
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

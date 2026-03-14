@@ -1,0 +1,30 @@
+{
+  "fips": "2500701585",
+  "name": "Aquinnah",
+  "county": "Dukes County",
+  "population": 708,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "B",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 1728819.0776524262,
+    "rent_burden_pct": 31.7,
+    "permits_per_1000_residents": 4.24
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

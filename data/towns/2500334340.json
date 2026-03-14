@@ -1,0 +1,30 @@
+{
+  "fips": "2500334340",
+  "name": "Lanesborough",
+  "county": "Berkshire County",
+  "population": 3037,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 266400.0,
+    "rent_burden_pct": 42.1,
+    "permits_per_1000_residents": 0.99
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

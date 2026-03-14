@@ -1,0 +1,30 @@
+{
+  "fips": "2502340850",
+  "name": "Middleborough",
+  "county": "Plymouth County",
+  "population": 24268,
+  "grades": {
+    "zoning": "A",
+    "mbta": "B",
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 78.3,
+    "median_home_value": 542455.5846017225,
+    "rent_burden_pct": 61.1,
+    "permits_per_1000_residents": 2.93
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2500929405",
+  "name": "Haverhill",
+  "county": "Essex County",
+  "population": 67273,
+  "grades": {
+    "zoning": "B",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 19.2,
+    "median_home_value": 530200.1463249134,
+    "rent_burden_pct": 54.6,
+    "permits_per_1000_residents": 0.34
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

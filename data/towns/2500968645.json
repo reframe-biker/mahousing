@@ -1,0 +1,30 @@
+{
+  "fips": "2500968645",
+  "name": "Swampscott",
+  "county": "Essex County",
+  "population": 15125,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "B",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 791381.3992413734,
+    "rent_burden_pct": 49.7,
+    "permits_per_1000_residents": 4.03
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

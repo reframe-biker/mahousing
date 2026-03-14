@@ -1,0 +1,30 @@
+{
+  "fips": "2502750670",
+  "name": "Oakham",
+  "county": "Worcester County",
+  "population": 1585,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "A",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 461033.8347970392,
+    "rent_burden_pct": 9.5,
+    "permits_per_1000_residents": 5.05
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

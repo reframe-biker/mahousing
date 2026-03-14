@@ -1,0 +1,30 @@
+{
+  "fips": "2502735075",
+  "name": "Leominster",
+  "county": "Worcester County",
+  "population": 43620,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 3.0,
+    "median_home_value": 451923.1645427978,
+    "rent_burden_pct": 46.0,
+    "permits_per_1000_residents": 0.14
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

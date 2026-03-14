@@ -1,0 +1,30 @@
+{
+  "fips": "2500123105",
+  "name": "Falmouth",
+  "county": "Barnstable County",
+  "population": 32694,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 810700.0172612752,
+    "rent_burden_pct": 50.4,
+    "permits_per_1000_residents": 3.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

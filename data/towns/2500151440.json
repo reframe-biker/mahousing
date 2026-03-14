@@ -1,0 +1,30 @@
+{
+  "fips": "2500151440",
+  "name": "Orleans",
+  "county": "Barnstable County",
+  "population": 6322,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "A",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1035125.4598463662,
+    "rent_burden_pct": 54.6,
+    "permits_per_1000_residents": 12.65
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

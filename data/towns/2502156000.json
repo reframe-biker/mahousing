@@ -1,0 +1,30 @@
+{
+  "fips": "2502156000",
+  "name": "Randolph Town",
+  "county": "Norfolk County",
+  "population": 34691,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 3.1,
+    "median_home_value": 429000.0,
+    "rent_burden_pct": 57.0,
+    "permits_per_1000_residents": 0.26
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

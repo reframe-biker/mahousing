@@ -1,0 +1,30 @@
+{
+  "fips": "2502513205",
+  "name": "Chelsea",
+  "county": "Suffolk County",
+  "population": 39890,
+  "grades": {
+    "zoning": "A",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 48.2,
+    "median_home_value": 515743.8094685096,
+    "rent_burden_pct": 55.1,
+    "permits_per_1000_residents": 1.48
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2023-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

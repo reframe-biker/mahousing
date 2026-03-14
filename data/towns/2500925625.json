@@ -1,0 +1,30 @@
+{
+  "fips": "2500925625",
+  "name": "Georgetown",
+  "county": "Essex County",
+  "population": 8455,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 750157.8000889174,
+    "rent_burden_pct": 52.8,
+    "permits_per_1000_residents": 0.47
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

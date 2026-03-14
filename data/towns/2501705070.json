@@ -1,0 +1,30 @@
+{
+  "fips": "2501705070",
+  "name": "Belmont",
+  "county": "Middlesex County",
+  "population": 26997,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 1.2,
+    "median_home_value": 1402451.6830031655,
+    "rent_burden_pct": 37.7,
+    "permits_per_1000_residents": 0.33
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

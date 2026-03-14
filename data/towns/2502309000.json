@@ -1,0 +1,30 @@
+{
+  "fips": "2502309000",
+  "name": "Brockton",
+  "county": "Plymouth County",
+  "population": 104713,
+  "grades": {
+    "zoning": "B",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 13.8,
+    "median_home_value": 492207.3720018882,
+    "rent_burden_pct": 50.2,
+    "permits_per_1000_residents": 0.58
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

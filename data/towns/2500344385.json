@@ -1,0 +1,30 @@
+{
+  "fips": "2500344385",
+  "name": "New Ashford",
+  "county": "Berkshire County",
+  "population": 262,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "F",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 352400.0,
+    "rent_burden_pct": 34.6,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

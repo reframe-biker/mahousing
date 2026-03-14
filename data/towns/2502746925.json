@@ -1,0 +1,30 @@
+{
+  "fips": "2502746925",
+  "name": "Northbridge",
+  "county": "Worcester County",
+  "population": 16303,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 2.2,
+    "median_home_value": 498983.4535925473,
+    "rent_burden_pct": 39.0,
+    "permits_per_1000_residents": 1.78
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

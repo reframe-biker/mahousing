@@ -1,0 +1,30 @@
+{
+  "fips": "2502703740",
+  "name": "Barre",
+  "county": "Worcester County",
+  "population": 5531,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "C",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 393608.3662442925,
+    "rent_burden_pct": 28.6,
+    "permits_per_1000_residents": 2.17
+  },
+  "data_notes": {
+    "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

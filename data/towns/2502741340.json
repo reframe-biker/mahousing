@@ -1,0 +1,30 @@
+{
+  "fips": "2502741340",
+  "name": "Millbury",
+  "county": "Worcester County",
+  "population": 13852,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 487878.6622480752,
+    "rent_burden_pct": 42.6,
+    "permits_per_1000_residents": 2.45
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

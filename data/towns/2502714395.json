@@ -1,0 +1,30 @@
+{
+  "fips": "2502714395",
+  "name": "Clinton",
+  "county": "Worcester County",
+  "population": 15347,
+  "grades": {
+    "zoning": "A",
+    "mbta": null,
+    "production": "F",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 47.2,
+    "median_home_value": 436392.8728296094,
+    "rent_burden_pct": 36.0,
+    "permits_per_1000_residents": 0.39
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

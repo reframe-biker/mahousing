@@ -1,0 +1,30 @@
+{
+  "fips": "2502172495",
+  "name": "Walpole",
+  "county": "Norfolk County",
+  "population": 26317,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 10.0,
+    "median_home_value": 746273.1506985119,
+    "rent_burden_pct": 43.0,
+    "permits_per_1000_residents": 0.3
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

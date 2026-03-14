@@ -1,0 +1,30 @@
+{
+  "fips": "2501531785",
+  "name": "Huntington",
+  "county": "Hampshire County",
+  "population": 2328,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "D",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 338350.8161874802,
+    "rent_burden_pct": 19.3,
+    "permits_per_1000_residents": 1.29
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

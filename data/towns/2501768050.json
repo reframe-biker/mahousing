@@ -1,0 +1,30 @@
+{
+  "fips": "2501768050",
+  "name": "Stow",
+  "county": "Middlesex County",
+  "population": 7111,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 790370.0595623641,
+    "rent_burden_pct": 38.5,
+    "permits_per_1000_residents": 0.7
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

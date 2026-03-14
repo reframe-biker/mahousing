@@ -1,0 +1,30 @@
+{
+  "fips": "2501129650",
+  "name": "Heath",
+  "county": "Franklin County",
+  "population": 719,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "D",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 180300.44571163028,
+    "rent_burden_pct": 10.5,
+    "permits_per_1000_residents": 1.39
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

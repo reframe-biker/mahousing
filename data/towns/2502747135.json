@@ -1,0 +1,30 @@
+{
+  "fips": "2502747135",
+  "name": "North Brookfield",
+  "county": "Worcester County",
+  "population": 4750,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "F",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 375040.9725888015,
+    "rent_burden_pct": 38.2,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

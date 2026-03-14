@@ -1,0 +1,30 @@
+{
+  "fips": "2502375260",
+  "name": "West Bridgewater",
+  "county": "Plymouth County",
+  "population": 7648,
+  "grades": {
+    "zoning": "D",
+    "mbta": "B",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 1.3,
+    "median_home_value": 576981.1342818803,
+    "rent_burden_pct": 44.4,
+    "permits_per_1000_residents": 1.44
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

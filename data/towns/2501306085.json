@@ -1,0 +1,30 @@
+{
+  "fips": "2501306085",
+  "name": "Blandford",
+  "county": "Hampden County",
+  "population": 1052,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "F",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 351930.39289237955,
+    "rent_burden_pct": 13.8,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

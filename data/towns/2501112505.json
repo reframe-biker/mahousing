@@ -1,0 +1,30 @@
+{
+  "fips": "2501112505",
+  "name": "Charlemont",
+  "county": "Franklin County",
+  "population": 1064,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "F",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 333743.09912146284,
+    "rent_burden_pct": 53.6,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2500139100",
+  "name": "Mashpee",
+  "county": "Barnstable County",
+  "population": 15144,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 681916.4089838257,
+    "rent_burden_pct": 50.8,
+    "permits_per_1000_residents": 2.84
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

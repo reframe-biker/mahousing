@@ -1,0 +1,30 @@
+{
+  "fips": "2501777255",
+  "name": "Weston",
+  "county": "Middlesex County",
+  "population": 11759,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.2,
+    "median_home_value": 2182054.785903419,
+    "rent_burden_pct": 38.0,
+    "permits_per_1000_residents": 0.68
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

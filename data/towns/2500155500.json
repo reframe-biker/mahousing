@@ -1,0 +1,30 @@
+{
+  "fips": "2500155500",
+  "name": "Provincetown",
+  "county": "Barnstable County",
+  "population": 3630,
+  "grades": {
+    "zoning": "A",
+    "mbta": null,
+    "production": "A",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 52.0,
+    "median_home_value": 1048896.9909783562,
+    "rent_burden_pct": 63.1,
+    "permits_per_1000_residents": 5.79
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

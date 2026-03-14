@@ -1,0 +1,30 @@
+{
+  "fips": "2502372985",
+  "name": "Wareham",
+  "county": "Plymouth County",
+  "population": 23192,
+  "grades": {
+    "zoning": "A",
+    "mbta": "B",
+    "production": "A",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 31.8,
+    "median_home_value": 457870.5326544905,
+    "rent_burden_pct": 46.2,
+    "permits_per_1000_residents": 6.6
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

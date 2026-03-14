@@ -1,0 +1,30 @@
+{
+  "fips": "2501135180",
+  "name": "Leverett",
+  "county": "Franklin County",
+  "population": 1793,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 485919.2604215895,
+    "rent_burden_pct": 75.6,
+    "permits_per_1000_residents": 0.56
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

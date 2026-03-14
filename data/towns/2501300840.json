@@ -1,0 +1,30 @@
+{
+  "fips": "2501300840",
+  "name": "Agawam Town",
+  "county": "Hampden County",
+  "population": 28606,
+  "grades": {
+    "zoning": "B",
+    "mbta": null,
+    "production": null,
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 24.1,
+    "median_home_value": 272100.0,
+    "rent_burden_pct": 39.5,
+    "permits_per_1000_residents": null
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

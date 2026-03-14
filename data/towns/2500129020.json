@@ -1,0 +1,30 @@
+{
+  "fips": "2500129020",
+  "name": "Harwich",
+  "county": "Barnstable County",
+  "population": 13440,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "C",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 721493.1435496738,
+    "rent_burden_pct": 44.1,
+    "permits_per_1000_residents": 2.01
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

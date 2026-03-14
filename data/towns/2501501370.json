@@ -1,0 +1,30 @@
+{
+  "fips": "2501501370",
+  "name": "Amherst Town",
+  "county": "Hampshire County",
+  "population": 33389,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": null,
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 443400.0,
+    "rent_burden_pct": 60.7,
+    "permits_per_1000_residents": null
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

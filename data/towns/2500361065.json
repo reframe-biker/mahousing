@@ -1,0 +1,30 @@
+{
+  "fips": "2500361065",
+  "name": "Sheffield",
+  "county": "Berkshire County",
+  "population": 3312,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 478671.9110512173,
+    "rent_burden_pct": 52.5,
+    "permits_per_1000_residents": 1.21
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2502752420",
+  "name": "Paxton",
+  "county": "Worcester County",
+  "population": 5013,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 532767.8741573672,
+    "rent_burden_pct": 33.0,
+    "permits_per_1000_residents": 0.8
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

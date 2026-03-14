@@ -1,0 +1,30 @@
+{
+  "fips": "2501745560",
+  "name": "Newton",
+  "county": "Middlesex County",
+  "population": 88453,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "B",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 5.5,
+    "median_home_value": 1483223.9396855887,
+    "rent_burden_pct": 39.1,
+    "permits_per_1000_residents": 3.18
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2023-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

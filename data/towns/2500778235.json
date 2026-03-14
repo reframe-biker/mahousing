@@ -1,0 +1,30 @@
+{
+  "fips": "2500778235",
+  "name": "West Tisbury",
+  "county": "Dukes County",
+  "population": 2941,
+  "grades": {
+    "zoning": "F",
+    "mbta": null,
+    "production": "A",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1597347.9151112896,
+    "rent_burden_pct": 50.0,
+    "permits_per_1000_residents": 6.8
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

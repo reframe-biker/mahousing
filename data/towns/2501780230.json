@@ -1,0 +1,30 @@
+{
+  "fips": "2501780230",
+  "name": "Wilmington",
+  "county": "Middlesex County",
+  "population": 23191,
+  "grades": {
+    "zoning": "F",
+    "mbta": "F",
+    "production": "C",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 750207.7929839715,
+    "rent_burden_pct": 48.7,
+    "permits_per_1000_residents": 2.89
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "non-compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

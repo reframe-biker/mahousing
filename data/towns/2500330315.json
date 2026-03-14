@@ -1,0 +1,30 @@
+{
+  "fips": "2500330315",
+  "name": "Hinsdale",
+  "county": "Berkshire County",
+  "population": 1791,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 367020.2800857299,
+    "rent_burden_pct": 54.2,
+    "permits_per_1000_residents": 1.68
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

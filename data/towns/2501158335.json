@@ -1,0 +1,30 @@
+{
+  "fips": "2501158335",
+  "name": "Rowe",
+  "county": "Franklin County",
+  "population": 447,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "F",
+    "affordability": "A",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 326821.9755520045,
+    "rent_burden_pct": 5.6,
+    "permits_per_1000_residents": 0.0
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2502352630",
+  "name": "Pembroke",
+  "county": "Plymouth County",
+  "population": 18330,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 641162.5236230075,
+    "rent_burden_pct": 42.3,
+    "permits_per_1000_residents": 0.16
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

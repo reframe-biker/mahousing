@@ -1,0 +1,30 @@
+{
+  "fips": "2501737000",
+  "name": "Lowell",
+  "county": "Middlesex County",
+  "population": 114737,
+  "grades": {
+    "zoning": "C",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 6.8,
+    "median_home_value": 469079.5442897152,
+    "rent_burden_pct": 48.7,
+    "permits_per_1000_residents": 1.01
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2500107175",
+  "name": "Bourne",
+  "county": "Barnstable County",
+  "population": 20455,
+  "grades": {
+    "zoning": "F",
+    "mbta": "B",
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 634963.2026049648,
+    "rent_burden_pct": 52.2,
+    "permits_per_1000_residents": 2.59
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "interim",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

@@ -1,0 +1,30 @@
+{
+  "fips": "2502311665",
+  "name": "Carver",
+  "county": "Plymouth County",
+  "population": 11641,
+  "grades": {
+    "zoning": "F",
+    "mbta": "F",
+    "production": "C",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "F"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 564171.3072445752,
+    "rent_burden_pct": 71.3,
+    "permits_per_1000_residents": 1.89
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "non-compliant",
+  "mbta_deadline": "2025-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

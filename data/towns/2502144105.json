@@ -1,0 +1,30 @@
+{
+  "fips": "2502144105",
+  "name": "Needham",
+  "county": "Norfolk County",
+  "population": 31957,
+  "grades": {
+    "zoning": "D",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 1.9,
+    "median_home_value": 1471815.88928274,
+    "rent_burden_pct": 49.4,
+    "permits_per_1000_residents": 2.1
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

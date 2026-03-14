@@ -1,0 +1,30 @@
+{
+  "fips": "2500937490",
+  "name": "Lynn",
+  "county": "Essex County",
+  "population": 100653,
+  "grades": {
+    "zoning": "B",
+    "mbta": "A",
+    "production": "B",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 20.6,
+    "median_home_value": 564367.4049000997,
+    "rent_burden_pct": 53.9,
+    "permits_per_1000_residents": 3.78
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

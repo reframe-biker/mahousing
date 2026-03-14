@@ -1,0 +1,30 @@
+{
+  "fips": "2502775015",
+  "name": "Westborough",
+  "county": "Worcester County",
+  "population": 21360,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "C",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.3,
+    "median_home_value": 712579.7852855567,
+    "rent_burden_pct": 38.1,
+    "permits_per_1000_residents": 2.62
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

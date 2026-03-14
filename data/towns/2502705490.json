@@ -1,0 +1,30 @@
+{
+  "fips": "2502705490",
+  "name": "Berlin",
+  "county": "Worcester County",
+  "population": 3514,
+  "grades": {
+    "zoning": "A",
+    "mbta": null,
+    "production": "D",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 75.0,
+    "median_home_value": 645130.9050514534,
+    "rent_burden_pct": 30.2,
+    "permits_per_1000_residents": 1.42
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

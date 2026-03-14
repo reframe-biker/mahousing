@@ -1,0 +1,30 @@
+{
+  "fips": "2502730560",
+  "name": "Holden",
+  "county": "Worcester County",
+  "population": 19783,
+  "grades": {
+    "zoning": "C",
+    "mbta": "F",
+    "production": "C",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 4.7,
+    "median_home_value": 538317.7148332834,
+    "rent_burden_pct": 28.9,
+    "permits_per_1000_residents": 2.02
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "non-compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

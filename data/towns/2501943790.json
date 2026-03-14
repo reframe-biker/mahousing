@@ -1,0 +1,30 @@
+{
+  "fips": "2501943790",
+  "name": "Nantucket",
+  "county": "Nantucket County",
+  "population": 14065,
+  "grades": {
+    "zoning": "C",
+    "mbta": null,
+    "production": "A",
+    "affordability": "C",
+    "votes": null,
+    "rep": null,
+    "composite": "B"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 5.3,
+    "median_home_value": 2970408.5669867485,
+    "rent_burden_pct": 32.4,
+    "permits_per_1000_residents": 16.49
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

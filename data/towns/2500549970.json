@@ -1,0 +1,30 @@
+{
+  "fips": "2500549970",
+  "name": "Norton",
+  "county": "Bristol County",
+  "population": 19177,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "C"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 572470.2903141292,
+    "rent_burden_pct": 47.6,
+    "permits_per_1000_residents": 1.04
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2025-07-14",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

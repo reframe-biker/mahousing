@@ -1,0 +1,30 @@
+{
+  "fips": "2502139765",
+  "name": "Medfield",
+  "county": "Norfolk County",
+  "population": 12844,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "D",
+    "affordability": "F",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1025994.7360695056,
+    "rent_burden_pct": 62.5,
+    "permits_per_1000_residents": 1.01
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

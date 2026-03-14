@@ -1,0 +1,30 @@
+{
+  "fips": "2501370045",
+  "name": "Tolland",
+  "county": "Hampden County",
+  "population": 447,
+  "grades": {
+    "zoning": null,
+    "mbta": null,
+    "production": "A",
+    "affordability": "B",
+    "votes": null,
+    "rep": null,
+    "composite": "A"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 403676.5010081047,
+    "rent_burden_pct": 26.3,
+    "permits_per_1000_residents": 6.71
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": null,
+  "mbta_deadline": null,
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}

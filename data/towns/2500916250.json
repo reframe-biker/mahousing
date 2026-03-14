@@ -1,0 +1,30 @@
+{
+  "fips": "2500916250",
+  "name": "Danvers",
+  "county": "Essex County",
+  "population": 27910,
+  "grades": {
+    "zoning": "F",
+    "mbta": "A",
+    "production": "F",
+    "affordability": "D",
+    "votes": null,
+    "rep": null,
+    "composite": "D"
+  },
+  "metrics": {
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 706798.2100514104,
+    "rent_burden_pct": 47.3,
+    "permits_per_1000_residents": 0.29
+  },
+  "data_notes": {
+    "zoning": null,
+    "production": null,
+    "affordability": null
+  },
+  "mbta_status": "compliant",
+  "mbta_deadline": "2024-12-31",
+  "mbta_action_date": null,
+  "updated_at": "2026-03-14"
+}
