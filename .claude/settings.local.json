@@ -5,7 +5,12 @@
       "Bash(npm --version)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(.venv/bin/python pipeline/build.py)",
+      "Bash(.venv/bin/python -c \"import requests; r = requests.get\\(''https://www2.census.gov/econ/bps/Place/Massachusetts/ma2022a.txt'', timeout=30\\); print\\(r.status_code\\); print\\(r.text[:800]\\)\")",
+      "WebSearch"
     ]
   }
 }
