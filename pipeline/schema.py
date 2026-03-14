@@ -73,6 +73,31 @@ class Metrics(TypedDict):
     """
 
 
+class DataNotes(TypedDict):
+    """
+    Human-readable data quality notes attached to specific grading dimensions.
+
+    A non-null note means the pipeline detected a condition that may affect
+    the reliability of that dimension's grade.  The grade itself is NOT
+    changed — notes are additive transparency flags only.
+
+    Currently only zoning notes are generated (single-year permit spike
+    detection in zoning_permits_proxy.py).  production and affordability
+    are reserved for future use.
+    """
+    zoning: str | None
+    """
+    Set when a single calendar year accounts for more than 70% of a small
+    town's 3-year permit total (spike detection in zoning_permits_proxy.py).
+    """
+
+    production: str | None
+    """Reserved for future production-grade quality flags. Always None for now."""
+
+    affordability: str | None
+    """Reserved for future affordability-grade quality flags. Always None for now."""
+
+
 class TownRecord(TypedDict):
     """
     Canonical shape of a town JSON file at data/towns/<fips>.json.
@@ -98,6 +123,12 @@ class TownRecord(TypedDict):
 
     metrics: Metrics
     """Raw numeric metrics underlying the grades. See Metrics."""
+
+    data_notes: DataNotes
+    """
+    Data quality notes for individual grading dimensions. Fields are None
+    when no quality issue was detected. See DataNotes.
+    """
 
     mbta_status: MbtaStatus
     """

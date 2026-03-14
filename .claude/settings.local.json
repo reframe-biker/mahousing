@@ -10,7 +10,12 @@
       "Bash(.venv/bin/pip install:*)",
       "Bash(.venv/bin/python pipeline/build.py)",
       "Bash(.venv/bin/python -c \"import requests; r = requests.get\\(''https://www2.census.gov/econ/bps/Place/Massachusetts/ma2022a.txt'', timeout=30\\); print\\(r.status_code\\); print\\(r.text[:800]\\)\")",
-      "WebSearch"
+      "WebSearch",
+      "Bash(python3:*)",
+      "Bash(npm run:*)",
+      "Bash(curl:*)",
+      "Bash(python:*)",
+      "Bash(pip3 install:*)"
     ]
   }
 }

@@ -88,26 +88,52 @@ def fetch_permit_data(api_key: str | None = None) -> pd.DataFrame:
         Returns an empty DataFrame (with correct columns) if the download
         fails or no MA data is found.
     """
-    logger.info(f"Fetching Census BPS {BPS_YEAR} annual data from Northeast region file…")
-    logger.info(f"  URL: {_BPS_URL}")
+    raw = fetch_permit_breakdown(BPS_YEAR)
+    if raw.empty:
+        return pd.DataFrame(columns=["geoid", "permits"])
+    return raw[["geoid", "permits"]]
+
+
+def fetch_permit_breakdown(year: int) -> pd.DataFrame:
+    """
+    Download and parse one year of BPS data, returning per-structure-type unit counts.
+
+    Used by zoning_permits_proxy to compute multifamily unit share across multiple years.
+
+    Args:
+        year: 4-digit calendar year (e.g. 2023). Must match an available BPS annual file.
+
+    Returns:
+        DataFrame with columns:
+            geoid     (str)  10-digit county subdivision GEOID
+            units_5p  (int)  Units in 5+ unit structures
+            permits   (int)  Total units across all structure types
+
+        Returns an empty DataFrame (with correct columns) on download failure.
+    """
+    url = (
+        f"https://www2.census.gov/econ/bps/Place/Northeast%20Region/"
+        f"ne{str(year)[2:]}12y.txt"
+    )
+    logger.info(f"Fetching Census BPS {year} annual data…")
+    logger.info(f"  URL: {url}")
 
     try:
-        resp = requests.get(_BPS_URL, timeout=_REQUEST_TIMEOUT)
+        resp = requests.get(url, timeout=_REQUEST_TIMEOUT)
         resp.raise_for_status()
     except requests.RequestException as exc:
         logger.warning(
-            f"BPS flat file download failed: {exc}\n"
-            f"  All municipalities will have null production grades."
+            f"BPS {year} flat file download failed: {exc}\n"
+            f"  Year {year} will be excluded from permit calculations."
         )
-        return pd.DataFrame(columns=["geoid", "permits"])
+        return pd.DataFrame(columns=["geoid", "units_5p", "permits"])
 
     lines = resp.text.splitlines()
-
-    # First 2 lines are a two-row header; skip them (plus the blank 3rd line)
     data_lines = [l for l in lines[3:] if l.strip()]
 
     records = []
     skipped = 0
+    non_ma_dropped = 0
 
     for line in data_lines:
         parts = line.split(",")
@@ -115,39 +141,78 @@ def fetch_permit_data(api_key: str | None = None) -> pd.DataFrame:
             skipped += 1
             continue
 
+        # ── State FIPS filter ──────────────────────────────────────────────
+        # BPS Northeast region files contain records for all states in the
+        # region (CT, ME, MA, NH, NJ, NY, PA, RI, VT).  We keep only MA
+        # (state FIPS 25).  Any row with a different state code is dropped
+        # before GEOID construction so there is no risk of county/MCD codes
+        # from another state colliding with a MA GEOID.
         state_code = parts[_COL_STATE].strip()
         if state_code != _MA_STATE_CODE:
+            non_ma_dropped += 1
             continue
 
         county = parts[_COL_COUNTY].strip().zfill(3)
         mcd = parts[_COL_MCD].strip().zfill(5)
 
-        # Skip rows where MCD is "00000" (place-only records with no MCD)
         if mcd == "00000":
             continue
 
-        geoid = _MA_STATE_CODE + county + mcd
+        # Use state_code from the record (validated == _MA_STATE_CODE above)
+        # rather than the hardcoded constant, so the GEOID is visibly derived
+        # from the source data.
+        geoid = state_code + county + mcd
 
         try:
-            units = (
-                _safe_int(parts[_COL_UNITS_1])
-                + _safe_int(parts[_COL_UNITS_2])
-                + _safe_int(parts[_COL_UNITS_34])
-                + _safe_int(parts[_COL_UNITS_5P])
-            )
+            u1   = _safe_int(parts[_COL_UNITS_1])
+            u2   = _safe_int(parts[_COL_UNITS_2])
+            u34  = _safe_int(parts[_COL_UNITS_34])
+            u5p  = _safe_int(parts[_COL_UNITS_5P])
         except Exception:
             skipped += 1
             continue
 
-        records.append({"geoid": geoid, "permits": units})
+        records.append({
+            "geoid":    geoid,
+            "units_5p": u5p,
+            "permits":  u1 + u2 + u34 + u5p,
+        })
 
-    df = pd.DataFrame(records) if records else pd.DataFrame(columns=["geoid", "permits"])
+    df = pd.DataFrame(records) if records else pd.DataFrame(columns=["geoid", "units_5p", "permits"])
     logger.info(
-        f"  BPS: {len(df)} MA jurisdictions | "
-        f"total units authorized: {df['permits'].sum() if not df.empty else 0:,} | "
-        f"skipped rows: {skipped}"
+        f"  BPS {year}: {len(df)} MA jurisdictions | "
+        f"total units: {df['permits'].sum() if not df.empty else 0:,} | "
+        f"non-MA rows dropped: {non_ma_dropped} | "
+        f"malformed rows skipped: {skipped}"
     )
+
+    # ── Diagnostic: log raw values for any GEOID flagged for inspection ───
+    _log_diagnostic_geoids(df, year)
+
     return df
+
+
+# GEOIDs to log in detail whenever their raw BPS data is parsed.
+# Add a GEOID here to investigate anomalous permit values.
+_DIAGNOSTIC_GEOIDS: dict[str, str] = {
+    "2502117405": "Dover, MA",       # 2023 BPS shows 34 5+ unit permits — tracking
+}
+
+
+def _log_diagnostic_geoids(df: pd.DataFrame, year: int) -> None:
+    """Log raw permit values for GEOIDs listed in _DIAGNOSTIC_GEOIDS."""
+    if df.empty:
+        return
+    for geoid, label in _DIAGNOSTIC_GEOIDS.items():
+        row = df[df["geoid"] == geoid]
+        if row.empty:
+            logger.debug(f"  Diagnostic [{label}] {geoid}: not present in {year} BPS data")
+        else:
+            r = row.iloc[0]
+            logger.info(
+                f"  Diagnostic [{label}] {geoid} in {year}: "
+                f"units_5p={r['units_5p']}  total_permits={r['permits']}"
+            )
 
 
 def _safe_int(val: str) -> int:

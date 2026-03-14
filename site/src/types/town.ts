@@ -61,6 +61,25 @@ export interface Metrics {
   permits_per_1000_residents: number | null;
 }
 
+/**
+ * Data quality notes for individual grading dimensions.
+ *
+ * A non-null note means the pipeline detected a condition worth surfacing
+ * to the reader. The grade itself is NOT changed — these are transparency
+ * flags only. Display them near the relevant grade card.
+ */
+export interface DataNotes {
+  /**
+   * Set when a single calendar year drives more than 70% of a small town's
+   * 3-year permit total (single-year spike detection).
+   */
+  zoning: string | null;
+  /** Reserved for future production quality flags. Always null for now. */
+  production: string | null;
+  /** Reserved for future affordability quality flags. Always null for now. */
+  affordability: string | null;
+}
+
 export interface TownRecord {
   /** 5-digit MA FIPS code (e.g., "25001" for Barnstable County). Unique identifier. */
   fips: string;
@@ -79,6 +98,13 @@ export interface TownRecord {
 
   /** Raw numeric metrics underlying the grades. */
   metrics: Metrics;
+
+  /**
+   * Data quality notes attached to specific grading dimensions.
+   * Null if the record predates this field (older pipeline output).
+   * Use optional chaining: town.data_notes?.zoning
+   */
+  data_notes: DataNotes | null;
 
   /**
    * MBTA Communities Act compliance status:

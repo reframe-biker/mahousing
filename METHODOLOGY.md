@@ -14,13 +14,38 @@ Each municipality receives a letter grade (A–F) on six dimensions, plus a comp
 
 ### 1. Zoning Permissiveness
 
-**Data source:** [MA Zoning Atlas](https://www.mapc.org/resource-library/massachusetts-zoning-atlas/) (Metropolitan Area Planning Council)
+**Data source (current):** [US Census Bureau Building Permits Survey](https://www.census.gov/construction/bps/), 3-year aggregate.
 
-**What the grade measures:** The share of a municipality's developable land area where multifamily housing is permitted by right — meaning no discretionary special permit, variance, or board approval is required. A higher share of by-right multifamily zoning indicates a more permissive regulatory environment for housing construction.
+**What the grade measures:** The share of permitted housing units that were in structures of 5 or more units, averaged over the most recent 3 years of available data. This is a revealed-preference measure of zoning permissiveness — a town that issues 80% of its permitted units as multifamily is functionally more permissive than one issuing 95% single-family permits, regardless of what the zoning code says on paper.
 
-**Key metric:** `pct_multifamily_by_right` — percentage of land area zoned for multifamily housing by right.
+**Key metric:** `pct_multifamily_by_right` — in the current implementation, this field holds the share of permitted units in 5+ unit structures (not a literal by-right land-area share). The column name is stable for schema compatibility.
 
-**Scoring formula:** TBD. Will be documented here before publication. The formula will rank all 351 municipalities on this metric and assign grades based on percentile cutoffs.
+**Coverage:** Towns with fewer than 10 total permitted units over 3 years receive a null grade rather than a potentially misleading grade from a thin sample. Coverage is approximately 320–346 of 351 municipalities depending on the year range.
+
+**Scoring formula:**
+
+| Grade | Threshold |
+|-------|-----------|
+| A | > 40% of permitted units are in 5+ unit structures |
+| B | 25–40% |
+| C | 10–25% |
+| D | 2–10% |
+| F | < 2% |
+| N/A | Fewer than 10 total permits over 3 years |
+
+---
+
+### Zoning metric — current approach and roadmap
+
+The zoning grade currently uses permit mix as a revealed-preference proxy. This is an interim approach with two known limitations:
+
+1. **It measures output, not policy.** A town with exclusionary zoning but high permit volume from grandfathered or special-permit development will be graded more favorably than its code warrants. This is a known bias.
+
+2. **It overlaps with the Housing Production grade.** Both grades draw on BPS permit data, though through different lenses (production = total rate; zoning = multifamily share). Towns with low permit volume may receive null grades on both dimensions.
+
+**Why this approach?** The MAPC Zoning Atlas v01 covers approximately 101 cities and towns in Metropolitan Boston. The [National Zoning Atlas](https://zoningatlas.org) (NZA) provides full statewide coverage with explicit by-right multifamily fields, but bulk download access for Massachusetts data is not yet publicly available.
+
+**Upgrade path:** When NZA bulk data is available, set `ZONING_SOURCE = "nza"` in `pipeline/ingest/zoning.py` and implement `pipeline/ingest/zoning_nza.py`. No other files need to change. The output contract (columns `fips`, `pct_multifamily_by_right`, `low_sample`) is documented at the top of `pipeline/ingest/zoning.py`.
 
 ---
 
@@ -99,6 +124,32 @@ The composite grade is a weighted average of all applicable dimensions for a giv
 The pipeline that produces this data runs on a weekly automated schedule via GitHub Actions. Each run fetches the latest available data from each source and updates the JSON files that power the site. The `updated_at` field on each municipality record reflects the date of the most recent pipeline run, not the date the underlying source data was collected. Source data freshness varies by dataset (e.g., Census ACS estimates are updated annually; building permit data is available monthly).
 
 All source data used by this project is publicly available at no cost.
+
+---
+
+## Data notes and quality flags
+
+The pipeline automatically detects conditions that may reduce the reliability of a grade and attaches a plain-language note to the affected town record. Notes are additive transparency flags — the underlying grade is not changed or suppressed.
+
+### Single-year permit spike (zoning grade)
+
+**What it detects:** The pipeline flags the zoning grade with a note when all three of the following conditions hold:
+
+1. A single calendar year accounts for more than 70% of the municipality's total permit activity over the 3-year window.
+2. The 3-year total is fewer than 50 permits.
+3. The municipality's population is under 15,000.
+
+**Why this matters:** The zoning grade is based on the share of permitted units in 5+ unit structures. In towns with low overall permit volume, one large development (an assisted-living facility, an age-restricted apartment complex) can dominate the 3-year total and produce a grade that doesn't reflect the town's typical permitting behavior. The grade is based on real data — it is not wrong — but readers deserve to know the context.
+
+**Why the population threshold exists:** For larger cities and towns, a low permit count is not a data quality concern — it is a genuine policy finding. A city of 20,000 or 40,000 people issuing few permits and little multifamily housing is behaving as its zoning code requires; flagging that as anomalous would obscure rather than clarify. The 15,000-resident threshold ensures the spike flag applies only to small towns where one atypical project can meaningfully distort a multi-year average.
+
+**What the note says:** "Zoning grade driven primarily by a single year of permit activity — may not reflect the town's typical permitting pattern."
+
+**Concrete example:** Dover, MA issued 0 multifamily permits in 2021, 0 in 2022, and 34 in 2023 (a single large project). This gives Dover an A zoning grade based on 79% multifamily share — a grade that would surprise anyone familiar with Dover's exclusionary zoning history. The grade reflects what Dover actually permitted, but the note signals that this single year is driving the result.
+
+**Where it appears:** The note is displayed on the town's profile page in an amber info box below the zoning grade card. It is also present in the town's JSON record at `data_notes.zoning`.
+
+**Thresholds summary:** Single year share > 70% of 3-year total AND 3-year total < 50 permits AND population < 15,000.
 
 ---
 

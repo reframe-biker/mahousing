@@ -68,7 +68,7 @@ _PAGE_SIZE = 2000
 _REQUEST_TIMEOUT = 60
 
 
-def fetch_zoning_data(url: str | None = None) -> pd.DataFrame:
+def get_zoning_data(url: str | None = None) -> pd.DataFrame:
     """
     Fetch MAPC Zoning Atlas v01 data and compute pct_multifamily_by_right per municipality.
 
@@ -87,6 +87,9 @@ def fetch_zoning_data(url: str | None = None) -> pd.DataFrame:
         Coverage: approximately 101 municipalities in Metro Boston.
         Municipalities outside this coverage will not appear in the result and
         will receive null zoning grades.
+
+    Note: the router (zoning.py) adapts this output to the standard fips-keyed
+    contract required by build.py. Name-to-FIPS resolution happens there.
     """
     base_url = url or os.environ.get("ZONING_ATLAS_URL", _DEFAULT_URL)
     logger.info(f"Fetching MA Zoning Atlas from MAPC geo server…")
@@ -99,6 +102,11 @@ def fetch_zoning_data(url: str | None = None) -> pd.DataFrame:
     logger.info(f"  Loaded {len(df)} zoning district records across {df[_MUNI_FIELD].nunique()} municipalities")
 
     return _compute_pct(df)
+
+
+# Backward-compatibility alias — build.py previously imported fetch_zoning_data directly.
+# New callers should use zoning.py router instead.
+fetch_zoning_data = get_zoning_data
 
 
 def _paginate(base_url: str) -> list[dict]:

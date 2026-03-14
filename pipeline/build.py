@@ -36,7 +36,7 @@ sys.path.insert(0, str(_REPO_ROOT))
 from pipeline.ingest.census_acs import fetch_acs_data
 from pipeline.ingest.building_permits import fetch_permit_data
 from pipeline.ingest.zillow import fetch_zillow_data
-from pipeline.ingest.zoning_atlas import fetch_zoning_data
+from pipeline.ingest.zoning import get_zoning_data
 from pipeline.score import score_town
 
 # ── Logging setup ─────────────────────────────────────────────────────────────
@@ -96,7 +96,7 @@ def main() -> None:
         sys.exit(1)
 
     # Optional sources — failures produce null metrics, not crashes
-    zoning_df = _safe_fetch("Zoning Atlas", fetch_zoning_data)
+    zoning_df = _safe_fetch("Zoning", get_zoning_data)
     permit_df = _safe_fetch("Building Permits", fetch_permit_data, census_api_key)
     zillow_df = _safe_fetch("Zillow ZHVI", fetch_zillow_data)
 
@@ -110,16 +110,35 @@ def main() -> None:
     acs_df["_name_key"] = acs_df["name"].apply(_normalize_name)
 
     if not zoning_df.empty:
-        zoning_df["_name_key"] = zoning_df["muni_name"].apply(_normalize_name)
+        # The zoning router contract uses fips (GEOID) as the join key.
+        # Join on geoid for exact matching — no name normalization needed.
+        # Include data_note if present (populated by permits_proxy spike detection).
+        zoning_cols = ["fips", "pct_multifamily_by_right"]
+        if "data_note" in zoning_df.columns:
+            zoning_cols.append("data_note")
         acs_df = acs_df.merge(
-            zoning_df[["_name_key", "pct_multifamily_by_right"]],
-            on="_name_key",
+            zoning_df[zoning_cols],
+            left_on="geoid",
+            right_on="fips",
             how="left",
-        )
+        ).drop(columns=["fips"], errors="ignore")
+        if "data_note" not in acs_df.columns:
+            acs_df["data_note"] = None
+        # Third spike-flag condition: suppress the flag for towns with population
+        # >= 15,000.  For larger places a low permit count is a genuine finding,
+        # not a data quality concern, so the spike note would be misleading.
+        # Population data is only available here after the ACS join, which is
+        # why this filter lives in build.py rather than zoning_permits_proxy.py.
+        large_town_mask = acs_df["population"].notna() & (acs_df["population"] >= 15_000)
+        suppressed = (large_town_mask & acs_df["data_note"].notna()).sum()
+        acs_df.loc[large_town_mask, "data_note"] = None
+        if suppressed:
+            logger.info(f"  Spike flag suppressed for {suppressed} town(s) with population >= 15,000")
         matched = acs_df["pct_multifamily_by_right"].notna().sum()
-        logger.info(f"  Zoning Atlas: {matched}/{len(acs_df)} municipalities matched")
+        logger.info(f"  Zoning: {matched}/{len(acs_df)} municipalities matched")
     else:
         acs_df["pct_multifamily_by_right"] = None
+        acs_df["data_note"] = None
 
     if not permit_df.empty:
         # Primary join: by GEOID (exact match, no name ambiguity)
@@ -228,6 +247,13 @@ def _build_record(row: pd.Series, today: str) -> dict:
 
     grades = score_town(metrics)
 
+    # data_notes: zoning note from permits_proxy spike detection; others reserved
+    data_notes = {
+        "zoning": _to_str(row.get("data_note")),
+        "production": None,
+        "affordability": None,
+    }
+
     return {
         "fips": str(row["geoid"]),
         "name": str(row["name"]),
@@ -235,6 +261,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "population": _to_int(row.get("population")),
         "grades": grades,
         "metrics": metrics,
+        "data_notes": data_notes,
         "mbta_status": None,  # Phase 2
         "updated_at": today,
     }
@@ -291,6 +318,18 @@ def _to_float(val) -> float | None:
         return None if pd.isna(f) else f
     except (ValueError, TypeError):
         return None
+
+
+def _to_str(val) -> str | None:
+    if val is None:
+        return None
+    try:
+        if pd.isna(val):
+            return None
+    except (TypeError, ValueError):
+        pass
+    s = str(val).strip()
+    return s if s else None
 
 
 def _to_int(val) -> int | None:

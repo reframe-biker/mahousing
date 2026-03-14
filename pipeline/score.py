@@ -6,12 +6,13 @@ Converts raw numeric metrics (from the ingest modules) into letter grades
 
 Grading rubrics for Phase 1 dimensions:
 
-  zoning         (pct_multifamily_by_right)
-    A  > 50%     — majority of land area allows MF housing by right
-    B  30–50%
-    C  15–30%
-    D  5–15%
-    F  < 5%
+  zoning         (pct_multifamily_by_right — currently: % of permitted units in 5+ unit structures)
+    A  > 40%     — strong revealed preference for multifamily
+    B  25–40%
+    C  10–25%
+    D  2–10%
+    F  < 2%
+    null  fewer than 10 total permits over 3 years (low-sample towns)
 
   affordability  (rent_burden_pct — % of renters paying > 30% of income)
     A  < 20%
@@ -83,19 +84,23 @@ def score_town(metrics: dict) -> dict:
 
 def _grade_zoning(pct: float | None) -> str | None:
     """
-    Grade zoning permissiveness based on % of land area allowing multifamily by right.
+    Grade zoning permissiveness based on the active zoning metric.
 
-    A > 50%, B 30–50%, C 15–30%, D 5–15%, F < 5%
+    Current metric (permits_proxy): % of permitted units in 5+ unit structures
+    over the most recent 3 years.  Towns with fewer than 10 total permits pass
+    None here and receive a null grade.
+
+    A > 40%, B 25–40%, C 10–25%, D 2–10%, F < 2%
     """
     if pct is None:
         return None
-    if pct > 50:
+    if pct > 40:
         return "A"
-    if pct > 30:
+    if pct > 25:
         return "B"
-    if pct > 15:
+    if pct > 10:
         return "C"
-    if pct > 5:
+    if pct > 2:
         return "D"
     return "F"
 
