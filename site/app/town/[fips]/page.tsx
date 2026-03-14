@@ -91,6 +91,7 @@ interface GradeCardConfig {
   gradeKey: keyof TownRecord["grades"];
   getMetric: (t: TownRecord) => string | null;
   explanation: string;
+  metricKey?: string;
   phase: string | null;
 }
 
@@ -102,8 +103,8 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
       t.metrics.pct_land_multifamily_byright !== null
         ? `${t.metrics.pct_land_multifamily_byright.toFixed(1)}% of residential land allows multifamily by right`
         : null,
-    explanation:
-      "Share of permitted housing units that are multifamily (5+ units), averaged over the most recent 3 years. Used as a revealed-preference measure of zoning permissiveness — towns that permit more multifamily in practice tend to have more permissive zoning codes. Low-permit towns (fewer than 10 total permits over 3 years) show N/A. This metric will be replaced with National Zoning Atlas data when available.",
+    explanation: "",
+    metricKey: "pct_land_multifamily_byright",
     phase: null,
   },
   // MBTA card is rendered separately via MbtaGradeCard — placeholder kept for
@@ -384,13 +385,16 @@ export default async function TownPage({
               cfg.gradeKey === "zoning"
                 ? (town.data_notes?.zoning ?? null)
                 : null;
+            const explanation = cfg.metricKey
+              ? (metricsMeta[cfg.metricKey]?.description ?? cfg.explanation)
+              : cfg.explanation;
             return (
               <GradeCard
                 key={cfg.gradeKey}
                 dimension={cfg.dimension}
                 grade={grade}
                 keyMetric={keyMetric}
-                explanation={cfg.explanation}
+                explanation={explanation}
                 phase={grade === null ? cfg.phase : null}
                 note={note}
               />
