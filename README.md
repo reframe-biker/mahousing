@@ -50,7 +50,7 @@ The pipeline produces one JSON file per municipality at `data/towns/<fips>.json`
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-org/mahousing.git
+git clone https://github.com/reframe-biker/mahousing.git
 cd mahousing
 
 # 2. Create and activate a virtual environment
@@ -118,7 +118,7 @@ Contributions are welcome, particularly:
 - **New data sources:** Proposals for additional public data sources that could inform grades, especially for the Town Meeting Voting Record and State Legislator Record dimensions.
 - **Frontend improvements:** Bug reports and PRs for the Next.js site.
 
-Please open a [GitHub issue](https://github.com/your-org/mahousing/issues) before opening a pull request for significant changes.
+Please open a [GitHub issue](https://github.com/reframe-biker/mahousing/issues) before opening a pull request for significant changes.
 
 ---
 

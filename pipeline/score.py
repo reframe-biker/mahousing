@@ -1,49 +1,158 @@
 """
 score.py — Grading engine for MA Housing Report Card
 
-This module will be implemented in Phase 1. Its responsibilities:
+Converts raw numeric metrics (from the ingest modules) into letter grades
+(A/B/C/D/F) for each grading dimension, then computes a composite grade.
 
-1. Accept a town's raw metrics dict (populated by the ingest modules) and
-   produce a grades dict with letter grades (A/B/C/D/F) for each of the
-   six grading dimensions:
-     - zoning:        Zoning Permissiveness (MA Zoning Atlas)
-     - mbta:          MBTA Communities Act compliance status
-     - production:    Housing Production rate (Census Building Permits)
-     - affordability: Affordability burden (Census ACS / Zillow)
-     - votes:         Town Meeting voting record on housing articles
-     - rep:           State legislator housing vote record (future phase)
-     - composite:     Weighted composite of all applicable dimensions
+Grading rubrics for Phase 1 dimensions:
 
-2. For each dimension, apply a scoring formula that converts one or more
-   raw numeric metrics into a percentile rank among all 351 MA municipalities,
-   then maps that rank to a letter grade using cutoffs defined in a config file.
-   Scoring formulas are documented in METHODOLOGY.md and will be finalized
-   before any grades are published.
+  zoning         (pct_multifamily_by_right)
+    A  > 50%     — majority of land area allows MF housing by right
+    B  30–50%
+    C  15–30%
+    D  5–15%
+    F  < 5%
 
-3. Handle missing data gracefully: if a required metric is None, the
-   corresponding grade should be None (not zero). Null grades are displayed
-   as "N/A" in the UI, not as an F.
+  affordability  (rent_burden_pct — % of renters paying > 30% of income)
+    A  < 20%
+    B  20–30%
+    C  30–40%
+    D  40–50%
+    F  > 50%
 
-4. Emit a grades dict conforming to the schema defined in schema.py.
+  production     (permits_per_1000_residents — annual housing units per 1,000 pop)
+    A  > 5.0
+    B  3.0–5.0
+    C  1.5–3.0
+    D  0.5–1.5
+    F  < 0.5
 
-Usage (future):
-    from pipeline.score import score_town
-    from pipeline.schema import TownRecord
+  composite      Numeric average of all non-null dimension grades.
+                 Null dimensions are excluded — not treated as F.
+                 A=4, B=3, C=2, D=1, F=0. Rounded to nearest integer.
 
-    grades = score_town(metrics)
+Phase 2/3 dimensions (mbta, votes, rep) are not scored here; they return None.
 """
+
+from __future__ import annotations
+
+import logging
+
+logger = logging.getLogger(__name__)
+
+# Mapping from letter grade to numeric value for composite calculation
+_GRADE_TO_NUM: dict[str, float] = {"A": 4.0, "B": 3.0, "C": 2.0, "D": 1.0, "F": 0.0}
+_NUM_TO_GRADE: dict[int, str] = {4: "A", 3: "B", 2: "C", 1: "D", 0: "F"}
 
 
 def score_town(metrics: dict) -> dict:
     """
-    Compute letter grades for a single town given its raw metrics.
+    Compute letter grades for a single municipality given its raw metrics.
 
     Args:
-        metrics: Dict of raw numeric metrics as defined in TownRecord["metrics"].
+        metrics: Dict matching pipeline.schema.Metrics. All values may be None.
+                 Expected keys: pct_multifamily_by_right, median_home_value,
+                 rent_burden_pct, permits_per_1000_residents.
 
     Returns:
-        Dict of grade values as defined in TownRecord["grades"].
-
-    Not yet implemented — returns all-None grades until Phase 1.
+        Dict matching pipeline.schema.Grades. Keys: zoning, mbta, production,
+        affordability, votes, rep, composite.
+        Any dimension without data returns None (not "F").
     """
-    raise NotImplementedError("score_town will be implemented in Phase 1.")
+    zoning = _grade_zoning(metrics.get("pct_multifamily_by_right"))
+    affordability = _grade_affordability(metrics.get("rent_burden_pct"))
+    production = _grade_production(metrics.get("permits_per_1000_residents"))
+
+    # mbta, votes, rep: not implemented in Phase 1
+    mbta = None
+    votes = None
+    rep = None
+
+    composite = _compute_composite([zoning, mbta, affordability, production, votes, rep])
+
+    return {
+        "zoning": zoning,
+        "mbta": mbta,
+        "production": production,
+        "affordability": affordability,
+        "votes": votes,
+        "rep": rep,
+        "composite": composite,
+    }
+
+
+def _grade_zoning(pct: float | None) -> str | None:
+    """
+    Grade zoning permissiveness based on % of land area allowing multifamily by right.
+
+    A > 50%, B 30–50%, C 15–30%, D 5–15%, F < 5%
+    """
+    if pct is None:
+        return None
+    if pct > 50:
+        return "A"
+    if pct > 30:
+        return "B"
+    if pct > 15:
+        return "C"
+    if pct > 5:
+        return "D"
+    return "F"
+
+
+def _grade_affordability(rent_burden_pct: float | None) -> str | None:
+    """
+    Grade affordability based on % of renter households that are cost-burdened (>30%).
+
+    A < 20%, B 20–30%, C 30–40%, D 40–50%, F > 50%
+    """
+    if rent_burden_pct is None:
+        return None
+    if rent_burden_pct < 20:
+        return "A"
+    if rent_burden_pct < 30:
+        return "B"
+    if rent_burden_pct < 40:
+        return "C"
+    if rent_burden_pct < 50:
+        return "D"
+    return "F"
+
+
+def _grade_production(permits_per_1000: float | None) -> str | None:
+    """
+    Grade housing production based on annual permits per 1,000 residents.
+
+    A > 5.0, B 3.0–5.0, C 1.5–3.0, D 0.5–1.5, F < 0.5
+    """
+    if permits_per_1000 is None:
+        return None
+    if permits_per_1000 > 5.0:
+        return "A"
+    if permits_per_1000 > 3.0:
+        return "B"
+    if permits_per_1000 > 1.5:
+        return "C"
+    if permits_per_1000 > 0.5:
+        return "D"
+    return "F"
+
+
+def _compute_composite(grades: list[str | None]) -> str | None:
+    """
+    Compute a composite letter grade as the simple average of non-null dimension grades.
+
+    Args:
+        grades: List of letter grade strings or None. None values are excluded.
+
+    Returns:
+        Composite letter grade, or None if no grades are available.
+    """
+    numeric = [_GRADE_TO_NUM[g] for g in grades if g is not None]
+    if not numeric:
+        return None
+    avg = sum(numeric) / len(numeric)
+    rounded = round(avg)
+    # Clamp to valid range [0, 4] in case of floating point edge cases
+    rounded = max(0, min(4, rounded))
+    return _NUM_TO_GRADE[rounded]

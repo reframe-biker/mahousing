@@ -110,6 +110,6 @@ A null grade ("N/A") means that the data required to compute that grade has not 
 
 ## Methodology Feedback
 
-Questions about methodology, corrections to underlying data, and suggestions for additional data sources are welcome. Please [open a GitHub issue](https://github.com/your-org/mahousing/issues) with the label `methodology`.
+Questions about methodology, corrections to underlying data, and suggestions for additional data sources are welcome. Please [open a GitHub issue](https://github.com/reframe-biker/mahousing/issues) with the label `methodology`.
 
 Before any grades are published, the specific scoring formulas (cutoffs, weights, and benchmark values) will be posted for public comment.
