@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import fs from "fs";
-import path from "path";
 import type { TownRecord } from "@/src/types/town";
+import { getDataPath } from "@/src/lib/paths";
 
 // Leaflet requires a browser environment — load with SSR disabled
 const MapClient = dynamic(() => import("@/app/components/Map"), {
@@ -19,9 +19,7 @@ const MapClient = dynamic(() => import("@/app/components/Map"), {
 });
 
 function loadStatewideData(): TownRecord[] {
-  const dataPath = path.join(process.cwd(), "..", "data", "statewide.json");
-  const raw = fs.readFileSync(dataPath, "utf-8");
-  return JSON.parse(raw) as TownRecord[];
+  return JSON.parse(fs.readFileSync(getDataPath("statewide.json"), "utf-8")) as TownRecord[];
 }
 
 export default function HomePage() {

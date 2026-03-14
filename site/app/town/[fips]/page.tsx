@@ -1,5 +1,4 @@
 import fs from "fs";
-import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { TownRecord, Grade, MetricsMeta } from "@/src/types/town";
@@ -8,29 +7,24 @@ import GradeCard from "@/app/components/GradeCard";
 import MbtaGradeCard from "@/app/components/MbtaGradeCard";
 import MetricsTable from "@/app/components/MetricsTable";
 import ShareButton from "@/app/components/ShareButton";
+import { getDataPath } from "@/src/lib/paths";
 
 // ---------------------------------------------------------------------------
 // Data helpers
 // ---------------------------------------------------------------------------
 
-const DATA_DIR = path.join(process.cwd(), "..", "data");
-
 function loadTown(fips: string): TownRecord | null {
-  const filePath = path.join(DATA_DIR, "towns", `${fips}.json`);
+  const filePath = getDataPath("towns", `${fips}.json`);
   if (!fs.existsSync(filePath)) return null;
   return JSON.parse(fs.readFileSync(filePath, "utf-8")) as TownRecord;
 }
 
 function loadStatewide(): TownRecord[] {
-  return JSON.parse(
-    fs.readFileSync(path.join(DATA_DIR, "statewide.json"), "utf-8")
-  ) as TownRecord[];
+  return JSON.parse(fs.readFileSync(getDataPath("statewide.json"), "utf-8")) as TownRecord[];
 }
 
 function loadMetricsMeta(): MetricsMeta {
-  return JSON.parse(
-    fs.readFileSync(path.join(DATA_DIR, "metrics.json"), "utf-8")
-  ) as MetricsMeta;
+  return JSON.parse(fs.readFileSync(getDataPath("metrics.json"), "utf-8")) as MetricsMeta;
 }
 
 function median(values: number[]): number {
@@ -68,7 +62,7 @@ function computeStateMedians(towns: TownRecord[]): StateMedians {
 // ---------------------------------------------------------------------------
 
 export async function generateStaticParams() {
-  const townsDir = path.join(DATA_DIR, "towns");
+  const townsDir = getDataPath("towns");
   const files = fs.readdirSync(townsDir).filter((f) => f.endsWith(".json"));
   return files.map((f) => ({ fips: f.replace(".json", "") }));
 }

@@ -1,8 +1,8 @@
 import fs from "fs";
-import path from "path";
 import type { Metadata } from "next";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
+import { getRepoRoot } from "@/src/lib/paths";
 
 export const metadata: Metadata = {
   title: "Methodology — MA Housing Report Card",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 async function getMethodologyHtml(): Promise<string> {
-  const filePath = path.join(process.cwd(), "..", "METHODOLOGY.md");
+  const filePath = getRepoRoot("METHODOLOGY.md");
   const raw = fs.readFileSync(filePath, "utf-8");
   const result = await remark().use(remarkHtml).process(raw);
   return result.toString();

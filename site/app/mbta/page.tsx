@@ -1,8 +1,8 @@
 import fs from "fs";
-import path from "path";
 import type { Metadata } from "next";
 import type { TownRecord } from "@/src/types/town";
 import MbtaClient from "./MbtaClient";
+import { getDataPath } from "@/src/lib/paths";
 
 export const metadata: Metadata = {
   title: "MBTA Communities Tracker — MA Housing Report Card",
@@ -11,8 +11,7 @@ export const metadata: Metadata = {
 };
 
 function loadStatewideData(): TownRecord[] {
-  const dataPath = path.join(process.cwd(), "..", "data", "statewide.json");
-  return JSON.parse(fs.readFileSync(dataPath, "utf-8")) as TownRecord[];
+  return JSON.parse(fs.readFileSync(getDataPath("statewide.json"), "utf-8")) as TownRecord[];
 }
 
 export default function MbtaPage() {
