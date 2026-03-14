@@ -37,6 +37,7 @@ from pipeline.ingest.census_acs import fetch_acs_data
 from pipeline.ingest.building_permits import fetch_permit_data
 from pipeline.ingest.zillow import fetch_zillow_data
 from pipeline.ingest.zoning import get_zoning_data
+from pipeline.metrics import METRICS
 from pipeline.score import score_town
 
 # ── Logging setup ─────────────────────────────────────────────────────────────
@@ -53,6 +54,7 @@ logger = logging.getLogger("build")
 DATA_DIR = _REPO_ROOT / "data"
 TOWNS_DIR = DATA_DIR / "towns"
 STATEWIDE_PATH = DATA_DIR / "statewide.json"
+METRICS_PATH = DATA_DIR / "metrics.json"
 
 
 def main() -> None:
@@ -113,7 +115,7 @@ def main() -> None:
         # The zoning router contract uses fips (GEOID) as the join key.
         # Join on geoid for exact matching — no name normalization needed.
         # Include data_note if present (populated by permits_proxy spike detection).
-        zoning_cols = ["fips", "pct_multifamily_by_right"]
+        zoning_cols = ["fips", "pct_multifamily_permitted"]
         if "data_note" in zoning_df.columns:
             zoning_cols.append("data_note")
         acs_df = acs_df.merge(
@@ -134,10 +136,10 @@ def main() -> None:
         acs_df.loc[large_town_mask, "data_note"] = None
         if suppressed:
             logger.info(f"  Spike flag suppressed for {suppressed} town(s) with population >= 15,000")
-        matched = acs_df["pct_multifamily_by_right"].notna().sum()
+        matched = acs_df["pct_multifamily_permitted"].notna().sum()
         logger.info(f"  Zoning: {matched}/{len(acs_df)} municipalities matched")
     else:
-        acs_df["pct_multifamily_by_right"] = None
+        acs_df["pct_multifamily_permitted"] = None
         acs_df["data_note"] = None
 
     if not permit_df.empty:
@@ -214,6 +216,14 @@ def main() -> None:
     town_records.sort(key=lambda r: r["name"])
     STATEWIDE_PATH.write_text(json.dumps(town_records, indent=2), encoding="utf-8")
 
+    # ── Export metrics.json ────────────────────────────────────────────────────
+    # Serialize pipeline/metrics.py → data/metrics.json so the site can read
+    # metric labels and descriptions at build time without hardcoding them.
+    METRICS_PATH.write_text(json.dumps(METRICS, indent=2), encoding="utf-8")
+
+    # ── Validate metrics.py against data schema ────────────────────────────────
+    _validate_metrics(town_records)
+
     # ── Step 5: Summary ────────────────────────────────────────────────────────
 
     logger.info("=" * 60)
@@ -227,19 +237,20 @@ def main() -> None:
 
     logger.info("")
     logger.info(f"  Output: {STATEWIDE_PATH}")
+    logger.info(f"  Output: {METRICS_PATH}")
     logger.info(f"  Output: {TOWNS_DIR}/<fips>.json  ({len(town_records)} files)")
     logger.info("=" * 60)
 
 
 def _build_record(row: pd.Series, today: str) -> dict:
     """Build a TownRecord dict from a merged DataFrame row."""
-    pct_mf = _to_float(row.get("pct_multifamily_by_right"))
+    pct_mf = _to_float(row.get("pct_multifamily_permitted"))
     rent_burden = _to_float(row.get("rent_burden_pct"))
     permits_per_1000 = _to_float(row.get("permits_per_1000_residents"))
     home_value = _to_float(row.get("final_home_value"))
 
     metrics = {
-        "pct_multifamily_by_right": pct_mf,
+        "pct_multifamily_permitted": pct_mf,
         "median_home_value": home_value,
         "rent_burden_pct": rent_burden,
         "permits_per_1000_residents": permits_per_1000,
@@ -286,6 +297,34 @@ def _print_dimension_summary(records: list[dict]) -> None:
             f"null: {null_count:3d}  "
             f"[{dist_str}]"
         )
+
+
+def _validate_metrics(town_records: list[dict]) -> None:
+    """
+    Warn if pipeline/metrics.py and the town data schema are out of sync.
+
+    Checks that every key in METRICS exists in a sample town's metrics dict
+    and vice versa. Does not crash the pipeline — warns and continues.
+    """
+    if not town_records:
+        return
+
+    sample_metrics = town_records[0].get("metrics", {})
+    data_keys = set(sample_metrics.keys())
+    metrics_keys = set(METRICS.keys())
+
+    only_in_data = data_keys - metrics_keys
+    only_in_metrics = metrics_keys - data_keys
+
+    if only_in_data or only_in_metrics:
+        logger.warning(
+            "WARNING: Metric mismatch detected. "
+            f"The following fields are in the data but not in metrics.py: {sorted(only_in_data)}. "
+            f"The following fields are in metrics.py but not in the data: {sorted(only_in_metrics)}. "
+            "Update metrics.py or the pipeline to resolve."
+        )
+    else:
+        logger.info(f"  Metrics validation: OK ({len(metrics_keys)} fields in sync)")
 
 
 def _safe_fetch(label: str, fn, *args):

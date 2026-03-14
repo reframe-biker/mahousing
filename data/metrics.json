@@ -1,0 +1,30 @@
+{
+  "pct_multifamily_permitted": {
+    "label": "Multifamily share of permitted units",
+    "description": "Share of permitted housing units that are multifamily (5+ units), averaged over the most recent 3 years. Used as a revealed-preference measure of zoning permissiveness. Towns with fewer than 10 total permits over 3 years show N/A. Will be replaced with National Zoning Atlas data when available.",
+    "source": "U.S. Census Building Permits Survey",
+    "unit": "percent",
+    "higher_is_better": true
+  },
+  "median_home_value": {
+    "label": "Median home value",
+    "description": "Median value of owner-occupied housing units. A proxy for housing cost and affordability pressure.",
+    "source": "U.S. Census ACS 5-year estimates",
+    "unit": "dollars",
+    "higher_is_better": false
+  },
+  "rent_burden_pct": {
+    "label": "Renters cost-burdened",
+    "description": "Share of renter households paying more than 30% of income on gross rent. High cost burden indicates housing supply shortfall.",
+    "source": "U.S. Census ACS 5-year estimates",
+    "unit": "percent",
+    "higher_is_better": false
+  },
+  "permits_per_1000_residents": {
+    "label": "Permits per 1,000 residents",
+    "description": "Annual residential building permits averaged over the most recent multi-year period, normalized by population. Measures actual housing production.",
+    "source": "U.S. Census Building Permits Survey",
+    "unit": "rate",
+    "higher_is_better": true
+  }
+}

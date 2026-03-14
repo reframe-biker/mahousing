@@ -33,12 +33,13 @@ SPIKE DETECTION:
 
 OUTPUT CONTRACT (shared by all zoning sources):
   fips                     (str)          10-digit county subdivision GEOID
-  pct_multifamily_by_right (float | None) The permissiveness score (None = null grade)
+  pct_multifamily_permitted (float | None) The permissiveness score (None = null grade)
   low_sample               (bool)         True if total permits < 10 over 3 years
   data_note                (str | None)   Human-readable quality flag; None if no issue
 
-Note: the column is named pct_multifamily_by_right for schema compatibility
-with pipeline/schema.py. The underlying metric is permit mix, not a by-right
+Note: the column name pct_multifamily_permitted matches the field name in
+pipeline/schema.py and pipeline/metrics.py. The underlying metric is permit
+mix (share of permitted units that are 5+ unit structures), not a by-right
 land area share. See METHODOLOGY.md for the distinction.
 """
 
@@ -83,14 +84,14 @@ def get_zoning_data() -> pd.DataFrame:
     Returns:
         DataFrame with columns:
             fips                     (str)          10-digit GEOID
-            pct_multifamily_by_right (float | None) Permissiveness score; None for low-sample towns
+            pct_multifamily_permitted (float | None) Permissiveness score; None for low-sample towns
             low_sample               (bool)         True if fewer than 10 total permits
             data_note                (str | None)   Quality flag text; None if no issue detected
 
         Returns an empty DataFrame with correct columns if all fetches fail.
     """
     empty = pd.DataFrame(
-        columns=["fips", "pct_multifamily_by_right", "low_sample", "data_note"]
+        columns=["fips", "pct_multifamily_permitted", "low_sample", "data_note"]
     )
 
     frames: list[pd.DataFrame] = []
@@ -130,7 +131,7 @@ def get_zoning_data() -> pd.DataFrame:
 
     # Compute ratio only for towns with sufficient sample
     ratio = (combined["units_5p"] / combined["permits"].replace(0, float("nan"))) * 100
-    combined["pct_multifamily_by_right"] = ratio.where(~combined["low_sample"]).round(1)
+    combined["pct_multifamily_permitted"] = ratio.where(~combined["low_sample"]).round(1)
 
     # ── Spike detection ────────────────────────────────────────────────────
     combined["max_single_year_share"] = (
@@ -147,7 +148,7 @@ def get_zoning_data() -> pd.DataFrame:
     combined.loc[spike_mask, "data_note"] = _SPIKE_NOTE
 
     # ── Logging ────────────────────────────────────────────────────────────
-    non_null = combined["pct_multifamily_by_right"].notna().sum()
+    non_null = combined["pct_multifamily_permitted"].notna().sum()
     low_sample_count = combined["low_sample"].sum()
     spike_count = spike_mask.sum()
     logger.info(
@@ -167,7 +168,7 @@ def get_zoning_data() -> pd.DataFrame:
             )
 
     result = combined[
-        ["geoid", "pct_multifamily_by_right", "low_sample", "data_note"]
+        ["geoid", "pct_multifamily_permitted", "low_sample", "data_note"]
     ].rename(columns={"geoid": "fips"})
 
     return result

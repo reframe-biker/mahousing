@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import type { TownRecord, Grade } from "@/src/types/town";
+import type { TownRecord, Grade, MetricsMeta } from "@/src/types/town";
 import GradeBadge, { gradeConfig } from "@/app/components/GradeBadge";
 import GradeCard from "@/app/components/GradeCard";
 import MetricsTable from "@/app/components/MetricsTable";
@@ -26,6 +26,12 @@ function loadStatewide(): TownRecord[] {
   ) as TownRecord[];
 }
 
+function loadMetricsMeta(): MetricsMeta {
+  return JSON.parse(
+    fs.readFileSync(path.join(DATA_DIR, "metrics.json"), "utf-8")
+  ) as MetricsMeta;
+}
+
 function median(values: number[]): number {
   if (values.length === 0) return 0;
   const sorted = [...values].sort((a, b) => a - b);
@@ -39,7 +45,7 @@ interface StateMedians {
   median_home_value: number;
   rent_burden_pct: number;
   permits_per_1000_residents: number;
-  pct_multifamily_by_right: number;
+  pct_multifamily_permitted: number;
 }
 
 function computeStateMedians(towns: TownRecord[]): StateMedians {
@@ -52,7 +58,7 @@ function computeStateMedians(towns: TownRecord[]): StateMedians {
     median_home_value: median(getValues("median_home_value")),
     rent_burden_pct: median(getValues("rent_burden_pct")),
     permits_per_1000_residents: median(getValues("permits_per_1000_residents")),
-    pct_multifamily_by_right: median(getValues("pct_multifamily_by_right")),
+    pct_multifamily_permitted: median(getValues("pct_multifamily_permitted")),
   };
 }
 
@@ -98,8 +104,8 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
     dimension: "Zoning permissiveness",
     gradeKey: "zoning",
     getMetric: (t) =>
-      t.metrics.pct_multifamily_by_right !== null
-        ? `${t.metrics.pct_multifamily_by_right.toFixed(1)}% of permitted units are multifamily (5+ units)`
+      t.metrics.pct_multifamily_permitted !== null
+        ? `${t.metrics.pct_multifamily_permitted.toFixed(1)}% of permitted units are multifamily (5+ units)`
         : null,
     explanation:
       "Share of permitted housing units that are multifamily (5+ units), averaged over the most recent 3 years. Used as a revealed-preference measure of zoning permissiveness — towns that permit more multifamily in practice tend to have more permissive zoning codes. Low-permit towns (fewer than 10 total permits over 3 years) show N/A. This metric will be replaced with National Zoning Atlas data when available.",
@@ -208,6 +214,7 @@ export default async function TownPage({
 
   const statewide = loadStatewide();
   const medians = computeStateMedians(statewide);
+  const metricsMeta = loadMetricsMeta();
 
   const compositeGrade = town.grades.composite;
   const config = gradeConfig(compositeGrade);
@@ -247,15 +254,15 @@ export default async function TownPage({
     });
   }
   if (
-    town.metrics.pct_multifamily_by_right !== null &&
-    medians.pct_multifamily_by_right > 0
+    town.metrics.pct_multifamily_permitted !== null &&
+    medians.pct_multifamily_permitted > 0
   ) {
     const diff =
-      town.metrics.pct_multifamily_by_right - medians.pct_multifamily_by_right;
+      town.metrics.pct_multifamily_permitted - medians.pct_multifamily_permitted;
     const dir = diff > 0 ? "above" : "below";
     comparisons.push({
       label: "Zoning permissiveness",
-      text: `${fmtPct(town.metrics.pct_multifamily_by_right)} of ${town.name}'s land allows multifamily by right — ${Math.abs(diff).toFixed(1)} percentage points ${dir} the Metro Boston median of ${fmtPct(medians.pct_multifamily_by_right)}.`,
+      text: `${fmtPct(town.metrics.pct_multifamily_permitted)} of permitted units in ${town.name} are multifamily — ${Math.abs(diff).toFixed(1)} percentage points ${dir} the MA median of ${fmtPct(medians.pct_multifamily_permitted)}.`,
     });
   }
 
@@ -364,7 +371,7 @@ export default async function TownPage({
           Raw metrics
         </h2>
         <div className="bg-white border border-gray-200 rounded-lg px-5 py-2">
-          <MetricsTable metrics={town.metrics} />
+          <MetricsTable metrics={town.metrics} metricsMeta={metricsMeta} />
         </div>
       </section>
 

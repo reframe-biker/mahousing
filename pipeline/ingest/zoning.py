@@ -15,7 +15,7 @@ OUTPUT CONTRACT:
     fips                     (str)
         10-digit county subdivision GEOID — joins to acs_df["geoid"] in build.py.
 
-    pct_multifamily_by_right (float | None)
+    pct_multifamily_permitted (float | None)
         The permissiveness score for this source.  None means the grade will
         be null for that municipality (insufficient data, not a failing grade).
         The column name is kept stable for schema compatibility even when the
@@ -25,7 +25,7 @@ OUTPUT CONTRACT:
     low_sample               (bool)
         True if the underlying data is thin enough that the grade should be
         treated cautiously.  build.py logs this count; score.py uses the None
-        in pct_multifamily_by_right to produce a null grade.
+        in pct_multifamily_permitted to produce a null grade.
 
     data_note                (str | None)
         Human-readable quality flag attached to this town's zoning grade.
@@ -89,8 +89,8 @@ def _adapt_mapc(mapc_df: pd.DataFrame) -> pd.DataFrame:
     """
     Adapt MAPC Zoning Atlas output (muni_name-keyed) to the standard fips contract.
 
-    The MAPC module returns muni_name + pct_multifamily_by_right.
-    build.py expects fips + pct_multifamily_by_right + low_sample.
+    The MAPC module returns muni_name + pct_multifamily_permitted.
+    build.py expects fips + pct_multifamily_permitted + low_sample.
 
     Resolution strategy: we cannot do name→FIPS lookup here without importing
     ACS data, so we return muni_name in the fips column and let build.py handle
@@ -101,9 +101,9 @@ def _adapt_mapc(mapc_df: pd.DataFrame) -> pd.DataFrame:
     coverage.  The default "permits_proxy" covers all 346 permit-reporting towns.
     """
     if mapc_df.empty:
-        return pd.DataFrame(columns=["fips", "pct_multifamily_by_right", "low_sample", "data_note"])
+        return pd.DataFrame(columns=["fips", "pct_multifamily_permitted", "low_sample", "data_note"])
 
     result = mapc_df.rename(columns={"muni_name": "fips"}).copy()
     result["low_sample"] = False
     result["data_note"] = None  # spike detection only applies to permits_proxy
-    return result[["fips", "pct_multifamily_by_right", "low_sample", "data_note"]]
+    return result[["fips", "pct_multifamily_permitted", "low_sample", "data_note"]]

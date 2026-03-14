@@ -6,7 +6,7 @@ Converts raw numeric metrics (from the ingest modules) into letter grades
 
 Grading rubrics for Phase 1 dimensions:
 
-  zoning         (pct_multifamily_by_right — currently: % of permitted units in 5+ unit structures)
+  zoning         (pct_multifamily_permitted — % of permitted units in 5+ unit structures)
     A  > 40%     — strong revealed preference for multifamily
     B  25–40%
     C  10–25%
@@ -52,7 +52,7 @@ def score_town(metrics: dict) -> dict:
 
     Args:
         metrics: Dict matching pipeline.schema.Metrics. All values may be None.
-                 Expected keys: pct_multifamily_by_right, median_home_value,
+                 Expected keys: pct_multifamily_permitted, median_home_value,
                  rent_burden_pct, permits_per_1000_residents.
 
     Returns:
@@ -60,7 +60,7 @@ def score_town(metrics: dict) -> dict:
         affordability, votes, rep, composite.
         Any dimension without data returns None (not "F").
     """
-    zoning = _grade_zoning(metrics.get("pct_multifamily_by_right"))
+    zoning = _grade_zoning(metrics.get("pct_multifamily_permitted"))
     affordability = _grade_affordability(metrics.get("rent_burden_pct"))
     production = _grade_production(metrics.get("permits_per_1000_residents"))
 

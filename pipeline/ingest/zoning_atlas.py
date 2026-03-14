@@ -28,7 +28,7 @@ FIELD NOTES:
   Shape_Area  — Polygon area in the service's native CRS (MA State Plane, meters)
 
 METRIC:
-  pct_multifamily_by_right = (sum of area where mulfam2 == 1) /
+  pct_multifamily_permitted = (sum of area where mulfam2 == 1) /
                               (sum of total district area) * 100
 
 Note: mulfam2 tracks 2-unit (duplex) permissions. The v01 schema does not
@@ -70,7 +70,7 @@ _REQUEST_TIMEOUT = 60
 
 def get_zoning_data(url: str | None = None) -> pd.DataFrame:
     """
-    Fetch MAPC Zoning Atlas v01 data and compute pct_multifamily_by_right per municipality.
+    Fetch MAPC Zoning Atlas v01 data and compute pct_multifamily_permitted per municipality.
 
     Args:
         url: ArcGIS REST query URL. Defaults to ZONING_ATLAS_URL environment
@@ -79,7 +79,7 @@ def get_zoning_data(url: str | None = None) -> pd.DataFrame:
     Returns:
         DataFrame with columns:
             muni_name                (str)   Municipality name (un-normalized)
-            pct_multifamily_by_right (float) % of district area allowing duplex by right
+            pct_multifamily_permitted (float) % of district area allowing duplex by right
 
         Returns an empty DataFrame (with correct columns) if the data cannot
         be fetched or parsed. The pipeline continues with null zoning grades.
@@ -96,7 +96,7 @@ def get_zoning_data(url: str | None = None) -> pd.DataFrame:
 
     all_records = _paginate(base_url)
     if not all_records:
-        return pd.DataFrame(columns=["muni_name", "pct_multifamily_by_right"])
+        return pd.DataFrame(columns=["muni_name", "pct_multifamily_permitted"])
 
     df = pd.DataFrame(all_records)
     logger.info(f"  Loaded {len(df)} zoning district records across {df[_MUNI_FIELD].nunique()} municipalities")
@@ -159,7 +159,7 @@ def _paginate(base_url: str) -> list[dict]:
 
 def _compute_pct(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Compute pct_multifamily_by_right per municipality from the raw feature table.
+    Compute pct_multifamily_permitted per municipality from the raw feature table.
 
     A district contributes to the "by-right" numerator if mulfam2 == 1.
     The denominator is the total area of all districts in the municipality.
@@ -169,7 +169,7 @@ def _compute_pct(df: pd.DataFrame) -> pd.DataFrame:
             f"Zoning Atlas: expected columns ({_MUNI_FIELD}, {_AREA_FIELD}, {_MF_BYRIGHT_FIELD}) "
             f"not found. Actual columns: {list(df.columns)}"
         )
-        return pd.DataFrame(columns=["muni_name", "pct_multifamily_by_right"])
+        return pd.DataFrame(columns=["muni_name", "pct_multifamily_permitted"])
 
     df = df[[_MUNI_FIELD, _AREA_FIELD, _MF_BYRIGHT_FIELD]].copy()
     df[_AREA_FIELD] = pd.to_numeric(df[_AREA_FIELD], errors="coerce").fillna(0)
@@ -185,14 +185,14 @@ def _compute_pct(df: pd.DataFrame) -> pd.DataFrame:
     )
 
     summary = pd.DataFrame({"total_area": total_area, "mf_area": mf_byright}).fillna(0)
-    summary["pct_multifamily_by_right"] = (
+    summary["pct_multifamily_permitted"] = (
         (summary["mf_area"] / summary["total_area"].replace(0, float("nan"))) * 100
     ).round(1)
 
-    result = summary[["pct_multifamily_by_right"]].reset_index()
+    result = summary[["pct_multifamily_permitted"]].reset_index()
     result = result.rename(columns={_MUNI_FIELD: "muni_name"})
 
-    by_right_count = (result["pct_multifamily_by_right"] > 0).sum()
+    by_right_count = (result["pct_multifamily_permitted"] > 0).sum()
     logger.info(
         f"  Zoning Atlas: {len(result)} municipalities with data | "
         f"{by_right_count} have any by-right multifamily area"

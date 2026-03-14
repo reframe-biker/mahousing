@@ -17,7 +17,7 @@ REQUIRED OUTPUT CONTRACT:
   get_zoning_data() must return a DataFrame with these columns:
 
     fips                     (str)          10-digit county subdivision GEOID
-    pct_multifamily_by_right (float | None) % of land (or equivalent metric)
+    pct_multifamily_permitted (float | None) % of land (or equivalent metric)
                                             permitting multifamily by right;
                                             None = insufficient data for that town
     low_sample               (bool)         True if data coverage is thin enough
@@ -43,7 +43,7 @@ def get_zoning_data() -> pd.DataFrame:
     NOT YET IMPLEMENTED. Raises NotImplementedError.
 
     When implemented, returns:
-        DataFrame with columns: fips (str), pct_multifamily_by_right (float|None),
+        DataFrame with columns: fips (str), pct_multifamily_permitted (float|None),
         low_sample (bool). See module docstring for full contract.
     """
     raise NotImplementedError(

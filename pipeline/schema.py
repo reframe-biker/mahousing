@@ -45,11 +45,12 @@ class Metrics(TypedDict):
     All values are floats (or None if not yet collected). These are the
     direct outputs of the ingest modules before scoring is applied.
     """
-    pct_multifamily_by_right: float | None
+    pct_multifamily_permitted: float | None
     """
-    Percentage of the municipality's land area where multifamily housing
-    is allowed by right (no special permit required). Sourced from the
-    MA Zoning Atlas (MAPC). Range: 0.0–100.0.
+    Share of permitted housing units that are multifamily (5+ units),
+    averaged over the most recent 3 years of Census BPS data.
+    Used as a revealed-preference proxy for zoning permissiveness.
+    Range: 0.0–100.0.
     """
 
     median_home_value: float | None
