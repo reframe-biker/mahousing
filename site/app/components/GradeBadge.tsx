@@ -1,19 +1,31 @@
 import type { Grade } from "@/src/types/town";
 
+// Pre-computed: color hex + RGB components for opacity calculations
 const GRADE_CONFIG: Record<
   NonNullable<Grade> | "null",
-  { bg: string; text: string; label: string }
+  { color: string; rgb: string; label: string }
 > = {
-  A: { bg: "#2d6a4f", text: "#ffffff", label: "Excellent" },
-  B: { bg: "#74c69d", text: "#1a3d2b", label: "Good" },
-  C: { bg: "#ffd166", text: "#7a5c00", label: "Below average" },
-  D: { bg: "#ef9a00", text: "#ffffff", label: "Poor" },
-  F: { bg: "#e63946", text: "#ffffff", label: "Failing" },
-  null: { bg: "#e8e8e8", text: "#888888", label: "No data yet" },
+  A:    { color: "#2d6a4f", rgb: "45,106,79",    label: "Excellent" },
+  B:    { color: "#52b788", rgb: "82,183,136",   label: "Good" },
+  C:    { color: "#e9c46a", rgb: "233,196,106",  label: "Below average" },
+  D:    { color: "#e07b39", rgb: "224,123,57",   label: "Poor" },
+  F:    { color: "#c1121f", rgb: "193,18,31",    label: "Failing" },
+  null: { color: "#9a9088", rgb: "154,144,136",  label: "No data yet" },
 };
 
 export function gradeConfig(grade: Grade) {
-  return GRADE_CONFIG[grade ?? "null"];
+  const { color, rgb, label } = GRADE_CONFIG[grade ?? "null"];
+  return {
+    color,
+    label,
+    // Hero section (town page): card bg at 15% opacity, text = grade color
+    bg: `rgba(${rgb},0.15)`,
+    text: color,
+    // Badge-specific
+    badgeBg: `rgba(${rgb},0.20)`,
+    badgeBorder: `rgba(${rgb},0.40)`,
+    badgeShadow: `rgba(${rgb},0.15)`,
+  };
 }
 
 interface GradeBadgeProps {
@@ -30,22 +42,28 @@ export default function GradeBadge({
   const config = gradeConfig(grade);
 
   const sizeClasses = {
-    sm: "w-8 h-8 text-sm font-bold",
-    md: "w-12 h-12 text-xl font-bold",
-    lg: "w-20 h-20 text-4xl font-bold",
+    sm: "w-8 h-8 text-sm",
+    md: "w-12 h-12 text-xl",
+    lg: "w-20 h-20 text-4xl",
   };
 
   return (
     <div className="flex items-center gap-2">
       <div
-        className={`${sizeClasses[size]} rounded flex items-center justify-center flex-shrink-0`}
-        style={{ backgroundColor: config.bg, color: config.text }}
+        className={`${sizeClasses[size]} rounded flex items-center justify-center flex-shrink-0 font-mono font-bold`}
+        style={{
+          backgroundColor: config.badgeBg,
+          border: `1px solid ${config.badgeBorder}`,
+          color: config.color,
+        }}
         aria-label={`Grade ${grade ?? "not available"}`}
       >
         {grade ?? "–"}
       </div>
       {showLabel && (
-        <span className="text-gray-600 text-sm">{config.label}</span>
+        <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
+          {config.label}
+        </span>
       )}
     </div>
   );

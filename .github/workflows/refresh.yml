@@ -22,18 +22,16 @@ jobs:
       - name: Install pipeline dependencies
         run: pip install -r pipeline/requirements.txt
 
-      # TODO: Uncomment and configure this step once pipeline/build.py is implemented (Phase 1)
-      # - name: Run pipeline
-      #   env:
-      #     CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
-      #     ZILLOW_DATA_URL: ${{ secrets.ZILLOW_DATA_URL }}
-      #   run: python -m pipeline.build
+      - name: Run pipeline
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+          ZILLOW_DATA_URL: ${{ secrets.ZILLOW_DATA_URL }}
+        run: python pipeline/build.py
 
-      # TODO: Uncomment once the pipeline produces real output files
-      # - name: Commit updated data
-      #   run: |
-      #     git config user.name "github-actions[bot]"
-      #     git config user.email "github-actions[bot]@users.noreply.github.com"
-      #     git add data/
-      #     git diff --cached --quiet || git commit -m "chore: refresh data [skip ci]"
-      #     git push
+      - name: Commit updated data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: weekly data refresh $(date -u +%Y-%m-%d)"
+          git push

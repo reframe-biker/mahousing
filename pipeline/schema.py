@@ -18,7 +18,7 @@ from typing import Literal, TypedDict
 Grade = Literal["A", "B", "C", "D", "F"] | None
 
 # Valid MBTA Communities Act compliance statuses.
-MbtaStatus = Literal["compliant", "non-compliant", "exempt"] | None
+MbtaStatus = Literal["compliant", "interim", "non-compliant", "pending", "exempt"] | None
 
 
 class Grades(TypedDict):
@@ -135,9 +135,23 @@ class TownRecord(TypedDict):
     """
     MBTA Communities Act compliance status. One of:
       'compliant'     — municipality has adopted a compliant zoning district
+      'interim'       — municipality has adopted an interim action plan
       'non-compliant' — municipality is subject to the Act and has not complied
+      'pending'       — municipality has submitted a plan under review
       'exempt'        — municipality is not subject to the Act
       None            — status not yet determined
+    """
+
+    mbta_deadline: str | None
+    """
+    Deadline date for MBTA Communities Act compliance (ISO date string YYYY-MM-DD),
+    or None if not subject to the Act or no deadline published.
+    """
+
+    mbta_action_date: str | None
+    """
+    Date of the municipality's most recent action toward compliance
+    (ISO date string YYYY-MM-DD), or None if no action taken or not applicable.
     """
 
     updated_at: str

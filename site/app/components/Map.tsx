@@ -8,12 +8,13 @@ import type { TownRecord, Grade } from "@/src/types/town";
 // Grade color palette (matches gradeConfig in GradeBadge)
 const GRADE_COLOR: Record<NonNullable<Grade> | "null", string> = {
   A: "#2d6a4f",
-  B: "#74c69d",
-  C: "#ffd166",
-  D: "#ef9a00",
-  F: "#e63946",
-  null: "#d0d0d0",
+  B: "#52b788",
+  C: "#e9c46a",
+  D: "#e07b39",
+  F: "#c1121f",
+  null: "#d0cdc8",
 };
+
 
 // Local static file committed to site/public/
 const GEOJSON_URL = "/ma-towns.geojson";
@@ -68,18 +69,17 @@ export default function Map({ towns }: Props) {
       });
       leafletMapRef.current = map;
 
-      // Base tile layer (CartoDB Positron — clean, low-contrast)
+      // Light CartoDB base (geography, no labels) — clean gray geographic context
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
+        "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
         {
-          attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+          attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
           subdomains: "abcd",
           maxZoom: 19,
         }
       ).addTo(map);
 
-      // Tooltip
+      // Tooltip — styles applied via .ma-tooltip in globals.css
       const tooltip = L.tooltip({
         permanent: false,
         direction: "top",
@@ -108,10 +108,10 @@ export default function Map({ towns }: Props) {
         const color = GRADE_COLOR[grade ?? "null"];
         return {
           fillColor: color,
-          fillOpacity: 0.75,
-          color: "#ffffff",
+          fillOpacity: 0.78,
+          color: "#666660",
           weight: 0.8,
-          opacity: 1,
+          opacity: 0.6,
         };
       }
 
@@ -131,18 +131,29 @@ export default function Map({ towns }: Props) {
         onEachFeature(feature, layer) {
           const props = (feature.properties ?? {}) as Record<string, unknown>;
           const town = getTownByProps(props);
-          const townName = town?.name ?? (props["census_name"] as string | undefined) ?? "Unknown";
+          const townName =
+            town?.name ??
+            (props["census_name"] as string | undefined) ??
+            "Unknown";
           const grade = town?.grades?.composite ?? null;
+          const gradeColor = GRADE_COLOR[grade ?? "null"];
           const fips = town?.fips ?? null;
 
           layer.on({
             mouseover(e) {
               const target = e.target as import("leaflet").Path;
-              target.setStyle({ fillOpacity: 0.95, weight: 2, color: "#333" });
+              target.setStyle({
+                fillOpacity: 0.92,
+                weight: 1.5,
+                color: "#333330",
+                opacity: 1,
+              });
               tooltip
                 .setLatLng(e.latlng)
                 .setContent(
-                  `<strong>${townName}</strong><br/>Composite: <strong>${grade ?? "No data"}</strong>`
+                  `<span style="font-weight:600;color:#1a1816">${townName}</span>` +
+                  `<br/><span style="color:#5a5450;font-size:12px">Grade </span>` +
+                  `<span style="font-family:'DM Mono',monospace;font-weight:500;color:${gradeColor}">${grade ?? "–"}</span>`
                 )
                 .addTo(map);
             },
@@ -160,10 +171,11 @@ export default function Map({ towns }: Props) {
       geoLayer.addTo(map);
       layerRef.current = geoLayer;
 
-      // Fit map to MA bounds
+      // Fit map to MA bounds — maxZoom: 8 ensures surrounding states remain visible
       try {
         const bounds = geoLayer.getBounds();
-        if (bounds.isValid()) map.fitBounds(bounds, { padding: [10, 10] });
+        if (bounds.isValid())
+          map.fitBounds(bounds, { padding: [40, 40], maxZoom: 8 });
       } catch {
         // keep default center/zoom
       }
@@ -187,11 +199,15 @@ export default function Map({ towns }: Props) {
       };
       const props = (gl.feature?.properties ?? {}) as Record<string, unknown>;
       const geoid = getGeoid(props);
-      const grade = (geoid ? townIndex.current[geoid] : undefined)?.grades?.composite ?? null;
+      const grade =
+        (geoid ? townIndex.current[geoid] : undefined)?.grades?.composite ??
+        null;
 
-      const visible =
-        filterGrade === "all" || grade === filterGrade;
-      gl.setStyle({ fillOpacity: visible ? 0.75 : 0.05, opacity: visible ? 1 : 0.2 });
+      const visible = filterGrade === "all" || grade === filterGrade;
+      gl.setStyle({
+        fillOpacity: visible ? 0.78 : 0.05,
+        opacity: visible ? 1 : 0.15,
+      });
     });
   }, [filterGrade]);
 
@@ -202,7 +218,9 @@ export default function Map({ towns }: Props) {
 
     const q = query.toLowerCase().trim();
     // Use an array so TypeScript doesn't narrow the closure assignment to never
-    const matchedLayers: (import("leaflet").Layer & { feature?: GeoJSON.Feature })[] = [];
+    const matchedLayers: (import("leaflet").Layer & {
+      feature?: GeoJSON.Feature;
+    })[] = [];
 
     layerRef.current.eachLayer((l) => {
       if (matchedLayers.length > 0) return;
@@ -210,7 +228,10 @@ export default function Map({ towns }: Props) {
       const props = (gl.feature?.properties ?? {}) as Record<string, unknown>;
       const geoid = getGeoid(props);
       const town = geoid ? townIndex.current[geoid] : undefined;
-      const displayName = town?.name ?? (props["census_name"] as string | undefined) ?? "";
+      const displayName =
+        town?.name ??
+        (props["census_name"] as string | undefined) ??
+        "";
       if (displayName.toLowerCase().includes(q)) {
         matchedLayers.push(gl);
       }
@@ -219,20 +240,27 @@ export default function Map({ towns }: Props) {
     const matchedLayer = matchedLayers[0];
     if (matchedLayer && leafletMapRef.current) {
       try {
-        const asGeo = matchedLayer as unknown as { getBounds: () => import("leaflet").LatLngBounds };
+        const asGeo = matchedLayer as unknown as {
+          getBounds: () => import("leaflet").LatLngBounds;
+        };
         const bounds = asGeo.getBounds();
         if (bounds?.isValid()) {
-          leafletMapRef.current.flyToBounds(bounds, { padding: [40, 40], duration: 0.8 });
+          leafletMapRef.current.flyToBounds(bounds, {
+            padding: [40, 40],
+            duration: 0.8,
+          });
         }
       } catch {
         // Polygon may not have getBounds
       }
       (matchedLayer as unknown as import("leaflet").Path).setStyle({
-        color: "#1d3461",
-        weight: 3,
+        color: "#1a1816",
+        weight: 2.5,
       });
       setTimeout(() => {
-        layerRef.current?.resetStyle(matchedLayer as unknown as import("leaflet").Path);
+        layerRef.current?.resetStyle(
+          matchedLayer as unknown as import("leaflet").Path
+        );
       }, 2500);
     }
   }
@@ -247,16 +275,30 @@ export default function Map({ towns }: Props) {
     { value: null, label: "No data" },
   ];
 
+  const controlStyle: React.CSSProperties = {
+    backgroundColor: "#ffffff",
+    border: "1px solid #e0ddd8",
+    color: "#1a1816",
+    fontSize: "14px",
+    borderRadius: "6px",
+    boxShadow: "0 1px 4px rgba(0,0,0,0.12)",
+    outline: "none",
+  };
+
   return (
     <div className="relative w-full h-full">
-      {/* Controls bar */}
-      <div className="absolute top-3 left-3 right-3 z-[1000] flex flex-wrap gap-2 pointer-events-none">
+      {/* Controls — positioned to the right of Leaflet zoom buttons (left: 60px) */}
+      <div
+        className="absolute flex flex-wrap gap-2 pointer-events-none"
+        style={{ top: "12px", left: "60px", zIndex: 1001 }}
+      >
         <input
           type="search"
           placeholder="Search municipality…"
           value={search}
           onChange={(e) => handleSearch(e.target.value)}
-          className="pointer-events-auto px-3 py-2 text-sm bg-white border border-gray-300 rounded shadow-sm w-52 focus:outline-none focus:ring-1 focus:ring-gray-400"
+          className="pointer-events-auto px-3 py-2 w-52"
+          style={controlStyle}
           aria-label="Search municipality"
         />
         <select
@@ -265,7 +307,8 @@ export default function Map({ towns }: Props) {
             const v = e.target.value;
             setFilterGrade(v === "null" ? null : (v as Grade | "all"));
           }}
-          className="pointer-events-auto px-3 py-2 text-sm bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400"
+          className="pointer-events-auto px-3 py-2"
+          style={controlStyle}
           aria-label="Filter by grade"
         >
           {gradeOptions.map((o) => (
@@ -281,15 +324,31 @@ export default function Map({ towns }: Props) {
 
       {/* Loading overlay */}
       {loading && !geoError && (
-        <div className="absolute inset-0 z-[999] flex items-center justify-center bg-gray-50">
-          <p className="text-gray-500 text-sm">Loading map…</p>
+        <div
+          className="absolute inset-0 z-[999] flex items-center justify-center"
+          style={{ backgroundColor: "var(--bg-primary)" }}
+        >
+          <p
+            className="text-sm font-mono"
+            style={{ color: "var(--text-muted)" }}
+          >
+            Loading map…
+          </p>
         </div>
       )}
 
       {/* Error overlay */}
       {geoError && (
-        <div className="absolute inset-0 z-[999] flex items-center justify-center bg-gray-50">
-          <p className="text-red-600 text-sm max-w-xs text-center">{geoError}</p>
+        <div
+          className="absolute inset-0 z-[999] flex items-center justify-center"
+          style={{ backgroundColor: "var(--bg-primary)" }}
+        >
+          <p
+            className="text-sm max-w-xs text-center"
+            style={{ color: "#e63946" }}
+          >
+            {geoError}
+          </p>
         </div>
       )}
 
@@ -297,8 +356,18 @@ export default function Map({ towns }: Props) {
       <div ref={mapRef} className="w-full h-full" />
 
       {/* Legend */}
-      <div className="absolute bottom-6 right-3 z-[1000] bg-white border border-gray-200 rounded shadow-sm p-3 text-xs">
-        <p className="font-semibold text-gray-700 mb-2 uppercase tracking-wide text-[10px]">
+      <div
+        className="absolute bottom-6 right-3 z-[1000] rounded p-3 text-xs"
+        style={{
+          backgroundColor: "#ffffff",
+          border: "1px solid #e0ddd8",
+          boxShadow: "0 1px 6px rgba(0,0,0,0.10)",
+        }}
+      >
+        <p
+          className="mb-2 uppercase tracking-wide font-mono"
+          style={{ fontSize: "10px", color: "#9a9088" }}
+        >
           Composite grade
         </p>
         {(
@@ -311,13 +380,19 @@ export default function Map({ towns }: Props) {
             [null, "No data"],
           ] as Array<[Grade, string]>
         ).map(([grade, label]) => (
-          <div key={String(grade)} className="flex items-center gap-2 mb-1 last:mb-0">
+          <div
+            key={String(grade)}
+            className="flex items-center gap-2 mb-1 last:mb-0"
+          >
             <span
-              className="inline-block w-4 h-4 rounded-sm flex-shrink-0 border border-white"
-              style={{ backgroundColor: GRADE_COLOR[grade ?? "null"] }}
+              className="inline-block w-3.5 h-3.5 rounded-sm flex-shrink-0"
+              style={{
+                backgroundColor: GRADE_COLOR[grade ?? "null"],
+                border: "1px solid rgba(0,0,0,0.15)",
+              }}
             />
-            <span className="text-gray-700">
-              {grade} — {label}
+            <span style={{ color: "#5a5450" }}>
+              {grade ?? "–"} — {label}
             </span>
           </div>
         ))}

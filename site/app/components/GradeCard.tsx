@@ -22,39 +22,77 @@ export default function GradeCard({
 
   return (
     <div
-      className={`rounded-lg border flex flex-col gap-0 overflow-hidden ${
+      className="rounded-lg flex flex-col gap-0 overflow-hidden"
+      style={
         isPending
-          ? "bg-gray-50 border-gray-200 opacity-75"
-          : "bg-white border-gray-200"
-      }`}
+          ? {
+              backgroundColor: "var(--bg-secondary)",
+              border: "1px solid var(--border-subtle)",
+              opacity: 0.8,
+            }
+          : {
+              backgroundColor: "var(--bg-card)",
+              border: "1px solid var(--border)",
+            }
+      }
     >
       <div className="p-4 flex flex-col gap-3">
         <div className="flex items-start justify-between gap-2">
           <div>
-            <h3 className="font-semibold text-gray-900 text-sm uppercase tracking-wide">
+            <h3
+              className="uppercase tracking-wide"
+              style={{
+                fontSize: "11px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                color: isPending ? "var(--text-muted)" : "var(--text-secondary)",
+              }}
+            >
               {dimension}
             </h3>
             {phase && (
-              <span className="text-xs text-gray-400 font-medium">{phase}</span>
+              <span
+                className="font-mono"
+                style={{ fontSize: "11px", color: "var(--text-muted)" }}
+              >
+                {phase}
+              </span>
             )}
           </div>
           <GradeBadge grade={grade} size="md" />
         </div>
 
         {keyMetric && (
-          <p className="text-sm font-medium text-gray-800">{keyMetric}</p>
+          <p
+            className="text-sm font-mono"
+            style={{ color: "var(--text-primary)" }}
+          >
+            {keyMetric}
+          </p>
         )}
 
-        <p className="text-xs text-gray-500 leading-relaxed">{explanation}</p>
+        <p
+          className="text-xs leading-relaxed"
+          style={{ color: "var(--text-muted)" }}
+        >
+          {explanation}
+        </p>
       </div>
 
       {note && (
-        <div className="flex items-start gap-2 px-4 py-2.5 bg-amber-50 border-t border-amber-200">
+        <div
+          className="flex items-start gap-2 px-4 py-2.5"
+          style={{
+            backgroundColor: "#fef3c7",
+            borderTop: "1px solid #d97706",
+          }}
+        >
           <svg
-            className="w-3.5 h-3.5 text-amber-600 flex-shrink-0 mt-0.5"
+            className="w-3.5 h-3.5 flex-shrink-0 mt-0.5"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
+            style={{ color: "#92400e" }}
           >
             <path
               fillRule="evenodd"
@@ -62,7 +100,9 @@ export default function GradeCard({
               clipRule="evenodd"
             />
           </svg>
-          <p className="text-xs text-amber-800 leading-relaxed">{note}</p>
+          <p className="text-xs leading-relaxed" style={{ color: "#92400e" }}>
+            {note}
+          </p>
         </div>
       )}
     </div>

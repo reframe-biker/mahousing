@@ -51,13 +51,32 @@ The zoning grade currently uses permit mix as a revealed-preference proxy. This 
 
 ### 2. MBTA Compliance
 
-**Data source:** Massachusetts Executive Office of Housing and Livable Communities (EOHLC) compliance tracking; Attorney General enforcement records.
+**Data source:** MA Executive Office of Housing and Livable Communities (EOHLC) via the DHCD compliance status page.
 
-**What the grade measures:** Whether a municipality subject to the MBTA Communities Act (M.G.L. c. 40A, § 3A) has adopted a compliant zoning district. The Act requires 177 communities to zone for multifamily housing by right near MBTA stations. Municipalities that are not subject to the Act are marked "exempt" and excluded from this grade.
+**Source URL:** [https://www.mass.gov/info-details/multi-family-zoning-requirement-for-mbta-communities](https://www.mass.gov/info-details/multi-family-zoning-requirement-for-mbta-communities)
 
-**Key field:** `mbta_status` — one of `compliant`, `non-compliant`, or `exempt`.
+**Update frequency:** Weekly, via the GitHub Actions pipeline. On each run, the pipeline fetches the live EOHLC compliance page and writes updated status to each town's JSON record. If the live page is unavailable (e.g., during local development where Cloudflare may block automated requests), the pipeline falls back to `data/mbta_status_override.csv`.
 
-**Scoring formula:** TBD. Will be documented here before publication. Because compliance is largely binary (a municipality has either adopted a compliant district or it has not), this grade will reflect both compliance status and the degree of compliance (e.g., whether the adopted district meets minimum density requirements or merely the floor).
+**Fallback:** `data/mbta_status_override.csv` — a manually maintained CSV used when the live page cannot be reached. This file should be updated from the EOHLC page whenever the live scrape is blocked for an extended period.
+
+**Current status as of January 2026:** 133 municipalities compliant, 7 conditional compliance, 12 non-compliant (Attorney General Campbell filed suit against non-compliant towns on January 29, 2026), remainder pending review or not yet subject.
+
+**What the grade measures:** Whether a municipality subject to the MBTA Communities Act (M.G.L. c. 40A, § 3A) has adopted a compliant zoning district. The Act requires 177 communities to zone for multifamily housing by right near MBTA stations. Municipalities that are not subject to the Act are marked "exempt" and excluded from this grade dimension — they are not penalized.
+
+**Key field:** `mbta_status` — one of `compliant`, `interim`, `non-compliant`, `pending`, or `exempt`.
+
+**Scoring formula:**
+
+| Grade | Status |
+|-------|--------|
+| A | `compliant` — municipality has adopted a compliant zoning district |
+| B | `interim` — municipality has adopted an interim action plan |
+| C | `pending` — municipality has submitted a plan under review |
+| F | `non-compliant` — municipality has missed deadlines; may lose state grant funding |
+| N/A | `exempt` — municipality is not subject to the Act (excluded from composite) |
+| N/A | `null` — status not yet determined |
+
+Exempt municipalities receive a null MBTA grade and are excluded from the composite calculation. They are not penalized for being outside the Act's scope.
 
 ---
 

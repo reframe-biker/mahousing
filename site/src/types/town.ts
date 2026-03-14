@@ -13,7 +13,13 @@
 export type Grade = "A" | "B" | "C" | "D" | "F" | null;
 
 /** MBTA Communities Act compliance status. */
-export type MbtaStatus = "compliant" | "non-compliant" | "exempt" | null;
+export type MbtaStatus =
+  | "compliant"
+  | "interim"
+  | "non-compliant"
+  | "pending"
+  | "exempt"
+  | null;
 
 export interface Grades {
   /** Zoning Permissiveness — share of land area permitting multifamily by right (MA Zoning Atlas) */
@@ -110,11 +116,25 @@ export interface TownRecord {
   /**
    * MBTA Communities Act compliance status:
    *   "compliant"     — municipality has adopted a compliant zoning district
+   *   "interim"       — municipality has adopted an interim action plan
    *   "non-compliant" — municipality is subject to the Act and has not complied
+   *   "pending"       — municipality has submitted a plan under review
    *   "exempt"        — municipality is not subject to the Act
    *   null            — status not yet determined
    */
   mbta_status: MbtaStatus;
+
+  /**
+   * Deadline date for MBTA Communities Act compliance (ISO date string YYYY-MM-DD),
+   * or null if not subject to the Act or no deadline published.
+   */
+  mbta_deadline: string | null;
+
+  /**
+   * Date of the municipality's most recent action toward compliance
+   * (ISO date string YYYY-MM-DD), or null if no action taken or not applicable.
+   */
+  mbta_action_date: string | null;
 
   /** ISO 8601 date string of when this record was last updated by the pipeline (e.g., "2025-03-13"). */
   updated_at: string;
@@ -124,7 +144,7 @@ export interface TownRecord {
 // Metrics metadata — mirrors pipeline/metrics.py and data/metrics.json
 // ---------------------------------------------------------------------------
 
-export type MetricUnit = "percent" | "dollars" | "rate";
+export type MetricUnit = "percent" | "dollars" | "rate" | "status";
 
 /**
  * Display metadata for a single metric field.

@@ -28,11 +28,19 @@ Grading rubrics for Phase 1 dimensions:
     D  0.5–1.5
     F  < 0.5
 
+  mbta           (mbta_status — DHCD compliance status string)
+    A  "compliant"
+    B  "interim"
+    C  "pending"
+    F  "non-compliant"
+    null  "exempt" or None (excluded from composite — not penalized)
+
   composite      Numeric average of all non-null dimension grades.
                  Null dimensions are excluded — not treated as F.
+                 Exempt MBTA towns (null mbta grade) are excluded from composite.
                  A=4, B=3, C=2, D=1, F=0. Rounded to nearest integer.
 
-Phase 2/3 dimensions (mbta, votes, rep) are not scored here; they return None.
+Phase 4 dimensions (votes, rep) are not scored here; they return None.
 """
 
 from __future__ import annotations
@@ -46,7 +54,7 @@ _GRADE_TO_NUM: dict[str, float] = {"A": 4.0, "B": 3.0, "C": 2.0, "D": 1.0, "F": 
 _NUM_TO_GRADE: dict[int, str] = {4: "A", 3: "B", 2: "C", 1: "D", 0: "F"}
 
 
-def score_town(metrics: dict) -> dict:
+def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
     """
     Compute letter grades for a single municipality given its raw metrics.
 
@@ -54,18 +62,22 @@ def score_town(metrics: dict) -> dict:
         metrics: Dict matching pipeline.schema.Metrics. All values may be None.
                  Expected keys: pct_multifamily_permitted, median_home_value,
                  rent_burden_pct, permits_per_1000_residents.
+        mbta_status: MBTA Communities Act compliance status string, or None.
+                     "compliant" | "interim" | "non-compliant" | "pending" |
+                     "exempt" | None.
 
     Returns:
         Dict matching pipeline.schema.Grades. Keys: zoning, mbta, production,
         affordability, votes, rep, composite.
         Any dimension without data returns None (not "F").
+        Exempt MBTA towns get None for mbta grade (excluded from composite).
     """
     zoning = _grade_zoning(metrics.get("pct_multifamily_permitted"))
     affordability = _grade_affordability(metrics.get("rent_burden_pct"))
     production = _grade_production(metrics.get("permits_per_1000_residents"))
+    mbta = _grade_mbta(mbta_status)
 
-    # mbta, votes, rep: not implemented in Phase 1
-    mbta = None
+    # votes, rep: not implemented until Phase 4
     votes = None
     rep = None
 
@@ -80,6 +92,31 @@ def score_town(metrics: dict) -> dict:
         "rep": rep,
         "composite": composite,
     }
+
+
+def _grade_mbta(status: str | None) -> str | None:
+    """
+    Grade MBTA Communities Act compliance.
+
+    compliant     → A
+    interim       → B
+    pending       → C
+    non-compliant → F
+    exempt        → None (excluded from composite — not penalized)
+    None          → None (data not yet available)
+    """
+    if status is None or status == "exempt":
+        return None
+    if status == "compliant":
+        return "A"
+    if status == "interim":
+        return "B"
+    if status == "pending":
+        return "C"
+    if status == "non-compliant":
+        return "F"
+    logger.warning(f"Unknown MBTA status '{status}' — returning None")
+    return None
 
 
 def _grade_zoning(pct: float | None) -> str | None:

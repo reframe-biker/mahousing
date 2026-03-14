@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import type { TownRecord, Grade, MetricsMeta } from "@/src/types/town";
 import GradeBadge, { gradeConfig } from "@/app/components/GradeBadge";
 import GradeCard from "@/app/components/GradeCard";
+import MbtaGradeCard from "@/app/components/MbtaGradeCard";
 import MetricsTable from "@/app/components/MetricsTable";
 import ShareButton from "@/app/components/ShareButton";
 
@@ -111,13 +112,14 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
       "Share of permitted housing units that are multifamily (5+ units), averaged over the most recent 3 years. Used as a revealed-preference measure of zoning permissiveness — towns that permit more multifamily in practice tend to have more permissive zoning codes. Low-permit towns (fewer than 10 total permits over 3 years) show N/A. This metric will be replaced with National Zoning Atlas data when available.",
     phase: null,
   },
+  // MBTA card is rendered separately via MbtaGradeCard — placeholder kept for
+  // iteration order but skipped in the render loop below.
   {
     dimension: "MBTA Communities Act",
     gradeKey: "mbta",
     getMetric: () => null,
-    explanation:
-      "Compliance with the MBTA Communities Act, which requires 177 municipalities near transit to adopt zoning for multifamily housing. Non-compliance risks state funding eligibility.",
-    phase: "Phase 3 — coming soon",
+    explanation: "",
+    phase: null,
   },
   {
     dimension: "Housing production",
@@ -198,6 +200,19 @@ function gradeLabel(grade: Grade): string {
 }
 
 // ---------------------------------------------------------------------------
+// Section heading style — data journalism label
+// ---------------------------------------------------------------------------
+
+const sectionHeadingStyle: React.CSSProperties = {
+  fontSize: "11px",
+  fontWeight: 600,
+  textTransform: "uppercase",
+  letterSpacing: "0.08em",
+  color: "var(--text-secondary)",
+  marginBottom: "16px",
+};
+
+// ---------------------------------------------------------------------------
 // Page component
 // ---------------------------------------------------------------------------
 
@@ -248,9 +263,10 @@ export default async function TownPage({
         : null;
     comparisons.push({
       label: "Housing production",
-      text: ratio !== null
-        ? `${town.name} issues ${town.metrics.permits_per_1000_residents.toFixed(2)} permits per 1,000 residents — ${fmtRatio(ratio)} the MA median of ${medians.permits_per_1000_residents.toFixed(2)}.`
-        : `${town.name} issues ${town.metrics.permits_per_1000_residents.toFixed(2)} permits per 1,000 residents.`,
+      text:
+        ratio !== null
+          ? `${town.name} issues ${town.metrics.permits_per_1000_residents.toFixed(2)} permits per 1,000 residents — ${fmtRatio(ratio)} the MA median of ${medians.permits_per_1000_residents.toFixed(2)}.`
+          : `${town.name} issues ${town.metrics.permits_per_1000_residents.toFixed(2)} permits per 1,000 residents.`,
     });
   }
   if (
@@ -267,12 +283,16 @@ export default async function TownPage({
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-4 py-8 space-y-10">
+    <main
+      className="max-w-3xl mx-auto px-4 py-8 space-y-10"
+      style={{ backgroundColor: "var(--bg-primary)" }}
+    >
       {/* Back link */}
       <div>
         <a
           href="/"
-          className="text-sm text-gray-500 hover:text-gray-900 inline-flex items-center gap-1 transition-colors"
+          className="text-sm inline-flex items-center gap-1 transition-colors"
+          style={{ color: "var(--accent)" }}
         >
           <svg
             className="w-4 h-4"
@@ -294,8 +314,13 @@ export default async function TownPage({
       {/* Header */}
       <header className="space-y-4">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">{town.name}</h1>
-          <p className="text-gray-500 mt-1">
+          <h1
+            className="text-3xl"
+            style={{ fontWeight: 600, color: "var(--text-primary)" }}
+          >
+            {town.name}
+          </h1>
+          <p className="mt-1" style={{ color: "var(--text-secondary)" }}>
             {town.county}
             {town.population != null && (
               <> &middot; Pop. {town.population.toLocaleString()}</>
@@ -309,8 +334,8 @@ export default async function TownPage({
           style={{ backgroundColor: config.bg }}
         >
           <span
-            className="text-6xl font-bold leading-none"
-            style={{ color: config.text }}
+            className="font-mono leading-none"
+            style={{ fontSize: "72px", fontWeight: 700, color: config.text }}
           >
             {compositeGrade ?? "–"}
           </span>
@@ -332,18 +357,33 @@ export default async function TownPage({
           </div>
         </div>
 
-        <p className="text-xs text-gray-400">
+        <p
+          className="text-xs font-mono"
+          style={{ color: "var(--text-muted)" }}
+        >
           Data as of {town.updated_at}
         </p>
       </header>
 
       {/* Grade breakdown */}
       <section>
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">
-          Grade breakdown
-        </h2>
+        <h2 style={sectionHeadingStyle}>Grade breakdown</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {GRADE_CARD_CONFIGS.map((cfg) => {
+            // MBTA card uses a dedicated component with richer data
+            if (cfg.gradeKey === "mbta") {
+              return (
+                <MbtaGradeCard
+                  key="mbta"
+                  grade={town.grades.mbta}
+                  mbtaStatus={town.mbta_status}
+                  mbtaDeadline={town.mbta_deadline}
+                  mbtaActionDate={town.mbta_action_date}
+                  description={metricsMeta["mbta_status"]?.description ?? ""}
+                />
+              );
+            }
+
             const grade = town.grades[cfg.gradeKey];
             const keyMetric = cfg.getMetric(town);
             const note =
@@ -367,10 +407,14 @@ export default async function TownPage({
 
       {/* Raw metrics */}
       <section>
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">
-          Raw metrics
-        </h2>
-        <div className="bg-white border border-gray-200 rounded-lg px-5 py-2">
+        <h2 style={sectionHeadingStyle}>Raw metrics</h2>
+        <div
+          className="rounded-lg px-2 py-1"
+          style={{
+            backgroundColor: "var(--bg-card)",
+            border: "1px solid var(--border)",
+          }}
+        >
           <MetricsTable metrics={town.metrics} metricsMeta={metricsMeta} />
         </div>
       </section>
@@ -378,14 +422,20 @@ export default async function TownPage({
       {/* Context comparisons */}
       {comparisons.length > 0 && (
         <section>
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">
-            Statewide context
-          </h2>
+          <h2 style={sectionHeadingStyle}>Statewide context</h2>
           <ul className="space-y-3">
             {comparisons.map((c) => (
               <li key={c.label} className="flex gap-3">
-                <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gray-400 mt-2" />
-                <p className="text-sm text-gray-700 leading-relaxed">{c.text}</p>
+                <span
+                  className="flex-shrink-0 w-1.5 h-1.5 rounded-full mt-2"
+                  style={{ backgroundColor: "var(--text-muted)" }}
+                />
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: "var(--text-secondary)" }}
+                >
+                  {c.text}
+                </p>
               </li>
             ))}
           </ul>
@@ -394,9 +444,7 @@ export default async function TownPage({
 
       {/* Share */}
       <section>
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">
-          Share this town&apos;s grades
-        </h2>
+        <h2 style={sectionHeadingStyle}>Share this town&apos;s grades</h2>
         <ShareButton
           townName={town.name}
           grade={compositeGrade}
@@ -406,13 +454,20 @@ export default async function TownPage({
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-100 pt-6 text-xs text-gray-400 space-y-1">
+      <footer
+        className="pt-6 text-xs space-y-1"
+        style={{
+          borderTop: "1px solid var(--border)",
+          color: "var(--text-muted)",
+        }}
+      >
         <p>
           <a
             href="https://github.com/reframe-biker/mahousing/blob/main/METHODOLOGY.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-gray-600"
+            className="underline transition-colors"
+            style={{ color: "var(--text-secondary)" }}
           >
             Methodology
           </a>{" "}
@@ -421,7 +476,8 @@ export default async function TownPage({
             href="https://github.com/reframe-biker/mahousing"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-gray-600"
+            className="underline transition-colors"
+            style={{ color: "var(--text-secondary)" }}
           >
             GitHub
           </a>

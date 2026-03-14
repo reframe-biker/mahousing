@@ -1,3 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ─── Design tokens ─────────────────────────────────────────────────────── */
+:root {
+  /* Nav stays dark — used only in layout.tsx nav */
+  --nav-bg: #1c1916;
+  --nav-border: #2e2a26;
+  --nav-text: #f0ede8;
+  --nav-text-muted: #9a9088;
+
+  /* Page and content — light */
+  --bg-primary: #faf9f7;
+  --bg-secondary: #f2f0ec;
+  --bg-tertiary: #e8e5e0;
+  --bg-card: #ffffff;
+  --border: #e0ddd8;
+  --border-subtle: #ece9e4;
+  --text-primary: #1a1816;
+  --text-secondary: #5a5450;
+  --text-muted: #9a9088;
+  --accent: #1a1816;
+  --accent-subtle: #f2f0ec;
+
+  /* Grade colors */
+  --grade-a: #2d6a4f;
+  --grade-b: #52b788;
+  --grade-c: #e9c46a;
+  --grade-d: #e07b39;
+  --grade-f: #c1121f;
+  --grade-null: #d0cdc8;
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Nav utility classes (Server Component — can't use JS hover) ────────── */
+.nav-brand {
+  color: var(--nav-text);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: color 0.15s;
+}
+.nav-brand:hover {
+  color: var(--nav-text);
+}
+.nav-icon-link {
+  color: var(--nav-text-muted);
+  transition: color 0.15s;
+}
+.nav-icon-link:hover {
+  color: var(--nav-text);
+}
+
+/* ─── Leaflet overrides ──────────────────────────────────────────────────── */
+.leaflet-container {
+  background: var(--bg-secondary) !important;
+}
+.leaflet-control-zoom a {
+  background-color: #ffffff !important;
+  color: #1a1816 !important;
+  border-color: #e0ddd8 !important;
+}
+.leaflet-control-zoom a:hover {
+  background-color: #f2f0ec !important;
+}
+.leaflet-bar {
+  border-color: #e0ddd8 !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15) !important;
+}
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: #9a9088 !important;
+  font-size: 10px !important;
+}
+.leaflet-control-attribution a {
+  color: #5a5450 !important;
+}
+
+/* ─── Map tooltip ────────────────────────────────────────────────────────── */
+.leaflet-tooltip.ma-tooltip {
+  background-color: #ffffff;
+  border: 1px solid #e0ddd8;
+  color: #1a1816;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.leaflet-tooltip.ma-tooltip::before {
+  border-top-color: #e0ddd8;
+}

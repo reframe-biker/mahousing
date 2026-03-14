@@ -35,6 +35,7 @@ sys.path.insert(0, str(_REPO_ROOT))
 
 from pipeline.ingest.census_acs import fetch_acs_data
 from pipeline.ingest.building_permits import fetch_permit_data
+from pipeline.ingest.dhcd_mbta import get_mbta_data
 from pipeline.ingest.zillow import fetch_zillow_data
 from pipeline.ingest.zoning import get_zoning_data
 from pipeline.metrics import METRICS
@@ -101,6 +102,9 @@ def main() -> None:
     zoning_df = _safe_fetch("Zoning", get_zoning_data)
     permit_df = _safe_fetch("Building Permits", fetch_permit_data, census_api_key)
     zillow_df = _safe_fetch("Zillow ZHVI", fetch_zillow_data)
+    # MBTA: pass name→FIPS map after ACS load so scraper can match town names
+    _name_to_fips = dict(zip(acs_df["name"], acs_df["geoid"].astype(str)))
+    mbta_df = _safe_fetch("DHCD MBTA", get_mbta_data, _name_to_fips)
 
     # ── Step 2: Join ──────────────────────────────────────────────────────────
 
@@ -165,6 +169,53 @@ def main() -> None:
         logger.info(f"  Zillow ZHVI: {matched}/{len(acs_df)} municipalities matched by name")
     else:
         acs_df["zhvi"] = None
+
+    if not mbta_df.empty:
+        # Join MBTA data: prefer FIPS join, fall back to normalized name join
+        fips_keyed = mbta_df[mbta_df["fips"].notna() & (mbta_df["fips"] != "")]
+        name_keyed = mbta_df[mbta_df["fips"].isna() | (mbta_df["fips"] == "")]
+
+        mbta_cols = ["mbta_status", "mbta_deadline", "mbta_action_date"]
+
+        if not fips_keyed.empty:
+            acs_df = acs_df.merge(
+                fips_keyed[["fips"] + mbta_cols],
+                left_on="geoid",
+                right_on="fips",
+                how="left",
+            ).drop(columns=["fips"], errors="ignore")
+
+        if not name_keyed.empty and "_name" in name_keyed.columns:
+            name_keyed = name_keyed.copy()
+            name_keyed["_name_key"] = name_keyed["_name"].apply(_normalize_name)
+            if "_name_key" not in acs_df.columns:
+                acs_df["_name_key"] = acs_df["name"].apply(_normalize_name)
+            # Only fill nulls from name join (don't overwrite fips-matched rows)
+            for col in mbta_cols:
+                if col not in acs_df.columns:
+                    acs_df[col] = None
+            name_merge = acs_df[["_name_key"]].merge(
+                name_keyed[["_name_key"] + mbta_cols],
+                on="_name_key",
+                how="left",
+            )
+            for col in mbta_cols:
+                acs_df[col] = acs_df[col].combine_first(name_merge[col])
+
+        # Ensure columns exist even if all joins were empty
+        for col in mbta_cols:
+            if col not in acs_df.columns:
+                acs_df[col] = None
+
+        # Towns not found in DHCD data remain null — they are outside the scope
+        # of the MBTA Communities Act. "exempt" is a status reserved for towns
+        # explicitly listed as exempt within the 177 subject communities.
+        matched_mbta = acs_df["mbta_status"].notna().sum()
+        logger.info(f"  DHCD MBTA: {matched_mbta}/{len(acs_df)} municipalities have explicit MBTA status")
+    else:
+        acs_df["mbta_status"] = None
+        acs_df["mbta_deadline"] = None
+        acs_df["mbta_action_date"] = None
 
     # ── Step 3: Derive computed metrics ───────────────────────────────────────
 
@@ -234,6 +285,7 @@ def main() -> None:
     logger.info("")
 
     _print_dimension_summary(town_records)
+    _print_mbta_summary(town_records)
 
     logger.info("")
     logger.info(f"  Output: {STATEWIDE_PATH}")
@@ -248,6 +300,9 @@ def _build_record(row: pd.Series, today: str) -> dict:
     rent_burden = _to_float(row.get("rent_burden_pct"))
     permits_per_1000 = _to_float(row.get("permits_per_1000_residents"))
     home_value = _to_float(row.get("final_home_value"))
+    mbta_status = _to_str(row.get("mbta_status"))
+    mbta_deadline = _to_str(row.get("mbta_deadline"))
+    mbta_action_date = _to_str(row.get("mbta_action_date"))
 
     metrics = {
         "pct_multifamily_permitted": pct_mf,
@@ -256,7 +311,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "permits_per_1000_residents": permits_per_1000,
     }
 
-    grades = score_town(metrics)
+    grades = score_town(metrics, mbta_status=mbta_status)
 
     # data_notes: zoning note from permits_proxy spike detection; others reserved
     data_notes = {
@@ -273,7 +328,9 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "grades": grades,
         "metrics": metrics,
         "data_notes": data_notes,
-        "mbta_status": None,  # Phase 2
+        "mbta_status": mbta_status,
+        "mbta_deadline": mbta_deadline,
+        "mbta_action_date": mbta_action_date,
         "updated_at": today,
     }
 
@@ -299,22 +356,43 @@ def _print_dimension_summary(records: list[dict]) -> None:
         )
 
 
+def _print_mbta_summary(records: list[dict]) -> None:
+    """Print MBTA Communities Act coverage summary."""
+    statuses = [r.get("mbta_status") for r in records]
+    from collections import Counter
+    counts = Counter(s for s in statuses if s is not None)
+    null_count = sum(1 for s in statuses if s is None)
+    subject_statuses = ["compliant", "interim", "pending", "non-compliant"]
+    subject_total = sum(counts.get(s, 0) for s in subject_statuses)
+
+    logger.info("")
+    logger.info("  MBTA Communities Act coverage:")
+    for status in subject_statuses:
+        logger.info(f"    {status:15s}: {counts.get(status, 0):3d}")
+    logger.info(f"    {'exempt':15s}: {counts.get('exempt', 0):3d}")
+    logger.info(f"    {'null (unknown)':15s}: {null_count:3d}")
+    logger.info(f"    {'total subject':15s}: {subject_total:3d} / 177 expected")
+
+
 def _validate_metrics(town_records: list[dict]) -> None:
     """
     Warn if pipeline/metrics.py and the town data schema are out of sync.
 
-    Checks that every key in METRICS exists in a sample town's metrics dict
-    and vice versa. Does not crash the pipeline — warns and continues.
+    Checks that every numeric metric key in METRICS exists in a sample town's
+    metrics dict and vice versa. Non-numeric metrics (unit=="status") are metadata
+    entries for non-numeric fields (e.g. mbta_status) and are excluded.
+    Does not crash the pipeline — warns and continues.
     """
     if not town_records:
         return
 
     sample_metrics = town_records[0].get("metrics", {})
     data_keys = set(sample_metrics.keys())
-    metrics_keys = set(METRICS.keys())
+    # Only validate numeric metrics; "status" metrics live outside the metrics dict
+    numeric_metrics_keys = {k for k, v in METRICS.items() if v.get("unit") != "status"}
 
-    only_in_data = data_keys - metrics_keys
-    only_in_metrics = metrics_keys - data_keys
+    only_in_data = data_keys - numeric_metrics_keys
+    only_in_metrics = numeric_metrics_keys - data_keys
 
     if only_in_data or only_in_metrics:
         logger.warning(
@@ -324,7 +402,7 @@ def _validate_metrics(town_records: list[dict]) -> None:
             "Update metrics.py or the pipeline to resolve."
         )
     else:
-        logger.info(f"  Metrics validation: OK ({len(metrics_keys)} fields in sync)")
+        logger.info(f"  Metrics validation: OK ({len(numeric_metrics_keys)} numeric fields in sync)")
 
 
 def _safe_fetch(label: str, fn, *args):

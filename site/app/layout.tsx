@@ -1,5 +1,20 @@
 import type { Metadata } from "next";
+import { DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "MA Housing Report Card",
@@ -13,22 +28,42 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">
-        <nav className="border-b border-gray-200 bg-white">
+    <html lang="en" className={`${dmSans.variable} ${dmMono.variable}`}>
+      <body className="antialiased">
+        {/* Thin accent bar — NYT-style category color line */}
+        <div
+          aria-hidden="true"
+          style={{ height: "2px", backgroundColor: "#e8e0d4" }}
+        />
+        <nav
+          style={{
+            backgroundColor: "#1c1916",
+            borderBottom: "1px solid #2e2a26",
+          }}
+        >
           <div className="max-w-screen-xl mx-auto px-4 h-12 flex items-center justify-between">
-            <a
-              href="/"
-              className="font-semibold text-gray-900 tracking-tight hover:text-gray-600 transition-colors"
-            >
+            <a href="/" className="nav-brand">
               MA Housing Report Card
             </a>
+            <div className="flex items-center gap-4">
+              <a
+                href="/mbta"
+                style={{
+                  color: "#f0ede8",
+                  fontSize: "14px",
+                  fontWeight: 500,
+                  textDecoration: "none",
+                  opacity: 0.85,
+                }}
+              >
+                MBTA tracker
+              </a>
             <a
               href="https://github.com/reframe-biker/mahousing"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub repository"
-              className="text-gray-500 hover:text-gray-900 transition-colors"
+              className="nav-icon-link"
             >
               <svg
                 className="w-5 h-5"
@@ -43,6 +78,7 @@ export default function RootLayout({
                 />
               </svg>
             </a>
+            </div>
           </div>
         </nav>
         {children}

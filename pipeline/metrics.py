@@ -62,4 +62,16 @@ METRICS: dict[str, dict] = {
         "unit": "rate",
         "higher_is_better": True,
     },
+    "mbta_status": {
+        "label": "MBTA Communities compliance",
+        "description": (
+            "Whether the municipality has complied with the MBTA Communities Act, "
+            "which requires towns served by the MBTA to zone for multifamily housing "
+            "by right near transit. Non-compliant towns lose access to certain state "
+            "grant programs."
+        ),
+        "source": "MA Dept of Housing and Community Development (DHCD)",
+        "unit": "status",
+        "higher_is_better": True,
+    },
 }

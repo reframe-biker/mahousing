@@ -15,7 +15,9 @@
       "Bash(npm run:*)",
       "Bash(curl:*)",
       "Bash(python:*)",
-      "Bash(pip3 install:*)"
+      "Bash(pip3 install:*)",
+      "Bash(kill:*)",
+      "Bash(pip install:*)"
     ]
   }
 }

@@ -17,6 +17,7 @@ export default function ShareButton({
   url,
 }: ShareButtonProps) {
   const [copied, setCopied] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
   const tweetText = `${townName} gets a ${grade ?? "incomplete"} on housing from MA Housing Report Card. ${keyStat} See the full breakdown: ${url}`;
 
@@ -44,7 +45,14 @@ export default function ShareButton({
     <div className="flex flex-col gap-3">
       <button
         onClick={handleCopy}
-        className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded hover:bg-gray-700 transition-colors w-fit"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded w-fit transition-colors"
+        style={{
+          backgroundColor: hovered ? "var(--bg-tertiary)" : "var(--bg-secondary)",
+          border: "1px solid var(--border)",
+          color: "var(--text-primary)",
+        }}
       >
         {copied ? (
           <>
@@ -82,15 +90,29 @@ export default function ShareButton({
           </>
         )}
       </button>
-      <p className="text-xs text-gray-500 font-mono bg-gray-50 p-3 rounded border leading-relaxed break-words">
+      <p
+        className="text-xs font-mono p-3 rounded leading-relaxed break-words"
+        style={{
+          color: "var(--text-secondary)",
+          backgroundColor: "var(--bg-tertiary)",
+          border: "1px solid var(--border)",
+        }}
+      >
         {tweetText}
       </p>
       <div className="flex items-center gap-2">
-        <span className="text-xs text-gray-500">Direct link:</span>
+        <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+          Direct link:
+        </span>
         <input
           readOnly
           value={url}
-          className="text-xs text-gray-700 bg-gray-50 border rounded px-2 py-1 flex-1 min-w-0"
+          className="text-xs font-mono flex-1 min-w-0 px-2 py-1 rounded"
+          style={{
+            backgroundColor: "var(--bg-tertiary)",
+            border: "1px solid var(--border)",
+            color: "var(--text-secondary)",
+          }}
           onFocus={(e) => e.target.select()}
         />
       </div>

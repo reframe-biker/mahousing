@@ -3,3 +3,5 @@ pandas
 geopandas
 census
 python-dotenv
+beautifulsoup4
+thefuzz

@@ -7,8 +7,13 @@ import type { TownRecord } from "@/src/types/town";
 const MapClient = dynamic(() => import("@/app/components/Map"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-gray-50">
-      <p className="text-gray-400 text-sm">Loading map…</p>
+    <div
+      className="w-full h-full flex items-center justify-center"
+      style={{ backgroundColor: "var(--bg-primary)" }}
+    >
+      <p className="text-sm font-mono" style={{ color: "var(--text-muted)" }}>
+        Loading map…
+      </p>
     </div>
   ),
 });
@@ -24,14 +29,23 @@ export default function HomePage() {
   const updatedAt = towns[0]?.updated_at ?? "unknown";
 
   return (
-    <div className="flex flex-col" style={{ height: "calc(100vh - 3rem)" }}>
+    // 3rem nav + 3px accent bar
+    <div className="flex flex-col" style={{ height: "calc(100vh - 3rem - 3px)" }}>
       {/* Page header */}
-      <div className="px-4 py-3 border-b border-gray-100 flex-shrink-0 flex flex-wrap items-baseline justify-between gap-2">
-        <p className="text-sm text-gray-600">
+      <div
+        className="px-4 py-3 flex-shrink-0 flex flex-wrap items-baseline justify-between gap-2"
+        style={{ borderBottom: "1px solid var(--border)" }}
+      >
+        <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
           Every Massachusetts municipality graded on housing policy using public data.{" "}
-          <span className="text-gray-400">Click a town for the full breakdown.</span>
+          <span style={{ color: "var(--accent)" }}>Click a town for the full breakdown.</span>
         </p>
-        <p className="text-xs text-gray-400">Data as of {updatedAt}</p>
+        <p
+          className="text-xs font-mono"
+          style={{ color: "var(--text-muted)" }}
+        >
+          Data as of {updatedAt}
+        </p>
       </div>
 
       {/* Map fills remaining viewport */}

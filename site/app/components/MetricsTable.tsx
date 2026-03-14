@@ -21,22 +21,41 @@ interface MetricsTableProps {
 
 export default function MetricsTable({ metrics, metricsMeta }: MetricsTableProps) {
   return (
-    <div className="divide-y divide-gray-100">
-      {Object.entries(metricsMeta).map(([key, meta]) => {
+    <div>
+      {Object.entries(metricsMeta).map(([key, meta], idx) => {
         const value = metrics[key as keyof Metrics];
+        const isEven = idx % 2 === 1;
         return (
-          <div key={key} className="py-4 first:pt-0 last:pb-0">
+          <div
+            key={key}
+            className="py-4 first:pt-3 last:pb-3 px-1"
+            style={
+              isEven
+                ? { backgroundColor: "rgba(242,240,236,0.6)" }
+                : undefined
+            }
+          >
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-              <span className="text-sm font-medium text-gray-900">{meta.label}</span>
               <span
-                className={`text-sm font-semibold tabular-nums ${
-                  value === null ? "text-gray-400" : "text-gray-900"
-                }`}
+                className="text-sm"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                {meta.label}
+              </span>
+              <span
+                className="text-sm font-mono tabular-nums text-right"
+                style={{
+                  color: value === null ? "var(--text-muted)" : "var(--text-primary)",
+                  fontWeight: value === null ? 400 : 500,
+                }}
               >
                 {fmt(value, meta.unit)}
               </span>
             </div>
-            <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+            <p
+              className="text-xs mt-1 leading-relaxed"
+              style={{ fontSize: "13px", color: "var(--text-muted)" }}
+            >
               {meta.description}
             </p>
           </div>
