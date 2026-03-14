@@ -51,15 +51,15 @@ The zoning grade currently uses permit mix as a revealed-preference proxy. This 
 
 ### 2. MBTA Compliance
 
-**Data source:** MA Executive Office of Housing and Livable Communities (EOHLC) via the DHCD compliance status page.
+**Data source:** EOHLC "Compliance Status Sheet" CSV, downloaded from the EOHLC compliance tracking page.
+
+**Current file:** `data/mbta_compliance_source.csv`, as of March 13, 2026.
 
 **Source URL:** [https://www.mass.gov/info-details/multi-family-zoning-requirement-for-mbta-communities](https://www.mass.gov/info-details/multi-family-zoning-requirement-for-mbta-communities)
 
-**Update frequency:** Weekly, via the GitHub Actions pipeline. On each run, the pipeline fetches the live EOHLC compliance page and writes updated status to each town's JSON record. If the live page is unavailable (e.g., during local development where Cloudflare may block automated requests), the pipeline falls back to `data/mbta_status_override.csv`.
+**Update process:** When EOHLC publishes a new compliance status CSV, replace `data/mbta_compliance_source.csv` and commit. The pipeline will automatically use the new data on the next run. No code changes are required.
 
-**Fallback:** `data/mbta_status_override.csv` — a manually maintained CSV used when the live page cannot be reached. This file should be updated from the EOHLC page whenever the live scrape is blocked for an extended period.
-
-**Current status as of January 2026:** 133 municipalities compliant, 7 conditional compliance, 12 non-compliant (Attorney General Campbell filed suit against non-compliant towns on January 29, 2026), remainder pending review or not yet subject.
+**Current status as of March 13, 2026:** 144 compliant, 15 interim compliance, 7 conditional compliance, 11 non-compliant. Total: 177 subject municipalities. Attorney General Campbell filed suit against non-compliant towns on January 29, 2026.
 
 **What the grade measures:** Whether a municipality subject to the MBTA Communities Act (M.G.L. c. 40A, § 3A) has adopted a compliant zoning district. The Act requires 177 communities to zone for multifamily housing by right near MBTA stations. Municipalities that are not subject to the Act are marked "exempt" and excluded from this grade dimension — they are not penalized.
 

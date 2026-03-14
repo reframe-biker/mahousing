@@ -79,9 +79,8 @@ export default function MbtaPage() {
             fontSize: "13px",
           }}
         >
-          Compliance data sourced from EOHLC/DHCD. Updated weekly. Attorney
-          General Campbell filed suit against 9 non-compliant towns on January
-          29, 2026.
+          Compliance data from EOHLC Compliance Status Sheet, updated March 13,
+          2026. Replace data/mbta_compliance_source.csv to update.
         </p>
       </div>
 
