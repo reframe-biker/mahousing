@@ -388,6 +388,14 @@ export default async function TownPage({
             const explanation = cfg.metricKey
               ? (metricsMeta[cfg.metricKey]?.description ?? cfg.explanation)
               : cfg.explanation;
+            const sourceAttribution =
+              cfg.gradeKey === "zoning"
+                ? town.zoning_source === "nza"
+                  ? "Source: MA Zoning Atlas 2023"
+                  : town.zoning_source === "proxy"
+                  ? "Source: Permit mix proxy (Census BPS) — NZA data not yet available for this town"
+                  : null
+                : null;
             return (
               <GradeCard
                 key={cfg.gradeKey}
@@ -397,6 +405,7 @@ export default async function TownPage({
                 explanation={explanation}
                 phase={grade === null ? cfg.phase : null}
                 note={note}
+                sourceAttribution={sourceAttribution}
               />
             );
           })}

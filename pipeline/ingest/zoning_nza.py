@@ -81,7 +81,7 @@ def get_zoning_data() -> pd.DataFrame:
             data_note                   (str | None)
     """
     empty = pd.DataFrame(
-        columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note"]
+        columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "zoning_source"]
     )
 
     # ── Load NZA GeoJSON ────────────────────────────────────────────────────────
@@ -189,7 +189,7 @@ def get_zoning_data() -> pd.DataFrame:
 
     # ── Combine ─────────────────────────────────────────────────────────────────
     combined = pd.concat([nza_df, proxy_df], ignore_index=True)
-    combined = combined.drop(columns=["_source"], errors="ignore")
+    combined = combined.rename(columns={"_source": "zoning_source"})
 
     nza_count = len(nza_df)
     proxy_count = len(proxy_df)
@@ -199,7 +199,7 @@ def get_zoning_data() -> pd.DataFrame:
         f"{proxy_count} from permit proxy fallback"
     )
 
-    return combined[["fips", "pct_land_multifamily_byright", "low_sample", "data_note"]]
+    return combined[["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "zoning_source"]]
 
 
 # ── District scoring ────────────────────────────────────────────────────────────
@@ -334,9 +334,11 @@ def _permit_proxy_only() -> pd.DataFrame:
     try:
         from pipeline.ingest.zoning_permits_proxy import get_zoning_data as _proxy_fn
         proxy = _proxy_fn()
-        return proxy.rename(columns={"pct_multifamily_permitted": "pct_land_multifamily_byright"})
+        df = proxy.rename(columns={"pct_multifamily_permitted": "pct_land_multifamily_byright"})
+        df["zoning_source"] = "proxy"
+        return df
     except Exception as exc:
         logger.warning(f"Permit proxy also failed ({exc})")
         return pd.DataFrame(
-            columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note"]
+            columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "zoning_source"]
         )

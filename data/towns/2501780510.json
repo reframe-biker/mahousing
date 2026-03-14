@@ -23,6 +23,7 @@
     "production": null,
     "affordability": null
   },
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,

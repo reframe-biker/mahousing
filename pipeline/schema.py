@@ -20,6 +20,9 @@ Grade = Literal["A", "B", "C", "D", "F"] | None
 # Valid MBTA Communities Act compliance statuses.
 MbtaStatus = Literal["compliant", "interim", "non-compliant", "pending", "exempt"] | None
 
+# Zoning data source for the zoning grade.
+ZoningSource = Literal["nza", "proxy"] | None
+
 
 class Grades(TypedDict):
     """
@@ -130,6 +133,14 @@ class TownRecord(TypedDict):
     """
     Data quality notes for individual grading dimensions. Fields are None
     when no quality issue was detected. See DataNotes.
+    """
+
+    zoning_source: ZoningSource
+    """
+    Data source used for the zoning grade. One of:
+      'nza'   — graded from MA Zoning Atlas 2023 district data
+      'proxy' — graded from Census BPS permit mix proxy (town not yet in NZA)
+      None    — no zoning grade available for this municipality
     """
 
     mbta_status: MbtaStatus

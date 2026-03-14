@@ -8,6 +8,7 @@ interface GradeCardProps {
   explanation: string;
   phase?: string | null;
   note?: string | null;
+  sourceAttribution?: string | null;
 }
 
 export default function GradeCard({
@@ -17,6 +18,7 @@ export default function GradeCard({
   explanation,
   phase,
   note,
+  sourceAttribution,
 }: GradeCardProps) {
   const isPending = grade === null;
 
@@ -77,6 +79,15 @@ export default function GradeCard({
         >
           {explanation}
         </p>
+
+        {sourceAttribution && (
+          <p
+            className="text-xs"
+            style={{ color: "var(--text-muted)", fontStyle: "italic" }}
+          >
+            {sourceAttribution}
+          </p>
+        )}
       </div>
 
       {note && (

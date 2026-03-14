@@ -113,6 +113,14 @@ export interface TownRecord {
   data_notes: DataNotes | null;
 
   /**
+   * Data source used for the zoning grade:
+   *   "nza"   — graded from MA Zoning Atlas 2023 district data
+   *   "proxy" — graded from Census BPS permit mix proxy (town not yet in NZA)
+   *   null    — no zoning grade available
+   */
+  zoning_source: 'nza' | 'proxy' | null;
+
+  /**
    * MBTA Communities Act compliance status:
    *   "compliant"     — municipality has adopted a compliant zoning district
    *   "interim"       — municipality has adopted an interim action plan

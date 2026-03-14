@@ -120,6 +120,8 @@ def main() -> None:
         # Join on geoid for exact matching — no name normalization needed.
         # Include data_note if present (populated by permits_proxy spike detection).
         zoning_cols = ["fips", "pct_land_multifamily_byright"]
+        if "zoning_source" in zoning_df.columns:
+            zoning_cols.append("zoning_source")
         if "data_note" in zoning_df.columns:
             zoning_cols.append("data_note")
         acs_df = acs_df.merge(
@@ -144,6 +146,7 @@ def main() -> None:
         logger.info(f"  Zoning: {matched}/{len(acs_df)} municipalities matched")
     else:
         acs_df["pct_land_multifamily_byright"] = None
+        acs_df["zoning_source"] = None
         acs_df["data_note"] = None
 
     if not permit_df.empty:
@@ -300,6 +303,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
     rent_burden = _to_float(row.get("rent_burden_pct"))
     permits_per_1000 = _to_float(row.get("permits_per_1000_residents"))
     home_value = _to_float(row.get("final_home_value"))
+    zoning_source = _to_str(row.get("zoning_source"))
     mbta_status = _to_str(row.get("mbta_status"))
     mbta_deadline = _to_str(row.get("mbta_deadline"))
     mbta_action_date = _to_str(row.get("mbta_action_date"))
@@ -328,6 +332,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "grades": grades,
         "metrics": metrics,
         "data_notes": data_notes,
+        "zoning_source": zoning_source,
         "mbta_status": mbta_status,
         "mbta_deadline": mbta_deadline,
         "mbta_action_date": mbta_action_date,
