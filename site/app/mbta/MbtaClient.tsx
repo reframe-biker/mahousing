@@ -247,8 +247,8 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
       {/* Count + download */}
       <div className="flex items-center justify-between mb-3">
         <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-          Showing {filtered.length} municipality
-          {filtered.length !== 1 ? "ies" : ""}
+          Showing {filtered.length}{" "}
+          {filtered.length !== 1 ? "municipalities" : "municipality"}
         </p>
         <button
           onClick={downloadCsv}
@@ -290,10 +290,6 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
                 <th style={thStyle} onClick={() => handleSort("grade")}>
                   Housing Grade
                   {sort === "grade" ? (sortAsc ? " ↑" : " ↓") : ""}
-                </th>
-                <th style={thStyle} onClick={() => handleSort("action")}>
-                  Last Action
-                  {sort === "action" ? (sortAsc ? " ↑" : " ↓") : ""}
                 </th>
                 <th style={thStyle} onClick={() => handleSort("deadline")}>
                   Deadline
@@ -350,16 +346,6 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
                       color: "var(--text-secondary)",
                     }}
                   >
-                    {formatDate(town.mbta_action_date)}
-                  </td>
-                  <td
-                    style={{
-                      ...tdStyle,
-                      fontFamily: "var(--font-dm-mono), monospace",
-                      fontSize: "13px",
-                      color: "var(--text-secondary)",
-                    }}
-                  >
                     {formatDate(town.mbta_deadline)}
                   </td>
                 </tr>
@@ -367,7 +353,7 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
               {filtered.length === 0 && (
                 <tr>
                   <td
-                    colSpan={6}
+                    colSpan={5}
                     style={{
                       ...tdStyle,
                       textAlign: "center",

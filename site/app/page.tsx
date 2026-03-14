@@ -29,7 +29,7 @@ export default function HomePage() {
   const updatedAt = towns[0]?.updated_at ?? "unknown";
 
   return (
-    // 3rem nav + 3px accent bar
+    // 3rem nav + 3px accent bar; footer is 2.5rem
     <div className="flex flex-col" style={{ height: "calc(100vh - 3rem - 3px)" }}>
       {/* Page header */}
       <div
@@ -40,17 +40,24 @@ export default function HomePage() {
           Every Massachusetts municipality graded on housing policy using public data.{" "}
           <span style={{ color: "var(--accent)" }}>Click a town for the full breakdown.</span>
         </p>
-        <p
-          className="text-xs font-mono"
-          style={{ color: "var(--text-muted)" }}
-        >
-          Data as of {updatedAt}
-        </p>
       </div>
 
       {/* Map fills remaining viewport */}
       <div className="flex-1 min-h-0 relative">
         <MapClient towns={towns} />
+      </div>
+
+      {/* Footer */}
+      <div
+        className="flex-shrink-0 px-4 flex items-center justify-center text-xs"
+        style={{
+          borderTop: "1px solid var(--border)",
+          backgroundColor: "var(--bg-secondary)",
+          color: "var(--text-muted)",
+          height: "2.5rem",
+        }}
+      >
+        <span>Built with public data · Data as of {updatedAt} · Updated weekly</span>
       </div>
     </div>
   );

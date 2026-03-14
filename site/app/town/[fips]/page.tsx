@@ -455,34 +455,13 @@ export default async function TownPage({
 
       {/* Footer */}
       <footer
-        className="pt-6 text-xs space-y-1"
+        className="pt-6 text-xs text-center"
         style={{
           borderTop: "1px solid var(--border)",
           color: "var(--text-muted)",
         }}
       >
-        <p>
-          <a
-            href="https://github.com/reframe-biker/mahousing/blob/main/METHODOLOGY.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline transition-colors"
-            style={{ color: "var(--text-secondary)" }}
-          >
-            Methodology
-          </a>{" "}
-          &middot;{" "}
-          <a
-            href="https://github.com/reframe-biker/mahousing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline transition-colors"
-            style={{ color: "var(--text-secondary)" }}
-          >
-            GitHub
-          </a>
-        </p>
-        <p>Built with public data. Updated weekly.</p>
+        <span>Built with public data · Updated weekly</span>
       </footer>
     </main>
   );

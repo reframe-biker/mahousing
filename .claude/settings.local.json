@@ -18,7 +18,9 @@
       "Bash(pip3 install:*)",
       "Bash(kill:*)",
       "Bash(pip install:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(grep:*)"
     ]
   }
 }

@@ -28,31 +28,32 @@ export default function MbtaPage() {
       className="max-w-screen-lg mx-auto px-4 py-8"
       style={{ backgroundColor: "var(--bg-primary)" }}
     >
-      {/* Header */}
-      <div className="mb-8">
-        <div className="mb-2">
-          <a
-            href="/"
-            className="text-sm inline-flex items-center gap-1"
-            style={{ color: "var(--accent)" }}
+      {/* Back link */}
+      <div>
+        <a
+          href="/"
+          className="text-sm inline-flex items-center gap-1 transition-colors"
+          style={{ color: "var(--accent)" }}
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
           >
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            Statewide map
-          </a>
-        </div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Statewide map
+        </a>
+      </div>
 
+      {/* Header */}
+      <div className="mb-8 mt-4">
         <h1
           className="text-3xl mb-3"
           style={{ fontWeight: 600, color: "var(--text-primary)" }}
@@ -85,6 +86,16 @@ export default function MbtaPage() {
       </div>
 
       <MbtaClient towns={mbtaTowns} updatedAt={updatedAt} />
+
+      <footer
+        className="pt-6 text-xs text-center"
+        style={{
+          borderTop: "1px solid var(--border)",
+          color: "var(--text-muted)",
+        }}
+      >
+        <span>Built with public data · Updated weekly</span>
+      </footer>
     </main>
   );
 }
