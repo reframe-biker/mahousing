@@ -1,7 +1,7 @@
 {
   "pct_land_multifamily_byright": {
     "label": "Multifamily land share",
-    "description": "Share of residential zoned land where 3+ family housing is allowed by right. Source: MA Zoning Atlas 2023.",
+    "description": "Share of residential zoned land where 3-family or larger multifamily housing is permitted by right \u2014 no planning board hearing required. Derived from MA Zoning Atlas 2023 district data. For the 107 towns not yet covered by the Zoning Atlas, this reflects permit mix (share of permitted units that are multifamily) as a fallback.",
     "unit": "percent",
     "source": "MA Zoning Atlas (NZA) 2023",
     "higher_is_better": true
