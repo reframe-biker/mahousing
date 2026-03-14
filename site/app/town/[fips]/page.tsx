@@ -210,7 +210,7 @@ const sectionHeadingStyle: React.CSSProperties = {
 // Page component
 // ---------------------------------------------------------------------------
 
-const SITE_BASE_URL = "https://mahousing.org"; // canonical domain placeholder
+const SITE_BASE_URL = "https://mahousingreportcard.org";
 
 export default async function TownPage({
   params,
