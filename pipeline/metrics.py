@@ -18,17 +18,14 @@ See CONTRIBUTING.md for the full rule set.
 from __future__ import annotations
 
 METRICS: dict[str, dict] = {
-    "pct_multifamily_permitted": {
-        "label": "Multifamily share of permitted units",
+    "pct_land_multifamily_byright": {
+        "label": "Multifamily land share",
         "description": (
-            "Share of permitted housing units that are multifamily (5+ units), "
-            "averaged over the most recent 3 years. Used as a revealed-preference "
-            "measure of zoning permissiveness. Towns with fewer than 10 total "
-            "permits over 3 years show N/A. Will be replaced with National Zoning "
-            "Atlas data when available."
+            "Share of residential zoned land where 3+ family housing is allowed by right. "
+            "Source: MA Zoning Atlas 2023."
         ),
-        "source": "U.S. Census Building Permits Survey",
         "unit": "percent",
+        "source": "MA Zoning Atlas (NZA) 2023",
         "higher_is_better": True,
     },
     "median_home_value": {

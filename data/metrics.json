@@ -1,9 +1,9 @@
 {
-  "pct_multifamily_permitted": {
-    "label": "Multifamily share of permitted units",
-    "description": "Share of permitted housing units that are multifamily (5+ units), averaged over the most recent 3 years. Used as a revealed-preference measure of zoning permissiveness. Towns with fewer than 10 total permits over 3 years show N/A. Will be replaced with National Zoning Atlas data when available.",
-    "source": "U.S. Census Building Permits Survey",
+  "pct_land_multifamily_byright": {
+    "label": "Multifamily land share",
+    "description": "Share of residential zoned land where 3+ family housing is allowed by right. Source: MA Zoning Atlas 2023.",
     "unit": "percent",
+    "source": "MA Zoning Atlas (NZA) 2023",
     "higher_is_better": true
   },
   "median_home_value": {

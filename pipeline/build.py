@@ -119,7 +119,7 @@ def main() -> None:
         # The zoning router contract uses fips (GEOID) as the join key.
         # Join on geoid for exact matching — no name normalization needed.
         # Include data_note if present (populated by permits_proxy spike detection).
-        zoning_cols = ["fips", "pct_multifamily_permitted"]
+        zoning_cols = ["fips", "pct_land_multifamily_byright"]
         if "data_note" in zoning_df.columns:
             zoning_cols.append("data_note")
         acs_df = acs_df.merge(
@@ -140,10 +140,10 @@ def main() -> None:
         acs_df.loc[large_town_mask, "data_note"] = None
         if suppressed:
             logger.info(f"  Spike flag suppressed for {suppressed} town(s) with population >= 15,000")
-        matched = acs_df["pct_multifamily_permitted"].notna().sum()
+        matched = acs_df["pct_land_multifamily_byright"].notna().sum()
         logger.info(f"  Zoning: {matched}/{len(acs_df)} municipalities matched")
     else:
-        acs_df["pct_multifamily_permitted"] = None
+        acs_df["pct_land_multifamily_byright"] = None
         acs_df["data_note"] = None
 
     if not permit_df.empty:
@@ -296,7 +296,7 @@ def main() -> None:
 
 def _build_record(row: pd.Series, today: str) -> dict:
     """Build a TownRecord dict from a merged DataFrame row."""
-    pct_mf = _to_float(row.get("pct_multifamily_permitted"))
+    pct_mf = _to_float(row.get("pct_land_multifamily_byright"))
     rent_burden = _to_float(row.get("rent_burden_pct"))
     permits_per_1000 = _to_float(row.get("permits_per_1000_residents"))
     home_value = _to_float(row.get("final_home_value"))
@@ -305,7 +305,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
     mbta_action_date = _to_str(row.get("mbta_action_date"))
 
     metrics = {
-        "pct_multifamily_permitted": pct_mf,
+        "pct_land_multifamily_byright": pct_mf,
         "median_home_value": home_value,
         "rent_burden_pct": rent_burden,
         "permits_per_1000_residents": permits_per_1000,

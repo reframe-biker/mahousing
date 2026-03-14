@@ -42,3 +42,4 @@ Thumbs.db
 *.swp
 *.swo
 .vercel
+data/MA_Zoning_Atlas_2023.geojson

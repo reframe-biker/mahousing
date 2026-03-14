@@ -12,20 +12,21 @@ TO SWITCH DATA SOURCES:
 OUTPUT CONTRACT:
   get_zoning_data() always returns a DataFrame with these columns:
 
-    fips                     (str)
+    fips                          (str)
         10-digit county subdivision GEOID — joins to acs_df["geoid"] in build.py.
 
-    pct_multifamily_permitted (float | None)
+    pct_land_multifamily_byright  (float | None)
         The permissiveness score for this source.  None means the grade will
         be null for that municipality (insufficient data, not a failing grade).
-        The column name is kept stable for schema compatibility even when the
-        underlying metric is not a literal "by right" land-area share — see
-        METHODOLOGY.md for the distinction.
+        For NZA: area-weighted share of residential zoned land where 3+ family
+        housing is allowed by right.
+        For permits_proxy: permit mix (share of 5+ unit permitted units) — used
+        as fallback for NZA-uncovered towns, same column name for schema compat.
 
     low_sample               (bool)
         True if the underlying data is thin enough that the grade should be
         treated cautiously.  build.py logs this count; score.py uses the None
-        in pct_multifamily_permitted to produce a null grade.
+        in pct_land_multifamily_byright to produce a null grade.
 
     data_note                (str | None)
         Human-readable quality flag attached to this town's zoning grade.
@@ -36,7 +37,7 @@ OUTPUT CONTRACT:
 AVAILABLE SOURCES:
   "permits_proxy"  Census BPS permit mix over 3 years (interim, covers ~346 towns)
   "mapc"           MAPC Zoning Atlas v01 (Metro Boston only, ~101 towns)
-  "nza"            National Zoning Atlas (stub — not yet available)
+  "nza"            National Zoning Atlas 2023 (statewide, ~245 towns + proxy fallback)
 """
 
 from __future__ import annotations
@@ -49,12 +50,12 @@ logger = logging.getLogger(__name__)
 
 # ── Active source ──────────────────────────────────────────────────────────────
 # Change this constant to switch data sources.  Options: "permits_proxy" | "mapc" | "nza"
-ZONING_SOURCE = "permits_proxy"  # interim — swap to "nza" when bulk data is available
+ZONING_SOURCE = "nza"  # MA Zoning Atlas 2023 with permit proxy fallback for uncovered towns
 
 _SOURCE_NOTES = {
-    "permits_proxy": "interim — swap to nza when NZA bulk data is available",
+    "permits_proxy": "Census BPS permit mix — interim proxy for zoning permissiveness",
     "mapc": "Metro Boston coverage only (~101 towns)",
-    "nza": "full statewide coverage — requires NZA bulk data",
+    "nza": "MA Zoning Atlas 2023, statewide (~245 towns + permit proxy fallback)",
 }
 
 
@@ -69,7 +70,8 @@ def get_zoning_data() -> pd.DataFrame:
 
     if ZONING_SOURCE == "permits_proxy":
         from pipeline.ingest.zoning_permits_proxy import get_zoning_data as _fn
-        return _fn()
+        df = _fn()
+        return df.rename(columns={"pct_multifamily_permitted": "pct_land_multifamily_byright"})
 
     if ZONING_SOURCE == "mapc":
         from pipeline.ingest.zoning_atlas import get_zoning_data as _mapc_fn
@@ -101,9 +103,12 @@ def _adapt_mapc(mapc_df: pd.DataFrame) -> pd.DataFrame:
     coverage.  The default "permits_proxy" covers all 346 permit-reporting towns.
     """
     if mapc_df.empty:
-        return pd.DataFrame(columns=["fips", "pct_multifamily_permitted", "low_sample", "data_note"])
+        return pd.DataFrame(columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note"])
 
-    result = mapc_df.rename(columns={"muni_name": "fips"}).copy()
+    result = mapc_df.rename(columns={
+        "muni_name": "fips",
+        "pct_multifamily_permitted": "pct_land_multifamily_byright",
+    }).copy()
     result["low_sample"] = False
     result["data_note"] = None  # spike detection only applies to permits_proxy
-    return result[["fips", "pct_multifamily_permitted", "low_sample", "data_note"]]
+    return result[["fips", "pct_land_multifamily_byright", "low_sample", "data_note"]]

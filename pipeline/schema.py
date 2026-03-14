@@ -45,11 +45,12 @@ class Metrics(TypedDict):
     All values are floats (or None if not yet collected). These are the
     direct outputs of the ingest modules before scoring is applied.
     """
-    pct_multifamily_permitted: float | None
+    pct_land_multifamily_byright: float | None
     """
-    Share of permitted housing units that are multifamily (5+ units),
-    averaged over the most recent 3 years of Census BPS data.
-    Used as a revealed-preference proxy for zoning permissiveness.
+    Area-weighted share of residential zoned land (in acres) where 3-family
+    (family3) or larger multifamily (family4) housing is permitted by right.
+    Source: MA Zoning Atlas 2023 (NZA) with Census BPS permit proxy fallback
+    for towns not covered by the NZA.
     Range: 0.0–100.0.
     """
 

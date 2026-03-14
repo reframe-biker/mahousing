@@ -6,13 +6,14 @@ Converts raw numeric metrics (from the ingest modules) into letter grades
 
 Grading rubrics for Phase 1 dimensions:
 
-  zoning         (pct_multifamily_permitted — % of permitted units in 5+ unit structures)
-    A  > 40%     — strong revealed preference for multifamily
-    B  25–40%
-    C  10–25%
-    D  2–10%
-    F  < 2%
-    null  fewer than 10 total permits over 3 years (low-sample towns)
+  zoning         (pct_land_multifamily_byright — % of residential zoned land where 3+ family
+                  housing is permitted by right; NZA 2023 with permit proxy fallback)
+    A  > 25%     — substantial by-right multifamily land
+    B  10–25%
+    C  3–10%
+    D  0.5–3%
+    F  < 0.5%
+    null  no residential zoning data for that municipality
 
   affordability  (rent_burden_pct — % of renters paying > 30% of income)
     A  < 20%
@@ -60,7 +61,7 @@ def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
 
     Args:
         metrics: Dict matching pipeline.schema.Metrics. All values may be None.
-                 Expected keys: pct_multifamily_permitted, median_home_value,
+                 Expected keys: pct_land_multifamily_byright, median_home_value,
                  rent_burden_pct, permits_per_1000_residents.
         mbta_status: MBTA Communities Act compliance status string, or None.
                      "compliant" | "interim" | "non-compliant" | "pending" |
@@ -72,7 +73,7 @@ def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
         Any dimension without data returns None (not "F").
         Exempt MBTA towns get None for mbta grade (excluded from composite).
     """
-    zoning = _grade_zoning(metrics.get("pct_multifamily_permitted"))
+    zoning = _grade_zoning(metrics.get("pct_land_multifamily_byright"))
     affordability = _grade_affordability(metrics.get("rent_burden_pct"))
     production = _grade_production(metrics.get("permits_per_1000_residents"))
     mbta = _grade_mbta(mbta_status)
@@ -121,23 +122,24 @@ def _grade_mbta(status: str | None) -> str | None:
 
 def _grade_zoning(pct: float | None) -> str | None:
     """
-    Grade zoning permissiveness based on the active zoning metric.
+    Grade zoning permissiveness based on pct_land_multifamily_byright.
 
-    Current metric (permits_proxy): % of permitted units in 5+ unit structures
-    over the most recent 3 years.  Towns with fewer than 10 total permits pass
-    None here and receive a null grade.
+    Current metric (NZA 2023): area-weighted share of residential zoned land
+    where 3+ family housing is permitted by right (or partial credit for
+    special permit).  Calibrated for land-area-based data.
 
-    A > 40%, B 25–40%, C 10–25%, D 2–10%, F < 2%
+    A > 25%, B 10–25%, C 3–10%, D 0.5–3%, F < 0.5%
+    null  no residential zoning data available
     """
     if pct is None:
         return None
-    if pct > 40:
-        return "A"
     if pct > 25:
-        return "B"
+        return "A"
     if pct > 10:
+        return "B"
+    if pct > 3:
         return "C"
-    if pct > 2:
+    if pct > 0.5:
         return "D"
     return "F"
 

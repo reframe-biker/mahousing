@@ -40,12 +40,11 @@ export interface Grades {
 
 export interface Metrics {
   /**
-   * Share of permitted housing units that are multifamily (5+ units),
-   * averaged over the most recent 3 years of Census BPS data.
-   * Used as a revealed-preference proxy for zoning permissiveness. Range: 0–100.
-   * Source: U.S. Census Building Permits Survey.
+   * Area-weighted share of residential zoned land where 3+ family housing is
+   * permitted by right. Range: 0–100.
+   * Source: MA Zoning Atlas (NZA) 2023, with Census BPS permit proxy fallback.
    */
-  pct_multifamily_permitted: number | null;
+  pct_land_multifamily_byright: number | null;
 
   /**
    * Median owner-occupied home value in USD.

@@ -14,38 +14,42 @@ Each municipality receives a letter grade (A–F) on six dimensions, plus a comp
 
 ### 1. Zoning Permissiveness
 
-**Data source (current):** [US Census Bureau Building Permits Survey](https://www.census.gov/construction/bps/), 3-year aggregate.
+**Data source:** [MA Zoning Atlas 2023](https://zoningatlas.org), a district-level dataset of 2,291 zoning districts across Massachusetts. For the 107 municipalities not yet covered by the Zoning Atlas, the permit mix proxy is used as a fallback (see below).
 
-**What the grade measures:** The share of permitted housing units that were in structures of 5 or more units, averaged over the most recent 3 years of available data. This is a revealed-preference measure of zoning permissiveness — a town that issues 80% of its permitted units as multifamily is functionally more permissive than one issuing 95% single-family permits, regardless of what the zoning code says on paper.
+**What the grade measures:** The share of a municipality's residential zoned land area where 3-family or larger multifamily housing is permitted by right — without requiring a planning board hearing or special permit.
 
-**Key metric:** `pct_multifamily_by_right` — in the current implementation, this field holds the share of permitted units in 5+ unit structures (not a literal by-right land-area share). The column name is stable for schema compatibility.
+**Key metric:** `pct_land_multifamily_byright` — the area-weighted percentage of residential zoned land in the municipality where `family3_treatment` or `family4_treatment` equals `"allowed"` in the NZA district data.
 
-**Coverage:** Towns with fewer than 10 total permitted units over 3 years receive a null grade rather than a potentially misleading grade from a thin sample. Coverage is approximately 320–346 of 351 municipalities depending on the year range.
+**Coverage:** 244 of 351 municipalities are graded from NZA district data. The remaining 107 municipalities are graded using the permit mix proxy: share of permitted units in 5+ unit structures, averaged over 3 years of Census Building Permits Survey data. Towns with fewer than 10 total permits over 3 years receive a null grade.
+
+**On hearing credit:** A zoning district that requires a special permit (planning board hearing) for multifamily housing receives no credit in this metric. The hearing process is a primary mechanism by which local officials delay or deny housing — we do not treat discretionary approval as equivalent to by-right permission.
+
+**On rural and low-demand towns:** Zoning permissiveness is measured as a policy fact, not a demand signal. A town with low housing pressure may score F on zoning and face limited political consequence for it. The grades are most actionable for the 177 municipalities subject to the MBTA Communities Act, where an F reflects both a policy choice and a legal obligation. Non-MBTA towns are graded on the same scale for completeness and comparability, but their grades should be read in that context.
 
 **Scoring formula:**
 
 | Grade | Threshold |
 |-------|-----------|
-| A | > 40% of permitted units are in 5+ unit structures |
-| B | 25–40% |
-| C | 10–25% |
-| D | 2–10% |
-| F | < 2% |
-| N/A | Fewer than 10 total permits over 3 years |
+| A | > 25% of residential land allows multifamily by right |
+| B | 10–25% |
+| C | 3–10% |
+| D | 0.5–3% |
+| F | < 0.5% |
+| N/A | No residential zoning data available |
 
 ---
 
-### Zoning metric — current approach and roadmap
+### Zoning metric — permit mix fallback
 
-The zoning grade currently uses permit mix as a revealed-preference proxy. This is an interim approach with two known limitations:
+For the 107 municipalities not covered by the MA Zoning Atlas 2023, the zoning grade falls back to a permit mix proxy: the share of permitted housing units in structures of 5 or more units, averaged over the most recent 3 years of Census Building Permits Survey data.
 
-1. **It measures output, not policy.** A town with exclusionary zoning but high permit volume from grandfathered or special-permit development will be graded more favorably than its code warrants. This is a known bias.
+This proxy measures output rather than policy — it reflects what developers built, not what the zoning code allows. Two known limitations apply to towns graded this way:
 
-2. **It overlaps with the Housing Production grade.** Both grades draw on BPS permit data, though through different lenses (production = total rate; zoning = multifamily share). Towns with low permit volume may receive null grades on both dimensions.
+1. **It measures output, not policy.** A town with exclusionary zoning but permit volume from grandfathered or special-permit development will be graded more favorably than its code warrants.
 
-**Why this approach?** The MAPC Zoning Atlas v01 covers approximately 101 cities and towns in Metropolitan Boston. The [National Zoning Atlas](https://zoningatlas.org) (NZA) provides full statewide coverage with explicit by-right multifamily fields, but bulk download access for Massachusetts data is not yet publicly available.
+2. **It overlaps with the Housing Production grade.** Both draw on BPS permit data. Towns with low permit volume may receive null grades on both dimensions.
 
-**Upgrade path:** When NZA bulk data is available, set `ZONING_SOURCE = "nza"` in `pipeline/ingest/zoning.py` and implement `pipeline/ingest/zoning_nza.py`. No other files need to change. The output contract (columns `fips`, `pct_multifamily_by_right`, `low_sample`) is documented at the top of `pipeline/ingest/zoning.py`.
+As the National Zoning Atlas expands its Massachusetts coverage, these towns will be migrated to NZA-based grades automatically. To switch a town from proxy to NZA data, no code changes are required — the pipeline detects NZA coverage per municipality on each run.
 
 ---
 
@@ -164,7 +168,7 @@ The pipeline automatically detects conditions that may reduce the reliability of
 
 **What the note says:** "Zoning grade driven primarily by a single year of permit activity — may not reflect the town's typical permitting pattern."
 
-**Concrete example:** Dover, MA issued 0 multifamily permits in 2021, 0 in 2022, and 34 in 2023 (a single large project). This gives Dover an A zoning grade based on 79% multifamily share — a grade that would surprise anyone familiar with Dover's exclusionary zoning history. The grade reflects what Dover actually permitted, but the note signals that this single year is driving the result.
+**Concrete example:** Dover, MA issued 0 multifamily permits in 2021, 0 in 2022, and 34 in 2023 (a single large project). Under the former permit mix proxy, this gave Dover an A zoning grade — a grade that would surprise anyone familiar with Dover's exclusionary zoning history. Dover is now graded from NZA district data (0.0% by-right multifamily land, grade F), which correctly reflects its zoning code. The spike flag remains active for the 107 towns still graded by the permit proxy.
 
 **Where it appears:** The note is displayed on the town's profile page in an amber info box below the zoning grade card. It is also present in the town's JSON record at `data_notes.zoning`.
 
