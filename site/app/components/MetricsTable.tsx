@@ -50,7 +50,7 @@ export default function MetricsTable({ metrics, metricsMeta }: MetricsTableProps
                   fontWeight: value === null ? 400 : 500,
                 }}
               >
-                {fmt(value, meta.unit)}
+                {typeof value === "string" ? value : fmt(value, meta.unit)}
               </span>
             </div>
             <p
