@@ -43,3 +43,4 @@ Thumbs.db
 data/MA_Zoning_Atlas_2023.geojson
 data/rollcall_cache/
 data/tl_2024_25_sldl.*
+.claude/
