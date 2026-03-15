@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
+import GoatCounter from "@/app/components/GoatCounter";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <GoatCounter />
       </body>
     </html>
   );
