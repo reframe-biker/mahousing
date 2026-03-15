@@ -93,6 +93,7 @@ interface GradeCardConfig {
   gradeKey: keyof TownRecord["grades"];
   getMetric: (t: TownRecord) => string | null;
   explanation: string;
+  getExplanation?: (t: TownRecord) => string;
   metricKey?: string;
   phase: string | null;
   footerLink?: { href: string; label: string } | null;
@@ -158,17 +159,24 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
     dimension: "State legislator record",
     gradeKey: "rep",
     getMetric: (t) => {
-      if (t.metrics.rep_name === null) return "No representative data available";
-      const parts: string[] = [t.metrics.rep_name as string];
-      if (t.metrics.rep_pct_score !== null)
-        parts.push(`${(t.metrics.rep_pct_score as number).toFixed(1)}%`);
-      if (t.metrics.rep_bills_scored !== null && t.metrics.rep_bills_available !== null)
-        parts.push(`${t.metrics.rep_bills_scored} of ${t.metrics.rep_bills_available} actions scored`);
-      parts.push("House only · 193rd–194th sessions");
-      return parts.join(" · ");
+      if (t.metrics.rep_name === null) return null;
+      const score = t.metrics.rep_pct_score !== null
+        ? ` · ${Math.round(t.metrics.rep_pct_score as number)}%`
+        : "";
+      return `${t.metrics.rep_name as string}${score}`;
     },
-    explanation:
-      "Voting record of the municipality's state House representative on pro-housing bills at the State House.",
+    getExplanation: (t) => {
+      const grade = t.grades.rep;
+      const interp: Partial<Record<NonNullable<Grade>, string>> = {
+        A: "Strong pro-housing voting record at the State House",
+        B: "Generally pro-housing voting record at the State House",
+        C: "Mixed housing voting record at the State House",
+        D: "Generally anti-housing voting record at the State House",
+        F: "Anti-housing voting record on nearly all scored votes",
+      };
+      return (grade !== null ? interp[grade] : null) ?? "No voting record available for this district";
+    },
+    explanation: "No voting record available for this district",
     phase: null,
     footerLink: { href: "/methodology", label: "See methodology" },
   },
@@ -411,7 +419,9 @@ export default async function TownPage({
               cfg.gradeKey === "zoning"
                 ? (town.data_notes?.zoning ?? null)
                 : null;
-            const explanation = cfg.metricKey
+            const explanation = cfg.getExplanation
+              ? cfg.getExplanation(town)
+              : cfg.metricKey
               ? (metricsMeta[cfg.metricKey]?.description ?? cfg.explanation)
               : cfg.explanation;
             const sourceAttribution =

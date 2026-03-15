@@ -17,6 +17,33 @@ See CONTRIBUTING.md for the full rule set.
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
+_BILL_LIST_PATH = Path(__file__).parent.parent / "data" / "legislator_bill_list.json"
+
+
+def _rep_score_description() -> str:
+    """Build the rep_pct_score description dynamically from the bill list."""
+    try:
+        with open(_BILL_LIST_PATH, encoding="utf-8") as _f:
+            _data = json.load(_f)
+        _bills = _data["bills"] if isinstance(_data, dict) else _data
+        n_rollcalls = sum(1 for b in _bills if b.get("type") == "rollcall")
+        n_cosponsors = sum(1 for b in _bills if b.get("type") == "cosponsor")
+        return (
+            f"Percentage of pro-housing points earned across {n_rollcalls} roll call "
+            f"votes and {n_cosponsors} co-sponsorship checks on housing production "
+            "legislation. 100 = perfectly pro-housing record."
+        )
+    except Exception:
+        return (
+            "Percentage of pro-housing points earned across roll call votes and "
+            "co-sponsorship checks on housing production legislation. "
+            "100 = perfectly pro-housing record."
+        )
+
+
 METRICS: dict[str, dict] = {
     "pct_land_multifamily_byright": {
         "label": "Multifamily land share",
@@ -104,11 +131,7 @@ METRICS: dict[str, dict] = {
     },
     "rep_pct_score": {
         "label": "Rep housing score",
-        "description": (
-            "Percentage of pro-housing points earned by the state representative across "
-            "all scored bills (roll call votes and co-sponsorships). "
-            "Earned points ÷ available points × 100. Range: 0–100."
-        ),
+        "description": _rep_score_description(),
         "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
         "unit": "percent",
         "higher_is_better": True,
@@ -116,21 +139,25 @@ METRICS: dict[str, dict] = {
     "rep_bills_scored": {
         "label": "Bills scored",
         "description": (
-            "Number of bills in the scoring list for which the representative had a "
-            "scoreable vote (present in roll call or cosponsor check ran successfully)."
+            "Number of scored actions for which the representative had a scoreable "
+            "vote (present in roll call or cosponsor check ran successfully). "
+            "Pipeline diagnostic — not displayed on town pages."
         ),
         "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
         "unit": "count",
         "higher_is_better": False,
+        "display": False,
     },
     "rep_bills_available": {
         "label": "Bills available",
         "description": (
-            "Total number of bills in the legislator scoring list at the time of the "
-            "most recent pipeline run."
+            "Total number of scored actions in the legislator scoring list at the "
+            "time of the most recent pipeline run. Pipeline diagnostic — not "
+            "displayed on town pages."
         ),
         "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
         "unit": "count",
         "higher_is_better": False,
+        "display": False,
     },
 }

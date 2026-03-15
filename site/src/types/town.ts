@@ -196,6 +196,8 @@ export interface MetricMeta {
   source: string;
   unit: MetricUnit;
   higher_is_better: boolean;
+  /** When false, the metric is hidden from the raw metrics display on town pages. Defaults to true. */
+  display?: boolean;
 }
 
 /** All metric metadata keyed by metric field name. Matches the keys of Metrics. */

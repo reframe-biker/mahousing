@@ -23,7 +23,7 @@ interface MetricsTableProps {
 export default function MetricsTable({ metrics, metricsMeta }: MetricsTableProps) {
   return (
     <div>
-      {Object.entries(metricsMeta).filter(([, meta]) => meta.unit !== "status").map(([key, meta], idx) => {
+      {Object.entries(metricsMeta).filter(([, meta]) => meta.unit !== "status" && meta.display !== false).map(([key, meta], idx) => {
         const value = metrics[key as keyof Metrics];
         const isEven = idx % 2 === 1;
         return (
