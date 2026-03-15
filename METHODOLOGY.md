@@ -184,7 +184,7 @@ If renter share data is unavailable, equal weights (0.5/0.5) are used as a fallb
 
 **Scoring formula:**
 
-For each scored bill:
+For each scored action:
 - `type=rollcall, pro_housing_vote="yea"`: rep earns points if they voted Y
 - `type=rollcall, pro_housing_vote="nay"`: rep earns points if they voted N (defeating an anti-housing amendment)
 - `type=cosponsor`: rep earns points if their full name appears in the bill's cosponsor list
@@ -193,16 +193,18 @@ For each scored bill:
 pct_score = earned_points / max_points × 100
 ```
 
-Current bill list (6 bills, max = 14 points):
+Current scored actions (8 scored actions: 6 roll call votes and 2 cosponsor checks, max 14 points):
 
-| Bill | Type | Session | Description | Pro-housing vote | Weight |
-|------|------|---------|-------------|-----------------|--------|
-| RC#113 | Roll call | 193rd (2024) | AHA — defeat Lombardo MBTA communities exemption amendment | NAY | 2 |
-| RC#114 | Roll call | 193rd (2024) | AHA — preserve ADU by-right provisions | YEA | 2 |
-| RC#117 | Roll call | 193rd (2024) | Affordable Homes Act — final passage (145–13) | YEA | 2 |
-| RC#199 | Roll call | 194th (2025) | Housing production vote | YEA | 2 |
-| H.1379 | Co-sponsor | 193rd | An Act to promote housing production (33 cosponsors) | Co-sponsor | 3 |
-| H.1572 | Co-sponsor | 194th | An Act to promote housing production (~20 cosponsors) | Co-sponsor | 3 |
+| Action | Type | Session | Description | Pro-housing vote | Weight |
+|--------|------|---------|-------------|-----------------|--------|
+| RC#110 | Roll call | 193rd (2024) | AHA — defeat Lombardo MBTA communities exemption amendment | NAY | 2 |
+| RC#111 | Roll call | 193rd (2024) | AHA — defeat Jones MBTA communities weakening amendment | NAY | 2 |
+| RC#113 | Roll call | 193rd (2024) | AHA — preserve ADU by-right provisions (Consolidated A) | YEA | 2 |
+| RC#114 | Roll call | 193rd (2024) | AHA — defeat Frost 40B mobile home inflation amendment | NAY | 1 |
+| RC#117 | Roll call | 193rd (2024) | Affordable Homes Act — final passage (145–13) | YEA | 3 |
+| RC#199 | Roll call | 193rd (2024) | AHA conference report — enacted Affordable Homes Act (H.4977, 128–24) | YEA | 3 |
+| H.1379 | Co-sponsorship check | 193rd | YIMBY Act — An Act to promote Yes in My Backyard (33 cosponsors) | Co-sponsor | 1 |
+| H.1572 | Co-sponsorship check | 194th | YIMBY Act — current session (~20 cosponsors as of March 2026) | Co-sponsor | 1 |
 
 **Grading rubric:**
 

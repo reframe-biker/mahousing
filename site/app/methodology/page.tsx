@@ -1,6 +1,7 @@
 import fs from "fs";
 import type { Metadata } from "next";
 import { remark } from "remark";
+import remarkGfm from "remark-gfm";
 import remarkHtml from "remark-html";
 import { getRepoRoot } from "@/src/lib/paths";
 
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 async function getMethodologyHtml(): Promise<string> {
   const filePath = getRepoRoot("METHODOLOGY.md");
   const raw = fs.readFileSync(filePath, "utf-8");
-  const result = await remark().use(remarkHtml).process(raw);
+  const result = await remark().use(remarkGfm).use(remarkHtml).process(raw);
   return result.toString();
 }
 

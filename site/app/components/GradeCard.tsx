@@ -9,6 +9,7 @@ interface GradeCardProps {
   phase?: string | null;
   note?: string | null;
   sourceAttribution?: string | null;
+  footerLink?: { href: string; label: string } | null;
 }
 
 export default function GradeCard({
@@ -19,6 +20,7 @@ export default function GradeCard({
   phase,
   note,
   sourceAttribution,
+  footerLink,
 }: GradeCardProps) {
   const isPending = grade === null;
 
@@ -87,6 +89,16 @@ export default function GradeCard({
           >
             {sourceAttribution}
           </p>
+        )}
+
+        {footerLink && (
+          <a
+            href={footerLink.href}
+            className="text-xs"
+            style={{ color: "var(--accent)" }}
+          >
+            {footerLink.label} →
+          </a>
         )}
       </div>
 

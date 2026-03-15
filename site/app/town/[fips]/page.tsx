@@ -95,6 +95,7 @@ interface GradeCardConfig {
   explanation: string;
   metricKey?: string;
   phase: string | null;
+  footerLink?: { href: string; label: string } | null;
 }
 
 const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
@@ -156,10 +157,20 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
   {
     dimension: "State legislator record",
     gradeKey: "rep",
-    getMetric: () => null,
+    getMetric: (t) => {
+      if (t.metrics.rep_name === null) return "No representative data available";
+      const parts: string[] = [t.metrics.rep_name as string];
+      if (t.metrics.rep_pct_score !== null)
+        parts.push(`${(t.metrics.rep_pct_score as number).toFixed(1)}%`);
+      if (t.metrics.rep_bills_scored !== null && t.metrics.rep_bills_available !== null)
+        parts.push(`${t.metrics.rep_bills_scored} of ${t.metrics.rep_bills_available} actions scored`);
+      parts.push("House only · 193rd–194th sessions");
+      return parts.join(" · ");
+    },
     explanation:
-      "Voting record of the municipality's state legislators on pro-housing bills at the State House.",
-    phase: "Phase 4 — coming soon",
+      "Voting record of the municipality's state House representative on pro-housing bills at the State House.",
+    phase: null,
+    footerLink: { href: "/methodology", label: "See methodology" },
   },
 ];
 
@@ -421,6 +432,7 @@ export default async function TownPage({
                 phase={grade === null ? cfg.phase : null}
                 note={note}
                 sourceAttribution={sourceAttribution}
+                footerLink={cfg.footerLink}
               />
             );
           })}

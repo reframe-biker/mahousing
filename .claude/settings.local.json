@@ -20,7 +20,14 @@
       "Bash(pip install:*)",
       "Bash(git push:*)",
       "Bash(npm install:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(git:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.progressivemass.com)",
+      "Bash(pip list:*)",
+      "WebFetch(domain:data.openstates.org)",
+      "Bash(ls:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
