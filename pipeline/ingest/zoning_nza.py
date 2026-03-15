@@ -26,10 +26,10 @@ DISTRICT FILTERING (applied before scoring):
 DISTRICT SCORING:
   - nonresidential_type set → None (excluded from residential land base entirely)
   - affordable_district == 1 → 0.0 (counts toward total acres, scores zero)
-  - family3_treatment or family4_treatment:
-      "allowed"  → 1.0
-      "hearing"  → 0.5 (special permit = partial credit)
-      otherwise  → 0.0
+  - family4_treatment == "allowed" → 1.0
+  - family3_treatment == "allowed" (f4 not allowed) → 0.5 (3-family only = partial credit)
+  - "hearing" → 0.0 (special permits are a restriction mechanism, not credit)
+  - otherwise → 0.0
 
 JURISDICTION → FIPS JOIN:
   1. Exact name match against data/statewide.json
@@ -56,13 +56,14 @@ import logging
 from pathlib import Path
 
 import pandas as pd
-from thefuzz import fuzz
+from thefuzz import fuzz # type: ignore
 
 logger = logging.getLogger(__name__)
 
 _REPO_ROOT = Path(__file__).parent.parent.parent
 _NZA_PATH = _REPO_ROOT / "data" / "MA_Zoning_Atlas_2023.geojson"
 _STATEWIDE_PATH = _REPO_ROOT / "data" / "statewide.json"
+_KNOWN_ERRORS_PATH = _REPO_ROOT / "data" / "zoning_nza_known_errors.json"
 
 # Minimum fuzzy score for name → FIPS matching
 _FUZZY_THRESHOLD = 90
@@ -184,6 +185,23 @@ def get_zoning_data() -> pd.DataFrame:
     nza_fips = set(nza_df["fips"].tolist())
     logger.info(f"NZA: {len(nza_fips)} towns matched to FIPS codes")
 
+    # ── Apply known error overrides ─────────────────────────────────────────────
+    known_errors = _load_known_errors()
+    if known_errors:
+        overridden = 0
+        for idx, row in nza_df.iterrows():
+            if row["fips"] in known_errors:
+                entry = known_errors[row["fips"]]
+                if entry.get("treatment") == "null":
+                    nza_df.at[idx, "pct_land_multifamily_byright"] = None
+                    overridden += 1
+                    logger.warning(
+                        f"NZA: overriding {entry.get('town', row['fips'])} "
+                        f"({row['fips']}) → null. Reason: {entry.get('reason', 'see known_errors file')}"
+                    )
+        if overridden:
+            logger.info(f"NZA: {overridden} town(s) nulled due to known NZA coding errors")
+
     # ── Permit proxy fallback ───────────────────────────────────────────────────
     proxy_df = _get_proxy_fallback(nza_fips)
 
@@ -202,6 +220,23 @@ def get_zoning_data() -> pd.DataFrame:
     return combined[["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "zoning_source"]]
 
 
+# ── Known error overrides ────────────────────────────────────────────────────────
+
+def _load_known_errors() -> dict[str, dict]:
+    """
+    Load known NZA coding errors for the current dataset file.
+    Returns a dict of {fips: error_entry} for the current NZA filename,
+    or an empty dict if the file doesn't exist or has no entry for this dataset.
+    """
+    if not _KNOWN_ERRORS_PATH.exists():
+        return {}
+    with open(_KNOWN_ERRORS_PATH, encoding="utf-8") as f:
+        all_errors = json.load(f)
+    dataset_key = _NZA_PATH.name
+    dataset_errors = all_errors.get(dataset_key, {})
+    return dataset_errors.get("towns", {})
+
+
 # ── District scoring ────────────────────────────────────────────────────────────
 
 def _score_district(props: dict) -> float | None:
@@ -213,6 +248,10 @@ def _score_district(props: dict) -> float | None:
 
     affordable_district == 1 → included in denominator, scored 0.0
     nonresidential_type set  → None (excluded from denominator)
+    family4_treatment == "allowed" → 1.0
+    family3_treatment == "allowed" (f4 not allowed) → 0.5 (3-family only is partial credit)
+    "hearing" → 0.0 (special permits are a restriction mechanism, not credit)
+    anything else → 0.0
     """
     # Affordable districts count toward total residential acres but score 0.0
     if props.get("affordable_district") == 1:
@@ -225,10 +264,8 @@ def _score_district(props: dict) -> float | None:
     f3 = props.get("family3_treatment")
     f4 = props.get("family4_treatment")
 
-    def _t(val: str | None) -> float:
-        return 1.0 if val == "allowed" else 0.0
-
-    return max(_t(f3), _t(f4))
+    return max(1.0 if f4 == "allowed" else 0.0,
+               0.5 if f3 == "allowed" else 0.0)
 
 
 # ── Town aggregation ────────────────────────────────────────────────────────────

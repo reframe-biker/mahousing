@@ -1,0 +1,18 @@
+{
+  "_comment": "Known NZA coding errors by dataset filename. Entries are automatically ignored when a new dataset file is used — no manual cleanup needed on dataset update. Add entries only after manually verifying the town bylaw.",
+  "MA_Zoning_Atlas_2023.geojson": {
+    "_comment": "Errors confirmed in the 2023 dataset.",
+    "towns": {
+      "2502357600": {
+        "town": "Rochester",
+        "treatment": "null",
+        "reason": "AR district coded f4=allowed; Ch.20.40 Permitted Uses lists only single-family dwelling — multifamily not mentioned. NZA misread affirmative enumeration bylaw structure."
+      },
+      "2501703005": {
+        "town": "Ayer",
+        "treatment": "null",
+        "reason": "A1+A2 districts coded f4=allowed; Sec.5.2 Table of Use Regulations shows SPB (special permit from Planning Board) for multifamily in A1 and A2. Only GR district correctly allows multifamily by right."
+      }
+    }
+  }
+}

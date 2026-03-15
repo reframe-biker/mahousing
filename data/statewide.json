@@ -28,7 +28,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501700380",
@@ -59,7 +59,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500500520",
@@ -90,7 +90,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500300555",
@@ -121,7 +121,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501300840",
@@ -152,7 +152,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500300975",
@@ -183,7 +183,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500901260",
@@ -214,7 +214,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501501370",
@@ -245,7 +245,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500901465",
@@ -276,7 +276,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500701585",
@@ -307,7 +307,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501701605",
@@ -338,7 +338,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502701885",
@@ -369,7 +369,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501701955",
@@ -400,7 +400,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501102095",
@@ -431,7 +431,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501702130",
@@ -462,7 +462,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502702480",
@@ -493,7 +493,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500502690",
@@ -524,7 +524,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502702760",
@@ -555,7 +555,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502102935",
@@ -586,7 +586,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501703005",
@@ -594,7 +594,7 @@
     "county": "Middlesex County",
     "population": 8408,
     "grades": {
-      "zoning": "A",
+      "zoning": null,
       "mbta": "A",
       "production": "C",
       "affordability": "C",
@@ -603,7 +603,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 100.0,
+      "pct_land_multifamily_byright": null,
       "median_home_value": 547444.189321988,
       "rent_burden_pct": 37.5,
       "permits_per_1000_residents": 1.55
@@ -617,7 +617,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500103690",
@@ -648,7 +648,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502703740",
@@ -679,7 +679,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500304545",
@@ -710,7 +710,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501704615",
@@ -741,7 +741,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501504825",
@@ -772,7 +772,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502104930",
@@ -803,7 +803,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501705070",
@@ -834,7 +834,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500505280",
@@ -865,7 +865,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502705490",
@@ -896,7 +896,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501105560",
@@ -927,7 +927,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500905595",
@@ -944,7 +944,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 7.5,
+      "pct_land_multifamily_byright": 7.2,
       "median_home_value": 731204.5596172643,
       "rent_burden_pct": 50.8,
       "permits_per_1000_residents": 2.69
@@ -958,7 +958,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501705805",
@@ -989,7 +989,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502706015",
@@ -1020,7 +1020,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501306085",
@@ -1051,7 +1051,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502706365",
@@ -1082,7 +1082,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502507000",
@@ -1113,7 +1113,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500107175",
@@ -1144,7 +1144,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501707350",
@@ -1175,7 +1175,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500907420",
@@ -1206,7 +1206,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502707525",
@@ -1237,7 +1237,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502107740",
@@ -1268,7 +1268,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500107980",
@@ -1299,7 +1299,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502308130",
@@ -1330,7 +1330,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501308470",
@@ -1361,7 +1361,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502309000",
@@ -1378,7 +1378,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 13.8,
+      "pct_land_multifamily_byright": 10.4,
       "median_home_value": 492207.3720018882,
       "rent_burden_pct": 50.2,
       "permits_per_1000_residents": 0.58
@@ -1392,7 +1392,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502709105",
@@ -1423,7 +1423,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502109175",
@@ -1454,7 +1454,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501109595",
@@ -1485,7 +1485,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501709840",
@@ -1516,7 +1516,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501711000",
@@ -1547,7 +1547,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502111315",
@@ -1578,7 +1578,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501711525",
@@ -1609,7 +1609,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502311665",
@@ -1640,7 +1640,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501112505",
@@ -1671,7 +1671,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502712715",
@@ -1702,7 +1702,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500112995",
@@ -1733,7 +1733,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501713135",
@@ -1764,7 +1764,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502513205",
@@ -1781,7 +1781,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 48.2,
+      "pct_land_multifamily_byright": 26.9,
       "median_home_value": 515743.8094685096,
       "rent_burden_pct": 55.1,
       "permits_per_1000_residents": 1.48
@@ -1795,7 +1795,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500313345",
@@ -1826,7 +1826,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501313485",
@@ -1857,7 +1857,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501513590",
@@ -1888,7 +1888,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501313660",
@@ -1919,7 +1919,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500713800",
@@ -1950,7 +1950,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500314010",
@@ -1981,7 +1981,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502714395",
@@ -2012,7 +2012,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502114640",
@@ -2043,7 +2043,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501114885",
@@ -2074,7 +2074,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501715060",
@@ -2105,7 +2105,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501115200",
@@ -2136,7 +2136,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501516040",
@@ -2167,7 +2167,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500316180",
@@ -2198,7 +2198,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500916250",
@@ -2229,7 +2229,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500516425",
@@ -2260,7 +2260,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502116495",
@@ -2268,7 +2268,7 @@
     "county": "Norfolk County",
     "population": 25150,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "D",
       "affordability": "F",
@@ -2277,7 +2277,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 44.0,
+      "pct_land_multifamily_byright": 22.0,
       "median_home_value": 736523.8966751727,
       "rent_burden_pct": 51.2,
       "permits_per_1000_residents": 0.95
@@ -2291,7 +2291,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501116670",
@@ -2322,7 +2322,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500116775",
@@ -2353,7 +2353,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500516950",
@@ -2384,7 +2384,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502717300",
@@ -2415,7 +2415,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502117405",
@@ -2446,7 +2446,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501717475",
@@ -2477,7 +2477,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502717685",
@@ -2508,7 +2508,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501717825",
@@ -2539,7 +2539,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502317895",
@@ -2570,7 +2570,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502318455",
@@ -2601,7 +2601,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502718560",
@@ -2632,7 +2632,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501319645",
@@ -2663,7 +2663,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500119295",
@@ -2694,7 +2694,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501519370",
@@ -2725,7 +2725,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500520100",
@@ -2756,7 +2756,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500721150",
@@ -2787,7 +2787,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500321360",
@@ -2818,7 +2818,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501121780",
@@ -2849,7 +2849,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500921850",
@@ -2880,7 +2880,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501721990",
@@ -2897,7 +2897,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 100.0,
+      "pct_land_multifamily_byright": 50.0,
       "median_home_value": 617474.8795334011,
       "rent_burden_pct": 51.6,
       "permits_per_1000_residents": 4.09
@@ -2911,7 +2911,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500522130",
@@ -2942,7 +2942,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500523000",
@@ -2959,7 +2959,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 23.1,
+      "pct_land_multifamily_byright": 18.9,
       "median_home_value": 436558.16915323446,
       "rent_burden_pct": 46.3,
       "permits_per_1000_residents": 0.59
@@ -2973,7 +2973,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500123105",
@@ -3004,7 +3004,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502723875",
@@ -3035,7 +3035,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500324120",
@@ -3066,7 +3066,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502124820",
@@ -3097,7 +3097,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501724960",
@@ -3128,7 +3128,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502125172",
@@ -3159,7 +3159,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500525240",
@@ -3190,7 +3190,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502725485",
@@ -3221,7 +3221,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500925625",
@@ -3252,7 +3252,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501125730",
@@ -3283,7 +3283,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500926150",
@@ -3314,7 +3314,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501526290",
@@ -3345,7 +3345,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500726325",
@@ -3376,7 +3376,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502726430",
@@ -3407,7 +3407,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501526535",
@@ -3438,7 +3438,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501326675",
@@ -3469,7 +3469,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500326815",
@@ -3500,7 +3500,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501127060",
@@ -3531,7 +3531,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501727480",
@@ -3562,7 +3562,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500927620",
@@ -3593,7 +3593,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501527690",
@@ -3624,7 +3624,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502327795",
@@ -3655,7 +3655,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500927900",
@@ -3686,7 +3686,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501328075",
@@ -3717,7 +3717,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500328180",
@@ -3748,7 +3748,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502328285",
@@ -3779,7 +3779,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502328495",
@@ -3810,7 +3810,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502728740",
@@ -3841,7 +3841,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502728950",
@@ -3872,7 +3872,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500129020",
@@ -3903,7 +3903,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501529265",
@@ -3934,7 +3934,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500929405",
@@ -3965,7 +3965,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501129475",
@@ -3996,7 +3996,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501129650",
@@ -4027,7 +4027,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502330210",
@@ -4044,7 +4044,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 23.3,
+      "pct_land_multifamily_byright": 12.1,
       "median_home_value": 1253471.76353596,
       "rent_burden_pct": 54.4,
       "permits_per_1000_residents": 1.08
@@ -4058,7 +4058,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500330315",
@@ -4089,7 +4089,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502130455",
@@ -4120,7 +4120,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502730560",
@@ -4151,7 +4151,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501330665",
@@ -4182,7 +4182,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501730700",
@@ -4213,7 +4213,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501330840",
@@ -4244,7 +4244,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502730945",
@@ -4275,7 +4275,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501731085",
@@ -4306,7 +4306,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502731435",
@@ -4337,7 +4337,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501731540",
@@ -4368,7 +4368,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502331645",
@@ -4399,7 +4399,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501531785",
@@ -4430,7 +4430,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500932310",
@@ -4461,7 +4461,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502333220",
@@ -4492,7 +4492,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502333920",
@@ -4523,7 +4523,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502734165",
@@ -4554,7 +4554,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500334340",
@@ -4585,7 +4585,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500934550",
@@ -4616,7 +4616,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500334655",
@@ -4647,7 +4647,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502734795",
@@ -4678,7 +4678,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500334970",
@@ -4709,7 +4709,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502735075",
@@ -4740,7 +4740,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501135180",
@@ -4771,7 +4771,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501735215",
@@ -4802,7 +4802,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501135285",
@@ -4833,7 +4833,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501735425",
@@ -4864,7 +4864,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501735950",
@@ -4895,7 +4895,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501336300",
@@ -4926,7 +4926,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501737000",
@@ -4957,7 +4957,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501337175",
@@ -4988,7 +4988,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502737420",
@@ -5019,7 +5019,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500937490",
@@ -5050,7 +5050,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500937560",
@@ -5081,7 +5081,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501737875",
@@ -5112,7 +5112,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500937995",
@@ -5143,7 +5143,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500538225",
@@ -5174,7 +5174,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500938400",
@@ -5205,7 +5205,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502338540",
@@ -5236,7 +5236,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501738715",
@@ -5267,7 +5267,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502338855",
@@ -5298,7 +5298,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500139100",
@@ -5329,7 +5329,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502339450",
@@ -5360,7 +5360,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501739625",
@@ -5391,7 +5391,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502139765",
@@ -5422,7 +5422,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501739835",
@@ -5453,7 +5453,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502139975",
@@ -5484,7 +5484,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501740115",
@@ -5501,7 +5501,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 61.9,
+      "pct_land_multifamily_byright": 33.5,
       "median_home_value": 871901.1644404903,
       "rent_burden_pct": 44.5,
       "permits_per_1000_residents": 0.0
@@ -5515,7 +5515,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502740255",
@@ -5546,7 +5546,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500940430",
@@ -5577,7 +5577,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500940710",
@@ -5608,7 +5608,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502340850",
@@ -5625,7 +5625,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 78.3,
+      "pct_land_multifamily_byright": 39.1,
       "median_home_value": 542455.5846017225,
       "rent_burden_pct": 61.1,
       "permits_per_1000_residents": 2.93
@@ -5639,7 +5639,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501540990",
@@ -5670,7 +5670,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500941095",
@@ -5701,7 +5701,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502741165",
@@ -5732,7 +5732,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502741340",
@@ -5763,7 +5763,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502141515",
@@ -5794,7 +5794,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502741585",
@@ -5825,7 +5825,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502141690",
@@ -5856,7 +5856,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501142040",
@@ -5887,7 +5887,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501342145",
@@ -5918,7 +5918,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501142285",
@@ -5949,7 +5949,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500342460",
@@ -5980,7 +5980,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501342530",
@@ -6011,7 +6011,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500343300",
@@ -6042,7 +6042,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500943580",
@@ -6073,7 +6073,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501943790",
@@ -6104,7 +6104,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501743895",
@@ -6135,7 +6135,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502144105",
@@ -6166,7 +6166,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500344385",
@@ -6197,7 +6197,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500545000",
@@ -6228,7 +6228,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502745105",
@@ -6259,7 +6259,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500345420",
@@ -6290,7 +6290,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501145490",
@@ -6321,7 +6321,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500945175",
@@ -6352,7 +6352,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500945245",
@@ -6383,7 +6383,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501745560",
@@ -6414,7 +6414,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502146050",
@@ -6445,7 +6445,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500346225",
@@ -6476,7 +6476,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500946365",
@@ -6507,7 +6507,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500546598",
@@ -6538,7 +6538,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502747135",
@@ -6569,7 +6569,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501748955",
@@ -6586,7 +6586,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 75.8,
+      "pct_land_multifamily_byright": 37.9,
       "median_home_value": 788471.6209506653,
       "rent_burden_pct": 62.6,
       "permits_per_1000_residents": 8.76
@@ -6600,7 +6600,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501546330",
@@ -6631,7 +6631,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502746820",
@@ -6662,7 +6662,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502746925",
@@ -6693,7 +6693,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501147835",
@@ -6724,7 +6724,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500549970",
@@ -6755,7 +6755,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502350145",
@@ -6772,7 +6772,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 100.0,
+      "pct_land_multifamily_byright": 50.0,
       "median_home_value": 1007885.3369255844,
       "rent_burden_pct": 55.7,
       "permits_per_1000_residents": 2.3
@@ -6786,7 +6786,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502150250",
@@ -6817,7 +6817,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500750390",
@@ -6848,7 +6848,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502750670",
@@ -6879,7 +6879,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501151265",
@@ -6910,7 +6910,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500151440",
@@ -6941,7 +6941,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500351580",
@@ -6972,7 +6972,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502751825",
@@ -7003,7 +7003,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501352144",
@@ -7034,7 +7034,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502752420",
@@ -7065,7 +7065,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500952490",
@@ -7096,7 +7096,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501552560",
@@ -7127,7 +7127,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502352630",
@@ -7158,7 +7158,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501752805",
@@ -7189,7 +7189,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500353050",
@@ -7220,7 +7220,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502753120",
@@ -7251,7 +7251,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502753225",
@@ -7282,7 +7282,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500353960",
@@ -7313,7 +7313,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501554030",
@@ -7330,7 +7330,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 100.0,
+      "pct_land_multifamily_byright": 50.0,
       "median_home_value": 307170.17027580313,
       "rent_burden_pct": 44.0,
       "permits_per_1000_residents": 12.94
@@ -7344,7 +7344,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502154100",
@@ -7375,7 +7375,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502354310",
@@ -7406,7 +7406,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502354415",
@@ -7437,7 +7437,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502755395",
@@ -7468,7 +7468,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500155500",
@@ -7499,7 +7499,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502155745",
@@ -7530,7 +7530,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502156000",
@@ -7561,7 +7561,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500556060",
@@ -7592,7 +7592,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501756130",
@@ -7623,7 +7623,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500556375",
@@ -7654,7 +7654,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502556585",
@@ -7685,7 +7685,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500356795",
@@ -7716,7 +7716,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502357600",
@@ -7724,16 +7724,16 @@
     "county": "Plymouth County",
     "population": 5727,
     "grades": {
-      "zoning": "A",
+      "zoning": null,
       "mbta": "A",
       "production": "C",
       "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 97.3,
+      "pct_land_multifamily_byright": null,
       "median_home_value": 662945.271886778,
       "rent_burden_pct": 13.6,
       "permits_per_1000_residents": 1.75
@@ -7747,7 +7747,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502357775",
@@ -7778,7 +7778,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500957880",
@@ -7809,7 +7809,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501158335",
@@ -7840,7 +7840,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500958405",
@@ -7871,7 +7871,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502758580",
@@ -7902,7 +7902,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501358650",
@@ -7933,7 +7933,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502758825",
@@ -7964,7 +7964,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500959105",
@@ -7995,7 +7995,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500959245",
@@ -8026,7 +8026,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500359665",
@@ -8057,7 +8057,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500159735",
@@ -8088,7 +8088,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500960015",
@@ -8119,7 +8119,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500360225",
@@ -8150,7 +8150,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502360330",
@@ -8181,7 +8181,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500560645",
@@ -8212,7 +8212,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502160785",
@@ -8243,7 +8243,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500361065",
@@ -8274,7 +8274,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501161135",
@@ -8305,7 +8305,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501761380",
@@ -8336,7 +8336,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501761590",
@@ -8344,16 +8344,16 @@
     "county": "Middlesex County",
     "population": 7092,
     "grades": {
-      "zoning": "D",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "F",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 1.0,
+      "pct_land_multifamily_byright": 0.5,
       "median_home_value": 535340.6104865642,
       "rent_burden_pct": 53.4,
       "permits_per_1000_residents": 1.13
@@ -8367,7 +8367,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502761800",
@@ -8398,7 +8398,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501161905",
@@ -8429,7 +8429,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500562430",
@@ -8460,7 +8460,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501762535",
@@ -8477,7 +8477,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 100.0,
+      "pct_land_multifamily_byright": 58.4,
       "median_home_value": 910192.8334448456,
       "rent_burden_pct": 36.1,
       "permits_per_1000_residents": 1.47
@@ -8491,7 +8491,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501564145",
@@ -8522,7 +8522,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501562745",
@@ -8553,7 +8553,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502763165",
@@ -8584,7 +8584,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502763345",
@@ -8615,7 +8615,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501365825",
@@ -8646,7 +8646,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502766105",
@@ -8677,7 +8677,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501367000",
@@ -8708,7 +8708,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502767385",
@@ -8739,7 +8739,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500367595",
@@ -8770,7 +8770,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501767665",
@@ -8801,7 +8801,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502167945",
@@ -8832,7 +8832,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501768050",
@@ -8863,7 +8863,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502768155",
@@ -8894,7 +8894,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501768260",
@@ -8925,7 +8925,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501168400",
@@ -8956,7 +8956,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502768610",
@@ -8987,7 +8987,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500968645",
@@ -9018,7 +9018,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500568750",
@@ -9049,7 +9049,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500569170",
@@ -9066,7 +9066,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 24.3,
+      "pct_land_multifamily_byright": 12.1,
       "median_home_value": 501464.24088225566,
       "rent_burden_pct": 50.4,
       "permits_per_1000_residents": 4.41
@@ -9080,7 +9080,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502769275",
@@ -9111,7 +9111,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501769415",
@@ -9142,7 +9142,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500769940",
@@ -9173,7 +9173,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501370045",
@@ -9204,7 +9204,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500970150",
@@ -9235,7 +9235,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501770360",
@@ -9266,7 +9266,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500170605",
@@ -9297,7 +9297,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501771025",
@@ -9328,7 +9328,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500371095",
@@ -9359,7 +9359,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502771480",
@@ -9390,7 +9390,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502771620",
@@ -9421,7 +9421,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501772215",
@@ -9452,7 +9452,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501372390",
@@ -9483,7 +9483,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502172495",
@@ -9514,7 +9514,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501772600",
@@ -9545,7 +9545,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501572880",
@@ -9576,7 +9576,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502372985",
@@ -9607,7 +9607,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502773090",
@@ -9638,7 +9638,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501173265",
@@ -9669,7 +9669,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500373335",
@@ -9700,7 +9700,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501773440",
@@ -9717,7 +9717,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 8.6,
+      "pct_land_multifamily_byright": 4.3,
       "median_home_value": 722000.0,
       "rent_burden_pct": 39.5,
       "permits_per_1000_residents": 0.26
@@ -9731,7 +9731,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501773790",
@@ -9762,7 +9762,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502773895",
@@ -9793,7 +9793,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502174175",
@@ -9824,7 +9824,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500174385",
@@ -9855,7 +9855,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501174525",
@@ -9886,7 +9886,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500974595",
@@ -9917,7 +9917,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502775155",
@@ -9948,7 +9948,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502375260",
@@ -9979,7 +9979,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502775400",
@@ -10010,7 +10010,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500977150",
@@ -10041,7 +10041,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501377890",
@@ -10072,7 +10072,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500377990",
@@ -10103,7 +10103,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500778235",
@@ -10134,7 +10134,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502775015",
@@ -10165,7 +10165,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501376030",
@@ -10196,7 +10196,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501776135",
@@ -10227,7 +10227,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501576380",
@@ -10258,7 +10258,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502777010",
@@ -10289,7 +10289,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501777255",
@@ -10320,7 +10320,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500577570",
@@ -10351,7 +10351,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502178690",
@@ -10382,7 +10382,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502178972",
@@ -10399,7 +10399,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 9.2,
+      "pct_land_multifamily_byright": 8.5,
       "median_home_value": 469300.0,
       "rent_burden_pct": 51.8,
       "permits_per_1000_residents": 0.94
@@ -10413,7 +10413,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501179110",
@@ -10444,7 +10444,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502379530",
@@ -10475,7 +10475,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501379740",
@@ -10506,7 +10506,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501579915",
@@ -10537,7 +10537,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500379985",
@@ -10568,7 +10568,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501780230",
@@ -10599,7 +10599,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502780405",
@@ -10630,7 +10630,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501780510",
@@ -10661,7 +10661,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500380685",
@@ -10692,7 +10692,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502581005",
@@ -10723,7 +10723,7 @@
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501781035",
@@ -10754,7 +10754,7 @@
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502782000",
@@ -10785,7 +10785,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2501582175",
@@ -10816,7 +10816,7 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2502182315",
@@ -10847,7 +10847,7 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   },
   {
     "fips": "2500182525",
@@ -10878,6 +10878,6 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-15"
   }
 ]

@@ -13,7 +13,7 @@
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 7.5,
+    "pct_land_multifamily_byright": 7.2,
     "median_home_value": 731204.5596172643,
     "rent_burden_pct": 50.8,
     "permits_per_1000_residents": 2.69
@@ -27,5 +27,5 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "updated_at": "2026-03-14"
+  "updated_at": "2026-03-15"
 }
