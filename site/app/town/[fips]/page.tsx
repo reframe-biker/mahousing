@@ -41,6 +41,7 @@ interface StateMedians {
   rent_burden_pct: number;
   permits_per_1000_residents: number;
   pct_land_multifamily_byright: number;
+  renter_share_pct: number;
 }
 
 function computeStateMedians(towns: TownRecord[]): StateMedians {
@@ -54,6 +55,7 @@ function computeStateMedians(towns: TownRecord[]): StateMedians {
     rent_burden_pct: median(getValues("rent_burden_pct")),
     permits_per_1000_residents: median(getValues("permits_per_1000_residents")),
     pct_land_multifamily_byright: median(getValues("pct_land_multifamily_byright")),
+    renter_share_pct: median(getValues("renter_share_pct")),
   };
 }
 
@@ -130,12 +132,17 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
   {
     dimension: "Affordability",
     gradeKey: "affordability",
-    getMetric: (t) =>
-      t.metrics.rent_burden_pct !== null
-        ? `${t.metrics.rent_burden_pct.toFixed(1)}% of renters cost-burdened`
-        : null,
+    getMetric: (t) => {
+      const parts: string[] = [];
+      if (t.metrics.rent_burden_pct !== null)
+        parts.push(`${t.metrics.rent_burden_pct.toFixed(1)}% of renters cost-burdened`);
+      if (t.metrics.median_home_value !== null)
+        parts.push(`$${Math.round(t.metrics.median_home_value).toLocaleString("en-US")} median home value`);
+      return parts.length > 0 ? parts.join(" · ") : null;
+    },
     explanation:
       "Combines the share of renters paying more than 30% of income on rent and the median home value. High cost burden reflects a housing supply shortfall.",
+    metricKey: "affordability",
     phase: null,
   },
   {
@@ -248,6 +255,14 @@ export default async function TownPage({
     comparisons.push({
       label: "Renter cost burden",
       text: `${fmtPct(town.metrics.rent_burden_pct)} of ${town.name} renters are cost-burdened — ${Math.abs(diff).toFixed(1)} percentage points ${dir} the MA median of ${fmtPct(medians.rent_burden_pct)}.`,
+    });
+  }
+  if (town.metrics.renter_share_pct !== null) {
+    const diff = town.metrics.renter_share_pct - medians.renter_share_pct;
+    const dir = diff > 0 ? "above" : "below";
+    comparisons.push({
+      label: "Renter share",
+      text: `${town.metrics.renter_share_pct.toFixed(1)}% of ${town.name} households rent — ${Math.abs(diff).toFixed(1)} percentage points ${dir} the MA median of ${medians.renter_share_pct.toFixed(1)}%.`,
     });
   }
   if (town.metrics.permits_per_1000_residents !== null) {

@@ -4,6 +4,7 @@ import type { Metrics, MetricsMeta } from "@/src/types/town";
 // Presentation logic lives here; labels and descriptions come from props.
 const FORMATTERS: Record<string, (v: number) => string> = {
   percent: (v) => v.toFixed(1) + "%",
+  pct: (v) => v.toFixed(1) + "%",
   dollars: (v) => "$" + Math.round(v).toLocaleString("en-US"),
   rate: (v) => v.toFixed(2) + " per 1,000 residents",
 };
