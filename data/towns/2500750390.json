@@ -19,7 +19,7 @@
     "permits_per_1000_residents": 1.5
   },
   "data_notes": {
-    "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
+    "zoning": null,
     "production": null,
     "affordability": null
   },

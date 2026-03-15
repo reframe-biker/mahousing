@@ -142,6 +142,7 @@ def get_zoning_data() -> pd.DataFrame:
         (combined["max_single_year_share"] > _SPIKE_YEAR_SHARE_THRESHOLD)
         & (combined["permits"] < _SPIKE_MAX_TOTAL_PERMITS)
         & ~combined["low_sample"]   # only flag towns that actually have a grade
+        & (combined["pct_multifamily_permitted"] > 0)  # 0% towns can't be distorted by a spike
     )
 
     combined["data_note"] = None
