@@ -59,6 +59,15 @@ body {
   color: var(--nav-text);
 }
 
+@media (max-width: 480px) {
+  .nav-brand {
+    font-size: 13px;
+  }
+  .nav-icon-link {
+    font-size: 12px;
+  }
+}
+
 /* ─── Methodology page ───────────────────────────────────────────────────── */
 .methodology-content {
   max-width: 720px;
