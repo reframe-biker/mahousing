@@ -122,6 +122,10 @@ export default function Map({ towns }: Props) {
         return geoid ? townIndex.current[geoid] : undefined;
       }
 
+      const isTouchDevice = () =>
+        typeof window !== "undefined" &&
+        window.matchMedia("(pointer: coarse)").matches;
+
       // Types for mobile two-tap state stored on Leaflet objects
       type MobileLayer = import("leaflet").Path & { _mobileSelected?: boolean };
       type MobileMap = import("leaflet").Map & {
@@ -145,7 +149,7 @@ export default function Map({ towns }: Props) {
           const gradeColor = GRADE_COLOR[grade ?? "null"];
           const fips = town?.fips ?? null;
 
-          if (!L.Browser.touch) {
+          if (!isTouchDevice()) {
             // Desktop: original hover + direct-click behavior unchanged
             layer.on({
               mouseover(e) {
