@@ -122,6 +122,12 @@ export default function Map({ towns }: Props) {
         return geoid ? townIndex.current[geoid] : undefined;
       }
 
+      // Types for mobile two-tap state stored on Leaflet objects
+      type MobileLayer = import("leaflet").Path & { _mobileSelected?: boolean };
+      type MobileMap = import("leaflet").Map & {
+        _mobileSelectedLayer?: MobileLayer;
+      };
+
       const geoLayer = L.geoJSON(geojsonData, {
         style: (feature) => {
           const props = (feature?.properties ?? {}) as Record<string, unknown>;
@@ -139,37 +145,105 @@ export default function Map({ towns }: Props) {
           const gradeColor = GRADE_COLOR[grade ?? "null"];
           const fips = town?.fips ?? null;
 
-          layer.on({
-            mouseover(e) {
-              const target = e.target as import("leaflet").Path;
-              target.setStyle({
-                fillOpacity: 0.92,
-                weight: 1.5,
-                color: "#333330",
-                opacity: 1,
-              });
-              tooltip
-                .setLatLng(e.latlng)
-                .setContent(
-                  `<span style="font-weight:600;color:#1a1816">${townName}</span>` +
-                  `<br/><span style="color:#5a5450;font-size:12px">Grade </span>` +
-                  `<span style="font-family:'DM Mono',monospace;font-weight:500;color:${gradeColor}">${grade ?? "–"}</span>`
-                )
-                .addTo(map);
-            },
-            mouseout(e) {
-              geoLayer.resetStyle(e.target as import("leaflet").Path);
-              tooltip.remove();
-            },
-            click() {
-              if (fips) router.push(`/town/${fips}`);
-            },
-          });
+          if (!L.Browser.touch) {
+            // Desktop: original hover + direct-click behavior unchanged
+            layer.on({
+              mouseover(e) {
+                const target = e.target as import("leaflet").Path;
+                target.setStyle({
+                  fillOpacity: 0.92,
+                  weight: 1.5,
+                  color: "#333330",
+                  opacity: 1,
+                });
+                tooltip
+                  .setLatLng(e.latlng)
+                  .setContent(
+                    `<span style="font-weight:600;color:#1a1816">${townName}</span>` +
+                    `<br/><span style="color:#5a5450;font-size:12px">Grade </span>` +
+                    `<span style="font-family:'DM Mono',monospace;font-weight:500;color:${gradeColor}">${grade ?? "–"}</span>`
+                  )
+                  .addTo(map);
+              },
+              mouseout(e) {
+                geoLayer.resetStyle(e.target as import("leaflet").Path);
+                tooltip.remove();
+              },
+              click() {
+                if (fips) router.push(`/town/${fips}`);
+              },
+            });
+          } else {
+            // Mobile: first tap highlights + shows popup, second tap navigates
+            layer.on({
+              click(e) {
+                if (!fips) return;
+                const mobileLayer = layer as MobileLayer;
+                const mobileMap = map as MobileMap;
+
+                // Second tap on the already-selected town → navigate
+                if (mobileLayer._mobileSelected) {
+                  router.push(`/town/${fips}`);
+                  return;
+                }
+
+                // Deselect any previously selected layer
+                if (mobileMap._mobileSelectedLayer) {
+                  mobileMap._mobileSelectedLayer._mobileSelected = false;
+                  geoLayer.resetStyle(mobileMap._mobileSelectedLayer);
+                  (mobileMap._mobileSelectedLayer as import("leaflet").Layer).closePopup();
+                }
+
+                // Select this layer
+                mobileLayer._mobileSelected = true;
+                mobileMap._mobileSelectedLayer = mobileLayer;
+
+                // Highlight the tapped polygon
+                (layer as import("leaflet").Path).setStyle({
+                  fillOpacity: 0.92,
+                  weight: 1.5,
+                  color: "#333330",
+                  opacity: 1,
+                });
+
+                // Show popup with town name, grade, and navigate link
+                layer.bindPopup(
+                  `<div style="font-family: inherit; min-width: 140px;">
+                    <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px;">${townName}</div>
+                    <div style="font-size: 12px; color: #5a5450; margin-bottom: 10px;">
+                      Composite grade: <strong>${grade ?? "N/A"}</strong>
+                    </div>
+                    <a href="/town/${fips}"
+                       style="display: block; text-align: center; background: #1a1816;
+                              color: #f0ede8; padding: 6px 12px; border-radius: 4px;
+                              text-decoration: none; font-size: 12px; font-weight: 500;">
+                      View profile →
+                    </a>
+                  </div>`,
+                  { closeButton: true, autoClose: true, closeOnClick: false }
+                ).openPopup();
+
+                // Stop propagation so the map-level click handler doesn't
+                // immediately dismiss the popup we just opened
+                e.originalEvent.stopPropagation();
+              },
+            });
+          }
         },
       });
 
       geoLayer.addTo(map);
       layerRef.current = geoLayer;
+
+      // Mobile: tapping the map background dismisses the active popup/highlight
+      map.on("click", () => {
+        const mobileMap = map as MobileMap;
+        if (mobileMap._mobileSelectedLayer) {
+          mobileMap._mobileSelectedLayer._mobileSelected = false;
+          geoLayer.resetStyle(mobileMap._mobileSelectedLayer);
+          mobileMap._mobileSelectedLayer = undefined;
+        }
+      });
 
       // Fit map to MA bounds — maxZoom: 8 ensures surrounding states remain visible
       try {
