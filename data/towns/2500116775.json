@@ -9,15 +9,19 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 643505.9858781304,
     "rent_burden_pct": 52.2,
     "permits_per_1000_residents": 1.7,
-    "renter_share_pct": 21.8
+    "renter_share_pct": 21.8,
+    "rep_name": "Chris Flanagan",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

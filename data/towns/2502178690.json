@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 1185364.91949008,
     "rent_burden_pct": 53.1,
     "permits_per_1000_residents": 0.87,
-    "renter_share_pct": 13.7
+    "renter_share_pct": 13.7,
+    "rep_name": "Paul McMurtry",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

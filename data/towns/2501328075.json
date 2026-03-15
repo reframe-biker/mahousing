@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": null,
+    "rep": "B",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 431483.4538694995,
     "rent_burden_pct": 34.7,
     "permits_per_1000_residents": 0.81,
-    "renter_share_pct": 4.8
+    "renter_share_pct": 4.8,
+    "rep_name": "Brian Ashe",
+    "rep_pct_score": 66.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

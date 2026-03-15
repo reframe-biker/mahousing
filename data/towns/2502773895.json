@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "D",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 425251.80457063066,
     "rent_burden_pct": 51.1,
     "permits_per_1000_residents": 0.11,
-    "renter_share_pct": 41.0
+    "renter_share_pct": 41.0,
+    "rep_name": "Joe McKenna",
+    "rep_pct_score": 20.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

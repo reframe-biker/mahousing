@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 19.2,
     "median_home_value": 530200.1463249134,
     "rent_burden_pct": 54.6,
     "permits_per_1000_residents": 0.34,
-    "renter_share_pct": 40.0
+    "renter_share_pct": 40.0,
+    "rep_name": "Andy Vargas",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

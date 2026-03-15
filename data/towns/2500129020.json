@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 721493.1435496738,
     "rent_burden_pct": 44.1,
     "permits_per_1000_residents": 2.01,
-    "renter_share_pct": 15.7
+    "renter_share_pct": 15.7,
+    "rep_name": "Hadley Luddy",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

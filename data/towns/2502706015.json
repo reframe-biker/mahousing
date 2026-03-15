@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 464771.72520476585,
     "rent_burden_pct": 57.1,
     "permits_per_1000_residents": 2.28,
-    "renter_share_pct": 24.5
+    "renter_share_pct": 24.5,
+    "rep_name": "Mike Soter",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

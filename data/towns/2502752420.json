@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": null,
+    "rep": "D",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 532767.8741573672,
     "rent_burden_pct": 33.0,
     "permits_per_1000_residents": 0.8,
-    "renter_share_pct": 11.5
+    "renter_share_pct": 11.5,
+    "rep_name": "Kim Ferguson",
+    "rep_pct_score": 20.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

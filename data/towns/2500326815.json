@@ -9,15 +9,19 @@
     "production": "B",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 62.5,
     "median_home_value": 565792.232138363,
     "rent_burden_pct": 50.8,
     "permits_per_1000_residents": 4.87,
-    "renter_share_pct": 27.8
+    "renter_share_pct": 27.8,
+    "rep_name": "Leigh Davis",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",

@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "B",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 318666.55814642634,
     "rent_burden_pct": 54.4,
     "permits_per_1000_residents": 0.0,
-    "renter_share_pct": 22.0
+    "renter_share_pct": 22.0,
+    "rep_name": "Susannah Whipps",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

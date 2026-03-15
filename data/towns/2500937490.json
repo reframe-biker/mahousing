@@ -9,15 +9,19 @@
     "production": "B",
     "affordability": "D",
     "votes": null,
-    "rep": null,
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 20.6,
     "median_home_value": 564367.4049000997,
     "rent_burden_pct": 53.9,
     "permits_per_1000_residents": 3.78,
-    "renter_share_pct": 51.4
+    "renter_share_pct": 51.4,
+    "rep_name": "Sean Reid",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

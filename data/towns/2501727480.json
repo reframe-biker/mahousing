@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 753485.9756738484,
     "rent_burden_pct": 39.6,
     "permits_per_1000_residents": 1.69,
-    "renter_share_pct": 12.3
+    "renter_share_pct": 12.3,
+    "rep_name": "Margaret Scarsdale",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

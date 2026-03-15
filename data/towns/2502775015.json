@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 712579.7852855567,
     "rent_burden_pct": 38.1,
     "permits_per_1000_residents": 2.62,
-    "renter_share_pct": 39.1
+    "renter_share_pct": 39.1,
+    "rep_name": "Kate Donaghue",
+    "rep_pct_score": 93.3,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

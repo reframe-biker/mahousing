@@ -9,15 +9,19 @@
     "production": "A",
     "affordability": "D",
     "votes": null,
-    "rep": null,
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 52.0,
     "median_home_value": 1048896.9909783562,
     "rent_burden_pct": 63.1,
     "permits_per_1000_residents": 5.79,
-    "renter_share_pct": 23.6
+    "renter_share_pct": 23.6,
+    "rep_name": "Hadley Luddy",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

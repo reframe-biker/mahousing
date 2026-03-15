@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 1402451.6830031655,
     "rent_burden_pct": 37.7,
     "permits_per_1000_residents": 0.33,
-    "renter_share_pct": 36.5
+    "renter_share_pct": 36.5,
+    "rep_name": "Dave Rogers",
+    "rep_pct_score": 80.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

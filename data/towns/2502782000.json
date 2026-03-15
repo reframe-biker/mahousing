@@ -9,15 +9,19 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 15.2,
     "median_home_value": 421246.1745291397,
     "rent_burden_pct": 49.9,
     "permits_per_1000_residents": 1.31,
-    "renter_share_pct": 57.9
+    "renter_share_pct": 57.9,
+    "rep_name": "John Mahoney",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

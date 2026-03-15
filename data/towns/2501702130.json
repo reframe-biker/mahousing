@@ -9,15 +9,19 @@
     "production": "A",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "B",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 655077.180387678,
     "rent_burden_pct": 43.8,
     "permits_per_1000_residents": 9.45,
-    "renter_share_pct": 23.3
+    "renter_share_pct": 23.3,
+    "rep_name": "Jack Lewis",
+    "rep_pct_score": 66.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

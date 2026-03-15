@@ -9,15 +9,19 @@
     "production": "A",
     "affordability": "B",
     "votes": null,
-    "rep": null,
-    "composite": "A"
+    "rep": "F",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 31.8,
     "median_home_value": 457870.5326544905,
     "rent_burden_pct": 46.2,
     "permits_per_1000_residents": 6.6,
-    "renter_share_pct": 22.7
+    "renter_share_pct": 22.7,
+    "rep_name": "John Gaskey",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

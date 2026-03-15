@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "B",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 764400.0399991652,
     "rent_burden_pct": 57.4,
     "permits_per_1000_residents": 1.36,
-    "renter_share_pct": 19.9
+    "renter_share_pct": 19.9,
+    "rep_name": "Patrick Kearney",
+    "rep_pct_score": 73.3,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

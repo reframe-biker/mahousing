@@ -1,0 +1,104 @@
+{
+  "_comment": "Curated housing production bill list. Editorial decisions documented inline. Add bills after review. Remove session entries when superseded by new data.",
+  "scoring_axis": "housing_production",
+  "bills": [
+    {
+      "id": "rc117_final_passage",
+      "session": "193",
+      "bill": "H4707",
+      "type": "rollcall",
+      "supplement_number": 117,
+      "description": "H4707 final passage — Affordable Homes Act, 145-13",
+      "date": "2024-06-05",
+      "year": 2024,
+      "pro_housing_vote": "yea",
+      "weight": 3,
+      "rationale": "Most important single vote. Final passage of the Affordable Homes Act."
+    },
+    {
+      "id": "rc199_enacted",
+      "session": "193",
+      "bill": "H4977",
+      "type": "rollcall",
+      "supplement_number": 199,
+      "description": "H4977 conference report — enacted version of Affordable Homes Act, 128-24",
+      "date": "2024-08-01",
+      "year": 2024,
+      "pro_housing_vote": "yea",
+      "weight": 3,
+      "rationale": "The actual law. Conference committee report accepted before sending to governor."
+    },
+    {
+      "id": "rc110_lombardo",
+      "session": "193",
+      "bill": "H4707",
+      "type": "rollcall",
+      "supplement_number": 110,
+      "description": "Amendment 29 — Lombardo: exempt 40B-compliant towns from MBTA Communities Act, defeated 27-131",
+      "date": "2024-06-05",
+      "year": 2024,
+      "pro_housing_vote": "nay",
+      "weight": 2,
+      "rationale": "Anti-housing weakening attempt targeting MBTA Communities enforcement. NAY = pro-housing."
+    },
+    {
+      "id": "rc111_jones",
+      "session": "193",
+      "bill": "H4707",
+      "type": "rollcall",
+      "supplement_number": 111,
+      "description": "Amendment 129 — Jones (Minority Leader): make MBTA Communities evasion easier, defeated 32-126",
+      "date": "2024-06-05",
+      "year": 2024,
+      "pro_housing_vote": "nay",
+      "weight": 2,
+      "rationale": "Anti-housing weakening attempt from Minority Leader. NAY = pro-housing."
+    },
+    {
+      "id": "rc113_consol_a",
+      "session": "193",
+      "bill": "H4707",
+      "type": "rollcall",
+      "supplement_number": 113,
+      "description": "Consolidated A — preserve ADU by-right language, passed 130-28",
+      "date": "2024-06-05",
+      "year": 2024,
+      "pro_housing_vote": "yea",
+      "weight": 2,
+      "rationale": "ADU by-right is core housing production. YEA = pro-housing."
+    },
+    {
+      "id": "rc114_frost",
+      "session": "193",
+      "bill": "H4707",
+      "type": "rollcall",
+      "supplement_number": 114,
+      "description": "Amendment 348 — Frost: count mobile homes toward 40B threshold, defeated 30-127",
+      "date": "2024-06-05",
+      "year": 2024,
+      "pro_housing_vote": "nay",
+      "weight": 1,
+      "rationale": "NIMBY tactic to inflate 40B numbers and resist new development. NAY = pro-housing."
+    },
+    {
+      "id": "H1379_cosponsor_193",
+      "session": "193",
+      "bill": "H1379",
+      "type": "cosponsor",
+      "description": "YIMBY Act (193rd) — An Act to promote Yes in My Backyard, 33 cosponsors",
+      "pro_housing_vote": "cosponsor",
+      "weight": 1,
+      "rationale": "Proactive co-sponsorship of comprehensive zoning reform bill. 33 House cosponsors."
+    },
+    {
+      "id": "H1572_cosponsor_194",
+      "session": "194",
+      "bill": "H1572",
+      "type": "cosponsor",
+      "description": "YIMBY Act (194th) — current session, 20 cosponsors as of March 2026",
+      "pro_housing_vote": "cosponsor",
+      "weight": 1,
+      "rationale": "Live political signal. Co-sponsoring the active YIMBY bill right now."
+    }
+  ]
+}

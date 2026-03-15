@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 1220586.149305734,
     "rent_burden_pct": 8.3,
     "permits_per_1000_residents": 0.0,
-    "renter_share_pct": 50.0
+    "renter_share_pct": 50.0,
+    "rep_name": "Thomas Moakley",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

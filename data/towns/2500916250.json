@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 706798.2100514104,
     "rent_burden_pct": 47.3,
     "permits_per_1000_residents": 0.29,
-    "renter_share_pct": 29.9
+    "renter_share_pct": 29.9,
+    "rep_name": "Sally Kerans",
+    "rep_pct_score": 80.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

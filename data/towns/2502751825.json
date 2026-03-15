@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 417639.9271915857,
     "rent_burden_pct": 44.1,
     "permits_per_1000_residents": 0.82,
-    "renter_share_pct": 18.6
+    "renter_share_pct": 18.6,
+    "rep_name": "Paul Frost",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

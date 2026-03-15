@@ -38,6 +38,8 @@ from pipeline.ingest.building_permits import fetch_permit_data
 from pipeline.ingest.dhcd_mbta import get_mbta_data
 from pipeline.ingest.zillow import fetch_zillow_data
 from pipeline.ingest.zoning import get_zoning_data
+from pipeline.ingest.legislators import get_legislator_data
+from pipeline.ingest.new_vote_notifier import check_for_new_pdfs
 from pipeline.metrics import METRICS
 from pipeline.score import score_town
 
@@ -81,6 +83,13 @@ def main() -> None:
     today = date.today().isoformat()
     TOWNS_DIR.mkdir(parents=True, exist_ok=True)
 
+    # ── Step 0: Check for new roll call PDFs ──────────────────────────────────
+    # Alerts only — never scores automatically. Editorial decisions are manual.
+    try:
+        check_for_new_pdfs()
+    except Exception as exc:
+        logger.warning(f"New vote notifier raised an exception: {exc}")
+
     # ── Step 1: Ingest ────────────────────────────────────────────────────────
 
     logger.info("=" * 60)
@@ -105,6 +114,7 @@ def main() -> None:
     # MBTA: pass name→FIPS map after ACS load so scraper can match town names
     _name_to_fips = dict(zip(acs_df["name"], acs_df["geoid"].astype(str)))
     mbta_df = _safe_fetch("DHCD MBTA", get_mbta_data, _name_to_fips)
+    leg_df = _safe_fetch("Legislators", get_legislator_data)
 
     # ── Step 2: Join ──────────────────────────────────────────────────────────
 
@@ -220,6 +230,23 @@ def main() -> None:
         acs_df["mbta_deadline"] = None
         acs_df["mbta_action_date"] = None
 
+    # Legislator scorecard — join on fips (geoid)
+    leg_cols = ["fips", "rep_name", "rep_pct_score", "rep_bills_scored", "rep_bills_available"]
+    if not leg_df.empty and all(c in leg_df.columns for c in leg_cols):
+        acs_df = acs_df.merge(
+            leg_df[leg_cols],
+            left_on="geoid",
+            right_on="fips",
+            how="left",
+        ).drop(columns=["fips"], errors="ignore")
+        matched_leg = acs_df["rep_pct_score"].notna().sum()
+        logger.info(f"  Legislators: {matched_leg}/{len(acs_df)} municipalities matched")
+    else:
+        acs_df["rep_name"] = None
+        acs_df["rep_pct_score"] = None
+        acs_df["rep_bills_scored"] = None
+        acs_df["rep_bills_available"] = None
+
     # ── Step 3: Derive computed metrics ───────────────────────────────────────
 
     # permits_per_1000_residents: raw_permits / population * 1000
@@ -303,16 +330,26 @@ def _build_record(row: pd.Series, today: str) -> dict:
     rent_burden = _to_float(row.get("rent_burden_pct"))
     permits_per_1000 = _to_float(row.get("permits_per_1000_residents"))
     home_value = _to_float(row.get("final_home_value"))
+    renter_share = _to_float(row.get("renter_share_pct"))
     zoning_source = _to_str(row.get("zoning_source"))
     mbta_status = _to_str(row.get("mbta_status"))
     mbta_deadline = _to_str(row.get("mbta_deadline"))
     mbta_action_date = _to_str(row.get("mbta_action_date"))
+    rep_name = _to_str(row.get("rep_name"))
+    rep_pct_score = _to_float(row.get("rep_pct_score"))
+    rep_bills_scored = _to_int(row.get("rep_bills_scored"))
+    rep_bills_available = _to_int(row.get("rep_bills_available"))
 
     metrics = {
         "pct_land_multifamily_byright": pct_mf,
         "median_home_value": home_value,
         "rent_burden_pct": rent_burden,
         "permits_per_1000_residents": permits_per_1000,
+        "renter_share_pct": renter_share,
+        "rep_name": rep_name,
+        "rep_pct_score": rep_pct_score,
+        "rep_bills_scored": rep_bills_scored,
+        "rep_bills_available": rep_bills_available,
     }
 
     grades = score_town(metrics, mbta_status=mbta_status)
@@ -393,7 +430,9 @@ def _validate_metrics(town_records: list[dict]) -> None:
 
     sample_metrics = town_records[0].get("metrics", {})
     data_keys = set(sample_metrics.keys())
-    # Only validate numeric metrics; "status" metrics live outside the metrics dict
+    # Only validate metrics that appear in the metrics dict.
+    # "status" metrics (mbta_status, affordability) live outside the metrics dict.
+    # All other units (percent, dollars, rate, count, text) are in the metrics dict.
     numeric_metrics_keys = {k for k, v in METRICS.items() if v.get("unit") != "status"}
 
     only_in_data = data_keys - numeric_metrics_keys

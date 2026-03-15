@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 731204.5596172643,
     "rent_burden_pct": 50.8,
     "permits_per_1000_residents": 2.69,
-    "renter_share_pct": 39.9
+    "renter_share_pct": 39.9,
+    "rep_name": "Hannah Bowen",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

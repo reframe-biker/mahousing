@@ -92,4 +92,45 @@ METRICS: dict[str, dict] = {
         "unit": "status",
         "higher_is_better": True,
     },
+    "rep_name": {
+        "label": "State representative",
+        "description": (
+            "Full name of the state House representative for this municipality's district. "
+            "Sourced from Open States legislator data."
+        ),
+        "source": "Open States",
+        "unit": "text",
+        "higher_is_better": False,
+    },
+    "rep_pct_score": {
+        "label": "Rep housing score",
+        "description": (
+            "Percentage of pro-housing points earned by the state representative across "
+            "all scored bills (roll call votes and co-sponsorships). "
+            "Earned points ÷ available points × 100. Range: 0–100."
+        ),
+        "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
+        "unit": "percent",
+        "higher_is_better": True,
+    },
+    "rep_bills_scored": {
+        "label": "Bills scored",
+        "description": (
+            "Number of bills in the scoring list for which the representative had a "
+            "scoreable vote (present in roll call or cosponsor check ran successfully)."
+        ),
+        "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
+        "unit": "count",
+        "higher_is_better": False,
+    },
+    "rep_bills_available": {
+        "label": "Bills available",
+        "description": (
+            "Total number of bills in the legislator scoring list at the time of the "
+            "most recent pipeline run."
+        ),
+        "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
+        "unit": "count",
+        "higher_is_better": False,
+    },
 }

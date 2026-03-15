@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 1123350.657326366,
     "rent_burden_pct": 45.5,
     "permits_per_1000_residents": 1.74,
-    "renter_share_pct": 53.6
+    "renter_share_pct": 53.6,
+    "rep_name": "Greg Schwartz",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

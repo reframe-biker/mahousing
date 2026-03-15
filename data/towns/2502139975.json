@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 697635.8661090898,
     "rent_burden_pct": 36.0,
     "permits_per_1000_residents": 1.22,
-    "renter_share_pct": 13.2
+    "renter_share_pct": 13.2,
+    "rep_name": "Jeff Roy",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

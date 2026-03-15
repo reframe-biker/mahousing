@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 315309.46218176244,
     "rent_burden_pct": 47.4,
     "permits_per_1000_residents": 0.37,
-    "renter_share_pct": 58.5
+    "renter_share_pct": 58.5,
+    "rep_name": "Pat Duffy",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

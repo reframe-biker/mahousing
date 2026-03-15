@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 782695.4572094735,
     "rent_burden_pct": 50.2,
     "permits_per_1000_residents": 0.23,
-    "renter_share_pct": 30.4
+    "renter_share_pct": 30.4,
+    "rep_name": "Adrianne Ramos",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

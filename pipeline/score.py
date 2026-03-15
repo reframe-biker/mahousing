@@ -40,7 +40,15 @@ Grading rubrics for Phase 1 dimensions:
                  Exempt MBTA towns (null mbta grade) are excluded from composite.
                  A=4, B=3, C=2, D=1, F=0. Rounded to nearest integer.
 
-Phase 4 dimensions (votes, rep) are not scored here; they return None.
+  rep            (rep_pct_score — pct of pro-housing points earned by district rep)
+    A  ≥ 80%    — strongly pro-housing
+    B  60–79%
+    C  40–59%
+    D  20–39%
+    F  < 20%    — voted anti-housing on nearly all scored bills
+    null  rep not present for any scored vote (vacancy or unmatched district)
+
+Phase 4 dimension (votes) is not scored here; it returns None.
 """
 
 from __future__ import annotations
@@ -81,9 +89,10 @@ def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
     production = _grade_production(metrics.get("permits_per_1000_residents"))
     mbta = _grade_mbta(mbta_status)
 
-    # votes, rep: not implemented until Phase 4
+    # votes: not implemented until Phase 4b
     votes = None
-    rep = None
+
+    rep = _grade_rep(metrics.get("rep_pct_score"))
 
     composite = _compute_composite([zoning, mbta, affordability, production, votes, rep])
 
@@ -228,6 +237,30 @@ def _grade_affordability(
     if numeric >= 1.5:
         return "C"
     if numeric >= 0.5:
+        return "D"
+    return "F"
+
+
+def _grade_rep(rep_pct_score: float | None) -> str | None:
+    """
+    Grade a state representative's housing voting record.
+
+    A  ≥ 80%  — strongly pro-housing
+    B  60–79%
+    C  40–59%
+    D  20–39%
+    F  < 20%  — voted anti-housing on nearly all scored bills
+    null  rep not present for any scored vote (vacant seat, unmatched district)
+    """
+    if rep_pct_score is None:
+        return None
+    if rep_pct_score >= 80:
+        return "A"
+    if rep_pct_score >= 60:
+        return "B"
+    if rep_pct_score >= 40:
+        return "C"
+    if rep_pct_score >= 20:
         return "D"
     return "F"
 

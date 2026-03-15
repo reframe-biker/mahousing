@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "B",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 654147.8846302164,
     "rent_burden_pct": 44.4,
     "permits_per_1000_residents": 1.37,
-    "renter_share_pct": 5.1
+    "renter_share_pct": 5.1,
+    "rep_name": "Kathy LaNatra",
+    "rep_pct_score": 73.3,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

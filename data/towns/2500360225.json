@@ -9,7 +9,7 @@
     "production": "A",
     "affordability": "A",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "B"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 307093.7894330081,
     "rent_burden_pct": 41.2,
     "permits_per_1000_residents": 8.06,
-    "renter_share_pct": 5.6
+    "renter_share_pct": 5.6,
+    "rep_name": "John Barrett",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

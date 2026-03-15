@@ -9,15 +9,19 @@
     "production": "A",
     "affordability": "B",
     "votes": null,
-    "rep": null,
-    "composite": "A"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
     "median_home_value": 403676.5010081047,
     "rent_burden_pct": 26.3,
     "permits_per_1000_residents": 6.71,
-    "renter_share_pct": 9.4
+    "renter_share_pct": 9.4,
+    "rep_name": "Nick Boldyga",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

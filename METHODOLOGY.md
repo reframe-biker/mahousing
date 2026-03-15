@@ -172,17 +172,75 @@ If renter share data is unavailable, equal weights (0.5/0.5) are used as a fallb
 
 ---
 
-### 6. State Legislator Record
+### 6. State Legislator Record (Phase 4a — MA House only)
 
-**Data source:** Massachusetts Legislature roll call votes; bill co-sponsorship records from the MA Legislature website and advocacy organization scorecards (e.g., CHAPA, Abundant Housing MA).
+**Data sources:** MA Legislature combined annual roll call PDFs (auto-downloaded); MA Legislature CoSponsor AJAX API (fetched live each build); Open States MA legislator CSV (manual update each new General Court); Census TIGER SLDL 2024 shapefile (manual update ~every 10 years).
 
-**What the grade measures:** The housing voting record of the state representative(s) and senator(s) who represent each municipality, on bills related to zoning, housing production, and tenant protections heard in the current and prior legislative session.
+**Scope:** Phase 4a scores House representatives only. Senate uses a per-journal-date PDF format rather than combined annual PDFs — Senate scoring is Phase 4b.
 
-**Note:** Because multiple legislators may represent portions of a single municipality, the scoring methodology for multi-district municipalities will be documented before this grade is published.
+**What the grade measures:** The housing production voting record of each municipality's state House representative, scored across a curated set of roll call votes and co-sponsorship opportunities. The bill list (`data/legislator_bill_list.json`) is an editorial curation of the most significant housing production votes. New votes are never added automatically — every addition is a manual editorial decision.
 
-**Scoring formula:** TBD. Will be documented here before publication.
+**Geographic assignment:** Each municipality is assigned to a House district via a centroid-in-polygon spatial join between MA town centroids (from `data/ma-towns.geojson`) and Census TIGER SLDL 2024 district polygons (`data/tl_2024_25_sldl.shp`). The mapping is cached at `data/town_district_map.json` and rebuilt only when deleted (next redistricting ~2031).
 
-**Current status:** Data collection methodology not yet finalized. This dimension will show N/A for all municipalities until a future phase.
+**Scoring formula:**
+
+For each scored bill:
+- `type=rollcall, pro_housing_vote="yea"`: rep earns points if they voted Y
+- `type=rollcall, pro_housing_vote="nay"`: rep earns points if they voted N (defeating an anti-housing amendment)
+- `type=cosponsor`: rep earns points if their full name appears in the bill's cosponsor list
+
+```
+pct_score = earned_points / max_points × 100
+```
+
+Current bill list (6 bills, max = 14 points):
+
+| Bill | Type | Session | Description | Pro-housing vote | Weight |
+|------|------|---------|-------------|-----------------|--------|
+| RC#113 | Roll call | 193rd (2024) | AHA — defeat Lombardo MBTA communities exemption amendment | NAY | 2 |
+| RC#114 | Roll call | 193rd (2024) | AHA — preserve ADU by-right provisions | YEA | 2 |
+| RC#117 | Roll call | 193rd (2024) | Affordable Homes Act — final passage (145–13) | YEA | 2 |
+| RC#199 | Roll call | 194th (2025) | Housing production vote | YEA | 2 |
+| H.1379 | Co-sponsor | 193rd | An Act to promote housing production (33 cosponsors) | Co-sponsor | 3 |
+| H.1572 | Co-sponsor | 194th | An Act to promote housing production (~20 cosponsors) | Co-sponsor | 3 |
+
+**Grading rubric:**
+
+| Grade | Threshold | Interpretation |
+|-------|-----------|----------------|
+| A | ≥ 80% | Strongly pro-housing |
+| B | 60–79% | Generally pro-housing |
+| C | 40–59% | Mixed record |
+| D | 20–39% | Generally anti-housing |
+| F | < 20% | Voted anti-housing on nearly all scored bills |
+| N/A | null | Rep not present for any scored vote |
+
+**Null vs. F:** `null` and `F` mean different things. `null` means the representative was not present for any scored vote — either a vacant seat, an unmatched district, or a representative whose name could not be matched in the roll call PDFs. This is **not** an F grade. An F means the representative was present and voted anti-housing across all scored bills.
+
+**Explicitly excluded votes:**
+
+- **RC#115 (Consolidated B / TOPA):** Tenant Opportunity to Purchase Act provisions. This is a tenant protection policy, not a housing production measure. Candidate for a future "stability" scoring axis.
+- **RC#112 (veterans housing preference):** Passed 158–0 (unanimous). Zero signal — excludes no one from a pro-housing or anti-housing grouping.
+- **RC#116 (Consolidated C, earmarks):** Near-unanimous, low signal.
+- **RC#43–57 (2023 supplemental budget housing line items):** Appropriations axis, not housing production policy.
+- **2023 roll calls generally:** All 70 roll calls from the 193rd session 2023 were reviewed. No housing production votes were found.
+
+**Data sources:**
+
+| Source | What it provides | Auth required | Update cadence |
+|--------|-----------------|---------------|----------------|
+| malegislature.gov Journal PDFs | Roll call votes | None (verify=False) | Auto-downloaded by pipeline |
+| malegislature.gov CoSponsor API | Cosponsor lists | One header (`X-Requested-With`) | Fetched live each build |
+| Open States ma.csv | Legislator names, districts | Browser download | Manual, each new General Court |
+| Census TIGER SLDL 2024 | House district boundaries | None | Manual, ~every 10 years |
+
+**Known data gaps:**
+
+- **1st Franklin and 5th Essex districts:** Two TIGER districts have no matching Open States district. Towns in these districts receive null grades — this is expected and not a pipeline error.
+- **Open States CSV had 158/160 seats filled** at time of download (2 vacancies). The 2 vacant-seat towns receive null grades. This is correct — vacant seats have no scoring record.
+- **193rd session reps who lost seats:** Some representative last names in 193rd roll call PDFs do not appear in the current (194th session) CSV. These names are logged at INFO level and not scored — they held seats in 2023–2024 but not in the current legislature.
+
+**New vote detection:** On each build run, `new_vote_notifier.py` checks the current session journal directory for new combined PDF URLs and alerts if any are found. A new PDF alert does **not** trigger automatic scoring — it is an editorial notice to review the journal and determine whether any votes merit inclusion in the bill list.
 
 ---
 

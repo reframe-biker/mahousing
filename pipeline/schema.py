@@ -84,6 +84,32 @@ class Metrics(TypedDict):
     Range: 0.0–100.0.
     """
 
+    rep_name: str | None
+    """
+    Full name of the state House representative for this municipality's district.
+    None if no representative is assigned (vacancy, unmatched district).
+    """
+
+    rep_pct_score: float | None
+    """
+    Percentage of pro-housing points earned by the representative across all
+    scored bills (earned / max × 100). Range: 0.0–100.0.
+    None if the rep was not present for any scored vote.
+    """
+
+    rep_bills_scored: int | None
+    """
+    Number of bills in the bill list for which the rep cast a scoreable vote
+    (present and matched). A cosponsor bill always counts as scoreable.
+    None if the rep was not present for any scored vote.
+    """
+
+    rep_bills_available: int | None
+    """
+    Total number of bills in the legislator_bill_list.json at scoring time.
+    None if the rep was not present for any scored vote.
+    """
+
 
 class DataNotes(TypedDict):
     """

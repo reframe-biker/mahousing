@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 288598.0777526624,
     "rent_burden_pct": 53.3,
     "permits_per_1000_residents": 0.32,
-    "renter_share_pct": 52.2
+    "renter_share_pct": 52.2,
+    "rep_name": "Bud Williams",
+    "rep_pct_score": 84.6,
+    "rep_bills_scored": 7,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

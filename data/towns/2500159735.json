@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "C",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 659494.9494583992,
     "rent_burden_pct": 28.8,
     "permits_per_1000_residents": 0.59,
-    "renter_share_pct": 11.1
+    "renter_share_pct": 11.1,
+    "rep_name": "Steve Xiarhos",
+    "rep_pct_score": 40.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "F"
+    "rep": "B",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 563100.0,
     "rent_burden_pct": 54.6,
     "permits_per_1000_residents": 0.42,
-    "renter_share_pct": 43.1
+    "renter_share_pct": 43.1,
+    "rep_name": "Jeff Turco",
+    "rep_pct_score": 73.3,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

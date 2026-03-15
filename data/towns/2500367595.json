@@ -9,15 +9,19 @@
     "production": "C",
     "affordability": "D",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
     "median_home_value": 713267.4759550989,
     "rent_burden_pct": 65.5,
     "permits_per_1000_residents": 2.07,
-    "renter_share_pct": 29.0
+    "renter_share_pct": 29.0,
+    "rep_name": "Leigh Davis",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

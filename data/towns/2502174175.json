@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "F",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 1946382.8628740415,
     "rent_burden_pct": 31.6,
     "permits_per_1000_residents": 2.78,
-    "renter_share_pct": 15.6
+    "renter_share_pct": 15.6,
+    "rep_name": "Alice Peisch",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

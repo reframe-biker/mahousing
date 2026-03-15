@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "A",
     "votes": null,
-    "rep": null,
+    "rep": "D",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 331067.6936327217,
     "rent_burden_pct": 19.7,
     "permits_per_1000_residents": 0.0,
-    "renter_share_pct": 7.8
+    "renter_share_pct": 7.8,
+    "rep_name": "Todd Smola",
+    "rep_pct_score": 20.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

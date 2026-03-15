@@ -9,15 +9,19 @@
     "production": "B",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 12.1,
     "median_home_value": 501464.24088225566,
     "rent_burden_pct": 50.4,
     "permits_per_1000_residents": 4.41,
-    "renter_share_pct": 38.2
+    "renter_share_pct": 38.2,
+    "rep_name": "Lisa Field",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

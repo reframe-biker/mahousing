@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "A",
     "votes": null,
-    "rep": null,
+    "rep": "B",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 399831.66311681067,
     "rent_burden_pct": 30.6,
     "permits_per_1000_residents": 1.1,
-    "renter_share_pct": 15.0
+    "renter_share_pct": 15.0,
+    "rep_name": "Jon Zlotnik",
+    "rep_pct_score": 73.3,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

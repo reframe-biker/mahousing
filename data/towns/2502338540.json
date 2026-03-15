@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 794039.2039626854,
     "rent_burden_pct": 53.5,
     "permits_per_1000_residents": 0.75,
-    "renter_share_pct": 17.4
+    "renter_share_pct": 17.4,
+    "rep_name": "Mark Sylvia",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

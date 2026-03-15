@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "B",
     "votes": null,
-    "rep": null,
+    "rep": "D",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 487800.0,
     "rent_burden_pct": 63.8,
     "permits_per_1000_residents": 1.62,
-    "renter_share_pct": 14.2
+    "renter_share_pct": 14.2,
+    "rep_name": "Colleen Garry",
+    "rep_pct_score": 20.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

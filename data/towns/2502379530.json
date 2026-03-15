@@ -9,15 +9,19 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 532676.195574406,
     "rent_burden_pct": 49.2,
     "permits_per_1000_residents": 0.92,
-    "renter_share_pct": 30.4
+    "renter_share_pct": 30.4,
+    "rep_name": "Alyson Sullivan-Almeida",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

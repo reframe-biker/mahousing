@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "B",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "D",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
     "median_home_value": 413447.8441540604,
     "rent_burden_pct": 30.1,
     "permits_per_1000_residents": 0.0,
-    "renter_share_pct": 21.0
+    "renter_share_pct": 21.0,
+    "rep_name": "Donnie Berthiaume",
+    "rep_pct_score": 33.3,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

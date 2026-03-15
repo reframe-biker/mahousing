@@ -9,15 +9,19 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 75.0,
     "median_home_value": 645130.9050514534,
     "rent_burden_pct": 30.2,
     "permits_per_1000_residents": 1.42,
-    "renter_share_pct": 18.5
+    "renter_share_pct": 18.5,
+    "rep_name": "Meg Kilcoyne",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "B",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 305367.38326909597,
     "rent_burden_pct": 45.9,
     "permits_per_1000_residents": 0.23,
-    "renter_share_pct": 41.0
+    "renter_share_pct": 41.0,
+    "rep_name": "Shirley Arriaga",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

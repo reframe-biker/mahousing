@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 841272.0253251271,
     "rent_burden_pct": 43.1,
     "permits_per_1000_residents": 0.54,
-    "renter_share_pct": 11.0
+    "renter_share_pct": 11.0,
+    "rep_name": "Ted Philips",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

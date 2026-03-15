@@ -17,7 +17,11 @@
     "median_home_value": 408131.4638185589,
     "rent_burden_pct": 66.7,
     "permits_per_1000_residents": 0.54,
-    "renter_share_pct": 15.4
+    "renter_share_pct": 15.4,
+    "rep_name": null,
+    "rep_pct_score": null,
+    "rep_bills_scored": null,
+    "rep_bills_available": null
   },
   "data_notes": {
     "zoning": null,

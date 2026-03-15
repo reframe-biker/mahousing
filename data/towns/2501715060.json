@@ -9,15 +9,19 @@
     "production": "D",
     "affordability": "F",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 1388954.9392540874,
     "rent_burden_pct": 45.9,
     "permits_per_1000_residents": 1.2,
-    "renter_share_pct": 24.5
+    "renter_share_pct": 24.5,
+    "rep_name": "Simon Cataldo",
+    "rep_pct_score": 93.3,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

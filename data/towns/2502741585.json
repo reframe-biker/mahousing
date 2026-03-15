@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "B",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
     "median_home_value": 470322.16807002015,
     "rent_burden_pct": 36.3,
     "permits_per_1000_residents": 0.31,
-    "renter_share_pct": 14.0
+    "renter_share_pct": 14.0,
+    "rep_name": "Mike Soter",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

@@ -9,15 +9,19 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 2.4,
     "median_home_value": 1035254.7656249488,
     "rent_burden_pct": 60.2,
     "permits_per_1000_residents": 0.21,
-    "renter_share_pct": 15.7
+    "renter_share_pct": 15.7,
+    "rep_name": "Richard Wells",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

@@ -9,15 +9,19 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 666042.0859304955,
     "rent_burden_pct": 52.5,
     "permits_per_1000_residents": 0.88,
-    "renter_share_pct": 23.0
+    "renter_share_pct": 23.0,
+    "rep_name": "Bridget Plouffe",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

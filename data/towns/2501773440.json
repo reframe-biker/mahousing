@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 722000.0,
     "rent_burden_pct": 39.5,
     "permits_per_1000_residents": 0.26,
-    "renter_share_pct": 48.7
+    "renter_share_pct": 48.7,
+    "rep_name": "Steve Owens",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

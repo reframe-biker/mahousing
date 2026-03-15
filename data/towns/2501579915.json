@@ -9,15 +9,19 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 420362.0563319934,
     "rent_burden_pct": 54.7,
     "permits_per_1000_residents": 0.73,
-    "renter_share_pct": 18.7
+    "renter_share_pct": 18.7,
+    "rep_name": "Lindsay Sabadosa",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

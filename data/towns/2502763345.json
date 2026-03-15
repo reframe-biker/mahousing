@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "D",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 254700.0,
     "rent_burden_pct": 55.1,
     "permits_per_1000_residents": 0.34,
-    "renter_share_pct": 56.2
+    "renter_share_pct": 56.2,
+    "rep_name": "John Marsi",
+    "rep_pct_score": 20.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 676290.4614990663,
     "rent_burden_pct": 54.8,
     "permits_per_1000_residents": 0.48,
-    "renter_share_pct": 34.5
+    "renter_share_pct": 34.5,
+    "rep_name": "Tom Walsh",
+    "rep_pct_score": 80.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

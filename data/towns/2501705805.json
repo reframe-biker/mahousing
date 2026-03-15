@@ -9,7 +9,7 @@
     "production": "A",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 673025.2711979711,
     "rent_burden_pct": 35.3,
     "permits_per_1000_residents": 5.95,
-    "renter_share_pct": 21.8
+    "renter_share_pct": 21.8,
+    "rep_name": "Marc Lombardo",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 7,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

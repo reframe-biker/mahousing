@@ -9,15 +9,19 @@
     "production": "B",
     "affordability": "F",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
     "median_home_value": 1728819.0776524262,
     "rent_burden_pct": 31.7,
     "permits_per_1000_residents": 4.24,
-    "renter_share_pct": 16.6
+    "renter_share_pct": 16.6,
+    "rep_name": "Thomas Moakley",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

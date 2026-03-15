@@ -9,15 +9,19 @@
     "production": "A",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 641863.0350490966,
     "rent_burden_pct": 33.7,
     "permits_per_1000_residents": 7.69,
-    "renter_share_pct": 9.1
+    "renter_share_pct": 9.1,
+    "rep_name": "Steven Howitt",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

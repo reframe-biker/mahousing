@@ -9,15 +9,19 @@
     "production": "C",
     "affordability": "D",
     "votes": null,
-    "rep": null,
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 50.0,
     "median_home_value": 1007885.3369255844,
     "rent_burden_pct": 55.7,
     "permits_per_1000_residents": 2.3,
-    "renter_share_pct": 9.5
+    "renter_share_pct": 9.5,
+    "rep_name": "David DeCoste",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

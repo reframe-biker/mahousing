@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "D",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 878272.6854714965,
     "rent_burden_pct": 35.3,
     "permits_per_1000_residents": 1.85,
-    "renter_share_pct": 16.1
+    "renter_share_pct": 16.1,
+    "rep_name": "Brad Jones",
+    "rep_pct_score": 20.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

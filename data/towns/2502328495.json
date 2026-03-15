@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "B",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 588564.3670879159,
     "rent_burden_pct": 56.2,
     "permits_per_1000_residents": 1.88,
-    "renter_share_pct": 10.7
+    "renter_share_pct": 10.7,
+    "rep_name": "Ken Sweezey",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

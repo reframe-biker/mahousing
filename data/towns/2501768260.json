@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 1109637.8669370224,
     "rent_burden_pct": 38.2,
     "permits_per_1000_residents": 1.06,
-    "renter_share_pct": 7.9
+    "renter_share_pct": 7.9,
+    "rep_name": "Carmine Gentile",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

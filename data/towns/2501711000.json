@@ -9,7 +9,7 @@
     "production": "B",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "D",
     "composite": "B"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 1012783.3419899816,
     "rent_burden_pct": 42.1,
     "permits_per_1000_residents": 3.38,
-    "renter_share_pct": 66.4
+    "renter_share_pct": 66.4,
+    "rep_name": "Marjorie Decker",
+    "rep_pct_score": 20.0,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

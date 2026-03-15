@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "D"
   },
   "metrics": {
@@ -17,7 +17,11 @@
     "median_home_value": 641735.9063636264,
     "rent_burden_pct": 44.5,
     "permits_per_1000_residents": 2.33,
-    "renter_share_pct": 17.0
+    "renter_share_pct": 17.0,
+    "rep_name": "Steven Ouellette",
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 2,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,

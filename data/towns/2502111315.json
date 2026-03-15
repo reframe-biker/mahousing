@@ -9,15 +9,19 @@
     "production": "B",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 776381.219443221,
     "rent_burden_pct": 50.9,
     "permits_per_1000_residents": 3.17,
-    "renter_share_pct": 24.3
+    "renter_share_pct": 24.3,
+    "rep_name": "Bill Galvin",
+    "rep_pct_score": 86.7,
+    "rep_bills_scored": 8,
+    "rep_bills_available": 8
   },
   "data_notes": {
     "zoning": null,
