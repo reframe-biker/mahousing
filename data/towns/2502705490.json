@@ -16,7 +16,8 @@
     "pct_land_multifamily_byright": 75.0,
     "median_home_value": 645130.9050514534,
     "rent_burden_pct": 30.2,
-    "permits_per_1000_residents": 1.42
+    "permits_per_1000_residents": 1.42,
+    "renter_share_pct": 18.5
   },
   "data_notes": {
     "zoning": null,

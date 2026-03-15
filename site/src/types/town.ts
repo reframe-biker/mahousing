@@ -65,6 +65,13 @@ export interface Metrics {
    * Source: Census Building Permits Survey.
    */
   permits_per_1000_residents: number | null;
+
+  /**
+   * Percentage of occupied housing units that are renter-occupied.
+   * Range: 0–100.
+   * Source: US Census ACS 5-year estimates (B25003).
+   */
+  renter_share_pct: number | null;
 }
 
 /**

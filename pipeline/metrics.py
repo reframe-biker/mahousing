@@ -62,6 +62,24 @@ METRICS: dict[str, dict] = {
         "unit": "rate",
         "higher_is_better": True,
     },
+    "renter_share_pct": {
+        "label": "Renter share",
+        "description": "Share of occupied housing units that are renter-occupied (ACS B25003)",
+        "source": "U.S. Census ACS 5-year estimates",
+        "unit": "percent",
+        "higher_is": "neutral",
+    },
+    "affordability": {
+        "label": "Affordability grade",
+        "description": (
+            "Weighted composite of rent burden and median home value, weighted by renter share. "
+            "In high-renter towns, rent burden dominates. In low-renter towns, home value dominates. "
+            "Captures both active cost burden on existing renters and passive exclusion via high prices."
+        ),
+        "source": "U.S. Census ACS 5-year estimates",
+        "unit": "status",
+        "higher_is_better": True,
+    },
     "mbta_status": {
         "label": "MBTA Communities compliance",
         "description": (

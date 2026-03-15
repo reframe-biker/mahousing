@@ -6,6 +6,7 @@ via the Census Bureau REST API. Returns municipality-level metrics for:
   - Population (B01003)
   - Rent burden (B25070 — gross rent as % of household income)
   - Median home value (B25077)
+  - Renter share (B25003 — housing tenure)
 
 Returns a DataFrame with one row per MA municipality. Rows with suppressed
 or unavailable data have None in the affected metric columns.
@@ -38,6 +39,8 @@ _FIELDS = {
     "B25070_009E": "burden_40_49",     # 40.0–49.9%
     "B25070_010E": "burden_50_plus",   # 50.0% or more
     "B25077_001E": "median_home_value",# Median owner-occupied home value ($)
+    "B25003_001E": "tenure_total",     # Total occupied housing units (tenure denominator)
+    "B25003_003E": "tenure_renter",    # Renter-occupied housing units
 }
 
 # Census sentinel values for suppressed / not-computed data
@@ -64,12 +67,13 @@ def fetch_acs_data(api_key: str) -> pd.DataFrame:
 
     Returns:
         DataFrame with columns:
-            geoid           (str)  10-digit county subdivision GEOID
-            name            (str)  Municipality name (e.g. "Cambridge")
-            county          (str)  County name (e.g. "Middlesex County")
-            population      (int | None)
-            rent_burden_pct (float | None)  % of renters paying >30% of income
-            median_home_value (float | None)  ACS median owner-occupied home value ($)
+            geoid             (str)          10-digit county subdivision GEOID
+            name              (str)          Municipality name (e.g. "Cambridge")
+            county            (str)          County name (e.g. "Middlesex County")
+            population        (int | None)
+            rent_burden_pct   (float | None) % of renters paying >30% of income
+            median_home_value (float | None) ACS median owner-occupied home value ($)
+            renter_share_pct  (float | None) % of occupied housing units that are renter-occupied
 
     Raises:
         RuntimeError: if the Census API request fails.
@@ -121,6 +125,8 @@ def fetch_acs_data(api_key: str) -> pd.DataFrame:
         burden_40_49 = _safe_int(r.get("B25070_009E"))
         burden_50_plus = _safe_int(r.get("B25070_010E"))
         median_home_value_raw = _safe_int(r.get("B25077_001E"))
+        tenure_total = _safe_int(r.get("B25003_001E"))
+        tenure_renter = _safe_int(r.get("B25003_003E"))
 
         # Compute rent burden pct: share of renters paying > 30% of income
         if (
@@ -142,6 +148,12 @@ def fetch_acs_data(api_key: str) -> pd.DataFrame:
             float(median_home_value_raw) if median_home_value_raw is not None else None
         )
 
+        # Compute renter share: share of occupied units that are renter-occupied
+        if tenure_total is not None and tenure_total > 0 and tenure_renter is not None:
+            renter_share_pct: float | None = round(tenure_renter / tenure_total * 100, 1)
+        else:
+            renter_share_pct = None
+
         records.append(
             {
                 "geoid": geoid,
@@ -151,6 +163,7 @@ def fetch_acs_data(api_key: str) -> pd.DataFrame:
                 "population": population,
                 "rent_burden_pct": rent_burden_pct,
                 "median_home_value": median_home_value,
+                "renter_share_pct": renter_share_pct,
             }
         )
 
@@ -158,7 +171,8 @@ def fetch_acs_data(api_key: str) -> pd.DataFrame:
     logger.info(
         f"  ACS: {len(df)} municipalities | "
         f"rent_burden non-null: {df['rent_burden_pct'].notna().sum()} | "
-        f"home_value non-null: {df['median_home_value'].notna().sum()}"
+        f"home_value non-null: {df['median_home_value'].notna().sum()} | "
+        f"renter_share non-null: {df['renter_share_pct'].notna().sum()}"
     )
     return df
 

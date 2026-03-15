@@ -8,16 +8,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 577256.3618237649,
       "rent_burden_pct": 46.9,
-      "permits_per_1000_residents": 0.12
+      "permits_per_1000_residents": 0.12,
+      "renter_share_pct": 21.5
     },
     "data_notes": {
       "zoning": null,
@@ -48,7 +49,8 @@
       "pct_land_multifamily_byright": 1.4,
       "median_home_value": 845140.5071329983,
       "rent_burden_pct": 44.2,
-      "permits_per_1000_residents": 0.54
+      "permits_per_1000_residents": 0.54,
+      "renter_share_pct": 26.1
     },
     "data_notes": {
       "zoning": null,
@@ -70,16 +72,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 510203.9419585776,
       "rent_burden_pct": 62.9,
-      "permits_per_1000_residents": 1.04
+      "permits_per_1000_residents": 1.04,
+      "renter_share_pct": 12.6
     },
     "data_notes": {
       "zoning": null,
@@ -101,16 +104,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 255017.53468639977,
       "rent_burden_pct": 45.8,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 38.9
     },
     "data_notes": {
       "zoning": null,
@@ -132,16 +136,17 @@
       "zoning": "B",
       "mbta": null,
       "production": null,
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 24.1,
       "median_home_value": 272100.0,
       "rent_burden_pct": 39.5,
-      "permits_per_1000_residents": null
+      "permits_per_1000_residents": null,
+      "renter_share_pct": 25.6
     },
     "data_notes": {
       "zoning": null,
@@ -163,16 +168,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "A",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 768300.0,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 2.22
+      "permits_per_1000_residents": 2.22,
+      "renter_share_pct": 5.7
     },
     "data_notes": {
       "zoning": null,
@@ -194,7 +200,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -203,7 +209,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 435400.0,
       "rent_burden_pct": 55.4,
-      "permits_per_1000_residents": 2.2
+      "permits_per_1000_residents": 2.2,
+      "renter_share_pct": 32.6
     },
     "data_notes": {
       "zoning": null,
@@ -225,16 +232,17 @@
       "zoning": null,
       "mbta": null,
       "production": null,
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 443400.0,
       "rent_burden_pct": 60.7,
-      "permits_per_1000_residents": null
+      "permits_per_1000_residents": null,
+      "renter_share_pct": 54.1
     },
     "data_notes": {
       "zoning": null,
@@ -256,16 +264,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 955108.4329106886,
       "rent_burden_pct": 34.1,
-      "permits_per_1000_residents": 0.27
+      "permits_per_1000_residents": 0.27,
+      "renter_share_pct": 18.6
     },
     "data_notes": {
       "zoning": null,
@@ -287,7 +296,7 @@
       "zoning": null,
       "mbta": null,
       "production": "B",
-      "affordability": "C",
+      "affordability": "F",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -296,7 +305,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 1728819.0776524262,
       "rent_burden_pct": 31.7,
-      "permits_per_1000_residents": 4.24
+      "permits_per_1000_residents": 4.24,
+      "renter_share_pct": 16.6
     },
     "data_notes": {
       "zoning": null,
@@ -318,7 +328,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -327,7 +337,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1034196.500712321,
       "rent_burden_pct": 36.7,
-      "permits_per_1000_residents": 0.85
+      "permits_per_1000_residents": 0.85,
+      "renter_share_pct": 39.3
     },
     "data_notes": {
       "zoning": null,
@@ -349,7 +360,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -358,7 +369,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 437660.2619112296,
       "rent_burden_pct": 40.4,
-      "permits_per_1000_residents": 2.05
+      "permits_per_1000_residents": 2.05,
+      "renter_share_pct": 6.4
     },
     "data_notes": {
       "zoning": null,
@@ -380,7 +392,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "A",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -389,7 +401,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 461864.1277028734,
       "rent_burden_pct": 16.1,
-      "permits_per_1000_residents": 1.57
+      "permits_per_1000_residents": 1.57,
+      "renter_share_pct": 4.5
     },
     "data_notes": {
       "zoning": null,
@@ -411,16 +424,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 408131.4638185589,
       "rent_burden_pct": 66.7,
-      "permits_per_1000_residents": 0.54
+      "permits_per_1000_residents": 0.54,
+      "renter_share_pct": 15.4
     },
     "data_notes": {
       "zoning": null,
@@ -442,7 +456,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "A",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -451,7 +465,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 655077.180387678,
       "rent_burden_pct": 43.8,
-      "permits_per_1000_residents": 9.45
+      "permits_per_1000_residents": 9.45,
+      "renter_share_pct": 23.3
     },
     "data_notes": {
       "zoning": null,
@@ -473,16 +488,17 @@
       "zoning": "C",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 3.2,
       "median_home_value": 325281.6655590935,
       "rent_burden_pct": 50.8,
-      "permits_per_1000_residents": 1.34
+      "permits_per_1000_residents": 1.34,
+      "renter_share_pct": 28.2
     },
     "data_notes": {
       "zoning": null,
@@ -504,7 +520,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -513,7 +529,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 521117.88019627234,
       "rent_burden_pct": 45.6,
-      "permits_per_1000_residents": 0.93
+      "permits_per_1000_residents": 0.93,
+      "renter_share_pct": 34.1
     },
     "data_notes": {
       "zoning": null,
@@ -535,7 +552,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "A",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -544,7 +561,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 452620.7582878472,
       "rent_burden_pct": 39.4,
-      "permits_per_1000_residents": 7.18
+      "permits_per_1000_residents": 7.18,
+      "renter_share_pct": 15.9
     },
     "data_notes": {
       "zoning": null,
@@ -566,7 +584,7 @@
       "zoning": "D",
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -575,7 +593,8 @@
       "pct_land_multifamily_byright": 1.7,
       "median_home_value": 556203.2522517096,
       "rent_burden_pct": 45.6,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 19.3
     },
     "data_notes": {
       "zoning": null,
@@ -597,7 +616,7 @@
       "zoning": null,
       "mbta": "A",
       "production": "C",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "B"
@@ -606,7 +625,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 547444.189321988,
       "rent_burden_pct": 37.5,
-      "permits_per_1000_residents": 1.55
+      "permits_per_1000_residents": 1.55,
+      "renter_share_pct": 30.3
     },
     "data_notes": {
       "zoning": null,
@@ -628,7 +648,7 @@
       "zoning": "A",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -637,7 +657,8 @@
       "pct_land_multifamily_byright": 77.3,
       "median_home_value": 498700.0,
       "rent_burden_pct": 57.7,
-      "permits_per_1000_residents": 0.76
+      "permits_per_1000_residents": 0.76,
+      "renter_share_pct": 24.4
     },
     "data_notes": {
       "zoning": null,
@@ -659,7 +680,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -668,7 +689,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 393608.3662442925,
       "rent_burden_pct": 28.6,
-      "permits_per_1000_residents": 2.17
+      "permits_per_1000_residents": 2.17,
+      "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
@@ -690,16 +712,17 @@
       "zoning": null,
       "mbta": null,
       "production": "C",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 379226.6741604243,
       "rent_burden_pct": 21.6,
-      "permits_per_1000_residents": 2.38
+      "permits_per_1000_residents": 2.38,
+      "renter_share_pct": 5.4
     },
     "data_notes": {
       "zoning": null,
@@ -721,7 +744,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -730,7 +753,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 995154.8666170636,
       "rent_burden_pct": 35.9,
-      "permits_per_1000_residents": 0.77
+      "permits_per_1000_residents": 0.77,
+      "renter_share_pct": 29.7
     },
     "data_notes": {
       "zoning": null,
@@ -752,16 +776,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 456190.94705149415,
       "rent_burden_pct": 47.3,
-      "permits_per_1000_residents": 1.83
+      "permits_per_1000_residents": 1.83,
+      "renter_share_pct": 15.5
     },
     "data_notes": {
       "zoning": null,
@@ -783,7 +808,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "B",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -792,7 +817,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 522036.95078898733,
       "rent_burden_pct": 50.4,
-      "permits_per_1000_residents": 3.99
+      "permits_per_1000_residents": 3.99,
+      "renter_share_pct": 20.7
     },
     "data_notes": {
       "zoning": null,
@@ -814,7 +840,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "F",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -823,7 +849,8 @@
       "pct_land_multifamily_byright": 1.2,
       "median_home_value": 1402451.6830031655,
       "rent_burden_pct": 37.7,
-      "permits_per_1000_residents": 0.33
+      "permits_per_1000_residents": 0.33,
+      "renter_share_pct": 36.5
     },
     "data_notes": {
       "zoning": null,
@@ -845,7 +872,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "B",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -854,7 +881,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 604142.1261452883,
       "rent_burden_pct": 25.4,
-      "permits_per_1000_residents": 1.18
+      "permits_per_1000_residents": 1.18,
+      "renter_share_pct": 2.9
     },
     "data_notes": {
       "zoning": null,
@@ -885,7 +913,8 @@
       "pct_land_multifamily_byright": 75.0,
       "median_home_value": 645130.9050514534,
       "rent_burden_pct": 30.2,
-      "permits_per_1000_residents": 1.42
+      "permits_per_1000_residents": 1.42,
+      "renter_share_pct": 18.5
     },
     "data_notes": {
       "zoning": null,
@@ -907,16 +936,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 358602.8345687634,
       "rent_burden_pct": 31.6,
-      "permits_per_1000_residents": 2.95
+      "permits_per_1000_residents": 2.95,
+      "renter_share_pct": 17.5
     },
     "data_notes": {
       "zoning": null,
@@ -938,7 +968,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -947,7 +977,8 @@
       "pct_land_multifamily_byright": 7.2,
       "median_home_value": 731204.5596172643,
       "rent_burden_pct": 50.8,
-      "permits_per_1000_residents": 2.69
+      "permits_per_1000_residents": 2.69,
+      "renter_share_pct": 39.9
     },
     "data_notes": {
       "zoning": null,
@@ -978,7 +1009,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 673025.2711979711,
       "rent_burden_pct": 35.3,
-      "permits_per_1000_residents": 5.95
+      "permits_per_1000_residents": 5.95,
+      "renter_share_pct": 21.8
     },
     "data_notes": {
       "zoning": null,
@@ -1000,7 +1032,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -1009,7 +1041,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 464771.72520476585,
       "rent_burden_pct": 57.1,
-      "permits_per_1000_residents": 2.28
+      "permits_per_1000_residents": 2.28,
+      "renter_share_pct": 24.5
     },
     "data_notes": {
       "zoning": null,
@@ -1040,7 +1073,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 351930.39289237955,
       "rent_burden_pct": 13.8,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 6.0
     },
     "data_notes": {
       "zoning": null,
@@ -1062,16 +1096,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "A",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "F"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 841411.1092364198,
       "rent_burden_pct": 9.9,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 5.4
     },
     "data_notes": {
       "zoning": null,
@@ -1102,7 +1137,8 @@
       "pct_land_multifamily_byright": 92.1,
       "median_home_value": 772837.7243408159,
       "rent_burden_pct": 47.5,
-      "permits_per_1000_residents": 3.08
+      "permits_per_1000_residents": 3.08,
+      "renter_share_pct": 65.2
     },
     "data_notes": {
       "zoning": null,
@@ -1124,16 +1160,17 @@
       "zoning": "F",
       "mbta": "B",
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 634963.2026049648,
       "rent_burden_pct": 52.2,
-      "permits_per_1000_residents": 2.59
+      "permits_per_1000_residents": 2.59,
+      "renter_share_pct": 23.5
     },
     "data_notes": {
       "zoning": null,
@@ -1155,7 +1192,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -1164,7 +1201,8 @@
       "pct_land_multifamily_byright": 0.2,
       "median_home_value": 653300.0,
       "rent_burden_pct": 52.9,
-      "permits_per_1000_residents": 0.37
+      "permits_per_1000_residents": 0.37,
+      "renter_share_pct": 26.0
     },
     "data_notes": {
       "zoning": null,
@@ -1186,7 +1224,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -1195,7 +1233,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1033440.4422126104,
       "rent_burden_pct": 59.1,
-      "permits_per_1000_residents": 0.49
+      "permits_per_1000_residents": 0.49,
+      "renter_share_pct": 5.6
     },
     "data_notes": {
       "zoning": null,
@@ -1217,7 +1256,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -1226,7 +1265,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 612312.8602097128,
       "rent_burden_pct": 40.2,
-      "permits_per_1000_residents": 2.47
+      "permits_per_1000_residents": 2.47,
+      "renter_share_pct": 19.9
     },
     "data_notes": {
       "zoning": null,
@@ -1248,7 +1288,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -1257,7 +1297,8 @@
       "pct_land_multifamily_byright": 3.8,
       "median_home_value": 596800.0,
       "rent_burden_pct": 44.6,
-      "permits_per_1000_residents": 0.13
+      "permits_per_1000_residents": 0.13,
+      "renter_share_pct": 23.3
     },
     "data_notes": {
       "zoning": null,
@@ -1279,16 +1320,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 757092.4286075806,
       "rent_burden_pct": 55.4,
-      "permits_per_1000_residents": 1.45
+      "permits_per_1000_residents": 1.45,
+      "renter_share_pct": 16.7
     },
     "data_notes": {
       "zoning": null,
@@ -1310,16 +1352,17 @@
       "zoning": "F",
       "mbta": "B",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 464900.0,
       "rent_burden_pct": 50.3,
-      "permits_per_1000_residents": 1.37
+      "permits_per_1000_residents": 1.37,
+      "renter_share_pct": 25.9
     },
     "data_notes": {
       "zoning": null,
@@ -1341,16 +1384,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 419883.3557848859,
       "rent_burden_pct": 50.8,
-      "permits_per_1000_residents": 1.89
+      "permits_per_1000_residents": 1.89,
+      "renter_share_pct": 13.3
     },
     "data_notes": {
       "zoning": null,
@@ -1372,7 +1416,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -1381,7 +1425,8 @@
       "pct_land_multifamily_byright": 10.4,
       "median_home_value": 492207.3720018882,
       "rent_burden_pct": 50.2,
-      "permits_per_1000_residents": 0.58
+      "permits_per_1000_residents": 0.58,
+      "renter_share_pct": 43.6
     },
     "data_notes": {
       "zoning": null,
@@ -1403,16 +1448,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 390703.2185842261,
       "rent_burden_pct": 20.6,
-      "permits_per_1000_residents": 1.16
+      "permits_per_1000_residents": 1.16,
+      "renter_share_pct": 12.5
     },
     "data_notes": {
       "zoning": null,
@@ -1443,7 +1489,8 @@
       "pct_land_multifamily_byright": 12.9,
       "median_home_value": 1123350.657326366,
       "rent_burden_pct": 45.5,
-      "permits_per_1000_residents": 1.74
+      "permits_per_1000_residents": 1.74,
+      "renter_share_pct": 53.6
     },
     "data_notes": {
       "zoning": null,
@@ -1465,16 +1512,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 370229.2977542388,
       "rent_burden_pct": 49.8,
-      "permits_per_1000_residents": 1.5
+      "permits_per_1000_residents": 1.5,
+      "renter_share_pct": 31.8
     },
     "data_notes": {
       "zoning": null,
@@ -1505,7 +1553,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 841460.6382086906,
       "rent_burden_pct": 49.3,
-      "permits_per_1000_residents": 1.34
+      "permits_per_1000_residents": 1.34,
+      "renter_share_pct": 26.5
     },
     "data_notes": {
       "zoning": null,
@@ -1536,7 +1585,8 @@
       "pct_land_multifamily_byright": 54.4,
       "median_home_value": 1012783.3419899816,
       "rent_burden_pct": 42.1,
-      "permits_per_1000_residents": 3.38
+      "permits_per_1000_residents": 3.38,
+      "renter_share_pct": 66.4
     },
     "data_notes": {
       "zoning": null,
@@ -1558,7 +1608,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "B",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -1567,7 +1617,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 776381.219443221,
       "rent_burden_pct": 50.9,
-      "permits_per_1000_residents": 3.17
+      "permits_per_1000_residents": 3.17,
+      "renter_share_pct": 24.3
     },
     "data_notes": {
       "zoning": null,
@@ -1598,7 +1649,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1278586.50120202,
       "rent_burden_pct": 66.7,
-      "permits_per_1000_residents": 1.54
+      "permits_per_1000_residents": 1.54,
+      "renter_share_pct": 6.0
     },
     "data_notes": {
       "zoning": null,
@@ -1620,16 +1672,17 @@
       "zoning": "F",
       "mbta": "F",
       "production": "C",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 564171.3072445752,
       "rent_burden_pct": 71.3,
-      "permits_per_1000_residents": 1.89
+      "permits_per_1000_residents": 1.89,
+      "renter_share_pct": 10.7
     },
     "data_notes": {
       "zoning": null,
@@ -1651,16 +1704,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 333743.09912146284,
       "rent_burden_pct": 53.6,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 20.7
     },
     "data_notes": {
       "zoning": null,
@@ -1682,7 +1736,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -1691,7 +1745,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 513067.9324060497,
       "rent_burden_pct": 31.2,
-      "permits_per_1000_residents": 1.35
+      "permits_per_1000_residents": 1.35,
+      "renter_share_pct": 18.3
     },
     "data_notes": {
       "zoning": null,
@@ -1722,7 +1777,8 @@
       "pct_land_multifamily_byright": 0.5,
       "median_home_value": 1246495.7859789992,
       "rent_burden_pct": 55.2,
-      "permits_per_1000_residents": 3.78
+      "permits_per_1000_residents": 3.78,
+      "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
@@ -1744,16 +1800,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 657509.7395788681,
       "rent_burden_pct": 52.1,
-      "permits_per_1000_residents": 0.33
+      "permits_per_1000_residents": 0.33,
+      "renter_share_pct": 17.3
     },
     "data_notes": {
       "zoning": null,
@@ -1775,7 +1832,7 @@
       "zoning": "A",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -1784,7 +1841,8 @@
       "pct_land_multifamily_byright": 26.9,
       "median_home_value": 515743.8094685096,
       "rent_burden_pct": 55.1,
-      "permits_per_1000_residents": 1.48
+      "permits_per_1000_residents": 1.48,
+      "renter_share_pct": 72.1
     },
     "data_notes": {
       "zoning": null,
@@ -1815,7 +1873,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 342371.2525848355,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 0.93
+      "permits_per_1000_residents": 0.93,
+      "renter_share_pct": 11.4
     },
     "data_notes": {
       "zoning": null,
@@ -1837,16 +1896,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 288968.69417893124,
       "rent_burden_pct": 59.2,
-      "permits_per_1000_residents": 0.71
+      "permits_per_1000_residents": 0.71,
+      "renter_share_pct": 19.8
     },
     "data_notes": {
       "zoning": null,
@@ -1868,16 +1928,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 385110.0175855995,
       "rent_burden_pct": 43.1,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 13.7
     },
     "data_notes": {
       "zoning": null,
@@ -1899,16 +1960,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 305367.38326909597,
       "rent_burden_pct": 45.9,
-      "permits_per_1000_residents": 0.23
+      "permits_per_1000_residents": 0.23,
+      "renter_share_pct": 41.0
     },
     "data_notes": {
       "zoning": null,
@@ -1930,16 +1992,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "A",
+      "affordability": "F",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 2283291.3060246315,
       "rent_burden_pct": 18.2,
-      "permits_per_1000_residents": 6.41
+      "permits_per_1000_residents": 6.41,
+      "renter_share_pct": 10.3
     },
     "data_notes": {
       "zoning": null,
@@ -1961,7 +2024,7 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -1970,7 +2033,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 264336.35869697767,
       "rent_burden_pct": 37.8,
-      "permits_per_1000_residents": 0.58
+      "permits_per_1000_residents": 0.58,
+      "renter_share_pct": 13.7
     },
     "data_notes": {
       "zoning": null,
@@ -1992,7 +2056,7 @@
       "zoning": "A",
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -2001,7 +2065,8 @@
       "pct_land_multifamily_byright": 47.2,
       "median_home_value": 436392.8728296094,
       "rent_burden_pct": 36.0,
-      "permits_per_1000_residents": 0.39
+      "permits_per_1000_residents": 0.39,
+      "renter_share_pct": 44.4
     },
     "data_notes": {
       "zoning": null,
@@ -2032,7 +2097,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1380711.4263140364,
       "rent_burden_pct": 53.9,
-      "permits_per_1000_residents": 0.36
+      "permits_per_1000_residents": 0.36,
+      "renter_share_pct": 20.4
     },
     "data_notes": {
       "zoning": null,
@@ -2054,16 +2120,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 301502.4138221042,
       "rent_burden_pct": 33.6,
-      "permits_per_1000_residents": 5.17
+      "permits_per_1000_residents": 5.17,
+      "renter_share_pct": 18.3
     },
     "data_notes": {
       "zoning": null,
@@ -2085,7 +2152,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "D",
-      "affordability": "D",
+      "affordability": "F",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -2094,7 +2161,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1388954.9392540874,
       "rent_burden_pct": 45.9,
-      "permits_per_1000_residents": 1.2
+      "permits_per_1000_residents": 1.2,
+      "renter_share_pct": 24.5
     },
     "data_notes": {
       "zoning": null,
@@ -2116,7 +2184,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -2125,7 +2193,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 439131.3274170244,
       "rent_burden_pct": 35.4,
-      "permits_per_1000_residents": 1.13
+      "permits_per_1000_residents": 1.13,
+      "renter_share_pct": 10.5
     },
     "data_notes": {
       "zoning": null,
@@ -2147,16 +2216,17 @@
       "zoning": null,
       "mbta": null,
       "production": "C",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 369886.56662950857,
       "rent_burden_pct": 37.8,
-      "permits_per_1000_residents": 2.05
+      "permits_per_1000_residents": 2.05,
+      "renter_share_pct": 20.7
     },
     "data_notes": {
       "zoning": null,
@@ -2178,16 +2248,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 329345.3006956476,
       "rent_burden_pct": 45.3,
-      "permits_per_1000_residents": 0.16
+      "permits_per_1000_residents": 0.16,
+      "renter_share_pct": 23.3
     },
     "data_notes": {
       "zoning": null,
@@ -2209,16 +2280,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 706798.2100514104,
       "rent_burden_pct": 47.3,
-      "permits_per_1000_residents": 0.29
+      "permits_per_1000_residents": 0.29,
+      "renter_share_pct": 29.9
     },
     "data_notes": {
       "zoning": null,
@@ -2240,7 +2312,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -2249,7 +2321,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 585850.327713152,
       "rent_burden_pct": 37.8,
-      "permits_per_1000_residents": 0.9
+      "permits_per_1000_residents": 0.9,
+      "renter_share_pct": 23.2
     },
     "data_notes": {
       "zoning": null,
@@ -2271,7 +2344,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -2280,7 +2353,8 @@
       "pct_land_multifamily_byright": 22.0,
       "median_home_value": 736523.8966751727,
       "rent_burden_pct": 51.2,
-      "permits_per_1000_residents": 0.95
+      "permits_per_1000_residents": 0.95,
+      "renter_share_pct": 29.5
     },
     "data_notes": {
       "zoning": null,
@@ -2302,7 +2376,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -2311,7 +2385,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 430579.33744053944,
       "rent_burden_pct": 32.8,
-      "permits_per_1000_residents": 0.59
+      "permits_per_1000_residents": 0.59,
+      "renter_share_pct": 22.7
     },
     "data_notes": {
       "zoning": null,
@@ -2333,7 +2408,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -2342,7 +2417,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 643505.9858781304,
       "rent_burden_pct": 52.2,
-      "permits_per_1000_residents": 1.7
+      "permits_per_1000_residents": 1.7,
+      "renter_share_pct": 21.8
     },
     "data_notes": {
       "zoning": null,
@@ -2364,16 +2440,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "A",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 557761.5649111522,
       "rent_burden_pct": 15.8,
-      "permits_per_1000_residents": 0.99
+      "permits_per_1000_residents": 0.99,
+      "renter_share_pct": 10.4
     },
     "data_notes": {
       "zoning": null,
@@ -2395,16 +2472,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 533380.1421701094,
       "rent_burden_pct": 50.1,
-      "permits_per_1000_residents": 4.21
+      "permits_per_1000_residents": 4.21,
+      "renter_share_pct": 15.7
     },
     "data_notes": {
       "zoning": null,
@@ -2426,7 +2504,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "A",
-      "affordability": "C",
+      "affordability": "F",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -2435,7 +2513,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1715000.632661102,
       "rent_burden_pct": 30.9,
-      "permits_per_1000_residents": 5.78
+      "permits_per_1000_residents": 5.78,
+      "renter_share_pct": 5.8
     },
     "data_notes": {
       "zoning": null,
@@ -2457,7 +2536,7 @@
       "zoning": "F",
       "mbta": "F",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "F"
@@ -2466,7 +2545,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 553410.6838330637,
       "rent_burden_pct": 57.2,
-      "permits_per_1000_residents": 0.5
+      "permits_per_1000_residents": 0.5,
+      "renter_share_pct": 19.7
     },
     "data_notes": {
       "zoning": null,
@@ -2488,16 +2568,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 449556.23675452586,
       "rent_burden_pct": 40.0,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 29.4
     },
     "data_notes": {
       "zoning": null,
@@ -2519,7 +2600,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -2528,7 +2609,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 779647.7797093542,
       "rent_burden_pct": 41.3,
-      "permits_per_1000_residents": 2.68
+      "permits_per_1000_residents": 2.68,
+      "renter_share_pct": 4.1
     },
     "data_notes": {
       "zoning": null,
@@ -2559,7 +2641,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1062843.7584628847,
       "rent_burden_pct": 45.4,
-      "permits_per_1000_residents": 1.87
+      "permits_per_1000_residents": 1.87,
+      "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
@@ -2581,16 +2664,17 @@
       "zoning": "F",
       "mbta": "F",
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.5,
       "median_home_value": 569067.7592431935,
       "rent_burden_pct": 47.4,
-      "permits_per_1000_residents": 0.76
+      "permits_per_1000_residents": 0.76,
+      "renter_share_pct": 18.8
     },
     "data_notes": {
       "zoning": null,
@@ -2612,16 +2696,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 413447.8441540604,
       "rent_burden_pct": 30.1,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 21.0
     },
     "data_notes": {
       "zoning": null,
@@ -2643,16 +2728,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 408498.32596199703,
       "rent_burden_pct": 52.5,
-      "permits_per_1000_residents": 0.49
+      "permits_per_1000_residents": 0.49,
+      "renter_share_pct": 15.2
     },
     "data_notes": {
       "zoning": null,
@@ -2674,16 +2760,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 785671.1593607869,
       "rent_burden_pct": 62.2,
-      "permits_per_1000_residents": 3.84
+      "permits_per_1000_residents": 3.84,
+      "renter_share_pct": 6.8
     },
     "data_notes": {
       "zoning": null,
@@ -2705,16 +2792,17 @@
       "zoning": null,
       "mbta": null,
       "production": null,
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 331100.0,
       "rent_burden_pct": 47.5,
-      "permits_per_1000_residents": null
+      "permits_per_1000_residents": null,
+      "renter_share_pct": 39.3
     },
     "data_notes": {
       "zoning": null,
@@ -2736,16 +2824,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 666042.0859304955,
       "rent_burden_pct": 52.5,
-      "permits_per_1000_residents": 0.88
+      "permits_per_1000_residents": 0.88,
+      "renter_share_pct": 23.0
     },
     "data_notes": {
       "zoning": null,
@@ -2767,16 +2856,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1773098.967291937,
       "rent_burden_pct": 36.9,
-      "permits_per_1000_residents": 4.07
+      "permits_per_1000_residents": 4.07,
+      "renter_share_pct": 25.0
     },
     "data_notes": {
       "zoning": null,
@@ -2798,16 +2888,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "B",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 759954.589418711,
       "rent_burden_pct": 29.8,
-      "permits_per_1000_residents": 2.72
+      "permits_per_1000_residents": 2.72,
+      "renter_share_pct": 19.1
     },
     "data_notes": {
       "zoning": null,
@@ -2829,16 +2920,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 318666.55814642634,
       "rent_burden_pct": 54.4,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 22.0
     },
     "data_notes": {
       "zoning": null,
@@ -2860,7 +2952,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -2869,7 +2961,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 859644.9850330971,
       "rent_burden_pct": 58.5,
-      "permits_per_1000_residents": 2.45
+      "permits_per_1000_residents": 2.45,
+      "renter_share_pct": 18.9
     },
     "data_notes": {
       "zoning": null,
@@ -2891,16 +2984,17 @@
       "zoning": "A",
       "mbta": "B",
       "production": "B",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 50.0,
       "median_home_value": 617474.8795334011,
       "rent_burden_pct": 51.6,
-      "permits_per_1000_residents": 4.09
+      "permits_per_1000_residents": 4.09,
+      "renter_share_pct": 64.2
     },
     "data_notes": {
       "zoning": null,
@@ -2922,16 +3016,17 @@
       "zoning": "D",
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 1.3,
       "median_home_value": 484310.6685031981,
       "rent_burden_pct": 51.9,
-      "permits_per_1000_residents": 0.44
+      "permits_per_1000_residents": 0.44,
+      "renter_share_pct": 25.8
     },
     "data_notes": {
       "zoning": null,
@@ -2953,7 +3048,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -2962,7 +3057,8 @@
       "pct_land_multifamily_byright": 18.9,
       "median_home_value": 436558.16915323446,
       "rent_burden_pct": 46.3,
-      "permits_per_1000_residents": 0.59
+      "permits_per_1000_residents": 0.59,
+      "renter_share_pct": 64.1
     },
     "data_notes": {
       "zoning": null,
@@ -2984,7 +3080,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -2993,7 +3089,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 810700.0172612752,
       "rent_burden_pct": 50.4,
-      "permits_per_1000_residents": 3.0
+      "permits_per_1000_residents": 3.0,
+      "renter_share_pct": 16.0
     },
     "data_notes": {
       "zoning": null,
@@ -3015,16 +3112,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 387033.5867916804,
       "rent_burden_pct": 48.8,
-      "permits_per_1000_residents": 0.46
+      "permits_per_1000_residents": 0.46,
+      "renter_share_pct": 44.3
     },
     "data_notes": {
       "zoning": null,
@@ -3055,7 +3153,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 268248.3586624512,
       "rent_burden_pct": 6.4,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 14.5
     },
     "data_notes": {
       "zoning": null,
@@ -3077,7 +3176,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -3086,7 +3185,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 693622.173989762,
       "rent_burden_pct": 60.1,
-      "permits_per_1000_residents": 0.32
+      "permits_per_1000_residents": 0.32,
+      "renter_share_pct": 28.0
     },
     "data_notes": {
       "zoning": null,
@@ -3108,7 +3208,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3117,7 +3217,8 @@
       "pct_land_multifamily_byright": 0.3,
       "median_home_value": 644324.9022990197,
       "rent_burden_pct": 49.6,
-      "permits_per_1000_residents": 0.52
+      "permits_per_1000_residents": 0.52,
+      "renter_share_pct": 44.9
     },
     "data_notes": {
       "zoning": null,
@@ -3139,16 +3240,17 @@
       "zoning": "F",
       "mbta": "B",
       "production": null,
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 516500.0,
       "rent_burden_pct": 47.6,
-      "permits_per_1000_residents": null
+      "permits_per_1000_residents": null,
+      "renter_share_pct": 20.8
     },
     "data_notes": {
       "zoning": null,
@@ -3170,7 +3272,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3179,7 +3281,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 563942.4267472753,
       "rent_burden_pct": 36.2,
-      "permits_per_1000_residents": 0.87
+      "permits_per_1000_residents": 0.87,
+      "renter_share_pct": 9.0
     },
     "data_notes": {
       "zoning": null,
@@ -3201,7 +3304,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -3210,7 +3313,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 359852.89416559244,
       "rent_burden_pct": 46.2,
-      "permits_per_1000_residents": 0.81
+      "permits_per_1000_residents": 0.81,
+      "renter_share_pct": 42.3
     },
     "data_notes": {
       "zoning": null,
@@ -3232,16 +3336,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 750157.8000889174,
       "rent_burden_pct": 52.8,
-      "permits_per_1000_residents": 0.47
+      "permits_per_1000_residents": 0.47,
+      "renter_share_pct": 17.8
     },
     "data_notes": {
       "zoning": null,
@@ -3263,7 +3368,7 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3272,7 +3377,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 351089.6057096527,
       "rent_burden_pct": 26.3,
-      "permits_per_1000_residents": 1.14
+      "permits_per_1000_residents": 1.14,
+      "renter_share_pct": 18.8
     },
     "data_notes": {
       "zoning": null,
@@ -3294,7 +3400,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3303,7 +3409,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 734976.7977698487,
       "rent_burden_pct": 52.4,
-      "permits_per_1000_residents": 2.72
+      "permits_per_1000_residents": 2.72,
+      "renter_share_pct": 38.6
     },
     "data_notes": {
       "zoning": null,
@@ -3325,16 +3432,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 372614.33902234136,
       "rent_burden_pct": 32.6,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 10.4
     },
     "data_notes": {
       "zoning": null,
@@ -3356,16 +3464,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "A",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 1220586.149305734,
       "rent_burden_pct": 8.3,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 50.0
     },
     "data_notes": {
       "zoning": null,
@@ -3387,7 +3496,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "B",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3396,7 +3505,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 589263.1390203288,
       "rent_burden_pct": 42.6,
-      "permits_per_1000_residents": 4.83
+      "permits_per_1000_residents": 4.83,
+      "renter_share_pct": 27.3
     },
     "data_notes": {
       "zoning": null,
@@ -3418,16 +3528,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 386190.58397855447,
       "rent_burden_pct": 26.0,
-      "permits_per_1000_residents": 1.48
+      "permits_per_1000_residents": 1.48,
+      "renter_share_pct": 10.3
     },
     "data_notes": {
       "zoning": null,
@@ -3449,7 +3560,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "A",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -3458,7 +3569,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 401700.5024225001,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 4.1
     },
     "data_notes": {
       "zoning": null,
@@ -3480,16 +3592,17 @@
       "zoning": "A",
       "mbta": null,
       "production": "B",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 62.5,
       "median_home_value": 565792.232138363,
       "rent_burden_pct": 50.8,
-      "permits_per_1000_residents": 4.87
+      "permits_per_1000_residents": 4.87,
+      "renter_share_pct": 27.8
     },
     "data_notes": {
       "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
@@ -3511,16 +3624,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 323213.9035889098,
       "rent_burden_pct": 54.9,
-      "permits_per_1000_residents": 0.34
+      "permits_per_1000_residents": 0.34,
+      "renter_share_pct": 44.8
     },
     "data_notes": {
       "zoning": null,
@@ -3551,7 +3665,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 753485.9756738484,
       "rent_burden_pct": 39.6,
-      "permits_per_1000_residents": 1.69
+      "permits_per_1000_residents": 1.69,
+      "renter_share_pct": 12.3
     },
     "data_notes": {
       "zoning": null,
@@ -3582,7 +3697,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 688852.7595896117,
       "rent_burden_pct": 39.4,
-      "permits_per_1000_residents": 1.33
+      "permits_per_1000_residents": 1.33,
+      "renter_share_pct": 8.5
     },
     "data_notes": {
       "zoning": null,
@@ -3604,7 +3720,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -3613,7 +3729,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 494689.374266274,
       "rent_burden_pct": 37.0,
-      "permits_per_1000_residents": 1.32
+      "permits_per_1000_residents": 1.32,
+      "renter_share_pct": 25.6
     },
     "data_notes": {
       "zoning": null,
@@ -3644,7 +3761,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 541300.5758718658,
       "rent_burden_pct": 20.4,
-      "permits_per_1000_residents": 0.65
+      "permits_per_1000_residents": 0.65,
+      "renter_share_pct": 4.8
     },
     "data_notes": {
       "zoning": null,
@@ -3675,7 +3793,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 846661.3937917004,
       "rent_burden_pct": 43.0,
-      "permits_per_1000_residents": 0.53
+      "permits_per_1000_residents": 0.53,
+      "renter_share_pct": 15.7
     },
     "data_notes": {
       "zoning": null,
@@ -3697,7 +3816,7 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3706,7 +3825,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 431483.4538694995,
       "rent_burden_pct": 34.7,
-      "permits_per_1000_residents": 0.81
+      "permits_per_1000_residents": 0.81,
+      "renter_share_pct": 4.8
     },
     "data_notes": {
       "zoning": null,
@@ -3728,7 +3848,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3737,7 +3857,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 367632.1466617394,
       "rent_burden_pct": 47.3,
-      "permits_per_1000_residents": 5.18
+      "permits_per_1000_residents": 5.18,
+      "renter_share_pct": 18.2
     },
     "data_notes": {
       "zoning": null,
@@ -3759,16 +3880,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 788175.8909506318,
       "rent_burden_pct": 85.0,
-      "permits_per_1000_residents": 0.81
+      "permits_per_1000_residents": 0.81,
+      "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
@@ -3790,7 +3912,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3799,7 +3921,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 588564.3670879159,
       "rent_burden_pct": 56.2,
-      "permits_per_1000_residents": 1.88
+      "permits_per_1000_residents": 1.88,
+      "renter_share_pct": 10.7
     },
     "data_notes": {
       "zoning": null,
@@ -3821,16 +3944,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 407918.4537478651,
       "rent_burden_pct": 47.6,
-      "permits_per_1000_residents": 4.08
+      "permits_per_1000_residents": 4.08,
+      "renter_share_pct": 32.4
     },
     "data_notes": {
       "zoning": null,
@@ -3852,16 +3976,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 888472.1164506444,
       "rent_burden_pct": 57.2,
-      "permits_per_1000_residents": 0.88
+      "permits_per_1000_residents": 0.88,
+      "renter_share_pct": 7.7
     },
     "data_notes": {
       "zoning": null,
@@ -3883,7 +4008,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -3892,7 +4017,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 721493.1435496738,
       "rent_burden_pct": 44.1,
-      "permits_per_1000_residents": 2.01
+      "permits_per_1000_residents": 2.01,
+      "renter_share_pct": 15.7
     },
     "data_notes": {
       "zoning": null,
@@ -3923,7 +4049,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 469903.9166128249,
       "rent_burden_pct": 25.3,
-      "permits_per_1000_residents": 1.8
+      "permits_per_1000_residents": 1.8,
+      "renter_share_pct": 28.9
     },
     "data_notes": {
       "zoning": null,
@@ -3945,7 +4072,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -3954,7 +4081,8 @@
       "pct_land_multifamily_byright": 19.2,
       "median_home_value": 530200.1463249134,
       "rent_burden_pct": 54.6,
-      "permits_per_1000_residents": 0.34
+      "permits_per_1000_residents": 0.34,
+      "renter_share_pct": 40.0
     },
     "data_notes": {
       "zoning": null,
@@ -3985,7 +4113,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 345016.72428083856,
       "rent_burden_pct": 14.3,
-      "permits_per_1000_residents": 2.67
+      "permits_per_1000_residents": 2.67,
+      "renter_share_pct": 5.0
     },
     "data_notes": {
       "zoning": null,
@@ -4016,7 +4145,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 180300.44571163028,
       "rent_burden_pct": 10.5,
-      "permits_per_1000_residents": 1.39
+      "permits_per_1000_residents": 1.39,
+      "renter_share_pct": 10.9
     },
     "data_notes": {
       "zoning": null,
@@ -4047,7 +4177,8 @@
       "pct_land_multifamily_byright": 12.1,
       "median_home_value": 1253471.76353596,
       "rent_burden_pct": 54.4,
-      "permits_per_1000_residents": 1.08
+      "permits_per_1000_residents": 1.08,
+      "renter_share_pct": 18.1
     },
     "data_notes": {
       "zoning": null,
@@ -4069,16 +4200,17 @@
       "zoning": null,
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 367020.2800857299,
       "rent_burden_pct": 54.2,
-      "permits_per_1000_residents": 1.68
+      "permits_per_1000_residents": 1.68,
+      "renter_share_pct": 26.1
     },
     "data_notes": {
       "zoning": null,
@@ -4100,7 +4232,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4109,7 +4241,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 541610.530751218,
       "rent_burden_pct": 39.7,
-      "permits_per_1000_residents": 0.71
+      "permits_per_1000_residents": 0.71,
+      "renter_share_pct": 20.7
     },
     "data_notes": {
       "zoning": null,
@@ -4140,7 +4273,8 @@
       "pct_land_multifamily_byright": 4.7,
       "median_home_value": 538317.7148332834,
       "rent_burden_pct": 28.9,
-      "permits_per_1000_residents": 2.02
+      "permits_per_1000_residents": 2.02,
+      "renter_share_pct": 14.3
     },
     "data_notes": {
       "zoning": null,
@@ -4162,7 +4296,7 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4171,7 +4305,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 361192.58605636103,
       "rent_burden_pct": 26.7,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 9.9
     },
     "data_notes": {
       "zoning": null,
@@ -4202,7 +4337,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 720753.2920498597,
       "rent_burden_pct": 35.1,
-      "permits_per_1000_residents": 0.07
+      "permits_per_1000_residents": 0.07,
+      "renter_share_pct": 12.1
     },
     "data_notes": {
       "zoning": null,
@@ -4224,16 +4360,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 315309.46218176244,
       "rent_burden_pct": 47.4,
-      "permits_per_1000_residents": 0.37
+      "permits_per_1000_residents": 0.37,
+      "renter_share_pct": 58.5
     },
     "data_notes": {
       "zoning": null,
@@ -4255,16 +4392,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 516088.6236411415,
       "rent_burden_pct": 42.4,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 21.1
     },
     "data_notes": {
       "zoning": null,
@@ -4286,7 +4424,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "B",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4295,7 +4433,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 931334.3648159668,
       "rent_burden_pct": 68.1,
-      "permits_per_1000_residents": 3.04
+      "permits_per_1000_residents": 3.04,
+      "renter_share_pct": 12.9
     },
     "data_notes": {
       "zoning": null,
@@ -4317,16 +4456,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 458304.9518919859,
       "rent_burden_pct": 36.9,
-      "permits_per_1000_residents": 3.0
+      "permits_per_1000_residents": 3.0,
+      "renter_share_pct": 7.9
     },
     "data_notes": {
       "zoning": null,
@@ -4348,16 +4488,17 @@
       "zoning": "D",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 1.3,
       "median_home_value": 594666.4117123658,
       "rent_burden_pct": 36.1,
-      "permits_per_1000_residents": 1.05
+      "permits_per_1000_residents": 1.05,
+      "renter_share_pct": 27.4
     },
     "data_notes": {
       "zoning": null,
@@ -4388,7 +4529,8 @@
       "pct_land_multifamily_byright": 9.3,
       "median_home_value": 682842.7843008967,
       "rent_burden_pct": 35.3,
-      "permits_per_1000_residents": 5.83
+      "permits_per_1000_residents": 5.83,
+      "renter_share_pct": 18.6
     },
     "data_notes": {
       "zoning": null,
@@ -4419,7 +4561,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 338350.8161874802,
       "rent_burden_pct": 19.3,
-      "permits_per_1000_residents": 1.29
+      "permits_per_1000_residents": 1.29,
+      "renter_share_pct": 17.0
     },
     "data_notes": {
       "zoning": null,
@@ -4450,7 +4593,8 @@
       "pct_land_multifamily_byright": 4.1,
       "median_home_value": 811865.6393658539,
       "rent_burden_pct": 46.5,
-      "permits_per_1000_residents": 0.58
+      "permits_per_1000_residents": 0.58,
+      "renter_share_pct": 27.8
     },
     "data_notes": {
       "zoning": null,
@@ -4472,7 +4616,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "B",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4481,7 +4625,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 664484.7646087938,
       "rent_burden_pct": 23.6,
-      "permits_per_1000_residents": 2.7
+      "permits_per_1000_residents": 2.7,
+      "renter_share_pct": 13.7
     },
     "data_notes": {
       "zoning": null,
@@ -4503,7 +4648,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "B",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4512,7 +4657,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 609920.2918175509,
       "rent_burden_pct": 65.8,
-      "permits_per_1000_residents": 3.87
+      "permits_per_1000_residents": 3.87,
+      "renter_share_pct": 15.5
     },
     "data_notes": {
       "zoning": null,
@@ -4534,7 +4680,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "B",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4543,7 +4689,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 588185.0373430544,
       "rent_burden_pct": 48.4,
-      "permits_per_1000_residents": 3.93
+      "permits_per_1000_residents": 3.93,
+      "renter_share_pct": 17.5
     },
     "data_notes": {
       "zoning": null,
@@ -4565,16 +4712,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 266400.0,
       "rent_burden_pct": 42.1,
-      "permits_per_1000_residents": 0.99
+      "permits_per_1000_residents": 0.99,
+      "renter_share_pct": 4.3
     },
     "data_notes": {
       "zoning": null,
@@ -4596,7 +4744,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -4605,7 +4753,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 492770.95109854295,
       "rent_burden_pct": 55.7,
-      "permits_per_1000_residents": 0.17
+      "permits_per_1000_residents": 0.17,
+      "renter_share_pct": 70.1
     },
     "data_notes": {
       "zoning": null,
@@ -4627,16 +4776,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 400817.5774383222,
       "rent_burden_pct": 53.8,
-      "permits_per_1000_residents": 1.04
+      "permits_per_1000_residents": 1.04,
+      "renter_share_pct": 20.2
     },
     "data_notes": {
       "zoning": null,
@@ -4658,7 +4808,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "A",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4667,7 +4817,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 439534.32187508093,
       "rent_burden_pct": 19.9,
-      "permits_per_1000_residents": 0.9
+      "permits_per_1000_residents": 0.9,
+      "renter_share_pct": 14.6
     },
     "data_notes": {
       "zoning": null,
@@ -4689,7 +4840,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -4698,7 +4849,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 569589.4404336879,
       "rent_burden_pct": 51.6,
-      "permits_per_1000_residents": 2.36
+      "permits_per_1000_residents": 2.36,
+      "renter_share_pct": 32.2
     },
     "data_notes": {
       "zoning": null,
@@ -4720,7 +4872,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4729,7 +4881,8 @@
       "pct_land_multifamily_byright": 3.0,
       "median_home_value": 451923.1645427978,
       "rent_burden_pct": 46.0,
-      "permits_per_1000_residents": 0.14
+      "permits_per_1000_residents": 0.14,
+      "renter_share_pct": 34.5
     },
     "data_notes": {
       "zoning": null,
@@ -4751,16 +4904,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 485919.2604215895,
       "rent_burden_pct": 75.6,
-      "permits_per_1000_residents": 0.56
+      "permits_per_1000_residents": 0.56,
+      "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
@@ -4782,7 +4936,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "D",
+      "affordability": "F",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4791,7 +4945,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1524671.6260461572,
       "rent_burden_pct": 43.5,
-      "permits_per_1000_residents": 2.13
+      "permits_per_1000_residents": 2.13,
+      "renter_share_pct": 17.3
     },
     "data_notes": {
       "zoning": null,
@@ -4813,16 +4968,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 405239.8071650295,
       "rent_burden_pct": 53.3,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 5.9
     },
     "data_notes": {
       "zoning": null,
@@ -4853,7 +5009,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1455597.69303834,
       "rent_burden_pct": 56.1,
-      "permits_per_1000_residents": 0.29
+      "permits_per_1000_residents": 0.29,
+      "renter_share_pct": 35.7
     },
     "data_notes": {
       "zoning": null,
@@ -4875,7 +5032,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4884,7 +5041,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 754297.0920212386,
       "rent_burden_pct": 48.2,
-      "permits_per_1000_residents": 1.29
+      "permits_per_1000_residents": 1.29,
+      "renter_share_pct": 13.6
     },
     "data_notes": {
       "zoning": null,
@@ -4906,16 +5064,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 513763.9507526029,
       "rent_burden_pct": 40.6,
-      "permits_per_1000_residents": 0.06
+      "permits_per_1000_residents": 0.06,
+      "renter_share_pct": 7.7
     },
     "data_notes": {
       "zoning": null,
@@ -4937,7 +5096,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -4946,7 +5105,8 @@
       "pct_land_multifamily_byright": 6.8,
       "median_home_value": 469079.5442897152,
       "rent_burden_pct": 48.7,
-      "permits_per_1000_residents": 1.01
+      "permits_per_1000_residents": 1.01,
+      "renter_share_pct": 56.7
     },
     "data_notes": {
       "zoning": null,
@@ -4968,16 +5128,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 353402.8306668515,
       "rent_burden_pct": 38.8,
-      "permits_per_1000_residents": 1.53
+      "permits_per_1000_residents": 1.53,
+      "renter_share_pct": 26.0
     },
     "data_notes": {
       "zoning": null,
@@ -4999,16 +5160,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 526387.9447856,
       "rent_burden_pct": 40.6,
-      "permits_per_1000_residents": 0.43
+      "permits_per_1000_residents": 0.43,
+      "renter_share_pct": 19.2
     },
     "data_notes": {
       "zoning": null,
@@ -5030,16 +5192,17 @@
       "zoning": "B",
       "mbta": "A",
       "production": "B",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 20.6,
       "median_home_value": 564367.4049000997,
       "rent_burden_pct": 53.9,
-      "permits_per_1000_residents": 3.78
+      "permits_per_1000_residents": 3.78,
+      "renter_share_pct": 51.4
     },
     "data_notes": {
       "zoning": null,
@@ -5061,16 +5224,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1052527.2295030025,
       "rent_burden_pct": 70.1,
-      "permits_per_1000_residents": 1.16
+      "permits_per_1000_residents": 1.16,
+      "renter_share_pct": 14.6
     },
     "data_notes": {
       "zoning": null,
@@ -5101,7 +5265,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 661554.3743707453,
       "rent_burden_pct": 48.8,
-      "permits_per_1000_residents": 0.03
+      "permits_per_1000_residents": 0.03,
+      "renter_share_pct": 57.4
     },
     "data_notes": {
       "zoning": null,
@@ -5123,7 +5288,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -5132,7 +5297,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 970200.0,
       "rent_burden_pct": 37.5,
-      "permits_per_1000_residents": 1.11
+      "permits_per_1000_residents": 1.11,
+      "renter_share_pct": 22.8
     },
     "data_notes": {
       "zoning": null,
@@ -5163,7 +5329,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 688798.7588801839,
       "rent_burden_pct": 36.6,
-      "permits_per_1000_residents": 0.55
+      "permits_per_1000_residents": 0.55,
+      "renter_share_pct": 27.1
     },
     "data_notes": {
       "zoning": null,
@@ -5194,7 +5361,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 994007.2589452256,
       "rent_burden_pct": 44.8,
-      "permits_per_1000_residents": 0.74
+      "permits_per_1000_residents": 0.74,
+      "renter_share_pct": 18.5
     },
     "data_notes": {
       "zoning": null,
@@ -5216,16 +5384,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 794039.2039626854,
       "rent_burden_pct": 53.5,
-      "permits_per_1000_residents": 0.75
+      "permits_per_1000_residents": 0.75,
+      "renter_share_pct": 17.4
     },
     "data_notes": {
       "zoning": null,
@@ -5247,16 +5416,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 562832.7235397211,
       "rent_burden_pct": 51.4,
-      "permits_per_1000_residents": 0.19
+      "permits_per_1000_residents": 0.19,
+      "renter_share_pct": 42.7
     },
     "data_notes": {
       "zoning": null,
@@ -5278,16 +5448,17 @@
       "zoning": "F",
       "mbta": "B",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 764400.0399991652,
       "rent_burden_pct": 57.4,
-      "permits_per_1000_residents": 1.36
+      "permits_per_1000_residents": 1.36,
+      "renter_share_pct": 19.9
     },
     "data_notes": {
       "zoning": null,
@@ -5309,7 +5480,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -5318,7 +5489,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 681916.4089838257,
       "rent_burden_pct": 50.8,
-      "permits_per_1000_residents": 2.84
+      "permits_per_1000_residents": 2.84,
+      "renter_share_pct": 17.8
     },
     "data_notes": {
       "zoning": null,
@@ -5340,7 +5512,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "B",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -5349,7 +5521,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 724704.7931703973,
       "rent_burden_pct": 27.8,
-      "permits_per_1000_residents": 5.22
+      "permits_per_1000_residents": 5.22,
+      "renter_share_pct": 17.5
     },
     "data_notes": {
       "zoning": null,
@@ -5371,7 +5544,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -5380,7 +5553,8 @@
       "pct_land_multifamily_byright": 5.4,
       "median_home_value": 586607.1902596247,
       "rent_burden_pct": 42.2,
-      "permits_per_1000_residents": 0.09
+      "permits_per_1000_residents": 0.09,
+      "renter_share_pct": 22.1
     },
     "data_notes": {
       "zoning": null,
@@ -5402,16 +5576,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1025994.7360695056,
       "rent_burden_pct": 62.5,
-      "permits_per_1000_residents": 1.01
+      "permits_per_1000_residents": 1.01,
+      "renter_share_pct": 13.5
     },
     "data_notes": {
       "zoning": null,
@@ -5433,7 +5608,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "F",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -5442,7 +5617,8 @@
       "pct_land_multifamily_byright": 9.4,
       "median_home_value": 813606.2297357902,
       "rent_burden_pct": 37.0,
-      "permits_per_1000_residents": 0.11
+      "permits_per_1000_residents": 0.11,
+      "renter_share_pct": 46.7
     },
     "data_notes": {
       "zoning": null,
@@ -5473,7 +5649,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 697635.8661090898,
       "rent_burden_pct": 36.0,
-      "permits_per_1000_residents": 1.22
+      "permits_per_1000_residents": 1.22,
+      "renter_share_pct": 13.2
     },
     "data_notes": {
       "zoning": null,
@@ -5504,7 +5681,8 @@
       "pct_land_multifamily_byright": 33.5,
       "median_home_value": 871901.1644404903,
       "rent_burden_pct": 44.5,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 34.2
     },
     "data_notes": {
       "zoning": null,
@@ -5526,7 +5704,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -5535,7 +5713,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 686651.9236889461,
       "rent_burden_pct": 50.3,
-      "permits_per_1000_residents": 2.08
+      "permits_per_1000_residents": 2.08,
+      "renter_share_pct": 8.2
     },
     "data_notes": {
       "zoning": null,
@@ -5557,7 +5736,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -5566,7 +5745,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 638593.6614752708,
       "rent_burden_pct": 43.4,
-      "permits_per_1000_residents": 0.6
+      "permits_per_1000_residents": 0.6,
+      "renter_share_pct": 20.5
     },
     "data_notes": {
       "zoning": null,
@@ -5588,16 +5768,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 439500.0,
       "rent_burden_pct": 58.8,
-      "permits_per_1000_residents": 1.48
+      "permits_per_1000_residents": 1.48,
+      "renter_share_pct": 26.0
     },
     "data_notes": {
       "zoning": null,
@@ -5619,16 +5800,17 @@
       "zoning": "A",
       "mbta": "B",
       "production": "C",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 39.1,
       "median_home_value": 542455.5846017225,
       "rent_burden_pct": 61.1,
-      "permits_per_1000_residents": 2.93
+      "permits_per_1000_residents": 2.93,
+      "renter_share_pct": 22.3
     },
     "data_notes": {
       "zoning": null,
@@ -5650,16 +5832,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "F",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 328641.6934853255,
       "rent_burden_pct": 80.0,
-      "permits_per_1000_residents": 6.27
+      "permits_per_1000_residents": 6.27,
+      "renter_share_pct": 6.0
     },
     "data_notes": {
       "zoning": null,
@@ -5681,16 +5864,17 @@
       "zoning": "F",
       "mbta": "F",
       "production": "D",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "F"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 851208.1150534647,
       "rent_burden_pct": 39.1,
-      "permits_per_1000_residents": 1.34
+      "permits_per_1000_residents": 1.34,
+      "renter_share_pct": 6.7
     },
     "data_notes": {
       "zoning": null,
@@ -5712,16 +5896,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 540804.0135016755,
       "rent_burden_pct": 51.4,
-      "permits_per_1000_residents": 0.5
+      "permits_per_1000_residents": 0.5,
+      "renter_share_pct": 29.5
     },
     "data_notes": {
       "zoning": null,
@@ -5743,7 +5928,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -5752,7 +5937,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 487878.6622480752,
       "rent_burden_pct": 42.6,
-      "permits_per_1000_residents": 2.45
+      "permits_per_1000_residents": 2.45,
+      "renter_share_pct": 25.9
     },
     "data_notes": {
       "zoning": null,
@@ -5774,7 +5960,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "A",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -5783,7 +5969,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 679484.61942023,
       "rent_burden_pct": 70.8,
-      "permits_per_1000_residents": 8.76
+      "permits_per_1000_residents": 8.76,
+      "renter_share_pct": 17.2
     },
     "data_notes": {
       "zoning": null,
@@ -5805,16 +5992,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 470322.16807002015,
       "rent_burden_pct": 36.3,
-      "permits_per_1000_residents": 0.31
+      "permits_per_1000_residents": 0.31,
+      "renter_share_pct": 14.0
     },
     "data_notes": {
       "zoning": null,
@@ -5836,16 +6024,17 @@
       "zoning": "D",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 2.4,
       "median_home_value": 1035254.7656249488,
       "rent_burden_pct": 60.2,
-      "permits_per_1000_residents": 0.21
+      "permits_per_1000_residents": 0.21,
+      "renter_share_pct": 15.7
     },
     "data_notes": {
       "zoning": null,
@@ -5867,16 +6056,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 150000.0,
       "rent_burden_pct": 71.4,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 13.2
     },
     "data_notes": {
       "zoning": null,
@@ -5898,16 +6088,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 389720.14899438625,
       "rent_burden_pct": 43.0,
-      "permits_per_1000_residents": 0.74
+      "permits_per_1000_residents": 0.74,
+      "renter_share_pct": 16.6
     },
     "data_notes": {
       "zoning": null,
@@ -5929,16 +6120,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 385251.1900028681,
       "rent_burden_pct": 58.9,
-      "permits_per_1000_residents": 0.7
+      "permits_per_1000_residents": 0.7,
+      "renter_share_pct": 38.3
     },
     "data_notes": {
       "zoning": null,
@@ -5960,16 +6152,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "A",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 695713.040926981,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 1.02
+      "permits_per_1000_residents": 1.02,
+      "renter_share_pct": 1.2
     },
     "data_notes": {
       "zoning": null,
@@ -5991,7 +6184,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "A",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6000,7 +6193,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 428715.3386968141,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 2.28
+      "permits_per_1000_residents": 2.28,
+      "renter_share_pct": 3.5
     },
     "data_notes": {
       "zoning": null,
@@ -6022,7 +6216,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "A",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -6031,7 +6225,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 618261.0591790028,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 4.9
     },
     "data_notes": {
       "zoning": null,
@@ -6062,7 +6257,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 918923.7770228717,
       "rent_burden_pct": 46.6,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 17.3
     },
     "data_notes": {
       "zoning": null,
@@ -6084,16 +6280,17 @@
       "zoning": "C",
       "mbta": null,
       "production": "A",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 5.3,
       "median_home_value": 2970408.5669867485,
       "rent_burden_pct": 32.4,
-      "permits_per_1000_residents": 16.49
+      "permits_per_1000_residents": 16.49,
+      "renter_share_pct": 28.9
     },
     "data_notes": {
       "zoning": null,
@@ -6124,7 +6321,8 @@
       "pct_land_multifamily_byright": 0.3,
       "median_home_value": 862566.1197457082,
       "rent_burden_pct": 40.6,
-      "permits_per_1000_residents": 0.71
+      "permits_per_1000_residents": 0.71,
+      "renter_share_pct": 32.0
     },
     "data_notes": {
       "zoning": null,
@@ -6146,7 +6344,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "C",
-      "affordability": "D",
+      "affordability": "F",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6155,7 +6353,8 @@
       "pct_land_multifamily_byright": 1.9,
       "median_home_value": 1471815.88928274,
       "rent_burden_pct": 49.4,
-      "permits_per_1000_residents": 2.1
+      "permits_per_1000_residents": 2.1,
+      "renter_share_pct": 14.2
     },
     "data_notes": {
       "zoning": null,
@@ -6177,7 +6376,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -6186,7 +6385,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 352400.0,
       "rent_burden_pct": 34.6,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 23.6
     },
     "data_notes": {
       "zoning": null,
@@ -6208,7 +6408,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6217,7 +6417,8 @@
       "pct_land_multifamily_byright": 10.3,
       "median_home_value": 425316.15666103846,
       "rent_burden_pct": 44.3,
-      "permits_per_1000_residents": 0.2
+      "permits_per_1000_residents": 0.2,
+      "renter_share_pct": 60.1
     },
     "data_notes": {
       "zoning": null,
@@ -6239,7 +6440,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -6248,7 +6449,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 435253.2219779326,
       "rent_burden_pct": 42.9,
-      "permits_per_1000_residents": 1.02
+      "permits_per_1000_residents": 1.02,
+      "renter_share_pct": 15.7
     },
     "data_notes": {
       "zoning": null,
@@ -6270,7 +6472,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -6279,7 +6481,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 420500.0,
       "rent_burden_pct": 41.9,
-      "permits_per_1000_residents": 0.65
+      "permits_per_1000_residents": 0.65,
+      "renter_share_pct": 9.8
     },
     "data_notes": {
       "zoning": null,
@@ -6301,16 +6504,17 @@
       "zoning": null,
       "mbta": null,
       "production": "A",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 380168.1733465039,
       "rent_burden_pct": 74.6,
-      "permits_per_1000_residents": 5.59
+      "permits_per_1000_residents": 5.59,
+      "renter_share_pct": 13.9
     },
     "data_notes": {
       "zoning": null,
@@ -6332,7 +6536,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6341,7 +6545,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 902692.2391016504,
       "rent_burden_pct": 34.6,
-      "permits_per_1000_residents": 1.78
+      "permits_per_1000_residents": 1.78,
+      "renter_share_pct": 12.5
     },
     "data_notes": {
       "zoning": null,
@@ -6372,7 +6577,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 894965.4287022548,
       "rent_burden_pct": 45.1,
-      "permits_per_1000_residents": 6.16
+      "permits_per_1000_residents": 6.16,
+      "renter_share_pct": 23.0
     },
     "data_notes": {
       "zoning": null,
@@ -6394,16 +6600,17 @@
       "zoning": "C",
       "mbta": "A",
       "production": "B",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 5.5,
       "median_home_value": 1483223.9396855887,
       "rent_burden_pct": 39.1,
-      "permits_per_1000_residents": 3.18
+      "permits_per_1000_residents": 3.18,
+      "renter_share_pct": 29.6
     },
     "data_notes": {
       "zoning": null,
@@ -6434,7 +6641,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 786477.3637804446,
       "rent_burden_pct": 39.9,
-      "permits_per_1000_residents": 2.78
+      "permits_per_1000_residents": 2.78,
+      "renter_share_pct": 4.6
     },
     "data_notes": {
       "zoning": null,
@@ -6456,16 +6664,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 243829.0804866843,
       "rent_burden_pct": 51.9,
-      "permits_per_1000_residents": 0.08
+      "permits_per_1000_residents": 0.08,
+      "renter_share_pct": 44.1
     },
     "data_notes": {
       "zoning": null,
@@ -6487,7 +6696,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6496,7 +6705,8 @@
       "pct_land_multifamily_byright": 14.1,
       "median_home_value": 782695.4572094735,
       "rent_burden_pct": 50.2,
-      "permits_per_1000_residents": 0.23
+      "permits_per_1000_residents": 0.23,
+      "renter_share_pct": 30.4
     },
     "data_notes": {
       "zoning": null,
@@ -6518,7 +6728,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6527,7 +6737,8 @@
       "pct_land_multifamily_byright": 6.4,
       "median_home_value": 429900.0,
       "rent_burden_pct": 44.2,
-      "permits_per_1000_residents": 0.85
+      "permits_per_1000_residents": 0.85,
+      "renter_share_pct": 29.3
     },
     "data_notes": {
       "zoning": null,
@@ -6549,16 +6760,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 375040.9725888015,
       "rent_burden_pct": 38.2,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 30.4
     },
     "data_notes": {
       "zoning": null,
@@ -6580,16 +6792,17 @@
       "zoning": "A",
       "mbta": "A",
       "production": "A",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": 37.9,
       "median_home_value": 788471.6209506653,
       "rent_burden_pct": 62.6,
-      "permits_per_1000_residents": 8.76
+      "permits_per_1000_residents": 8.76,
+      "renter_share_pct": 16.5
     },
     "data_notes": {
       "zoning": null,
@@ -6611,7 +6824,7 @@
       "zoning": "A",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6620,7 +6833,8 @@
       "pct_land_multifamily_byright": 58.4,
       "median_home_value": 469119.8788938488,
       "rent_burden_pct": 54.6,
-      "permits_per_1000_residents": 1.42
+      "permits_per_1000_residents": 1.42,
+      "renter_share_pct": 41.6
     },
     "data_notes": {
       "zoning": null,
@@ -6642,16 +6856,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.5,
       "median_home_value": 671993.7404116642,
       "rent_burden_pct": 60.1,
-      "permits_per_1000_residents": 0.38
+      "permits_per_1000_residents": 0.38,
+      "renter_share_pct": 15.3
     },
     "data_notes": {
       "zoning": null,
@@ -6673,7 +6888,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "C",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6682,7 +6897,8 @@
       "pct_land_multifamily_byright": 2.2,
       "median_home_value": 498983.4535925473,
       "rent_burden_pct": 39.0,
-      "permits_per_1000_residents": 1.78
+      "permits_per_1000_residents": 1.78,
+      "renter_share_pct": 31.1
     },
     "data_notes": {
       "zoning": null,
@@ -6704,16 +6920,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 352774.1743159574,
       "rent_burden_pct": 42.3,
-      "permits_per_1000_residents": 1.04
+      "permits_per_1000_residents": 1.04,
+      "renter_share_pct": 11.2
     },
     "data_notes": {
       "zoning": null,
@@ -6735,7 +6952,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -6744,7 +6961,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 572470.2903141292,
       "rent_burden_pct": 47.6,
-      "permits_per_1000_residents": 1.04
+      "permits_per_1000_residents": 1.04,
+      "renter_share_pct": 16.8
     },
     "data_notes": {
       "zoning": null,
@@ -6766,16 +6984,17 @@
       "zoning": "A",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 50.0,
       "median_home_value": 1007885.3369255844,
       "rent_burden_pct": 55.7,
-      "permits_per_1000_residents": 2.3
+      "permits_per_1000_residents": 2.3,
+      "renter_share_pct": 9.5
     },
     "data_notes": {
       "zoning": null,
@@ -6797,16 +7016,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 707004.6740081218,
       "rent_burden_pct": 47.5,
-      "permits_per_1000_residents": 0.1
+      "permits_per_1000_residents": 0.1,
+      "renter_share_pct": 48.6
     },
     "data_notes": {
       "zoning": null,
@@ -6828,16 +7048,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "F",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "F"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1205044.7044740384,
       "rent_burden_pct": 46.0,
-      "permits_per_1000_residents": 1.5
+      "permits_per_1000_residents": 1.5,
+      "renter_share_pct": 22.0
     },
     "data_notes": {
       "zoning": null,
@@ -6859,16 +7080,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "A",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 461033.8347970392,
       "rent_burden_pct": 9.5,
-      "permits_per_1000_residents": 5.05
+      "permits_per_1000_residents": 5.05,
+      "renter_share_pct": 6.9
     },
     "data_notes": {
       "zoning": null,
@@ -6890,7 +7112,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -6899,7 +7121,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 308526.7091929634,
       "rent_burden_pct": 46.3,
-      "permits_per_1000_residents": 0.92
+      "permits_per_1000_residents": 0.92,
+      "renter_share_pct": 29.0
     },
     "data_notes": {
       "zoning": null,
@@ -6921,16 +7144,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1035125.4598463662,
       "rent_burden_pct": 54.6,
-      "permits_per_1000_residents": 12.65
+      "permits_per_1000_residents": 12.65,
+      "renter_share_pct": 21.4
     },
     "data_notes": {
       "zoning": null,
@@ -6961,7 +7185,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 499931.06006243505,
       "rent_burden_pct": 23.0,
-      "permits_per_1000_residents": 2.03
+      "permits_per_1000_residents": 2.03,
+      "renter_share_pct": 13.1
     },
     "data_notes": {
       "zoning": null,
@@ -6983,7 +7208,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -6992,7 +7217,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 417639.9271915857,
       "rent_burden_pct": 44.1,
-      "permits_per_1000_residents": 0.82
+      "permits_per_1000_residents": 0.82,
+      "renter_share_pct": 18.6
     },
     "data_notes": {
       "zoning": null,
@@ -7014,7 +7240,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -7023,7 +7249,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 232300.0,
       "rent_burden_pct": 48.1,
-      "permits_per_1000_residents": 0.56
+      "permits_per_1000_residents": 0.56,
+      "renter_share_pct": 28.9
     },
     "data_notes": {
       "zoning": null,
@@ -7045,7 +7272,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7054,7 +7281,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 532767.8741573672,
       "rent_burden_pct": 33.0,
-      "permits_per_1000_residents": 0.8
+      "permits_per_1000_residents": 0.8,
+      "renter_share_pct": 11.5
     },
     "data_notes": {
       "zoning": null,
@@ -7076,16 +7304,17 @@
       "zoning": "D",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 3.0,
       "median_home_value": 676290.4614990663,
       "rent_burden_pct": 54.8,
-      "permits_per_1000_residents": 0.48
+      "permits_per_1000_residents": 0.48,
+      "renter_share_pct": 34.5
     },
     "data_notes": {
       "zoning": null,
@@ -7107,16 +7336,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 487570.40656768554,
       "rent_burden_pct": 46.2,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 27.9
     },
     "data_notes": {
       "zoning": null,
@@ -7138,16 +7368,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 641162.5236230075,
       "rent_burden_pct": 42.3,
-      "permits_per_1000_residents": 0.16
+      "permits_per_1000_residents": 0.16,
+      "renter_share_pct": 12.8
     },
     "data_notes": {
       "zoning": null,
@@ -7169,16 +7400,17 @@
       "zoning": "D",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 1.7,
       "median_home_value": 579288.6278734021,
       "rent_burden_pct": 39.8,
-      "permits_per_1000_residents": 1.12
+      "permits_per_1000_residents": 1.12,
+      "renter_share_pct": 16.8
     },
     "data_notes": {
       "zoning": null,
@@ -7200,7 +7432,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -7209,7 +7441,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 317291.7265928366,
       "rent_burden_pct": 37.5,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 2.8
     },
     "data_notes": {
       "zoning": null,
@@ -7240,7 +7473,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 460683.53768549423,
       "rent_burden_pct": 20.0,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 9.8
     },
     "data_notes": {
       "zoning": null,
@@ -7271,7 +7505,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 415322.9909817095,
       "rent_burden_pct": 29.0,
-      "permits_per_1000_residents": 1.56
+      "permits_per_1000_residents": 1.56,
+      "renter_share_pct": 8.8
     },
     "data_notes": {
       "zoning": null,
@@ -7293,16 +7528,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 294171.2068020006,
       "rent_burden_pct": 50.7,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 38.4
     },
     "data_notes": {
       "zoning": null,
@@ -7324,16 +7560,17 @@
       "zoning": "A",
       "mbta": null,
       "production": "A",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": 50.0,
       "median_home_value": 307170.17027580313,
       "rent_burden_pct": 44.0,
-      "permits_per_1000_residents": 12.94
+      "permits_per_1000_residents": 12.94,
+      "renter_share_pct": 8.9
     },
     "data_notes": {
       "zoning": null,
@@ -7355,16 +7592,17 @@
       "zoning": "C",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 3.3,
       "median_home_value": 590523.0697679246,
       "rent_burden_pct": 55.3,
-      "permits_per_1000_residents": 1.43
+      "permits_per_1000_residents": 1.43,
+      "renter_share_pct": 31.6
     },
     "data_notes": {
       "zoning": null,
@@ -7386,7 +7624,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "B",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7395,7 +7633,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 622649.7197121079,
       "rent_burden_pct": 49.1,
-      "permits_per_1000_residents": 4.27
+      "permits_per_1000_residents": 4.27,
+      "renter_share_pct": 20.3
     },
     "data_notes": {
       "zoning": null,
@@ -7417,7 +7656,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7426,7 +7665,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 654147.8846302164,
       "rent_burden_pct": 44.4,
-      "permits_per_1000_residents": 1.37
+      "permits_per_1000_residents": 1.37,
+      "renter_share_pct": 5.1
     },
     "data_notes": {
       "zoning": null,
@@ -7448,7 +7688,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "B",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7457,7 +7697,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 613367.9413194583,
       "rent_burden_pct": 59.6,
-      "permits_per_1000_residents": 3.15
+      "permits_per_1000_residents": 3.15,
+      "renter_share_pct": 4.3
     },
     "data_notes": {
       "zoning": null,
@@ -7479,7 +7720,7 @@
       "zoning": "A",
       "mbta": null,
       "production": "A",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "B"
@@ -7488,7 +7729,8 @@
       "pct_land_multifamily_byright": 52.0,
       "median_home_value": 1048896.9909783562,
       "rent_burden_pct": 63.1,
-      "permits_per_1000_residents": 5.79
+      "permits_per_1000_residents": 5.79,
+      "renter_share_pct": 23.6
     },
     "data_notes": {
       "zoning": null,
@@ -7519,7 +7761,8 @@
       "pct_land_multifamily_byright": 40.1,
       "median_home_value": 657568.4523127353,
       "rent_burden_pct": 43.7,
-      "permits_per_1000_residents": 0.74
+      "permits_per_1000_residents": 0.74,
+      "renter_share_pct": 56.1
     },
     "data_notes": {
       "zoning": null,
@@ -7541,7 +7784,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7550,7 +7793,8 @@
       "pct_land_multifamily_byright": 3.1,
       "median_home_value": 429000.0,
       "rent_burden_pct": 57.0,
-      "permits_per_1000_residents": 0.26
+      "permits_per_1000_residents": 0.26,
+      "renter_share_pct": 31.0
     },
     "data_notes": {
       "zoning": null,
@@ -7572,7 +7816,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7581,7 +7825,8 @@
       "pct_land_multifamily_byright": 2.0,
       "median_home_value": 619611.7975520049,
       "rent_burden_pct": 67.0,
-      "permits_per_1000_residents": 0.93
+      "permits_per_1000_residents": 0.93,
+      "renter_share_pct": 23.3
     },
     "data_notes": {
       "zoning": null,
@@ -7603,7 +7848,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "C",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7612,7 +7857,8 @@
       "pct_land_multifamily_byright": 1.0,
       "median_home_value": 878272.6854714965,
       "rent_burden_pct": 35.3,
-      "permits_per_1000_residents": 1.85
+      "permits_per_1000_residents": 1.85,
+      "renter_share_pct": 16.1
     },
     "data_notes": {
       "zoning": null,
@@ -7643,7 +7889,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 641863.0350490966,
       "rent_burden_pct": 33.7,
-      "permits_per_1000_residents": 7.69
+      "permits_per_1000_residents": 7.69,
+      "renter_share_pct": 9.1
     },
     "data_notes": {
       "zoning": null,
@@ -7665,7 +7912,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7674,7 +7921,8 @@
       "pct_land_multifamily_byright": 4.9,
       "median_home_value": 601285.748092359,
       "rent_burden_pct": 52.0,
-      "permits_per_1000_residents": 1.93
+      "permits_per_1000_residents": 1.93,
+      "renter_share_pct": 49.0
     },
     "data_notes": {
       "zoning": null,
@@ -7696,16 +7944,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 591074.229833607,
       "rent_burden_pct": 49.1,
-      "permits_per_1000_residents": 1.39
+      "permits_per_1000_residents": 1.39,
+      "renter_share_pct": 8.8
     },
     "data_notes": {
       "zoning": null,
@@ -7727,7 +7976,7 @@
       "zoning": null,
       "mbta": "A",
       "production": "C",
-      "affordability": "A",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "B"
@@ -7736,7 +7985,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 662945.271886778,
       "rent_burden_pct": 13.6,
-      "permits_per_1000_residents": 1.75
+      "permits_per_1000_residents": 1.75,
+      "renter_share_pct": 10.8
     },
     "data_notes": {
       "zoning": null,
@@ -7758,7 +8008,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7767,7 +8017,8 @@
       "pct_land_multifamily_byright": 2.7,
       "median_home_value": 535644.078061597,
       "rent_burden_pct": 48.1,
-      "permits_per_1000_residents": 0.06
+      "permits_per_1000_residents": 0.06,
+      "renter_share_pct": 21.7
     },
     "data_notes": {
       "zoning": null,
@@ -7789,16 +8040,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 834181.2617944097,
       "rent_burden_pct": 51.8,
-      "permits_per_1000_residents": 0.86
+      "permits_per_1000_residents": 0.86,
+      "renter_share_pct": 31.2
     },
     "data_notes": {
       "zoning": null,
@@ -7829,7 +8081,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 326821.9755520045,
       "rent_burden_pct": 5.6,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 10.4
     },
     "data_notes": {
       "zoning": null,
@@ -7851,16 +8104,17 @@
       "zoning": "F",
       "mbta": "B",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 774556.8722995678,
       "rent_burden_pct": 40.8,
-      "permits_per_1000_residents": 0.81
+      "permits_per_1000_residents": 0.81,
+      "renter_share_pct": 19.5
     },
     "data_notes": {
       "zoning": null,
@@ -7882,16 +8136,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "F",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 378200.0174350731,
       "rent_burden_pct": 54.1,
-      "permits_per_1000_residents": 4.12
+      "permits_per_1000_residents": 4.12,
+      "renter_share_pct": 11.3
     },
     "data_notes": {
       "zoning": null,
@@ -7913,16 +8168,17 @@
       "zoning": null,
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 334300.85127906915,
       "rent_burden_pct": 44.2,
-      "permits_per_1000_residents": 2.24
+      "permits_per_1000_residents": 2.24,
+      "renter_share_pct": 15.4
     },
     "data_notes": {
       "zoning": null,
@@ -7944,7 +8200,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7953,7 +8209,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 514831.7910091201,
       "rent_burden_pct": 35.0,
-      "permits_per_1000_residents": 3.63
+      "permits_per_1000_residents": 3.63,
+      "renter_share_pct": 15.0
     },
     "data_notes": {
       "zoning": null,
@@ -7975,7 +8232,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -7984,7 +8241,8 @@
       "pct_land_multifamily_byright": 12.0,
       "median_home_value": 592554.1677582281,
       "rent_burden_pct": 52.4,
-      "permits_per_1000_residents": 0.34
+      "permits_per_1000_residents": 0.34,
+      "renter_share_pct": 49.3
     },
     "data_notes": {
       "zoning": null,
@@ -8006,7 +8264,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8015,7 +8273,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 610690.8737384157,
       "rent_burden_pct": 48.9,
-      "permits_per_1000_residents": 2.4
+      "permits_per_1000_residents": 2.4,
+      "renter_share_pct": 22.8
     },
     "data_notes": {
       "zoning": null,
@@ -8037,16 +8296,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 435449.0185144269,
       "rent_burden_pct": 58.3,
-      "permits_per_1000_residents": 3.12
+      "permits_per_1000_residents": 3.12,
+      "renter_share_pct": 3.3
     },
     "data_notes": {
       "zoning": null,
@@ -8068,7 +8328,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "B",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -8077,7 +8337,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 659494.9494583992,
       "rent_burden_pct": 28.8,
-      "permits_per_1000_residents": 0.59
+      "permits_per_1000_residents": 0.59,
+      "renter_share_pct": 11.1
     },
     "data_notes": {
       "zoning": null,
@@ -8099,16 +8360,17 @@
       "zoning": "D",
       "mbta": "A",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 2.8,
       "median_home_value": 666853.9742549501,
       "rent_burden_pct": 50.7,
-      "permits_per_1000_residents": 0.07
+      "permits_per_1000_residents": 0.07,
+      "renter_share_pct": 25.6
     },
     "data_notes": {
       "zoning": null,
@@ -8130,16 +8392,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 307093.7894330081,
       "rent_burden_pct": 41.2,
-      "permits_per_1000_residents": 8.06
+      "permits_per_1000_residents": 8.06,
+      "renter_share_pct": 5.6
     },
     "data_notes": {
       "zoning": null,
@@ -8170,7 +8433,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 973110.1694967316,
       "rent_burden_pct": 41.7,
-      "permits_per_1000_residents": 1.0
+      "permits_per_1000_residents": 1.0,
+      "renter_share_pct": 12.9
     },
     "data_notes": {
       "zoning": null,
@@ -8192,7 +8456,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8201,7 +8465,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 556411.5070297797,
       "rent_burden_pct": 32.1,
-      "permits_per_1000_residents": 1.68
+      "permits_per_1000_residents": 1.68,
+      "renter_share_pct": 17.1
     },
     "data_notes": {
       "zoning": null,
@@ -8232,7 +8497,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 841272.0253251271,
       "rent_burden_pct": 43.1,
-      "permits_per_1000_residents": 0.54
+      "permits_per_1000_residents": 0.54,
+      "renter_share_pct": 11.0
     },
     "data_notes": {
       "zoning": null,
@@ -8254,16 +8520,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 478671.9110512173,
       "rent_burden_pct": 52.5,
-      "permits_per_1000_residents": 1.21
+      "permits_per_1000_residents": 1.21,
+      "renter_share_pct": 22.8
     },
     "data_notes": {
       "zoning": null,
@@ -8285,7 +8552,7 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8294,7 +8561,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 410062.9563619231,
       "rent_burden_pct": 32.8,
-      "permits_per_1000_residents": 0.71
+      "permits_per_1000_residents": 0.71,
+      "renter_share_pct": 33.8
     },
     "data_notes": {
       "zoning": null,
@@ -8316,16 +8584,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1183435.9600097293,
       "rent_burden_pct": 73.5,
-      "permits_per_1000_residents": 0.91
+      "permits_per_1000_residents": 0.91,
+      "renter_share_pct": 7.7
     },
     "data_notes": {
       "zoning": null,
@@ -8347,16 +8616,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.5,
       "median_home_value": 535340.6104865642,
       "rent_burden_pct": 53.4,
-      "permits_per_1000_residents": 1.13
+      "permits_per_1000_residents": 1.13,
+      "renter_share_pct": 21.5
     },
     "data_notes": {
       "zoning": null,
@@ -8387,7 +8657,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 673386.4770291854,
       "rent_burden_pct": 37.9,
-      "permits_per_1000_residents": 0.34
+      "permits_per_1000_residents": 0.34,
+      "renter_share_pct": 26.5
     },
     "data_notes": {
       "zoning": null,
@@ -8409,7 +8680,7 @@
       "zoning": null,
       "mbta": null,
       "production": "C",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8418,7 +8689,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 419962.8975037251,
       "rent_burden_pct": 37.3,
-      "permits_per_1000_residents": 1.71
+      "permits_per_1000_residents": 1.71,
+      "renter_share_pct": 8.9
     },
     "data_notes": {
       "zoning": null,
@@ -8440,7 +8712,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -8449,7 +8721,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 489519.68817938847,
       "rent_burden_pct": 35.3,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 16.9
     },
     "data_notes": {
       "zoning": null,
@@ -8480,7 +8753,8 @@
       "pct_land_multifamily_byright": 58.4,
       "median_home_value": 910192.8334448456,
       "rent_burden_pct": 36.1,
-      "permits_per_1000_residents": 1.47
+      "permits_per_1000_residents": 1.47,
+      "renter_share_pct": 66.4
     },
     "data_notes": {
       "zoning": null,
@@ -8502,16 +8776,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 368861.39202071464,
       "rent_burden_pct": 34.0,
-      "permits_per_1000_residents": 0.7
+      "permits_per_1000_residents": 0.7,
+      "renter_share_pct": 23.3
     },
     "data_notes": {
       "zoning": null,
@@ -8533,16 +8808,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 474686.7530818105,
       "rent_burden_pct": 67.3,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 8.1
     },
     "data_notes": {
       "zoning": null,
@@ -8564,16 +8840,17 @@
       "zoning": "A",
       "mbta": "A",
       "production": "F",
-      "affordability": "B",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 30.9,
       "median_home_value": 923399.9376153344,
       "rent_burden_pct": 25.6,
-      "permits_per_1000_residents": 0.38
+      "permits_per_1000_residents": 0.38,
+      "renter_share_pct": 10.6
     },
     "data_notes": {
       "zoning": null,
@@ -8595,16 +8872,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 254700.0,
       "rent_burden_pct": 55.1,
-      "permits_per_1000_residents": 0.34
+      "permits_per_1000_residents": 0.34,
+      "renter_share_pct": 56.2
     },
     "data_notes": {
       "zoning": null,
@@ -8626,16 +8904,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 397891.268905226,
       "rent_burden_pct": 46.9,
-      "permits_per_1000_residents": 1.62
+      "permits_per_1000_residents": 1.62,
+      "renter_share_pct": 13.8
     },
     "data_notes": {
       "zoning": null,
@@ -8657,7 +8936,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -8666,7 +8945,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 421251.29764143546,
       "rent_burden_pct": 39.3,
-      "permits_per_1000_residents": 0.92
+      "permits_per_1000_residents": 0.92,
+      "renter_share_pct": 35.1
     },
     "data_notes": {
       "zoning": null,
@@ -8688,16 +8968,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 288598.0777526624,
       "rent_burden_pct": 53.3,
-      "permits_per_1000_residents": 0.32
+      "permits_per_1000_residents": 0.32,
+      "renter_share_pct": 52.2
     },
     "data_notes": {
       "zoning": null,
@@ -8719,7 +9000,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "F",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8728,7 +9009,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 567286.8500830479,
       "rent_burden_pct": 32.9,
-      "permits_per_1000_residents": 0.5
+      "permits_per_1000_residents": 0.5,
+      "renter_share_pct": 11.2
     },
     "data_notes": {
       "zoning": null,
@@ -8750,16 +9032,17 @@
       "zoning": null,
       "mbta": null,
       "production": "C",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 713267.4759550989,
       "rent_burden_pct": 65.5,
-      "permits_per_1000_residents": 2.07
+      "permits_per_1000_residents": 2.07,
+      "renter_share_pct": 29.0
     },
     "data_notes": {
       "zoning": null,
@@ -8781,7 +9064,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "A",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8790,7 +9073,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 775832.3338105486,
       "rent_burden_pct": 40.5,
-      "permits_per_1000_residents": 23.4
+      "permits_per_1000_residents": 23.4,
+      "renter_share_pct": 32.2
     },
     "data_notes": {
       "zoning": null,
@@ -8812,7 +9096,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8821,7 +9105,8 @@
       "pct_land_multifamily_byright": 3.0,
       "median_home_value": 584338.5053068047,
       "rent_burden_pct": 59.4,
-      "permits_per_1000_residents": 0.55
+      "permits_per_1000_residents": 0.55,
+      "renter_share_pct": 23.8
     },
     "data_notes": {
       "zoning": null,
@@ -8852,7 +9137,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 790370.0595623641,
       "rent_burden_pct": 38.5,
-      "permits_per_1000_residents": 0.7
+      "permits_per_1000_residents": 0.7,
+      "renter_share_pct": 15.5
     },
     "data_notes": {
       "zoning": null,
@@ -8874,16 +9160,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 494331.93084097496,
       "rent_burden_pct": 32.7,
-      "permits_per_1000_residents": 2.03
+      "permits_per_1000_residents": 2.03,
+      "renter_share_pct": 16.7
     },
     "data_notes": {
       "zoning": null,
@@ -8905,7 +9192,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8914,7 +9201,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1109637.8669370224,
       "rent_burden_pct": 38.2,
-      "permits_per_1000_residents": 1.06
+      "permits_per_1000_residents": 1.06,
+      "renter_share_pct": 7.9
     },
     "data_notes": {
       "zoning": null,
@@ -8936,16 +9224,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 464528.3392616066,
       "rent_burden_pct": 61.3,
-      "permits_per_1000_residents": 0.55
+      "permits_per_1000_residents": 0.55,
+      "renter_share_pct": 57.6
     },
     "data_notes": {
       "zoning": null,
@@ -8967,7 +9256,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "A",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -8976,7 +9265,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 618071.7670960256,
       "rent_burden_pct": 16.7,
-      "permits_per_1000_residents": 1.92
+      "permits_per_1000_residents": 1.92,
+      "renter_share_pct": 12.9
     },
     "data_notes": {
       "zoning": null,
@@ -8998,7 +9288,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "B",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9007,7 +9297,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 791381.3992413734,
       "rent_burden_pct": 49.7,
-      "permits_per_1000_residents": 4.03
+      "permits_per_1000_residents": 4.03,
+      "renter_share_pct": 26.9
     },
     "data_notes": {
       "zoning": null,
@@ -9029,7 +9320,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -9038,7 +9329,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 497191.66239565774,
       "rent_burden_pct": 45.8,
-      "permits_per_1000_residents": 0.93
+      "permits_per_1000_residents": 0.93,
+      "renter_share_pct": 12.9
     },
     "data_notes": {
       "zoning": null,
@@ -9060,16 +9352,17 @@
       "zoning": "B",
       "mbta": "A",
       "production": "B",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 12.1,
       "median_home_value": 501464.24088225566,
       "rent_burden_pct": 50.4,
-      "permits_per_1000_residents": 4.41
+      "permits_per_1000_residents": 4.41,
+      "renter_share_pct": 38.2
     },
     "data_notes": {
       "zoning": null,
@@ -9091,16 +9384,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "C",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 399831.66311681067,
       "rent_burden_pct": 30.6,
-      "permits_per_1000_residents": 1.1
+      "permits_per_1000_residents": 1.1,
+      "renter_share_pct": 15.0
     },
     "data_notes": {
       "zoning": null,
@@ -9122,16 +9416,17 @@
       "zoning": "F",
       "mbta": "F",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 651888.6130541341,
       "rent_burden_pct": 47.1,
-      "permits_per_1000_residents": 1.16
+      "permits_per_1000_residents": 1.16,
+      "renter_share_pct": 16.5
     },
     "data_notes": {
       "zoning": null,
@@ -9153,7 +9448,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "D",
+      "affordability": "F",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -9162,7 +9457,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1276443.0533216817,
       "rent_burden_pct": 41.2,
-      "permits_per_1000_residents": 3.95
+      "permits_per_1000_residents": 3.95,
+      "renter_share_pct": 35.7
     },
     "data_notes": {
       "zoning": null,
@@ -9193,7 +9489,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 403676.5010081047,
       "rent_burden_pct": 26.3,
-      "permits_per_1000_residents": 6.71
+      "permits_per_1000_residents": 6.71,
+      "renter_share_pct": 9.4
     },
     "data_notes": {
       "zoning": null,
@@ -9224,7 +9521,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 933066.6836198696,
       "rent_burden_pct": 45.9,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 13.8
     },
     "data_notes": {
       "zoning": null,
@@ -9246,7 +9544,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9255,7 +9553,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 489051.1967427952,
       "rent_burden_pct": 31.2,
-      "permits_per_1000_residents": 0.99
+      "permits_per_1000_residents": 0.99,
+      "renter_share_pct": 16.0
     },
     "data_notes": {
       "zoning": null,
@@ -9277,7 +9576,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "A",
-      "affordability": "B",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9286,7 +9585,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1005581.9568152592,
       "rent_burden_pct": 23.1,
-      "permits_per_1000_residents": 7.38
+      "permits_per_1000_residents": 7.38,
+      "renter_share_pct": 16.4
     },
     "data_notes": {
       "zoning": null,
@@ -9308,7 +9608,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "C",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9317,7 +9617,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 487800.0,
       "rent_burden_pct": 63.8,
-      "permits_per_1000_residents": 1.62
+      "permits_per_1000_residents": 1.62,
+      "renter_share_pct": 14.2
     },
     "data_notes": {
       "zoning": null,
@@ -9339,16 +9640,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 653372.0547499195,
       "rent_burden_pct": 46.7,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 14.8
     },
     "data_notes": {
       "zoning": null,
@@ -9379,7 +9681,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 689602.1206450841,
       "rent_burden_pct": 36.8,
-      "permits_per_1000_residents": 6.72
+      "permits_per_1000_residents": 6.72,
+      "renter_share_pct": 10.0
     },
     "data_notes": {
       "zoning": null,
@@ -9410,7 +9713,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 521073.8482338842,
       "rent_burden_pct": 29.9,
-      "permits_per_1000_residents": 3.8
+      "permits_per_1000_residents": 3.8,
+      "renter_share_pct": 18.6
     },
     "data_notes": {
       "zoning": null,
@@ -9432,7 +9736,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "A",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9441,7 +9745,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 784326.7002645581,
       "rent_burden_pct": 44.5,
-      "permits_per_1000_residents": 13.64
+      "permits_per_1000_residents": 13.64,
+      "renter_share_pct": 28.6
     },
     "data_notes": {
       "zoning": null,
@@ -9472,7 +9777,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 331067.6936327217,
       "rent_burden_pct": 19.7,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 7.8
     },
     "data_notes": {
       "zoning": null,
@@ -9494,7 +9800,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "F",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9503,7 +9809,8 @@
       "pct_land_multifamily_byright": 10.0,
       "median_home_value": 746273.1506985119,
       "rent_burden_pct": 43.0,
-      "permits_per_1000_residents": 0.3
+      "permits_per_1000_residents": 0.3,
+      "renter_share_pct": 18.5
     },
     "data_notes": {
       "zoning": null,
@@ -9534,7 +9841,8 @@
       "pct_land_multifamily_byright": 12.1,
       "median_home_value": 798819.8680235561,
       "rent_burden_pct": 40.7,
-      "permits_per_1000_residents": 1.14
+      "permits_per_1000_residents": 1.14,
+      "renter_share_pct": 52.1
     },
     "data_notes": {
       "zoning": null,
@@ -9556,16 +9864,17 @@
       "zoning": "A",
       "mbta": null,
       "production": "B",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 99.3,
       "median_home_value": 335637.8079108883,
       "rent_burden_pct": 57.3,
-      "permits_per_1000_residents": 4.72
+      "permits_per_1000_residents": 4.72,
+      "renter_share_pct": 29.8
     },
     "data_notes": {
       "zoning": null,
@@ -9587,16 +9896,17 @@
       "zoning": "A",
       "mbta": "B",
       "production": "A",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": 31.8,
       "median_home_value": 457870.5326544905,
       "rent_burden_pct": 46.2,
-      "permits_per_1000_residents": 6.6
+      "permits_per_1000_residents": 6.6,
+      "renter_share_pct": 22.7
     },
     "data_notes": {
       "zoning": null,
@@ -9618,7 +9928,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "C",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9627,7 +9937,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 343100.2720812612,
       "rent_burden_pct": 33.6,
-      "permits_per_1000_residents": 3.21
+      "permits_per_1000_residents": 3.21,
+      "renter_share_pct": 34.8
     },
     "data_notes": {
       "zoning": null,
@@ -9649,7 +9960,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "F",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -9658,7 +9969,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 320584.9947255276,
       "rent_burden_pct": 20.0,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 7.2
     },
     "data_notes": {
       "zoning": null,
@@ -9689,7 +10001,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 376811.0212911758,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 2.2
+      "permits_per_1000_residents": 2.2,
+      "renter_share_pct": 8.8
     },
     "data_notes": {
       "zoning": null,
@@ -9720,7 +10033,8 @@
       "pct_land_multifamily_byright": 4.3,
       "median_home_value": 722000.0,
       "rent_burden_pct": 39.5,
-      "permits_per_1000_residents": 0.26
+      "permits_per_1000_residents": 0.26,
+      "renter_share_pct": 48.7
     },
     "data_notes": {
       "zoning": null,
@@ -9751,7 +10065,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1110886.2534151622,
       "rent_burden_pct": 48.6,
-      "permits_per_1000_residents": 0.29
+      "permits_per_1000_residents": 0.29,
+      "renter_share_pct": 8.5
     },
     "data_notes": {
       "zoning": null,
@@ -9773,16 +10088,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 425251.80457063066,
       "rent_burden_pct": 51.1,
-      "permits_per_1000_residents": 0.11
+      "permits_per_1000_residents": 0.11,
+      "renter_share_pct": 41.0
     },
     "data_notes": {
       "zoning": null,
@@ -9804,7 +10120,7 @@
       "zoning": "D",
       "mbta": "A",
       "production": "C",
-      "affordability": "C",
+      "affordability": "F",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9813,7 +10129,8 @@
       "pct_land_multifamily_byright": 2.5,
       "median_home_value": 1946382.8628740415,
       "rent_burden_pct": 31.6,
-      "permits_per_1000_residents": 2.78
+      "permits_per_1000_residents": 2.78,
+      "renter_share_pct": 15.6
     },
     "data_notes": {
       "zoning": null,
@@ -9835,16 +10152,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "B",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 903686.555807856,
       "rent_burden_pct": 38.4,
-      "permits_per_1000_residents": 4.83
+      "permits_per_1000_residents": 4.83,
+      "renter_share_pct": 14.1
     },
     "data_notes": {
       "zoning": null,
@@ -9866,16 +10184,17 @@
       "zoning": null,
       "mbta": null,
       "production": "F",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 292707.8368433899,
       "rent_burden_pct": 66.1,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 15.2
     },
     "data_notes": {
       "zoning": null,
@@ -9897,7 +10216,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "F",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -9906,7 +10225,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1026688.717088948,
       "rent_burden_pct": 52.7,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 12.8
     },
     "data_notes": {
       "zoning": null,
@@ -9937,7 +10257,8 @@
       "pct_land_multifamily_byright": 8.8,
       "median_home_value": 500757.51829860295,
       "rent_burden_pct": 24.5,
-      "permits_per_1000_residents": 0.0
+      "permits_per_1000_residents": 0.0,
+      "renter_share_pct": 21.2
     },
     "data_notes": {
       "zoning": null,
@@ -9959,7 +10280,7 @@
       "zoning": "D",
       "mbta": "B",
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -9968,7 +10289,8 @@
       "pct_land_multifamily_byright": 1.3,
       "median_home_value": 576981.1342818803,
       "rent_burden_pct": 44.4,
-      "permits_per_1000_residents": 1.44
+      "permits_per_1000_residents": 1.44,
+      "renter_share_pct": 16.6
     },
     "data_notes": {
       "zoning": null,
@@ -9990,16 +10312,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 396129.1836535011,
       "rent_burden_pct": 47.3,
-      "permits_per_1000_residents": 2.88
+      "permits_per_1000_residents": 2.88,
+      "renter_share_pct": 21.4
     },
     "data_notes": {
       "zoning": null,
@@ -10021,7 +10344,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "C",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10030,7 +10353,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 917489.2903543696,
       "rent_burden_pct": 38.9,
-      "permits_per_1000_residents": 2.21
+      "permits_per_1000_residents": 2.21,
+      "renter_share_pct": 5.8
     },
     "data_notes": {
       "zoning": null,
@@ -10052,16 +10376,17 @@
       "zoning": null,
       "mbta": null,
       "production": null,
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 294400.0,
       "rent_burden_pct": 56.3,
-      "permits_per_1000_residents": null
+      "permits_per_1000_residents": null,
+      "renter_share_pct": 43.2
     },
     "data_notes": {
       "zoning": null,
@@ -10083,7 +10408,7 @@
       "zoning": null,
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10092,7 +10417,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 651560.226366716,
       "rent_burden_pct": 40.7,
-      "permits_per_1000_residents": 1.64
+      "permits_per_1000_residents": 1.64,
+      "renter_share_pct": 17.2
     },
     "data_notes": {
       "zoning": null,
@@ -10123,7 +10449,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1597347.9151112896,
       "rent_burden_pct": 50.0,
-      "permits_per_1000_residents": 6.8
+      "permits_per_1000_residents": 6.8,
+      "renter_share_pct": 10.8
     },
     "data_notes": {
       "zoning": null,
@@ -10154,7 +10481,8 @@
       "pct_land_multifamily_byright": 0.3,
       "median_home_value": 712579.7852855567,
       "rent_burden_pct": 38.1,
-      "permits_per_1000_residents": 2.62
+      "permits_per_1000_residents": 2.62,
+      "renter_share_pct": 39.1
     },
     "data_notes": {
       "zoning": null,
@@ -10176,7 +10504,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -10185,7 +10513,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 368365.5933970362,
       "rent_burden_pct": 44.0,
-      "permits_per_1000_residents": 0.98
+      "permits_per_1000_residents": 0.98,
+      "renter_share_pct": 33.6
     },
     "data_notes": {
       "zoning": null,
@@ -10207,7 +10536,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10216,7 +10545,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 810368.1765272506,
       "rent_burden_pct": 34.6,
-      "permits_per_1000_residents": 1.02
+      "permits_per_1000_residents": 1.02,
+      "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
@@ -10247,7 +10577,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 453205.27180137206,
       "rent_burden_pct": 27.9,
-      "permits_per_1000_residents": 4.61
+      "permits_per_1000_residents": 4.61,
+      "renter_share_pct": 9.5
     },
     "data_notes": {
       "zoning": null,
@@ -10269,16 +10600,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 523329.87833934854,
       "rent_burden_pct": 67.2,
-      "permits_per_1000_residents": 1.34
+      "permits_per_1000_residents": 1.34,
+      "renter_share_pct": 14.2
     },
     "data_notes": {
       "zoning": null,
@@ -10300,16 +10632,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "F",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.2,
       "median_home_value": 2182054.785903419,
       "rent_burden_pct": 38.0,
-      "permits_per_1000_residents": 0.68
+      "permits_per_1000_residents": 0.68,
+      "renter_share_pct": 13.1
     },
     "data_notes": {
       "zoning": null,
@@ -10331,7 +10664,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -10340,7 +10673,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 641735.9063636264,
       "rent_burden_pct": 44.5,
-      "permits_per_1000_residents": 2.33
+      "permits_per_1000_residents": 2.33,
+      "renter_share_pct": 17.0
     },
     "data_notes": {
       "zoning": null,
@@ -10362,16 +10696,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1185364.91949008,
       "rent_burden_pct": 53.1,
-      "permits_per_1000_residents": 0.87
+      "permits_per_1000_residents": 0.87,
+      "renter_share_pct": 13.7
     },
     "data_notes": {
       "zoning": null,
@@ -10393,7 +10728,7 @@
       "zoning": "C",
       "mbta": "A",
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10402,7 +10737,8 @@
       "pct_land_multifamily_byright": 8.5,
       "median_home_value": 469300.0,
       "rent_burden_pct": 51.8,
-      "permits_per_1000_residents": 0.94
+      "permits_per_1000_residents": 0.94,
+      "renter_share_pct": 31.7
     },
     "data_notes": {
       "zoning": null,
@@ -10433,7 +10769,8 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 511917.4781005246,
       "rent_burden_pct": 27.9,
-      "permits_per_1000_residents": 0.58
+      "permits_per_1000_residents": 0.58,
+      "renter_share_pct": 12.0
     },
     "data_notes": {
       "zoning": null,
@@ -10455,7 +10792,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10464,7 +10801,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 532676.195574406,
       "rent_burden_pct": 49.2,
-      "permits_per_1000_residents": 0.92
+      "permits_per_1000_residents": 0.92,
+      "renter_share_pct": 30.4
     },
     "data_notes": {
       "zoning": null,
@@ -10486,7 +10824,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -10495,7 +10833,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 461089.58007767814,
       "rent_burden_pct": 45.0,
-      "permits_per_1000_residents": 1.23
+      "permits_per_1000_residents": 1.23,
+      "renter_share_pct": 9.9
     },
     "data_notes": {
       "zoning": null,
@@ -10517,16 +10856,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 420362.0563319934,
       "rent_burden_pct": 54.7,
-      "permits_per_1000_residents": 0.73
+      "permits_per_1000_residents": 0.73,
+      "renter_share_pct": 18.7
     },
     "data_notes": {
       "zoning": null,
@@ -10548,7 +10888,7 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -10557,7 +10897,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 473365.89076296665,
       "rent_burden_pct": 49.2,
-      "permits_per_1000_residents": 0.92
+      "permits_per_1000_residents": 0.92,
+      "renter_share_pct": 25.5
     },
     "data_notes": {
       "zoning": null,
@@ -10579,7 +10920,7 @@
       "zoning": "F",
       "mbta": "F",
       "production": "C",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "D"
@@ -10588,7 +10929,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 750207.7929839715,
       "rent_burden_pct": 48.7,
-      "permits_per_1000_residents": 2.89
+      "permits_per_1000_residents": 2.89,
+      "renter_share_pct": 14.2
     },
     "data_notes": {
       "zoning": null,
@@ -10610,16 +10952,17 @@
       "zoning": null,
       "mbta": null,
       "production": "D",
-      "affordability": "D",
+      "affordability": "B",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 387966.754691591,
       "rent_burden_pct": 48.6,
-      "permits_per_1000_residents": 0.67
+      "permits_per_1000_residents": 0.67,
+      "renter_share_pct": 25.1
     },
     "data_notes": {
       "zoning": null,
@@ -10641,16 +10984,17 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "C",
+      "affordability": "F",
       "votes": null,
       "rep": null,
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1496625.1613751117,
       "rent_burden_pct": 36.4,
-      "permits_per_1000_residents": 1.05
+      "permits_per_1000_residents": 1.05,
+      "renter_share_pct": 16.7
     },
     "data_notes": {
       "zoning": null,
@@ -10681,7 +11025,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 338567.3314091316,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 1.94
+      "permits_per_1000_residents": 1.94,
+      "renter_share_pct": 0.7
     },
     "data_notes": {
       "zoning": null,
@@ -10703,7 +11048,7 @@
       "zoning": "F",
       "mbta": "F",
       "production": "F",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "F"
@@ -10712,7 +11057,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 563100.0,
       "rent_burden_pct": 54.6,
-      "permits_per_1000_residents": 0.42
+      "permits_per_1000_residents": 0.42,
+      "renter_share_pct": 43.1
     },
     "data_notes": {
       "zoning": null,
@@ -10734,7 +11080,7 @@
       "zoning": "F",
       "mbta": "B",
       "production": "A",
-      "affordability": "F",
+      "affordability": "D",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10743,7 +11089,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 731775.4507528081,
       "rent_burden_pct": 54.4,
-      "permits_per_1000_residents": 15.42
+      "permits_per_1000_residents": 15.42,
+      "renter_share_pct": 41.2
     },
     "data_notes": {
       "zoning": null,
@@ -10765,7 +11112,7 @@
       "zoning": "B",
       "mbta": "A",
       "production": "D",
-      "affordability": "D",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10774,7 +11121,8 @@
       "pct_land_multifamily_byright": 15.2,
       "median_home_value": 421246.1745291397,
       "rent_burden_pct": 49.9,
-      "permits_per_1000_residents": 1.31
+      "permits_per_1000_residents": 1.31,
+      "renter_share_pct": 57.9
     },
     "data_notes": {
       "zoning": null,
@@ -10796,16 +11144,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "B",
+      "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 390947.1806639501,
       "rent_burden_pct": 28.6,
-      "permits_per_1000_residents": 1.03
+      "permits_per_1000_residents": 1.03,
+      "renter_share_pct": 4.4
     },
     "data_notes": {
       "zoning": null,
@@ -10827,7 +11176,7 @@
       "zoning": "F",
       "mbta": "A",
       "production": "D",
-      "affordability": "B",
+      "affordability": "C",
       "votes": null,
       "rep": null,
       "composite": "C"
@@ -10836,7 +11185,8 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 739606.8564509117,
       "rent_burden_pct": 26.8,
-      "permits_per_1000_residents": 1.31
+      "permits_per_1000_residents": 1.31,
+      "renter_share_pct": 14.7
     },
     "data_notes": {
       "zoning": null,
@@ -10858,16 +11208,17 @@
       "zoning": "F",
       "mbta": null,
       "production": "D",
-      "affordability": "F",
+      "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 585477.4595292476,
       "rent_burden_pct": 59.3,
-      "permits_per_1000_residents": 1.48
+      "permits_per_1000_residents": 1.48,
+      "renter_share_pct": 18.8
     },
     "data_notes": {
       "zoning": null,

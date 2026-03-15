@@ -15,12 +15,11 @@ Grading rubrics for Phase 1 dimensions:
     F  < 0.5%
     null  no residential zoning data for that municipality
 
-  affordability  (rent_burden_pct — % of renters paying > 30% of income)
-    A  < 20%
-    B  20–30%
-    C  30–40%
-    D  40–50%
-    F  > 50%
+  affordability  renter-share-weighted composite of rent burden and median home value
+    rent_burden (pct renters paying >30%): A<20%, B 20–30%, C 30–40%, D 40–50%, F>50%
+    median_home_value: A<$400k, B $400–600k, C $600–800k, D $800k–1.2M, F>$1.2M
+    weight_rent = renter_share_pct / 100; weight_home = 1 - weight_rent
+    composite numeric (A=4…F=0): ≥3.5→A, ≥2.5→B, ≥1.5→C, ≥0.5→D, <0.5→F
 
   production     (permits_per_1000_residents — annual housing units per 1,000 pop)
     A  > 5.0
@@ -74,7 +73,11 @@ def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
         Exempt MBTA towns get None for mbta grade (excluded from composite).
     """
     zoning = _grade_zoning(metrics.get("pct_land_multifamily_byright"))
-    affordability = _grade_affordability(metrics.get("rent_burden_pct"))
+    affordability = _grade_affordability(
+        metrics.get("rent_burden_pct"),
+        metrics.get("median_home_value"),
+        metrics.get("renter_share_pct"),
+    )
     production = _grade_production(metrics.get("permits_per_1000_residents"))
     mbta = _grade_mbta(mbta_status)
 
@@ -144,9 +147,9 @@ def _grade_zoning(pct: float | None) -> str | None:
     return "F"
 
 
-def _grade_affordability(rent_burden_pct: float | None) -> str | None:
+def _grade_rent_burden(rent_burden_pct: float | None) -> str | None:
     """
-    Grade affordability based on % of renter households that are cost-burdened (>30%).
+    Grade rent affordability based on % of renter households that are cost-burdened (>30%).
 
     A < 20%, B 20–30%, C 30–40%, D 40–50%, F > 50%
     """
@@ -159,6 +162,72 @@ def _grade_affordability(rent_burden_pct: float | None) -> str | None:
     if rent_burden_pct < 40:
         return "C"
     if rent_burden_pct < 50:
+        return "D"
+    return "F"
+
+
+def _grade_home_value(median_home_value: float | None) -> str | None:
+    """
+    Grade affordability based on median owner-occupied home value.
+
+    Lower values are better (inverse grading).
+    A < $400k, B $400–600k, C $600–800k, D $800k–$1.2M, F > $1.2M
+    """
+    if median_home_value is None:
+        return None
+    if median_home_value < 400_000:
+        return "A"
+    if median_home_value < 600_000:
+        return "B"
+    if median_home_value < 800_000:
+        return "C"
+    if median_home_value < 1_200_000:
+        return "D"
+    return "F"
+
+
+def _grade_affordability(
+    rent_burden_pct: float | None,
+    median_home_value: float | None,
+    renter_share_pct: float | None,
+) -> str | None:
+    """
+    Composite affordability grade: renter-share-weighted combination of rent
+    burden and median home value grades.
+
+    weight_rent = renter_share_pct / 100 (0.5 fallback if data unavailable)
+    weight_home = 1 - weight_rent
+    composite (A=4…F=0): ≥3.5→A, ≥2.5→B, ≥1.5→C, ≥0.5→D, <0.5→F
+    """
+    GRADE_NUM = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
+
+    rent_grade = _grade_rent_burden(rent_burden_pct)
+    home_grade = _grade_home_value(median_home_value)
+
+    if rent_grade is None and home_grade is None:
+        return None
+
+    if renter_share_pct is None:
+        weight_rent = 0.5
+    else:
+        weight_rent = renter_share_pct / 100
+    weight_home = 1 - weight_rent
+
+    if rent_grade is None:
+        numeric = GRADE_NUM[home_grade]  # type: ignore[index]
+    elif home_grade is None:
+        numeric = GRADE_NUM[rent_grade]
+    else:
+        numeric = (weight_rent * GRADE_NUM[rent_grade] +
+                   weight_home * GRADE_NUM[home_grade])
+
+    if numeric >= 3.5:
+        return "A"
+    if numeric >= 2.5:
+        return "B"
+    if numeric >= 1.5:
+        return "C"
+    if numeric >= 0.5:
         return "D"
     return "F"
 

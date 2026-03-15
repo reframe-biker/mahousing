@@ -18,13 +18,21 @@ Each municipality receives a letter grade (A–F) on six dimensions, plus a comp
 
 **What the grade measures:** The share of a municipality's residential zoned land area where 3-family or larger multifamily housing is permitted by right — without requiring a planning board hearing or special permit.
 
-**Key metric:** `pct_land_multifamily_byright` — the area-weighted percentage of residential zoned land in the municipality where `family3_treatment` or `family4_treatment` equals `"allowed"` in the NZA district data.
+**Key metric:** `pct_land_multifamily_byright` — the area-weighted percentage of residential zoned land in the municipality scored as follows per NZA district:
+- `family4_treatment == "allowed"` → full credit (1.0) — district permits 4+ unit multifamily by right
+- `family3_treatment == "allowed"` and f4 is not allowed → half credit (0.5) — district permits only 3-family by right
+- `"hearing"` on either field → no credit (0.0) — discretionary approval is not by-right permission
+- all other values → no credit (0.0)
+
+Districts are area-weighted within each municipality to produce the final percentage.
 
 **Coverage:** 244 of 351 municipalities are graded from NZA district data. The remaining 107 municipalities are graded using the permit mix proxy: share of permitted units in 5+ unit structures, averaged over 3 years of Census Building Permits Survey data. Towns with fewer than 10 total permits over 3 years receive a null grade.
 
 **On hearing credit:** A zoning district that requires a special permit (planning board hearing) for multifamily housing receives no credit in this metric. The hearing process is a primary mechanism by which local officials delay or deny housing — we do not treat discretionary approval as equivalent to by-right permission.
 
 **On rural and low-demand towns:** Zoning permissiveness is measured as a policy fact, not a demand signal. A town with low housing pressure may score F on zoning and face limited political consequence for it. The grades are most actionable for the 177 municipalities subject to the MBTA Communities Act, where an F reflects both a policy choice and a legal obligation. Non-MBTA towns are graded on the same scale for completeness and comparability, but their grades should be read in that context.
+
+**On known NZA coding errors:** The pipeline maintains a file (`data/zoning_nza_known_errors.json`) of municipalities where the NZA 2023 district data has been confirmed as miscoded through manual bylaw review. Confirmed towns receive a null zoning grade rather than a misleading score. As of the current dataset, two towns are flagged: Rochester (Agricultural-Residential district coded as allowing multifamily by right; the bylaw's permitted uses list contains only single-family dwellings) and Ayer (A1 and A2 residential districts coded as allowing multifamily by right; the use table shows Special Permit from Planning Board required). These entries are keyed to the 2023 dataset filename and will be automatically disregarded when an updated NZA dataset is used.
 
 **Scoring formula:**
 
@@ -98,13 +106,55 @@ Exempt municipalities receive a null MBTA grade and are excluded from the compos
 
 ### 4. Affordability
 
-**Data source:** [US Census American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs) 5-year estimates; [Zillow Research](https://www.zillow.com/research/data/) (median home value index).
+**Data sources:** [US Census American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs) 5-year estimates — tables B25070 (rent burden), B25077 (median home value), B25003 (housing tenure/renter share).
 
-**What the grade measures:** The degree to which housing in the municipality is accessible at median regional incomes. Two metrics are combined: the share of renter households that are cost-burdened (paying more than 30% of income on gross rent), and median owner-occupied home value relative to the regional median.
+**What the grade measures:** The degree to which housing in the municipality is accessible at median regional incomes. The grade is a renter-share-weighted composite of rent burden and median home value — capturing both active cost burden on existing renters and passive exclusion via high prices.
 
-**Key metrics:** `rent_burden_pct`, `median_home_value`.
+**Key metrics:** `rent_burden_pct`, `median_home_value`, `renter_share_pct`.
 
-**Scoring formula:** TBD. Will be documented here before publication. The weighting between renter burden and home value, and the benchmarks used for comparison, will be specified before any grades are published.
+**Scoring formula:**
+
+The affordability grade is a renter-share-weighted composite of two metrics: rent burden and median home value. This approach captures both active cost burden (renters paying too much) and passive exclusion (prices so high that lower-income households cannot enter the town at all).
+
+**Step 1 — Grade each component:**
+
+Rent burden (share of renters paying >30% of gross income on rent):
+
+| Grade | Threshold |
+|---|---|
+| A | < 20% of renters cost-burdened |
+| B | 20–30% |
+| C | 30–40% |
+| D | 40–50% |
+| F | > 50% |
+
+Median home value:
+
+| Grade | Threshold |
+|---|---|
+| A | < $400,000 |
+| B | $400,000 – $600,000 |
+| C | $600,000 – $800,000 |
+| D | $800,000 – $1,200,000 |
+| F | > $1,200,000 |
+
+Home value thresholds are calibrated to the Massachusetts distribution (2023 ACS): state median $564k, 25th percentile $421k, 75th percentile $757k, 90th percentile $1.03M.
+
+**Step 2 — Weight by renter share:**
+
+The two component grades are converted to a 0–4 numeric scale (A=4, B=3, C=2, D=1, F=0), then combined using the municipality's renter share as a weight:
+
+```
+weight_rent = renter_share_pct / 100
+weight_home = 1 − weight_rent
+composite = (weight_rent × rent_burden_score) + (weight_home × home_value_score)
+```
+
+The composite numeric score is converted back to a letter grade (≥3.5→A, ≥2.5→B, ≥1.5→C, ≥0.5→D, <0.5→F).
+
+If renter share data is unavailable, equal weights (0.5/0.5) are used as a fallback.
+
+**Why this matters:** Towns with very low renter shares (under 5–10%) often have rent burden numbers based on small samples of wealthy renters, producing misleadingly high affordability grades. Dover, for example, has a 3% renter share and a median home value over $1.7M — its grade correctly reflects its exclusionary price level rather than the experience of its handful of renters.
 
 ---
 

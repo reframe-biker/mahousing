@@ -77,6 +77,13 @@ class Metrics(TypedDict):
     indicate greater housing production relative to existing population.
     """
 
+    renter_share_pct: float | None
+    """
+    Percentage of occupied housing units that are renter-occupied.
+    Sourced from US Census ACS table B25003.
+    Range: 0.0–100.0.
+    """
+
 
 class DataNotes(TypedDict):
     """

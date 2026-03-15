@@ -7,16 +7,17 @@
     "zoning": null,
     "mbta": null,
     "production": null,
-    "affordability": "D",
+    "affordability": "B",
     "votes": null,
     "rep": null,
-    "composite": "D"
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
     "median_home_value": 331100.0,
     "rent_burden_pct": 47.5,
-    "permits_per_1000_residents": null
+    "permits_per_1000_residents": null,
+    "renter_share_pct": 39.3
   },
   "data_notes": {
     "zoning": null,
