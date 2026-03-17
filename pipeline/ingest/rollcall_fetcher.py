@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import json
 import logging
+from datetime import date
 from pathlib import Path
 from typing import Optional
 
@@ -109,3 +110,13 @@ def derive_session_year_pairs() -> list[tuple[str, int]]:
                 pairs.add((session, year))
 
     return sorted(pairs)
+
+
+def get_current_session_pairs() -> list[tuple[str, int]]:
+    """
+    Always include the current session + current calendar year as a
+    fetch target, even if no votes from that year are in the bill list.
+    Ensures the roll call inventory stays current without requiring a
+    placeholder entry to trigger the download.
+    """
+    return [(CURRENT_SESSION, date.today().year)]

@@ -346,19 +346,23 @@ def _fetch_rollcall_data(
           rollcall_data: {(session, year, supplement_number): {UPPERCASE_NAME: vote_char}}
           parsed_pdfs:   {(session, year): {rc_num: {"bill":..., "motion":..., ..., "votes":{...}}}}
     """
-    from pipeline.ingest.rollcall_fetcher import get_rollcall_pdf
+    from pipeline.ingest.rollcall_fetcher import (
+        get_rollcall_pdf,
+        derive_session_year_pairs,
+        get_current_session_pairs,
+    )
     from pipeline.ingest.leg_house_votes import parse_rollcall_pdf
 
-    # Group by (session, year) to avoid re-downloading the same PDF
-    session_year_pairs: dict[tuple[str, int], None] = {}
-    for bill in bill_list:
-        if bill.get("type") == "rollcall":
-            key = (str(bill["session"]), int(bill["year"]))
-            session_year_pairs[key] = None
+    # Merge bill-list pairs with the current-session/current-year pair so the
+    # inventory stays fresh even when no new votes have been added to the bill list.
+    pairs = list({
+        *derive_session_year_pairs(),
+        *get_current_session_pairs(),
+    })
 
     # Parse each PDF once, cache results in memory
     parsed_pdfs: dict[tuple[str, int], dict[int, dict]] = {}
-    for session, year in session_year_pairs:
+    for session, year in pairs:
         pdf_path = get_rollcall_pdf(session, year)
         if pdf_path is None:
             logger.warning(f"  Could not get PDF for session {session}/{year}")
