@@ -51,11 +51,15 @@ OUTPUT CONTRACT (matches zoning.py router):
 
 from __future__ import annotations
 
+import gzip
 import json
 import logging
+import os
+import shutil
 from pathlib import Path
 
 import pandas as pd
+import requests
 from thefuzz import fuzz # type: ignore
 
 logger = logging.getLogger(__name__)
@@ -87,11 +91,29 @@ def get_zoning_data() -> pd.DataFrame:
 
     # ── Load NZA GeoJSON ────────────────────────────────────────────────────────
     if not _NZA_PATH.exists():
-        logger.error(
-            f"NZA GeoJSON not found at {_NZA_PATH}. "
-            "Falling back entirely to permit proxy."
-        )
-        return _permit_proxy_only()
+        nza_url = os.environ.get("NZA_GEOJSON_URL")
+        if nza_url:
+            gz_path = _NZA_PATH.with_suffix(".geojson.gz")
+            logger.info(f"NZA GeoJSON not found locally — downloading from {nza_url}")
+            try:
+                with requests.get(nza_url, stream=True, timeout=300) as resp:
+                    resp.raise_for_status()
+                    with open(gz_path, "wb") as fout:
+                        shutil.copyfileobj(resp.raw, fout)
+                logger.info(f"Downloaded {gz_path.stat().st_size // 1_048_576} MB — decompressing…")
+                with gzip.open(gz_path, "rb") as fin, open(_NZA_PATH, "wb") as fout:
+                    shutil.copyfileobj(fin, fout)
+                gz_path.unlink(missing_ok=True)
+                logger.info(f"NZA GeoJSON ready at {_NZA_PATH}")
+            except Exception as exc:
+                logger.error(f"Failed to download/decompress NZA GeoJSON: {exc}. Falling back to permit proxy.")
+                return _permit_proxy_only()
+        else:
+            logger.error(
+                f"NZA GeoJSON not found at {_NZA_PATH} and NZA_GEOJSON_URL not set. "
+                "Falling back entirely to permit proxy."
+            )
+            return _permit_proxy_only()
 
     with open(_NZA_PATH, encoding="utf-8") as f:
         nza = json.load(f)

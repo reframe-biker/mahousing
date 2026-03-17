@@ -25,6 +25,12 @@ jobs:
       - name: Install pipeline dependencies
         run: pip install -r pipeline/requirements.txt
 
+      - name: Cache NZA GeoJSON
+        uses: actions/cache@v4
+        with:
+          path: data/MA_Zoning_Atlas_2023.geojson
+          key: nza-geojson-v1
+
       - name: Run pipeline
         env:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
@@ -32,6 +38,7 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          NZA_GEOJSON_URL: ${{ secrets.NZA_GEOJSON_URL }}
         run: python pipeline/build.py
 
       - name: Commit updated data
