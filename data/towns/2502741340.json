@@ -4,37 +4,36 @@
   "county": "Worcester County",
   "population": 13852,
   "grades": {
-    "zoning": "F",
+    "zoning": "B",
     "mbta": "A",
     "production": "C",
-    "affordability": "C",
+    "affordability": "B",
     "votes": null,
     "rep": "F",
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 487878.6622480752,
+    "pct_land_multifamily_byright": 14.5,
+    "median_home_value": 375800.0,
     "rent_burden_pct": 42.6,
     "permits_per_1000_residents": 2.45,
     "renter_share_pct": 25.9,
     "rep_name": "Paul Frost",
     "rep_pct_score": 0.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

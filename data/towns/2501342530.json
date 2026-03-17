@@ -4,37 +4,36 @@
   "county": "Hampden County",
   "population": 877,
   "grades": {
-    "zoning": "F",
+    "zoning": null,
     "mbta": null,
     "production": "C",
-    "affordability": "B",
+    "affordability": "A",
     "votes": null,
     "rep": "F",
-    "composite": "D"
+    "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 428715.3386968141,
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 343400.0,
     "rent_burden_pct": 0.0,
     "permits_per_1000_residents": 2.28,
     "renter_share_pct": 3.5,
     "rep_name": "Nick Boldyga",
     "rep_pct_score": 0.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

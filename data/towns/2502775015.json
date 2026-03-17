@@ -4,37 +4,36 @@
   "county": "Worcester County",
   "population": 21360,
   "grades": {
-    "zoning": "F",
+    "zoning": "A",
     "mbta": "A",
     "production": "C",
     "affordability": "C",
     "votes": null,
     "rep": "A",
-    "composite": "C"
+    "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.3,
-    "median_home_value": 712579.7852855567,
+    "pct_land_multifamily_byright": 94.3,
+    "median_home_value": 601900.0,
     "rent_burden_pct": 38.1,
     "permits_per_1000_residents": 2.62,
     "renter_share_pct": 39.1,
     "rep_name": "Kate Donaghue",
-    "rep_pct_score": 95.2,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 100.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

@@ -4,7 +4,7 @@
   "county": "Plymouth County",
   "population": 17721,
   "grades": {
-    "zoning": "D",
+    "zoning": null,
     "mbta": "A",
     "production": "F",
     "affordability": "B",
@@ -13,28 +13,27 @@
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 2.7,
-    "median_home_value": 535644.078061597,
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 422500.0,
     "rent_burden_pct": 48.1,
     "permits_per_1000_residents": 0.06,
     "renter_share_pct": 21.7,
     "rep_name": "David DeCoste",
     "rep_pct_score": 0.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

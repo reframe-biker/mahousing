@@ -4,23 +4,23 @@
   "county": "Plymouth County",
   "population": 61628,
   "grades": {
-    "zoning": "F",
+    "zoning": "A",
     "mbta": "B",
     "production": "B",
-    "affordability": "C",
+    "affordability": "B",
     "votes": null,
-    "rep": "A",
-    "composite": "C"
+    "rep": "F",
+    "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 622649.7197121079,
+    "pct_land_multifamily_byright": 28.2,
+    "median_home_value": 461500.0,
     "rent_burden_pct": 49.1,
     "permits_per_1000_residents": 4.27,
     "renter_share_pct": 20.3,
     "rep_name": "Michelle Badger",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
     "rep_bills_available": 4
   },
   "data_notes": {
@@ -28,12 +28,12 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "interim",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

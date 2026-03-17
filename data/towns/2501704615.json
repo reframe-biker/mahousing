@@ -4,37 +4,36 @@
   "county": "Middlesex County",
   "population": 14273,
   "grades": {
-    "zoning": "F",
+    "zoning": "B",
     "mbta": "A",
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": "A",
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 995154.8666170636,
+    "pct_land_multifamily_byright": 21.6,
+    "median_home_value": 829000.0,
     "rent_burden_pct": 35.9,
     "permits_per_1000_residents": 0.77,
     "renter_share_pct": 29.7,
     "rep_name": "Ken Gordon",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

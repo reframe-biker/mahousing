@@ -4,23 +4,23 @@
   "county": "Essex County",
   "population": 3336,
   "grades": {
-    "zoning": "F",
+    "zoning": null,
     "mbta": "A",
     "production": "F",
-    "affordability": "D",
+    "affordability": "C",
     "votes": null,
-    "rep": "A",
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 918923.7770228717,
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 647800.0,
     "rent_burden_pct": 46.6,
     "permits_per_1000_residents": 0.0,
     "renter_share_pct": 17.3,
     "rep_name": "Sean Reid",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
     "rep_bills_available": 4
   },
   "data_notes": {
@@ -28,12 +28,12 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2025-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

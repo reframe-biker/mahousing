@@ -9,32 +9,31 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": "A",
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 1185364.91949008,
+    "median_home_value": 935200.0,
     "rent_burden_pct": 53.1,
     "permits_per_1000_residents": 0.87,
     "renter_share_pct": 13.7,
     "rep_name": "Paul McMurtry",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

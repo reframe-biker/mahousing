@@ -4,23 +4,23 @@
   "county": "Bristol County",
   "population": 93638,
   "grades": {
-    "zoning": "B",
+    "zoning": "F",
     "mbta": "A",
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "C",
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 18.9,
-    "median_home_value": 436558.16915323446,
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 328100.0,
     "rent_burden_pct": 46.3,
     "permits_per_1000_residents": 0.59,
     "renter_share_pct": 64.1,
     "rep_name": "Steven Ouellette",
-    "rep_pct_score": 57.1,
-    "rep_bills_scored": 4,
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
     "rep_bills_available": 4
   },
   "data_notes": {
@@ -28,12 +28,12 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

@@ -4,7 +4,7 @@
   "county": "Bristol County",
   "population": 30750,
   "grades": {
-    "zoning": "C",
+    "zoning": "F",
     "mbta": "A",
     "production": "D",
     "affordability": "C",
@@ -13,7 +13,7 @@
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 6.4,
+    "pct_land_multifamily_byright": 0.0,
     "median_home_value": 429900.0,
     "rent_burden_pct": 44.2,
     "permits_per_1000_residents": 0.85,
@@ -28,10 +28,10 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": null,
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

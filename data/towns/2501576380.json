@@ -7,21 +7,21 @@
     "zoning": "F",
     "mbta": null,
     "production": "B",
-    "affordability": "B",
+    "affordability": "A",
     "votes": null,
-    "rep": "A",
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 453205.27180137206,
+    "median_home_value": 364600.0,
     "rent_burden_pct": 27.9,
     "permits_per_1000_residents": 4.61,
     "renter_share_pct": 9.5,
     "rep_name": "Lindsay Sabadosa",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
@@ -33,8 +33,7 @@
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

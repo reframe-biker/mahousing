@@ -4,37 +4,36 @@
   "county": "Worcester County",
   "population": 43620,
   "grades": {
-    "zoning": "D",
+    "zoning": "A",
     "mbta": "A",
     "production": "F",
-    "affordability": "C",
+    "affordability": "B",
     "votes": null,
-    "rep": "A",
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 3.0,
-    "median_home_value": 451923.1645427978,
+    "pct_land_multifamily_byright": 68.3,
+    "median_home_value": 323400.0,
     "rent_burden_pct": 46.0,
     "permits_per_1000_residents": 0.14,
     "renter_share_pct": 34.5,
     "rep_name": "Natalie Higgins",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

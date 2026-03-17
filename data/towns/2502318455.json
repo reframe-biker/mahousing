@@ -13,28 +13,27 @@
     "composite": "D"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.5,
-    "median_home_value": 569067.7592431935,
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 453700.0,
     "rent_burden_pct": 47.4,
     "permits_per_1000_residents": 0.76,
     "renter_share_pct": 18.8,
     "rep_name": "Alyson Sullivan-Almeida",
     "rep_pct_score": 0.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "non-compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

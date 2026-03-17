@@ -4,23 +4,23 @@
   "county": "Berkshire County",
   "population": 983,
   "grades": {
-    "zoning": "F",
+    "zoning": null,
     "mbta": null,
     "production": "D",
-    "affordability": "C",
+    "affordability": "B",
     "votes": null,
-    "rep": "A",
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 695713.040926981,
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 497500.0,
     "rent_burden_pct": 0.0,
     "permits_per_1000_residents": 1.02,
     "renter_share_pct": 1.2,
     "rep_name": "Leigh Davis",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
     "rep_bills_available": 4
   },
   "data_notes": {
@@ -28,12 +28,12 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

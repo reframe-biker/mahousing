@@ -4,37 +4,36 @@
   "county": "Hampshire County",
   "population": 618,
   "grades": {
-    "zoning": "A",
+    "zoning": "F",
     "mbta": null,
     "production": "A",
     "affordability": "A",
     "votes": null,
-    "rep": "A",
-    "composite": "A"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 50.0,
-    "median_home_value": 307170.17027580313,
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 247400.0,
     "rent_burden_pct": 44.0,
     "permits_per_1000_residents": 12.94,
     "renter_share_pct": 8.9,
     "rep_name": "Lindsay Sabadosa",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

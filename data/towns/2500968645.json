@@ -4,37 +4,36 @@
   "county": "Essex County",
   "population": 15125,
   "grades": {
-    "zoning": "F",
+    "zoning": "A",
     "mbta": "A",
     "production": "B",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
+    "rep": "F",
     "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 791381.3992413734,
+    "pct_land_multifamily_byright": 91.9,
+    "median_home_value": 645700.0,
     "rent_burden_pct": 49.7,
     "permits_per_1000_residents": 4.03,
     "renter_share_pct": 26.9,
     "rep_name": "Jenny Armini",
-    "rep_pct_score": 89.5,
-    "rep_bills_scored": 10,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

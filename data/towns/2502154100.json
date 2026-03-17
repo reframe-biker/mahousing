@@ -4,37 +4,36 @@
   "county": "Norfolk County",
   "population": 9814,
   "grades": {
-    "zoning": "C",
+    "zoning": "F",
     "mbta": null,
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "D",
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 3.3,
-    "median_home_value": 590523.0697679246,
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 444600.0,
     "rent_burden_pct": 55.3,
     "permits_per_1000_residents": 1.43,
     "renter_share_pct": 31.6,
     "rep_name": "Marcus Vaughn",
-    "rep_pct_score": 28.6,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

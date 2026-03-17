@@ -4,23 +4,23 @@
   "county": "Norfolk County",
   "population": 31957,
   "grades": {
-    "zoning": "D",
+    "zoning": "F",
     "mbta": "A",
     "production": "C",
-    "affordability": "F",
+    "affordability": "D",
     "votes": null,
-    "rep": "A",
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 1.9,
-    "median_home_value": 1471815.88928274,
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1076900.0,
     "rent_burden_pct": 49.4,
     "permits_per_1000_residents": 2.1,
     "renter_share_pct": 14.2,
     "rep_name": "Josh Tarsky",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
     "rep_bills_available": 4
   },
   "data_notes": {
@@ -28,12 +28,12 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

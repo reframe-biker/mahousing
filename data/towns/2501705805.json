@@ -4,37 +4,36 @@
   "county": "Middlesex County",
   "population": 41708,
   "grades": {
-    "zoning": "F",
+    "zoning": "A",
     "mbta": "A",
     "production": "A",
-    "affordability": "C",
+    "affordability": "B",
     "votes": null,
     "rep": "F",
-    "composite": "C"
+    "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 673025.2711979711,
+    "pct_land_multifamily_byright": 62.3,
+    "median_home_value": 519200.0,
     "rent_burden_pct": 35.3,
     "permits_per_1000_residents": 5.95,
     "renter_share_pct": 21.8,
     "rep_name": "Marc Lombardo",
     "rep_pct_score": 0.0,
-    "rep_bills_scored": 10,
-    "rep_bills_available": 11
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

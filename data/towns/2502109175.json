@@ -4,23 +4,23 @@
   "county": "Norfolk County",
   "population": 62698,
   "grades": {
-    "zoning": "B",
+    "zoning": "A",
     "mbta": "A",
     "production": "C",
     "affordability": "D",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 12.9,
-    "median_home_value": 1123350.657326366,
+    "pct_land_multifamily_byright": 86.8,
+    "median_home_value": 1181200.0,
     "rent_burden_pct": 45.5,
     "permits_per_1000_residents": 1.74,
     "renter_share_pct": 53.6,
     "rep_name": "Greg Schwartz",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
     "rep_bills_available": 4
   },
   "data_notes": {
@@ -28,12 +28,12 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2023-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

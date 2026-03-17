@@ -9,32 +9,31 @@
     "production": "D",
     "affordability": "F",
     "votes": null,
-    "rep": "A",
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.2,
-    "median_home_value": 2182054.785903419,
+    "pct_land_multifamily_byright": 0.0,
+    "median_home_value": 1434000.0,
     "rent_burden_pct": 38.0,
     "permits_per_1000_residents": 0.68,
     "renter_share_pct": 13.1,
     "rep_name": "Alice Peisch",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

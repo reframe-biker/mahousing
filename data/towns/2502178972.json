@@ -4,37 +4,36 @@
   "county": "Norfolk County",
   "population": 57300,
   "grades": {
-    "zoning": "C",
+    "zoning": "A",
     "mbta": "A",
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 8.5,
+    "pct_land_multifamily_byright": 92.2,
     "median_home_value": 469300.0,
     "rent_burden_pct": 51.8,
     "permits_per_1000_residents": 0.94,
     "renter_share_pct": 31.7,
     "rep_name": "Jamie Murphy",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }

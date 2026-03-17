@@ -4,37 +4,36 @@
   "county": "Berkshire County",
   "population": 1030,
   "grades": {
-    "zoning": "F",
+    "zoning": null,
     "mbta": null,
     "production": "C",
     "affordability": "A",
     "votes": null,
-    "rep": "A",
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 338567.3314091316,
+    "pct_land_multifamily_byright": null,
+    "median_home_value": 331900.0,
     "rent_burden_pct": 0.0,
     "permits_per_1000_residents": 1.94,
     "renter_share_pct": 0.7,
     "rep_name": "John Barrett",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "rep_pct_score": 0.0,
+    "rep_bills_scored": 1,
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "nza",
+  "zoning_source": "proxy",
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
-    "193",
     "194"
   ],
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-17"
 }
