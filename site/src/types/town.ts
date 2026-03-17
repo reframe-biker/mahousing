@@ -97,6 +97,13 @@ export interface Metrics {
    * null if the rep was not present for any scored vote.
    */
   rep_bills_available: number | null;
+
+  /**
+   * List of unique session strings for which the rep had at least one
+   * scoreable action. Examples: ["193", "194"] for a veteran,
+   * ["194"] for a 2025 entrant. null if not present for any scored vote.
+   */
+  rep_sessions_scored: string[] | null;
 }
 
 /**

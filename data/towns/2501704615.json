@@ -19,9 +19,13 @@
     "permits_per_1000_residents": 0.77,
     "renter_share_pct": 29.7,
     "rep_name": "Ken Gordon",
-    "rep_pct_score": 86.7,
-    "rep_bills_scored": 8,
-    "rep_bills_available": 8
+    "rep_pct_score": 90.5,
+    "rep_bills_scored": 11,
+    "rep_bills_available": 11,
+    "rep_sessions_scored": [
+      "193",
+      "194"
+    ]
   },
   "data_notes": {
     "zoning": null,
@@ -32,5 +36,5 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "updated_at": "2026-03-15"
+  "updated_at": "2026-03-16"
 }

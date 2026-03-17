@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": "F",
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -19,9 +19,12 @@
     "permits_per_1000_residents": 2.01,
     "renter_share_pct": 15.7,
     "rep_name": "Hadley Luddy",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 2,
-    "rep_bills_available": 8
+    "rep_pct_score": 85.7,
+    "rep_bills_scored": 4,
+    "rep_bills_available": 4,
+    "rep_sessions_scored": [
+      "194"
+    ]
   },
   "data_notes": {
     "zoning": null,
@@ -32,5 +35,5 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "updated_at": "2026-03-15"
+  "updated_at": "2026-03-16"
 }

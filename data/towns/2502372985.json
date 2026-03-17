@@ -20,8 +20,11 @@
     "renter_share_pct": 22.7,
     "rep_name": "John Gaskey",
     "rep_pct_score": 0.0,
-    "rep_bills_scored": 2,
-    "rep_bills_available": 8
+    "rep_bills_scored": 4,
+    "rep_bills_available": 4,
+    "rep_sessions_scored": [
+      "194"
+    ]
   },
   "data_notes": {
     "zoning": null,
@@ -32,5 +35,5 @@
   "mbta_status": "interim",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "updated_at": "2026-03-15"
+  "updated_at": "2026-03-16"
 }

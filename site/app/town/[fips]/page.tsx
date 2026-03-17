@@ -415,9 +415,20 @@ export default async function TownPage({
 
             const grade = town.grades[cfg.gradeKey];
             const keyMetric = cfg.getMetric(town);
+            const repCaveat = (() => {
+              if (cfg.gradeKey !== "rep") return null;
+              const sessions = town.metrics.rep_sessions_scored;
+              if (!sessions) return null;
+              if (!sessions.includes("193")) {
+                return "Scored on 194th session votes only (took office Jan 2025)";
+              }
+              return null;
+            })();
             const note =
               cfg.gradeKey === "zoning"
                 ? (town.data_notes?.zoning ?? null)
+                : cfg.gradeKey === "rep"
+                ? repCaveat
                 : null;
             const explanation = cfg.getExplanation
               ? cfg.getExplanation(town)

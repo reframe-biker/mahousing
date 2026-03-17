@@ -19,10 +19,14 @@ BUILD SEQUENCE:
      - type=cosponsor: GET CoSponsor API, extract full names
 
   4. Score each legislator:
-     Earned points / max points × 100 = pct_score
+     Earned points / eligible points × 100 = pct_score
+     Session filtering: reps are scored only on votes during their term.
+     Reps with no 193rd session votes in any PDF are treated as 2025 entrants
+     and are only scored on 194th session actions.
      Grading: A≥80, B 60-79, C 40-59, D 20-39, F<20, null=not present
 
   5. Return DataFrame with fips + rep columns for build.py to merge.
+     Also writes data/rollcall_inventory.json as a side effect.
 
 KNOWN DATA GAPS (expected, not errors):
   - 2 towns in 1st Franklin district: no TIGER match → null grade
@@ -53,6 +57,7 @@ _TIGER_SLDL = _DATA_DIR / "tl_2024_25_sldl.shp"
 _TOWN_DISTRICT_MAP = _DATA_DIR / "town_district_map.json"
 _LEGISLATORS_CSV = _DATA_DIR / "ma_legislators.csv"
 _BILL_LIST = _DATA_DIR / "legislator_bill_list.json"
+_ROLLCALL_INVENTORY = _DATA_DIR / "rollcall_inventory.json"
 
 _FUZZY_THRESHOLD = 85
 _COSPONSOR_HEADER = {"X-Requested-With": "XMLHttpRequest"}
@@ -97,11 +102,14 @@ def get_legislator_data() -> pd.DataFrame:
     Return a DataFrame with rep scorecard data for each MA municipality.
 
     Columns:
-        fips               (str)        10-digit town GEOID
-        rep_name           (str|None)   legislator full name
-        rep_pct_score      (float|None) 0–100 pct of pro-housing points earned
-        rep_bills_scored   (int|None)   number of bills with a scoreable vote
-        rep_bills_available (int|None)  number of bills in the list for this rep
+        fips                (str)        10-digit town GEOID
+        rep_name            (str|None)   legislator full name
+        rep_pct_score       (float|None) 0–100 pct of pro-housing points earned
+        rep_bills_scored    (int|None)   number of bills with a scoreable vote
+        rep_bills_available (int|None)   number of bills eligible for this rep
+        rep_sessions_scored (list|None)  session strings rep was scored in
+
+    Side effect: writes data/rollcall_inventory.json
     """
     # ── Step 1: Build town → district map ─────────────────────────────────────
     town_district_map = _ensure_town_district_map()
@@ -115,13 +123,32 @@ def get_legislator_data() -> pd.DataFrame:
     logger.info(f"Bill list: {len(bill_list)} entries")
 
     # ── Step 4: Fetch all vote data ────────────────────────────────────────────
-    rollcall_data = _fetch_rollcall_data(bill_list)
+    rollcall_data, parsed_pdfs = _fetch_rollcall_data(bill_list)
     cosponsor_data = _fetch_cosponsor_data(bill_list)
+
+    # ── Step 4b: Write roll call inventory ────────────────────────────────────
+    _write_rollcall_inventory(parsed_pdfs)
+
+    # ── Step 4c: Build set of names appearing in any 193rd roll call ──────────
+    # Used as a fallback to detect 2025 entrants (no term-start date in CSV).
+    all_193_voters: frozenset[str] = frozenset(
+        name
+        for (session, _year), rc_data_dict in parsed_pdfs.items()
+        if session == "193"
+        for rc_data in rc_data_dict.values()
+        for name in rc_data.get("votes", {}).keys()
+    )
+    logger.info(
+        f"Legislators: {len(all_193_voters)} unique names found in 193rd session PDFs"
+    )
 
     # ── Step 5: Score each legislator ─────────────────────────────────────────
     scores: dict[str, dict] = {}  # district_name → score dict
     for district, rep_row in legislators.items():
-        score = _score_rep(rep_row, bill_list, rollcall_data, cosponsor_data)
+        family_name = str(rep_row.get("family_name", "")).strip()
+        given_name = str(rep_row.get("given_name", "")).strip()
+        served_in_193 = _rep_served_in_193(family_name, given_name, all_193_voters)
+        score = _score_rep(rep_row, bill_list, rollcall_data, cosponsor_data, served_in_193)
         scores[district] = score
 
     # ── Step 6: Map towns to scores via town_district_map ─────────────────────
@@ -134,6 +161,7 @@ def get_legislator_data() -> pd.DataFrame:
                 "rep_pct_score": None,
                 "rep_bills_scored": None,
                 "rep_bills_available": None,
+                "rep_sessions_scored": None,
             })
         else:
             score = scores[district]
@@ -143,6 +171,7 @@ def get_legislator_data() -> pd.DataFrame:
                 "rep_pct_score": score["rep_pct_score"],
                 "rep_bills_scored": score["rep_bills_scored"],
                 "rep_bills_available": score["rep_bills_available"],
+                "rep_sessions_scored": score["rep_sessions_scored"],
             })
 
     df = pd.DataFrame(records)
@@ -308,12 +337,14 @@ def _load_bill_list() -> list[dict]:
 
 def _fetch_rollcall_data(
     bill_list: list[dict],
-) -> dict[tuple[str, int, int], dict[str, str]]:
+) -> tuple[dict[tuple[str, int, int], dict[str, str]], dict[tuple[str, int], dict[int, dict]]]:
     """
     Fetch and parse roll call PDFs for all rollcall entries in the bill list.
 
     Returns:
-        {(session, year, supplement_number): {UPPERCASE_NAME: vote_char}}
+        (rollcall_data, parsed_pdfs) where:
+          rollcall_data: {(session, year, supplement_number): {UPPERCASE_NAME: vote_char}}
+          parsed_pdfs:   {(session, year): {rc_num: {"bill":..., "motion":..., ..., "votes":{...}}}}
     """
     from pipeline.ingest.rollcall_fetcher import get_rollcall_pdf
     from pipeline.ingest.leg_house_votes import parse_rollcall_pdf
@@ -326,7 +357,7 @@ def _fetch_rollcall_data(
             session_year_pairs[key] = None
 
     # Parse each PDF once, cache results in memory
-    parsed_pdfs: dict[tuple[str, int], dict[int, dict[str, str]]] = {}
+    parsed_pdfs: dict[tuple[str, int], dict[int, dict]] = {}
     for session, year in session_year_pairs:
         pdf_path = get_rollcall_pdf(session, year)
         if pdf_path is None:
@@ -347,16 +378,17 @@ def _fetch_rollcall_data(
         session = str(bill["session"])
         year = int(bill["year"])
         rc_num = int(bill["supplement_number"])
-        pdf_votes = parsed_pdfs.get((session, year), {})
-        votes_for_rc = pdf_votes.get(rc_num, {})
+        pdf_data = parsed_pdfs.get((session, year), {})
+        rc_data = pdf_data.get(rc_num, {})
+        votes_for_rc = rc_data.get("votes", {}) if rc_data else {}
         if not votes_for_rc:
             logger.warning(
                 f"  Roll call RC#{rc_num} not found in session {session}/{year} PDF "
-                f"({len(pdf_votes)} roll calls available in that PDF)"
+                f"({len(pdf_data)} roll calls available in that PDF)"
             )
         result[(session, year, rc_num)] = votes_for_rc
 
-    return result
+    return result, parsed_pdfs
 
 
 def _fetch_cosponsor_data(bill_list: list[dict]) -> dict[tuple[str, str], set[str]]:
@@ -422,6 +454,83 @@ def _parse_cosponsor_response(content: bytes) -> set[str]:
         return set()
 
 
+def _write_rollcall_inventory(
+    parsed_pdfs: dict[tuple[str, int], dict[int, dict]]
+) -> None:
+    """
+    Write data/rollcall_inventory.json — all parsed roll calls sorted by
+    session, year, rc_number. Metadata only (no individual votes).
+
+    This file is the editorial research tool: search it for "MBTA" or "40B"
+    or "housing" to surface candidate votes without manual PDF review.
+    """
+    inventory: list[dict] = []
+    for (session, year), rc_data_dict in parsed_pdfs.items():
+        for rc_num, rc_data in rc_data_dict.items():
+            inventory.append({
+                "session": session,
+                "year": year,
+                "rc_number": rc_num,
+                "bill": rc_data.get("bill"),
+                "motion": rc_data.get("motion"),
+                "date": rc_data.get("date"),
+                "yeas": rc_data.get("yeas", 0),
+                "nays": rc_data.get("nays", 0),
+                "nvs": rc_data.get("nvs", 0),
+            })
+
+    inventory.sort(key=lambda r: (r["session"], r["year"], r["rc_number"]))
+
+    _ROLLCALL_INVENTORY.write_text(
+        json.dumps(inventory, indent=2), encoding="utf-8"
+    )
+    logger.info(f"  Roll call inventory: {len(inventory)} entries written to {_ROLLCALL_INVENTORY}")
+
+
+# ── Session boundary detection ────────────────────────────────────────────────
+
+def _rep_served_in_193(
+    family_name: str,
+    given_name: str,
+    all_193_voters: frozenset[str],
+) -> bool:
+    """
+    Return True if this rep's name appears in any 193rd session roll call.
+
+    Uses the same name-matching logic as _find_rep_vote: DISAMBIGUATE map first,
+    then exact match, then fuzzy fallback.
+
+    A rep with no match in 193rd PDFs is treated as a 2025 entrant and will
+    only be scored on 194th session actions.
+    """
+    upper_family = family_name.upper()
+    upper_given = given_name[0].upper() if given_name else ""
+
+    # Check DISAMBIGUATE first (for Morans, Rogers, etc.)
+    for pdf_name, (dis_family, dis_initial) in DISAMBIGUATE.items():
+        if dis_family.upper() == upper_family and dis_initial.upper() == upper_given:
+            return pdf_name in all_193_voters
+
+    # If this family requires disambiguation but found no DISAMBIGUATE match
+    if upper_family in _DISAMBIGUATED_FAMILIES:
+        return False
+
+    # Exact match
+    if upper_family in all_193_voters:
+        return True
+
+    # Period-stripped variant
+    if upper_family.rstrip(".") in all_193_voters:
+        return True
+
+    # Fuzzy fallback
+    for voter in all_193_voters:
+        if fuzz.token_sort_ratio(upper_family, voter) >= _FUZZY_THRESHOLD:
+            return True
+
+    return False
+
+
 # ── Step 4: Score a single legislator ────────────────────────────────────────
 
 def _score_rep(
@@ -429,13 +538,18 @@ def _score_rep(
     bill_list: list[dict],
     rollcall_data: dict[tuple[str, int, int], dict[str, str]],
     cosponsor_data: dict[tuple[str, str], set[str]],
+    served_in_193: bool,
 ) -> dict:
     """
-    Compute a rep's housing score across all bills in the bill list.
+    Compute a rep's housing score across eligible bills in the bill list.
+
+    Session filtering: bills from session "193" are skipped for reps who did
+    not appear in any 193rd roll call (2025 entrants). This prevents newly
+    elected reps from being penalized for votes cast by their predecessors.
 
     Returns a dict with keys: rep_name, rep_pct_score, rep_bills_scored,
-    rep_bills_available. All numeric fields are None if rep was not present
-    for any scored vote.
+    rep_bills_available, rep_sessions_scored. All numeric fields are None if
+    rep was not present for any scored vote.
     """
     rep_name = str(rep_row.get("name", "")).strip()
     family_name = str(rep_row.get("family_name", "")).strip()
@@ -446,18 +560,27 @@ def _score_rep(
         "rep_pct_score": None,
         "rep_bills_scored": None,
         "rep_bills_available": None,
+        "rep_sessions_scored": None,
     }
 
     earned = 0.0
     possible = 0.0
     scored_count = 0
+    eligible_count = 0
+    sessions_scored: set[str] = set()
 
     for bill in bill_list:
         bill_type = bill.get("type")
         weight = float(bill.get("weight", 1))
+        session = str(bill.get("session", ""))
+
+        # Session filtering: skip 193rd bills for 2025 entrants
+        if session == "193" and not served_in_193:
+            continue
+
+        eligible_count += 1
 
         if bill_type == "rollcall":
-            session = str(bill["session"])
             year = int(bill["year"])
             rc_num = int(bill["supplement_number"])
             pro_housing_vote = str(bill.get("pro_housing_vote", "yea")).lower()
@@ -475,20 +598,21 @@ def _score_rep(
             # Rep is present — this bill is scoreable
             possible += weight
             scored_count += 1
+            sessions_scored.add(session)
 
             is_pro = _is_pro_housing_vote(vote_char, pro_housing_vote)
             if is_pro:
                 earned += weight
 
         elif bill_type == "cosponsor":
-            bill_session = str(bill["session"])
             bill_id = str(bill["bill"])
-            cosponsor_set = cosponsor_data.get((bill_session, bill_id), set())
+            cosponsor_set = cosponsor_data.get((session, bill_id), set())
 
             # Cosponsor check: rep's full name must appear in cosponsor set
             is_cosponsor = rep_name in cosponsor_set
             possible += weight
             scored_count += 1
+            sessions_scored.add(session)
             if is_cosponsor:
                 earned += weight
 
@@ -500,7 +624,8 @@ def _score_rep(
         "rep_name": rep_name,
         "rep_pct_score": pct_score,
         "rep_bills_scored": scored_count,
-        "rep_bills_available": len(bill_list),
+        "rep_bills_available": eligible_count,
+        "rep_sessions_scored": sorted(sessions_scored),
     }
 
 

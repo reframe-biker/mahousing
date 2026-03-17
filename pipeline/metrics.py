@@ -160,4 +160,15 @@ METRICS: dict[str, dict] = {
         "higher_is_better": False,
         "display": False,
     },
+    "rep_sessions_scored": {
+        "label": "Sessions scored",
+        "description": (
+            "General Court sessions for which this representative had at least one "
+            "scoreable action. Pipeline diagnostic — not displayed on town pages."
+        ),
+        "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
+        "unit": "text",
+        "higher_is_better": False,
+        "display": False,
+    },
 }

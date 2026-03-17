@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": "F",
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -19,9 +19,12 @@
     "permits_per_1000_residents": 1.44,
     "renter_share_pct": 16.6,
     "rep_name": "Bridget Plouffe",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 2,
-    "rep_bills_available": 8
+    "rep_pct_score": 85.7,
+    "rep_bills_scored": 4,
+    "rep_bills_available": 4,
+    "rep_sessions_scored": [
+      "194"
+    ]
   },
   "data_notes": {
     "zoning": null,
@@ -32,5 +35,5 @@
   "mbta_status": "interim",
   "mbta_deadline": "2025-12-31",
   "mbta_action_date": null,
-  "updated_at": "2026-03-15"
+  "updated_at": "2026-03-16"
 }

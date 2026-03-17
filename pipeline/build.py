@@ -236,7 +236,7 @@ def main() -> None:
         acs_df["mbta_action_date"] = None
 
     # Legislator scorecard — join on fips (geoid)
-    leg_cols = ["fips", "rep_name", "rep_pct_score", "rep_bills_scored", "rep_bills_available"]
+    leg_cols = ["fips", "rep_name", "rep_pct_score", "rep_bills_scored", "rep_bills_available", "rep_sessions_scored"]
     if not leg_df.empty and all(c in leg_df.columns for c in leg_cols):
         acs_df = acs_df.merge(
             leg_df[leg_cols],
@@ -251,6 +251,7 @@ def main() -> None:
         acs_df["rep_pct_score"] = None
         acs_df["rep_bills_scored"] = None
         acs_df["rep_bills_available"] = None
+        acs_df["rep_sessions_scored"] = None
 
     # ── Step 3: Derive computed metrics ───────────────────────────────────────
 
@@ -347,6 +348,11 @@ def _build_record(row: pd.Series, today: str) -> dict:
     rep_pct_score = _to_float(row.get("rep_pct_score"))
     rep_bills_scored = _to_int(row.get("rep_bills_scored"))
     rep_bills_available = _to_int(row.get("rep_bills_available"))
+    _rep_sessions_raw = row.get("rep_sessions_scored")
+    if isinstance(_rep_sessions_raw, list):
+        rep_sessions_scored = _rep_sessions_raw
+    else:
+        rep_sessions_scored = None
 
     metrics = {
         "pct_land_multifamily_byright": pct_mf,
@@ -358,6 +364,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "rep_pct_score": rep_pct_score,
         "rep_bills_scored": rep_bills_scored,
         "rep_bills_available": rep_bills_available,
+        "rep_sessions_scored": rep_sessions_scored,
     }
 
     grades = score_town(metrics, mbta_status=mbta_status)
