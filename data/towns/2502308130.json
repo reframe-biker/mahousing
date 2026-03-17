@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "F",
+    "rep": "C",
     "composite": "C"
   },
   "metrics": {
@@ -19,8 +19,8 @@
     "permits_per_1000_residents": 1.37,
     "renter_share_pct": 25.9,
     "rep_name": "Dennis Gallagher",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
+    "rep_pct_score": 57.1,
+    "rep_bills_scored": 4,
     "rep_bills_available": 4
   },
   "data_notes": {

@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": "F",
-    "composite": "F"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -19,9 +19,9 @@
     "permits_per_1000_residents": 0.37,
     "renter_share_pct": 58.5,
     "rep_name": "Pat Duffy",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
-    "rep_bills_available": 4
+    "rep_pct_score": 90.5,
+    "rep_bills_scored": 11,
+    "rep_bills_available": 11
   },
   "data_notes": {
     "zoning": null,
@@ -33,6 +33,7 @@
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
+    "193",
     "194"
   ],
   "updated_at": "2026-03-17"

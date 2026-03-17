@@ -20,8 +20,8 @@
     "renter_share_pct": 25.9,
     "rep_name": "Paul Frost",
     "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
-    "rep_bills_available": 4
+    "rep_bills_scored": 11,
+    "rep_bills_available": 11
   },
   "data_notes": {
     "zoning": null,
@@ -33,6 +33,7 @@
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
   "rep_sessions_scored": [
+    "193",
     "194"
   ],
   "updated_at": "2026-03-17"

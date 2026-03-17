@@ -9,7 +9,7 @@
     "production": "A",
     "affordability": "C",
     "votes": null,
-    "rep": "F",
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -19,8 +19,8 @@
     "permits_per_1000_residents": 5.79,
     "renter_share_pct": 23.6,
     "rep_name": "Hadley Luddy",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
+    "rep_pct_score": 85.7,
+    "rep_bills_scored": 4,
     "rep_bills_available": 4
   },
   "data_notes": {

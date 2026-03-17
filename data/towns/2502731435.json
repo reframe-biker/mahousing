@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "A",
     "votes": null,
-    "rep": "F",
+    "rep": "D",
     "composite": "C"
   },
   "metrics": {
@@ -19,9 +19,9 @@
     "permits_per_1000_residents": 3.0,
     "renter_share_pct": 7.9,
     "rep_name": "Donnie Berthiaume",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
-    "rep_bills_available": 4
+    "rep_pct_score": 23.8,
+    "rep_bills_scored": 11,
+    "rep_bills_available": 11
   },
   "data_notes": {
     "zoning": null,
@@ -33,6 +33,7 @@
   "mbta_deadline": null,
   "mbta_action_date": null,
   "rep_sessions_scored": [
+    "193",
     "194"
   ],
   "updated_at": "2026-03-17"

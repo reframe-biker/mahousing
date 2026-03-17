@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "A",
     "votes": null,
-    "rep": "F",
-    "composite": "C"
+    "rep": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
@@ -19,9 +19,9 @@
     "permits_per_1000_residents": 0.0,
     "renter_share_pct": 21.2,
     "rep_name": "Jim O'Day",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
-    "rep_bills_available": 4
+    "rep_pct_score": 90.5,
+    "rep_bills_scored": 11,
+    "rep_bills_available": 11
   },
   "data_notes": {
     "zoning": null,
@@ -33,6 +33,7 @@
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "rep_sessions_scored": [
+    "193",
     "194"
   ],
   "updated_at": "2026-03-17"

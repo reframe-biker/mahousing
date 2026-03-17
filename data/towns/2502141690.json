@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": "F",
+    "rep": "C",
     "composite": "D"
   },
   "metrics": {
@@ -19,8 +19,8 @@
     "permits_per_1000_residents": 0.21,
     "renter_share_pct": 15.7,
     "rep_name": "Richard Wells",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
+    "rep_pct_score": 57.1,
+    "rep_bills_scored": 4,
     "rep_bills_available": 4
   },
   "data_notes": {

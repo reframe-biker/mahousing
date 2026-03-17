@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "A",
     "votes": null,
-    "rep": "F",
-    "composite": "C"
+    "rep": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
@@ -19,8 +19,8 @@
     "permits_per_1000_residents": 2.2,
     "renter_share_pct": 8.8,
     "rep_name": "Leigh Davis",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
+    "rep_pct_score": 85.7,
+    "rep_bills_scored": 4,
     "rep_bills_available": 4
   },
   "data_notes": {

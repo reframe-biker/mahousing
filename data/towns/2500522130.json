@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "B",
     "votes": null,
-    "rep": "F",
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -19,8 +19,8 @@
     "permits_per_1000_residents": 0.44,
     "renter_share_pct": 25.8,
     "rep_name": "Mark Sylvia",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
+    "rep_pct_score": 85.7,
+    "rep_bills_scored": 4,
     "rep_bills_available": 4
   },
   "data_notes": {
