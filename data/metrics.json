@@ -77,13 +77,5 @@
     "unit": "count",
     "higher_is_better": false,
     "display": false
-  },
-  "rep_sessions_scored": {
-    "label": "Sessions scored",
-    "description": "General Court sessions for which this representative had at least one scoreable action. Pipeline diagnostic \u2014 not displayed on town pages.",
-    "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
-    "unit": "text",
-    "higher_is_better": false,
-    "display": false
   }
 }

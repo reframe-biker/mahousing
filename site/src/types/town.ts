@@ -98,12 +98,6 @@ export interface Metrics {
    */
   rep_bills_available: number | null;
 
-  /**
-   * List of unique session strings for which the rep had at least one
-   * scoreable action. Examples: ["193", "194"] for a veteran,
-   * ["194"] for a 2025 entrant. null if not present for any scored vote.
-   */
-  rep_sessions_scored: string[] | null;
 }
 
 /**
@@ -181,6 +175,13 @@ export interface TownRecord {
    * (ISO date string YYYY-MM-DD), or null if no action taken or not applicable.
    */
   mbta_action_date: string | null;
+
+  /**
+   * List of unique session strings for which the rep had at least one
+   * scoreable action. Examples: ["193", "194"] for a veteran,
+   * ["194"] for a 2025 entrant. null if not present for any scored vote.
+   */
+  rep_sessions_scored: string[] | null;
 
   /** ISO 8601 date string of when this record was last updated by the pipeline (e.g., "2025-03-13"). */
   updated_at: string;

@@ -417,7 +417,7 @@ export default async function TownPage({
             const keyMetric = cfg.getMetric(town);
             const repCaveat = (() => {
               if (cfg.gradeKey !== "rep") return null;
-              const sessions = town.metrics.rep_sessions_scored;
+              const sessions = town.rep_sessions_scored;
               if (!sessions) return null;
               if (!sessions.includes("193")) {
                 return "Scored on 194th session votes only (took office Jan 2025)";

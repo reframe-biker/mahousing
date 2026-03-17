@@ -21,10 +21,7 @@
     "rep_name": "Richard Wells",
     "rep_pct_score": 57.1,
     "rep_bills_scored": 4,
-    "rep_bills_available": 4,
-    "rep_sessions_scored": [
-      "194"
-    ]
+    "rep_bills_available": 4
   },
   "data_notes": {
     "zoning": null,
@@ -35,5 +32,8 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
+  "rep_sessions_scored": [
+    "194"
+  ],
   "updated_at": "2026-03-16"
 }

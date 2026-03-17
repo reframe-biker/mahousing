@@ -364,7 +364,6 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "rep_pct_score": rep_pct_score,
         "rep_bills_scored": rep_bills_scored,
         "rep_bills_available": rep_bills_available,
-        "rep_sessions_scored": rep_sessions_scored,
     }
 
     grades = score_town(metrics, mbta_status=mbta_status)
@@ -388,6 +387,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "mbta_status": mbta_status,
         "mbta_deadline": mbta_deadline,
         "mbta_action_date": mbta_action_date,
+        "rep_sessions_scored": rep_sessions_scored,
         "updated_at": today,
     }
 

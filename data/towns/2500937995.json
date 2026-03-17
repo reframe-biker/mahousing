@@ -21,8 +21,7 @@
     "rep_name": null,
     "rep_pct_score": null,
     "rep_bills_scored": null,
-    "rep_bills_available": null,
-    "rep_sessions_scored": null
+    "rep_bills_available": null
   },
   "data_notes": {
     "zoning": null,
@@ -33,5 +32,6 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
+  "rep_sessions_scored": null,
   "updated_at": "2026-03-16"
 }

@@ -21,11 +21,7 @@
     "rep_name": "Patrick Kearney",
     "rep_pct_score": 81.0,
     "rep_bills_scored": 11,
-    "rep_bills_available": 11,
-    "rep_sessions_scored": [
-      "193",
-      "194"
-    ]
+    "rep_bills_available": 11
   },
   "data_notes": {
     "zoning": null,
@@ -36,5 +32,9 @@
   "mbta_status": "interim",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
+  "rep_sessions_scored": [
+    "193",
+    "194"
+  ],
   "updated_at": "2026-03-16"
 }
