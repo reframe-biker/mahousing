@@ -5,15 +5,15 @@ Maintains a manifest of known PDF URLs at data/rollcall_cache/manifest.json.
 On each run, fetches the current session (194) journal directory pages and
 compares PDF links found against the manifest. If new PDFs are detected,
 prints a clear alert, reads rollcall_inventory.json for housing-keyword hits,
-and sends an email alert via SendGrid (if configured).
+and sends an email alert via Resend (if configured).
 
 IMPORTANT: This module NEVER scores votes automatically. Any new roll call PDF
 requires manual editorial review before adding to data/legislator_bill_list.json.
 
 Email configuration (all optional — missing vars skip email silently):
-    SENDGRID_API_KEY   SendGrid API key
+    RESEND_API_KEY     Resend API key
     ALERT_EMAIL_TO     Recipient address
-    ALERT_EMAIL_FROM   Sender address (must be verified in SendGrid)
+    ALERT_EMAIL_FROM   Sender address (must be a verified domain in Resend)
 
 Usage:
     python -m pipeline.ingest.new_vote_notifier     # standalone
@@ -156,30 +156,8 @@ def _find_housing_hits() -> list[dict]:
     return hits
 
 
-def _send_housing_alert(new_pdf_urls: list[str], housing_hits: list[dict]) -> None:
-    """
-    Send a SendGrid email listing new PDFs and any housing-keyword roll call hits.
-    Silently skips if SENDGRID_API_KEY, ALERT_EMAIL_TO, or ALERT_EMAIL_FROM
-    are not set.
-    """
-    api_key = os.environ.get("SENDGRID_API_KEY", "").strip()
-    to_email = os.environ.get("ALERT_EMAIL_TO", "").strip()
-    from_email = os.environ.get("ALERT_EMAIL_FROM", "").strip()
-
-    if not api_key or not to_email or not from_email:
-        logger.warning(
-            "  Notifier: email alert skipped — "
-            "SENDGRID_API_KEY, ALERT_EMAIL_TO, and ALERT_EMAIL_FROM must all be set"
-        )
-        return
-
-    try:
-        from sendgrid import SendGridAPIClient
-        from sendgrid.helpers.mail import Mail
-    except ImportError:
-        logger.warning("  Notifier: sendgrid package not installed — email alert skipped")
-        return
-
+def _build_email_body(new_pdf_urls: list[str], housing_hits: list[dict]) -> str:
+    """Build the plain-text email body for a new-PDF alert."""
     lines: list[str] = ["New roll call PDFs detected in session 194:", ""]
     for url in new_pdf_urls:
         lines.append(f"  {url}")
@@ -204,25 +182,43 @@ def _send_housing_alert(new_pdf_urls: list[str], housing_hits: list[dict]) -> No
         "Review rollcall_inventory.json and add any relevant votes to "
         "data/legislator_bill_list.json. Do not score automatically."
     )
+    return "\n".join(lines)
 
-    body = "\n".join(lines)
 
-    message = Mail(
-        from_email=from_email,
-        to_emails=to_email,
-        subject="MA Housing Report Card — New Roll Calls Detected",
-        plain_text_content=body,
-    )
+def _send_housing_alert(new_pdf_urls: list[str], housing_hits: list[dict]) -> None:
+    """
+    Send a Resend email listing new PDFs and any housing-keyword roll call hits.
+    Silently skips if RESEND_API_KEY, ALERT_EMAIL_TO, or ALERT_EMAIL_FROM
+    are not set.
+    """
+    api_key = os.environ.get("RESEND_API_KEY")
+    to_email = os.environ.get("ALERT_EMAIL_TO")
+    from_email = os.environ.get("ALERT_EMAIL_FROM")
+
+    if not all([api_key, to_email, from_email]):
+        logger.warning(
+            "Email alert skipped — RESEND_API_KEY, ALERT_EMAIL_TO, or "
+            "ALERT_EMAIL_FROM not set."
+        )
+        return
 
     try:
-        sg = SendGridAPIClient(api_key)
-        response = sg.send(message)
-        logger.info(
-            f"  Notifier: email alert sent to {to_email} "
-            f"(status {response.status_code})"
-        )
+        import resend
+    except ImportError:
+        logger.warning("  Notifier: resend package not installed — email alert skipped")
+        return
+
+    try:
+        resend.api_key = api_key
+        resend.Emails.send({
+            "from": from_email,
+            "to": to_email,
+            "subject": "MA Housing Report Card — New Roll Calls Detected",
+            "text": _build_email_body(new_pdf_urls, housing_hits),
+        })
+        logger.info("Housing alert email sent via Resend")
     except Exception as exc:
-        logger.warning(f"  Notifier: email alert failed: {exc}")
+        logger.warning(f"Failed to send alert email: {exc}")
 
 
 def _load_manifest() -> dict:

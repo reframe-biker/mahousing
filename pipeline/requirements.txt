@@ -5,4 +5,4 @@ census
 python-dotenv
 beautifulsoup4
 thefuzz
-sendgrid
+resend
