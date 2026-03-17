@@ -2737,5 +2737,104 @@
     "yeas": 153,
     "nays": 0,
     "nvs": 7
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 117,
+    "bill": "H. 3417",
+    "motion": "On passing to be engrossed",
+    "date": "2026-01-28",
+    "yeas": 156,
+    "nays": 0,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 118,
+    "bill": "H. 4994",
+    "motion": "On passing to be engrossed",
+    "date": "2026-01-28",
+    "yeas": 154,
+    "nays": 1,
+    "nvs": 3
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 119,
+    "bill": "H. 4314",
+    "motion": "On Enactment Land Taking",
+    "date": "2026-01-28",
+    "yeas": 154,
+    "nays": 0,
+    "nvs": 4
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 120,
+    "bill": "H. 4993",
+    "motion": "On adoption of amendment #1",
+    "date": "2026-01-28",
+    "yeas": 26,
+    "nays": 130,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 121,
+    "bill": "H. 4993",
+    "motion": "On passing to be engrossed",
+    "date": "2026-01-28",
+    "yeas": 154,
+    "nays": 1,
+    "nvs": 3
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 122,
+    "bill": "H. 5094",
+    "motion": "On passing to be engrossed",
+    "date": "2026-02-11",
+    "yeas": 157,
+    "nays": 0,
+    "nvs": 1
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 123,
+    "bill": "H. 5093",
+    "motion": "On adoption of amendment #1",
+    "date": "2026-02-11",
+    "yeas": 25,
+    "nays": 132,
+    "nvs": 1
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 124,
+    "bill": "H. 5093",
+    "motion": "On adoption of amendment #3",
+    "date": "2026-02-11",
+    "yeas": 12,
+    "nays": 145,
+    "nvs": 1
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 125,
+    "bill": "H. 5093",
+    "motion": "On passing to be engrossed",
+    "date": "2026-02-11",
+    "yeas": 154,
+    "nays": 3,
+    "nvs": 1
   }
 ]
