@@ -4,16 +4,16 @@
   "county": "Norfolk County",
   "population": 28450,
   "grades": {
-    "zoning": "F",
+    "zoning": "D",
     "mbta": "A",
     "production": "F",
     "affordability": "D",
     "votes": null,
     "rep": "C",
-    "composite": "D"
+    "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
+    "pct_land_multifamily_byright": 2.4,
     "median_home_value": 838100.0,
     "rent_burden_pct": 60.2,
     "permits_per_1000_residents": 0.21,
@@ -28,7 +28,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": "nza",
   "mbta_status": "compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,

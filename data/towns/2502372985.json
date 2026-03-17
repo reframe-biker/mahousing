@@ -13,7 +13,7 @@
     "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 42.4,
+    "pct_land_multifamily_byright": 31.8,
     "median_home_value": 363600.0,
     "rent_burden_pct": 46.2,
     "permits_per_1000_residents": 6.6,
@@ -28,7 +28,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": "nza",
   "mbta_status": "interim",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,

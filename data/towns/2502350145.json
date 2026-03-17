@@ -4,7 +4,7 @@
   "county": "Plymouth County",
   "population": 11281,
   "grades": {
-    "zoning": "B",
+    "zoning": "A",
     "mbta": "A",
     "production": "C",
     "affordability": "C",
@@ -13,7 +13,7 @@
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 11.8,
+    "pct_land_multifamily_byright": 50.0,
     "median_home_value": 736500.0,
     "rent_burden_pct": 55.7,
     "permits_per_1000_residents": 2.3,
@@ -28,7 +28,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": "nza",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,

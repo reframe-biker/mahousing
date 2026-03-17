@@ -4,7 +4,7 @@
   "county": "Hampden County",
   "population": 28606,
   "grades": {
-    "zoning": null,
+    "zoning": "B",
     "mbta": null,
     "production": null,
     "affordability": "B",
@@ -13,7 +13,7 @@
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": null,
+    "pct_land_multifamily_byright": 24.1,
     "median_home_value": 272100.0,
     "rent_burden_pct": 39.5,
     "permits_per_1000_residents": null,
@@ -28,7 +28,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": null,
+  "zoning_source": "nza",
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,

@@ -4,7 +4,7 @@
   "county": "Essex County",
   "population": 6973,
   "grades": {
-    "zoning": "A",
+    "zoning": "F",
     "mbta": "A",
     "production": "D",
     "affordability": "D",
@@ -13,7 +13,7 @@
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 38.6,
+    "pct_land_multifamily_byright": 0.0,
     "median_home_value": 651200.0,
     "rent_burden_pct": 51.8,
     "permits_per_1000_residents": 0.86,
@@ -24,11 +24,11 @@
     "rep_bills_available": null
   },
   "data_notes": {
-    "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
+    "zoning": null,
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": "nza",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,

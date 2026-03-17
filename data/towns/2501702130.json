@@ -4,16 +4,16 @@
   "county": "Middlesex County",
   "population": 18634,
   "grades": {
-    "zoning": "A",
+    "zoning": "F",
     "mbta": "A",
     "production": "A",
     "affordability": "B",
     "votes": null,
     "rep": "B",
-    "composite": "A"
+    "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 93.0,
+    "pct_land_multifamily_byright": 0.0,
     "median_home_value": 532000.0,
     "rent_burden_pct": 43.8,
     "permits_per_1000_residents": 9.45,
@@ -28,7 +28,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": "nza",
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,

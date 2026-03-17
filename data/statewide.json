@@ -5,16 +5,16 @@
     "county": "Plymouth County",
     "population": 17003,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 42.6,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 476600.0,
       "rent_burden_pct": 46.9,
       "permits_per_1000_residents": 0.12,
@@ -29,7 +29,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -45,16 +45,16 @@
     "county": "Middlesex County",
     "population": 23864,
     "grades": {
-      "zoning": "A",
+      "zoning": "D",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 32.0,
+      "pct_land_multifamily_byright": 1.4,
       "median_home_value": 696500.0,
       "rent_burden_pct": 44.2,
       "permits_per_1000_residents": 0.54,
@@ -69,7 +69,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -109,7 +109,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -164,7 +164,7 @@
     "county": "Hampden County",
     "population": 28606,
     "grades": {
-      "zoning": null,
+      "zoning": "B",
       "mbta": null,
       "production": null,
       "affordability": "B",
@@ -173,7 +173,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 24.1,
       "median_home_value": 272100.0,
       "rent_burden_pct": 39.5,
       "permits_per_1000_residents": null,
@@ -188,7 +188,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": null,
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -204,16 +204,16 @@
     "county": "Berkshire County",
     "population": 450,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "C",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 768300.0,
       "rent_burden_pct": 0.0,
       "permits_per_1000_residents": 2.22,
@@ -228,7 +228,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -267,7 +267,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -344,7 +344,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -399,16 +399,16 @@
     "county": "Middlesex County",
     "population": 45906,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 61.6,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 839200.0,
       "rent_burden_pct": 36.7,
       "permits_per_1000_residents": 0.85,
@@ -423,7 +423,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -463,7 +463,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -503,7 +503,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -543,7 +543,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -556,16 +556,16 @@
     "county": "Middlesex County",
     "population": 18634,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "A",
       "affordability": "B",
       "votes": null,
       "rep": "B",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 93.0,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 532000.0,
       "rent_burden_pct": 43.8,
       "permits_per_1000_residents": 9.45,
@@ -580,7 +580,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -596,7 +596,7 @@
     "county": "Worcester County",
     "population": 11921,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": null,
       "production": "D",
       "affordability": "B",
@@ -605,7 +605,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 3.2,
       "median_home_value": 216400.0,
       "rent_burden_pct": 50.8,
       "permits_per_1000_residents": 1.34,
@@ -620,7 +620,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -660,7 +660,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -676,16 +676,16 @@
     "county": "Worcester County",
     "population": 16849,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "B",
       "production": "A",
       "affordability": "A",
       "votes": null,
       "rep": "F",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 79.4,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 339600.0,
       "rent_burden_pct": 39.4,
       "permits_per_1000_residents": 7.18,
@@ -700,7 +700,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -716,7 +716,7 @@
     "county": "Norfolk County",
     "population": 4730,
     "grades": {
-      "zoning": null,
+      "zoning": "D",
       "mbta": null,
       "production": "F",
       "affordability": "B",
@@ -725,7 +725,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 1.7,
       "median_home_value": 412000.0,
       "rent_burden_pct": 45.6,
       "permits_per_1000_residents": 0.0,
@@ -740,7 +740,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -756,7 +756,7 @@
     "county": "Middlesex County",
     "population": 8408,
     "grades": {
-      "zoning": "F",
+      "zoning": null,
       "mbta": "A",
       "production": "C",
       "affordability": "B",
@@ -765,7 +765,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": null,
       "median_home_value": 393000.0,
       "rent_burden_pct": 37.5,
       "permits_per_1000_residents": 1.55,
@@ -780,7 +780,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -876,16 +876,16 @@
     "county": "Berkshire County",
     "population": 2105,
     "grades": {
-      "zoning": "F",
+      "zoning": null,
       "mbta": null,
       "production": "C",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": null,
       "median_home_value": 308000.0,
       "rent_burden_pct": 21.6,
       "permits_per_1000_residents": 2.38,
@@ -900,7 +900,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -915,16 +915,16 @@
     "county": "Middlesex County",
     "population": 14273,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 21.6,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 829000.0,
       "rent_burden_pct": 35.9,
       "permits_per_1000_residents": 0.77,
@@ -939,7 +939,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -995,16 +995,16 @@
     "county": "Norfolk County",
     "population": 17025,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "B",
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 26.4,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 395800.0,
       "rent_burden_pct": 50.4,
       "permits_per_1000_residents": 3.99,
@@ -1019,7 +1019,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -1035,7 +1035,7 @@
     "county": "Middlesex County",
     "population": 26997,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": "A",
       "production": "F",
       "affordability": "D",
@@ -1044,7 +1044,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 1.2,
       "median_home_value": 1060600.0,
       "rent_burden_pct": 37.7,
       "permits_per_1000_residents": 0.33,
@@ -1059,7 +1059,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -1099,7 +1099,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -1155,16 +1155,16 @@
     "county": "Franklin County",
     "population": 2036,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "C",
       "affordability": "A",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 286400.0,
       "rent_burden_pct": 31.6,
       "permits_per_1000_residents": 2.95,
@@ -1179,7 +1179,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -1192,7 +1192,7 @@
     "county": "Essex County",
     "population": 42414,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
@@ -1201,7 +1201,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 71.2,
+      "pct_land_multifamily_byright": 7.2,
       "median_home_value": 569300.0,
       "rent_burden_pct": 50.8,
       "permits_per_1000_residents": 2.69,
@@ -1216,7 +1216,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -1231,16 +1231,16 @@
     "county": "Middlesex County",
     "population": 41708,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "A",
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 62.3,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 519200.0,
       "rent_burden_pct": 35.3,
       "permits_per_1000_residents": 5.95,
@@ -1255,7 +1255,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -1351,7 +1351,7 @@
     "county": "Worcester County",
     "population": 5653,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "C",
@@ -1360,7 +1360,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 679600.0,
       "rent_burden_pct": 9.9,
       "permits_per_1000_residents": 0.0,
@@ -1375,7 +1375,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -1431,7 +1431,7 @@
     "county": "Barnstable County",
     "population": 20455,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "B",
       "production": "C",
       "affordability": "C",
@@ -1440,7 +1440,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 47.7,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 482600.0,
       "rent_burden_pct": 52.2,
       "permits_per_1000_residents": 2.59,
@@ -1455,7 +1455,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -1480,7 +1480,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 0.2,
       "median_home_value": 653300.0,
       "rent_burden_pct": 52.9,
       "permits_per_1000_residents": 0.37,
@@ -1495,7 +1495,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -1511,7 +1511,7 @@
     "county": "Essex County",
     "population": 8168,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": "B",
       "production": "F",
       "affordability": "D",
@@ -1520,7 +1520,7 @@
       "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 816200.0,
       "rent_burden_pct": 59.1,
       "permits_per_1000_residents": 0.49,
@@ -1535,7 +1535,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -1590,16 +1590,16 @@
     "county": "Norfolk County",
     "population": 38748,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 3.8,
       "median_home_value": 596800.0,
       "rent_burden_pct": 44.6,
       "permits_per_1000_residents": 0.13,
@@ -1614,7 +1614,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -1654,7 +1654,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -1670,7 +1670,7 @@
     "county": "Plymouth County",
     "population": 28531,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "B",
       "production": "D",
       "affordability": "C",
@@ -1679,7 +1679,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 21.2,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 464900.0,
       "rent_burden_pct": 50.3,
       "permits_per_1000_residents": 1.37,
@@ -1694,7 +1694,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -1749,7 +1749,7 @@
     "county": "Plymouth County",
     "population": 104713,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
@@ -1758,7 +1758,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 38.1,
+      "pct_land_multifamily_byright": 10.4,
       "median_home_value": 364700.0,
       "rent_burden_pct": 50.2,
       "permits_per_1000_residents": 0.58,
@@ -1773,7 +1773,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -1829,7 +1829,7 @@
     "county": "Norfolk County",
     "population": 62698,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "C",
       "affordability": "D",
@@ -1838,7 +1838,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 86.8,
+      "pct_land_multifamily_byright": 12.9,
       "median_home_value": 1181200.0,
       "rent_burden_pct": 45.5,
       "permits_per_1000_residents": 1.74,
@@ -1853,7 +1853,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -1905,16 +1905,16 @@
     "county": "Middlesex County",
     "population": 26169,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 60.1,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 659400.0,
       "rent_burden_pct": 49.3,
       "permits_per_1000_residents": 1.34,
@@ -1929,7 +1929,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -1954,7 +1954,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 94.1,
+      "pct_land_multifamily_byright": 54.4,
       "median_home_value": 997600.0,
       "rent_burden_pct": 42.1,
       "permits_per_1000_residents": 3.38,
@@ -1969,7 +1969,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -1985,7 +1985,7 @@
     "county": "Norfolk County",
     "population": 24293,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "B",
       "affordability": "C",
@@ -1994,7 +1994,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 100.0,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 636800.0,
       "rent_burden_pct": 50.9,
       "permits_per_1000_residents": 3.17,
@@ -2009,7 +2009,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -2049,7 +2049,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -2089,7 +2089,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -2190,7 +2190,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 0.5,
       "median_home_value": 791700.0,
       "rent_burden_pct": 55.2,
       "permits_per_1000_residents": 3.78,
@@ -2205,7 +2205,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -2220,16 +2220,16 @@
     "county": "Middlesex County",
     "population": 36182,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 33.0,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 507900.0,
       "rent_burden_pct": 52.1,
       "permits_per_1000_residents": 0.33,
@@ -2244,7 +2244,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -2269,7 +2269,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 97.0,
+      "pct_land_multifamily_byright": 26.9,
       "median_home_value": 450600.0,
       "rent_burden_pct": 55.1,
       "permits_per_1000_residents": 1.48,
@@ -2284,7 +2284,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -2324,7 +2324,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -2484,7 +2484,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -2579,16 +2579,16 @@
     "county": "Norfolk County",
     "population": 8330,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 47.6,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1071800.0,
       "rent_burden_pct": 53.9,
       "permits_per_1000_residents": 0.36,
@@ -2603,7 +2603,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -2680,7 +2680,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -2696,7 +2696,7 @@
     "county": "Franklin County",
     "population": 1773,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "D",
       "affordability": "A",
@@ -2705,7 +2705,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 357400.0,
       "rent_burden_pct": 35.4,
       "permits_per_1000_residents": 1.13,
@@ -2720,7 +2720,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -2757,7 +2757,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -2812,16 +2812,16 @@
     "county": "Essex County",
     "population": 27910,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 20.0,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 589600.0,
       "rent_burden_pct": 47.3,
       "permits_per_1000_residents": 0.29,
@@ -2836,7 +2836,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -2876,7 +2876,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -2892,7 +2892,7 @@
     "county": "Norfolk County",
     "population": 25150,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "D",
       "affordability": "D",
@@ -2901,7 +2901,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 36.8,
+      "pct_land_multifamily_byright": 22.0,
       "median_home_value": 601700.0,
       "rent_burden_pct": 51.2,
       "permits_per_1000_residents": 0.95,
@@ -2916,7 +2916,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -3033,7 +3033,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -3088,7 +3088,7 @@
     "county": "Norfolk County",
     "population": 5886,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "A",
       "affordability": "D",
@@ -3097,7 +3097,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 79.1,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1152400.0,
       "rent_burden_pct": 30.9,
       "permits_per_1000_residents": 5.78,
@@ -3108,11 +3108,11 @@
       "rep_bills_available": 4
     },
     "data_notes": {
-      "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
+      "zoning": null,
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -3151,7 +3151,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -3271,7 +3271,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -3295,7 +3295,7 @@
       "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 0.5,
       "median_home_value": 453700.0,
       "rent_burden_pct": 47.4,
       "permits_per_1000_residents": 0.76,
@@ -3310,7 +3310,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -3430,7 +3430,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -3508,7 +3508,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -3665,7 +3665,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -3687,7 +3687,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 100.0,
+      "pct_land_multifamily_byright": 50.0,
       "median_home_value": 557700.0,
       "rent_burden_pct": 51.6,
       "permits_per_1000_residents": 4.09,
@@ -3702,7 +3702,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -3718,7 +3718,7 @@
     "county": "Bristol County",
     "population": 15899,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": null,
       "production": "F",
       "affordability": "B",
@@ -3727,7 +3727,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 1.3,
       "median_home_value": 365600.0,
       "rent_burden_pct": 51.9,
       "permits_per_1000_residents": 0.44,
@@ -3742,7 +3742,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -3757,7 +3757,7 @@
     "county": "Bristol County",
     "population": 93638,
     "grades": {
-      "zoning": "F",
+      "zoning": "B",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
@@ -3766,7 +3766,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 18.9,
       "median_home_value": 328100.0,
       "rent_burden_pct": 46.3,
       "permits_per_1000_residents": 0.59,
@@ -3781,7 +3781,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -3859,7 +3859,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -3899,7 +3899,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -3915,16 +3915,16 @@
     "county": "Norfolk County",
     "population": 18476,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 10.3,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 546600.0,
       "rent_burden_pct": 60.1,
       "permits_per_1000_residents": 0.32,
@@ -3939,7 +3939,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -3963,7 +3963,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 0.3,
       "median_home_value": 553200.0,
       "rent_burden_pct": 49.6,
       "permits_per_1000_residents": 0.52,
@@ -3978,7 +3978,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -3994,16 +3994,16 @@
     "county": "Norfolk County",
     "population": 32777,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": "B",
       "production": null,
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 516500.0,
       "rent_burden_pct": 47.6,
       "permits_per_1000_residents": null,
@@ -4018,7 +4018,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": null,
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -4058,7 +4058,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -4137,7 +4137,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -4193,16 +4193,16 @@
     "county": "Essex County",
     "population": 29830,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
       "votes": null,
       "rep": null,
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 30.2,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 535100.0,
       "rent_burden_pct": 52.4,
       "permits_per_1000_residents": 2.72,
@@ -4217,7 +4217,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -4254,7 +4254,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -4294,7 +4294,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -4309,7 +4309,7 @@
     "county": "Worcester County",
     "population": 19650,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "B",
       "affordability": "C",
@@ -4318,7 +4318,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 24.1,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 453000.0,
       "rent_burden_pct": 42.6,
       "permits_per_1000_residents": 4.83,
@@ -4333,7 +4333,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -4388,7 +4388,7 @@
     "county": "Hampden County",
     "population": 1686,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "A",
@@ -4397,7 +4397,7 @@
       "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 323300.0,
       "rent_burden_pct": 0.0,
       "permits_per_1000_residents": 0.0,
@@ -4412,7 +4412,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -4504,16 +4504,16 @@
     "county": "Middlesex County",
     "population": 11254,
     "grades": {
-      "zoning": "C",
+      "zoning": "F",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 9.7,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 628500.0,
       "rent_burden_pct": 39.6,
       "permits_per_1000_residents": 1.69,
@@ -4528,7 +4528,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -4568,7 +4568,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -4646,7 +4646,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -4685,7 +4685,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -4741,16 +4741,16 @@
     "county": "Berkshire County",
     "population": 772,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "A",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 333600.0,
       "rent_burden_pct": 47.3,
       "permits_per_1000_residents": 5.18,
@@ -4765,7 +4765,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -4805,7 +4805,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -4821,7 +4821,7 @@
     "county": "Plymouth County",
     "population": 10619,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "C",
       "affordability": "B",
@@ -4830,7 +4830,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 14.3,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 472000.0,
       "rent_burden_pct": 56.2,
       "permits_per_1000_residents": 1.88,
@@ -4845,7 +4845,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -4924,7 +4924,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -4964,7 +4964,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -5019,16 +5019,16 @@
     "county": "Essex County",
     "population": 67273,
     "grades": {
-      "zoning": "F",
+      "zoning": "B",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 19.2,
       "median_home_value": 400900.0,
       "rent_burden_pct": 54.6,
       "permits_per_1000_residents": 0.34,
@@ -5043,7 +5043,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5083,7 +5083,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -5133,16 +5133,16 @@
     "county": "Plymouth County",
     "population": 24143,
     "grades": {
-      "zoning": "F",
+      "zoning": "B",
       "mbta": "A",
       "production": "D",
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 12.1,
       "median_home_value": 978800.0,
       "rent_burden_pct": 54.4,
       "permits_per_1000_residents": 1.08,
@@ -5157,7 +5157,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5237,7 +5237,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5252,7 +5252,7 @@
     "county": "Worcester County",
     "population": 19783,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": "F",
       "production": "C",
       "affordability": "B",
@@ -5261,7 +5261,7 @@
       "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 4.7,
       "median_home_value": 409800.0,
       "rent_burden_pct": 28.9,
       "permits_per_1000_residents": 2.02,
@@ -5276,7 +5276,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -5356,7 +5356,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5436,7 +5436,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -5476,7 +5476,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5532,7 +5532,7 @@
     "county": "Middlesex County",
     "population": 19947,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": null,
       "production": "D",
       "affordability": "B",
@@ -5541,7 +5541,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 1.3,
       "median_home_value": 458000.0,
       "rent_burden_pct": 36.1,
       "permits_per_1000_residents": 1.05,
@@ -5556,7 +5556,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -5572,16 +5572,16 @@
     "county": "Plymouth County",
     "population": 10116,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "A",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 83.3,
+      "pct_land_multifamily_byright": 9.3,
       "median_home_value": 563700.0,
       "rent_burden_pct": 35.3,
       "permits_per_1000_residents": 5.83,
@@ -5596,7 +5596,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5652,16 +5652,16 @@
     "county": "Essex County",
     "population": 13791,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 4.1,
       "median_home_value": 649100.0,
       "rent_burden_pct": 46.5,
       "permits_per_1000_residents": 0.58,
@@ -5676,7 +5676,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -5716,7 +5716,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5756,7 +5756,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -5796,7 +5796,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -5876,7 +5876,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -5955,7 +5955,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -5995,7 +5995,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -6010,16 +6010,16 @@
     "county": "Worcester County",
     "population": 43620,
     "grades": {
-      "zoning": "A",
+      "zoning": "D",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 68.3,
+      "pct_land_multifamily_byright": 3.0,
       "median_home_value": 323400.0,
       "rent_burden_pct": 46.0,
       "permits_per_1000_residents": 0.14,
@@ -6034,7 +6034,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6111,7 +6111,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6164,7 +6164,7 @@
     "county": "Middlesex County",
     "population": 6928,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "D",
@@ -6173,7 +6173,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1184800.0,
       "rent_burden_pct": 56.1,
       "permits_per_1000_residents": 0.29,
@@ -6188,7 +6188,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6228,7 +6228,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6284,7 +6284,7 @@
     "county": "Middlesex County",
     "population": 114737,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
@@ -6293,7 +6293,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 49.0,
+      "pct_land_multifamily_byright": 6.8,
       "median_home_value": 362800.0,
       "rent_burden_pct": 48.7,
       "permits_per_1000_residents": 1.01,
@@ -6308,7 +6308,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6363,16 +6363,16 @@
     "county": "Worcester County",
     "population": 11735,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 17.6,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 393200.0,
       "rent_burden_pct": 40.6,
       "permits_per_1000_residents": 0.43,
@@ -6387,7 +6387,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -6403,7 +6403,7 @@
     "county": "Essex County",
     "population": 100653,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "B",
       "affordability": "D",
@@ -6412,7 +6412,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 89.5,
+      "pct_land_multifamily_byright": 20.6,
       "median_home_value": 442800.0,
       "rent_burden_pct": 53.9,
       "permits_per_1000_residents": 3.78,
@@ -6427,7 +6427,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6466,7 +6466,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6482,7 +6482,7 @@
     "county": "Middlesex County",
     "population": 65463,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
@@ -6491,7 +6491,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 570600.0,
       "rent_burden_pct": 48.8,
       "permits_per_1000_residents": 0.03,
@@ -6506,7 +6506,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -6546,7 +6546,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6559,7 +6559,7 @@
     "county": "Bristol County",
     "population": 23831,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "B",
@@ -6568,7 +6568,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 18.5,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 540100.0,
       "rent_burden_pct": 36.6,
       "permits_per_1000_residents": 0.55,
@@ -6583,7 +6583,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6622,7 +6622,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -6701,7 +6701,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6741,7 +6741,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -6836,16 +6836,16 @@
     "county": "Middlesex County",
     "population": 10671,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 5.4,
       "median_home_value": 459700.0,
       "rent_burden_pct": 42.2,
       "permits_per_1000_residents": 0.09,
@@ -6860,7 +6860,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6876,16 +6876,16 @@
     "county": "Norfolk County",
     "population": 12844,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "D",
       "votes": null,
       "rep": "D",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 60.2,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 836400.0,
       "rent_burden_pct": 62.5,
       "permits_per_1000_residents": 1.01,
@@ -6900,7 +6900,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -6916,16 +6916,16 @@
     "county": "Middlesex County",
     "population": 61748,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 99.3,
+      "pct_land_multifamily_byright": 9.4,
       "median_home_value": 669600.0,
       "rent_burden_pct": 37.0,
       "permits_per_1000_residents": 0.11,
@@ -6940,7 +6940,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -6956,16 +6956,16 @@
     "county": "Norfolk County",
     "population": 13164,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 83.2,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 546700.0,
       "rent_burden_pct": 36.0,
       "permits_per_1000_residents": 1.22,
@@ -6980,7 +6980,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -7005,7 +7005,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 39.3,
+      "pct_land_multifamily_byright": 33.5,
       "median_home_value": 732300.0,
       "rent_burden_pct": 44.5,
       "permits_per_1000_residents": 0.0,
@@ -7020,7 +7020,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -7060,7 +7060,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -7100,7 +7100,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -7116,16 +7116,16 @@
     "county": "Essex County",
     "population": 52812,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 62.4,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 439500.0,
       "rent_burden_pct": 58.8,
       "permits_per_1000_residents": 1.48,
@@ -7140,7 +7140,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -7156,7 +7156,7 @@
     "county": "Plymouth County",
     "population": 24268,
     "grades": {
-      "zoning": "C",
+      "zoning": "A",
       "mbta": "B",
       "production": "C",
       "affordability": "C",
@@ -7165,7 +7165,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 8.4,
+      "pct_land_multifamily_byright": 39.1,
       "median_home_value": 401700.0,
       "rent_burden_pct": 61.1,
       "permits_per_1000_residents": 2.93,
@@ -7180,7 +7180,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -7195,16 +7195,16 @@
     "county": "Hampshire County",
     "population": 319,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "A",
       "affordability": "A",
       "votes": null,
       "rep": "F",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 294000.0,
       "rent_burden_pct": 80.0,
       "permits_per_1000_residents": 6.27,
@@ -7219,7 +7219,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -7259,7 +7259,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -7315,7 +7315,7 @@
     "county": "Worcester County",
     "population": 13852,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "C",
       "affordability": "B",
@@ -7324,7 +7324,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 14.5,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 375800.0,
       "rent_burden_pct": 42.6,
       "permits_per_1000_residents": 2.45,
@@ -7339,7 +7339,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -7379,7 +7379,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -7435,16 +7435,16 @@
     "county": "Norfolk County",
     "population": 28450,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": "A",
       "production": "F",
       "affordability": "D",
       "votes": null,
       "rep": "C",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 2.4,
       "median_home_value": 838100.0,
       "rent_burden_pct": 60.2,
       "permits_per_1000_residents": 0.21,
@@ -7459,7 +7459,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -7588,16 +7588,16 @@
     "county": "Berkshire County",
     "population": 983,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "D",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 497500.0,
       "rent_burden_pct": 0.0,
       "permits_per_1000_residents": 1.02,
@@ -7612,7 +7612,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -7627,7 +7627,7 @@
     "county": "Hampden County",
     "population": 877,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "C",
       "affordability": "A",
@@ -7636,7 +7636,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 343400.0,
       "rent_burden_pct": 0.0,
       "permits_per_1000_residents": 2.28,
@@ -7651,7 +7651,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -7667,7 +7667,7 @@
     "county": "Berkshire County",
     "population": 188,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "B",
@@ -7676,7 +7676,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 506000.0,
       "rent_burden_pct": 0.0,
       "permits_per_1000_residents": 0.0,
@@ -7691,7 +7691,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -7706,7 +7706,7 @@
     "county": "Essex County",
     "population": 3336,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
@@ -7715,7 +7715,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 647800.0,
       "rent_burden_pct": 46.6,
       "permits_per_1000_residents": 0.0,
@@ -7730,7 +7730,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -7793,7 +7793,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 0.3,
       "median_home_value": 710100.0,
       "rent_burden_pct": 40.6,
       "permits_per_1000_residents": 0.71,
@@ -7808,7 +7808,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -7824,7 +7824,7 @@
     "county": "Norfolk County",
     "population": 31957,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": "A",
       "production": "C",
       "affordability": "D",
@@ -7833,7 +7833,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 1.9,
       "median_home_value": 1076900.0,
       "rent_burden_pct": 49.4,
       "permits_per_1000_residents": 2.1,
@@ -7848,7 +7848,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -7863,16 +7863,16 @@
     "county": "Berkshire County",
     "population": 262,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 352400.0,
       "rent_burden_pct": 34.6,
       "permits_per_1000_residents": 0.0,
@@ -7887,7 +7887,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -7912,7 +7912,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 14.9,
+      "pct_land_multifamily_byright": 10.3,
       "median_home_value": 291300.0,
       "rent_burden_pct": 44.3,
       "permits_per_1000_residents": 0.2,
@@ -7927,7 +7927,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -7943,7 +7943,7 @@
     "county": "Worcester County",
     "population": 984,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "D",
       "affordability": "A",
@@ -7952,7 +7952,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 372000.0,
       "rent_burden_pct": 42.9,
       "permits_per_1000_residents": 1.02,
@@ -7967,7 +7967,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -7983,16 +7983,16 @@
     "county": "Berkshire County",
     "population": 1550,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "D",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 420500.0,
       "rent_burden_pct": 41.9,
       "permits_per_1000_residents": 0.65,
@@ -8007,7 +8007,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -8022,16 +8022,16 @@
     "county": "Franklin County",
     "population": 1074,
     "grades": {
-      "zoning": "F",
+      "zoning": null,
       "mbta": null,
       "production": "A",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": null,
       "median_home_value": 317700.0,
       "rent_burden_pct": 74.6,
       "permits_per_1000_residents": 5.59,
@@ -8046,7 +8046,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -8086,7 +8086,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -8102,16 +8102,16 @@
     "county": "Essex County",
     "population": 18356,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "A",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 81.5,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 737200.0,
       "rent_burden_pct": 45.1,
       "permits_per_1000_residents": 6.16,
@@ -8126,7 +8126,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8142,7 +8142,7 @@
     "county": "Middlesex County",
     "population": 88453,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "B",
       "affordability": "D",
@@ -8151,7 +8151,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 78.3,
+      "pct_land_multifamily_byright": 5.5,
       "median_home_value": 1136200.0,
       "rent_burden_pct": 39.1,
       "permits_per_1000_residents": 3.18,
@@ -8166,7 +8166,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -8205,7 +8205,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8261,7 +8261,7 @@
     "county": "Essex County",
     "population": 30847,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "F",
       "affordability": "D",
@@ -8270,7 +8270,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 96.5,
+      "pct_land_multifamily_byright": 14.1,
       "median_home_value": 621100.0,
       "rent_burden_pct": 50.2,
       "permits_per_1000_residents": 0.23,
@@ -8285,7 +8285,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8300,7 +8300,7 @@
     "county": "Bristol County",
     "population": 30750,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
@@ -8309,7 +8309,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 6.4,
       "median_home_value": 429900.0,
       "rent_burden_pct": 44.2,
       "permits_per_1000_residents": 0.85,
@@ -8324,7 +8324,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8386,7 +8386,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 92.1,
+      "pct_land_multifamily_byright": 37.9,
       "median_home_value": 664900.0,
       "rent_burden_pct": 62.6,
       "permits_per_1000_residents": 8.76,
@@ -8401,7 +8401,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -8457,16 +8457,16 @@
     "county": "Worcester County",
     "population": 15647,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 27.8,
+      "pct_land_multifamily_byright": 0.5,
       "median_home_value": 548400.0,
       "rent_burden_pct": 60.1,
       "permits_per_1000_residents": 0.38,
@@ -8481,7 +8481,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8497,7 +8497,7 @@
     "county": "Worcester County",
     "population": 16303,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": "A",
       "production": "C",
       "affordability": "B",
@@ -8506,7 +8506,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 2.2,
       "median_home_value": 387200.0,
       "rent_burden_pct": 39.0,
       "permits_per_1000_residents": 1.78,
@@ -8521,7 +8521,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8601,7 +8601,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -8616,7 +8616,7 @@
     "county": "Plymouth County",
     "population": 11281,
     "grades": {
-      "zoning": "B",
+      "zoning": "A",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
@@ -8625,7 +8625,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 11.8,
+      "pct_land_multifamily_byright": 50.0,
       "median_home_value": 736500.0,
       "rent_burden_pct": 55.7,
       "permits_per_1000_residents": 2.3,
@@ -8640,7 +8640,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8656,16 +8656,16 @@
     "county": "Norfolk County",
     "population": 31343,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 17.9,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 588100.0,
       "rent_burden_pct": 47.5,
       "permits_per_1000_residents": 0.1,
@@ -8680,7 +8680,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -8759,7 +8759,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -8815,16 +8815,16 @@
     "county": "Barnstable County",
     "population": 6322,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": null,
       "production": "A",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "A"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 67.4,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 695800.0,
       "rent_burden_pct": 54.6,
       "permits_per_1000_residents": 12.65,
@@ -8839,7 +8839,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -8878,7 +8878,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -8973,7 +8973,7 @@
     "county": "Worcester County",
     "population": 5013,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "B",
@@ -8982,7 +8982,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 434700.0,
       "rent_burden_pct": 33.0,
       "permits_per_1000_residents": 0.8,
@@ -8997,7 +8997,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -9013,7 +9013,7 @@
     "county": "Essex County",
     "population": 54204,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
@@ -9022,7 +9022,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 3.0,
       "median_home_value": 508400.0,
       "rent_burden_pct": 54.8,
       "permits_per_1000_residents": 0.48,
@@ -9037,7 +9037,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -9117,7 +9117,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -9132,7 +9132,7 @@
     "county": "Middlesex County",
     "population": 11625,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": null,
       "production": "D",
       "affordability": "B",
@@ -9141,7 +9141,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 1.7,
       "median_home_value": 441500.0,
       "rent_burden_pct": 39.8,
       "permits_per_1000_residents": 1.12,
@@ -9156,7 +9156,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -9172,16 +9172,16 @@
     "county": "Berkshire County",
     "population": 670,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 247800.0,
       "rent_burden_pct": 37.5,
       "permits_per_1000_residents": 0.0,
@@ -9196,7 +9196,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -9212,16 +9212,16 @@
     "county": "Worcester County",
     "population": 1177,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 346000.0,
       "rent_burden_pct": 20.0,
       "permits_per_1000_residents": 0.0,
@@ -9236,7 +9236,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -9332,16 +9332,16 @@
     "county": "Hampshire County",
     "population": 618,
     "grades": {
-      "zoning": "F",
+      "zoning": "A",
       "mbta": null,
       "production": "A",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 50.0,
       "median_home_value": 247400.0,
       "rent_burden_pct": 44.0,
       "permits_per_1000_residents": 12.94,
@@ -9356,7 +9356,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -9372,16 +9372,16 @@
     "county": "Norfolk County",
     "population": 9814,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": null,
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "D",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 3.3,
       "median_home_value": 444600.0,
       "rent_burden_pct": 55.3,
       "permits_per_1000_residents": 1.43,
@@ -9396,7 +9396,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -9412,7 +9412,7 @@
     "county": "Plymouth County",
     "population": 61628,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "B",
       "production": "B",
       "affordability": "B",
@@ -9421,7 +9421,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 28.2,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 461500.0,
       "rent_burden_pct": 49.1,
       "permits_per_1000_residents": 4.27,
@@ -9436,7 +9436,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -9475,7 +9475,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -9515,7 +9515,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -9531,16 +9531,16 @@
     "county": "Barnstable County",
     "population": 3630,
     "grades": {
-      "zoning": "F",
+      "zoning": "A",
       "mbta": null,
       "production": "A",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "A"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 52.0,
       "median_home_value": 772200.0,
       "rent_burden_pct": 63.1,
       "permits_per_1000_residents": 5.79,
@@ -9555,7 +9555,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -9579,7 +9579,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 95.1,
+      "pct_land_multifamily_byright": 40.1,
       "median_home_value": 563200.0,
       "rent_burden_pct": 43.7,
       "permits_per_1000_residents": 0.74,
@@ -9594,7 +9594,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -9610,7 +9610,7 @@
     "county": "Norfolk County",
     "population": 34691,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
@@ -9619,7 +9619,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 3.1,
       "median_home_value": 429000.0,
       "rent_burden_pct": 57.0,
       "permits_per_1000_residents": 0.26,
@@ -9634,7 +9634,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -9649,16 +9649,16 @@
     "county": "Bristol County",
     "population": 15124,
     "grades": {
-      "zoning": "A",
+      "zoning": "D",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "C",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 53.1,
+      "pct_land_multifamily_byright": 2.0,
       "median_home_value": 466200.0,
       "rent_burden_pct": 67.0,
       "permits_per_1000_residents": 0.93,
@@ -9673,7 +9673,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -9688,7 +9688,7 @@
     "county": "Middlesex County",
     "population": 25415,
     "grades": {
-      "zoning": "A",
+      "zoning": "D",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
@@ -9697,7 +9697,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 25.7,
+      "pct_land_multifamily_byright": 1.0,
       "median_home_value": 713200.0,
       "rent_burden_pct": 35.3,
       "permits_per_1000_residents": 1.85,
@@ -9712,7 +9712,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -9752,7 +9752,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -9768,7 +9768,7 @@
     "county": "Suffolk County",
     "population": 60577,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
@@ -9777,7 +9777,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 74.6,
+      "pct_land_multifamily_byright": 4.9,
       "median_home_value": 518600.0,
       "rent_burden_pct": 52.0,
       "permits_per_1000_residents": 1.93,
@@ -9792,7 +9792,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -9847,7 +9847,7 @@
     "county": "Plymouth County",
     "population": 5727,
     "grades": {
-      "zoning": "F",
+      "zoning": null,
       "mbta": "A",
       "production": "C",
       "affordability": "B",
@@ -9856,7 +9856,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": null,
       "median_home_value": 484000.0,
       "rent_burden_pct": 13.6,
       "permits_per_1000_residents": 1.75,
@@ -9871,7 +9871,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -9886,7 +9886,7 @@
     "county": "Plymouth County",
     "population": 17721,
     "grades": {
-      "zoning": null,
+      "zoning": "D",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
@@ -9895,7 +9895,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 2.7,
       "median_home_value": 422500.0,
       "rent_burden_pct": 48.1,
       "permits_per_1000_residents": 0.06,
@@ -9910,7 +9910,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -9926,7 +9926,7 @@
     "county": "Essex County",
     "population": 6973,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "D",
@@ -9935,7 +9935,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 38.6,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 651200.0,
       "rent_burden_pct": 51.8,
       "permits_per_1000_residents": 0.86,
@@ -9946,11 +9946,11 @@
       "rep_bills_available": null
     },
     "data_notes": {
-      "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
+      "zoning": null,
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -9987,7 +9987,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -10024,7 +10024,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -10160,7 +10160,7 @@
     "county": "Essex County",
     "population": 44541,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
@@ -10169,7 +10169,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 85.1,
+      "pct_land_multifamily_byright": 12.0,
       "median_home_value": 464200.0,
       "rent_burden_pct": 52.4,
       "permits_per_1000_residents": 0.34,
@@ -10184,7 +10184,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -10224,7 +10224,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -10240,16 +10240,16 @@
     "county": "Berkshire County",
     "population": 960,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "B",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 290200.0,
       "rent_burden_pct": 58.3,
       "permits_per_1000_residents": 3.12,
@@ -10264,7 +10264,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -10303,7 +10303,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -10319,7 +10319,7 @@
     "county": "Essex County",
     "population": 28566,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
@@ -10328,7 +10328,7 @@
       "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 2.8,
       "median_home_value": 543300.0,
       "rent_burden_pct": 50.7,
       "permits_per_1000_residents": 0.07,
@@ -10343,7 +10343,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -10359,16 +10359,16 @@
     "county": "Berkshire County",
     "population": 620,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "A",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 237500.0,
       "rent_burden_pct": 41.2,
       "permits_per_1000_residents": 8.06,
@@ -10383,7 +10383,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -10423,7 +10423,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -10463,7 +10463,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -10503,7 +10503,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -10619,7 +10619,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -10644,7 +10644,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 0.5,
       "median_home_value": 384200.0,
       "rent_burden_pct": 53.4,
       "permits_per_1000_residents": 1.13,
@@ -10659,7 +10659,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -10675,16 +10675,16 @@
     "county": "Worcester County",
     "population": 38734,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "F",
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 84.3,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 512000.0,
       "rent_burden_pct": 37.9,
       "permits_per_1000_residents": 0.34,
@@ -10699,7 +10699,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -10755,7 +10755,7 @@
     "county": "Bristol County",
     "population": 18266,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "A",
@@ -10764,7 +10764,7 @@
       "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 369000.0,
       "rent_burden_pct": 35.3,
       "permits_per_1000_residents": 0.0,
@@ -10779,7 +10779,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -10803,7 +10803,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 66.8,
+      "pct_land_multifamily_byright": 58.4,
       "median_home_value": 860500.0,
       "rent_burden_pct": 36.1,
       "permits_per_1000_residents": 1.47,
@@ -10818,7 +10818,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
@@ -10913,16 +10913,16 @@
     "county": "Worcester County",
     "population": 10421,
     "grades": {
-      "zoning": null,
+      "zoning": "A",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 30.9,
       "median_home_value": 740000.0,
       "rent_burden_pct": 25.6,
       "permits_per_1000_residents": 0.38,
@@ -10937,7 +10937,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -11137,7 +11137,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -11192,16 +11192,16 @@
     "county": "Middlesex County",
     "population": 22992,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "A",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 92.8,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 609300.0,
       "rent_burden_pct": 40.5,
       "permits_per_1000_residents": 23.4,
@@ -11216,7 +11216,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -11232,16 +11232,16 @@
     "county": "Norfolk County",
     "population": 29051,
     "grades": {
-      "zoning": "A",
+      "zoning": "D",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 33.9,
+      "pct_land_multifamily_byright": 3.0,
       "median_home_value": 448900.0,
       "rent_burden_pct": 59.4,
       "permits_per_1000_residents": 0.55,
@@ -11256,7 +11256,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -11296,7 +11296,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -11352,16 +11352,16 @@
     "county": "Middlesex County",
     "population": 18926,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 25.3,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 892700.0,
       "rent_burden_pct": 38.2,
       "permits_per_1000_residents": 1.06,
@@ -11376,7 +11376,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -11453,7 +11453,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -11469,7 +11469,7 @@
     "county": "Essex County",
     "population": 15125,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "B",
       "affordability": "C",
@@ -11478,7 +11478,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 91.9,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 645700.0,
       "rent_burden_pct": 49.7,
       "permits_per_1000_residents": 4.03,
@@ -11493,7 +11493,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -11533,7 +11533,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -11557,7 +11557,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 18.8,
+      "pct_land_multifamily_byright": 12.1,
       "median_home_value": 359500.0,
       "rent_burden_pct": 50.4,
       "permits_per_1000_residents": 4.41,
@@ -11572,7 +11572,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -11627,16 +11627,16 @@
     "county": "Middlesex County",
     "population": 31089,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "F",
       "production": "D",
       "affordability": "B",
       "votes": null,
       "rep": "B",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 33.9,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 502800.0,
       "rent_burden_pct": 47.1,
       "permits_per_1000_residents": 1.16,
@@ -11651,7 +11651,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -11730,7 +11730,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -11770,7 +11770,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -11810,7 +11810,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -11850,7 +11850,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -11889,7 +11889,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -11929,7 +11929,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -11968,7 +11968,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -12024,16 +12024,16 @@
     "county": "Middlesex County",
     "population": 27054,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "A",
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 95.1,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 646400.0,
       "rent_burden_pct": 44.5,
       "permits_per_1000_residents": 13.64,
@@ -12048,7 +12048,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12088,7 +12088,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -12104,7 +12104,7 @@
     "county": "Norfolk County",
     "population": 26317,
     "grades": {
-      "zoning": "F",
+      "zoning": "C",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
@@ -12113,7 +12113,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 10.0,
       "median_home_value": 625000.0,
       "rent_burden_pct": 43.0,
       "permits_per_1000_residents": 0.3,
@@ -12128,7 +12128,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12153,7 +12153,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 17.0,
+      "pct_land_multifamily_byright": 12.1,
       "median_home_value": 679000.0,
       "rent_burden_pct": 40.7,
       "permits_per_1000_residents": 1.14,
@@ -12168,7 +12168,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12233,7 +12233,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 42.4,
+      "pct_land_multifamily_byright": 31.8,
       "median_home_value": 363600.0,
       "rent_burden_pct": 46.2,
       "permits_per_1000_residents": 6.6,
@@ -12248,7 +12248,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12303,16 +12303,16 @@
     "county": "Franklin County",
     "population": 814,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "F",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 297600.0,
       "rent_burden_pct": 20.0,
       "permits_per_1000_residents": 0.0,
@@ -12327,7 +12327,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -12367,7 +12367,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -12382,16 +12382,16 @@
     "county": "Middlesex County",
     "population": 35181,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 82.4,
+      "pct_land_multifamily_byright": 4.3,
       "median_home_value": 722000.0,
       "rent_burden_pct": 39.5,
       "permits_per_1000_residents": 0.26,
@@ -12406,7 +12406,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12446,7 +12446,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12502,16 +12502,16 @@
     "county": "Norfolk County",
     "population": 29862,
     "grades": {
-      "zoning": "A",
+      "zoning": "D",
       "mbta": "A",
       "production": "C",
       "affordability": "F",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 43.0,
+      "pct_land_multifamily_byright": 2.5,
       "median_home_value": 1424400.0,
       "rent_burden_pct": 31.6,
       "permits_per_1000_residents": 2.78,
@@ -12526,7 +12526,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12566,7 +12566,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -12605,7 +12605,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -12645,7 +12645,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -12660,7 +12660,7 @@
     "county": "Worcester County",
     "population": 7695,
     "grades": {
-      "zoning": null,
+      "zoning": "C",
       "mbta": "A",
       "production": "F",
       "affordability": "A",
@@ -12669,7 +12669,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 8.8,
       "median_home_value": 382400.0,
       "rent_burden_pct": 24.5,
       "permits_per_1000_residents": 0.0,
@@ -12684,7 +12684,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -12700,7 +12700,7 @@
     "county": "Plymouth County",
     "population": 7648,
     "grades": {
-      "zoning": "F",
+      "zoning": "D",
       "mbta": "B",
       "production": "D",
       "affordability": "B",
@@ -12709,7 +12709,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 1.3,
       "median_home_value": 453900.0,
       "rent_burden_pct": 44.4,
       "permits_per_1000_residents": 1.44,
@@ -12724,7 +12724,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -12803,7 +12803,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -12936,16 +12936,16 @@
     "county": "Worcester County",
     "population": 21360,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 94.3,
+      "pct_land_multifamily_byright": 0.3,
       "median_home_value": 601900.0,
       "rent_burden_pct": 38.1,
       "permits_per_1000_residents": 2.62,
@@ -12960,7 +12960,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -13016,16 +13016,16 @@
     "county": "Middlesex County",
     "population": 24524,
     "grades": {
-      "zoning": "C",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 10.0,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 672200.0,
       "rent_burden_pct": 34.6,
       "permits_per_1000_residents": 1.02,
@@ -13040,7 +13040,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -13120,7 +13120,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
@@ -13145,7 +13145,7 @@
       "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": 0.2,
       "median_home_value": 1434000.0,
       "rent_burden_pct": 38.0,
       "permits_per_1000_residents": 0.68,
@@ -13160,7 +13160,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -13200,7 +13200,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -13239,7 +13239,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -13255,7 +13255,7 @@
     "county": "Norfolk County",
     "population": 57300,
     "grades": {
-      "zoning": "A",
+      "zoning": "C",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
@@ -13264,7 +13264,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 92.2,
+      "pct_land_multifamily_byright": 8.5,
       "median_home_value": 469300.0,
       "rent_burden_pct": 51.8,
       "permits_per_1000_residents": 0.94,
@@ -13279,7 +13279,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -13332,16 +13332,16 @@
     "county": "Plymouth County",
     "population": 15146,
     "grades": {
-      "zoning": "B",
+      "zoning": "F",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 20.8,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 433800.0,
       "rent_burden_pct": 49.2,
       "permits_per_1000_residents": 0.92,
@@ -13356,7 +13356,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -13396,7 +13396,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -13412,16 +13412,16 @@
     "county": "Hampshire County",
     "population": 2745,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "D",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 349200.0,
       "rent_burden_pct": 54.7,
       "permits_per_1000_residents": 0.73,
@@ -13436,7 +13436,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -13492,16 +13492,16 @@
     "county": "Middlesex County",
     "population": 23191,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "F",
       "production": "C",
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 55.6,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 614500.0,
       "rent_burden_pct": 48.7,
       "permits_per_1000_residents": 2.89,
@@ -13516,7 +13516,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -13532,16 +13532,16 @@
     "county": "Worcester County",
     "population": 10372,
     "grades": {
-      "zoning": "F",
+      "zoning": null,
       "mbta": null,
       "production": "D",
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 0.0,
+      "pct_land_multifamily_byright": null,
       "median_home_value": 274700.0,
       "rent_burden_pct": 48.6,
       "permits_per_1000_residents": 0.67,
@@ -13556,7 +13556,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -13612,16 +13612,16 @@
     "county": "Berkshire County",
     "population": 1030,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "C",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 331900.0,
       "rent_burden_pct": 0.0,
       "permits_per_1000_residents": 1.94,
@@ -13636,7 +13636,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -13652,16 +13652,16 @@
     "county": "Suffolk County",
     "population": 19031,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "F",
       "production": "F",
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 95.7,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 563100.0,
       "rent_burden_pct": 54.6,
       "permits_per_1000_residents": 0.42,
@@ -13676,7 +13676,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "non-compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -13692,16 +13692,16 @@
     "county": "Middlesex County",
     "population": 40992,
     "grades": {
-      "zoning": "A",
+      "zoning": "F",
       "mbta": "B",
       "production": "A",
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 85.5,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 612500.0,
       "rent_burden_pct": 54.4,
       "permits_per_1000_residents": 15.42,
@@ -13716,7 +13716,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "interim",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -13732,7 +13732,7 @@
     "county": "Worcester County",
     "population": 204191,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "D",
       "affordability": "C",
@@ -13741,7 +13741,7 @@
       "composite": "B"
     },
     "metrics": {
-      "pct_land_multifamily_byright": 77.4,
+      "pct_land_multifamily_byright": 15.2,
       "median_home_value": 305600.0,
       "rent_burden_pct": 49.9,
       "permits_per_1000_residents": 1.31,
@@ -13756,7 +13756,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
@@ -13772,16 +13772,16 @@
     "county": "Hampshire County",
     "population": 971,
     "grades": {
-      "zoning": null,
+      "zoning": "F",
       "mbta": null,
       "production": "D",
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
-      "pct_land_multifamily_byright": null,
+      "pct_land_multifamily_byright": 0.0,
       "median_home_value": 305800.0,
       "rent_burden_pct": 28.6,
       "permits_per_1000_residents": 1.03,
@@ -13796,7 +13796,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
@@ -13836,7 +13836,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
@@ -13876,7 +13876,7 @@
       "production": null,
       "affordability": null
     },
-    "zoning_source": "proxy",
+    "zoning_source": "nza",
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,

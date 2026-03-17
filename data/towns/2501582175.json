@@ -4,16 +4,16 @@
   "county": "Hampshire County",
   "population": 971,
   "grades": {
-    "zoning": null,
+    "zoning": "F",
     "mbta": null,
     "production": "D",
     "affordability": "A",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": null,
+    "pct_land_multifamily_byright": 0.0,
     "median_home_value": 305800.0,
     "rent_burden_pct": 28.6,
     "permits_per_1000_residents": 1.03,
@@ -28,7 +28,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": "nza",
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
