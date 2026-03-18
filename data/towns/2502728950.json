@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -28,6 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2025-12-31",
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Dan Sena",
+      "district": "37th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
   "updated_at": "2026-03-17"
 }

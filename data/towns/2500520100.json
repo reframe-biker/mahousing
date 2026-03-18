@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "F",
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -35,6 +35,17 @@
       "pct_score": 0.0,
       "grade": "F",
       "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
+      "name": "Bridget Plouffe",
+      "district": "9th Plymouth",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"

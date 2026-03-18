@@ -9,8 +9,8 @@
     "production": "A",
     "affordability": "C",
     "votes": null,
-    "rep": "D",
-    "composite": "C"
+    "rep": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -29,6 +29,18 @@
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "reps": [
+    {
+      "name": "James Arena-DeRosa",
+      "district": "8th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
     {
       "name": "Marcus Vaughn",
       "district": "9th Norfolk",

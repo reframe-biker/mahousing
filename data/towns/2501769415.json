@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
+    "rep": "B",
     "composite": "D"
   },
   "metrics": {
@@ -34,6 +34,18 @@
       "district": "17th Middlesex",
       "pct_score": 95.2,
       "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Tram Nguyen",
+      "district": "18th Essex",
+      "pct_score": 76.2,
+      "grade": "B",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [

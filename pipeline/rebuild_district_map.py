@@ -33,6 +33,7 @@ import re
 from pathlib import Path
 
 import geopandas as gpd
+import pandas as pd
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 
@@ -50,10 +51,20 @@ SLDL_SHP = REPO_ROOT / "data" / "tl_2024_25_sldl.shp"
 # Download: https://www2.census.gov/geo/tiger/TIGER2024/COUSUB/tl_2024_25_cousub.zip
 PLACE_SHP = REPO_ROOT / "data" / "tl_2024_25_cousub.shp"
 
-# Minimum overlap fraction: a district must cover at least this share of a
-# municipality's area to be included. Filters out tiny slivers from boundary
-# imprecision (e.g. a district that technically clips 0.1% of a town corner).
-MIN_OVERLAP_FRACTION = 0.01  # 1%
+# Overlap thresholds — two-tier to handle same-county vs. cross-county cases:
+#
+#   SAME_COUNTY_MIN (1%):   keeps all same-county assignments, including large
+#     cities where each district covers only a small fraction of the city area
+#     (e.g. Boston's 16 Suffolk districts, each ~2–43% of the city).
+#
+#   CROSS_COUNTY_MIN (15%): filters cross-county artifacts (Lynn/2nd Suffolk
+#     at 11.6%) while keeping genuine cross-county assignments (Bolton is 100%
+#     within 3rd Middlesex even though Bolton is in Worcester County).
+#
+# The Barnstable-Dukes-Nantucket district spans three counties and is exempt
+# from the cross-county threshold by name.
+SAME_COUNTY_MIN = 0.01   # 1%
+CROSS_COUNTY_MIN = 0.15  # 15%
 
 
 def _clean_district_name(namelsad: str) -> str:
@@ -112,39 +123,57 @@ def main() -> None:
     # place_area carries through the overlay — no re-merge needed
     joined["overlap_frac"] = joined["intersect_area"] / joined["place_area"]
 
-    # ── County consistency filter ─────────────────────────────────────────────
-    # Drop rows where the district's county doesn't match the municipality's
-    # county. These are boundary artifacts (shared edges), not real assignments.
-    # Exception: "Barnstable, Dukes and Nantucket" spans all three island counties.
+    # ── Tiered overlap filter ─────────────────────────────────────────────────
+    # Same-county assignments: low threshold (1%) — keeps large cities where
+    # each district covers a small fraction of the city (e.g. Boston).
+    # Cross-county assignments: high threshold (15%) — drops boundary artifacts
+    # (Lynn/2nd Suffolk at 11.6%) while keeping genuine cross-county cases
+    # (Bolton/3rd Middlesex at 100%).
     COUNTY_FIPS_TO_NAME = {
-        "001": "Barnstable",
-        "003": "Berkshire",
-        "005": "Bristol",
-        "007": "Dukes",
-        "009": "Essex",
-        "011": "Franklin",
-        "013": "Hampden",
-        "015": "Hampshire",
-        "017": "Middlesex",
-        "019": "Nantucket",
-        "021": "Norfolk",
-        "023": "Plymouth",
-        "025": "Suffolk",
-        "027": "Worcester",
+        "001": "Barnstable", "003": "Berkshire", "005": "Bristol",
+        "007": "Dukes",      "009": "Essex",     "011": "Franklin",
+        "013": "Hampden",    "015": "Hampshire",  "017": "Middlesex",
+        "019": "Nantucket",  "021": "Norfolk",    "023": "Plymouth",
+        "025": "Suffolk",    "027": "Worcester",
     }
 
-    def _county_match(row) -> bool:
+    def _threshold(row) -> float:
         district_name = str(row["NAMELSAD_2"])
         if "Barnstable, Dukes and Nantucket" in district_name:
-            return True
+            return SAME_COUNTY_MIN
         county_fips = str(row["COUNTYFP"]).zfill(3)
-        expected = COUNTY_FIPS_TO_NAME.get(county_fips)
-        return expected is not None and expected in district_name
+        expected = COUNTY_FIPS_TO_NAME.get(county_fips, "")
+        if expected and expected in district_name:
+            return SAME_COUNTY_MIN   # same-county assignment
+        return CROSS_COUNTY_MIN     # cross-county — apply stricter threshold
 
-    joined = joined[joined.apply(_county_match, axis=1)]
+    joined["_threshold"] = joined.apply(_threshold, axis=1)
+    above = joined[joined["overlap_frac"] >= joined["_threshold"]]
 
-    # Drop slivers
-    joined = joined[joined["overlap_frac"] >= MIN_OVERLAP_FRACTION]
+    # ── Fallback: towns with no district above threshold ──────────────────────
+    # For any GEOID that was filtered out entirely, assign the single district
+    # with the highest overlap_frac (best available match) and log a warning.
+    all_geoids = set(joined["GEOID_1"].astype(str))
+    kept_geoids = set(above["GEOID_1"].astype(str))
+    fallback_geoids = all_geoids - kept_geoids
+
+    if fallback_geoids:
+        print(f"  Warning: {len(fallback_geoids)} town(s) had no district above "
+              f"{MIN_OVERLAP_FRACTION:.0%} threshold — using best-overlap fallback:")
+        fallback_rows = []
+        for geoid in sorted(fallback_geoids):
+            candidates = joined[joined["GEOID_1"].astype(str) == geoid]
+            best = candidates.loc[candidates["overlap_frac"].idxmax()]
+            district = _clean_district_name(str(best["NAMELSAD_2"]))
+            frac = best["overlap_frac"]
+            print(f"    {geoid}: {district} ({frac:.1%} overlap)")
+            fallback_rows.append(best)
+        fallback_df = gpd.GeoDataFrame(fallback_rows, crs=joined.crs)
+        joined = gpd.GeoDataFrame(
+            pd.concat([above, fallback_df], ignore_index=True), crs=joined.crs
+        )
+    else:
+        joined = above
 
     # ── Build the output map ──────────────────────────────────────────────────
     print("Building output map...")

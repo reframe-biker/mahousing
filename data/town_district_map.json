@@ -1,4 +1,7 @@
 {
+  "2500100000": [
+    "State House Districts not defined"
+  ],
   "2500103690": [
     "2nd Barnstable",
     "5th Barnstable"
@@ -144,6 +147,9 @@
   "2500380685": [
     "1st Berkshire"
   ],
+  "2500500000": [
+    "State House Districts not defined"
+  ],
   "2500500520": [
     "10th Bristol",
     "8th Bristol"
@@ -162,7 +168,8 @@
     "5th Bristol"
   ],
   "2500520100": [
-    "3rd Bristol"
+    "3rd Bristol",
+    "9th Plymouth"
   ],
   "2500522130": [
     "10th Bristol"
@@ -193,6 +200,9 @@
   "2500549970": [
     "1st Bristol",
     "4th Bristol"
+  ],
+  "2500556060": [
+    "8th Plymouth"
   ],
   "2500556375": [
     "4th Bristol"
@@ -235,6 +245,9 @@
   ],
   "2500778235": [
     "Barnstable-Dukes-Nantucket"
+  ],
+  "2500900000": [
+    "State House Districts not defined"
   ],
   "2500901185": [
     "14th Essex",
@@ -287,6 +300,9 @@
     "8th Essex",
     "9th Essex"
   ],
+  "2500937560": [
+    "20th Middlesex"
+  ],
   "2500937995": [
     "5th Essex"
   ],
@@ -302,7 +318,8 @@
     "4th Essex"
   ],
   "2500941095": [
-    "13th Essex"
+    "13th Essex",
+    "20th Middlesex"
   ],
   "2500943580": [
     "11th Essex"
@@ -334,6 +351,7 @@
     "1st Essex"
   ],
   "2500960015": [
+    "16th Suffolk",
     "9th Essex"
   ],
   "2500968645": [
@@ -399,6 +417,9 @@
   "2501142285": [
     "1st Franklin"
   ],
+  "2501145490": [
+    "7th Hampden"
+  ],
   "2501147835": [
     "2nd Franklin"
   ],
@@ -411,11 +432,17 @@
   "2501161135": [
     "1st Franklin"
   ],
+  "2501161905": [
+    "7th Hampden"
+  ],
   "2501168400": [
     "1st Franklin"
   ],
   "2501173265": [
     "2nd Franklin"
+  ],
+  "2501174525": [
+    "7th Hampden"
   ],
   "2501179110": [
     "1st Franklin"
@@ -502,6 +529,9 @@
   "2501501370": [
     "3rd Hampshire"
   ],
+  "2501504825": [
+    "7th Hampden"
+  ],
   "2501513590": [
     "1st Hampshire"
   ],
@@ -524,14 +554,29 @@
   "2501529265": [
     "1st Hampshire"
   ],
+  "2501531785": [
+    "3rd Hampden"
+  ],
+  "2501540990": [
+    "3rd Hampden"
+  ],
   "2501546330": [
     "1st Hampshire"
+  ],
+  "2501552560": [
+    "7th Hampden"
   ],
   "2501554030": [
     "1st Hampshire"
   ],
+  "2501562745": [
+    "4th Hampden"
+  ],
   "2501564145": [
     "2nd Hampshire"
+  ],
+  "2501572880": [
+    "1st Hampden"
   ],
   "2501576380": [
     "1st Hampshire"
@@ -599,7 +644,8 @@
     "1st Middlesex"
   ],
   "2501721990": [
-    "28th Middlesex"
+    "28th Middlesex",
+    "2nd Suffolk"
   ],
   "2501724960": [
     "4th Middlesex",
@@ -624,7 +670,8 @@
     "21st Middlesex"
   ],
   "2501735425": [
-    "13th Middlesex"
+    "13th Middlesex",
+    "14th Norfolk"
   ],
   "2501735950": [
     "2nd Middlesex"
@@ -694,6 +741,7 @@
   ],
   "2501769415": [
     "17th Middlesex",
+    "18th Essex",
     "19th Middlesex"
   ],
   "2501770360": [
@@ -703,7 +751,8 @@
     "36th Middlesex"
   ],
   "2501772215": [
-    "32nd Middlesex"
+    "32nd Middlesex",
+    "9th Essex"
   ],
   "2501772600": [
     "10th Middlesex",
@@ -719,6 +768,9 @@
   ],
   "2501776135": [
     "2nd Middlesex"
+  ],
+  "2501777255": [
+    "14th Norfolk"
   ],
   "2501780230": [
     "19th Middlesex"
@@ -740,20 +792,30 @@
   "2502102935": [
     "6th Norfolk"
   ],
+  "2502104930": [
+    "8th Worcester"
+  ],
   "2502107740": [
     "5th Norfolk"
   ],
   "2502109175": [
+    "12th Middlesex",
     "15th Norfolk"
   ],
   "2502111315": [
     "6th Norfolk"
+  ],
+  "2502114640": [
+    "3rd Plymouth"
   ],
   "2502116495": [
     "11th Norfolk"
   ],
   "2502117405": [
     "13th Norfolk"
+  ],
+  "2502124820": [
+    "1st Bristol"
   ],
   "2502125172": [
     "10th Norfolk"
@@ -767,9 +829,11 @@
     "9th Norfolk"
   ],
   "2502139975": [
-    "10th Norfolk"
+    "10th Norfolk",
+    "8th Worcester"
   ],
   "2502141515": [
+    "8th Middlesex",
     "9th Norfolk"
   ],
   "2502141690": [
@@ -822,6 +886,9 @@
   "2502182315": [
     "9th Norfolk"
   ],
+  "2502300000": [
+    "State House Districts not defined"
+  ],
   "2502300170": [
     "7th Plymouth"
   ],
@@ -863,11 +930,21 @@
   "2502333220": [
     "12th Plymouth"
   ],
+  "2502333920": [
+    "12th Bristol"
+  ],
+  "2502338540": [
+    "10th Bristol"
+  ],
   "2502338855": [
     "4th Plymouth",
     "6th Plymouth"
   ],
+  "2502339450": [
+    "10th Bristol"
+  ],
   "2502340850": [
+    "12th Bristol",
     "12th Plymouth",
     "2nd Plymouth"
   ],
@@ -885,6 +962,9 @@
   ],
   "2502354415": [
     "12th Plymouth"
+  ],
+  "2502357600": [
+    "10th Bristol"
   ],
   "2502357775": [
     "5th Plymouth"
@@ -935,6 +1015,9 @@
   "2502701885": [
     "2nd Worcester"
   ],
+  "2502702480": [
+    "2nd Franklin"
+  ],
   "2502702760": [
     "7th Worcester"
   ],
@@ -946,6 +1029,9 @@
   ],
   "2502706015": [
     "8th Worcester"
+  ],
+  "2502706365": [
+    "3rd Middlesex"
   ],
   "2502707525": [
     "12th Worcester"
@@ -981,6 +1067,9 @@
   "2502728740": [
     "5th Worcester"
   ],
+  "2502728950": [
+    "37th Middlesex"
+  ],
   "2502730560": [
     "1st Worcester"
   ],
@@ -1002,6 +1091,7 @@
     "4th Worcester"
   ],
   "2502737420": [
+    "1st Middlesex",
     "3rd Worcester"
   ],
   "2502740255": [
@@ -1039,8 +1129,17 @@
   "2502752420": [
     "1st Worcester"
   ],
+  "2502753120": [
+    "7th Hampden"
+  ],
+  "2502753225": [
+    "2nd Franklin"
+  ],
   "2502755395": [
     "1st Worcester"
+  ],
+  "2502758580": [
+    "2nd Franklin"
   ],
   "2502758825": [
     "1st Worcester"
@@ -1061,6 +1160,9 @@
   "2502767385": [
     "12th Worcester"
   ],
+  "2502768155": [
+    "1st Hampden"
+  ],
   "2502768610": [
     "18th Worcester"
   ],
@@ -1073,6 +1175,9 @@
   "2502771620": [
     "18th Worcester",
     "8th Worcester"
+  ],
+  "2502773090": [
+    "1st Hampden"
   ],
   "2502773895": [
     "18th Worcester"
@@ -1091,6 +1196,7 @@
     "1st Worcester"
   ],
   "2502780405": [
+    "2nd Franklin",
     "2nd Worcester"
   ],
   "2502782000": [

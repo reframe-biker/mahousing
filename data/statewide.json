@@ -718,7 +718,7 @@
       "production": "D",
       "affordability": "B",
       "votes": null,
-      "rep": null,
+      "rep": "A",
       "composite": "C"
     },
     "metrics": {
@@ -737,7 +737,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Susannah Whipps",
+        "district": "2nd Franklin",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -1142,7 +1155,7 @@
       "production": "C",
       "affordability": "B",
       "votes": null,
-      "rep": null,
+      "rep": "A",
       "composite": "C"
     },
     "metrics": {
@@ -1161,7 +1174,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Aaron Saunders",
+        "district": "7th Hampden",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -1175,7 +1201,7 @@
       "production": "B",
       "affordability": "C",
       "votes": null,
-      "rep": null,
+      "rep": "F",
       "composite": "C"
     },
     "metrics": {
@@ -1194,7 +1220,20 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Mike Soter",
+        "district": "8th Worcester",
+        "pct_score": 0.0,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -1562,8 +1601,8 @@
       "production": "F",
       "affordability": "D",
       "votes": null,
-      "rep": null,
-      "composite": "F"
+      "rep": "A",
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -1581,7 +1620,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Kate Hogan",
+        "district": "3rd Middlesex",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -2345,6 +2397,17 @@
     "mbta_deadline": "2023-12-31",
     "mbta_action_date": null,
     "reps": [
+      {
+        "name": "Greg Schwartz",
+        "district": "12th Middlesex",
+        "pct_score": 85.7,
+        "grade": "A",
+        "bills_scored": 4,
+        "bills_available": 4,
+        "sessions_scored": [
+          "194"
+        ]
+      },
       {
         "name": "Tommy Vitolo",
         "district": "15th Norfolk",
@@ -3254,8 +3317,8 @@
       "production": "F",
       "affordability": "F",
       "votes": null,
-      "rep": null,
-      "composite": "D"
+      "rep": "A",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -3273,7 +3336,20 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Joan Meschino",
+        "district": "3rd Plymouth",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -4277,8 +4353,8 @@
       "production": "D",
       "affordability": "C",
       "votes": null,
-      "rep": "F",
-      "composite": "D"
+      "rep": "A",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -4303,6 +4379,17 @@
         "pct_score": 0.0,
         "grade": "F",
         "bills_scored": 1,
+        "bills_available": 4,
+        "sessions_scored": [
+          "194"
+        ]
+      },
+      {
+        "name": "Bridget Plouffe",
+        "district": "9th Plymouth",
+        "pct_score": 85.7,
+        "grade": "A",
+        "bills_scored": 4,
         "bills_available": 4,
         "sessions_scored": [
           "194"
@@ -4502,6 +4589,18 @@
       {
         "name": "Joe McGonagle",
         "district": "28th Middlesex",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
+      {
+        "name": "Danny Ryan",
+        "district": "2nd Suffolk",
         "pct_score": 90.5,
         "grade": "A",
         "bills_scored": 11,
@@ -4777,7 +4876,7 @@
       "production": "F",
       "affordability": "D",
       "votes": null,
-      "rep": null,
+      "rep": "F",
       "composite": "D"
     },
     "metrics": {
@@ -4796,7 +4895,19 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Mike Chaisson",
+        "district": "1st Bristol",
+        "pct_score": 0.0,
+        "grade": "F",
+        "bills_scored": 4,
+        "bills_available": 4,
+        "sessions_scored": [
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -5965,7 +6076,7 @@
       "production": "D",
       "affordability": "D",
       "votes": null,
-      "rep": null,
+      "rep": "A",
       "composite": "C"
     },
     "metrics": {
@@ -5984,7 +6095,20 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Dan Sena",
+        "district": "37th Middlesex",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -6776,7 +6900,7 @@
       "production": "D",
       "affordability": "A",
       "votes": null,
-      "rep": null,
+      "rep": "F",
       "composite": "C"
     },
     "metrics": {
@@ -6795,7 +6919,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Nick Boldyga",
+        "district": "3rd Hampden",
+        "pct_score": 0.0,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -6901,7 +7038,7 @@
       "production": "B",
       "affordability": "C",
       "votes": null,
-      "rep": null,
+      "rep": "F",
       "composite": "C"
     },
     "metrics": {
@@ -6920,7 +7057,20 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Norm Orrall",
+        "district": "12th Bristol",
+        "pct_score": 0.0,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -7457,6 +7607,18 @@
           "193",
           "194"
         ]
+      },
+      {
+        "name": "Alice Peisch",
+        "district": "14th Norfolk",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
       }
     ],
     "updated_at": "2026-03-17"
@@ -7700,6 +7862,18 @@
     "mbta_action_date": null,
     "reps": [
       {
+        "name": "Margaret Scarsdale",
+        "district": "1st Middlesex",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
+      {
         "name": "Mike Kushmerek",
         "district": "3rd Worcester",
         "pct_score": 90.5,
@@ -7806,8 +7980,8 @@
       "production": "D",
       "affordability": "D",
       "votes": null,
-      "rep": null,
-      "composite": "C"
+      "rep": "F",
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -7825,7 +7999,20 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Brad Jones",
+        "district": "20th Middlesex",
+        "pct_score": 14.3,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -8045,8 +8232,8 @@
       "production": "D",
       "affordability": "C",
       "votes": null,
-      "rep": null,
-      "composite": "D"
+      "rep": "A",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8064,7 +8251,19 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Mark Sylvia",
+        "district": "10th Bristol",
+        "pct_score": 85.7,
+        "grade": "A",
+        "bills_scored": 4,
+        "bills_available": 4,
+        "sessions_scored": [
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -8239,7 +8438,7 @@
       "production": "A",
       "affordability": "C",
       "votes": null,
-      "rep": null,
+      "rep": "A",
       "composite": "C"
     },
     "metrics": {
@@ -8258,7 +8457,19 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Mark Sylvia",
+        "district": "10th Bristol",
+        "pct_score": 85.7,
+        "grade": "A",
+        "bills_scored": 4,
+        "bills_available": 4,
+        "sessions_scored": [
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -8476,6 +8687,18 @@
           "193",
           "194"
         ]
+      },
+      {
+        "name": "Mike Soter",
+        "district": "8th Worcester",
+        "pct_score": 0.0,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
       }
     ],
     "updated_at": "2026-03-17"
@@ -8662,8 +8885,8 @@
       "production": "C",
       "affordability": "C",
       "votes": null,
-      "rep": "A",
-      "composite": "B"
+      "rep": "F",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 39.1,
@@ -8682,6 +8905,18 @@
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
     "reps": [
+      {
+        "name": "Norm Orrall",
+        "district": "12th Bristol",
+        "pct_score": 0.0,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
       {
         "name": "Kathy LaNatra",
         "district": "12th Plymouth",
@@ -8719,8 +8954,8 @@
       "production": "A",
       "affordability": "A",
       "votes": null,
-      "rep": null,
-      "composite": "B"
+      "rep": "F",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8738,7 +8973,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Nick Boldyga",
+        "district": "3rd Hampden",
+        "pct_score": 0.0,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -8777,6 +9025,18 @@
         "district": "13th Essex",
         "pct_score": 85.7,
         "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
+      {
+        "name": "Brad Jones",
+        "district": "20th Middlesex",
+        "pct_score": 14.3,
+        "grade": "F",
         "bills_scored": 11,
         "bills_available": 11,
         "sessions_scored": [
@@ -8890,8 +9150,8 @@
       "production": "A",
       "affordability": "C",
       "votes": null,
-      "rep": "D",
-      "composite": "C"
+      "rep": "A",
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8910,6 +9170,18 @@
     "mbta_deadline": "2024-12-31",
     "mbta_action_date": null,
     "reps": [
+      {
+        "name": "James Arena-DeRosa",
+        "district": "8th Middlesex",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
       {
         "name": "Marcus Vaughn",
         "district": "9th Norfolk",
@@ -9685,7 +9957,7 @@
       "production": "A",
       "affordability": "B",
       "votes": null,
-      "rep": null,
+      "rep": "A",
       "composite": "A"
     },
     "metrics": {
@@ -9704,7 +9976,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Aaron Saunders",
+        "district": "7th Hampden",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -10945,8 +11230,8 @@
       "production": "F",
       "affordability": "C",
       "votes": null,
-      "rep": null,
-      "composite": "D"
+      "rep": "A",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -10964,7 +11249,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Aaron Saunders",
+        "district": "7th Hampden",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -11127,8 +11425,8 @@
       "production": "F",
       "affordability": "B",
       "votes": null,
-      "rep": null,
-      "composite": "D"
+      "rep": "A",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -11146,7 +11444,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Aaron Saunders",
+        "district": "7th Hampden",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -11160,8 +11471,8 @@
       "production": "C",
       "affordability": "B",
       "votes": null,
-      "rep": null,
-      "composite": "C"
+      "rep": "A",
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -11179,7 +11490,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Susannah Whipps",
+        "district": "2nd Franklin",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -11651,7 +11975,7 @@
       "production": "D",
       "affordability": "C",
       "votes": null,
-      "rep": null,
+      "rep": "C",
       "composite": "C"
     },
     "metrics": {
@@ -11670,7 +11994,19 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Dennis Gallagher",
+        "district": "8th Plymouth",
+        "pct_score": 57.1,
+        "grade": "C",
+        "bills_scored": 4,
+        "bills_available": 4,
+        "sessions_scored": [
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -11891,7 +12227,7 @@
       "production": "C",
       "affordability": "C",
       "votes": null,
-      "rep": null,
+      "rep": "A",
       "composite": "B"
     },
     "metrics": {
@@ -11910,7 +12246,19 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-12-31",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Mark Sylvia",
+        "district": "10th Bristol",
+        "pct_score": 85.7,
+        "grade": "A",
+        "bills_scored": 4,
+        "bills_available": 4,
+        "sessions_scored": [
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -12082,8 +12430,8 @@
       "production": "B",
       "affordability": "A",
       "votes": null,
-      "rep": null,
-      "composite": "C"
+      "rep": "A",
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -12101,7 +12449,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Susannah Whipps",
+        "district": "2nd Franklin",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -12390,8 +12751,8 @@
       "production": "F",
       "affordability": "D",
       "votes": null,
-      "rep": "F",
-      "composite": "D"
+      "rep": "A",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 2.8,
@@ -12410,6 +12771,18 @@
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
     "reps": [
+      {
+        "name": "Jessica Giannino",
+        "district": "16th Suffolk",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
       {
         "name": "Donald Wong",
         "district": "9th Essex",
@@ -12836,8 +13209,8 @@
       "production": "C",
       "affordability": "B",
       "votes": null,
-      "rep": null,
-      "composite": "C"
+      "rep": "A",
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -12855,7 +13228,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Aaron Saunders",
+        "district": "7th Hampden",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -13029,8 +13415,8 @@
       "production": "F",
       "affordability": "B",
       "votes": null,
-      "rep": null,
-      "composite": "C"
+      "rep": "F",
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -13048,7 +13434,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Kelly Pease",
+        "district": "4th Hampden",
+        "pct_score": 14.3,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -13592,8 +13991,8 @@
       "production": "C",
       "affordability": "B",
       "votes": null,
-      "rep": null,
-      "composite": "C"
+      "rep": "F",
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -13611,7 +14010,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Todd Smola",
+        "district": "1st Hampden",
+        "pct_score": 14.3,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -13967,7 +14379,7 @@
       "production": "D",
       "affordability": "C",
       "votes": null,
-      "rep": "A",
+      "rep": "B",
       "composite": "D"
     },
     "metrics": {
@@ -13992,6 +14404,18 @@
         "district": "17th Middlesex",
         "pct_score": 95.2,
         "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
+      {
+        "name": "Tram Nguyen",
+        "district": "18th Essex",
+        "pct_score": 76.2,
+        "grade": "B",
         "bills_scored": 11,
         "bills_available": 11,
         "sessions_scored": [
@@ -14479,6 +14903,18 @@
           "193",
           "194"
         ]
+      },
+      {
+        "name": "Donald Wong",
+        "district": "9th Essex",
+        "pct_score": 14.3,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
       }
     ],
     "updated_at": "2026-03-17"
@@ -14680,8 +15116,8 @@
       "production": "B",
       "affordability": "B",
       "votes": null,
-      "rep": null,
-      "composite": "B"
+      "rep": "F",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 99.3,
@@ -14699,7 +15135,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Todd Smola",
+        "district": "1st Hampden",
+        "pct_score": 14.3,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -14758,7 +15207,7 @@
       "production": "B",
       "affordability": "B",
       "votes": null,
-      "rep": null,
+      "rep": "F",
       "composite": "C"
     },
     "metrics": {
@@ -14777,7 +15226,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Todd Smola",
+        "district": "1st Hampden",
+        "pct_score": 14.3,
+        "grade": "F",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -15110,7 +15572,7 @@
       "production": "F",
       "affordability": "B",
       "votes": null,
-      "rep": null,
+      "rep": "A",
       "composite": "C"
     },
     "metrics": {
@@ -15129,7 +15591,20 @@
     "mbta_status": null,
     "mbta_deadline": null,
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Aaron Saunders",
+        "district": "7th Hampden",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -15760,8 +16235,8 @@
       "production": "D",
       "affordability": "F",
       "votes": null,
-      "rep": null,
-      "composite": "D"
+      "rep": "A",
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.2,
@@ -15779,7 +16254,20 @@
     "mbta_status": "compliant",
     "mbta_deadline": "2025-07-14",
     "mbta_action_date": null,
-    "reps": null,
+    "reps": [
+      {
+        "name": "Alice Peisch",
+        "district": "14th Norfolk",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      }
+    ],
     "updated_at": "2026-03-17"
   },
   {
@@ -16224,6 +16712,18 @@
     "mbta_deadline": null,
     "mbta_action_date": null,
     "reps": [
+      {
+        "name": "Susannah Whipps",
+        "district": "2nd Franklin",
+        "pct_score": 90.5,
+        "grade": "A",
+        "bills_scored": 11,
+        "bills_available": 11,
+        "sessions_scored": [
+          "193",
+          "194"
+        ]
+      },
       {
         "name": "Jon Zlotnik",
         "district": "2nd Worcester",

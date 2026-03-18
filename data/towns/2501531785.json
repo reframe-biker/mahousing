@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "A",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
@@ -28,6 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Nick Boldyga",
+      "district": "3rd Hampden",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
   "updated_at": "2026-03-17"
 }

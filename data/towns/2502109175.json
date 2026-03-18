@@ -30,6 +30,17 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Greg Schwartz",
+      "district": "12th Middlesex",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Tommy Vitolo",
       "district": "15th Norfolk",
       "pct_score": 90.5,

@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": null,
-    "composite": "F"
+    "rep": "A",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -28,6 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Kate Hogan",
+      "district": "3rd Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
   "updated_at": "2026-03-17"
 }

@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "F",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -28,6 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Joan Meschino",
+      "district": "3rd Plymouth",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
   "updated_at": "2026-03-17"
 }

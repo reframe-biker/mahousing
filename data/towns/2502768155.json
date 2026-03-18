@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "B",
     "votes": null,
-    "rep": null,
-    "composite": "C"
+    "rep": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -28,6 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Todd Smola",
+      "district": "1st Hampden",
+      "pct_score": 14.3,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
   "updated_at": "2026-03-17"
 }

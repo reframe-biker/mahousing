@@ -40,6 +40,18 @@
         "193",
         "194"
       ]
+    },
+    {
+      "name": "Danny Ryan",
+      "district": "2nd Suffolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
     }
   ],
   "updated_at": "2026-03-17"

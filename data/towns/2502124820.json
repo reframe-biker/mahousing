@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": null,
+    "rep": "F",
     "composite": "D"
   },
   "metrics": {
@@ -28,6 +28,18 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Mike Chaisson",
+      "district": "1st Bristol",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
+  ],
   "updated_at": "2026-03-17"
 }

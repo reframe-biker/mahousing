@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -28,6 +28,18 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Mark Sylvia",
+      "district": "10th Bristol",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
+  ],
   "updated_at": "2026-03-17"
 }

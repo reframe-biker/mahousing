@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "rep": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 39.1,
@@ -29,6 +29,18 @@
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
   "reps": [
+    {
+      "name": "Norm Orrall",
+      "district": "12th Bristol",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
     {
       "name": "Kathy LaNatra",
       "district": "12th Plymouth",
