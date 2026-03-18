@@ -178,9 +178,9 @@ If renter share data is unavailable, equal weights (0.5/0.5) are used as a fallb
 
 **Scope:** Phase 4a scores House representatives only. Senate uses a per-journal-date PDF format rather than combined annual PDFs — Senate scoring is Phase 4b.
 
-**What the grade measures:** The housing production voting record of each municipality's state House representative, scored across a curated set of roll call votes and co-sponsorship opportunities. The bill list (`data/legislator_bill_list.json`) is an editorial curation of the most significant housing production votes. New votes are never added automatically — every addition is a manual editorial decision.
+**What the grade measures:** The housing production voting record of each state House representative whose district overlaps the municipality, scored across a curated set of roll call votes and co-sponsorship opportunities. Municipalities with a single House district display one representative. Cities that span multiple districts (Boston: 16, Springfield: 5, Worcester: 5) display all representatives individually. The town-level rep grade is the median grade across all representatives — a town is not penalized for having one poor-scoring rep among many strong ones, nor rewarded for one strong rep among many poor ones. The bill list (`data/legislator_bill_list.json`) is an editorial curation of the most significant housing production votes. New votes are never added automatically — every addition is a manual editorial decision.
 
-**Geographic assignment:** Each municipality is assigned to a House district via a centroid-in-polygon spatial join between MA town centroids (from `data/ma-towns.geojson`) and Census TIGER SLDL 2024 district polygons (`data/tl_2024_25_sldl.shp`). The mapping is cached at `data/town_district_map.json` and rebuilt only when deleted (next redistricting ~2031).
+**Geographic assignment:** Each municipality is assigned to one or more House districts via an area-based spatial intersection between MA county subdivision boundaries (Census TIGER COUSUB 2024) and House district polygons (Census TIGER SLDL 2024). The intersection uses a tiered overlap threshold: same-county district assignments require at least 1% area overlap (preserving multi-district cities like Boston); cross-county district assignments require at least 15% area overlap (filtering boundary artifacts while preserving genuine cross-county districts like Bolton, a Worcester County town entirely within the 3rd Middlesex district). The mapping is cached at `data/town_district_map.json` and rebuilt only when deleted (next redistricting ~2031). Boston has 16 House districts; 79 of MA's 351 municipalities span more than one district.
 
 **Scoring formula:**
 
@@ -256,7 +256,7 @@ Representatives are scored only on votes that occurred during their term in offi
 
 ## Composite Grade
 
-The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions for which a municipality has a null grade are excluded from the composite calculation — they do not count as zeros. The weights assigned to each dimension, and the rationale for those weights, will be documented here before any composite grades are published.
+The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions for which a municipality has a null grade are excluded from the composite calculation — they do not count as zeros. For the legislator dimension, the town-level grade used in the composite is the median grade across all of the municipality's House representatives (A=4, B=3, C=2, D=1, F=0), using the lower median when the count is even. The weights assigned to each dimension, and the rationale for those weights, will be documented here before any composite grades are published.
 
 ---
 
