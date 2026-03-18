@@ -331,20 +331,6 @@ def main() -> None:
     logger.info("=" * 60)
 
 
-def _median_grade(reps: list[dict]) -> "Grade":
-    if not reps:
-        return None
-    grade_scores = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
-    scores = [grade_scores.get(r.get("grade", ""), 0) for r in reps
-              if r.get("grade") is not None]
-    if not scores:
-        return None
-    import math
-    median_score = sorted(scores)[math.floor(len(scores) / 2)]  # lower median
-    score_to_grade = {5: "A", 4: "B", 3: "C", 2: "D", 1: "F"}
-    return score_to_grade.get(median_score)
-
-
 def _build_record(row: pd.Series, today: str) -> dict:
     """Build a TownRecord dict from a merged DataFrame row."""
     pct_mf = _to_float(row.get("pct_land_multifamily_byright"))
@@ -371,8 +357,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "renter_share_pct": renter_share,
     }
 
-    grades = score_town(metrics, mbta_status=mbta_status)
-    grades["rep"] = _median_grade(reps) if reps else None
+    grades = score_town(metrics, mbta_status=mbta_status, reps=reps)
 
     # data_notes: zoning note from permits_proxy spike detection; others reserved
     data_notes = {

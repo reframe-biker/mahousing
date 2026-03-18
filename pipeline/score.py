@@ -62,7 +62,11 @@ _GRADE_TO_NUM: dict[str, float] = {"A": 4.0, "B": 3.0, "C": 2.0, "D": 1.0, "F": 
 _NUM_TO_GRADE: dict[int, str] = {4: "A", 3: "B", 2: "C", 1: "D", 0: "F"}
 
 
-def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
+def score_town(
+    metrics: dict,
+    mbta_status: str | None = None,
+    reps: list[dict] | None = None,
+) -> dict:
     """
     Compute letter grades for a single municipality given its raw metrics.
 
@@ -73,6 +77,8 @@ def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
         mbta_status: MBTA Communities Act compliance status string, or None.
                      "compliant" | "interim" | "non-compliant" | "pending" |
                      "exempt" | None.
+        reps: List of RepRecord dicts (from legislators.py), or None.
+              Used to derive the town-level rep grade via lower-median.
 
     Returns:
         Dict matching pipeline.schema.Grades. Keys: zoning, mbta, production,
@@ -92,7 +98,7 @@ def score_town(metrics: dict, mbta_status: str | None = None) -> dict:
     # votes: not implemented until Phase 4b
     votes = None
 
-    rep = _grade_rep(metrics.get("rep_pct_score"))
+    rep = _grade_rep_from_reps(reps)
 
     composite = _compute_composite([zoning, mbta, affordability, production, votes, rep])
 
@@ -241,28 +247,23 @@ def _grade_affordability(
     return "F"
 
 
-def _grade_rep(rep_pct_score: float | None) -> str | None:
+def _grade_rep_from_reps(reps: list[dict] | None) -> str | None:
     """
-    Grade a state representative's housing voting record.
-
-    A  ≥ 80%  — strongly pro-housing
-    B  60–79%
-    C  40–59%
-    D  20–39%
-    F  < 20%  — voted anti-housing on nearly all scored bills
-    null  rep not present for any scored vote (vacant seat, unmatched district)
+    Derive the town-level rep grade from the list of RepRecords.
+    Uses lower median: with N reps, takes sorted(grades)[floor(N/2)].
+    Returns None if reps is None or empty.
     """
-    if rep_pct_score is None:
+    if not reps:
         return None
-    if rep_pct_score >= 80:
-        return "A"
-    if rep_pct_score >= 60:
-        return "B"
-    if rep_pct_score >= 40:
-        return "C"
-    if rep_pct_score >= 20:
-        return "D"
-    return "F"
+    import math
+    grade_scores = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
+    scores = [grade_scores[r["grade"]] for r in reps
+              if r.get("grade") in grade_scores]
+    if not scores:
+        return None
+    median_score = sorted(scores)[math.floor(len(scores) / 2)]
+    score_to_grade = {4: "A", 3: "B", 2: "C", 1: "D", 0: "F"}
+    return score_to_grade[median_score]
 
 
 def _grade_production(permits_per_1000: float | None) -> str | None:

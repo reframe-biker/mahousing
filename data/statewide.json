@@ -11,7 +11,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -115,7 +115,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -275,7 +275,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -353,7 +353,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -399,7 +399,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -548,7 +548,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -594,7 +594,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -673,7 +673,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "B",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -856,7 +856,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 1.7,
@@ -948,7 +948,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 77.3,
@@ -1255,7 +1255,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -1301,7 +1301,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 75.0,
@@ -1517,7 +1517,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -1879,7 +1879,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.2,
@@ -1982,7 +1982,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -2028,7 +2028,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 3.8,
@@ -2074,7 +2074,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "B",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -2165,7 +2165,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -2211,7 +2211,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 10.4,
@@ -2326,7 +2326,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 12.9,
@@ -2533,7 +2533,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -2761,7 +2761,7 @@
       "affordability": "F",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.5,
@@ -2876,7 +2876,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 26.9,
@@ -2922,7 +2922,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -2968,7 +2968,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -3014,7 +3014,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -3060,7 +3060,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -3163,7 +3163,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -3209,7 +3209,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 47.2,
@@ -3321,7 +3321,7 @@
       "affordability": "F",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -3549,7 +3549,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -3595,7 +3595,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 22.0,
@@ -3674,7 +3674,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "B",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -3948,7 +3948,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -3994,7 +3994,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -4039,7 +4039,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.5,
@@ -4096,7 +4096,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "D",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -4142,7 +4142,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -4278,7 +4278,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -4356,7 +4356,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -4526,7 +4526,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 1.3,
@@ -4571,7 +4571,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "B",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 18.9,
@@ -4732,7 +4732,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -4984,7 +4984,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -5076,7 +5076,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -5155,7 +5155,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -5428,7 +5428,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -5532,7 +5532,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -5622,7 +5622,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -5771,7 +5771,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -5817,7 +5817,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -5999,7 +5999,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -6090,7 +6090,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 19.2,
@@ -6260,7 +6260,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -6363,7 +6363,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 4.7,
@@ -6409,7 +6409,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -6501,7 +6501,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -6547,7 +6547,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -6935,7 +6935,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -6981,7 +6981,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -7027,7 +7027,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -7097,7 +7097,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -7212,7 +7212,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -7427,7 +7427,7 @@
       "affordability": "F",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -7565,7 +7565,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 6.8,
@@ -7840,7 +7840,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8000,7 +8000,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8273,7 +8273,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 5.4,
@@ -8492,7 +8492,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 33.5,
@@ -8538,7 +8538,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8753,7 +8753,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8799,7 +8799,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -8937,7 +8937,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -9152,7 +9152,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -9197,7 +9197,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -9243,7 +9243,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -9288,7 +9288,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -9457,7 +9457,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -9503,7 +9503,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 10.3,
@@ -9641,7 +9641,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -9765,7 +9765,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -9811,7 +9811,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 5.5,
@@ -9925,7 +9925,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -10028,7 +10028,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 6.4,
@@ -10074,7 +10074,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "D",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -10120,7 +10120,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 37.9,
@@ -10166,7 +10166,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 58.4,
@@ -10316,7 +10316,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -10602,7 +10602,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -11082,7 +11082,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -11194,7 +11194,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -11526,7 +11526,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 40.1,
@@ -11743,7 +11743,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -11789,7 +11789,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 4.9,
@@ -11847,7 +11847,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -12116,7 +12116,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "F",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -12208,7 +12208,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 12.0,
@@ -12391,7 +12391,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 2.8,
@@ -12791,7 +12791,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -12985,7 +12985,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -13063,7 +13063,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 30.9,
@@ -13109,7 +13109,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "D"
+      "composite": "F"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -13259,7 +13259,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -13443,7 +13443,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -13751,7 +13751,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -13854,7 +13854,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "B"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 12.1,
@@ -13922,7 +13922,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -14059,7 +14059,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "A"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -14105,7 +14105,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -14300,7 +14300,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -14449,7 +14449,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -14495,7 +14495,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -14623,7 +14623,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 12.1,
@@ -14714,7 +14714,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "F",
-      "composite": "A"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 31.8,
@@ -14792,7 +14792,7 @@
       "affordability": "A",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -14916,7 +14916,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -15066,7 +15066,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -15144,7 +15144,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -15201,7 +15201,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 8.8,
@@ -15338,7 +15338,7 @@
       "affordability": "D",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -15383,7 +15383,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -15429,7 +15429,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -15565,7 +15565,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -15794,7 +15794,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "C",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -15885,7 +15885,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 8.5,
@@ -15975,7 +15975,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -16021,7 +16021,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -16067,7 +16067,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -16113,7 +16113,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -16205,7 +16205,7 @@
       "affordability": "B",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
@@ -16251,7 +16251,7 @@
       "affordability": "F",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -16355,7 +16355,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "F"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
@@ -16459,7 +16459,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 15.2,
@@ -16645,7 +16645,7 @@
       "affordability": "C",
       "votes": null,
       "rep": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
