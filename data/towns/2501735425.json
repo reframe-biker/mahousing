@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "F",
-    "affordability": "D",
+    "affordability": "F",
     "votes": null,
     "rep": "A",
-    "composite": "C"
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 1184800.0,
+    "median_home_value": 1465929.888026873,
     "rent_burden_pct": 56.1,
     "permits_per_1000_residents": 0.29,
-    "renter_share_pct": 35.7,
-    "rep_name": "Carmine Gentile",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 35.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Carmine Gentile",
+      "district": "13th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

@@ -236,22 +236,20 @@ def main() -> None:
         acs_df["mbta_action_date"] = None
 
     # Legislator scorecard — join on fips (geoid)
-    leg_cols = ["fips", "rep_name", "rep_pct_score", "rep_bills_scored", "rep_bills_available", "rep_sessions_scored"]
-    if not leg_df.empty and all(c in leg_df.columns for c in leg_cols):
+    if not leg_df.empty and "reps" in leg_df.columns:
         acs_df = acs_df.merge(
-            leg_df[leg_cols],
+            leg_df[["fips", "reps"]],
             left_on="geoid",
             right_on="fips",
             how="left",
-        ).drop(columns=["fips"], errors="ignore")
-        matched_leg = acs_df["rep_pct_score"].notna().sum()
+        ).drop(columns=["fips_y"], errors="ignore")
+        matched_leg = acs_df["reps"].apply(
+            lambda x: x is not None and len(x) > 0
+                if not isinstance(x, float) else False
+        ).sum()
         logger.info(f"  Legislators: {matched_leg}/{len(acs_df)} municipalities matched")
     else:
-        acs_df["rep_name"] = None
-        acs_df["rep_pct_score"] = None
-        acs_df["rep_bills_scored"] = None
-        acs_df["rep_bills_available"] = None
-        acs_df["rep_sessions_scored"] = None
+        acs_df["reps"] = None
 
     # ── Step 3: Derive computed metrics ───────────────────────────────────────
 
@@ -333,6 +331,20 @@ def main() -> None:
     logger.info("=" * 60)
 
 
+def _median_grade(reps: list[dict]) -> "Grade":
+    if not reps:
+        return None
+    grade_scores = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
+    scores = [grade_scores.get(r.get("grade", ""), 0) for r in reps
+              if r.get("grade") is not None]
+    if not scores:
+        return None
+    import math
+    median_score = sorted(scores)[math.floor(len(scores) / 2)]  # lower median
+    score_to_grade = {5: "A", 4: "B", 3: "C", 2: "D", 1: "F"}
+    return score_to_grade.get(median_score)
+
+
 def _build_record(row: pd.Series, today: str) -> dict:
     """Build a TownRecord dict from a merged DataFrame row."""
     pct_mf = _to_float(row.get("pct_land_multifamily_byright"))
@@ -344,15 +356,12 @@ def _build_record(row: pd.Series, today: str) -> dict:
     mbta_status = _to_str(row.get("mbta_status"))
     mbta_deadline = _to_str(row.get("mbta_deadline"))
     mbta_action_date = _to_str(row.get("mbta_action_date"))
-    rep_name = _to_str(row.get("rep_name"))
-    rep_pct_score = _to_float(row.get("rep_pct_score"))
-    rep_bills_scored = _to_int(row.get("rep_bills_scored"))
-    rep_bills_available = _to_int(row.get("rep_bills_available"))
-    _rep_sessions_raw = row.get("rep_sessions_scored")
-    if isinstance(_rep_sessions_raw, list):
-        rep_sessions_scored = _rep_sessions_raw
+
+    raw_reps = row.get("reps")
+    if isinstance(raw_reps, list) and len(raw_reps) > 0:
+        reps = raw_reps
     else:
-        rep_sessions_scored = None
+        reps = None
 
     metrics = {
         "pct_land_multifamily_byright": pct_mf,
@@ -360,13 +369,10 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "rent_burden_pct": rent_burden,
         "permits_per_1000_residents": permits_per_1000,
         "renter_share_pct": renter_share,
-        "rep_name": rep_name,
-        "rep_pct_score": rep_pct_score,
-        "rep_bills_scored": rep_bills_scored,
-        "rep_bills_available": rep_bills_available,
     }
 
     grades = score_town(metrics, mbta_status=mbta_status)
+    grades["rep"] = _median_grade(reps) if reps else None
 
     # data_notes: zoning note from permits_proxy spike detection; others reserved
     data_notes = {
@@ -387,7 +393,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "mbta_status": mbta_status,
         "mbta_deadline": mbta_deadline,
         "mbta_action_date": mbta_action_date,
-        "rep_sessions_scored": rep_sessions_scored,
+        "reps": reps,
         "updated_at": today,
     }
 

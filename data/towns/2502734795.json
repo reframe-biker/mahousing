@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "D",
-    "affordability": "A",
+    "affordability": "B",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "rep": "D",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 344500.0,
+    "median_home_value": 443595.2458955668,
     "rent_burden_pct": 19.9,
     "permits_per_1000_residents": 0.9,
-    "renter_share_pct": 14.6,
-    "rep_name": "David LeBoeuf",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 14.6
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,43 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2025-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "David LeBoeuf",
+      "district": "17th Worcester",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Donnie Berthiaume",
+      "district": "5th Worcester",
+      "pct_score": 23.8,
+      "grade": "D",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Paul Frost",
+      "district": "7th Worcester",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

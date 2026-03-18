@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 182700.0,
+    "median_home_value": 258513.8571477038,
     "rent_burden_pct": 45.8,
     "permits_per_1000_residents": 0.0,
-    "renter_share_pct": 38.9,
-    "rep_name": "John Barrett",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 38.9
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "John Barrett",
+      "district": "1st Berkshire",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

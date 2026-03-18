@@ -10,18 +10,14 @@
     "affordability": "D",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 5.5,
-    "median_home_value": 1136200.0,
+    "median_home_value": 1490203.476078879,
     "rent_burden_pct": 39.1,
     "permits_per_1000_residents": 3.18,
-    "renter_share_pct": 29.6,
-    "rep_name": "Greg Schwartz",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 29.6
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,41 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2023-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "John Lawn",
+      "district": "10th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Amy Sangiolo",
+      "district": "11th Middlesex",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
+      "name": "Greg Schwartz",
+      "district": "12th Middlesex",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

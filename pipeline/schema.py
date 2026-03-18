@@ -41,6 +41,24 @@ class Grades(TypedDict):
     composite: Grade       # Weighted composite of all applicable dimensions
 
 
+class RepRecord(TypedDict):
+    """Score record for a single House representative."""
+    name: str | None
+    """Full name of the representative."""
+    district: str
+    """House district name (e.g. '3rd Berkshire')."""
+    pct_score: float | None
+    """Percentage of pro-housing points earned (0-100)."""
+    grade: Grade
+    """Letter grade derived from pct_score."""
+    bills_scored: int | None
+    """Number of bills for which rep cast a scoreable vote."""
+    bills_available: int | None
+    """Total bills eligible for this rep given their term."""
+    sessions_scored: list[str] | None
+    """Session strings rep was scored in, e.g. ['193', '194']."""
+
+
 class Metrics(TypedDict):
     """
     Raw numeric metrics underlying the grades.
@@ -83,33 +101,6 @@ class Metrics(TypedDict):
     Sourced from US Census ACS table B25003.
     Range: 0.0–100.0.
     """
-
-    rep_name: str | None
-    """
-    Full name of the state House representative for this municipality's district.
-    None if no representative is assigned (vacancy, unmatched district).
-    """
-
-    rep_pct_score: float | None
-    """
-    Percentage of pro-housing points earned by the representative across all
-    scored bills (earned / max × 100). Range: 0.0–100.0.
-    None if the rep was not present for any scored vote.
-    """
-
-    rep_bills_scored: int | None
-    """
-    Number of bills in the bill list for which the rep cast a scoreable vote
-    (present and matched). A cosponsor bill always counts as scoreable.
-    None if the rep was not present for any scored vote.
-    """
-
-    rep_bills_available: int | None
-    """
-    Total number of bills in the legislator_bill_list.json at scoring time.
-    None if the rep was not present for any scored vote.
-    """
-
 
 class DataNotes(TypedDict):
     """
@@ -197,6 +188,13 @@ class TownRecord(TypedDict):
     """
     Date of the municipality's most recent action toward compliance
     (ISO date string YYYY-MM-DD), or None if no action taken or not applicable.
+    """
+
+    reps: list[RepRecord] | None
+    """
+    List of House representative score records for this municipality.
+    One entry per district that overlaps this town. None if no reps matched.
+    For most towns this is a one-element list. Cities like Boston have ~16.
     """
 
     updated_at: str

@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "B",
+    "rep": "A",
     "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 58.4,
-    "median_home_value": 860500.0,
+    "median_home_value": 914965.9345238524,
     "rent_burden_pct": 36.1,
     "permits_per_1000_residents": 1.47,
-    "renter_share_pct": 66.4,
-    "rep_name": "Erika Uyterhoeven",
-    "rep_pct_score": 61.9,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 66.4
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,43 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2023-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Mike Connolly",
+      "district": "26th Middlesex",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Erika Uyterhoeven",
+      "district": "27th Middlesex",
+      "pct_score": 61.9,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Christine Barber",
+      "district": "34th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

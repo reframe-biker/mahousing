@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "C",
+    "rep": null,
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 2.0,
-    "median_home_value": 466200.0,
+    "median_home_value": 624385.3780008946,
     "rent_burden_pct": 67.0,
     "permits_per_1000_residents": 0.93,
-    "renter_share_pct": 23.3,
-    "rep_name": "Dennis Gallagher",
-    "rep_pct_score": 57.1,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 23.3
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,6 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

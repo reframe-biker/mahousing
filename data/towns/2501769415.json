@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "F",
     "production": "D",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
-    "rep": "B",
+    "rep": "A",
     "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 502800.0,
+    "median_home_value": 658673.3309151755,
     "rent_burden_pct": 47.1,
     "permits_per_1000_residents": 1.16,
-    "renter_share_pct": 16.5,
-    "rep_name": "Tram Nguyen",
-    "rep_pct_score": 76.2,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 16.5
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,31 @@
   "mbta_status": "non-compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Vanna Howard",
+      "district": "17th Middlesex",
+      "pct_score": 95.2,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Dave Robertson",
+      "district": "19th Middlesex",
+      "pct_score": 9.5,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

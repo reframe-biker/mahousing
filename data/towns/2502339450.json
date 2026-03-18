@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": null,
     "production": "A",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "rep": null,
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 588000.0,
+    "median_home_value": 731529.2530714154,
     "rent_burden_pct": 27.8,
     "permits_per_1000_residents": 5.22,
-    "renter_share_pct": 17.5,
-    "rep_name": "Mark Sylvia",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 17.5
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,6 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 584400.0,
+    "median_home_value": 775204.2028613951,
     "rent_burden_pct": 57.4,
     "permits_per_1000_residents": 1.36,
-    "renter_share_pct": 19.9,
-    "rep_name": "Patrick Kearney",
-    "rep_pct_score": 81.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 19.9
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,30 @@
   "mbta_status": "interim",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Patrick Kearney",
+      "district": "4th Plymouth",
+      "pct_score": 81.0,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Ken Sweezey",
+      "district": "6th Plymouth",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

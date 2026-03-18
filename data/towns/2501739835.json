@@ -7,21 +7,17 @@
     "zoning": "C",
     "mbta": "A",
     "production": "F",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "rep": "A",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 9.4,
-    "median_home_value": 669600.0,
+    "median_home_value": 815972.653155818,
     "rent_burden_pct": 37.0,
     "permits_per_1000_residents": 0.11,
-    "renter_share_pct": 46.7,
-    "rep_name": "Paul Donato",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 46.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,43 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2023-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Sean Garballey",
+      "district": "23rd Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Christine Barber",
+      "district": "34th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Paul Donato",
+      "district": "35th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

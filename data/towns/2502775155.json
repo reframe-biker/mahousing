@@ -7,21 +7,17 @@
     "zoning": "C",
     "mbta": "A",
     "production": "F",
-    "affordability": "A",
+    "affordability": "B",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 8.8,
-    "median_home_value": 382400.0,
+    "median_home_value": 504562.0933484085,
     "rent_burden_pct": 24.5,
     "permits_per_1000_residents": 0.0,
-    "renter_share_pct": 21.2,
-    "rep_name": "Jim O'Day",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 21.2
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Jim O'Day",
+      "district": "14th Worcester",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

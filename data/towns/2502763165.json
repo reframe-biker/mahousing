@@ -7,21 +7,17 @@
     "zoning": "A",
     "mbta": "A",
     "production": "F",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 30.9,
-    "median_home_value": 740000.0,
+    "median_home_value": 929309.3728827937,
     "rent_burden_pct": 25.6,
     "permits_per_1000_residents": 0.38,
-    "renter_share_pct": 10.6,
-    "rep_name": "Kate Donaghue",
-    "rep_pct_score": 95.2,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 10.6
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Kate Donaghue",
+      "district": "19th Worcester",
+      "pct_score": 95.2,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 50.0,
-    "median_home_value": 557700.0,
+    "median_home_value": 625110.6361031224,
     "rent_burden_pct": 51.6,
     "permits_per_1000_residents": 4.09,
-    "renter_share_pct": 64.2,
-    "rep_name": "Joe McGonagle",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 64.2
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "interim",
   "mbta_deadline": "2023-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Joe McGonagle",
+      "district": "28th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

@@ -97,17 +97,21 @@ _DISAMBIGUATED_FAMILIES: frozenset[str] = frozenset(
 
 # ── Main entry point ──────────────────────────────────────────────────────────
 
+def _pct_to_grade(pct: float) -> str:
+    if pct >= 80: return "A"
+    if pct >= 60: return "B"
+    if pct >= 40: return "C"
+    if pct >= 20: return "D"
+    return "F"
+
+
 def get_legislator_data() -> pd.DataFrame:
     """
     Return a DataFrame with rep scorecard data for each MA municipality.
 
     Columns:
-        fips                (str)        10-digit town GEOID
-        rep_name            (str|None)   legislator full name
-        rep_pct_score       (float|None) 0–100 pct of pro-housing points earned
-        rep_bills_scored    (int|None)   number of bills with a scoreable vote
-        rep_bills_available (int|None)   number of bills eligible for this rep
-        rep_sessions_scored (list|None)  session strings rep was scored in
+        fips  (str)        10-digit town GEOID
+        reps  (list|None)  list of RepRecord dicts, or None if no reps matched
 
     Side effect: writes data/rollcall_inventory.json
     """
@@ -153,31 +157,32 @@ def get_legislator_data() -> pd.DataFrame:
 
     # ── Step 6: Map towns to scores via town_district_map ─────────────────────
     records: list[dict] = []
-    for fips, district in town_district_map.items():
-        if district is None or district not in scores:
-            records.append({
-                "fips": fips,
-                "rep_name": None,
-                "rep_pct_score": None,
-                "rep_bills_scored": None,
-                "rep_bills_available": None,
-                "rep_sessions_scored": None,
-            })
-        else:
-            score = scores[district]
-            records.append({
-                "fips": fips,
-                "rep_name": score["rep_name"],
-                "rep_pct_score": score["rep_pct_score"],
-                "rep_bills_scored": score["rep_bills_scored"],
-                "rep_bills_available": score["rep_bills_available"],
-                "rep_sessions_scored": score["rep_sessions_scored"],
-            })
+    for fips, districts in town_district_map.items():
+        rep_records = []
+        for district in districts:
+            if district in scores:
+                score = scores[district]
+                if score["rep_pct_score"] is not None:
+                    rep_records.append({
+                        "name": score["rep_name"],
+                        "district": district,
+                        "pct_score": score["rep_pct_score"],
+                        "grade": _pct_to_grade(score["rep_pct_score"]),
+                        "bills_scored": score["rep_bills_scored"],
+                        "bills_available": score["rep_bills_available"],
+                        "sessions_scored": score["rep_sessions_scored"],
+                    })
+        records.append({
+            "fips": fips,
+            "reps": rep_records if rep_records else None,
+        })
 
     df = pd.DataFrame(records)
-    scored = df["rep_pct_score"].notna().sum()
+    scored = df["reps"].apply(
+        lambda x: isinstance(x, list) and len(x) > 0
+    ).sum()
     logger.info(
-        f"Legislators: scored {scored}/{len(df)} towns "
+        f"Legislators: {scored}/{len(df)} towns have at least one scored rep "
         f"({len(df) - scored} null — vacancies or unmatched districts)"
     )
     return df
@@ -185,7 +190,7 @@ def get_legislator_data() -> pd.DataFrame:
 
 # ── Step 1: Town → district spatial join ─────────────────────────────────────
 
-def _ensure_town_district_map() -> dict[str, Optional[str]]:
+def _ensure_town_district_map() -> dict[str, list[str]]:
     """
     Load or build the town GEOID → House district name map.
 

@@ -7,21 +7,17 @@
     "zoning": null,
     "mbta": null,
     "production": "C",
-    "affordability": "A",
+    "affordability": "B",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "rep": null,
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 313100.0,
+    "median_home_value": 414980.4040972751,
     "rent_burden_pct": 29.0,
     "permits_per_1000_residents": 1.56,
-    "renter_share_pct": 8.8,
-    "rep_name": "Susannah Whipps",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 8.8
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,6 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

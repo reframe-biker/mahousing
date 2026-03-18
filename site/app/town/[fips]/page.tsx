@@ -159,11 +159,13 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
     dimension: "State legislator record",
     gradeKey: "rep",
     getMetric: (t) => {
-      if (t.metrics.rep_name === null) return null;
-      const score = t.metrics.rep_pct_score !== null
-        ? ` · ${Math.round(t.metrics.rep_pct_score as number)}%`
-        : "";
-      return `${t.metrics.rep_name as string}${score}`;
+      if (!t.reps || t.reps.length === 0) return null;
+      if (t.reps.length === 1) {
+        const rep = t.reps[0];
+        const score = rep.pct_score !== null ? ` · ${Math.round(rep.pct_score)}%` : "";
+        return `${rep.name}${score}`;
+      }
+      return `${t.reps.length} representatives`;
     },
     getExplanation: (t) => {
       const grade = t.grades.rep;
@@ -417,11 +419,11 @@ export default async function TownPage({
             const keyMetric = cfg.getMetric(town);
             const repCaveat = (() => {
               if (cfg.gradeKey !== "rep") return null;
-              const sessions = town.rep_sessions_scored;
-              if (!sessions) return null;
-              if (!sessions.includes("193")) {
-                return "Scored on 194th session votes only (took office Jan 2025)";
-              }
+              if (!town.reps || town.reps.length === 0) return null;
+              const allNew = town.reps.every(
+                (r) => !r.sessions_scored || !r.sessions_scored.includes("193")
+              );
+              if (allNew) return "Scored on 194th session votes only (took office Jan 2025)";
               return null;
             })();
             const note =
@@ -459,6 +461,56 @@ export default async function TownPage({
           })}
         </div>
       </section>
+
+      {/* State House representatives */}
+      {town.reps && town.reps.length > 0 && (
+        <section>
+          <h2 style={sectionHeadingStyle}>State House representatives</h2>
+          <div className="space-y-2">
+            {town.reps.map((rep) => {
+              const repConfig = rep.grade ? gradeConfig(rep.grade) : gradeConfig(null);
+              const caveat = rep.sessions_scored && !rep.sessions_scored.includes("193")
+                ? "194th session only"
+                : null;
+              return (
+                <div
+                  key={rep.district}
+                  className="flex items-center justify-between px-4 py-3 rounded-lg"
+                  style={{
+                    backgroundColor: "var(--bg-card)",
+                    border: "1px solid var(--border)",
+                  }}
+                >
+                  <div>
+                    <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
+                      {rep.name ?? "Vacant"}
+                    </p>
+                    <p className="text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>
+                      {rep.district}
+                      {caveat && <span className="ml-2 opacity-60">· {caveat}</span>}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {rep.pct_score !== null && (
+                      <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
+                        {Math.round(rep.pct_score)}%
+                      </span>
+                    )}
+                    {rep.grade && (
+                      <span
+                        className="font-mono text-sm font-bold w-8 h-8 flex items-center justify-center rounded"
+                        style={{ backgroundColor: repConfig.bg, color: repConfig.text }}
+                      >
+                        {rep.grade}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* Raw metrics */}
       <section>

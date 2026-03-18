@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 2.7,
-    "median_home_value": 422500.0,
+    "median_home_value": 540571.0358839169,
     "rent_burden_pct": 48.1,
     "permits_per_1000_residents": 0.06,
-    "renter_share_pct": 21.7,
-    "rep_name": "David DeCoste",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 21.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "David DeCoste",
+      "district": "5th Plymouth",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

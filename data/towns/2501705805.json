@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "A",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
     "rep": "F",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 519200.0,
+    "median_home_value": 681560.7110498603,
     "rent_burden_pct": 35.3,
     "permits_per_1000_residents": 5.95,
-    "renter_share_pct": 21.8,
-    "rep_name": "Marc Lombardo",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 10,
-    "rep_bills_available": 11
+    "renter_share_pct": 21.8
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Marc Lombardo",
+      "district": "22nd Middlesex",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 10,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

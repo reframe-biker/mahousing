@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
+    "rep": null,
     "composite": "C"
   },
   "metrics": {
@@ -17,11 +17,7 @@
     "median_home_value": 722000.0,
     "rent_burden_pct": 39.5,
     "permits_per_1000_residents": 0.26,
-    "renter_share_pct": 48.7,
-    "rep_name": "Steve Owens",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 48.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,6 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

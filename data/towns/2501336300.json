@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 409600.0,
+    "median_home_value": 517081.0329476984,
     "rent_burden_pct": 40.6,
     "permits_per_1000_residents": 0.06,
-    "renter_share_pct": 7.7,
-    "rep_name": "Brian Ashe",
-    "rep_pct_score": 76.2,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 7.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Brian Ashe",
+      "district": "2nd Hampden",
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

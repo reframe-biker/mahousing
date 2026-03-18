@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": "F",
+    "rep": "A",
     "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.5,
-    "median_home_value": 453700.0,
+    "median_home_value": 574242.9812850181,
     "rent_burden_pct": 47.4,
     "permits_per_1000_residents": 0.76,
-    "renter_share_pct": 18.8,
-    "rep_name": "Alyson Sullivan-Almeida",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 18.8
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,30 @@
   "mbta_status": "non-compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Alyson Sullivan-Almeida",
+      "district": "7th Plymouth",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Bridget Plouffe",
+      "district": "9th Plymouth",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

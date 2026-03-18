@@ -38,6 +38,23 @@ export interface Grades {
   composite: Grade;
 }
 
+export interface RepRecord {
+  /** Full name of the representative. */
+  name: string | null;
+  /** House district name (e.g. "3rd Berkshire"). */
+  district: string;
+  /** Percentage of pro-housing points earned (0-100). */
+  pct_score: number | null;
+  /** Letter grade derived from pct_score. */
+  grade: Grade;
+  /** Number of bills for which rep cast a scoreable vote. */
+  bills_scored: number | null;
+  /** Total bills eligible for this rep given their term. */
+  bills_available: number | null;
+  /** Session strings rep was scored in, e.g. ["193", "194"]. */
+  sessions_scored: string[] | null;
+}
+
 export interface Metrics {
   /**
    * Area-weighted share of residential zoned land where 3+ family housing is
@@ -72,31 +89,6 @@ export interface Metrics {
    * Source: US Census ACS 5-year estimates (B25003).
    */
   renter_share_pct: number | null;
-
-  /**
-   * Full name of the state House representative for this municipality's district.
-   * null if no representative is assigned (vacancy, unmatched district).
-   */
-  rep_name: string | null;
-
-  /**
-   * Percentage of pro-housing points earned by the representative across all
-   * scored bills (earned / max × 100). Range: 0–100.
-   * null if the rep was not present for any scored vote.
-   */
-  rep_pct_score: number | null;
-
-  /**
-   * Number of bills for which the rep cast a scoreable vote.
-   * null if the rep was not present for any scored vote.
-   */
-  rep_bills_scored: number | null;
-
-  /**
-   * Total number of bills in the legislator bill list at scoring time.
-   * null if the rep was not present for any scored vote.
-   */
-  rep_bills_available: number | null;
 
 }
 
@@ -177,11 +169,11 @@ export interface TownRecord {
   mbta_action_date: string | null;
 
   /**
-   * List of unique session strings for which the rep had at least one
-   * scoreable action. Examples: ["193", "194"] for a veteran,
-   * ["194"] for a 2025 entrant. null if not present for any scored vote.
+   * List of House representative score records for this municipality.
+   * One entry per district overlapping this town. null if no reps matched.
+   * Most towns have one entry. Cities like Boston have ~16.
    */
-  rep_sessions_scored: string[] | null;
+  reps: RepRecord[] | null;
 
   /** ISO 8601 date string of when this record was last updated by the pipeline (e.g., "2025-03-13"). */
   updated_at: string;

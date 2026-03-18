@@ -7,21 +7,17 @@
     "zoning": "C",
     "mbta": "A",
     "production": "A",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
     "rep": "A",
     "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 9.3,
-    "median_home_value": 563700.0,
+    "median_home_value": 689098.3715294367,
     "rent_burden_pct": 35.3,
     "permits_per_1000_residents": 5.83,
-    "renter_share_pct": 18.6,
-    "rep_name": "Joan Meschino",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 18.6
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Joan Meschino",
+      "district": "3rd Plymouth",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

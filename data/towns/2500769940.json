@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": null,
     "production": "B",
-    "affordability": "D",
+    "affordability": "F",
     "votes": null,
-    "rep": "A",
-    "composite": "C"
+    "rep": null,
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 929000.0,
+    "median_home_value": 1296518.7038709482,
     "rent_burden_pct": 41.2,
     "permits_per_1000_residents": 3.95,
-    "renter_share_pct": 35.7,
-    "rep_name": "Thomas Moakley",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 35.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,6 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

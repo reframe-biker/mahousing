@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "F",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
     "rep": "A",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.5,
-    "median_home_value": 548400.0,
+    "median_home_value": 676305.3752519478,
     "rent_burden_pct": 60.1,
     "permits_per_1000_residents": 0.38,
-    "renter_share_pct": 15.3,
-    "rep_name": "Meg Kilcoyne",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 15.3
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,31 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Meg Kilcoyne",
+      "district": "12th Worcester",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Kate Donaghue",
+      "district": "19th Worcester",
+      "pct_score": 95.2,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

@@ -7,21 +7,17 @@
     "zoning": null,
     "mbta": null,
     "production": "C",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 565600.0,
+    "median_home_value": 718160.4761049165,
     "rent_burden_pct": 65.5,
     "permits_per_1000_residents": 2.07,
-    "renter_share_pct": 29.0,
-    "rep_name": "Leigh Davis",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 29.0
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,18 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Leigh Davis",
+      "district": "3rd Berkshire",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

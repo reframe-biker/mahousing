@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "A",
-    "affordability": "D",
+    "affordability": "F",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 1152400.0,
+    "median_home_value": 1723467.5452593437,
     "rent_burden_pct": 30.9,
     "permits_per_1000_residents": 5.78,
-    "renter_share_pct": 5.8,
-    "rep_name": "Josh Tarsky",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 5.8
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,18 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2025-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Josh Tarsky",
+      "district": "13th Norfolk",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

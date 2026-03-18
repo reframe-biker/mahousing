@@ -7,21 +7,17 @@
     "zoning": "C",
     "mbta": "A",
     "production": "C",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 4.9,
-    "median_home_value": 518600.0,
+    "median_home_value": 601473.3994690398,
     "rent_burden_pct": 52.0,
     "permits_per_1000_residents": 1.93,
-    "renter_share_pct": 49.0,
-    "rep_name": "Jeff Turco",
-    "rep_pct_score": 81.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 49.0
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,31 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2023-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Jessica Giannino",
+      "district": "16th Suffolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Jeff Turco",
+      "district": "19th Suffolk",
+      "pct_score": 81.0,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

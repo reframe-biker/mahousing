@@ -10,18 +10,14 @@
     "affordability": "C",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 645700.0,
+    "median_home_value": 799941.3291165251,
     "rent_burden_pct": 49.7,
     "permits_per_1000_residents": 4.03,
-    "renter_share_pct": 26.9,
-    "rep_name": "Jenny Armini",
-    "rep_pct_score": 89.5,
-    "rep_bills_scored": 10,
-    "rep_bills_available": 11
+    "renter_share_pct": 26.9
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Jenny Armini",
+      "district": "8th Essex",
+      "pct_score": 89.5,
+      "grade": "A",
+      "bills_scored": 10,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

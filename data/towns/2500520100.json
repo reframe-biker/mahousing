@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
+    "rep": "F",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 498000.0,
+    "median_home_value": 674551.685978082,
     "rent_burden_pct": 52.5,
     "permits_per_1000_residents": 0.88,
-    "renter_share_pct": 23.0,
-    "rep_name": "Bridget Plouffe",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 23.0
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,18 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Lisa Field",
+      "district": "3rd Bristol",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "C",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "rep": "F",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 787300.0,
+    "median_home_value": 1072383.5755996592,
     "rent_burden_pct": 45.4,
     "permits_per_1000_residents": 1.87,
-    "renter_share_pct": 11.7,
-    "rep_name": "Ken Sweezey",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 11.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,18 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Ken Sweezey",
+      "district": "6th Plymouth",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

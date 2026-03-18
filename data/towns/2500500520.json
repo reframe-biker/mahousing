@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": "C",
-    "composite": "C"
+    "rep": "A",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 349800.0,
+    "median_home_value": 514138.2563113307,
     "rent_burden_pct": 62.9,
     "permits_per_1000_residents": 1.04,
-    "renter_share_pct": 12.6,
-    "rep_name": "Steven Ouellette",
-    "rep_pct_score": 57.1,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 12.6
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,29 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Mark Sylvia",
+      "district": "10th Bristol",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
+      "name": "Steven Ouellette",
+      "district": "8th Bristol",
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

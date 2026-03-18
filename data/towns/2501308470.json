@@ -10,18 +10,14 @@
     "affordability": "B",
     "votes": null,
     "rep": "F",
-    "composite": "D"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 355400.0,
+    "median_home_value": 421479.7399960212,
     "rent_burden_pct": 50.8,
     "permits_per_1000_residents": 1.89,
-    "renter_share_pct": 13.3,
-    "rep_name": "Todd Smola",
-    "rep_pct_score": 14.3,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 13.3
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Todd Smola",
+      "district": "1st Hampden",
+      "pct_score": 14.3,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": "F",
-    "composite": "D"
+    "rep": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 403800.0,
+    "median_home_value": 545721.4838292012,
     "rent_burden_pct": 39.7,
     "permits_per_1000_residents": 0.71,
-    "renter_share_pct": 20.7,
-    "rep_name": "Ron Mariano",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
-    "rep_bills_available": 4
+    "renter_share_pct": 20.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,30 @@
   "mbta_status": "interim",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Ron Mariano",
+      "district": "3rd Norfolk",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
+      "name": "Mark Cusack",
+      "district": "5th Norfolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

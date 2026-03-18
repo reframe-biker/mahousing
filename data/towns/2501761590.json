@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "D",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
     "rep": "A",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.5,
-    "median_home_value": 384200.0,
+    "median_home_value": 539589.6895943652,
     "rent_burden_pct": 53.4,
     "permits_per_1000_residents": 1.13,
-    "renter_share_pct": 21.5,
-    "rep_name": "Dan Sena",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 21.5
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Dan Sena",
+      "district": "37th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

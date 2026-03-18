@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 20.6,
-    "median_home_value": 442800.0,
+    "median_home_value": 568421.9142326216,
     "rent_burden_pct": 53.9,
     "permits_per_1000_residents": 3.78,
-    "renter_share_pct": 51.4,
-    "rep_name": "Sean Reid",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 51.4
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,54 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Dan Cahill",
+      "district": "10th Essex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Sean Reid",
+      "district": "11th Essex",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
+      "name": "Jenny Armini",
+      "district": "8th Essex",
+      "pct_score": 89.5,
+      "grade": "A",
+      "bills_scored": 10,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Donald Wong",
+      "district": "9th Essex",
+      "pct_score": 14.3,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

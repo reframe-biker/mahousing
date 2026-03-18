@@ -10,18 +10,14 @@
     "affordability": "C",
     "votes": null,
     "rep": "B",
-    "composite": "C"
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 584300.0,
+    "median_home_value": 765477.1102283226,
     "rent_burden_pct": 55.4,
     "permits_per_1000_residents": 1.45,
-    "renter_share_pct": 16.7,
-    "rep_name": "Chris Flanagan",
-    "rep_pct_score": 61.9,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 16.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Chris Flanagan",
+      "district": "1st Barnstable",
+      "pct_score": 61.9,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

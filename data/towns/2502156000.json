@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": "C",
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
@@ -17,11 +17,7 @@
     "median_home_value": 429000.0,
     "rent_burden_pct": 57.0,
     "permits_per_1000_residents": 0.26,
-    "renter_share_pct": 31.0,
-    "rep_name": "Richard Wells",
-    "rep_pct_score": 57.1,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 31.0
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,30 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Bruce Ayers",
+      "district": "1st Norfolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Richard Wells",
+      "district": "7th Norfolk",
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

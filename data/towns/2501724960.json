@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "B",
+    "rep": "A",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.3,
-    "median_home_value": 553200.0,
+    "median_home_value": 652294.132427038,
     "rent_burden_pct": 49.6,
     "permits_per_1000_residents": 0.52,
-    "renter_share_pct": 44.9,
-    "rep_name": "Jack Lewis",
-    "rep_pct_score": 76.2,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 44.9
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,43 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Danielle Gregoire",
+      "district": "4th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Priscila Sousa",
+      "district": "6th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Jack Lewis",
+      "district": "7th Middlesex",
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

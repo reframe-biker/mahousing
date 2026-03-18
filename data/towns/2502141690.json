@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 2.4,
-    "median_home_value": 838100.0,
+    "median_home_value": 1045796.432278818,
     "rent_burden_pct": 60.2,
     "permits_per_1000_residents": 0.21,
-    "renter_share_pct": 15.7,
-    "rep_name": "Richard Wells",
-    "rep_pct_score": 57.1,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 15.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,18 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Richard Wells",
+      "district": "7th Norfolk",
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

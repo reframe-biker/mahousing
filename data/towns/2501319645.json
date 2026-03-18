@@ -9,19 +9,15 @@
     "production": "F",
     "affordability": "B",
     "votes": null,
-    "rep": "B",
-    "composite": "C"
+    "rep": "A",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 318600.0,
+    "median_home_value": 410411.2422761109,
     "rent_burden_pct": 52.5,
     "permits_per_1000_residents": 0.49,
-    "renter_share_pct": 15.2,
-    "rep_name": "Brian Ashe",
-    "rep_pct_score": 76.2,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 15.2
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,31 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Angelo Puppolo",
+      "district": "12th Hampden",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Brian Ashe",
+      "district": "2nd Hampden",
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

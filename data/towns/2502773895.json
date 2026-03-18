@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 324800.0,
+    "median_home_value": 428213.03004560765,
     "rent_burden_pct": 51.1,
     "permits_per_1000_residents": 0.11,
-    "renter_share_pct": 41.0,
-    "rep_name": "Joe McKenna",
-    "rep_pct_score": 14.3,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 41.0
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Joe McKenna",
+      "district": "18th Worcester",
+      "pct_score": 14.3,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

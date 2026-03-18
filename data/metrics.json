@@ -47,35 +47,5 @@
     "source": "MA Dept of Housing and Community Development (DHCD)",
     "unit": "status",
     "higher_is_better": true
-  },
-  "rep_name": {
-    "label": "State representative",
-    "description": "Full name of the state House representative for this municipality's district. Sourced from Open States legislator data.",
-    "source": "Open States",
-    "unit": "text",
-    "higher_is_better": false
-  },
-  "rep_pct_score": {
-    "label": "Rep housing score",
-    "description": "Percentage of pro-housing points earned across 9 roll call votes and 2 co-sponsorship checks on housing production legislation. 100 = perfectly pro-housing record.",
-    "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
-    "unit": "percent",
-    "higher_is_better": true
-  },
-  "rep_bills_scored": {
-    "label": "Bills scored",
-    "description": "Number of scored actions for which the representative had a scoreable vote (present in roll call or cosponsor check ran successfully). Pipeline diagnostic \u2014 not displayed on town pages.",
-    "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
-    "unit": "count",
-    "higher_is_better": false,
-    "display": false
-  },
-  "rep_bills_available": {
-    "label": "Bills available",
-    "description": "Total number of scored actions in the legislator scoring list at the time of the most recent pipeline run. Pipeline diagnostic \u2014 not displayed on town pages.",
-    "source": "MA Legislature roll call PDFs; malegislature.gov CoSponsor API",
-    "unit": "count",
-    "higher_is_better": false,
-    "display": false
   }
 }

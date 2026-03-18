@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": null,
     "production": "C",
-    "affordability": "A",
+    "affordability": "B",
     "votes": null,
-    "rep": "F",
+    "rep": null,
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 373500.0,
+    "median_home_value": 496989.06692397833,
     "rent_burden_pct": 32.7,
     "permits_per_1000_residents": 2.03,
-    "renter_share_pct": 16.7,
-    "rep_name": "Todd Smola",
-    "rep_pct_score": 14.3,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 16.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,6 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

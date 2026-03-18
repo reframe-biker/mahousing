@@ -10,18 +10,14 @@
     "affordability": "C",
     "votes": null,
     "rep": "A",
-    "composite": "B"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 6.8,
-    "median_home_value": 362800.0,
+    "median_home_value": 471791.6536590771,
     "rent_burden_pct": 48.7,
     "permits_per_1000_residents": 1.01,
-    "renter_share_pct": 56.7,
-    "rep_name": "Tara Hong",
-    "rep_pct_score": 85.7,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 56.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,42 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Rodney Elliott",
+      "district": "16th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Vanna Howard",
+      "district": "17th Middlesex",
+      "pct_score": 95.2,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Tara Hong",
+      "district": "18th Middlesex",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

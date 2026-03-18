@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 424400.0,
+    "median_home_value": 557047.3063582703,
     "rent_burden_pct": 57.2,
     "permits_per_1000_residents": 0.5,
-    "renter_share_pct": 19.7,
-    "rep_name": "Colleen Garry",
-    "rep_pct_score": 14.3,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 19.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "non-compliant",
   "mbta_deadline": "2025-07-14",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Colleen Garry",
+      "district": "36th Middlesex",
+      "pct_score": 14.3,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

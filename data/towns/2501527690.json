@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 420100.0,
+    "median_home_value": 497566.1039172948,
     "rent_burden_pct": 37.0,
     "permits_per_1000_residents": 1.32,
-    "renter_share_pct": 25.6,
-    "rep_name": "Homar Gomez",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
-    "rep_bills_available": 4
+    "renter_share_pct": 25.6
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,18 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Homar Gomez",
+      "district": "2nd Hampshire",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

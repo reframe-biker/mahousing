@@ -10,18 +10,14 @@
     "affordability": "B",
     "votes": null,
     "rep": "F",
-    "composite": "B"
+    "composite": "A"
   },
   "metrics": {
     "pct_land_multifamily_byright": 31.8,
-    "median_home_value": 363600.0,
+    "median_home_value": 460671.53079655225,
     "rent_burden_pct": 46.2,
     "permits_per_1000_residents": 6.6,
-    "renter_share_pct": 22.7,
-    "rep_name": "John Gaskey",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 4,
-    "rep_bills_available": 4
+    "renter_share_pct": 22.7
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,18 @@
   "mbta_status": "interim",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "John Gaskey",
+      "district": "2nd Plymouth",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

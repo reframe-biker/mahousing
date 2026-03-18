@@ -9,19 +9,15 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": "F",
-    "composite": "D"
+    "rep": null,
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 861100.0,
+    "median_home_value": 1059994.5259414928,
     "rent_burden_pct": 70.1,
     "permits_per_1000_residents": 1.16,
-    "renter_share_pct": 14.6,
-    "rep_name": "Brad Jones",
-    "rep_pct_score": 14.3,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 14.6
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,6 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

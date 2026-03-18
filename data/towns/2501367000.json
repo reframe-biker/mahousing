@@ -10,18 +10,14 @@
     "affordability": "C",
     "votes": null,
     "rep": "A",
-    "composite": "C"
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 198500.0,
+    "median_home_value": 290167.47081368166,
     "rent_burden_pct": 53.3,
     "permits_per_1000_residents": 0.32,
-    "renter_share_pct": 52.2,
-    "rep_name": "Bud Williams",
-    "rep_pct_score": 88.2,
-    "rep_bills_scored": 9,
-    "rep_bills_available": 11
+    "renter_share_pct": 52.2
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,66 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Carlos Gonz\u00e1lez",
+      "district": "10th Hampden",
+      "pct_score": 86.7,
+      "grade": "A",
+      "bills_scored": 8,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Bud Williams",
+      "district": "11th Hampden",
+      "pct_score": 88.2,
+      "grade": "A",
+      "bills_scored": 9,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Angelo Puppolo",
+      "district": "12th Hampden",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Brian Ashe",
+      "district": "2nd Hampden",
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Orlando Ramos",
+      "district": "9th Hampden",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

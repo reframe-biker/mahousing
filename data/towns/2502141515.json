@@ -9,19 +9,15 @@
     "production": "A",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "rep": "D",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 504100.0,
+    "median_home_value": 685915.8027390853,
     "rent_burden_pct": 70.8,
     "permits_per_1000_residents": 8.76,
-    "renter_share_pct": 17.2,
-    "rep_name": "James Arena-DeRosa",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 17.2
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Marcus Vaughn",
+      "district": "9th Norfolk",
+      "pct_score": 28.6,
+      "grade": "D",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

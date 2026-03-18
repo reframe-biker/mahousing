@@ -14,14 +14,10 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 274000.0,
+    "median_home_value": 394887.3139954137,
     "rent_burden_pct": 20.6,
     "permits_per_1000_residents": 1.16,
-    "renter_share_pct": 12.5,
-    "rep_name": "Donnie Berthiaume",
-    "rep_pct_score": 23.8,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 12.5
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Donnie Berthiaume",
+      "district": "5th Worcester",
+      "pct_score": 23.8,
+      "grade": "D",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

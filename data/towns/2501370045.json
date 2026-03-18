@@ -7,21 +7,17 @@
     "zoning": null,
     "mbta": null,
     "production": "A",
-    "affordability": "A",
+    "affordability": "B",
     "votes": null,
     "rep": "F",
-    "composite": "B"
+    "composite": "A"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 311400.0,
+    "median_home_value": 403425.7418183191,
     "rent_burden_pct": 26.3,
     "permits_per_1000_residents": 6.71,
-    "renter_share_pct": 9.4,
-    "rep_name": "Nick Boldyga",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 9.4
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "Nick Boldyga",
+      "district": "3rd Hampden",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

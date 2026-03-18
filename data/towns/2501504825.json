@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": null,
     "production": "C",
-    "affordability": "A",
+    "affordability": "B",
     "votes": null,
-    "rep": "A",
+    "rep": null,
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 335900.0,
+    "median_home_value": 457923.89645888726,
     "rent_burden_pct": 47.3,
     "permits_per_1000_residents": 1.83,
-    "renter_share_pct": 15.5,
-    "rep_name": "Aaron Saunders",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 15.5
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,6 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
-  ],
+  "reps": null,
   "updated_at": "2026-03-17"
 }

@@ -9,19 +9,15 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "rep": "F",
+    "rep": "B",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 14.1,
-    "median_home_value": 621100.0,
+    "median_home_value": 786980.4550135317,
     "rent_burden_pct": 50.2,
     "permits_per_1000_residents": 0.23,
-    "renter_share_pct": 30.4,
-    "rep_name": "Adrianne Ramos",
-    "rep_pct_score": 0.0,
-    "rep_bills_scored": 1,
-    "rep_bills_available": 4
+    "renter_share_pct": 30.4
   },
   "data_notes": {
     "zoning": null,
@@ -32,8 +28,30 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "194"
+  "reps": [
+    {
+      "name": "Adrianne Ramos",
+      "district": "14th Essex",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
+      "name": "Tram Nguyen",
+      "district": "18th Essex",
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }

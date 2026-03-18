@@ -7,21 +7,17 @@
     "zoning": "F",
     "mbta": "A",
     "production": "D",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "rep": "A",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.3,
-    "median_home_value": 710100.0,
+    "median_home_value": 872748.1351496602,
     "rent_burden_pct": 40.6,
     "permits_per_1000_residents": 0.71,
-    "renter_share_pct": 32.0,
-    "rep_name": "David Linsky",
-    "rep_pct_score": 90.5,
-    "rep_bills_scored": 11,
-    "rep_bills_available": 11
+    "renter_share_pct": 32.0
   },
   "data_notes": {
     "zoning": null,
@@ -32,9 +28,19 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "rep_sessions_scored": [
-    "193",
-    "194"
+  "reps": [
+    {
+      "name": "David Linsky",
+      "district": "5th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
   ],
   "updated_at": "2026-03-17"
 }
