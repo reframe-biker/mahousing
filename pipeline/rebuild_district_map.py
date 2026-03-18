@@ -158,8 +158,7 @@ def main() -> None:
     fallback_geoids = all_geoids - kept_geoids
 
     if fallback_geoids:
-        print(f"  Warning: {len(fallback_geoids)} town(s) had no district above "
-              f"{MIN_OVERLAP_FRACTION:.0%} threshold — using best-overlap fallback:")
+        print(f"  Warning: {len(fallback_geoids)} town(s) had no district above threshold — using best-overlap fallback:")
         fallback_rows = []
         for geoid in sorted(fallback_geoids):
             candidates = joined[joined["GEOID_1"].astype(str) == geoid]
