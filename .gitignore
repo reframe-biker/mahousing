@@ -45,3 +45,5 @@ data/MA_Zoning_Atlas_2023.geojson.gz
 data/rollcall_cache/*.pdf
 data/tl_2024_25_sldl.*
 .claude/
+data/tl_2024_25_cousub.*
+data/tl_2024_25_sldu.*
