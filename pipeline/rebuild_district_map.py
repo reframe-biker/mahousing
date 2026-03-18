@@ -109,40 +109,54 @@ def main() -> None:
     joined["intersect_area"] = joined.geometry.area
 
     # Fraction of the place's total area covered by this district
-    joined = joined.merge(
-        places[["GEOID", "place_area"]].rename(columns={"GEOID": "GEOID_place"}),
-        on="GEOID_place",
-        how="left",
-    )
+    # place_area carries through the overlay — no re-merge needed
     joined["overlap_frac"] = joined["intersect_area"] / joined["place_area"]
+
+    # ── County consistency filter ─────────────────────────────────────────────
+    # Drop rows where the district's county doesn't match the municipality's
+    # county. These are boundary artifacts (shared edges), not real assignments.
+    # Exception: "Barnstable, Dukes and Nantucket" spans all three island counties.
+    COUNTY_FIPS_TO_NAME = {
+        "001": "Barnstable",
+        "003": "Berkshire",
+        "005": "Bristol",
+        "007": "Dukes",
+        "009": "Essex",
+        "011": "Franklin",
+        "013": "Hampden",
+        "015": "Hampshire",
+        "017": "Middlesex",
+        "019": "Nantucket",
+        "021": "Norfolk",
+        "023": "Plymouth",
+        "025": "Suffolk",
+        "027": "Worcester",
+    }
+
+    def _county_match(row) -> bool:
+        district_name = str(row["NAMELSAD_2"])
+        if "Barnstable, Dukes and Nantucket" in district_name:
+            return True
+        county_fips = str(row["COUNTYFP"]).zfill(3)
+        expected = COUNTY_FIPS_TO_NAME.get(county_fips)
+        return expected is not None and expected in district_name
+
+    joined = joined[joined.apply(_county_match, axis=1)]
 
     # Drop slivers
     joined = joined[joined["overlap_frac"] >= MIN_OVERLAP_FRACTION]
 
-    # Clean district name
-    joined["district_name"] = joined["NAMELSAD"].apply(_clean_district_name)
-
     # ── Build the output map ──────────────────────────────────────────────────
     print("Building output map...")
 
-    # Full 10-digit place GEOID: state(2) + county(3) + place(5)
-    # The TIGER place file GEOID field is already the full 7-digit place code.
-    # Prepend state FIPS "25" to get the 10-digit key matching the existing map.
-    # Actually: Census place GEOIDs in the place shapefile are already 7 chars
-    # (state 2 + place 5). The existing map keys are 10 chars. Let's check:
-    # existing key example: "2500103690" = "25" + "001" + "03690"?
-    # That looks like state(2) + county(3) + tract(5) ... but there are exactly
-    # 351 = number of MA municipalities. So they must be place GEOIDs.
-    # Census place GEOID = state(2) + place(5) = 7 digits. But keys are 10 digits.
-    # The extra 3 digits suggest these are COUSUB (county subdivision) GEOIDs:
-    # state(2) + county(3) + cousub(5) = 10 digits. Use COUSUB shapefile instead
-    # if place shapefile GEOIDs don't match. See note at bottom.
+    # After gpd.overlay(), duplicate column names are suffixed _1 (places) and _2 (districts).
+    # GEOID_1 = COUSUB GEOID (10-digit: state+county+cousub), NAMELSAD_2 = district name.
 
     district_map: dict[str, list[str]] = {}
 
     for _, row in joined.iterrows():
-        geoid = str(row.get("GEOID_place", row.get("GEOID", "")))
-        district = row["district_name"]
+        geoid = str(row["GEOID_1"])
+        district = _clean_district_name(str(row["NAMELSAD_2"]))
         if geoid not in district_map:
             district_map[geoid] = []
         if district not in district_map[geoid]:
