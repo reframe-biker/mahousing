@@ -40,13 +40,13 @@ Grading rubrics for Phase 1 dimensions:
                  Exempt MBTA towns (null mbta grade) are excluded from composite.
                  A=4, B=3, C=2, D=1, F=0. Rounded to nearest integer.
 
-  rep            (rep_pct_score — pct of pro-housing points earned by district rep)
+  legislators    (pooled lower-median of all reps + sens)
     A  ≥ 80%    — strongly pro-housing
     B  60–79%
     C  40–59%
     D  20–39%
     F  < 20%    — voted anti-housing on nearly all scored bills
-    null  rep not present for any scored vote (vacancy or unmatched district)
+    null  no legislators present for any scored vote
 
 Phase 4 dimension (votes) is not scored here; it returns None.
 """
@@ -66,6 +66,7 @@ def score_town(
     metrics: dict,
     mbta_status: str | None = None,
     reps: list[dict] | None = None,
+    sens: list[dict] | None = None,
 ) -> dict:
     """
     Compute letter grades for a single municipality given its raw metrics.
@@ -78,11 +79,13 @@ def score_town(
                      "compliant" | "interim" | "non-compliant" | "pending" |
                      "exempt" | None.
         reps: List of RepRecord dicts (from legislators.py), or None.
-              Used to derive the town-level rep grade via lower-median.
+        sens: List of SenRecord dicts (from senate_rollcall_fetcher.py), or None.
+              reps and sens are pooled together to derive the town-level
+              legislators grade via lower-median across the combined set.
 
     Returns:
         Dict matching pipeline.schema.Grades. Keys: zoning, mbta, production,
-        affordability, votes, rep, composite.
+        affordability, votes, legislators, composite.
         Any dimension without data returns None (not "F").
         Exempt MBTA towns get None for mbta grade (excluded from composite).
     """
@@ -98,9 +101,9 @@ def score_town(
     # votes: not implemented until Phase 4b
     votes = None
 
-    rep = _grade_rep_from_reps(reps)
+    legislators = _grade_legislators(reps, sens)
 
-    composite = _compute_composite([zoning, mbta, affordability, production, votes, rep])
+    composite = _compute_composite([zoning, mbta, affordability, production, votes, legislators])
 
     return {
         "zoning": zoning,
@@ -108,7 +111,7 @@ def score_town(
         "production": production,
         "affordability": affordability,
         "votes": votes,
-        "rep": rep,
+        "legislators": legislators,
         "composite": composite,
     }
 
@@ -247,17 +250,27 @@ def _grade_affordability(
     return "F"
 
 
-def _grade_rep_from_reps(reps: list[dict] | None) -> str | None:
+def _grade_legislators(
+    reps: list[dict] | None,
+    sens: list[dict] | None,
+) -> str | None:
     """
-    Derive the town-level rep grade from the list of RepRecords.
-    Uses lower median: with N reps, takes sorted(grades)[floor(N/2)].
-    Returns None if reps is None or empty.
+    Derive the town-level legislators grade from the combined pool of
+    RepRecords and SenRecords.
+
+    Uses lower median: with N legislators, takes sorted(grades)[floor(N/2)].
+    Returns None if both reps and sens are None or empty.
     """
-    if not reps:
-        return None
     import math
+    combined: list[dict] = []
+    if reps:
+        combined.extend(reps)
+    if sens:
+        combined.extend(sens)
+    if not combined:
+        return None
     grade_scores = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
-    scores = [grade_scores[r["grade"]] for r in reps
+    scores = [grade_scores[r["grade"]] for r in combined
               if r.get("grade") in grade_scores]
     if not scores:
         return None

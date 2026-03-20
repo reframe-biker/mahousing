@@ -37,7 +37,7 @@ class Grades(TypedDict):
     production: Grade      # Housing Production rate (Census Building Permits)
     affordability: Grade   # Affordability burden (Census ACS + Zillow)
     votes: Grade           # Town Meeting voting record on housing articles
-    rep: Grade             # State legislator housing vote record (future phase)
+    legislators: Grade     # State legislator housing vote record (House + Senate combined)
     composite: Grade       # Weighted composite of all applicable dimensions
 
 
@@ -57,6 +57,24 @@ class RepRecord(TypedDict):
     """Total bills eligible for this rep given their term."""
     sessions_scored: list[str] | None
     """Session strings rep was scored in, e.g. ['193', '194']."""
+
+
+class SenRecord(TypedDict):
+    """Score record for a single Senate senator."""
+    name: str | None
+    """Full name of the senator."""
+    district: str
+    """Senate district name (e.g. 'Cape and Islands')."""
+    pct_score: float | None
+    """Percentage of pro-housing points earned (0-100)."""
+    grade: Grade
+    """Letter grade derived from pct_score."""
+    bills_scored: int | None
+    """Number of bills for which senator cast a scoreable vote."""
+    bills_available: int | None
+    """Total bills eligible for this senator given their term."""
+    sessions_scored: list[str] | None
+    """Session strings senator was scored in, e.g. ['193', '194']."""
 
 
 class Metrics(TypedDict):
@@ -195,6 +213,13 @@ class TownRecord(TypedDict):
     List of House representative score records for this municipality.
     One entry per district that overlaps this town. None if no reps matched.
     For most towns this is a one-element list. Cities like Boston have ~16.
+    """
+
+    sens: list[SenRecord] | None
+    """
+    List of Senate senator score records for this municipality.
+    One entry per Senate district that overlaps this town. None if no senators matched.
+    Most towns have one senator. Cities like Boston have 6.
     """
 
     updated_at: str

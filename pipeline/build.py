@@ -39,6 +39,7 @@ from pipeline.ingest.dhcd_mbta import get_mbta_data
 from pipeline.ingest.zillow import fetch_zillow_data
 from pipeline.ingest.zoning import get_zoning_data
 from pipeline.ingest.legislators import get_legislator_data
+from pipeline.ingest.senate_rollcall_fetcher import get_senate_data
 from pipeline.ingest.new_vote_notifier import check_for_new_pdfs
 from pipeline.metrics import METRICS
 from pipeline.score import score_town
@@ -120,6 +121,7 @@ def main() -> None:
     _name_to_fips = dict(zip(acs_df["name"], acs_df["geoid"].astype(str)))
     mbta_df = _safe_fetch("DHCD MBTA", get_mbta_data, _name_to_fips)
     leg_df = _safe_fetch("Legislators", get_legislator_data)
+    sen_df = _safe_fetch("Senate", get_senate_data)
 
     # ── Step 2: Join ──────────────────────────────────────────────────────────
 
@@ -251,6 +253,22 @@ def main() -> None:
     else:
         acs_df["reps"] = None
 
+    # Senate scorecard — join on fips (geoid)
+    if not sen_df.empty and "sens" in sen_df.columns:
+        acs_df = acs_df.merge(
+            sen_df[["fips", "sens"]],
+            left_on="geoid",
+            right_on="fips",
+            how="left",
+        ).drop(columns=["fips_y"], errors="ignore")
+        matched_sen = acs_df["sens"].apply(
+            lambda x: x is not None and len(x) > 0
+                if not isinstance(x, float) else False
+        ).sum()
+        logger.info(f"  Senate: {matched_sen}/{len(acs_df)} municipalities matched")
+    else:
+        acs_df["sens"] = None
+
     # ── Step 3: Derive computed metrics ───────────────────────────────────────
 
     # permits_per_1000_residents: raw_permits / population * 1000
@@ -349,6 +367,12 @@ def _build_record(row: pd.Series, today: str) -> dict:
     else:
         reps = None
 
+    raw_sens = row.get("sens")
+    if isinstance(raw_sens, list) and len(raw_sens) > 0:
+        sens = raw_sens
+    else:
+        sens = None
+
     metrics = {
         "pct_land_multifamily_byright": pct_mf,
         "median_home_value": home_value,
@@ -357,7 +381,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "renter_share_pct": renter_share,
     }
 
-    grades = score_town(metrics, mbta_status=mbta_status, reps=reps)
+    grades = score_town(metrics, mbta_status=mbta_status, reps=reps, sens=sens)
 
     # data_notes: zoning note from permits_proxy spike detection; others reserved
     data_notes = {
@@ -379,13 +403,14 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "mbta_deadline": mbta_deadline,
         "mbta_action_date": mbta_action_date,
         "reps": reps,
+        "sens": sens,
         "updated_at": today,
     }
 
 
 def _print_dimension_summary(records: list[dict]) -> None:
     """Print per-dimension grade distribution and null counts."""
-    dimensions = ["zoning", "mbta", "production", "affordability", "votes", "rep", "composite"]
+    dimensions = ["zoning", "mbta", "production", "affordability", "votes", "legislators", "composite"]
     letters = ["A", "B", "C", "D", "F"]
 
     for dim in dimensions:

@@ -32,8 +32,8 @@ export interface Grades {
   affordability: Grade;
   /** Town Meeting voting record on housing articles */
   votes: Grade;
-  /** State legislator housing vote record (future phase) */
-  rep: Grade;
+  /** State legislator housing vote record (House + Senate combined) */
+  legislators: Grade;
   /** Weighted composite of all applicable dimensions */
   composite: Grade;
 }
@@ -52,6 +52,23 @@ export interface RepRecord {
   /** Total bills eligible for this rep given their term. */
   bills_available: number | null;
   /** Session strings rep was scored in, e.g. ["193", "194"]. */
+  sessions_scored: string[] | null;
+}
+
+export interface SenRecord {
+  /** Full name of the senator. */
+  name: string | null;
+  /** Senate district name (e.g. "Cape and Islands"). */
+  district: string;
+  /** Percentage of pro-housing points earned (0-100). */
+  pct_score: number | null;
+  /** Letter grade derived from pct_score. */
+  grade: Grade;
+  /** Number of bills for which senator cast a scoreable vote. */
+  bills_scored: number | null;
+  /** Total bills eligible for this senator given their term. */
+  bills_available: number | null;
+  /** Session strings senator was scored in, e.g. ["193", "194"]. */
   sessions_scored: string[] | null;
 }
 
@@ -174,6 +191,13 @@ export interface TownRecord {
    * Most towns have one entry. Cities like Boston have ~16.
    */
   reps: RepRecord[] | null;
+
+  /**
+   * List of Senate senator score records for this municipality.
+   * One entry per Senate district overlapping this town. null if no senators matched.
+   * Most towns have one senator. Cities like Boston have 6.
+   */
+  sens: SenRecord[] | null;
 
   /** ISO 8601 date string of when this record was last updated by the pipeline (e.g., "2025-03-13"). */
   updated_at: string;

@@ -172,11 +172,13 @@ If renter share data is unavailable, equal weights (0.5/0.5) are used as a fallb
 
 ---
 
-### 6. State Legislator Record (Phase 4a — MA House only)
+### 6. State Legislator Record (Phase 4a House + Phase 4d Senate)
+
+**Scope:** Both chambers are scored. House representatives are scored from combined annual roll call PDFs. Senate senators are scored from LegiScan API roll call data. The town-level `legislators` grade is the lower-median across all House representatives and Senate senators whose districts overlap the municipality.
+
+#### 6a. MA House (Phase 4a)
 
 **Data sources:** MA Legislature combined annual roll call PDFs (auto-downloaded); MA Legislature CoSponsor AJAX API (fetched live each build); Open States MA legislator CSV (manual update each new General Court); Census TIGER SLDL 2024 shapefile (manual update ~every 10 years).
-
-**Scope:** Phase 4a scores House representatives only. Senate uses a per-journal-date PDF format rather than combined annual PDFs — Senate scoring is Phase 4b.
 
 **What the grade measures:** The housing production voting record of each state House representative whose district overlaps the municipality, scored across a curated set of roll call votes and co-sponsorship opportunities. Municipalities with a single House district display one representative. Cities that span multiple districts (Boston: 16, Springfield: 5, Worcester: 5) display all representatives individually. The town-level rep grade is the median grade across all representatives — a town is not penalized for having one poor-scoring rep among many strong ones, nor rewarded for one strong rep among many poor ones. The bill list (`data/legislator_bill_list.json`) is an editorial curation of the most significant housing production votes. New votes are never added automatically — every addition is a manual editorial decision.
 
@@ -254,9 +256,49 @@ Representatives are scored only on votes that occurred during their term in offi
 
 ---
 
+#### 6b. MA Senate (Phase 4d)
+
+**Data source:** [LegiScan API](https://legiscan.com/legiscan) — `getRollCall` and `getPerson` endpoints. Responses are cached locally in `data/rollcall_cache/senate/`. API key required (`LEGISCAN_API_KEY` environment variable).
+
+**Geographic assignment:** Each municipality is assigned to one or more Senate districts via area-based spatial intersection between MA county subdivision boundaries (Census TIGER COUSUB 2024) and Senate district polygons (Census TIGER SLDU 2024). Same tiered overlap threshold as House: 1% same-county, 15% cross-county. The mapping is cached at `data/town_senate_district_map.json`. Most municipalities have one Senate district. Cities like Boston have 6.
+
+**Bill list:** `data/senate_bill_list.json` — 2 roll call votes, max 4 points. The MA Senate is a heavily Democratic chamber; the vast majority of housing votes pass unanimously or near-unanimously and provide no signal for distinguishing senators. The 2 scored votes are contested amendments forced to a roll call by the Republican minority and confirmed by CHAPA (Citizens' Housing and Planning Association) as anti-housing:
+
+| Roll call | Bill | Session | Description | Pro-housing vote | Weight |
+|-----------|------|---------|-------------|-----------------|--------|
+| 1461314 | S2834 Amd 25 | 193rd (2024) | Anti-MBTA Communities amendment — adds unnecessary appeal criteria to MBTA Communities Act | NAY | 2 |
+| 1602789 | S3 Amd 13 | 194th (2025) | Anti-MBTA Communities amendment — same amendment pattern, FY2026 budget debate | NAY | 2 |
+
+Both votes are anti-housing amendments: voting **YEA** is anti-housing; voting **NAY** is pro-housing. A senator who voted NAY on both earns 100%.
+
+**Name matching:** Senator names from the Open States CSV (`current_chamber == "upper"`) are matched to LegiScan `people_id` values by exact last name, with fuzzy fallback (token sort ratio ≥ 85). The matched `people_id` is used to look up the senator's vote in each roll call.
+
+**Session boundary logic:** Senators whose `people_id` does not appear in any 193rd session roll call are treated as 2025 entrants and scored only on 194th General Court actions. This prevents newly elected senators from being penalized for votes cast by their predecessors.
+
+**Grading rubric:** Same as House — A ≥ 80%, B 60–79%, C 40–59%, D 20–39%, F < 20%, null = not present for any scored vote.
+
+**Why only 2 votes:** The H4977 final Senate passage (37-2, roll call 1463317) was excluded as too lopsided to differentiate senators. All other housing votes in the 193rd and 194th Senate sessions passed unanimously or near-unanimously. The FY2025 budget (S4) and FY2026 budget (S3) were each reviewed for all contested roll calls; only the MBTA Communities Act amendments met the threshold for inclusion.
+
+---
+
+#### 6c. Combined legislators grade
+
+The town-level `legislators` grade pools all House representatives and Senate senators whose districts overlap the municipality, then takes the lower median across the combined set (A=4, B=3, C=2, D=1, F=0). With an even number of legislators, the lower of the two middle values is used — a town is not rewarded for one strong legislator among many poor ones.
+
+| Legislators in district | Lower-median position |
+|------------------------|----------------------|
+| 1 | index 0 (the sole legislator) |
+| 2 | index 1 (lower of the two) |
+| 3 | index 1 (middle) |
+| N | index floor(N/2) |
+
+Boston, for example, has 16 House representatives and 6 Senate senators — 22 legislators total. Its `legislators` grade is the value at sorted index 11.
+
+---
+
 ## Composite Grade
 
-The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions for which a municipality has a null grade are excluded from the composite calculation — they do not count as zeros. For the legislator dimension, the town-level grade used in the composite is the median grade across all of the municipality's House representatives (A=4, B=3, C=2, D=1, F=0), using the lower median when the count is even. The weights assigned to each dimension, and the rationale for those weights, will be documented here before any composite grades are published.
+The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions for which a municipality has a null grade are excluded from the composite calculation — they do not count as zeros. For the legislator dimension, the town-level grade used in the composite is the lower-median grade across all of the municipality's House representatives and Senate senators combined (A=4, B=3, C=2, D=1, F=0) — see Section 6c for the pooling formula. The weights assigned to each dimension, and the rationale for those weights, will be documented here before any composite grades are published.
 
 ---
 

@@ -157,18 +157,24 @@ const GRADE_CARD_CONFIGS: GradeCardConfig[] = [
   },
   {
     dimension: "State legislator record",
-    gradeKey: "rep",
+    gradeKey: "legislators",
     getMetric: (t) => {
-      if (!t.reps || t.reps.length === 0) return null;
-      if (t.reps.length === 1) {
-        const rep = t.reps[0];
+      const repCount = t.reps?.length ?? 0;
+      const senCount = t.sens?.length ?? 0;
+      const total = repCount + senCount;
+      if (total === 0) return null;
+      if (repCount === 1 && senCount === 0) {
+        const rep = t.reps![0];
         const score = rep.pct_score !== null ? ` · ${Math.round(rep.pct_score)}%` : "";
         return `${rep.name}${score}`;
       }
-      return `${t.reps.length} representatives`;
+      const parts: string[] = [];
+      if (repCount > 0) parts.push(`${repCount} rep${repCount > 1 ? "s" : ""}`);
+      if (senCount > 0) parts.push(`${senCount} senator${senCount > 1 ? "s" : ""}`);
+      return parts.join(", ");
     },
     getExplanation: (t) => {
-      const grade = t.grades.rep;
+      const grade = t.grades.legislators;
       const interp: Partial<Record<NonNullable<Grade>, string>> = {
         A: "Strong pro-housing voting record at the State House",
         B: "Generally pro-housing voting record at the State House",
@@ -418,9 +424,10 @@ export default async function TownPage({
             const grade = town.grades[cfg.gradeKey];
             const keyMetric = cfg.getMetric(town);
             const repCaveat = (() => {
-              if (cfg.gradeKey !== "rep") return null;
-              if (!town.reps || town.reps.length === 0) return null;
-              const allNew = town.reps.every(
+              if (cfg.gradeKey !== "legislators") return null;
+              const allLeg = [...(town.reps ?? []), ...(town.sens ?? [])];
+              if (allLeg.length === 0) return null;
+              const allNew = allLeg.every(
                 (r) => !r.sessions_scored || !r.sessions_scored.includes("193")
               );
               if (allNew) return "Scored on 194th session votes only (took office Jan 2025)";
@@ -429,7 +436,7 @@ export default async function TownPage({
             const note =
               cfg.gradeKey === "zoning"
                 ? (town.data_notes?.zoning ?? null)
-                : cfg.gradeKey === "rep"
+                : cfg.gradeKey === "legislators"
                 ? repCaveat
                 : null;
             const explanation = cfg.getExplanation
@@ -462,53 +469,114 @@ export default async function TownPage({
         </div>
       </section>
 
-      {/* State House representatives */}
-      {town.reps && town.reps.length > 0 && (
+      {/* State legislators — House and Senate */}
+      {((town.reps && town.reps.length > 0) || (town.sens && town.sens.length > 0)) && (
         <section>
-          <h2 style={sectionHeadingStyle}>State House representatives</h2>
-          <div className="space-y-2">
-            {town.reps.map((rep) => {
-              const repConfig = rep.grade ? gradeConfig(rep.grade) : gradeConfig(null);
-              const caveat = rep.sessions_scored && !rep.sessions_scored.includes("193")
-                ? "194th session only"
-                : null;
-              return (
-                <div
-                  key={rep.district}
-                  className="flex items-center justify-between px-4 py-3 rounded-lg"
-                  style={{
-                    backgroundColor: "var(--bg-card)",
-                    border: "1px solid var(--border)",
-                  }}
-                >
-                  <div>
-                    <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
-                      {rep.name ?? "Vacant"}
-                    </p>
-                    <p className="text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>
-                      {rep.district}
-                      {caveat && <span className="ml-2 opacity-60">· {caveat}</span>}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    {rep.pct_score !== null && (
-                      <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                        {Math.round(rep.pct_score)}%
-                      </span>
-                    )}
-                    {rep.grade && (
-                      <span
-                        className="font-mono text-sm font-bold w-8 h-8 flex items-center justify-center rounded"
-                        style={{ backgroundColor: repConfig.bg, color: repConfig.text }}
-                      >
-                        {rep.grade}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <h2 style={sectionHeadingStyle}>State legislators</h2>
+
+          {/* House representatives */}
+          {town.reps && town.reps.length > 0 && (
+            <>
+              <p
+                className="text-xs font-semibold mb-2"
+                style={{ color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em" }}
+              >
+                House
+              </p>
+              <div className="space-y-2 mb-4">
+                {town.reps.map((rep) => {
+                  const repConfig = rep.grade ? gradeConfig(rep.grade) : gradeConfig(null);
+                  const caveat = rep.sessions_scored && !rep.sessions_scored.includes("193")
+                    ? "194th session only"
+                    : null;
+                  return (
+                    <div
+                      key={rep.district}
+                      className="flex items-center justify-between px-4 py-3 rounded-lg"
+                      style={{ backgroundColor: "var(--bg-card)", border: "1px solid var(--border)" }}
+                    >
+                      <div>
+                        <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
+                          {rep.name ?? "Vacant"}
+                        </p>
+                        <p className="text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>
+                          {rep.district}
+                          {caveat && <span className="ml-2 opacity-60">· {caveat}</span>}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        {rep.pct_score !== null && (
+                          <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
+                            {Math.round(rep.pct_score)}%
+                          </span>
+                        )}
+                        {rep.grade && (
+                          <span
+                            className="font-mono text-sm font-bold w-8 h-8 flex items-center justify-center rounded"
+                            style={{ backgroundColor: repConfig.bg, color: repConfig.text }}
+                          >
+                            {rep.grade}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </>
+          )}
+
+          {/* Senate senators */}
+          {town.sens && town.sens.length > 0 && (
+            <>
+              <p
+                className="text-xs font-semibold mb-2"
+                style={{ color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em" }}
+              >
+                Senate
+              </p>
+              <div className="space-y-2">
+                {town.sens.map((sen) => {
+                  const senConfig = sen.grade ? gradeConfig(sen.grade) : gradeConfig(null);
+                  const caveat = sen.sessions_scored && !sen.sessions_scored.includes("193")
+                    ? "194th session only"
+                    : null;
+                  return (
+                    <div
+                      key={sen.district}
+                      className="flex items-center justify-between px-4 py-3 rounded-lg"
+                      style={{ backgroundColor: "var(--bg-card)", border: "1px solid var(--border)" }}
+                    >
+                      <div>
+                        <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
+                          {sen.name ?? "Vacant"}
+                        </p>
+                        <p className="text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>
+                          {sen.district}
+                          {caveat && <span className="ml-2 opacity-60">· {caveat}</span>}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        {sen.pct_score !== null && (
+                          <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
+                            {Math.round(sen.pct_score)}%
+                          </span>
+                        )}
+                        {sen.grade && (
+                          <span
+                            className="font-mono text-sm font-bold w-8 h-8 flex items-center justify-center rounded"
+                            style={{ backgroundColor: senConfig.bg, color: senConfig.text }}
+                          >
+                            {sen.grade}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </>
+          )}
         </section>
       )}
 
