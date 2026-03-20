@@ -1,0 +1,32 @@
+{
+  "_comment": "2 entries only — the MA Senate produces very few contested housing roll calls due to its heavily Democratic composition; all other housing votes in the 193rd and 194th sessions passed unanimously or near-unanimously. H4977 final passage (rc 1463317, 37-2) was excluded as too lopsided to differentiate senators. Both entries are CHAPA-confirmed anti-MBTA Communities amendments forced to a roll call by the Republican minority.",
+  "scoring_axis": "housing_production",
+  "bills": [
+    {
+      "id": "s2834_rc194_anti_mbta_amd25",
+      "session": "193",
+      "bill": "S2834",
+      "type": "rollcall",
+      "roll_call_id": 1461314,
+      "year": 2024,
+      "description": "Anti-MBTA Communities amendment (adds unnecessary appeal criteria to MBTA Communities Act) — CHAPA-confirmed bad amendment",
+      "date": "2024-06-27",
+      "pro_housing_vote": "nay",
+      "weight": 2,
+      "rationale": "Senate Amendment 25, Roll Call #194, during S2834 (Affordable Homes Act) debate. 6Y-34N. The 6 YEA votes are anti-housing; NAY = pro-housing."
+    },
+    {
+      "id": "s3_rc_amd13_anti_mbta_194th",
+      "session": "194",
+      "bill": "S3",
+      "type": "rollcall",
+      "roll_call_id": 1602789,
+      "year": 2025,
+      "description": "Anti-MBTA Communities amendment (adds unnecessary appeal criteria to MBTA Communities Act) — CHAPA-confirmed bad amendment, FY2026 budget debate",
+      "date": "2025-05-22",
+      "pro_housing_vote": "nay",
+      "weight": 2,
+      "rationale": "Senate Amendment #13, during S3 FY2026 budget debate. 5Y-34N. The 5 YEA votes are anti-housing; NAY = pro-housing."
+    }
+  ]
+}
