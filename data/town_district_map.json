@@ -1,7 +1,4 @@
 {
-  "2500100000": [
-    "State House Districts not defined"
-  ],
   "2500103690": [
     "2nd Barnstable",
     "5th Barnstable"
@@ -147,9 +144,6 @@
   "2500380685": [
     "1st Berkshire"
   ],
-  "2500500000": [
-    "State House Districts not defined"
-  ],
   "2500500520": [
     "10th Bristol",
     "8th Bristol"
@@ -246,10 +240,7 @@
   "2500778235": [
     "Barnstable-Dukes-Nantucket"
   ],
-  "2500900000": [
-    "State House Districts not defined"
-  ],
-  "2500901185": [
+  "2500901260": [
     "14th Essex",
     "1st Essex"
   ],
@@ -312,7 +303,7 @@
   "2500940430": [
     "1st Essex"
   ],
-  "2500940675": [
+  "2500940710": [
     "15th Essex",
     "16th Essex",
     "4th Essex"
@@ -538,7 +529,7 @@
   "2501516040": [
     "1st Hampshire"
   ],
-  "2501519365": [
+  "2501519370": [
     "2nd Hampshire"
   ],
   "2501526290": [
@@ -758,7 +749,7 @@
     "10th Middlesex",
     "9th Middlesex"
   ],
-  "2501773405": [
+  "2501773440": [
     "10th Middlesex",
     "29th Middlesex"
   ],
@@ -782,9 +773,6 @@
   "2501781035": [
     "15th Middlesex",
     "30th Middlesex"
-  ],
-  "2501900000": [
-    "Barnstable-Dukes-Nantucket"
   ],
   "2501943790": [
     "Barnstable-Dukes-Nantucket"
@@ -886,9 +874,6 @@
   "2502182315": [
     "9th Norfolk"
   ],
-  "2502300000": [
-    "State House Districts not defined"
-  ],
   "2502300170": [
     "7th Plymouth"
   ],
@@ -980,9 +965,6 @@
   ],
   "2502379530": [
     "7th Plymouth"
-  ],
-  "2502500000": [
-    "4th Suffolk"
   ],
   "2502507000": [
     "10th Suffolk",

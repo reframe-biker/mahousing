@@ -116,6 +116,7 @@ def main() -> None:
 
     print("Loading Census place shapefile...")
     places = gpd.read_file(PLACE_SHP)
+    places = places[places["COUSUBFP"] != "00000"]  # drop "county subdivisions not defined" placeholders
     print(f"  {len(places)} Census places loaded")
 
     # ── Reproject to a MA planar CRS for accurate area calculations ───────────
