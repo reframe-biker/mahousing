@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 2531,
+    "person_hash": "ebia8ay6",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Walter Timilty",
+    "first_name": "Walter",
+    "middle_name": "F.",
+    "last_name": "Timilty",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-NORFOL",
+    "ftm_eid": 447545,
+    "votesmart_id": 18998,
+    "opensecrets_id": "",
+    "knowwho_pid": 195110,
+    "ballotpedia": "Walter_Timilty",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "",
+        "district_phone": "",
+        "email": "",
+        "webmail": "",
+        "biography": "",
+        "image": "",
+        "ballotpedia": "https://ballotpedia.org/Walter_Timilty",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/18998"
+      },
+      "capitol_address": {
+        "address1": "",
+        "address2": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/walter.timilty",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://senatorwaltertimilty.com",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

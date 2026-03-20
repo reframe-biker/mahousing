@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 21127,
+    "person_hash": "hne7ud71",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Rebecca Rausch",
+    "first_name": "Rebecca",
+    "middle_name": "L.",
+    "last_name": "Rausch",
+    "suffix": "",
+    "nickname": "Becca",
+    "district": "SD-NORFOL",
+    "ftm_eid": 45365185,
+    "votesmart_id": 184660,
+    "opensecrets_id": "",
+    "knowwho_pid": 669152,
+    "ballotpedia": "Becca_Rausch",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1555",
+        "district_phone": "",
+        "email": "Becca.Rausch@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/RLR0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/RLR0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Becca_Rausch",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/184660"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 215",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/beccarauschMA",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/BeccaRauschMA",
+          "website": "https://malegislature.gov/Legislators/Profile/RLR0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/blrdance617",
+          "instagram": "https://www.instagram.com/rauschre/",
+          "linkedin": "https://www.linkedin.com/in/becca-rausch-5254235/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://www.beccarauschma.com",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

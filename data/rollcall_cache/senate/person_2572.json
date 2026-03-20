@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 2572,
+    "person_hash": "u1g1pu2d",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Marc Pacheco",
+    "first_name": "Marc",
+    "middle_name": "R.",
+    "last_name": "Pacheco",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-03-PLY",
+    "ftm_eid": 217241,
+    "votesmart_id": 4754,
+    "opensecrets_id": "",
+    "knowwho_pid": 195028,
+    "ballotpedia": "Marc_Pacheco",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "",
+        "district_phone": "",
+        "email": "",
+        "webmail": "",
+        "biography": "",
+        "image": "",
+        "ballotpedia": "https://ballotpedia.org/Marc_Pacheco",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/4754"
+      },
+      "capitol_address": {
+        "address1": "",
+        "address2": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/profile.php?id=100000224721755",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/marc-pacheco-b9815356/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

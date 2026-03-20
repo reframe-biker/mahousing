@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": "D",
+    "legislators": "F",
     "composite": "D"
   },
   "metrics": {
@@ -54,5 +54,19 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Peter Durant",
+      "district": "Worcester and Hampshire",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

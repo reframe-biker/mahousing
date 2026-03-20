@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 23059,
+    "person_hash": "so2bhh4p",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Lydia Edwards",
+    "first_name": "Lydia",
+    "middle_name": "Marie",
+    "last_name": "Edwards",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-03-SUF",
+    "ftm_eid": 35754155,
+    "votesmart_id": 186210,
+    "opensecrets_id": "",
+    "knowwho_pid": 795088,
+    "ballotpedia": "Lydia_Edwards",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1634",
+        "district_phone": "",
+        "email": "Lydia.Edwards@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/LME0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/LME0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Lydia_Edwards",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/186210"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 413-A",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/LME0",
+          "youtube": "https://www.youtube.com/@lydiaedwards9941"
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/lydia.m.edwards",
+          "instagram": "https://www.instagram.com/lid_of_yah_teapot/",
+          "linkedin": "https://www.linkedin.com/in/lydia-edwards-b750024/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

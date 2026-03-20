@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
+    "legislators": "A",
     "composite": "C"
   },
   "metrics": {
@@ -42,5 +42,19 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Bruce Tarr",
+      "district": "First Essex and Middlesex",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

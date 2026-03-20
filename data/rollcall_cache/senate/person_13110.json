@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 13110,
+    "person_hash": "lgkqq4xv",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Paul Mark",
+    "first_name": "Paul",
+    "middle_name": "W.",
+    "last_name": "Mark",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-BERKSH",
+    "ftm_eid": 13001328,
+    "votesmart_id": 124969,
+    "opensecrets_id": "",
+    "knowwho_pid": 295289,
+    "ballotpedia": "Paul_Mark",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1625",
+        "district_phone": "",
+        "email": "Paul.Mark@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/PWM0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/PWM0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Paul_Mark",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/124969"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 504",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/PWM0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/Vote.Paul.Mark",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/paul-mark-2b4116a/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

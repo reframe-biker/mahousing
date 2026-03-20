@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 22739,
+    "person_hash": "ys2y064w",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Jacob Oliveira",
+    "first_name": "Jacob",
+    "middle_name": "R.",
+    "last_name": "Oliveira",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-HAMPDE",
+    "ftm_eid": 50171479,
+    "votesmart_id": 194843,
+    "opensecrets_id": "",
+    "knowwho_pid": 743409,
+    "ballotpedia": "Jacob_Oliveira",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1291",
+        "district_phone": "",
+        "email": "Jacob.Oliveira@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/JRO0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/JRO0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Jacob_Oliveira",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/194843"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 416-B",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/FightingforWesternMass",
+          "instagram": "https://www.instagram.com/senatorjakeoliveira/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/SenatorOliveira",
+          "website": "https://malegislature.gov/Legislators/Profile/JRO0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/jake.oliveira.50",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/jake-oliveira-730b0117/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

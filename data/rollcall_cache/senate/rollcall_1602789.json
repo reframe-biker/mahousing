@@ -1,0 +1,214 @@
+{
+  "status": "OK",
+  "roll_call": {
+    "roll_call_id": 1602789,
+    "bill_id": 2029035,
+    "date": "2025-05-22",
+    "desc": "Senate  Amendment #13",
+    "yea": 5,
+    "nay": 34,
+    "nv": 0,
+    "absent": 0,
+    "total": 39,
+    "passed": 0,
+    "chamber": "S",
+    "chamber_id": 52,
+    "votes": [
+      {
+        "people_id": 2403,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2404,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2435,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2463,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2471,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2506,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2510,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2552,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2555,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2560,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2566,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2567,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 2577,
+        "vote_id": 1,
+        "vote_text": "Yea"
+      },
+      {
+        "people_id": 12439,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 13058,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 13105,
+        "vote_id": 1,
+        "vote_text": "Yea"
+      },
+      {
+        "people_id": 13110,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 13317,
+        "vote_id": 1,
+        "vote_text": "Yea"
+      },
+      {
+        "people_id": 16183,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 16207,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 16256,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 17662,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 17963,
+        "vote_id": 1,
+        "vote_text": "Yea"
+      },
+      {
+        "people_id": 19195,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 19304,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 19306,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 19410,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 19433,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 21064,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 21126,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 21127,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 21141,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 22739,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 22841,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 22842,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 23059,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 24765,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 24769,
+        "vote_id": 2,
+        "vote_text": "Nay"
+      },
+      {
+        "people_id": 25806,
+        "vote_id": 1,
+        "vote_text": "Yea"
+      }
+    ]
+  }
+}

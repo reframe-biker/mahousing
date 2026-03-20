@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 21648,
+    "person_hash": "g1v3uyae",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Susan Moran",
+    "first_name": "Susan",
+    "middle_name": "L.",
+    "last_name": "Moran",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-PLYMOU",
+    "ftm_eid": 48871265,
+    "votesmart_id": 160001,
+    "opensecrets_id": "",
+    "knowwho_pid": 742355,
+    "ballotpedia": "Susan_Moran_(Massachusetts)",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "",
+        "district_phone": "",
+        "email": "",
+        "webmail": "",
+        "biography": "",
+        "image": "",
+        "ballotpedia": "https://ballotpedia.org/Susan_Moran_%28Massachusetts%29",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/160001"
+      },
+      "capitol_address": {
+        "address1": "",
+        "address2": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/susan.moran.1023611",
+          "instagram": "https://www.instagram.com/legaltriageservices/",
+          "linkedin": "https://www.linkedin.com/in/susan-moran-52a9b5a5/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://www.susanmoranesq.com/experience/",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

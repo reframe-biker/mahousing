@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 22841,
+    "person_hash": "s530d2r0",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Adam Gomez",
+    "first_name": "Adam",
+    "middle_name": "",
+    "last_name": "Gomez",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-HAMPDE",
+    "ftm_eid": 50171463,
+    "votesmart_id": 194698,
+    "opensecrets_id": "",
+    "knowwho_pid": 743266,
+    "ballotpedia": "Adam_Gomez",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1660",
+        "district_phone": "",
+        "email": "Adam.Gomez@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/A_G0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/A_G0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Adam_Gomez",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/194698"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 312-E",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/AdamGomezMA",
+          "instagram": "https://www.instagram.com/adamgomezma/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/AdamGomezMA",
+          "website": "https://malegislature.gov/Legislators/Profile/A_G0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/profile.php?id=100010926408572",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/adam-gomez-sr-2a5770b4/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

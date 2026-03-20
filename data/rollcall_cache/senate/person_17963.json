@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 17963,
+    "person_hash": "13ezto0g",
+    "party_id": "2",
+    "state_id": 21,
+    "party": "R",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Patrick O'Connor",
+    "first_name": "Patrick",
+    "middle_name": "M.",
+    "last_name": "O'Connor",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-01-NOR",
+    "ftm_eid": 6536109,
+    "votesmart_id": 75467,
+    "opensecrets_id": "",
+    "knowwho_pid": 584170,
+    "ballotpedia": "Patrick_O%27Connor_(Massachusetts)",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1646",
+        "district_phone": "",
+        "email": "Patrick.OConnor@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/PMO",
+        "image": "https://malegislature.gov/Legislators/Profile/70/PMO.jpg",
+        "ballotpedia": "https://ballotpedia.org/Patrick_O%2527Connor_%28Massachusetts%29",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/75467"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 419",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/SenatorOConnor",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/PMO",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/pat.oconnor.399",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/patrick-o-connor-29b3b29/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://www.senatoroconnor.com",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

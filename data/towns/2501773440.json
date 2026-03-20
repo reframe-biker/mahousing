@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "legislators": "A",
     "composite": "C"
   },
   "metrics": {
@@ -28,6 +28,45 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "reps": null,
-  "updated_at": "2026-03-17"
+  "reps": [
+    {
+      "name": "John Lawn",
+      "district": "10th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Steve Owens",
+      "district": "29th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "sens": [
+    {
+      "name": "Will Brownsberger",
+      "district": "Suffolk and Middlesex",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

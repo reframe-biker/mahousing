@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 16207,
+    "person_hash": "s6we9mrt",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Joan Lovely",
+    "first_name": "Joan",
+    "middle_name": "B.",
+    "last_name": "Lovely",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-02-ESS",
+    "ftm_eid": 13001486,
+    "votesmart_id": 35974,
+    "opensecrets_id": "",
+    "knowwho_pid": 425753,
+    "ballotpedia": "Joan_Lovely",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1410",
+        "district_phone": "",
+        "email": "Joan.Lovely@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/JBL0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/JBL0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Joan_Lovely",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/35974"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 413-D",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/SenatorLovely",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/JBL0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/joan.b.lovely",
+          "instagram": "https://www.instagram.com/senatorlovely/",
+          "linkedin": "https://www.linkedin.com/in/joan-lovely-5762478/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://www.senatorjoanlovely.com",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

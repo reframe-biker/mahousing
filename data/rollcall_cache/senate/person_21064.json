@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 21064,
+    "person_hash": "u1j335v9",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Joanne Comerford",
+    "first_name": "Joanne",
+    "middle_name": "M.",
+    "last_name": "Comerford",
+    "suffix": "",
+    "nickname": "Jo",
+    "district": "SD-HAMPSH",
+    "ftm_eid": 45816733,
+    "votesmart_id": 185114,
+    "opensecrets_id": "",
+    "knowwho_pid": 679758,
+    "ballotpedia": "Jo_Comerford",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1532",
+        "district_phone": "",
+        "email": "Jo.Comerford@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/JMC0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/JMC0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Jo_Comerford",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/185114"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 410",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/senatorjocomerford/",
+          "instagram": "https://www.instagram.com/jocomerfordma/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/Jo_Comerford",
+          "website": "https://malegislature.gov/Legislators/Profile/JMC0",
+          "youtube": "https://www.youtube.com/channel/UCKLLSktvV0-nhJhpKnCf2RQ"
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/jo.comerford1",
+          "instagram": "https://www.instagram.com/jocomerford/",
+          "linkedin": "https://www.linkedin.com/in/jo-comerford-587b7242/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://senatorjocomerford.org",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

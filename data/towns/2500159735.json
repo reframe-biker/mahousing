@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "D",
-    "composite": "D"
+    "legislators": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -42,5 +42,18 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Dylan Fernandes",
+      "district": "Plymouth and Barnstable",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 1,
+      "bills_available": 1,
+      "sessions_scored": [
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

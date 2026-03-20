@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 13105,
+    "person_hash": "5bd659fk",
+    "party_id": "2",
+    "state_id": 21,
+    "party": "R",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Ryan Fattman",
+    "first_name": "Ryan",
+    "middle_name": "C.",
+    "last_name": "Fattman",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-WORCES",
+    "ftm_eid": 13001267,
+    "votesmart_id": 124937,
+    "opensecrets_id": "",
+    "knowwho_pid": 295170,
+    "ballotpedia": "Ryan_Fattman",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1420",
+        "district_phone": "",
+        "email": "Ryan.Fattman@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/RCF0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/RCF0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Ryan_Fattman",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/124937"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 213-A",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/profile.php?id=61559136872647",
+          "instagram": "https://www.instagram.com/masenryanfattman/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/RCF0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/profile.php?id=17901655",
+          "instagram": "https://www.instagram.com/fattmanr/",
+          "linkedin": "https://www.linkedin.com/in/ryan-c-fattman-40166b103/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://senatorfattman.com/",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

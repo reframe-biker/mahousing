@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "B",
     "votes": null,
-    "rep": "F",
+    "legislators": "F",
     "composite": "C"
   },
   "metrics": {
@@ -53,5 +53,19 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Mike Brady",
+      "district": "Second Plymouth and Norfolk",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 16183,
+    "person_hash": "mfyj8tmj",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Michael Barrett",
+    "first_name": "Michael",
+    "middle_name": "J.",
+    "last_name": "Barrett",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-03-MID",
+    "ftm_eid": 169372,
+    "votesmart_id": 141572,
+    "opensecrets_id": "",
+    "knowwho_pid": 387754,
+    "ballotpedia": "Mike_Barrett",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1572",
+        "district_phone": "",
+        "email": "Mike.Barrett@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/MJB0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/MJB0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Mike_Barrett",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/141572"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 312-B",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/SenatorMikeBarrett",
+          "instagram": "https://www.instagram.com/senatorbarrett/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/senatorbarrett",
+          "website": "https://malegislature.gov/Legislators/Profile/MJB0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/sen.mikebarrett",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/senatormikebarrett/",
+          "tiktok": "https://www.tiktok.com/@user69461753810008",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

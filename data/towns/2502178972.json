@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
-    "composite": "B"
+    "legislators": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 8.5,
@@ -53,5 +53,19 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Patrick O'Connor",
+      "district": "First Plymouth and Norfolk",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

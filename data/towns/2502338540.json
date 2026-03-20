@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": "A",
+    "legislators": "A",
     "composite": "C"
   },
   "metrics": {
@@ -41,5 +41,18 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Kelly Dooner",
+      "district": "Third Bristol and Plymouth",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 1,
+      "sessions_scored": [
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

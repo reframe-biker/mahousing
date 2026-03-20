@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 2471,
+    "person_hash": "uxyq03x0",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Jason Lewis",
+    "first_name": "Jason",
+    "middle_name": "M.",
+    "last_name": "Lewis",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-05-MID",
+    "ftm_eid": 172685,
+    "votesmart_id": 109548,
+    "opensecrets_id": "",
+    "knowwho_pid": 270822,
+    "ballotpedia": "Jason_Lewis_(Massachusetts)",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1206",
+        "district_phone": "",
+        "email": "Jason.Lewis@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/jml0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/jml0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Jason_Lewis_%28Massachusetts%29",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/109548"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 511-B",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/SenJasonLewis/",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/jml0",
+          "youtube": "https://www.youtube.com/@jasonlewis9257"
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/jason.lewis.792303",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/jason-lewis-683a1a/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

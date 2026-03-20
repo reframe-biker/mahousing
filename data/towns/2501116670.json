@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "rep": null,
+    "legislators": null,
     "composite": "D"
   },
   "metrics": {
@@ -29,5 +29,6 @@
   "mbta_deadline": null,
   "mbta_action_date": null,
   "reps": null,
-  "updated_at": "2026-03-17"
+  "sens": null,
+  "updated_at": "2026-03-19"
 }

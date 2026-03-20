@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 19306,
+    "person_hash": "pim48wmw",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Dylan Fernandes",
+    "first_name": "Dylan",
+    "middle_name": "A.",
+    "last_name": "Fernandes",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-PLYMOU",
+    "ftm_eid": 41757765,
+    "votesmart_id": 172069,
+    "opensecrets_id": "",
+    "knowwho_pid": 586452,
+    "ballotpedia": "Dylan_Fernandes",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1330",
+        "district_phone": "",
+        "email": "dylan.fernandes@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/DAF0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/DAF0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Dylan_Fernandes",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/172069"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 519",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/RepDylan",
+          "website": "",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/profile.php?id=100015187483287",
+          "instagram": "https://www.instagram.com/fernandegram/",
+          "linkedin": "https://www.linkedin.com/in/dylan-fernandes-48984368/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": "https://www.youtube.com/@dylanfernandes286"
+        }
+      }
+    }
+  }
+}

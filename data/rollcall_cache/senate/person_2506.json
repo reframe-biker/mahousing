@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 2506,
+    "person_hash": "082fagb2",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Michael Rodrigues",
+    "first_name": "Michael",
+    "middle_name": "J.",
+    "last_name": "Rodrigues",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-01-PLY",
+    "ftm_eid": 1758292,
+    "votesmart_id": 4834,
+    "opensecrets_id": "",
+    "knowwho_pid": 195116,
+    "ballotpedia": "Michael_Rodrigues",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1114",
+        "district_phone": "",
+        "email": "Michael.Rodrigues@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/MJR0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/MJR0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Michael_Rodrigues",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/4834"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 212",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/SenRodrigues",
+          "website": "https://malegislature.gov/Legislators/Profile/MJR0",
+          "youtube": "https://www.youtube.com/@michaelrodrigues8891"
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/rodriguesforsenate",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

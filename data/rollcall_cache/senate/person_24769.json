@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 24769,
+    "person_hash": "hj5sm5ne",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Pavel Payano",
+    "first_name": "Pavel",
+    "middle_name": "M.",
+    "last_name": "Payano",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-01-ESS",
+    "ftm_eid": 55632415,
+    "votesmart_id": 154126,
+    "opensecrets_id": "",
+    "knowwho_pid": 262115,
+    "ballotpedia": "Pavel_Payano",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1604",
+        "district_phone": "",
+        "email": "Pavel.Payano@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/PMP0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/PMP0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Pavel_Payano",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/154126"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 413-B",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/SenPavelPayano",
+          "instagram": "https://www.instagram.com/senpavelpayano/",
+          "linkedin": "",
+          "tiktok": "https://www.tiktok.com/@pavelmpayano",
+          "twitter": "https://www.twitter.com/SenPavelPayano",
+          "website": "https://malegislature.gov/Legislators/Profile/PMP0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/ppayano",
+          "instagram": "https://www.instagram.com/pavelpayano/",
+          "linkedin": "https://www.linkedin.com/in/pavelpayano/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

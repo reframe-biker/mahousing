@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "rep": "A",
-    "composite": "D"
+    "legislators": "F",
+    "composite": "F"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -54,5 +54,19 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Bruce Tarr",
+      "district": "First Essex and Middlesex",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

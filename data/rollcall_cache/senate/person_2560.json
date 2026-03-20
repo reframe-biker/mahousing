@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 2560,
+    "person_hash": "nubngr4t",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Patricia Jehlen",
+    "first_name": "Patricia",
+    "middle_name": "D.",
+    "last_name": "Jehlen",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-02-MID",
+    "ftm_eid": 162294,
+    "votesmart_id": 4820,
+    "opensecrets_id": "",
+    "knowwho_pid": 195188,
+    "ballotpedia": "Patricia_Jehlen",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1578",
+        "district_phone": "",
+        "email": "Patricia.Jehlen@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/PDJ0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/PDJ0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Patricia_Jehlen",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/4820"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 424",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/SenatorPatriciaJehlen/",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/PDJ0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/patjehlen",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/pat-jehlen-271940a/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://www.patjehlen.org",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

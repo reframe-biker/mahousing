@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 2435,
+    "person_hash": "1tsz25pf",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Barry Finegold",
+    "first_name": "Barry",
+    "middle_name": "R.",
+    "last_name": "Finegold",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-02-MID",
+    "ftm_eid": 622936,
+    "votesmart_id": 13653,
+    "opensecrets_id": "",
+    "knowwho_pid": 195171,
+    "ballotpedia": "Barry_Finegold",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1612",
+        "district_phone": "",
+        "email": "Barry.Finegold@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/BRF0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/BRF0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Barry_Finegold",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/13653"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 109-D",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/BRF0",
+          "youtube": "https://www.youtube.com/@statesenatorbarryfinegold5366"
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/bfinegold",
+          "instagram": "https://www.instagram.com/bfinegold/",
+          "linkedin": "https://www.linkedin.com/in/barry-finegold-93b2211/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://www.dfllp.com/team/abarry-finegold-2/",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

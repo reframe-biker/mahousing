@@ -9,7 +9,7 @@
     "production": "B",
     "affordability": "D",
     "votes": null,
-    "rep": "A",
+    "legislators": "A",
     "composite": "B"
   },
   "metrics": {
@@ -221,5 +221,79 @@
       ]
     }
   ],
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Nick Collins",
+      "district": "First Suffolk",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Sal DiDomenico",
+      "district": "Middlesex and Suffolk",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Mike Rush",
+      "district": "Norfolk and Suffolk",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Liz Miranda",
+      "district": "Second Suffolk",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Will Brownsberger",
+      "district": "Suffolk and Middlesex",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Lydia Edwards",
+      "district": "Third Suffolk",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

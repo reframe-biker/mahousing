@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 25806,
+    "person_hash": "xhp6lkwt",
+    "party_id": "2",
+    "state_id": 21,
+    "party": "R",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Kelly Dooner",
+    "first_name": "Kelly",
+    "middle_name": "A.",
+    "last_name": "Dooner",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-03-PLY",
+    "ftm_eid": 59985990,
+    "votesmart_id": 189540,
+    "opensecrets_id": "",
+    "knowwho_pid": 0,
+    "ballotpedia": "Kelly_Dooner",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1551",
+        "district_phone": "",
+        "email": "kelly.dooner@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/KAD0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/KAD0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Kelly_Dooner",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/189540"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 213-B",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/profile.php?id=61571490729480",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/KAD0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/kellypicardi92",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/kelly-a-dooner-b4580297/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

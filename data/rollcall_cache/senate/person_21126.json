@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 21126,
+    "person_hash": "u8eblvux",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Edward Kennedy",
+    "first_name": "Edward",
+    "middle_name": "J.",
+    "last_name": "Kennedy",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-01-MID",
+    "ftm_eid": 45365150,
+    "votesmart_id": 148768,
+    "opensecrets_id": "",
+    "knowwho_pid": 669142,
+    "ballotpedia": "Edward_Kennedy",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1630",
+        "district_phone": "",
+        "email": "edward.kennedy@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/EDJ0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/EDJ0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Edward_Kennedy",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/148768"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 109-E",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/senatoredkennedy",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/EDJ0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/edward.kennedy.733",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/SenEdKennedy",
+          "website": "https://senatoredkennedy.com",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

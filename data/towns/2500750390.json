@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "F",
     "votes": null,
-    "rep": null,
-    "composite": "F"
+    "legislators": "A",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -29,5 +29,19 @@
   "mbta_deadline": null,
   "mbta_action_date": null,
   "reps": null,
-  "updated_at": "2026-03-17"
+  "sens": [
+    {
+      "name": "Julian Cyr",
+      "district": "Cape and Islands",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

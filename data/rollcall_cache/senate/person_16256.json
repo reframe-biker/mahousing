@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 16256,
+    "person_hash": "4ed5mila",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "John Velis",
+    "first_name": "John",
+    "middle_name": "C.",
+    "last_name": "Velis",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-HAMPDE",
+    "ftm_eid": 20875059,
+    "votesmart_id": 150304,
+    "opensecrets_id": "",
+    "knowwho_pid": 495725,
+    "ballotpedia": "John_Velis",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1415",
+        "district_phone": "",
+        "email": "john.velis@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/JCV0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/JCV0.jpg",
+        "ballotpedia": "https://ballotpedia.org/John_Velis",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/150304"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 513",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/SenJohnVelis",
+          "instagram": "https://www.instagram.com/senjohnvelis/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/SenJohnVelis",
+          "website": "https://malegislature.gov/Legislators/Profile/JCV0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/john.velis.129",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://senatorjohnvelis.com",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

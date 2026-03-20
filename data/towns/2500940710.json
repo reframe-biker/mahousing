@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "rep": null,
+    "legislators": "A",
     "composite": "C"
   },
   "metrics": {
@@ -28,6 +28,57 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "reps": null,
-  "updated_at": "2026-03-17"
+  "reps": [
+    {
+      "name": "Ryan Hamilton",
+      "district": "15th Essex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Francisco Paulino",
+      "district": "16th Essex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Estela Reyes",
+      "district": "4th Essex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "sens": [
+    {
+      "name": "Pavel Payano",
+      "district": "First Essex",
+      "pct_score": 100.0,
+      "grade": "A",
+      "bills_scored": 2,
+      "bills_available": 2,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    }
+  ],
+  "updated_at": "2026-03-19"
 }

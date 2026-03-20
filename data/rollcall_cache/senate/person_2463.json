@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 2463,
+    "person_hash": "vomra65w",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "John Keenan",
+    "first_name": "John",
+    "middle_name": "F.",
+    "last_name": "Keenan",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-NORFOL",
+    "ftm_eid": 13001485,
+    "votesmart_id": 35690,
+    "opensecrets_id": "",
+    "knowwho_pid": 311913,
+    "ballotpedia": "John_Keenan_(Massachusetts_State_Senate)",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1494",
+        "district_phone": "",
+        "email": "John.Keenan@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/JFK0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/JFK0.jpg",
+        "ballotpedia": "https://ballotpedia.org/John_Keenan_%28Massachusetts_State_Senate%29",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/35690"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 413-F",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/senjohnfkeenan",
+          "instagram": "https://www.instagram.com/senjohnfkeenan/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/SenJohnFKeenan",
+          "website": "https://malegislature.gov/Legislators/Profile/JFK0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/john.keenan.351",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/johnfkeenan/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://senatorjohnkeenan.com",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

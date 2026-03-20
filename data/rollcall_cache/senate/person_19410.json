@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 19410,
+    "person_hash": "mh4rr4rx",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Cindy Friedman",
+    "first_name": "Cindy",
+    "middle_name": "F.",
+    "last_name": "Friedman",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-04-MID",
+    "ftm_eid": 43850232,
+    "votesmart_id": 176469,
+    "opensecrets_id": "",
+    "knowwho_pid": 479109,
+    "ballotpedia": "Cindy_Friedman",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1432",
+        "district_phone": "",
+        "email": "Cindy.Friedman@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/CFF0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/CFF0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Cindy_Friedman",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/176469"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 313",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/CindyFriedmanMA/",
+          "instagram": "https://www.instagram.com/sencindyfriedman/",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "https://www.twitter.com/CindyFriedmanMA",
+          "website": "https://malegislature.gov/Legislators/Profile/CFF0",
+          "youtube": "https://www.youtube.com/@statesenatorcindyfriedman2413"
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/cindy-friedman-0b36625/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://cindyfriedman.org",
+          "youtube": ""
+        }
+      }
+    }
+  }
+}

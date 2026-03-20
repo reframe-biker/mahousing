@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "person": {
+    "people_id": 17662,
+    "person_hash": "a51s1hye",
+    "party_id": "1",
+    "state_id": 21,
+    "party": "D",
+    "role_id": 2,
+    "role": "Sen",
+    "name": "Brendan Crighton",
+    "first_name": "Brendan",
+    "middle_name": "P.",
+    "last_name": "Crighton",
+    "suffix": "",
+    "nickname": "",
+    "district": "SD-03-ESS",
+    "ftm_eid": 25004692,
+    "votesmart_id": 123763,
+    "opensecrets_id": "",
+    "knowwho_pid": 479267,
+    "ballotpedia": "Brendan_Crighton",
+    "bioguide_id": "",
+    "committee_sponsor": 0,
+    "committee_id": 0,
+    "state_federal": 0,
+    "bio": {
+      "social": {
+        "capitol_phone": "617-722-1350",
+        "district_phone": "",
+        "email": "brendan.crighton@masenate.gov",
+        "webmail": "",
+        "biography": "https://malegislature.gov/Legislators/Profile/BPC0",
+        "image": "https://malegislature.gov/Legislators/Profile/70/BPC0.jpg",
+        "ballotpedia": "https://ballotpedia.org/Brendan_Crighton",
+        "votesmart": "https://justfacts.votesmart.org/candidate/biography/123763"
+      },
+      "capitol_address": {
+        "address1": "24 Beacon St",
+        "address2": "Room 109-C",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02133"
+      },
+      "links": {
+        "official": {
+          "bluesky": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "tiktok": "",
+          "twitter": "",
+          "website": "https://malegislature.gov/Legislators/Profile/BPC0",
+          "youtube": ""
+        },
+        "personal": {
+          "bluesky": "",
+          "facebook": "https://www.facebook.com/brendan.crighton.1",
+          "instagram": "https://www.instagram.com/brendancrighton/",
+          "linkedin": "https://www.linkedin.com/in/brendan-crighton-618b168b/",
+          "tiktok": "",
+          "twitter": "",
+          "website": "",
+          "youtube": "https://www.youtube.com/@brendancrighton5951"
+        }
+      }
+    }
+  }
+}
