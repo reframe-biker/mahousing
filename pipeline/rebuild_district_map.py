@@ -51,6 +51,22 @@ SLDL_SHP = REPO_ROOT / "data" / "tl_2024_25_sldl.shp"
 # Download: https://www2.census.gov/geo/tiger/TIGER2024/COUSUB/tl_2024_25_cousub.zip
 PLACE_SHP = REPO_ROOT / "data" / "tl_2024_25_cousub.shp"
 
+# ── GEOID overrides for consolidated city-towns ───────────────────────────────
+#
+# Four MA towns were reclassified as consolidated city-towns (CLASSFP=C5) in
+# the 2024 COUSUB shapefile, which gave them new COUSUBFP codes.  Their JSON
+# files in data/towns/ still carry the pre-reclassification FIPS.  We keep
+# the JSON filenames and fips fields unchanged; instead we remap the shapefile
+# GEOID back to the legacy fips in the output map.
+#
+# Format:  old_json_fips  →  new_shapefile_geoid
+GEOID_OVERRIDES: dict[str, str] = {
+    "2500901260": "2500901185",  # Amesbury city
+    "2500940710": "2500940675",  # Methuen city
+    "2501519370": "2501519365",  # Easthampton city
+    "2501773440": "2501773405",  # Watertown city
+}
+
 # Overlap thresholds — two-tier to handle same-county vs. cross-county cases:
 #
 #   SAME_COUNTY_MIN (1%):   keeps all same-county assignments, including large
@@ -193,6 +209,16 @@ def main() -> None:
     # Sort district lists for deterministic output
     for geoid in district_map:
         district_map[geoid].sort()
+
+    # ── Apply GEOID overrides (consolidated city-towns) ───────────────────────
+    # Replace each new shapefile GEOID key with the legacy fips used by the JSON
+    # files, so downstream consumers find entries under the expected key.
+    for old_fips, new_geoid in GEOID_OVERRIDES.items():
+        if new_geoid in district_map:
+            district_map[old_fips] = district_map.pop(new_geoid)
+            print(f"  GEOID override applied: {new_geoid} → {old_fips}")
+        else:
+            print(f"  Warning: GEOID override for {old_fips} — shapefile GEOID {new_geoid} not found in join results")
 
     # ── Write output ──────────────────────────────────────────────────────────
     OUT_PATH.write_text(json.dumps(district_map, indent=2, sort_keys=True), encoding="utf-8")
