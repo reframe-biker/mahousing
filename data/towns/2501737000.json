@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "legislators": "A",
-    "composite": "B"
+    "legislators": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 6.8,
@@ -32,33 +32,31 @@
     {
       "name": "Rodney Elliott",
       "district": "16th Middlesex",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     },
     {
       "name": "Vanna Howard",
       "district": "17th Middlesex",
-      "pct_score": 95.2,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "bills_scored": 1,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     },
     {
       "name": "Tara Hong",
       "district": "18th Middlesex",
-      "pct_score": 85.7,
-      "grade": "A",
-      "bills_scored": 4,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -66,5 +64,5 @@
     }
   ],
   "sens": null,
-  "updated_at": "2026-03-30"
+  "updated_at": "2026-04-06"
 }

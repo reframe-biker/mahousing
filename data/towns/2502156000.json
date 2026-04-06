@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "legislators": "A",
+    "legislators": "F",
     "composite": "C"
   },
   "metrics": {
@@ -32,21 +32,20 @@
     {
       "name": "Bruce Ayers",
       "district": "1st Norfolk",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     },
     {
       "name": "Richard Wells",
       "district": "7th Norfolk",
-      "pct_score": 57.1,
-      "grade": "C",
-      "bills_scored": 4,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -67,5 +66,5 @@
       ]
     }
   ],
-  "updated_at": "2026-03-30"
+  "updated_at": "2026-04-06"
 }

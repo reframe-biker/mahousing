@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "legislators": "D",
-    "composite": "C"
+    "legislators": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -32,24 +32,22 @@
     {
       "name": "Dave Vieira",
       "district": "3rd Barnstable",
-      "pct_score": 28.6,
-      "grade": "D",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     },
     {
       "name": "Steve Xiarhos",
       "district": "5th Barnstable",
-      "pct_score": 28.6,
-      "grade": "D",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     }
@@ -67,5 +65,5 @@
       ]
     }
   ],
-  "updated_at": "2026-03-30"
+  "updated_at": "2026-04-06"
 }

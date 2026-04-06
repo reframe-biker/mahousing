@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "legislators": "A",
-    "composite": "C"
+    "legislators": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -32,24 +32,22 @@
     {
       "name": "Kelly Pease",
       "district": "4th Hampden",
-      "pct_score": 14.3,
+      "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "bills_scored": 1,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     },
     {
       "name": "Mike Finn",
       "district": "6th Hampden",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     }
@@ -68,5 +66,5 @@
       ]
     }
   ],
-  "updated_at": "2026-03-30"
+  "updated_at": "2026-04-06"
 }

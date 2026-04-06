@@ -32,9 +32,9 @@
     {
       "name": "Mark Sylvia",
       "district": "10th Bristol",
-      "pct_score": 85.7,
-      "grade": "A",
-      "bills_scored": 4,
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -55,5 +55,5 @@
       ]
     }
   ],
-  "updated_at": "2026-03-30"
+  "updated_at": "2026-04-06"
 }

@@ -34,7 +34,7 @@
       "district": "6th Plymouth",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 4,
+      "bills_scored": 1,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -55,5 +55,5 @@
       ]
     }
   ],
-  "updated_at": "2026-03-30"
+  "updated_at": "2026-04-06"
 }
