@@ -72,7 +72,7 @@ def get_rollcall_pdf(session: str, year: int) -> Optional[Path]:
     last_exc: Exception | None = None
     for attempt in range(1, 4):
         try:
-            resp = requests.get(pdf_url, headers=_HEADERS, verify=False, timeout=120, stream=True)
+            resp = requests.get(pdf_url, headers=_HEADERS, verify=False, timeout=120)
             resp.raise_for_status()
             break
         except Exception as exc:
@@ -91,11 +91,8 @@ def get_rollcall_pdf(session: str, year: int) -> Optional[Path]:
             return cache_path
         return None
 
-    # Validate that the response is actually a PDF
     content_type = resp.headers.get("Content-Type", "")
-    # Read the first chunk to check magic bytes
-    first_chunk = next(resp.iter_content(chunk_size=65536), b"")
-    if "application/pdf" not in content_type and not first_chunk.startswith(b"%PDF"):
+    if "application/pdf" not in content_type and not resp.content[:4] == b"%PDF":
         logger.warning(
             f"  Roll calls: response for session {session}/{year} is not a PDF "
             f"(Content-Type: {content_type!r}) — the URL may have returned HTML"
@@ -106,10 +103,8 @@ def get_rollcall_pdf(session: str, year: int) -> Optional[Path]:
         return None
 
     with open(cache_path, "wb") as f:
-        f.write(first_chunk)
-        for chunk in resp.iter_content(chunk_size=65536):
-            f.write(chunk)
-    logger.info(f"  Roll calls: saved to {cache_path}")
+        f.write(resp.content)
+    logger.info(f"  Roll calls: saved {len(resp.content):,} bytes to {cache_path}")
     return cache_path
 
 
