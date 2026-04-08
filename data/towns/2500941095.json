@@ -7,14 +7,14 @@
     "zoning": "F",
     "mbta": "F",
     "production": "D",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "legislators": "F",
-    "composite": "D"
+    "composite": "F"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 687900.0,
+    "median_home_value": 858068.5740966598,
     "rent_burden_pct": 39.1,
     "permits_per_1000_residents": 1.34,
     "renter_share_pct": 6.7
@@ -30,10 +30,10 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Sally Kerans",
-      "district": "13th Essex",
-      "pct_score": 85.7,
-      "grade": "A",
+      "name": "Brad Jones",
+      "district": "20th Middlesex",
+      "pct_score": 14.3,
+      "grade": "F",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "name": "Brad Jones",
-      "district": "20th Middlesex",
-      "pct_score": 14.3,
-      "grade": "F",
+      "name": "Sally Kerans",
+      "district": "13th Essex",
+      "pct_score": 85.7,
+      "grade": "A",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

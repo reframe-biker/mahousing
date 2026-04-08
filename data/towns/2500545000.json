@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 10.3,
-    "median_home_value": 291300.0,
+    "median_home_value": 428272.2323732723,
     "rent_burden_pct": 44.3,
     "permits_per_1000_residents": 0.2,
     "renter_share_pct": 60.1
@@ -30,25 +30,13 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Mark Sylvia",
-      "district": "10th Bristol",
-      "pct_score": 85.7,
-      "grade": "A",
+      "name": "Steven Ouellette",
+      "district": "8th Bristol",
+      "pct_score": 57.1,
+      "grade": "C",
       "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
-        "194"
-      ]
-    },
-    {
-      "name": "Chris Hendricks",
-      "district": "11th Bristol",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
         "194"
       ]
     },
@@ -65,10 +53,22 @@
       ]
     },
     {
-      "name": "Steven Ouellette",
-      "district": "8th Bristol",
-      "pct_score": 57.1,
-      "grade": "C",
+      "name": "Chris Hendricks",
+      "district": "11th Bristol",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Mark Sylvia",
+      "district": "10th Bristol",
+      "pct_score": 85.7,
+      "grade": "A",
       "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
@@ -102,5 +102,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

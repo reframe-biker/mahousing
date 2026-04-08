@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 10.0,
-    "median_home_value": 625000.0,
+    "median_home_value": 754857.3307418778,
     "rent_burden_pct": 43.0,
     "permits_per_1000_residents": 0.3,
     "renter_share_pct": 18.5
@@ -29,30 +29,6 @@
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "reps": [
-    {
-      "name": "Paul McMurtry",
-      "district": "11th Norfolk",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
-      "name": "John Rogers",
-      "district": "12th Norfolk",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
     {
       "name": "Ted Philips",
       "district": "8th Norfolk",
@@ -76,6 +52,30 @@
         "193",
         "194"
       ]
+    },
+    {
+      "name": "Paul McMurtry",
+      "district": "11th Norfolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "John Rogers",
+      "district": "12th Norfolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
     }
   ],
   "sens": [
@@ -92,5 +92,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

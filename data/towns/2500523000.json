@@ -9,12 +9,12 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "legislators": "A",
+    "legislators": "B",
     "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 18.9,
-    "median_home_value": 328100.0,
+    "median_home_value": 439622.1901312399,
     "rent_burden_pct": 46.3,
     "permits_per_1000_residents": 0.59,
     "renter_share_pct": 64.1
@@ -29,18 +29,6 @@
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "reps": [
-    {
-      "name": "Carole Fiola",
-      "district": "6th Bristol",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
     {
       "name": "Alan Silvia",
       "district": "7th Bristol",
@@ -63,6 +51,18 @@
       "sessions_scored": [
         "194"
       ]
+    },
+    {
+      "name": "Carole Fiola",
+      "district": "6th Bristol",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
     }
   ],
   "sens": [
@@ -79,5 +79,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

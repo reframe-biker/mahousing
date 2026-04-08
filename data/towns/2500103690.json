@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "legislators": "A",
-    "composite": "B"
+    "legislators": "D",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 77.3,
@@ -30,10 +30,10 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Kip Diggs",
-      "district": "2nd Barnstable",
-      "pct_score": 90.5,
-      "grade": "A",
+      "name": "Steve Xiarhos",
+      "district": "5th Barnstable",
+      "pct_score": 28.6,
+      "grade": "D",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "name": "Steve Xiarhos",
-      "district": "5th Barnstable",
-      "pct_score": 28.6,
-      "grade": "D",
+      "name": "Kip Diggs",
+      "district": "2nd Barnstable",
+      "pct_score": 90.5,
+      "grade": "A",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

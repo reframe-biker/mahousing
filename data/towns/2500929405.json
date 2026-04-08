@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 19.2,
-    "median_home_value": 400900.0,
+    "median_home_value": 535357.5906197714,
     "rent_burden_pct": 54.6,
     "permits_per_1000_residents": 0.34,
     "renter_share_pct": 40.0
@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Ryan Hamilton",
-      "district": "15th Essex",
+      "name": "Andy Vargas",
+      "district": "3rd Essex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Andy Vargas",
-      "district": "3rd Essex",
+      "name": "Ryan Hamilton",
+      "district": "15th Essex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

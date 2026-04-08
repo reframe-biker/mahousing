@@ -9,7 +9,7 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "legislators": "A",
+    "legislators": "F",
     "composite": "C"
   },
   "metrics": {
@@ -67,5 +67,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

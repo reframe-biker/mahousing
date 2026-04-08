@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 393200.0,
+    "median_home_value": 529348.320853994,
     "rent_burden_pct": 40.6,
     "permits_per_1000_residents": 0.43,
     "renter_share_pct": 19.2
@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Margaret Scarsdale",
-      "district": "1st Middlesex",
+      "name": "Mike Kushmerek",
+      "district": "3rd Worcester",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Mike Kushmerek",
-      "district": "3rd Worcester",
+      "name": "Margaret Scarsdale",
+      "district": "1st Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

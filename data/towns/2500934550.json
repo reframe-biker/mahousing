@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 370600.0,
+    "median_home_value": 497255.0945938911,
     "rent_burden_pct": 55.7,
     "permits_per_1000_residents": 0.17,
     "renter_share_pct": 70.1
@@ -30,6 +30,18 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Estela Reyes",
+      "district": "4th Essex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
       "name": "Francisco Paulino",
       "district": "16th Essex",
       "pct_score": 90.5,
@@ -44,18 +56,6 @@
     {
       "name": "Frank Moran",
       "district": "17th Essex",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Estela Reyes",
-      "district": "4th Essex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

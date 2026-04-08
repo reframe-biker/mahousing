@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 839200.0,
+    "median_home_value": 1045452.0589243348,
     "rent_burden_pct": 36.7,
     "permits_per_1000_residents": 0.85,
     "renter_share_pct": 39.3
@@ -30,9 +30,9 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Sean Garballey",
-      "district": "23rd Middlesex",
-      "pct_score": 90.5,
+      "name": "Dave Rogers",
+      "district": "24th Middlesex",
+      "pct_score": 85.7,
       "grade": "A",
       "bills_scored": 11,
       "bills_available": 11,
@@ -42,9 +42,9 @@
       ]
     },
     {
-      "name": "Dave Rogers",
-      "district": "24th Middlesex",
-      "pct_score": 85.7,
+      "name": "Sean Garballey",
+      "district": "23rd Middlesex",
+      "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
       "bills_available": 11,
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

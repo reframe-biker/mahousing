@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "John Lawn",
-      "district": "10th Middlesex",
+      "name": "Steve Owens",
+      "district": "29th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Steve Owens",
-      "district": "29th Middlesex",
+      "name": "John Lawn",
+      "district": "10th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

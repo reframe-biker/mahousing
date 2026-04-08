@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Ryan Hamilton",
-      "district": "15th Essex",
+      "name": "Estela Reyes",
+      "district": "4th Essex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -54,8 +54,8 @@
       ]
     },
     {
-      "name": "Estela Reyes",
-      "district": "4th Essex",
+      "name": "Ryan Hamilton",
+      "district": "15th Essex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

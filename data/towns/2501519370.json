@@ -9,8 +9,8 @@
     "production": null,
     "affordability": "B",
     "votes": null,
-    "legislators": "A",
-    "composite": "A"
+    "legislators": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
@@ -55,5 +55,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

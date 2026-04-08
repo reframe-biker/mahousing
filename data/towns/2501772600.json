@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 12.1,
-    "median_home_value": 679000.0,
+    "median_home_value": 802136.286399169,
     "rent_burden_pct": 40.7,
     "permits_per_1000_residents": 1.14,
     "renter_share_pct": 52.1
@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "John Lawn",
-      "district": "10th Middlesex",
+      "name": "Tom Stanley",
+      "district": "9th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Tom Stanley",
-      "district": "9th Middlesex",
+      "name": "John Lawn",
+      "district": "10th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

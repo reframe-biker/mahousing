@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 6.8,
-    "median_home_value": 362800.0,
+    "median_home_value": 471791.6536590771,
     "rent_burden_pct": 48.7,
     "permits_per_1000_residents": 1.01,
     "renter_share_pct": 56.7
@@ -29,18 +29,6 @@
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "reps": [
-    {
-      "name": "Rodney Elliott",
-      "district": "16th Middlesex",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
     {
       "name": "Vanna Howard",
       "district": "17th Middlesex",
@@ -63,8 +51,20 @@
       "sessions_scored": [
         "194"
       ]
+    },
+    {
+      "name": "Rodney Elliott",
+      "district": "16th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
     }
   ],
   "sens": null,
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

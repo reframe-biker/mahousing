@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 5.5,
-    "median_home_value": 1136200.0,
+    "median_home_value": 1490203.476078879,
     "rent_burden_pct": 39.1,
     "permits_per_1000_residents": 3.18,
     "renter_share_pct": 29.6
@@ -30,14 +30,13 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "John Lawn",
-      "district": "10th Middlesex",
-      "pct_score": 90.5,
+      "name": "Greg Schwartz",
+      "district": "12th Middlesex",
+      "pct_score": 85.7,
       "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "bills_scored": 4,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     },
@@ -53,13 +52,14 @@
       ]
     },
     {
-      "name": "Greg Schwartz",
-      "district": "12th Middlesex",
-      "pct_score": 85.7,
+      "name": "John Lawn",
+      "district": "10th Middlesex",
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 4,
-      "bills_available": 4,
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }
@@ -78,5 +78,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

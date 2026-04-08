@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 400200.0,
+    "median_home_value": 521320.98861337855,
     "rent_burden_pct": 29.9,
     "permits_per_1000_residents": 3.8,
     "renter_share_pct": 18.6
@@ -30,9 +30,9 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Joe McKenna",
-      "district": "18th Worcester",
-      "pct_score": 14.3,
+      "name": "Mike Soter",
+      "district": "8th Worcester",
+      "pct_score": 0.0,
       "grade": "F",
       "bills_scored": 11,
       "bills_available": 11,
@@ -42,9 +42,9 @@
       ]
     },
     {
-      "name": "Mike Soter",
-      "district": "8th Worcester",
-      "pct_score": 0.0,
+      "name": "Joe McKenna",
+      "district": "18th Worcester",
+      "pct_score": 14.3,
       "grade": "F",
       "bills_scored": 11,
       "bills_available": 11,
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

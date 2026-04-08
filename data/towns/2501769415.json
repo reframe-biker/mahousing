@@ -7,14 +7,14 @@
     "zoning": "F",
     "mbta": "F",
     "production": "D",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
-    "legislators": "A",
-    "composite": "C"
+    "legislators": "B",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 502800.0,
+    "median_home_value": 658673.3309151755,
     "rent_burden_pct": 47.1,
     "permits_per_1000_residents": 1.16,
     "renter_share_pct": 16.5
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "name": "Tram Nguyen",
-      "district": "18th Essex",
-      "pct_score": 76.2,
-      "grade": "B",
+      "name": "Dave Robertson",
+      "district": "19th Middlesex",
+      "pct_score": 9.5,
+      "grade": "F",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -54,10 +54,10 @@
       ]
     },
     {
-      "name": "Dave Robertson",
-      "district": "19th Middlesex",
-      "pct_score": 9.5,
-      "grade": "F",
+      "name": "Tram Nguyen",
+      "district": "18th Essex",
+      "pct_score": 76.2,
+      "grade": "B",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

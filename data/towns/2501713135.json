@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 507900.0,
+    "median_home_value": 663429.1798370605,
     "rent_burden_pct": 52.1,
     "permits_per_1000_residents": 0.33,
     "renter_share_pct": 17.3
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Rodney Elliott",
-      "district": "16th Middlesex",
+      "name": "Jim Arciero",
+      "district": "2nd Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -54,8 +54,8 @@
       ]
     },
     {
-      "name": "Jim Arciero",
-      "district": "2nd Middlesex",
+      "name": "Rodney Elliott",
+      "district": "16th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

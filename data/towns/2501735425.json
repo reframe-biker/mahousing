@@ -7,14 +7,14 @@
     "zoning": "F",
     "mbta": "A",
     "production": "F",
-    "affordability": "D",
+    "affordability": "F",
     "votes": null,
     "legislators": "A",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 1184800.0,
+    "median_home_value": 1465929.888026873,
     "rent_burden_pct": 56.1,
     "permits_per_1000_residents": 0.29,
     "renter_share_pct": 35.7
@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Carmine Gentile",
-      "district": "13th Middlesex",
+      "name": "Alice Peisch",
+      "district": "14th Norfolk",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Alice Peisch",
-      "district": "14th Norfolk",
+      "name": "Carmine Gentile",
+      "district": "13th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

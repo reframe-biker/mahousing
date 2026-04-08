@@ -9,12 +9,12 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "legislators": "A",
-    "composite": "C"
+    "legislators": "D",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 468600.0,
+    "median_home_value": 687523.350821826,
     "rent_burden_pct": 50.8,
     "permits_per_1000_residents": 2.84,
     "renter_share_pct": 17.8
@@ -55,5 +55,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

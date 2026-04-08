@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 274700.0,
+    "median_home_value": 389939.86615240714,
     "rent_burden_pct": 48.6,
     "permits_per_1000_residents": 0.67,
     "renter_share_pct": 25.1
@@ -30,18 +30,6 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Susannah Whipps",
-      "district": "2nd Franklin",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
       "name": "Jon Zlotnik",
       "district": "2nd Worcester",
       "pct_score": 81.0,
@@ -52,8 +40,20 @@
         "193",
         "194"
       ]
+    },
+    {
+      "name": "Susannah Whipps",
+      "district": "2nd Franklin",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
     }
   ],
   "sens": null,
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

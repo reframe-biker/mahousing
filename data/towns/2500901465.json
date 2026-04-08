@@ -7,14 +7,14 @@
     "zoning": "F",
     "mbta": "A",
     "production": "F",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
-    "legislators": "A",
+    "legislators": "B",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 756600.0,
+    "median_home_value": 961135.657755684,
     "rent_burden_pct": 34.1,
     "permits_per_1000_residents": 0.27,
     "renter_share_pct": 18.6
@@ -30,10 +30,10 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Frank Moran",
-      "district": "17th Essex",
-      "pct_score": 90.5,
-      "grade": "A",
+      "name": "Tram Nguyen",
+      "district": "18th Essex",
+      "pct_score": 76.2,
+      "grade": "B",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "name": "Tram Nguyen",
-      "district": "18th Essex",
-      "pct_score": 76.2,
-      "grade": "B",
+      "name": "Frank Moran",
+      "district": "17th Essex",
+      "pct_score": 90.5,
+      "grade": "A",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 198500.0,
+    "median_home_value": 290167.47081368166,
     "rent_burden_pct": 53.3,
     "permits_per_1000_residents": 0.32,
     "renter_share_pct": 52.2
@@ -30,23 +30,22 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Orlando Ramos",
+      "district": "9th Hampden",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Carlos Gonz\u00e1lez",
       "district": "10th Hampden",
       "pct_score": 86.7,
       "grade": "A",
       "bills_scored": 8,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Bud Williams",
-      "district": "11th Hampden",
-      "pct_score": 88.2,
-      "grade": "A",
-      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -66,6 +65,18 @@
       ]
     },
     {
+      "name": "Bud Williams",
+      "district": "11th Hampden",
+      "pct_score": 88.2,
+      "grade": "A",
+      "bills_scored": 9,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
       "name": "Brian Ashe",
       "district": "2nd Hampden",
       "pct_score": 76.2,
@@ -74,17 +85,6 @@
       "bills_available": 11,
       "sessions_scored": [
         "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Orlando Ramos",
-      "district": "9th Hampden",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
-      "sessions_scored": [
         "194"
       ]
     }
@@ -103,5 +103,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

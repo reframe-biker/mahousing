@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 54.4,
-    "median_home_value": 997600.0,
+    "median_home_value": 1019841.4990778648,
     "rent_burden_pct": 42.1,
     "permits_per_1000_residents": 3.38,
     "renter_share_pct": 66.4
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "name": "Marjorie Decker",
-      "district": "25th Middlesex",
-      "pct_score": 42.9,
-      "grade": "C",
+      "name": "Steve Owens",
+      "district": "29th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -66,10 +66,10 @@
       ]
     },
     {
-      "name": "Steve Owens",
-      "district": "29th Middlesex",
-      "pct_score": 90.5,
-      "grade": "A",
+      "name": "Marjorie Decker",
+      "district": "25th Middlesex",
+      "pct_score": 42.9,
+      "grade": "C",
       "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
@@ -116,5 +116,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 324800.0,
+    "median_home_value": 428213.03004560765,
     "rent_burden_pct": 51.1,
     "permits_per_1000_residents": 0.11,
     "renter_share_pct": 41.0
@@ -56,5 +56,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

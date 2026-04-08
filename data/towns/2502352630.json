@@ -7,14 +7,14 @@
     "zoning": "F",
     "mbta": "A",
     "production": "F",
-    "affordability": "B",
+    "affordability": "C",
     "votes": null,
-    "legislators": "A",
-    "composite": "C"
+    "legislators": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 533500.0,
+    "median_home_value": 646116.6138472976,
     "rent_burden_pct": 42.3,
     "permits_per_1000_residents": 0.16,
     "renter_share_pct": 12.8
@@ -30,6 +30,17 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Ken Sweezey",
+      "district": "6th Plymouth",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Kathy LaNatra",
       "district": "12th Plymouth",
       "pct_score": 81.0,
@@ -38,17 +49,6 @@
       "bills_available": 11,
       "sessions_scored": [
         "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Ken Sweezey",
-      "district": "6th Plymouth",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 4,
-      "bills_available": 4,
-      "sessions_scored": [
         "194"
       ]
     }
@@ -66,5 +66,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

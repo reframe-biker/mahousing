@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 92.1,
-    "median_home_value": 684900.0,
+    "median_home_value": 768701.7607698262,
     "rent_burden_pct": 47.5,
     "permits_per_1000_residents": 3.08,
     "renter_share_pct": 65.2
@@ -30,6 +30,54 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Adrian Madaro",
+      "district": "1st Suffolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Aaron Michlewitz",
+      "district": "3rd Suffolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Russell Holmes",
+      "district": "6th Suffolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Jay Livingstone",
+      "district": "8th Suffolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
       "name": "Billy MacGregor",
       "district": "10th Suffolk",
       "pct_score": 90.5,
@@ -42,31 +90,8 @@
       ]
     },
     {
-      "name": "Brandy Fluker-Reid",
-      "district": "12th Suffolk",
-      "pct_score": 85.7,
-      "grade": "A",
-      "bills_scored": 4,
-      "bills_available": 4,
-      "sessions_scored": [
-        "194"
-      ]
-    },
-    {
       "name": "Dan Hunt",
       "district": "13th Suffolk",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Rob Consalvo",
-      "district": "14th Suffolk",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -113,42 +138,6 @@
       ]
     },
     {
-      "name": "Adrian Madaro",
-      "district": "1st Suffolk",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Danny Ryan",
-      "district": "2nd Suffolk",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Aaron Michlewitz",
-      "district": "3rd Suffolk",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
-    {
       "name": "David Biele",
       "district": "4th Suffolk",
       "pct_score": 90.5,
@@ -173,8 +162,20 @@
       ]
     },
     {
-      "name": "Russell Holmes",
-      "district": "6th Suffolk",
+      "name": "Rob Consalvo",
+      "district": "14th Suffolk",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
+    },
+    {
+      "name": "John Moran",
+      "district": "9th Suffolk",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -197,20 +198,19 @@
       ]
     },
     {
-      "name": "Jay Livingstone",
-      "district": "8th Suffolk",
-      "pct_score": 90.5,
+      "name": "Brandy Fluker-Reid",
+      "district": "12th Suffolk",
+      "pct_score": 85.7,
       "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
+      "bills_scored": 4,
+      "bills_available": 4,
       "sessions_scored": [
-        "193",
         "194"
       ]
     },
     {
-      "name": "John Moran",
-      "district": "9th Suffolk",
+      "name": "Danny Ryan",
+      "district": "2nd Suffolk",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -295,5 +295,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

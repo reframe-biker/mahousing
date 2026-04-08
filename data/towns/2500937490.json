@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 20.6,
-    "median_home_value": 442800.0,
+    "median_home_value": 568421.9142326216,
     "rent_burden_pct": 53.9,
     "permits_per_1000_residents": 3.78,
     "renter_share_pct": 51.4
@@ -53,11 +53,11 @@
       ]
     },
     {
-      "name": "Jenny Armini",
-      "district": "8th Essex",
-      "pct_score": 89.5,
-      "grade": "A",
-      "bills_scored": 10,
+      "name": "Donald Wong",
+      "district": "9th Essex",
+      "pct_score": 14.3,
+      "grade": "F",
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -65,11 +65,11 @@
       ]
     },
     {
-      "name": "Donald Wong",
-      "district": "9th Essex",
-      "pct_score": 14.3,
-      "grade": "F",
-      "bills_scored": 11,
+      "name": "Jenny Armini",
+      "district": "8th Essex",
+      "pct_score": 89.5,
+      "grade": "A",
+      "bills_scored": 10,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -91,5 +91,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

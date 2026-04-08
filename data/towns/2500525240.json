@@ -9,12 +9,12 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "legislators": "A",
+    "legislators": "C",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 457400.0,
+    "median_home_value": 566609.9131852494,
     "rent_burden_pct": 36.2,
     "permits_per_1000_residents": 0.87,
     "renter_share_pct": 9.0
@@ -30,6 +30,17 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Steven Ouellette",
+      "district": "8th Bristol",
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Carole Fiola",
       "district": "6th Bristol",
       "pct_score": 90.5,
@@ -38,17 +49,6 @@
       "bills_available": 11,
       "sessions_scored": [
         "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Steven Ouellette",
-      "district": "8th Bristol",
-      "pct_score": 57.1,
-      "grade": "C",
-      "bills_scored": 4,
-      "bills_available": 4,
-      "sessions_scored": [
         "194"
       ]
     }
@@ -67,5 +67,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

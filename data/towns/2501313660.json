@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 230700.0,
+    "median_home_value": 307391.4157820842,
     "rent_burden_pct": 45.9,
     "permits_per_1000_residents": 0.23,
     "renter_share_pct": 41.0
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Mike Finn",
-      "district": "6th Hampden",
+      "name": "Shirley Arriaga",
+      "district": "8th Hampden",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -54,8 +54,8 @@
       ]
     },
     {
-      "name": "Shirley Arriaga",
-      "district": "8th Hampden",
+      "name": "Mike Finn",
+      "district": "6th Hampden",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -92,5 +92,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

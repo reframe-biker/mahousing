@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 805600.0,
+    "median_home_value": 1036002.347737697,
     "rent_burden_pct": 52.7,
     "permits_per_1000_residents": 0.0,
     "renter_share_pct": 12.8
@@ -30,6 +30,17 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Hannah Bowen",
+      "district": "6th Essex",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Sally Kerans",
       "district": "13th Essex",
       "pct_score": 85.7,
@@ -38,17 +49,6 @@
       "bills_available": 11,
       "sessions_scored": [
         "193",
-        "194"
-      ]
-    },
-    {
-      "name": "Hannah Bowen",
-      "district": "6th Essex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
-      "sessions_scored": [
         "194"
       ]
     }
@@ -67,5 +67,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

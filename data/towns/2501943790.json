@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 5.3,
-    "median_home_value": 1265600.0,
+    "median_home_value": 3029234.32602978,
     "rent_burden_pct": 32.4,
     "permits_per_1000_residents": 16.49,
     "renter_share_pct": 28.9
@@ -28,7 +28,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Thomas Moakley",
+      "district": "Barnstable, Dukes and Nantucket",
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
+  ],
   "sens": [
     {
       "name": "Julian Cyr",
@@ -43,5 +55,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

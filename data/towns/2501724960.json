@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.3,
-    "median_home_value": 553200.0,
+    "median_home_value": 652294.132427038,
     "rent_burden_pct": 49.6,
     "permits_per_1000_residents": 0.52,
     "renter_share_pct": 44.9
@@ -29,18 +29,6 @@
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
   "reps": [
-    {
-      "name": "Danielle Gregoire",
-      "district": "4th Middlesex",
-      "pct_score": 90.5,
-      "grade": "A",
-      "bills_scored": 11,
-      "bills_available": 11,
-      "sessions_scored": [
-        "193",
-        "194"
-      ]
-    },
     {
       "name": "Priscila Sousa",
       "district": "6th Middlesex",
@@ -64,6 +52,18 @@
         "193",
         "194"
       ]
+    },
+    {
+      "name": "Danielle Gregoire",
+      "district": "4th Middlesex",
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
+      "sessions_scored": [
+        "193",
+        "194"
+      ]
     }
   ],
   "sens": [
@@ -79,5 +79,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

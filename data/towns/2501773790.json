@@ -14,7 +14,7 @@
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 862700.0,
+    "median_home_value": 1122004.2178466527,
     "rent_burden_pct": 48.6,
     "permits_per_1000_residents": 0.29,
     "renter_share_pct": 8.5
@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Carmine Gentile",
-      "district": "13th Middlesex",
+      "name": "David Linsky",
+      "district": "5th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "David Linsky",
-      "district": "5th Middlesex",
+      "name": "Carmine Gentile",
+      "district": "13th Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -68,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }

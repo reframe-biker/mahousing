@@ -7,14 +7,14 @@
     "zoning": "F",
     "mbta": "A",
     "production": "F",
-    "affordability": "C",
+    "affordability": "D",
     "votes": null,
     "legislators": "A",
     "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
-    "median_home_value": 570600.0,
+    "median_home_value": 667071.2334832344,
     "rent_burden_pct": 48.8,
     "permits_per_1000_residents": 0.03,
     "renter_share_pct": 57.4
@@ -30,8 +30,8 @@
   "mbta_action_date": null,
   "reps": [
     {
-      "name": "Kate Lipper-Garabedian",
-      "district": "32nd Middlesex",
+      "name": "Steve Ultrino",
+      "district": "33rd Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "name": "Steve Ultrino",
-      "district": "33rd Middlesex",
+      "name": "Kate Lipper-Garabedian",
+      "district": "32nd Middlesex",
       "pct_score": 90.5,
       "grade": "A",
       "bills_scored": 11,
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-07"
 }
