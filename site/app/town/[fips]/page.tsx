@@ -438,7 +438,7 @@ export default async function TownPage({
                 // Spike note (proxy towns only) takes precedence — mutually exclusive with f4 cap
                 if (town.data_notes?.zoning) return town.data_notes.zoning;
                 // F4 cap note: NZA towns where no district permits 4+ unit housing by right
-                if (town.zoning_source === "nza" && town.has_f4_allowed === false) {
+                if (town.zoning_source === "nza" && town.has_f4_allowed === false && (town.metrics.pct_land_multifamily_byright ?? 0) > 0) {
                   return "Small multifamily only — 4+ unit housing is not permitted by right in any district";
                 }
                 return null;
