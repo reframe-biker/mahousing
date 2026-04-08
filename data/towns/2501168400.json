@@ -7,14 +7,14 @@
     "zoning": null,
     "mbta": null,
     "production": "D",
-    "affordability": "D",
+    "affordability": "C",
     "votes": null,
     "legislators": null,
-    "composite": "D"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 465010.2069898221,
+    "median_home_value": 383900.0,
     "rent_burden_pct": 61.3,
     "permits_per_1000_residents": 0.55,
     "renter_share_pct": 57.6
@@ -30,5 +30,5 @@
   "mbta_action_date": null,
   "reps": null,
   "sens": null,
-  "updated_at": "2026-04-07"
+  "updated_at": "2026-04-08"
 }
