@@ -1,7 +1,7 @@
 {
   "2500103690": [
-    "2nd Barnstable",
-    "5th Barnstable"
+    "5th Barnstable",
+    "2nd Barnstable"
   ],
   "2500107175": [
     "3rd Barnstable",
@@ -145,8 +145,8 @@
     "1st Berkshire"
   ],
   "2500500520": [
-    "10th Bristol",
-    "8th Bristol"
+    "8th Bristol",
+    "10th Bristol"
   ],
   "2500502690": [
     "14th Bristol",
@@ -169,31 +169,31 @@
     "10th Bristol"
   ],
   "2500523000": [
-    "6th Bristol",
     "7th Bristol",
-    "8th Bristol"
+    "8th Bristol",
+    "6th Bristol"
   ],
   "2500525240": [
-    "6th Bristol",
-    "8th Bristol"
+    "8th Bristol",
+    "6th Bristol"
   ],
   "2500538225": [
     "14th Bristol",
     "1st Bristol"
   ],
   "2500545000": [
-    "10th Bristol",
-    "11th Bristol",
-    "13th Bristol",
     "8th Bristol",
+    "13th Bristol",
+    "11th Bristol",
+    "10th Bristol",
     "9th Bristol"
   ],
   "2500546598": [
     "14th Bristol"
   ],
   "2500549970": [
-    "1st Bristol",
-    "4th Bristol"
+    "4th Bristol",
+    "1st Bristol"
   ],
   "2500556060": [
     "8th Plymouth"
@@ -212,8 +212,8 @@
     "5th Bristol"
   ],
   "2500569170": [
-    "12th Bristol",
     "3rd Bristol",
+    "12th Bristol",
     "5th Bristol"
   ],
   "2500577570": [
@@ -245,8 +245,8 @@
     "1st Essex"
   ],
   "2500901465": [
-    "17th Essex",
-    "18th Essex"
+    "18th Essex",
+    "17th Essex"
   ],
   "2500905595": [
     "6th Essex"
@@ -258,15 +258,11 @@
   "2500916250": [
     "13th Essex"
   ],
-  "2500921850": [
-    "5th Essex"
-  ],
+  "2500921850": [],
   "2500925625": [
     "2nd Essex"
   ],
-  "2500926150": [
-    "5th Essex"
-  ],
+  "2500926150": [],
   "2500927620": [
     "14th Essex"
   ],
@@ -274,29 +270,27 @@
     "2nd Essex"
   ],
   "2500929405": [
-    "15th Essex",
-    "3rd Essex"
+    "3rd Essex",
+    "15th Essex"
   ],
   "2500932310": [
     "2nd Essex"
   ],
   "2500934550": [
+    "4th Essex",
     "16th Essex",
-    "17th Essex",
-    "4th Essex"
+    "17th Essex"
   ],
   "2500937490": [
     "10th Essex",
     "11th Essex",
-    "8th Essex",
-    "9th Essex"
+    "9th Essex",
+    "8th Essex"
   ],
   "2500937560": [
     "20th Middlesex"
   ],
-  "2500937995": [
-    "5th Essex"
-  ],
+  "2500937995": [],
   "2500938400": [
     "8th Essex"
   ],
@@ -304,13 +298,13 @@
     "1st Essex"
   ],
   "2500940710": [
-    "15th Essex",
+    "4th Essex",
     "16th Essex",
-    "4th Essex"
+    "15th Essex"
   ],
   "2500941095": [
-    "13th Essex",
-    "20th Middlesex"
+    "20th Middlesex",
+    "13th Essex"
   ],
   "2500943580": [
     "11th Essex"
@@ -329,9 +323,7 @@
     "12th Essex",
     "13th Essex"
   ],
-  "2500957880": [
-    "5th Essex"
-  ],
+  "2500957880": [],
   "2500958405": [
     "2nd Essex"
   ],
@@ -353,33 +345,19 @@
     "2nd Essex"
   ],
   "2500974595": [
-    "13th Essex",
-    "6th Essex"
+    "6th Essex",
+    "13th Essex"
   ],
   "2500977150": [
     "14th Essex"
   ],
-  "2501102095": [
-    "1st Franklin"
-  ],
-  "2501105560": [
-    "1st Franklin"
-  ],
-  "2501109595": [
-    "1st Franklin"
-  ],
-  "2501112505": [
-    "1st Franklin"
-  ],
-  "2501114885": [
-    "1st Franklin"
-  ],
-  "2501115200": [
-    "1st Franklin"
-  ],
-  "2501116670": [
-    "1st Franklin"
-  ],
+  "2501102095": [],
+  "2501105560": [],
+  "2501109595": [],
+  "2501112505": [],
+  "2501114885": [],
+  "2501115200": [],
+  "2501116670": [],
   "2501121780": [
     "2nd Franklin"
   ],
@@ -387,27 +365,14 @@
     "2nd Franklin"
   ],
   "2501127060": [
-    "1st Franklin",
     "2nd Franklin"
   ],
-  "2501129475": [
-    "1st Franklin"
-  ],
-  "2501129650": [
-    "1st Franklin"
-  ],
-  "2501135180": [
-    "1st Franklin"
-  ],
-  "2501135285": [
-    "1st Franklin"
-  ],
-  "2501142040": [
-    "1st Franklin"
-  ],
-  "2501142285": [
-    "1st Franklin"
-  ],
+  "2501129475": [],
+  "2501129650": [],
+  "2501135180": [],
+  "2501135285": [],
+  "2501142040": [],
+  "2501142285": [],
   "2501145490": [
     "7th Hampden"
   ],
@@ -417,27 +382,19 @@
   "2501151265": [
     "2nd Franklin"
   ],
-  "2501158335": [
-    "1st Franklin"
-  ],
-  "2501161135": [
-    "1st Franklin"
-  ],
+  "2501158335": [],
+  "2501161135": [],
   "2501161905": [
     "7th Hampden"
   ],
-  "2501168400": [
-    "1st Franklin"
-  ],
+  "2501168400": [],
   "2501173265": [
     "2nd Franklin"
   ],
   "2501174525": [
     "7th Hampden"
   ],
-  "2501179110": [
-    "1st Franklin"
-  ],
+  "2501179110": [],
   "2501300840": [
     "3rd Hampden",
     "6th Hampden"
@@ -453,8 +410,8 @@
   ],
   "2501313660": [
     "5th Hampden",
-    "6th Hampden",
-    "8th Hampden"
+    "8th Hampden",
+    "6th Hampden"
   ],
   "2501319645": [
     "12th Hampden",
@@ -495,11 +452,11 @@
     "3rd Hampden"
   ],
   "2501367000": [
+    "9th Hampden",
     "10th Hampden",
-    "11th Hampden",
     "12th Hampden",
-    "2nd Hampden",
-    "9th Hampden"
+    "11th Hampden",
+    "2nd Hampden"
   ],
   "2501370045": [
     "3rd Hampden"
@@ -583,8 +540,8 @@
     "37th Middlesex"
   ],
   "2501701605": [
-    "23rd Middlesex",
-    "24th Middlesex"
+    "24th Middlesex",
+    "23rd Middlesex"
   ],
   "2501701955": [
     "1st Middlesex"
@@ -612,21 +569,21 @@
   ],
   "2501711000": [
     "24th Middlesex",
-    "25th Middlesex",
+    "29th Middlesex",
     "26th Middlesex",
-    "29th Middlesex"
+    "25th Middlesex"
   ],
   "2501711525": [
     "14th Middlesex"
   ],
   "2501713135": [
     "14th Middlesex",
-    "16th Middlesex",
-    "2nd Middlesex"
+    "2nd Middlesex",
+    "16th Middlesex"
   ],
   "2501715060": [
-    "13th Middlesex",
-    "14th Middlesex"
+    "14th Middlesex",
+    "13th Middlesex"
   ],
   "2501717475": [
     "36th Middlesex"
@@ -639,13 +596,13 @@
     "2nd Suffolk"
   ],
   "2501724960": [
-    "4th Middlesex",
     "6th Middlesex",
-    "7th Middlesex"
+    "7th Middlesex",
+    "4th Middlesex"
   ],
   "2501727480": [
-    "1st Middlesex",
-    "37th Middlesex"
+    "37th Middlesex",
+    "1st Middlesex"
   ],
   "2501730700": [
     "8th Middlesex"
@@ -661,20 +618,20 @@
     "21st Middlesex"
   ],
   "2501735425": [
-    "13th Middlesex",
-    "14th Norfolk"
+    "14th Norfolk",
+    "13th Middlesex"
   ],
   "2501735950": [
     "2nd Middlesex"
   ],
   "2501737000": [
-    "16th Middlesex",
     "17th Middlesex",
-    "18th Middlesex"
+    "18th Middlesex",
+    "16th Middlesex"
   ],
   "2501737875": [
-    "32nd Middlesex",
     "33rd Middlesex",
+    "32nd Middlesex",
     "35th Middlesex"
   ],
   "2501738715": [
@@ -685,8 +642,8 @@
     "3rd Middlesex"
   ],
   "2501739835": [
-    "23rd Middlesex",
     "34th Middlesex",
+    "23rd Middlesex",
     "35th Middlesex"
   ],
   "2501740115": [
@@ -696,9 +653,9 @@
     "5th Middlesex"
   ],
   "2501745560": [
-    "10th Middlesex",
+    "12th Middlesex",
     "11th Middlesex",
-    "12th Middlesex"
+    "10th Middlesex"
   ],
   "2501748955": [
     "20th Middlesex"
@@ -717,9 +674,9 @@
     "37th Middlesex"
   ],
   "2501762535": [
-    "26th Middlesex",
     "27th Middlesex",
-    "34th Middlesex"
+    "34th Middlesex",
+    "26th Middlesex"
   ],
   "2501767665": [
     "31st Middlesex"
@@ -732,8 +689,8 @@
   ],
   "2501769415": [
     "17th Middlesex",
-    "18th Essex",
-    "19th Middlesex"
+    "19th Middlesex",
+    "18th Essex"
   ],
   "2501770360": [
     "1st Middlesex"
@@ -746,16 +703,16 @@
     "9th Essex"
   ],
   "2501772600": [
-    "10th Middlesex",
-    "9th Middlesex"
+    "9th Middlesex",
+    "10th Middlesex"
   ],
   "2501773440": [
-    "10th Middlesex",
-    "29th Middlesex"
+    "29th Middlesex",
+    "10th Middlesex"
   ],
   "2501773790": [
-    "13th Middlesex",
-    "5th Middlesex"
+    "5th Middlesex",
+    "13th Middlesex"
   ],
   "2501776135": [
     "2nd Middlesex"
@@ -809,20 +766,20 @@
     "10th Norfolk"
   ],
   "2502130455": [
-    "3rd Norfolk",
-    "5th Norfolk"
+    "5th Norfolk",
+    "3rd Norfolk"
   ],
   "2502139765": [
-    "13th Norfolk",
-    "9th Norfolk"
+    "9th Norfolk",
+    "13th Norfolk"
   ],
   "2502139975": [
     "10th Norfolk",
     "8th Worcester"
   ],
   "2502141515": [
-    "8th Middlesex",
-    "9th Norfolk"
+    "9th Norfolk",
+    "8th Middlesex"
   ],
   "2502141690": [
     "7th Norfolk"
@@ -840,13 +797,13 @@
     "9th Norfolk"
   ],
   "2502155745": [
-    "1st Norfolk",
     "2nd Norfolk",
-    "3rd Norfolk"
+    "3rd Norfolk",
+    "1st Norfolk"
   ],
   "2502156000": [
-    "1st Norfolk",
-    "7th Norfolk"
+    "7th Norfolk",
+    "1st Norfolk"
   ],
   "2502160785": [
     "8th Norfolk"
@@ -856,10 +813,10 @@
     "8th Norfolk"
   ],
   "2502172495": [
-    "11th Norfolk",
-    "12th Norfolk",
     "8th Norfolk",
-    "9th Norfolk"
+    "9th Norfolk",
+    "11th Norfolk",
+    "12th Norfolk"
   ],
   "2502174175": [
     "14th Norfolk"
@@ -868,8 +825,8 @@
     "11th Norfolk"
   ],
   "2502178972": [
-    "3rd Norfolk",
-    "4th Norfolk"
+    "4th Norfolk",
+    "3rd Norfolk"
   ],
   "2502182315": [
     "9th Norfolk"
@@ -896,15 +853,15 @@
     "9th Plymouth"
   ],
   "2502327795": [
-    "12th Plymouth",
-    "6th Plymouth"
+    "6th Plymouth",
+    "12th Plymouth"
   ],
   "2502328285": [
     "5th Plymouth"
   ],
   "2502328495": [
-    "5th Plymouth",
-    "6th Plymouth"
+    "6th Plymouth",
+    "5th Plymouth"
   ],
   "2502330210": [
     "3rd Plymouth"
@@ -929,21 +886,21 @@
     "10th Bristol"
   ],
   "2502340850": [
-    "12th Bristol",
+    "2nd Plymouth",
     "12th Plymouth",
-    "2nd Plymouth"
+    "12th Bristol"
   ],
   "2502350145": [
     "4th Plymouth",
     "5th Plymouth"
   ],
   "2502352630": [
-    "12th Plymouth",
-    "6th Plymouth"
+    "6th Plymouth",
+    "12th Plymouth"
   ],
   "2502354310": [
-    "12th Plymouth",
-    "1st Plymouth"
+    "1st Plymouth",
+    "12th Plymouth"
   ],
   "2502354415": [
     "12th Plymouth"
@@ -967,29 +924,29 @@
     "7th Plymouth"
   ],
   "2502507000": [
+    "1st Suffolk",
+    "3rd Suffolk",
+    "6th Suffolk",
+    "8th Suffolk",
     "10th Suffolk",
-    "12th Suffolk",
     "13th Suffolk",
-    "14th Suffolk",
     "15th Suffolk",
     "17th Suffolk",
     "18th Suffolk",
-    "1st Suffolk",
-    "2nd Suffolk",
-    "3rd Suffolk",
     "4th Suffolk",
     "5th Suffolk",
-    "6th Suffolk",
+    "14th Suffolk",
+    "9th Suffolk",
     "7th Suffolk",
-    "8th Suffolk",
-    "9th Suffolk"
+    "12th Suffolk",
+    "2nd Suffolk"
   ],
   "2502513205": [
     "11th Suffolk"
   ],
   "2502556585": [
-    "16th Suffolk",
-    "19th Suffolk"
+    "19th Suffolk",
+    "16th Suffolk"
   ],
   "2502581005": [
     "19th Suffolk"
@@ -1065,16 +1022,16 @@
     "12th Worcester"
   ],
   "2502734795": [
-    "17th Worcester",
     "5th Worcester",
+    "17th Worcester",
     "7th Worcester"
   ],
   "2502735075": [
     "4th Worcester"
   ],
   "2502737420": [
-    "1st Middlesex",
-    "3rd Worcester"
+    "3rd Worcester",
+    "1st Middlesex"
   ],
   "2502740255": [
     "10th Worcester"
@@ -1155,8 +1112,8 @@
     "9th Worcester"
   ],
   "2502771620": [
-    "18th Worcester",
-    "8th Worcester"
+    "8th Worcester",
+    "18th Worcester"
   ],
   "2502773090": [
     "1st Hampden"
@@ -1178,14 +1135,14 @@
     "1st Worcester"
   ],
   "2502780405": [
-    "2nd Franklin",
-    "2nd Worcester"
+    "2nd Worcester",
+    "2nd Franklin"
   ],
   "2502782000": [
-    "13th Worcester",
-    "14th Worcester",
     "15th Worcester",
     "16th Worcester",
-    "17th Worcester"
+    "17th Worcester",
+    "13th Worcester",
+    "14th Worcester"
   ]
 }

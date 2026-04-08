@@ -222,17 +222,21 @@ def _ensure_town_district_map() -> dict[str, list[str]]:
 
 def _build_town_district_map() -> dict[str, list[str]]:
     """
-    Spatial join: MA town centroids × TIGER SLDL district polygons.
+    Spatial join: MA town polygons × TIGER SLDL district polygons, area-based.
 
     Returns {fips_string: [district_name, ...], ...}
     Multi-district towns (e.g. Boston, Worcester) have multiple entries.
     Towns in unmatched or unknown districts map to an empty list.
+
+    Overlap thresholds (METHODOLOGY.md section 6a):
+      same-county:  >= 1%  overlap  (preserves multi-district cities)
+      cross-county: >= 15% overlap  (filters slivers, preserves genuine
+                                     cross-county districts like Bolton)
     """
     try:
         import geopandas as gpd
-        from shapely.geometry import Point
     except ImportError as exc:
-        raise ImportError("geopandas and shapely are required for spatial join") from exc
+        raise ImportError("geopandas is required for spatial join") from exc
 
     if not _TOWNS_GEOJSON.exists():
         raise FileNotFoundError(f"MA towns GeoJSON not found: {_TOWNS_GEOJSON}")
@@ -243,72 +247,94 @@ def _build_town_district_map() -> dict[str, list[str]]:
             "(State Legislative Districts → MA) and place in data/."
         )
 
-    # Load town polygons
+    # MA county FIPS (3-digit, within-state) → county name, for threshold logic
+    _COUNTY_FIPS_TO_NAME: dict[str, str] = {
+        "001": "Barnstable", "003": "Berkshire",  "005": "Bristol",
+        "007": "Dukes",      "009": "Essex",       "011": "Franklin",
+        "013": "Hampden",    "015": "Hampshire",   "017": "Middlesex",
+        "019": "Nantucket",  "021": "Norfolk",     "023": "Plymouth",
+        "025": "Suffolk",    "027": "Worcester",
+    }
+    # Counties that the Barnstable, Dukes and Nantucket district spans —
+    # treat it as same-county for towns in any of these.
+    _BDN_COUNTIES = frozenset({"Barnstable", "Dukes", "Nantucket"})
+
+    def _district_county(district_name: str) -> Optional[str]:
+        """Extract the county name from a district name string."""
+        if district_name == "Barnstable, Dukes and Nantucket":
+            return None  # handled specially via _BDN_COUNTIES
+        # Standard format: "Nth County" — last whitespace-delimited token
+        parts = district_name.rsplit(None, 1)
+        return parts[-1] if len(parts) == 2 else None
+
+    # ── Load and reproject to MA State Plane (metres) for area calculations ──
     towns_gdf = gpd.read_file(str(_TOWNS_GEOJSON))
     if towns_gdf.crs is None:
         towns_gdf = towns_gdf.set_crs("EPSG:4326")
-    else:
-        towns_gdf = towns_gdf.to_crs("EPSG:4326")
+    towns_gdf = towns_gdf.to_crs("EPSG:26986")
+    towns_gdf = towns_gdf[["GEOID", "geometry"]].copy()
+    towns_gdf["town_area"] = towns_gdf.geometry.area
 
-    # Compute centroids (in same CRS)
-    centroids = towns_gdf.copy()
-    centroids["geometry"] = towns_gdf.geometry.centroid
-    centroids = centroids[["GEOID", "geometry"]].copy()
-
-    # Load TIGER SLDL districts
     tiger_gdf = gpd.read_file(str(_TIGER_SLDL))
-    tiger_gdf = tiger_gdf.to_crs("EPSG:4326")
-
-    # Filter out ZZZ placeholder
+    tiger_gdf = tiger_gdf.to_crs("EPSG:26986")
     tiger_gdf = tiger_gdf[tiger_gdf["NAMELSAD"] != "ZZZ"].copy()
-
-    # Normalize district names
     tiger_gdf["district_name"] = tiger_gdf["NAMELSAD"].apply(_normalize_tiger_district)
+    tiger_gdf = tiger_gdf[["district_name", "geometry"]].copy()
 
-    # TODO: Replace centroid point-in-polygon join (predicate="within") with
-    # area-based overlap per METHODOLOGY.md section 6a (1% same-county threshold,
-    # 15% cross-county threshold). The current centroid approach misses towns whose
-    # centroid falls outside the TIGER district polygon (e.g. Greenfield, Amherst,
-    # North Attleborough). Do NOT delete town_district_map.json until this is fixed —
-    # the cached map was built with area-based logic and is more accurate than a
-    # fresh centroid rebuild would be.
-    centroids_gdf = gpd.GeoDataFrame(centroids, geometry="geometry", crs="EPSG:4326")
-    joined = gpd.sjoin(
-        centroids_gdf,
-        tiger_gdf[["district_name", "geometry"]],
-        how="left",
-        predicate="within",
+    # ── Polygon-polygon intersection ──────────────────────────────────────────
+    # Each row = one (town, district) pair with non-zero intersection geometry.
+    intersected = gpd.overlay(
+        towns_gdf,
+        tiger_gdf,
+        how="intersection",
+        keep_geom_type=False,
+    )
+    intersected["overlap_pct"] = (
+        intersected.geometry.area / intersected["town_area"] * 100
     )
 
-    # Build result dict: each FIPS maps to a list of district names
-    result: dict[str, list[str]] = {}
+    # ── Apply tiered thresholds and build result ──────────────────────────────
+    result: dict[str, list[str]] = {str(row["GEOID"]): [] for _, row in towns_gdf.iterrows()}
     unmatched_fips: list[str] = []
 
-    for _, row in joined.iterrows():
+    for _, row in intersected.iterrows():
         fips = str(row["GEOID"])
-        district = row.get("district_name")
+        district = str(row["district_name"])
+        overlap_pct = float(row["overlap_pct"])
 
-        if fips not in result:
-            result[fips] = []
+        # Determine same-county vs cross-county
+        town_county_fips = fips[2:5]  # digits 2-4 of the 10-digit COUSUB GEOID
+        town_county = _COUNTY_FIPS_TO_NAME.get(town_county_fips)
 
-        if pd.isna(district) or district is None:
-            if fips not in unmatched_fips:
-                unmatched_fips.append(fips)
+        if district == "Barnstable, Dukes and Nantucket":
+            same_county = town_county in _BDN_COUNTIES
         else:
-            district = str(district)
-            if district in _UNMATCHED_TIGER_DISTRICTS:
-                logger.warning(
-                    f"Town FIPS {fips} maps to '{district}', which has no Open States "
-                    f"counterpart — this is expected, town will get null grade"
-                )
-            else:
-                if district not in result[fips]:
-                    result[fips].append(district)
+            dist_county = _district_county(district)
+            same_county = (dist_county is not None and dist_county == town_county)
+
+        threshold = 1.0 if same_county else 15.0
+        if overlap_pct < threshold:
+            continue
+
+        # Apply existing exclusion logic
+        if district in _UNMATCHED_TIGER_DISTRICTS:
+            logger.warning(
+                f"Town FIPS {fips} maps to '{district}', which has no Open States "
+                f"counterpart — this is expected, town will get null grade"
+            )
+            continue
+
+        if district not in result[fips]:
+            result[fips].append(district)
+
+    for fips, districts in result.items():
+        if not districts:
+            unmatched_fips.append(fips)
 
     if unmatched_fips:
         logger.warning(
-            f"Spatial join: {len(unmatched_fips)} towns had no centroid-in-polygon match "
-            f"(boundary cases or data gaps): {unmatched_fips[:10]}"
+            f"Spatial join: {len(unmatched_fips)} towns had no district match above "
+            f"overlap threshold: {sorted(unmatched_fips)[:10]}"
         )
 
     matched = sum(1 for v in result.values() if v)
