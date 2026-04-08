@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import fs from "fs";
 import type { TownRecord } from "@/src/types/town";
 import { getDataPath } from "@/src/lib/paths";
@@ -27,7 +28,9 @@ export default function HomePage() {
 
       {/* Map fills remaining viewport */}
       <div className="flex-1 min-h-0 relative">
-        <MapSection towns={towns} />
+        <Suspense fallback={null}>
+          <MapSection towns={towns} />
+        </Suspense>
       </div>
 
       {/* Footer */}
