@@ -433,12 +433,19 @@ export default async function TownPage({
               if (allNew) return "Scored on 194th session votes only (took office Jan 2025)";
               return null;
             })();
-            const note =
-              cfg.gradeKey === "zoning"
-                ? (town.data_notes?.zoning ?? null)
-                : cfg.gradeKey === "legislators"
-                ? repCaveat
-                : null;
+            const note = (() => {
+              if (cfg.gradeKey === "zoning") {
+                // Spike note (proxy towns only) takes precedence — mutually exclusive with f4 cap
+                if (town.data_notes?.zoning) return town.data_notes.zoning;
+                // F4 cap note: NZA towns where no district permits 4+ unit housing by right
+                if (town.zoning_source === "nza" && town.has_f4_allowed === false) {
+                  return "Small multifamily only — 4+ unit housing is not permitted by right in any district";
+                }
+                return null;
+              }
+              if (cfg.gradeKey === "legislators") return repCaveat;
+              return null;
+            })();
             const explanation = cfg.getExplanation
               ? cfg.getExplanation(town)
               : cfg.metricKey

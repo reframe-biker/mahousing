@@ -163,6 +163,14 @@ export interface TownRecord {
   zoning_source: 'nza' | 'proxy' | null;
 
   /**
+   * Whether any residential zoning district in the town permits 4+ unit housing by right.
+   *   true  — at least one NZA district has family4_treatment == "allowed"
+   *   false — all residential districts cap at 3-family or less (grade capped at B)
+   *   null  — unknown; town is graded from permit proxy, no district-level data
+   */
+  has_f4_allowed: boolean | null;
+
+  /**
    * MBTA Communities Act compliance status:
    *   "compliant"     — municipality has adopted a compliant zoning district
    *   "interim"       — municipality has adopted an interim action plan

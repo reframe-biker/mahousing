@@ -426,6 +426,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "metrics": metrics,
         "data_notes": data_notes,
         "zoning_source": zoning_source,
+        "has_f4_allowed": has_f4_allowed,
         "mbta_status": mbta_status,
         "mbta_deadline": mbta_deadline,
         "mbta_action_date": mbta_action_date,

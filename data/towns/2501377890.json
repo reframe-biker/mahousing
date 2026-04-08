@@ -25,6 +25,7 @@
     "affordability": null
   },
   "zoning_source": null,
+  "has_f4_allowed": null,
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,

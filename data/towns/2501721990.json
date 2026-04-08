@@ -25,6 +25,7 @@
     "affordability": null
   },
   "zoning_source": "nza",
+  "has_f4_allowed": false,
   "mbta_status": "interim",
   "mbta_deadline": "2023-12-31",
   "mbta_action_date": null,
