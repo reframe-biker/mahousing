@@ -10,11 +10,11 @@
     "affordability": "B",
     "votes": null,
     "legislators": null,
-    "composite": "B"
+    "composite": null
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
-    "median_home_value": 295400.0,
+    "median_home_value": 374392.9472557897,
     "rent_burden_pct": 49.8,
     "permits_per_1000_residents": null,
     "renter_share_pct": 31.8

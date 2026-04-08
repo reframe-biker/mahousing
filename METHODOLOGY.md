@@ -306,7 +306,24 @@ A town whose House district has no matched representative (vacant seat, or a dis
 
 ## Composite Grade
 
-The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions for which a municipality has a null grade are excluded from the composite calculation — they do not count as zeros. For the legislator dimension, the town-level grade used in the composite is the lower-median grade across the municipality's House representatives only (A=4, B=3, C=2, D=1, F=0) — see Section 6c for the formula. The weights assigned to each dimension, and the rationale for those weights, will be documented here before any composite grades are published.
+The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions with a null grade are excluded — they do not count as zeros.
+
+**Weights:**
+
+| Dimension | Weight | Rationale |
+|-----------|--------|-----------|
+| Zoning | 1.0 | Direct policy choice by local officials |
+| MBTA compliance | 1.0 | Direct policy choice; compliance is legally required |
+| Housing production | 1.0 | Direct output of local land-use decisions |
+| Legislators | 1.0 | Direct voting record of elected representatives |
+| Affordability | 0.5 | Market outcome — reflects regional and macroeconomic forces as well as local policy; local officials have limited leverage over housing prices compared to their direct control over what gets built |
+| Votes | 1.0 | Reserved (unimplemented — excluded as null) |
+
+**Minimum dimension threshold:** A composite grade is only computed if at least **2** of the four core scored dimensions — zoning, production, affordability, and legislators — are non-null. MBTA and votes are excluded from this threshold: MBTA is null for the ~174 municipalities not subject to the Act, and votes is not yet implemented. This prevents a composite from being derived from market-outcome data alone (e.g., a town with only an affordability grade), which would be misleading.
+
+**Formula:** The composite numeric score is computed as the weighted sum of non-null dimension scores divided by the sum of their weights (A=4, B=3, C=2, D=1, F=0), then rounded to the nearest integer and converted back to a letter grade.
+
+For the legislator dimension, the town-level grade is the lower-median grade across the municipality's House representatives only — see Section 6c for the formula.
 
 ---
 

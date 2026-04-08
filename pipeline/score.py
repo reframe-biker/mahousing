@@ -35,9 +35,12 @@ Grading rubrics for Phase 1 dimensions:
     F  "non-compliant"
     null  "exempt" or None (excluded from composite — not penalized)
 
-  composite      Numeric average of all non-null dimension grades.
+  composite      Weighted average of all non-null dimension grades.
                  Null dimensions are excluded — not treated as F.
                  Exempt MBTA towns (null mbta grade) are excluded from composite.
+                 affordability weight=0.5; all other dimensions weight=1.0.
+                 Requires ≥2 non-null grades from {zoning, production, affordability,
+                 legislators}; returns None otherwise.
                  A=4, B=3, C=2, D=1, F=0. Rounded to nearest integer.
 
   legislators    (pooled lower-median of all reps + sens)
@@ -60,6 +63,25 @@ logger = logging.getLogger(__name__)
 # Mapping from letter grade to numeric value for composite calculation
 _GRADE_TO_NUM: dict[str, float] = {"A": 4.0, "B": 3.0, "C": 2.0, "D": 1.0, "F": 0.0}
 _NUM_TO_GRADE: dict[int, str] = {4: "A", 3: "B", 2: "C", 1: "D", 0: "F"}
+
+# Composite weights: affordability is a market outcome (0.5); policy dimensions are 1.0.
+# mbta and votes use 1.0 but are structurally null for many towns and excluded from
+# the minimum-dimension threshold.
+_DIMENSION_WEIGHTS: dict[str, float] = {
+    "zoning": 1.0,
+    "mbta": 1.0,
+    "affordability": 0.5,
+    "production": 1.0,
+    "votes": 1.0,
+    "legislators": 1.0,
+}
+
+# Dimensions that count toward the minimum non-null requirement for a composite grade.
+# mbta and votes are excluded: mbta is null for 174 towns (non-subject) and votes is
+# unimplemented. Requiring data from the core policy/output dimensions prevents a
+# composite from being computed on market-outcome data alone.
+_SCORED_DIMENSIONS: frozenset[str] = frozenset({"zoning", "production", "affordability", "legislators"})
+_MIN_SCORED_DIMENSIONS: int = 2
 
 
 def score_town(
@@ -108,7 +130,14 @@ def score_town(
 
     legislators = _grade_legislators(reps, sens)
 
-    composite = _compute_composite([zoning, mbta, affordability, production, votes, legislators])
+    composite = _compute_composite({
+        "zoning": zoning,
+        "mbta": mbta,
+        "affordability": affordability,
+        "production": production,
+        "votes": votes,
+        "legislators": legislators,
+    })
 
     return {
         "zoning": zoning,
@@ -316,20 +345,45 @@ def _grade_production(permits_per_1000: float | None) -> str | None:
     return "F"
 
 
-def _compute_composite(grades: list[str | None]) -> str | None:
+def _compute_composite(grades: dict[str, str | None]) -> str | None:
     """
-    Compute a composite letter grade as the simple average of non-null dimension grades.
+    Compute a composite letter grade as a weighted average of non-null dimension grades.
+
+    Weights (from _DIMENSION_WEIGHTS):
+      affordability → 0.5  (market outcome, not a direct policy choice)
+      all others    → 1.0
+
+    Minimum dimension rule: at least 2 of {zoning, production, affordability, legislators}
+    must be non-null for a composite to be returned. mbta and votes are excluded from
+    this threshold — mbta is null for ~174 non-subject towns and votes is unimplemented.
 
     Args:
-        grades: List of letter grade strings or None. None values are excluded.
+        grades: Dict mapping dimension name to letter grade string or None.
 
     Returns:
-        Composite letter grade, or None if no grades are available.
+        Composite letter grade, or None if the minimum dimension threshold is not met.
     """
-    numeric = [_GRADE_TO_NUM[g] for g in grades if g is not None]
-    if not numeric:
+    # Require at least 2 non-null grades from the core scored dimensions
+    scored_non_null = sum(
+        1 for dim in _SCORED_DIMENSIONS if grades.get(dim) is not None
+    )
+    if scored_non_null < _MIN_SCORED_DIMENSIONS:
         return None
-    avg = sum(numeric) / len(numeric)
+
+    # Weighted average across all non-null dimensions
+    weighted_sum = 0.0
+    total_weight = 0.0
+    for dim, grade in grades.items():
+        if grade is None:
+            continue
+        w = _DIMENSION_WEIGHTS.get(dim, 1.0)
+        weighted_sum += _GRADE_TO_NUM[grade] * w
+        total_weight += w
+
+    if total_weight == 0.0:
+        return None
+
+    avg = weighted_sum / total_weight
     rounded = round(avg)
     # Clamp to valid range [0, 4] in case of floating point edge cases
     rounded = max(0, min(4, rounded))
