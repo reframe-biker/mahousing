@@ -281,24 +281,30 @@ Both votes are anti-housing amendments: voting **YEA** is anti-housing; voting *
 
 ---
 
-#### 6c. Combined legislators grade
+#### 6c. Town-level legislators grade
 
-The town-level `legislators` grade pools all House representatives and Senate senators whose districts overlap the municipality, then takes the lower median across the combined set (A=4, B=3, C=2, D=1, F=0). With an even number of legislators, the lower of the two middle values is used — a town is not rewarded for one strong legislator among many poor ones.
+The town-level `legislators` grade is derived from **House representatives only**. Senate senators are displayed on the town profile for informational context but do not feed the composite grade.
 
-| Legislators in district | Lower-median position |
-|------------------------|----------------------|
-| 1 | index 0 (the sole legislator) |
-| 2 | index 1 (lower of the two) |
-| 3 | index 1 (middle) |
-| N | index floor(N/2) |
+**Rationale:** House representatives are the most locally accountable legislators — each district covers a single town or a small part of one, and constituents can most directly pressure or replace their House rep. Senate districts span many municipalities (often 10–20 towns), diluting accountability. A senator's vote record reflects regional, not town-level, responsiveness. Using only House reps makes the grade a direct signal about the legislators a town's voters can hold accountable at the ballot box.
 
-Boston, for example, has 16 House representatives and 6 Senate senators — 22 legislators total. Its `legislators` grade is the value at sorted index 11.
+The grade takes the **lower median** across all House representatives whose districts overlap the municipality (A=4, B=3, C=2, D=1, F=0). With an even number of reps, the lower of the two middle values is used — a town is not rewarded for one strong rep among many poor ones.
+
+| Reps in district | Lower-median index |
+|-----------------|-------------------|
+| 1 | 0 (the sole rep) |
+| 2 | 0 (lower of the two) |
+| 3 | 1 (middle) |
+| N | floor((N−1)/2) |
+
+Boston, for example, has 16 House representatives. Its `legislators` grade is the value at sorted index 7.
+
+A town whose House district has no matched representative (vacant seat, or a district with no Open States record such as the 1st Franklin or 5th Essex districts) receives a null legislators grade regardless of its senator's record.
 
 ---
 
 ## Composite Grade
 
-The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions for which a municipality has a null grade are excluded from the composite calculation — they do not count as zeros. For the legislator dimension, the town-level grade used in the composite is the lower-median grade across all of the municipality's House representatives and Senate senators combined (A=4, B=3, C=2, D=1, F=0) — see Section 6c for the pooling formula. The weights assigned to each dimension, and the rationale for those weights, will be documented here before any composite grades are published.
+The composite grade is a weighted average of all applicable dimensions for a given municipality. Dimensions for which a municipality has a null grade are excluded from the composite calculation — they do not count as zeros. For the legislator dimension, the town-level grade used in the composite is the lower-median grade across the municipality's House representatives only (A=4, B=3, C=2, D=1, F=0) — see Section 6c for the formula. The weights assigned to each dimension, and the rationale for those weights, will be documented here before any composite grades are published.
 
 ---
 

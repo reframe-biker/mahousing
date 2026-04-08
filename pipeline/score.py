@@ -255,26 +255,26 @@ def _grade_legislators(
     sens: list[dict] | None,
 ) -> str | None:
     """
-    Derive the town-level legislators grade from the combined pool of
-    RepRecords and SenRecords.
+    Derive the town-level legislators grade from House representatives only.
 
-    Uses lower median: with N legislators, takes sorted(grades)[floor(N/2)].
-    Returns None if both reps and sens are None or empty.
+    Senators are displayed in the UI but do not feed this grade — House reps
+    are the most locally accountable legislators and the ones constituents can
+    most directly pressure or replace.
+
+    Uses lower median: with N reps, takes sorted(grades)[floor((N-1)/2)].
+    For even N this selects the lower of the two middle values — a town is not
+    rewarded for one strong rep among many poor ones.
+    Returns None if reps is None or empty.
     """
     import math
-    combined: list[dict] = []
-    if reps:
-        combined.extend(reps)
-    if sens:
-        combined.extend(sens)
-    if not combined:
+    if not reps:
         return None
     grade_scores = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
-    scores = [grade_scores[r["grade"]] for r in combined
+    scores = [grade_scores[r["grade"]] for r in reps
               if r.get("grade") in grade_scores]
     if not scores:
         return None
-    median_score = sorted(scores)[math.floor(len(scores) / 2)]
+    median_score = sorted(scores)[math.floor((len(scores) - 1) / 2)]
     score_to_grade = {4: "A", 3: "B", 2: "C", 1: "D", 0: "F"}
     return score_to_grade[median_score]
 
