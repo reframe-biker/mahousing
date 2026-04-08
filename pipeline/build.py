@@ -137,6 +137,8 @@ def main() -> None:
         # Join on geoid for exact matching — no name normalization needed.
         # Include data_note if present (populated by permits_proxy spike detection).
         zoning_cols = ["fips", "pct_land_multifamily_byright"]
+        if "has_f4_allowed" in zoning_df.columns:
+            zoning_cols.append("has_f4_allowed")
         if "zoning_source" in zoning_df.columns:
             zoning_cols.append("zoning_source")
         if "data_note" in zoning_df.columns:
@@ -390,6 +392,13 @@ def _build_record(row: pd.Series, today: str) -> dict:
     if production_spike_note:
         permits_per_1000 = None
 
+    # has_f4_allowed: True/False for NZA towns, None for proxy towns
+    raw_f4 = row.get("has_f4_allowed")
+    if raw_f4 is None or (isinstance(raw_f4, float) and pd.isna(raw_f4)):
+        has_f4_allowed = None
+    else:
+        has_f4_allowed = bool(raw_f4)
+
     metrics = {
         "pct_land_multifamily_byright": pct_mf,
         "median_home_value": home_value,
@@ -398,7 +407,7 @@ def _build_record(row: pd.Series, today: str) -> dict:
         "renter_share_pct": renter_share,
     }
 
-    grades = score_town(metrics, mbta_status=mbta_status, reps=reps, sens=sens)
+    grades = score_town(metrics, mbta_status=mbta_status, reps=reps, sens=sens, has_f4_allowed=has_f4_allowed)
 
     # data_notes: zoning note from permits_proxy spike detection; production
     # note from single-year spike detection in building_permits.py

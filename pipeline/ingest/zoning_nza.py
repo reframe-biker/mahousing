@@ -45,6 +45,10 @@ OUTPUT CONTRACT (matches zoning.py router):
   fips                        (str)          10-digit county subdivision GEOID
   pct_land_multifamily_byright (float | None) % of residential land by-right MF;
                                              None = insufficient data
+  has_f4_allowed              (bool | None)  True if any residential district allows
+                                             4+ unit housing by right; False if all
+                                             districts cap at 3-family or less;
+                                             None for proxy-sourced towns (unknown)
   low_sample                  (bool)         True if data quality is thin
   data_note                   (str | None)   Quality flag; None for NZA-sourced towns
 """
@@ -86,7 +90,7 @@ def get_zoning_data() -> pd.DataFrame:
             data_note                   (str | None)
     """
     empty = pd.DataFrame(
-        columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "zoning_source"]
+        columns=["fips", "pct_land_multifamily_byright", "has_f4_allowed", "low_sample", "data_note", "zoning_source"]
     )
 
     # ── Load NZA GeoJSON ────────────────────────────────────────────────────────
@@ -156,6 +160,9 @@ def get_zoning_data() -> pd.DataFrame:
             "jurisdiction": props.get("jurisdiction", ""),
             "acres": float(acres),
             "mf_score": score,
+            # f4_allowed: True only for residential districts (score is not None)
+            # where family4 housing is explicitly permitted by right.
+            "f4_allowed": score is not None and props.get("family4_treatment") == "allowed",
         })
 
     logger.info(
@@ -170,27 +177,32 @@ def get_zoning_data() -> pd.DataFrame:
     districts_df = pd.DataFrame(records)
 
     # ── Aggregate to town level ─────────────────────────────────────────────────
-    town_scores: dict[str, float | None] = {}
+    town_data: dict[str, dict] = {}
     for jurisdiction, group in districts_df.groupby("jurisdiction"):
         score = _aggregate_town(group)
-        town_scores[jurisdiction] = score
+        # has_f4_allowed: True if any residential district in the town allows
+        # 4+ unit multifamily by right. False if all residential districts cap
+        # at 3-family or less.
+        has_f4_allowed = bool(group["f4_allowed"].any())
+        town_data[jurisdiction] = {"score": score, "has_f4_allowed": has_f4_allowed}
 
     logger.info(
-        f"NZA: {len(town_scores)} jurisdictions scored "
-        f"({sum(v is not None for v in town_scores.values())} with data)"
+        f"NZA: {len(town_data)} jurisdictions scored "
+        f"({sum(v['score'] is not None for v in town_data.values())} with data)"
     )
 
     # ── Map jurisdiction names → FIPS ───────────────────────────────────────────
     nza_rows = []
     unmatched = []
-    for jurisdiction, score in town_scores.items():
+    for jurisdiction, data in town_data.items():
         fips = _resolve_fips(jurisdiction, name_to_fips)
         if fips is None:
             unmatched.append(jurisdiction)
             continue
         nza_rows.append({
             "fips": fips,
-            "pct_land_multifamily_byright": score,
+            "pct_land_multifamily_byright": data["score"],
+            "has_f4_allowed": data["has_f4_allowed"],
             "low_sample": False,
             "data_note": None,
             "_source": "nza",
@@ -201,7 +213,7 @@ def get_zoning_data() -> pd.DataFrame:
             logger.warning(f"NZA: jurisdiction '{name}' could not be matched to a FIPS code — dropped")
 
     nza_df = pd.DataFrame(nza_rows) if nza_rows else pd.DataFrame(
-        columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "_source"]
+        columns=["fips", "pct_land_multifamily_byright", "has_f4_allowed", "low_sample", "data_note", "_source"]
     )
 
     nza_fips = set(nza_df["fips"].tolist())
@@ -239,7 +251,7 @@ def get_zoning_data() -> pd.DataFrame:
         f"{proxy_count} from permit proxy fallback"
     )
 
-    return combined[["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "zoning_source"]]
+    return combined[["fips", "pct_land_multifamily_byright", "has_f4_allowed", "low_sample", "data_note", "zoning_source"]]
 
 
 # ── Known error overrides ────────────────────────────────────────────────────────
@@ -373,19 +385,21 @@ def _get_proxy_fallback(nza_fips: set[str]) -> pd.DataFrame:
 
     if proxy.empty:
         return pd.DataFrame(
-            columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "_source"]
+            columns=["fips", "pct_land_multifamily_byright", "has_f4_allowed", "low_sample", "data_note", "_source"]
         )
 
     # Only keep towns not already covered by NZA
     fallback = proxy[~proxy["fips"].isin(nza_fips)].copy()
     fallback = fallback.rename(columns={"pct_multifamily_permitted": "pct_land_multifamily_byright"})
     fallback["_source"] = "proxy"
+    # Proxy towns have no district-level data — has_f4_allowed is unknown (None)
+    fallback["has_f4_allowed"] = None
 
     logger.info(
         f"NZA: permit proxy fallback covers {len(fallback)} additional towns "
         f"(out of {len(proxy)} total in proxy dataset)"
     )
-    return fallback[["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "_source"]]
+    return fallback[["fips", "pct_land_multifamily_byright", "has_f4_allowed", "low_sample", "data_note", "_source"]]
 
 
 def _permit_proxy_only() -> pd.DataFrame:
@@ -395,9 +409,10 @@ def _permit_proxy_only() -> pd.DataFrame:
         proxy = _proxy_fn()
         df = proxy.rename(columns={"pct_multifamily_permitted": "pct_land_multifamily_byright"})
         df["zoning_source"] = "proxy"
+        df["has_f4_allowed"] = None  # No district-level data for proxy towns
         return df
     except Exception as exc:
         logger.warning(f"Permit proxy also failed ({exc})")
         return pd.DataFrame(
-            columns=["fips", "pct_land_multifamily_byright", "low_sample", "data_note", "zoning_source"]
+            columns=["fips", "pct_land_multifamily_byright", "has_f4_allowed", "low_sample", "data_note", "zoning_source"]
         )

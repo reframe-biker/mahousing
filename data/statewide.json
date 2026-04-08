@@ -5636,7 +5636,7 @@
     "county": "Middlesex County",
     "population": 48685,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "B",
       "production": "B",
       "affordability": "D",
@@ -10938,7 +10938,7 @@
     "county": "Plymouth County",
     "population": 24268,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "B",
       "production": "C",
       "affordability": "C",
@@ -13088,7 +13088,7 @@
     "county": "Plymouth County",
     "population": 11281,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": "A",
       "production": "C",
       "affordability": "C",
@@ -14107,7 +14107,7 @@
     "county": "Hampshire County",
     "population": 618,
     "grades": {
-      "zoning": "A",
+      "zoning": "B",
       "mbta": null,
       "production": null,
       "affordability": "A",

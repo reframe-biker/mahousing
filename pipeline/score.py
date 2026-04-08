@@ -67,6 +67,7 @@ def score_town(
     mbta_status: str | None = None,
     reps: list[dict] | None = None,
     sens: list[dict] | None = None,
+    has_f4_allowed: bool | None = None,
 ) -> dict:
     """
     Compute letter grades for a single municipality given its raw metrics.
@@ -82,6 +83,10 @@ def score_town(
         sens: List of SenRecord dicts (from senate_rollcall_fetcher.py), or None.
               reps and sens are pooled together to derive the town-level
               legislators grade via lower-median across the combined set.
+        has_f4_allowed: True if any residential district in the town permits
+                        4+ unit housing by right; False if only ≤3-unit housing
+                        is allowed; None if unknown (proxy towns). When False,
+                        the zoning grade is capped at B.
 
     Returns:
         Dict matching pipeline.schema.Grades. Keys: zoning, mbta, production,
@@ -89,7 +94,7 @@ def score_town(
         Any dimension without data returns None (not "F").
         Exempt MBTA towns get None for mbta grade (excluded from composite).
     """
-    zoning = _grade_zoning(metrics.get("pct_land_multifamily_byright"))
+    zoning = _grade_zoning(metrics.get("pct_land_multifamily_byright"), has_f4_allowed)
     affordability = _grade_affordability(
         metrics.get("rent_burden_pct"),
         metrics.get("median_home_value"),
@@ -141,7 +146,7 @@ def _grade_mbta(status: str | None) -> str | None:
     return None
 
 
-def _grade_zoning(pct: float | None) -> str | None:
+def _grade_zoning(pct: float | None, has_f4_allowed: bool | None = None) -> str | None:
     """
     Grade zoning permissiveness based on pct_land_multifamily_byright.
 
@@ -151,18 +156,31 @@ def _grade_zoning(pct: float | None) -> str | None:
 
     A > 25%, B 10–25%, C 3–10%, D 0.5–3%, F < 0.5%
     null  no residential zoning data available
+
+    Cap: if has_f4_allowed is False (no district in the town allows 4+ unit
+    housing by right), the grade is capped at B regardless of percentage score.
+    Towns where only small multifamily (≤3 units) is allowed cannot receive an
+    A because genuine multifamily access requires 4+ unit housing somewhere in
+    the town by right.
     """
     if pct is None:
         return None
     if pct > 25:
-        return "A"
-    if pct > 10:
-        return "B"
-    if pct > 3:
-        return "C"
-    if pct > 0.5:
-        return "D"
-    return "F"
+        grade = "A"
+    elif pct > 10:
+        grade = "B"
+    elif pct > 3:
+        grade = "C"
+    elif pct > 0.5:
+        grade = "D"
+    else:
+        grade = "F"
+
+    # Apply cap: towns with no by-right f4 access cannot earn an A
+    if grade == "A" and has_f4_allowed is False:
+        grade = "B"
+
+    return grade
 
 
 def _grade_rent_burden(rent_burden_pct: float | None) -> str | None:

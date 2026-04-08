@@ -45,6 +45,8 @@ Districts are area-weighted within each municipality to produce the final percen
 | F | < 0.5% |
 | N/A | No residential zoning data available |
 
+**Grade cap — small multifamily only:** Towns graded from NZA district data where no residential district permits 4+ unit housing by right are capped at **B**, regardless of their percentage score. A high percentage score driven entirely by 3-family-only zoning reflects meaningful permissiveness at the small-scale end, but not genuine multifamily access — 4+ unit buildings are the primary vehicle for rental housing production at scale. A town that allows only duplexes and triplexes by right cannot earn an A on this dimension. This cap applies only to NZA-sourced towns; proxy-sourced towns have no district-level data and are unaffected.
+
 ---
 
 ### Zoning metric — permit mix fallback
