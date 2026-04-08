@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "D",
     "votes": null,
-    "legislators": "F",
-    "composite": "C"
+    "legislators": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 12.9,
@@ -32,9 +32,9 @@
     {
       "name": "Greg Schwartz",
       "district": "12th Middlesex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -43,11 +43,12 @@
     {
       "name": "Tommy Vitolo",
       "district": "15th Norfolk",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

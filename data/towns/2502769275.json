@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "A",
     "votes": null,
-    "legislators": "F",
-    "composite": "D"
+    "legislators": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -32,11 +32,12 @@
     {
       "name": "Jon Zlotnik",
       "district": "2nd Worcester",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 81.0,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

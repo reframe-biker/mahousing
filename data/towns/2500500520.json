@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "legislators": "F",
-    "composite": "D"
+    "legislators": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -32,9 +32,9 @@
     {
       "name": "Mark Sylvia",
       "district": "10th Bristol",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -43,9 +43,9 @@
     {
       "name": "Steven Ouellette",
       "district": "8th Bristol",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"

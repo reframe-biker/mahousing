@@ -43,11 +43,12 @@
     {
       "name": "Tram Nguyen",
       "district": "18th Essex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

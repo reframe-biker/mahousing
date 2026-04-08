@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "legislators": "F",
-    "composite": "C"
+    "legislators": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 40.1,
@@ -32,22 +32,24 @@
     {
       "name": "Bruce Ayers",
       "district": "1st Norfolk",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Tackey Chan",
       "district": "2nd Norfolk",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },

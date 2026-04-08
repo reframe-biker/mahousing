@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "legislators": "F",
-    "composite": "D"
+    "legislators": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
@@ -32,9 +32,9 @@
     {
       "name": "Leigh Davis",
       "district": "3rd Berkshire",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"

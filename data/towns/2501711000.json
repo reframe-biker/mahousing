@@ -32,22 +32,24 @@
     {
       "name": "Dave Rogers",
       "district": "24th Middlesex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Marjorie Decker",
       "district": "25th Middlesex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 42.9,
+      "grade": "C",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
@@ -56,20 +58,22 @@
       "district": "26th Middlesex",
       "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Steve Owens",
       "district": "29th Middlesex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

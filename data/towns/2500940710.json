@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "legislators": "F",
-    "composite": "D"
+    "legislators": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -32,33 +32,36 @@
     {
       "name": "Ryan Hamilton",
       "district": "15th Essex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Francisco Paulino",
       "district": "16th Essex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Estela Reyes",
       "district": "4th Essex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

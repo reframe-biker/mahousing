@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "legislators": "F",
+    "legislators": "A",
     "composite": "C"
   },
   "metrics": {
@@ -32,22 +32,24 @@
     {
       "name": "Bill Galvin",
       "district": "6th Norfolk",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Ted Philips",
       "district": "8th Norfolk",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

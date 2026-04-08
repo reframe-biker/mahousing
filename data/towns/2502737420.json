@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "B",
     "votes": null,
-    "legislators": "F",
-    "composite": "D"
+    "legislators": "A",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -32,22 +32,24 @@
     {
       "name": "Margaret Scarsdale",
       "district": "1st Middlesex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Mike Kushmerek",
       "district": "3rd Worcester",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

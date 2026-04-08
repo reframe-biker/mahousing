@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "legislators": "F",
+    "legislators": "A",
     "composite": "C"
   },
   "metrics": {
@@ -32,9 +32,9 @@
     {
       "name": "Bridget Plouffe",
       "district": "9th Plymouth",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"

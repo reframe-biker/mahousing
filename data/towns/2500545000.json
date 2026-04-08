@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "C",
     "votes": null,
-    "legislators": "F",
-    "composite": "C"
+    "legislators": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 10.3,
@@ -32,9 +32,9 @@
     {
       "name": "Mark Sylvia",
       "district": "10th Bristol",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
+      "pct_score": 85.7,
+      "grade": "A",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -43,31 +43,33 @@
     {
       "name": "Chris Hendricks",
       "district": "11th Bristol",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Tony Cabral",
       "district": "13th Bristol",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Steven Ouellette",
       "district": "8th Bristol",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -76,11 +78,12 @@
     {
       "name": "Christopher Markey",
       "district": "9th Bristol",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

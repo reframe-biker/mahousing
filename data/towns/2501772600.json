@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "D",
     "votes": null,
-    "legislators": "F",
-    "composite": "C"
+    "legislators": "A",
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 12.1,
@@ -32,22 +32,24 @@
     {
       "name": "John Lawn",
       "district": "10th Middlesex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     },
     {
       "name": "Tom Stanley",
       "district": "9th Middlesex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "pct_score": 90.5,
+      "grade": "A",
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }

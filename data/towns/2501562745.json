@@ -32,11 +32,12 @@
     {
       "name": "Kelly Pease",
       "district": "4th Hampden",
-      "pct_score": 0.0,
+      "pct_score": 14.3,
       "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
+      "bills_scored": 11,
+      "bills_available": 11,
       "sessions_scored": [
+        "193",
         "194"
       ]
     }
