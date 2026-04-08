@@ -5,6 +5,11 @@ on:
     # Runs every Monday at 06:00 UTC
     - cron: "0 6 * * 1"
   workflow_dispatch: # Allow manual trigger from GitHub Actions UI
+  push:
+    branches:
+      - main
+    paths:
+      - "pipeline/**"
 
 permissions:
   contents: write
@@ -12,6 +17,8 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # Skip runs triggered by the data-commit push from this workflow itself
+    if: github.actor != 'github-actions[bot]'
 
     steps:
       - name: Check out repository
