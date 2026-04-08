@@ -29,7 +29,7 @@ BUILD SEQUENCE:
      Also writes data/rollcall_inventory.json as a side effect.
 
 KNOWN DATA GAPS (expected, not errors):
-  - 2 towns in 1st Franklin district: no TIGER match → null grade
+  - 17 towns in 1st Franklin district: no TIGER match → null grade
   - 2 towns in 5th Essex district: no TIGER match → null grade
   - 2 vacant seats in CSV (158/160): those towns get null grade
   - 193rd session reps who lost seats: unmatched from 193rd PDFs → logged
