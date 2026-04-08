@@ -24,6 +24,8 @@ from datetime import date
 from pathlib import Path
 from typing import Optional
 
+import time
+
 import requests
 
 logger = logging.getLogger(__name__)
@@ -59,36 +61,56 @@ def get_rollcall_pdf(session: str, year: int) -> Optional[Path]:
     # Live PDF (current session, current year) or cache miss: fetch fresh copy
     pdf_url = f"{_JOURNAL_BASE}/{session}/{year}/RollCalls"
     logger.info(f"  Roll calls: downloading {pdf_url}")
-    try:
-        resp = requests.get(pdf_url, verify=False, timeout=120, stream=True)
-        resp.raise_for_status()
-
-        # Validate that the response is actually a PDF
-        content_type = resp.headers.get("Content-Type", "")
-        # Read the first chunk to check magic bytes
-        first_chunk = next(resp.iter_content(chunk_size=65536), b"")
-        if "application/pdf" not in content_type and not first_chunk.startswith(b"%PDF"):
+    _HEADERS = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/124.0.0.0 Safari/537.36"
+        )
+    }
+    resp = None
+    last_exc: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            resp = requests.get(pdf_url, headers=_HEADERS, verify=False, timeout=120, stream=True)
+            resp.raise_for_status()
+            break
+        except Exception as exc:
+            last_exc = exc
             logger.warning(
-                f"  Roll calls: response for session {session}/{year} is not a PDF "
-                f"(Content-Type: {content_type!r}) — the URL may have returned HTML"
+                f"  Roll calls: attempt {attempt} failed for session {session}/{year}: {exc}"
             )
-            if cache_path.exists():
-                logger.warning(f"  Roll calls: using stale cache for session {session}/{year}")
-                return cache_path
-            return None
-
-        with open(cache_path, "wb") as f:
-            f.write(first_chunk)
-            for chunk in resp.iter_content(chunk_size=65536):
-                f.write(chunk)
-        logger.info(f"  Roll calls: saved to {cache_path}")
-        return cache_path
-    except Exception as exc:
-        logger.error(f"  Roll calls: download failed for session {session}/{year}: {exc}")
+            if attempt < 3:
+                time.sleep(5)
+    else:
+        logger.error(
+            f"  Roll calls: all 3 download attempts failed for session {session}/{year}: {last_exc}"
+        )
         if cache_path.exists():
             logger.warning(f"  Roll calls: using stale cache for session {session}/{year}")
             return cache_path
         return None
+
+    # Validate that the response is actually a PDF
+    content_type = resp.headers.get("Content-Type", "")
+    # Read the first chunk to check magic bytes
+    first_chunk = next(resp.iter_content(chunk_size=65536), b"")
+    if "application/pdf" not in content_type and not first_chunk.startswith(b"%PDF"):
+        logger.warning(
+            f"  Roll calls: response for session {session}/{year} is not a PDF "
+            f"(Content-Type: {content_type!r}) — the URL may have returned HTML"
+        )
+        if cache_path.exists():
+            logger.warning(f"  Roll calls: using stale cache for session {session}/{year}")
+            return cache_path
+        return None
+
+    with open(cache_path, "wb") as f:
+        f.write(first_chunk)
+        for chunk in resp.iter_content(chunk_size=65536):
+            f.write(chunk)
+    logger.info(f"  Roll calls: saved to {cache_path}")
+    return cache_path
 
 
 def derive_session_year_pairs() -> list[tuple[str, int]]:
