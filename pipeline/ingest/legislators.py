@@ -220,11 +220,13 @@ def _ensure_town_district_map() -> dict[str, list[str]]:
     return result
 
 
-def _build_town_district_map() -> dict[str, Optional[str]]:
+def _build_town_district_map() -> dict[str, list[str]]:
     """
     Spatial join: MA town centroids × TIGER SLDL district polygons.
 
-    Returns {fips_string: district_name_or_None, ...}
+    Returns {fips_string: [district_name, ...], ...}
+    Multi-district towns (e.g. Boston, Worcester) have multiple entries.
+    Towns in unmatched or unknown districts map to an empty list.
     """
     try:
         import geopandas as gpd
@@ -263,7 +265,13 @@ def _build_town_district_map() -> dict[str, Optional[str]]:
     # Normalize district names
     tiger_gdf["district_name"] = tiger_gdf["NAMELSAD"].apply(_normalize_tiger_district)
 
-    # Spatial join: centroid point within district polygon
+    # TODO: Replace centroid point-in-polygon join (predicate="within") with
+    # area-based overlap per METHODOLOGY.md section 6a (1% same-county threshold,
+    # 15% cross-county threshold). The current centroid approach misses towns whose
+    # centroid falls outside the TIGER district polygon (e.g. Greenfield, Amherst,
+    # North Attleborough). Do NOT delete town_district_map.json until this is fixed —
+    # the cached map was built with area-based logic and is more accurate than a
+    # fresh centroid rebuild would be.
     centroids_gdf = gpd.GeoDataFrame(centroids, geometry="geometry", crs="EPSG:4326")
     joined = gpd.sjoin(
         centroids_gdf,
@@ -272,17 +280,20 @@ def _build_town_district_map() -> dict[str, Optional[str]]:
         predicate="within",
     )
 
-    # Build result dict
-    result: dict[str, Optional[str]] = {}
+    # Build result dict: each FIPS maps to a list of district names
+    result: dict[str, list[str]] = {}
     unmatched_fips: list[str] = []
 
     for _, row in joined.iterrows():
         fips = str(row["GEOID"])
         district = row.get("district_name")
 
+        if fips not in result:
+            result[fips] = []
+
         if pd.isna(district) or district is None:
-            result[fips] = None
-            unmatched_fips.append(fips)
+            if fips not in unmatched_fips:
+                unmatched_fips.append(fips)
         else:
             district = str(district)
             if district in _UNMATCHED_TIGER_DISTRICTS:
@@ -290,9 +301,9 @@ def _build_town_district_map() -> dict[str, Optional[str]]:
                     f"Town FIPS {fips} maps to '{district}', which has no Open States "
                     f"counterpart — this is expected, town will get null grade"
                 )
-                result[fips] = None
             else:
-                result[fips] = district
+                if district not in result[fips]:
+                    result[fips].append(district)
 
     if unmatched_fips:
         logger.warning(
@@ -300,7 +311,7 @@ def _build_town_district_map() -> dict[str, Optional[str]]:
             f"(boundary cases or data gaps): {unmatched_fips[:10]}"
         )
 
-    matched = sum(1 for v in result.values() if v is not None)
+    matched = sum(1 for v in result.values() if v)
     logger.info(f"Spatial join: {matched}/{len(result)} towns matched to a district")
     return result
 
