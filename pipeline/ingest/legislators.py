@@ -145,6 +145,12 @@ def get_legislator_data() -> pd.DataFrame:
     logger.info(
         f"Legislators: {len(all_193_voters)} unique names found in 193rd session PDFs"
     )
+    if not all_193_voters:
+        logger.error(
+            "ALERT: No names found in 193rd session roll call PDFs — the PDF either "
+            "failed to download or failed to parse. All current representatives will be "
+            "treated as 2025 entrants and scored only on 194th session actions."
+        )
 
     # ── Step 5: Score each legislator ─────────────────────────────────────────
     scores: dict[str, dict] = {}  # district_name → score dict
@@ -400,7 +406,7 @@ def _fetch_rollcall_data(
     return result, parsed_pdfs
 
 
-def _fetch_cosponsor_data(bill_list: list[dict]) -> dict[tuple[str, str], set[str]]:
+def _fetch_cosponsor_data(bill_list: list[dict]) -> dict[tuple[str, str], Optional[set[str]]]:
     """
     Fetch cosponsor lists for all cosponsor entries in the bill list.
 
@@ -409,9 +415,14 @@ def _fetch_cosponsor_data(bill_list: list[dict]) -> dict[tuple[str, str], set[st
     Header: X-Requested-With: XMLHttpRequest
 
     Returns:
-        {(session, bill): frozenset_of_full_names}
+        {(session, bill): set_of_full_names}
+
+    A value of None means the fetch failed (network error, HTTP error, etc.).
+    A value of set() means the fetch succeeded but the bill has no cosponsors.
+    These are kept distinct so that scoring can skip the check on failure rather
+    than penalizing reps with a 0-point score when data is unavailable.
     """
-    result: dict[tuple[str, str], set[str]] = {}
+    result: dict[tuple[str, str], Optional[set[str]]] = {}
     for bill in bill_list:
         if bill.get("type") != "cosponsor":
             continue
@@ -430,7 +441,7 @@ def _fetch_cosponsor_data(bill_list: list[dict]) -> dict[tuple[str, str], set[st
             resp.raise_for_status()
         except Exception as exc:
             logger.warning(f"  CoSponsor fetch failed for {bill_id} ({session}): {exc}")
-            result[key] = set()
+            result[key] = None  # None = fetch failed, distinct from empty set = 0 cosponsors
             continue
 
         names = _parse_cosponsor_response(resp.content)
@@ -494,6 +505,13 @@ def _write_rollcall_inventory(
         json.dumps(inventory, indent=2), encoding="utf-8"
     )
     logger.info(f"  Roll call inventory: {len(inventory)} entries written to {_ROLLCALL_INVENTORY}")
+
+    if not inventory:
+        logger.error(
+            "ALERT: rollcall_inventory is empty — no roll call PDFs were successfully "
+            "downloaded or parsed. House legislator grades will be null or incorrect. "
+            "Check the PDF download logs above for HTTP errors or timeouts."
+        )
 
 
 # ── Session boundary detection ────────────────────────────────────────────────
@@ -615,7 +633,12 @@ def _score_rep(
 
         elif bill_type == "cosponsor":
             bill_id = str(bill["bill"])
-            cosponsor_set = cosponsor_data.get((session, bill_id), set())
+            cosponsor_set = cosponsor_data.get((session, bill_id))
+
+            # None means the fetch failed — skip rather than penalize with 0 points.
+            # An empty set means the API succeeded but the bill has no cosponsors.
+            if cosponsor_set is None:
+                continue
 
             # Cosponsor check: rep's full name must appear in cosponsor set
             is_cosponsor = rep_name in cosponsor_set

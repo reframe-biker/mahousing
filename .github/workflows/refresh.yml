@@ -31,6 +31,13 @@ jobs:
           path: data/MA_Zoning_Atlas_2023.geojson
           key: nza-geojson-v1
 
+      - name: Cache roll call PDFs
+        uses: actions/cache@v4
+        with:
+          path: data/rollcall_cache
+          key: rollcall-pdfs-v1
+          restore-keys: rollcall-pdfs-
+
       - name: Run pipeline
         env:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}

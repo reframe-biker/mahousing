@@ -48,12 +48,15 @@ def get_rollcall_pdf(session: str, year: int) -> Optional[Path]:
     _CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_path = _CACHE_DIR / f"combined{year}_RollCalls_{session}.pdf"
 
-    # Closed sessions: use cache if available; never re-download
-    if session != CURRENT_SESSION and cache_path.exists():
+    # Only re-download if this is the current session AND current calendar year.
+    # Past years within the current session (e.g. 194th/2025 when it's 2026) are
+    # finalized — treat them the same as closed sessions and use the cache.
+    is_live = session == CURRENT_SESSION and year == date.today().year
+    if not is_live and cache_path.exists():
         logger.info(f"  Roll calls: using cached PDF for session {session}/{year}")
         return cache_path
 
-    # Current session or cache miss: fetch fresh copy
+    # Live PDF (current session, current year) or cache miss: fetch fresh copy
     pdf_url = f"{_JOURNAL_BASE}/{session}/{year}/RollCalls"
     logger.info(f"  Roll calls: downloading {pdf_url}")
     try:
