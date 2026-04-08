@@ -72,26 +72,80 @@ _COL_UNITS_5P = 27   # 5+ unit structures: total units
 _REQUEST_TIMEOUT = 60
 
 
+_SPIKE_YEAR_SHARE_THRESHOLD = 0.70  # single year > 70% of 3-year total
+_SPIKE_MAX_TOTAL_PERMITS = 50       # only flag when total < 50 permits
+
+
 def fetch_permit_data(api_key: str | None = None) -> pd.DataFrame:
     """
-    Download and parse the BPS Northeast annual flat file for MA municipalities.
+    Download and parse 3 years of BPS data for MA municipalities, computing
+    a production spike note when a single year dominates a small permit total.
 
     The api_key parameter is accepted for interface compatibility with other
     ingest modules but is not used — BPS flat files are publicly available
     without authentication.
 
+    Spike detection (applied before population filter in build.py):
+        - Fires when the dominant single year > 70% of the 3-year total AND
+          the 3-year total < 50 permits.
+        - Missing years are treated as 0 permits.
+        - Population >= 15,000 suppression is applied in build.py after the
+          ACS join (where population data is available).
+
     Returns:
         DataFrame with columns:
-            geoid   (str)  10-digit county subdivision GEOID (joins to ACS)
-            permits (int)  Total housing units authorized in BPS_YEAR
+            geoid                 (str)   10-digit county subdivision GEOID
+            permits               (int)   Total housing units in BPS_YEAR
+            production_spike_note (str|None)  Human-readable spike explanation,
+                                              or None if no spike detected.
 
-        Returns an empty DataFrame (with correct columns) if the download
-        fails or no MA data is found.
+        Returns an empty DataFrame (with correct columns) if all year downloads
+        fail or no MA data is found.
     """
-    raw = fetch_permit_breakdown(BPS_YEAR)
-    if raw.empty:
-        return pd.DataFrame(columns=["geoid", "permits"])
-    return raw[["geoid", "permits"]]
+    years = [BPS_YEAR - 2, BPS_YEAR - 1, BPS_YEAR]
+    frames: dict[int, pd.Series] = {}
+    for year in years:
+        df = fetch_permit_breakdown(year)
+        if not df.empty:
+            frames[year] = df.set_index("geoid")["permits"]
+
+    if not frames:
+        return pd.DataFrame(columns=["geoid", "permits", "production_spike_note"])
+
+    all_geoids: set[str] = set()
+    for s in frames.values():
+        all_geoids.update(s.index)
+
+    rows = []
+    spike_count = 0
+    for geoid in all_geoids:
+        year_permits = {y: int(frames[y].get(geoid, 0)) for y in years}
+        current_permits = year_permits[BPS_YEAR]
+        total = sum(year_permits.values())
+
+        note = None
+        if total > 0:
+            max_year = max(year_permits, key=lambda y: year_permits[y])
+            max_permits = year_permits[max_year]
+            spike_share = max_permits / total
+            if spike_share > _SPIKE_YEAR_SHARE_THRESHOLD and total < _SPIKE_MAX_TOTAL_PERMITS:
+                note = (
+                    f"Single-year spike: {max_year} had {max_permits} of {total} "
+                    f"total permits ({spike_share:.0%}) — production grade withheld"
+                )
+                spike_count += 1
+
+        rows.append({
+            "geoid": geoid,
+            "permits": current_permits,
+            "production_spike_note": note,
+        })
+
+    result = pd.DataFrame(rows)
+    logger.info(
+        f"  Building Permits: {spike_count} municipality(s) flagged for single-year production spike"
+    )
+    return result
 
 
 def fetch_permit_breakdown(year: int) -> pd.DataFrame:

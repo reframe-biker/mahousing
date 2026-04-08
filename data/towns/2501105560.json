@@ -6,7 +6,7 @@
   "grades": {
     "zoning": "F",
     "mbta": null,
-    "production": "C",
+    "production": null,
     "affordability": "A",
     "votes": null,
     "legislators": null,
@@ -16,12 +16,12 @@
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 363108.58988442534,
     "rent_burden_pct": 31.6,
-    "permits_per_1000_residents": 2.95,
+    "permits_per_1000_residents": null,
     "renter_share_pct": 17.5
   },
   "data_notes": {
     "zoning": null,
-    "production": null,
+    "production": "Single-year spike: 2023 had 6 of 7 total permits (86%) \u2014 production grade withheld",
     "affordability": null
   },
   "zoning_source": "nza",

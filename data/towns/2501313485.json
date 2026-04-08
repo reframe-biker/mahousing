@@ -6,22 +6,22 @@
   "grades": {
     "zoning": null,
     "mbta": null,
-    "production": "D",
+    "production": null,
     "affordability": "B",
     "votes": null,
     "legislators": "F",
-    "composite": "D"
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
     "median_home_value": 285845.4317521955,
     "rent_burden_pct": 59.2,
-    "permits_per_1000_residents": 0.71,
+    "permits_per_1000_residents": null,
     "renter_share_pct": 19.8
   },
   "data_notes": {
     "zoning": null,
-    "production": null,
+    "production": "Single-year spike: 2022 had 3 of 4 total permits (75%) \u2014 production grade withheld",
     "affordability": null
   },
   "zoning_source": "proxy",

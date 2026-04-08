@@ -175,8 +175,18 @@ def main() -> None:
         )
         matched = acs_df["raw_permits"].notna().sum()
         logger.info(f"  Building Permits: {matched}/{len(acs_df)} municipalities matched by GEOID")
+        # Suppress spike flag for large towns (population >= 15,000) — same
+        # pattern as zoning spike suppression above.
+        large_town_mask = acs_df["population"].notna() & (acs_df["population"] >= 15_000)
+        suppressed = (large_town_mask & acs_df["production_spike_note"].notna()).sum()
+        acs_df.loc[large_town_mask, "production_spike_note"] = None
+        if suppressed:
+            logger.info(
+                f"  Production spike flag suppressed for {suppressed} town(s) with population >= 15,000"
+            )
     else:
         acs_df["raw_permits"] = None
+        acs_df["production_spike_note"] = None
 
     if not zillow_df.empty:
         zillow_df["_name_key"] = zillow_df["name"].apply(_normalize_name)
@@ -373,6 +383,13 @@ def _build_record(row: pd.Series, today: str) -> dict:
     else:
         sens = None
 
+    production_spike_note = _to_str(row.get("production_spike_note"))
+
+    # Null out permits_per_1000 when a spike is flagged so the production grade
+    # is withheld rather than misleadingly graded on unreliable single-year data.
+    if production_spike_note:
+        permits_per_1000 = None
+
     metrics = {
         "pct_land_multifamily_byright": pct_mf,
         "median_home_value": home_value,
@@ -383,10 +400,11 @@ def _build_record(row: pd.Series, today: str) -> dict:
 
     grades = score_town(metrics, mbta_status=mbta_status, reps=reps, sens=sens)
 
-    # data_notes: zoning note from permits_proxy spike detection; others reserved
+    # data_notes: zoning note from permits_proxy spike detection; production
+    # note from single-year spike detection in building_permits.py
     data_notes = {
         "zoning": _to_str(row.get("data_note")),
-        "production": None,
+        "production": production_spike_note,
         "affordability": None,
     }
 

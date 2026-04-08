@@ -802,22 +802,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 411728.816135387,
       "rent_burden_pct": 66.7,
-      "permits_per_1000_residents": 0.54,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 15.4
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 4 of 5 total permits (80%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -1074,22 +1074,22 @@
     "grades": {
       "zoning": "D",
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 1.7,
       "median_home_value": 560894.4867309283,
       "rent_burden_pct": 45.6,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 19.3
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2021 had 5 of 6 total permits (83%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -1266,7 +1266,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "C",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "D",
@@ -1276,12 +1276,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 398153.25357087975,
       "rent_burden_pct": 28.6,
-      "permits_per_1000_residents": 2.17,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 12 of 14 total permits (86%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -1705,7 +1705,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "C",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": null,
@@ -1715,12 +1715,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 363108.58988442534,
       "rent_burden_pct": 31.6,
-      "permits_per_1000_residents": 2.95,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 17.5
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 6 of 7 total permits (86%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -1918,22 +1918,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "F",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 350592.57145545405,
       "rent_burden_pct": 13.8,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 6.0
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 1 of 1 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -1965,22 +1965,22 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "D",
       "votes": null,
       "legislators": "A",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 850207.2799814139,
       "rent_burden_pct": 9.9,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 5.4
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 6 of 6 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -3026,22 +3026,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 374392.9472557897,
       "rent_burden_pct": 49.8,
-      "permits_per_1000_residents": 1.5,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 31.8
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 3 of 3 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -3774,22 +3774,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "F",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 285845.4317521955,
       "rent_burden_pct": 59.2,
-      "permits_per_1000_residents": 0.71,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 19.8
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 3 of 4 total permits (75%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -3821,22 +3821,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "A",
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 383516.68979225325,
       "rent_burden_pct": 43.1,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 13.7
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 2 of 2 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -4023,22 +4023,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "A",
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 262109.67975140063,
       "rent_burden_pct": 37.8,
-      "permits_per_1000_residents": 0.58,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 13.7
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 1 of 1 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -4377,22 +4377,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
-      "composite": "C"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 333589.38357082097,
       "rent_burden_pct": 45.3,
-      "permits_per_1000_residents": 0.16,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 23.3
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 1 of 1 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -4603,22 +4603,22 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": null,
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 435988.5840469988,
       "rent_burden_pct": 32.8,
-      "permits_per_1000_residents": 0.59,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 22.7
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 16 of 19 total permits (84%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -4815,7 +4815,7 @@
     "grades": {
       "zoning": "F",
       "mbta": "A",
-      "production": "A",
+      "production": null,
       "affordability": "F",
       "votes": null,
       "legislators": "A",
@@ -4825,12 +4825,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1723467.5452593437,
       "rent_burden_pct": 30.9,
-      "permits_per_1000_residents": 5.78,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 5.8
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 34 of 43 total permits (79%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -4908,7 +4908,7 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "C",
       "votes": null,
       "legislators": "F",
@@ -4918,12 +4918,12 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 450719.5060652319,
       "rent_burden_pct": 40.0,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 29.4
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2021 had 2 of 2 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -5544,22 +5544,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
-      "composite": "C"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 320783.8107053452,
       "rent_burden_pct": 54.4,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 22.0
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 3 of 3 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -6774,7 +6774,7 @@
     "grades": {
       "zoning": "A",
       "mbta": null,
-      "production": "B",
+      "production": null,
       "affordability": "C",
       "votes": null,
       "legislators": "A",
@@ -6784,12 +6784,12 @@
       "pct_land_multifamily_byright": 62.5,
       "median_home_value": 570374.590292191,
       "rent_burden_pct": 50.8,
-      "permits_per_1000_residents": 4.87,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 27.8
     },
     "data_notes": {
       "zoning": "Zoning grade driven primarily by a single year of permit activity \u2014 may not reflect the town's typical permitting pattern.",
-      "production": null,
+      "production": "Single-year spike: 2023 had 35 of 48 total permits (73%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -7175,22 +7175,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "B",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 429414.23898139346,
       "rent_burden_pct": 34.7,
-      "permits_per_1000_residents": 0.81,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 4.8
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 4 of 4 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -7400,22 +7400,22 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "B",
+      "production": null,
       "affordability": "C",
       "votes": null,
       "legislators": "D",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 410465.979252609,
       "rent_burden_pct": 47.6,
-      "permits_per_1000_residents": 4.08,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 32.4
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 11 of 15 total permits (73%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -7460,7 +7460,7 @@
     "grades": {
       "zoning": "F",
       "mbta": "A",
-      "production": "D",
+      "production": null,
       "affordability": "D",
       "votes": null,
       "legislators": "A",
@@ -7470,12 +7470,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 891376.5969910411,
       "rent_burden_pct": 57.2,
-      "permits_per_1000_residents": 0.88,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 7.7
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 22 of 28 total permits (79%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -7710,22 +7710,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "C",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": null,
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 345498.77709454176,
       "rent_burden_pct": 14.3,
-      "permits_per_1000_residents": 2.67,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 5.0
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 1 of 1 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -8195,7 +8195,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
@@ -8205,12 +8205,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 518553.7305728556,
       "rent_burden_pct": 42.4,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 21.1
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 10 of 10 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -9147,22 +9147,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 488037.88363928534,
       "rent_burden_pct": 75.6,
-      "permits_per_1000_residents": 0.56,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 11.7
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 1 of 1 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -9265,22 +9265,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": null,
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 404134.1364105024,
       "rent_burden_pct": 53.3,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 5.9
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 1 of 1 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -10403,7 +10403,7 @@
     "grades": {
       "zoning": "C",
       "mbta": "A",
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
@@ -10413,12 +10413,12 @@
       "pct_land_multifamily_byright": 5.4,
       "median_home_value": 592415.218810046,
       "rent_burden_pct": 42.2,
-      "permits_per_1000_residents": 0.09,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 22.1
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2021 had 14 of 17 total permits (82%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -12081,7 +12081,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "D",
@@ -12091,12 +12091,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 437236.6496001337,
       "rent_burden_pct": 42.9,
-      "permits_per_1000_residents": 1.02,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 15.7
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 1 of 1 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -12483,22 +12483,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "C",
       "votes": null,
       "legislators": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 246461.3590257017,
       "rent_burden_pct": 51.9,
-      "permits_per_1000_residents": 0.08,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 44.1
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 3 of 4 total permits (75%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -12972,22 +12972,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "A",
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 356489.10717497277,
       "rent_burden_pct": 42.3,
-      "permits_per_1000_residents": 1.04,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 11.2
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 3 of 4 total permits (75%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -13222,7 +13222,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "F",
       "votes": null,
       "legislators": "A",
@@ -13232,12 +13232,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 1220381.1089324215,
       "rent_burden_pct": 46.0,
-      "permits_per_1000_residents": 1.5,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 22.0
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 29 of 37 total permits (78%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -13447,7 +13447,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "C",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
@@ -13457,12 +13457,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 500408.6212658778,
       "rent_burden_pct": 23.0,
-      "permits_per_1000_residents": 2.03,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 13.1
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 8 of 11 total permits (73%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -13908,22 +13908,22 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 317556.60939953756,
       "rent_burden_pct": 37.5,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 2.8
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 2 of 2 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -14109,7 +14109,7 @@
     "grades": {
       "zoning": "A",
       "mbta": null,
-      "production": "A",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "A",
@@ -14119,12 +14119,12 @@
       "pct_land_multifamily_byright": 50.0,
       "median_home_value": 305834.17825951905,
       "rent_burden_pct": 44.0,
-      "permits_per_1000_residents": 12.94,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 8.9
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 8 of 10 total permits (80%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -14332,22 +14332,22 @@
     "grades": {
       "zoning": "F",
       "mbta": "B",
-      "production": "B",
+      "production": null,
       "affordability": "C",
       "votes": null,
       "legislators": "F",
-      "composite": "C"
+      "composite": "D"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 614562.3658082824,
       "rent_burden_pct": 59.6,
-      "permits_per_1000_residents": 3.15,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 4.3
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 11 of 14 total permits (79%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -15031,7 +15031,7 @@
     "grades": {
       "zoning": "F",
       "mbta": "A",
-      "production": "D",
+      "production": null,
       "affordability": "D",
       "votes": null,
       "legislators": null,
@@ -15041,12 +15041,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 837747.4581129755,
       "rent_burden_pct": 51.8,
-      "permits_per_1000_residents": 0.86,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 31.2
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 31 of 44 total permits (70%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -15636,7 +15636,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "A",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "A",
@@ -15646,12 +15646,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 306979.06367592164,
       "rent_burden_pct": 41.2,
-      "permits_per_1000_residents": 8.06,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 5.6
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 5 of 6 total permits (83%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -16345,22 +16345,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "F",
-      "composite": "D"
+      "composite": "C"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 477977.9393080456,
       "rent_burden_pct": 67.3,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 8.1
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 4 of 4 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -16751,22 +16751,22 @@
     "grades": {
       "zoning": "F",
       "mbta": "A",
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
-      "composite": "C"
+      "composite": "B"
     },
     "metrics": {
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 571919.5555635025,
       "rent_burden_pct": 32.9,
-      "permits_per_1000_residents": 0.5,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 11.2
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 30 of 34 total permits (88%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -17462,7 +17462,7 @@
     "grades": {
       "zoning": "F",
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
@@ -17472,12 +17472,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 400608.14527156745,
       "rent_burden_pct": 30.6,
-      "permits_per_1000_residents": 1.1,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 15.0
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 26 of 35 total permits (74%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -17712,7 +17712,7 @@
     "grades": {
       "zoning": "F",
       "mbta": "A",
-      "production": "F",
+      "production": null,
       "affordability": "D",
       "votes": null,
       "legislators": "A",
@@ -17722,12 +17722,12 @@
       "pct_land_multifamily_byright": 0.0,
       "median_home_value": 939222.4526647652,
       "rent_burden_pct": 45.9,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 13.8
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2021 had 15 of 17 total permits (88%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -18640,22 +18640,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "C",
+      "production": null,
       "affordability": "A",
       "votes": null,
       "legislators": "A",
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 378432.50823222456,
       "rent_burden_pct": 0.0,
-      "permits_per_1000_residents": 2.2,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 8.8
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 3 of 4 total permits (75%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -19127,7 +19127,7 @@
     "grades": {
       "zoning": "C",
       "mbta": "A",
-      "production": "F",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
@@ -19137,12 +19137,12 @@
       "pct_land_multifamily_byright": 8.8,
       "median_home_value": 504562.0933484085,
       "rent_burden_pct": 24.5,
-      "permits_per_1000_residents": 0.0,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 21.2
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 8 of 8 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
@@ -19412,7 +19412,7 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "C",
+      "production": null,
       "affordability": "C",
       "votes": null,
       "legislators": "A",
@@ -19422,12 +19422,12 @@
       "pct_land_multifamily_byright": null,
       "median_home_value": 654597.414292313,
       "rent_burden_pct": 40.7,
-      "permits_per_1000_residents": 1.64,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 17.2
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2023 had 2 of 2 total permits (100%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "proxy",
@@ -20373,22 +20373,22 @@
     "grades": {
       "zoning": null,
       "mbta": null,
-      "production": "D",
+      "production": null,
       "affordability": "B",
       "votes": null,
       "legislators": "A",
-      "composite": "B"
+      "composite": "A"
     },
     "metrics": {
       "pct_land_multifamily_byright": null,
       "median_home_value": 389939.86615240714,
       "rent_burden_pct": 48.6,
-      "permits_per_1000_residents": 0.67,
+      "permits_per_1000_residents": null,
       "renter_share_pct": 25.1
     },
     "data_notes": {
       "zoning": null,
-      "production": null,
+      "production": "Single-year spike: 2022 had 19 of 26 total permits (73%) \u2014 production grade withheld",
       "affordability": null
     },
     "zoning_source": "nza",
