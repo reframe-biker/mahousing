@@ -1,22 +1,7 @@
-import dynamic from "next/dynamic";
 import fs from "fs";
 import type { TownRecord } from "@/src/types/town";
 import { getDataPath } from "@/src/lib/paths";
-
-// Leaflet requires a browser environment — load with SSR disabled
-const MapClient = dynamic(() => import("@/app/components/Map"), {
-  ssr: false,
-  loading: () => (
-    <div
-      className="w-full h-full flex items-center justify-center"
-      style={{ backgroundColor: "var(--bg-primary)" }}
-    >
-      <p className="text-sm font-mono" style={{ color: "var(--text-muted)" }}>
-        Loading map…
-      </p>
-    </div>
-  ),
-});
+import MapSection from "@/app/components/MapSection";
 
 function loadStatewideData(): TownRecord[] {
   return JSON.parse(fs.readFileSync(getDataPath("statewide.json"), "utf-8")) as TownRecord[];
@@ -42,7 +27,7 @@ export default function HomePage() {
 
       {/* Map fills remaining viewport */}
       <div className="flex-1 min-h-0 relative">
-        <MapClient towns={towns} />
+        <MapSection towns={towns} />
       </div>
 
       {/* Footer */}

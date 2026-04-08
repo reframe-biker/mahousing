@@ -5,6 +5,22 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { TownRecord, Grade } from "@/src/types/town";
 
+export type ActiveDimension = "composite" | "zoning" | "legislators" | "production" | "affordability" | "mbta";
+
+export const DIMENSION_LABELS: Record<ActiveDimension, string> = {
+  composite:    "Composite grade",
+  zoning:       "Zoning permissiveness",
+  legislators:  "Legislator record",
+  production:   "Housing production",
+  affordability:"Affordability",
+  mbta:         "MBTA compliance",
+};
+
+function getGrade(town: TownRecord | undefined, dim: ActiveDimension): Grade {
+  if (!town?.grades) return null;
+  return town.grades[dim] ?? null;
+}
+
 // Grade color palette (matches gradeConfig in GradeBadge)
 const GRADE_COLOR: Record<NonNullable<Grade> | "null", string> = {
   A: "#2d6a4f",
@@ -35,20 +51,21 @@ function buildTownIndex(towns: TownRecord[]): Record<string, TownRecord> {
 
 interface Props {
   towns: TownRecord[];
+  dimension: ActiveDimension;
 }
 
-export default function Map({ towns }: Props) {
+export default function Map({ towns, dimension }: Props) {
   const mapRef = useRef<HTMLDivElement>(null);
   const leafletMapRef = useRef<import("leaflet").Map | null>(null);
   const layerRef = useRef<import("leaflet").GeoJSON | null>(null);
   const router = useRouter();
 
   const [search, setSearch] = useState("");
-  const [filterGrade, setFilterGrade] = useState<Grade | "all">("all");
   const [geoError, setGeoError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   const townIndex = useRef(buildTownIndex(towns));
+  const dimensionRef = useRef<ActiveDimension>(dimension);
 
   // Initialize Leaflet map after mount
   useEffect(() => {
@@ -135,7 +152,7 @@ export default function Map({ towns }: Props) {
       const geoLayer = L.geoJSON(geojsonData, {
         style: (feature) => {
           const props = (feature?.properties ?? {}) as Record<string, unknown>;
-          const grade = getTownByProps(props)?.grades?.composite ?? null;
+          const grade = getGrade(getTownByProps(props), dimensionRef.current);
           return styleFeature(feature, grade);
         },
         onEachFeature(feature, layer) {
@@ -145,14 +162,14 @@ export default function Map({ towns }: Props) {
             town?.name ??
             (props["census_name"] as string | undefined) ??
             "Unknown";
-          const grade = town?.grades?.composite ?? null;
-          const gradeColor = GRADE_COLOR[grade ?? "null"];
           const fips = town?.fips ?? null;
 
           if (!isTouchDevice()) {
             // Desktop: original hover + direct-click behavior unchanged
             layer.on({
               mouseover(e) {
+                const grade = getGrade(town, dimensionRef.current);
+                const gradeColor = GRADE_COLOR[grade ?? "null"];
                 const target = e.target as import("leaflet").Path;
                 target.setStyle({
                   fillOpacity: 0.92,
@@ -211,11 +228,12 @@ export default function Map({ towns }: Props) {
                 });
 
                 // Show popup with town name, grade, and navigate link
+                const grade = getGrade(town, dimensionRef.current);
                 layer.bindPopup(
                   `<div style="font-family: inherit; min-width: 140px;">
                     <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px;">${townName}</div>
                     <div style="font-size: 12px; color: #5a5450; margin-bottom: 10px;">
-                      Composite grade: <strong>${grade ?? "N/A"}</strong>
+                      ${DIMENSION_LABELS[dimensionRef.current]}: <strong>${grade ?? "N/A"}</strong>
                     </div>
                     <a href="/town/${fips}"
                        style="display: block; text-align: center; background: #1a1816;
@@ -266,28 +284,23 @@ export default function Map({ towns }: Props) {
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Apply grade filter when filterGrade changes
+  // Restyle all layers when the active dimension changes
   useEffect(() => {
+    dimensionRef.current = dimension;
     const layer = layerRef.current;
     if (!layer) return;
-
     layer.eachLayer((l) => {
-      const gl = l as import("leaflet").Path & {
-        feature?: GeoJSON.Feature;
-      };
+      const gl = l as import("leaflet").Path & { feature?: GeoJSON.Feature };
       const props = (gl.feature?.properties ?? {}) as Record<string, unknown>;
       const geoid = getGeoid(props);
-      const grade =
-        (geoid ? townIndex.current[geoid] : undefined)?.grades?.composite ??
-        null;
-
-      const visible = filterGrade === "all" || grade === filterGrade;
+      const town = geoid ? townIndex.current[geoid] : undefined;
+      const grade = getGrade(town, dimension);
       gl.setStyle({
-        fillOpacity: visible ? 0.78 : 0.05,
-        opacity: visible ? 1 : 0.15,
+        fillColor: GRADE_COLOR[grade ?? "null"],
+        fillOpacity: 0.78,
       });
     });
-  }, [filterGrade]);
+  }, [dimension]);
 
   // Search: fly to matched town
   function handleSearch(query: string) {
@@ -343,16 +356,6 @@ export default function Map({ towns }: Props) {
     }
   }
 
-  const gradeOptions: Array<{ value: Grade | "all"; label: string }> = [
-    { value: "all", label: "All grades" },
-    { value: "A", label: "A — Excellent" },
-    { value: "B", label: "B — Good" },
-    { value: "C", label: "C — Below average" },
-    { value: "D", label: "D — Poor" },
-    { value: "F", label: "F — Failing" },
-    { value: null, label: "No data" },
-  ];
-
   const controlStyle: React.CSSProperties = {
     backgroundColor: "#ffffff",
     border: "1px solid #e0ddd8",
@@ -379,25 +382,6 @@ export default function Map({ towns }: Props) {
           style={controlStyle}
           aria-label="Search municipality"
         />
-        <select
-          value={filterGrade === null ? "null" : filterGrade}
-          onChange={(e) => {
-            const v = e.target.value;
-            setFilterGrade(v === "null" ? null : (v as Grade | "all"));
-          }}
-          className="pointer-events-auto px-3 py-2"
-          style={controlStyle}
-          aria-label="Filter by grade"
-        >
-          {gradeOptions.map((o) => (
-            <option
-              key={String(o.value)}
-              value={o.value === null ? "null" : (o.value ?? "null")}
-            >
-              {o.label}
-            </option>
-          ))}
-        </select>
       </div>
 
       {/* Loading overlay */}
@@ -446,7 +430,7 @@ export default function Map({ towns }: Props) {
           className="mb-2 uppercase tracking-wide font-mono"
           style={{ fontSize: "10px", color: "#9a9088" }}
         >
-          Composite grade
+          {DIMENSION_LABELS[dimension]}
         </p>
         {(
           [
