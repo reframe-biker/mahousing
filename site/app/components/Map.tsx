@@ -107,7 +107,7 @@ export default function Map({ towns, dimension }: Props) {
       );
       const tileDark = L.tileLayer(
         "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png",
-        { attribution: "&copy; OpenStreetMap contributors &copy; CARTO", subdomains: "abcd", maxZoom: 19 }
+        { attribution: "&copy; OpenStreetMap contributors &copy; CARTO", subdomains: "abcd", maxZoom: 19, opacity: 0.55 }
       );
       tileLightRef.current = tileLight;
       tileDarkRef.current = tileDark;
@@ -142,7 +142,7 @@ export default function Map({ towns, dimension }: Props) {
         return {
           fillColor: gradeColor(grade),
           fillOpacity: 0.78,
-          color: themeColor("#666660", "#a0a098"),
+          color: themeColor("#666660", "#3a3733"),
           weight: 0.8,
           opacity: 0.6,
         };
