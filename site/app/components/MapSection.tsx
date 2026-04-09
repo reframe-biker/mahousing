@@ -41,7 +41,15 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
   const searchParams = useSearchParams();
 
   const rawDim = searchParams.get("dim");
-  const activeDimension: ActiveDimension = isActiveDimension(rawDim) ? rawDim : "composite";
+  const activeDimension: ActiveDimension = isActiveDimension(rawDim)
+    ? rawDim
+    : isActiveDimension(
+        typeof window !== "undefined"
+          ? sessionStorage.getItem("mapDimension")
+          : null
+      )
+    ? (sessionStorage.getItem("mapDimension") as ActiveDimension)
+    : "composite";
 
   return (
     <div className="relative w-full h-full">
@@ -54,7 +62,10 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
           className="pointer-events-auto px-3 py-2"
           style={controlStyle}
           value={activeDimension}
-          onChange={(e) => router.push(`?dim=${e.target.value}`, { scroll: false })}
+          onChange={(e) => {
+            sessionStorage.setItem("mapDimension", e.target.value);
+            router.push(`?dim=${e.target.value}`, { scroll: false });
+          }}
           aria-label="Select grading dimension"
         >
           {(Object.entries(DIMENSION_LABELS) as [ActiveDimension, string][]).map(
