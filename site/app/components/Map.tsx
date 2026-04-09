@@ -42,7 +42,7 @@ const GRADE_COLOR_DARK: Record<NonNullable<Grade> | "null", string> = {
   B: "#52b788",
   C: "#e9c46a",
   D: "#e07b39",
-  F: "#9e3a3a",
+  F: "#c13333",
   null: "#6b6560",
 };
 
