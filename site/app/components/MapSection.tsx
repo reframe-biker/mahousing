@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { TownRecord } from "@/src/types/town";
-import { type ActiveDimension, DIMENSION_LABELS } from "./Map";
+import { type ActiveDimension, DIMENSION_LABELS, isTouchDevice } from "./Map";
 
 const VALID_DIMENSIONS: ActiveDimension[] = ["composite", "zoning", "legislators", "production", "affordability", "mbta"];
 
@@ -58,7 +58,7 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
       {/* Controls — search + dimension selector in one flexbox row */}
       <div
         className="absolute pointer-events-none flex flex-wrap gap-2"
-        style={{ top: "12px", left: "60px", right: "12px", zIndex: 1001 }}
+        style={{ top: "12px", left: isTouchDevice() ? "12px" : "60px", right: "12px", zIndex: 1001 }}
       >
         <input
           type="search"

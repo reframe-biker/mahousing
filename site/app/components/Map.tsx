@@ -11,6 +11,10 @@ function isDarkMode(): boolean {
 function themeColor(light: string, dark: string): string {
   return isDarkMode() ? dark : light;
 }
+export function isTouchDevice(): boolean {
+  return typeof window !== "undefined" &&
+    window.matchMedia("(pointer: coarse)").matches;
+}
 
 export type ActiveDimension = "composite" | "zoning" | "legislators" | "production" | "affordability" | "mbta";
 
@@ -104,8 +108,13 @@ export default function Map({ towns, dimension, search }: Props) {
       const map = L.map(mapRef.current, {
         center: [42.15, -71.65],
         zoom: 8,
-        zoomControl: true,
+        zoomControl: false,
       });
+
+      if (!isTouchDevice()) {
+        L.control.zoom({ position: "topleft" }).addTo(map);
+      }
+
       leafletMapRef.current = map;
 
       // Dual tile layers — switch on prefers-color-scheme (listener in separate useEffect)
@@ -162,10 +171,6 @@ export default function Map({ towns, dimension, search }: Props) {
         const geoid = getGeoid(props);
         return geoid ? townIndex.current[geoid] : undefined;
       }
-
-      const isTouchDevice = () =>
-        typeof window !== "undefined" &&
-        window.matchMedia("(pointer: coarse)").matches;
 
       // Types for mobile two-tap state stored on Leaflet objects
       type MobileLayer = import("leaflet").Path & { _mobileSelected?: boolean };
