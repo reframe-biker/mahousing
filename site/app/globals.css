@@ -35,6 +35,9 @@
   --badge-coming-soon-bg: #fef3c7;
   --badge-coming-soon-border: #d97706;
   --badge-coming-soon-text: #92400e;
+
+  /* Alternating table row stripe */
+  --bg-stripe: rgba(242, 240, 236, 0.6);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,6 +59,9 @@
     --badge-coming-soon-bg: #2d2100;
     --badge-coming-soon-border: #b45309;
     --badge-coming-soon-text: #fcd34d;
+
+    /* Alternating table row stripe — dark */
+    --bg-stripe: rgba(255, 255, 255, 0.04);
   }
 }
 

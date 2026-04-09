@@ -32,7 +32,7 @@ export default function MetricsTable({ metrics, metricsMeta }: MetricsTableProps
             className="py-4 first:pt-3 last:pb-3 px-1"
             style={
               isEven
-                ? { backgroundColor: "rgba(242,240,236,0.6)" }
+                ? { backgroundColor: "var(--bg-stripe)" }
                 : undefined
             }
           >
