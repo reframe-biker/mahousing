@@ -37,6 +37,11 @@ const controlStyle: React.CSSProperties = {
   outline: "none",
 };
 
+const searchControlStyle: React.CSSProperties = {
+  ...controlStyle,
+  fontSize: "16px",
+};
+
 export default function MapSection({ towns }: { towns: TownRecord[] }) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -66,7 +71,7 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="pointer-events-auto px-3 py-2 w-52"
-          style={controlStyle}
+          style={searchControlStyle}
           aria-label="Search municipality"
         />
         <select
