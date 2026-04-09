@@ -201,6 +201,7 @@ export default function Map({ towns, dimension }: Props) {
                   color: themeColor("#333330", "#f0ede8"),
                   opacity: 1,
                 });
+                if (target.bringToFront) target.bringToFront();
                 tooltip
                   .setLatLng(e.latlng)
                   .setContent(
@@ -212,6 +213,8 @@ export default function Map({ towns, dimension }: Props) {
               },
               mouseout(e) {
                 geoLayer.resetStyle(e.target as import("leaflet").Path);
+                if ((e.target as import("leaflet").Path).bringToBack)
+                  (e.target as import("leaflet").Path).bringToBack();
                 tooltip.remove();
               },
               click() {
@@ -250,6 +253,8 @@ export default function Map({ towns, dimension }: Props) {
                   color: themeColor("#333330", "#f0ede8"),
                   opacity: 1,
                 });
+                if ((layer as import("leaflet").Path).bringToFront)
+                  (layer as import("leaflet").Path).bringToFront();
 
                 // Show popup with town name, grade, and navigate link
                 const grade = getGrade(town, dimensionRef.current);
