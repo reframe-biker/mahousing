@@ -470,47 +470,83 @@ export default function Map({ towns, dimension, search }: Props) {
       <div ref={mapRef} className="w-full h-full" />
 
       {/* Legend */}
-      <div
-        className="absolute bottom-6 right-3 z-[1000] rounded p-3 text-xs"
-        style={{
-          backgroundColor: "var(--bg-card)",
-          border: "1px solid var(--border)",
-          boxShadow: "0 1px 6px rgba(0,0,0,0.10)",
-        }}
-      >
-        <p
-          className="mb-2 uppercase tracking-wide font-mono"
-          style={{ fontSize: "10px", color: "var(--text-muted)" }}
+      {isTouchDevice() ? (
+        /* Mobile: slim horizontal bar */
+        <div
+          className="absolute bottom-0 left-0 right-0 z-[1000] flex items-center justify-center gap-3 px-3 py-2"
+          style={{
+            backgroundColor: "var(--bg-card)",
+            borderTop: "1px solid var(--border)",
+          }}
         >
-          {DIMENSION_LABELS[dimension]}
-        </p>
-        {(
-          [
-            ["A", "Excellent"],
-            ["B", "Good"],
-            ["C", "Below avg"],
-            ["D", "Poor"],
-            ["F", "Failing"],
-            [null, "No data"],
-          ] as Array<[Grade, string]>
-        ).map(([grade, label]) => (
-          <div
-            key={String(grade)}
-            className="flex items-center gap-2 mb-1 last:mb-0"
+          {(
+            [
+              ["A", "Excellent"],
+              ["B", "Good"],
+              ["C", "Below avg"],
+              ["D", "Poor"],
+              ["F", "Failing"],
+              [null, "No data"],
+            ] as Array<[Grade, string]>
+          ).map(([grade, label]) => (
+            <div key={String(grade)} className="flex items-center gap-1">
+              <span
+                className="inline-block w-3 h-3 rounded-sm flex-shrink-0"
+                style={{
+                  backgroundColor: gradeColor(grade ?? "null"),
+                  border: "1px solid rgba(0,0,0,0.15)",
+                }}
+              />
+              <span style={{ fontSize: "11px", color: "var(--text-secondary)" }}>
+                {grade ?? "–"}
+              </span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        /* Desktop: existing vertical legend unchanged */
+        <div
+          className="absolute bottom-6 right-3 z-[1000] rounded p-3 text-xs"
+          style={{
+            backgroundColor: "var(--bg-card)",
+            border: "1px solid var(--border)",
+            boxShadow: "0 1px 6px rgba(0,0,0,0.10)",
+          }}
+        >
+          <p
+            className="mb-2 uppercase tracking-wide font-mono"
+            style={{ fontSize: "10px", color: "var(--text-muted)" }}
           >
-            <span
-              className="inline-block w-3.5 h-3.5 rounded-sm flex-shrink-0"
-              style={{
-                backgroundColor: gradeColor(grade ?? "null"),
-                border: "1px solid rgba(0,0,0,0.15)",
-              }}
-            />
-            <span style={{ color: "var(--text-secondary)" }}>
-              {grade ?? "–"} — {label}
-            </span>
-          </div>
-        ))}
-      </div>
+            {DIMENSION_LABELS[dimension]}
+          </p>
+          {(
+            [
+              ["A", "Excellent"],
+              ["B", "Good"],
+              ["C", "Below avg"],
+              ["D", "Poor"],
+              ["F", "Failing"],
+              [null, "No data"],
+            ] as Array<[Grade, string]>
+          ).map(([grade, label]) => (
+            <div
+              key={String(grade)}
+              className="flex items-center gap-2 mb-1 last:mb-0"
+            >
+              <span
+                className="inline-block w-3.5 h-3.5 rounded-sm flex-shrink-0"
+                style={{
+                  backgroundColor: gradeColor(grade ?? "null"),
+                  border: "1px solid rgba(0,0,0,0.15)",
+                }}
+              />
+              <span style={{ color: "var(--text-secondary)" }}>
+                {grade ?? "–"} — {label}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

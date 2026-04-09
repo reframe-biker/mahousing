@@ -31,15 +31,12 @@ const controlStyle: React.CSSProperties = {
   backgroundColor: "var(--bg-card)",
   border: "1px solid var(--border)",
   color: "var(--text-primary)",
-  fontSize: "14px",
+  fontSize: "16px",
   borderRadius: "6px",
   boxShadow: "0 1px 4px rgba(0,0,0,0.12)",
   outline: "none",
-};
-
-const searchControlStyle: React.CSSProperties = {
-  ...controlStyle,
-  fontSize: "16px",
+  flex: 1,
+  minWidth: 0,
 };
 
 export default function MapSection({ towns }: { towns: TownRecord[] }) {
@@ -62,7 +59,7 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
     <div className="relative w-full h-full">
       {/* Controls — search + dimension selector in one flexbox row */}
       <div
-        className="absolute pointer-events-none flex flex-wrap gap-2"
+        className="absolute pointer-events-none flex gap-2"
         style={{ top: "12px", left: isTouchDevice() ? "12px" : "60px", right: "12px", zIndex: 1001 }}
       >
         <input
@@ -70,12 +67,12 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
           placeholder="Search municipality…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="pointer-events-auto px-3 py-2 w-52"
-          style={searchControlStyle}
+          className="pointer-events-auto px-3 py-2"
+          style={controlStyle}
           aria-label="Search municipality"
         />
         <select
-          className="pointer-events-auto px-3 py-2 flex-shrink-0"
+          className="pointer-events-auto px-3 py-2"
           style={controlStyle}
           value={activeDimension}
           onChange={(e) => {
