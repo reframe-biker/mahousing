@@ -253,4 +253,13 @@ body {
   .leaflet-popup-close-button:hover {
     color: #f0ede8 !important;
   }
+
+  .leaflet-control-attribution {
+    background-color: rgba(26, 24, 22, 0.8) !important;
+    color: #7a7268 !important;
+  }
+
+  .leaflet-control-attribution a {
+    color: #9a9088 !important;
+  }
 }
