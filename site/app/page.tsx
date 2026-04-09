@@ -14,7 +14,7 @@ export default function HomePage() {
 
   return (
     // 3rem nav + 3px accent bar; footer is 2.5rem
-    <div className="flex flex-col" style={{ height: "calc(100vh - 3rem - 3px)" }}>
+    <div className="flex flex-col" style={{ height: "calc(100dvh - 3rem - 3px)" }}>
       {/* Page header */}
       <div
         className="px-4 py-3 flex-shrink-0 flex flex-wrap items-baseline justify-between gap-2"

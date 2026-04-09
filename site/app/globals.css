@@ -236,3 +236,21 @@ body {
 .leaflet-tooltip.ma-tooltip::before {
   border-top-color: var(--border);
 }
+
+/* ─── Leaflet popup dark mode ────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-tip {
+    background-color: #242120;
+    color: #f0ede8;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.6);
+  }
+
+  .leaflet-popup-close-button {
+    color: #b8b0a8 !important;
+  }
+
+  .leaflet-popup-close-button:hover {
+    color: #f0ede8 !important;
+  }
+}

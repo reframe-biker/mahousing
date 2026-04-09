@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { TownRecord } from "@/src/types/town";
 import { type ActiveDimension, DIMENSION_LABELS } from "./Map";
@@ -39,6 +40,7 @@ const controlStyle: React.CSSProperties = {
 export default function MapSection({ towns }: { towns: TownRecord[] }) {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const [search, setSearch] = useState("");
 
   const rawDim = searchParams.get("dim");
   const activeDimension: ActiveDimension = isActiveDimension(rawDim)
@@ -53,13 +55,22 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
 
   return (
     <div className="relative w-full h-full">
-      {/* Dimension selector — overlaid in the same top-left control area as the old grade filter */}
+      {/* Controls — search + dimension selector in one flexbox row */}
       <div
-        className="absolute pointer-events-none"
-        style={{ top: "12px", left: "276px", zIndex: 1001 }}
+        className="absolute pointer-events-none flex flex-wrap gap-2"
+        style={{ top: "12px", left: "60px", right: "12px", zIndex: 1001 }}
       >
+        <input
+          type="search"
+          placeholder="Search municipality…"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="pointer-events-auto px-3 py-2 w-52"
+          style={controlStyle}
+          aria-label="Search municipality"
+        />
         <select
-          className="pointer-events-auto px-3 py-2"
+          className="pointer-events-auto px-3 py-2 flex-shrink-0"
           style={controlStyle}
           value={activeDimension}
           onChange={(e) => {
@@ -77,7 +88,7 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
           )}
         </select>
       </div>
-      <MapClient towns={towns} dimension={activeDimension} />
+      <MapClient towns={towns} dimension={activeDimension} search={search} />
     </div>
   );
 }

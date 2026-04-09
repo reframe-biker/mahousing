@@ -71,9 +71,10 @@ function buildTownIndex(towns: TownRecord[]): Record<string, TownRecord> {
 interface Props {
   towns: TownRecord[];
   dimension: ActiveDimension;
+  search: string;
 }
 
-export default function Map({ towns, dimension }: Props) {
+export default function Map({ towns, dimension, search }: Props) {
   const mapRef = useRef<HTMLDivElement>(null);
   const leafletMapRef = useRef<import("leaflet").Map | null>(null);
   const layerRef = useRef<import("leaflet").GeoJSON | null>(null);
@@ -81,7 +82,6 @@ export default function Map({ towns, dimension }: Props) {
   const tileDarkRef = useRef<import("leaflet").TileLayer | null>(null);
   const router = useRouter();
 
-  const [search, setSearch] = useState("");
   const [geoError, setGeoError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [isDark, setIsDark] = useState(false);
@@ -366,11 +366,11 @@ export default function Map({ towns, dimension }: Props) {
   }, [dimension]);
 
   // Search: fly to matched town
-  function handleSearch(query: string) {
-    setSearch(query);
-    if (!query.trim() || !leafletMapRef.current || !layerRef.current) return;
+  // Pan/highlight map when search changes
+  useEffect(() => {
+    if (!search.trim() || !leafletMapRef.current || !layerRef.current) return;
 
-    const q = query.toLowerCase().trim();
+    const q = search.toLowerCase().trim();
     // Use an array so TypeScript doesn't narrow the closure assignment to never
     const matchedLayers: (import("leaflet").Layer & {
       feature?: GeoJSON.Feature;
@@ -417,7 +417,7 @@ export default function Map({ towns, dimension }: Props) {
         );
       }, 2500);
     }
-  }
+  }, [search]);
 
   const controlStyle: React.CSSProperties = {
     backgroundColor: "var(--bg-card)",
@@ -431,22 +431,6 @@ export default function Map({ towns, dimension }: Props) {
 
   return (
     <div className="relative w-full h-full">
-      {/* Controls — positioned to the right of Leaflet zoom buttons (left: 60px) */}
-      <div
-        className="absolute flex flex-wrap gap-2 pointer-events-none"
-        style={{ top: "12px", left: "60px", zIndex: 1001 }}
-      >
-        <input
-          type="search"
-          placeholder="Search municipality…"
-          value={search}
-          onChange={(e) => handleSearch(e.target.value)}
-          className="pointer-events-auto px-3 py-2 w-52"
-          style={controlStyle}
-          aria-label="Search municipality"
-        />
-      </div>
-
       {/* Loading overlay */}
       {loading && !geoError && (
         <div
