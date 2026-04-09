@@ -28,18 +28,26 @@ function getGrade(town: TownRecord | undefined, dim: ActiveDimension): Grade {
   return town.grades[dim] ?? null;
 }
 
-// Grade color palette (matches gradeConfig in GradeBadge)
-const GRADE_COLOR: Record<NonNullable<Grade>, string> = {
+const GRADE_COLOR_LIGHT: Record<NonNullable<Grade> | "null", string> = {
   A: "#2d6a4f",
   B: "#52b788",
   C: "#e9c46a",
   D: "#e07b39",
   F: "#c1121f",
+  null: "#6b6560",
 };
 
-function gradeColor(grade: Grade): string {
-  if (grade === null) return themeColor("#d0cdc8", "#6b6560");
-  return GRADE_COLOR[grade];
+const GRADE_COLOR_DARK: Record<NonNullable<Grade> | "null", string> = {
+  A: "#2d6a4f",
+  B: "#52b788",
+  C: "#e9c46a",
+  D: "#e07b39",
+  F: "#9e3a3a",
+  null: "#6b6560",
+};
+
+function gradeColor(grade: NonNullable<Grade> | "null"): string {
+  return isDarkMode() ? GRADE_COLOR_DARK[grade] : GRADE_COLOR_LIGHT[grade];
 }
 
 
@@ -140,7 +148,7 @@ export default function Map({ towns, dimension }: Props) {
         grade: Grade
       ) {
         return {
-          fillColor: gradeColor(grade),
+          fillColor: gradeColor(grade ?? "null"),
           fillOpacity: 0.78,
           color: themeColor("#666660", "#3a3733"),
           weight: 0.8,
@@ -185,7 +193,7 @@ export default function Map({ towns, dimension }: Props) {
             layer.on({
               mouseover(e) {
                 const grade = getGrade(town, dimensionRef.current);
-                const gColor = gradeColor(grade);
+                const gColor = gradeColor(grade ?? "null");
                 const target = e.target as import("leaflet").Path;
                 target.setStyle({
                   fillOpacity: 0.92,
@@ -323,7 +331,7 @@ export default function Map({ towns, dimension }: Props) {
         const town = geoid ? townIndex.current[geoid] : undefined;
         const grade = getGrade(town, dimensionRef.current);
         gl.setStyle({
-          fillColor: gradeColor(grade),
+          fillColor: gradeColor(grade ?? "null"),
           fillOpacity: 0.78,
           color: e.matches ? "#a0a098" : "#666660",
           opacity: 0.6,
@@ -346,7 +354,7 @@ export default function Map({ towns, dimension }: Props) {
       const town = geoid ? townIndex.current[geoid] : undefined;
       const grade = getGrade(town, dimension);
       gl.setStyle({
-        fillColor: gradeColor(grade),
+        fillColor: gradeColor(grade ?? "null"),
         fillOpacity: 0.78,
       });
     });
@@ -499,7 +507,7 @@ export default function Map({ towns, dimension }: Props) {
             <span
               className="inline-block w-3.5 h-3.5 rounded-sm flex-shrink-0"
               style={{
-                backgroundColor: grade === null ? (isDark ? "#6b6560" : "#d0cdc8") : GRADE_COLOR[grade],
+                backgroundColor: gradeColor(grade ?? "null"),
                 border: "1px solid rgba(0,0,0,0.15)",
               }}
             />
