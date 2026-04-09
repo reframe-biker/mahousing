@@ -35,9 +35,11 @@ const controlStyle: React.CSSProperties = {
   borderRadius: "6px",
   boxShadow: "0 1px 4px rgba(0,0,0,0.12)",
   outline: "none",
-  flex: 1,
-  minWidth: 0,
 };
+
+const flexItem: React.CSSProperties = isTouchDevice()
+  ? { flex: 1, minWidth: 0 }
+  : {};
 
 export default function MapSection({ towns }: { towns: TownRecord[] }) {
   const router = useRouter();
@@ -68,12 +70,12 @@ export default function MapSection({ towns }: { towns: TownRecord[] }) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="pointer-events-auto px-3 py-2"
-          style={controlStyle}
+          style={{ ...controlStyle, ...flexItem }}
           aria-label="Search municipality"
         />
         <select
           className="pointer-events-auto px-3 py-2"
-          style={controlStyle}
+          style={{ ...controlStyle, ...flexItem }}
           value={activeDimension}
           onChange={(e) => {
             sessionStorage.setItem("mapDimension", e.target.value);
