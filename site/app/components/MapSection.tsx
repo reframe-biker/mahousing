@@ -27,9 +27,9 @@ const MapClient = dynamic(() => import("./Map"), {
 });
 
 const controlStyle: React.CSSProperties = {
-  backgroundColor: "#ffffff",
-  border: "1px solid #e0ddd8",
-  color: "#1a1816",
+  backgroundColor: "var(--bg-card)",
+  border: "1px solid var(--border)",
+  color: "var(--text-primary)",
   fontSize: "14px",
   borderRadius: "6px",
   boxShadow: "0 1px 4px rgba(0,0,0,0.12)",

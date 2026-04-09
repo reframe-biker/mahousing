@@ -106,8 +106,8 @@ export default function GradeCard({
         <div
           className="flex items-start gap-2 px-4 py-2.5"
           style={{
-            backgroundColor: "#fef3c7",
-            borderTop: "1px solid #d97706",
+            backgroundColor: "var(--badge-coming-soon-bg)",
+            borderTop: "1px solid var(--badge-coming-soon-border)",
           }}
         >
           <svg
@@ -115,7 +115,7 @@ export default function GradeCard({
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
-            style={{ color: "#92400e" }}
+            style={{ color: "var(--badge-coming-soon-text)" }}
           >
             <path
               fillRule="evenodd"
@@ -123,7 +123,7 @@ export default function GradeCard({
               clipRule="evenodd"
             />
           </svg>
-          <p className="text-xs leading-relaxed" style={{ color: "#92400e" }}>
+          <p className="text-xs leading-relaxed" style={{ color: "var(--badge-coming-soon-text)" }}>
             {note}
           </p>
         </div>

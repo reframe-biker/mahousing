@@ -5,6 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { TownRecord, Grade } from "@/src/types/town";
 
+function isDarkMode(): boolean {
+  return typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+function themeColor(light: string, dark: string): string {
+  return isDarkMode() ? dark : light;
+}
+
 export type ActiveDimension = "composite" | "zoning" | "legislators" | "production" | "affordability" | "mbta";
 
 export const DIMENSION_LABELS: Record<ActiveDimension, string> = {
@@ -22,14 +29,18 @@ function getGrade(town: TownRecord | undefined, dim: ActiveDimension): Grade {
 }
 
 // Grade color palette (matches gradeConfig in GradeBadge)
-const GRADE_COLOR: Record<NonNullable<Grade> | "null", string> = {
+const GRADE_COLOR: Record<NonNullable<Grade>, string> = {
   A: "#2d6a4f",
   B: "#52b788",
   C: "#e9c46a",
   D: "#e07b39",
   F: "#c1121f",
-  null: "#d0cdc8",
 };
+
+function gradeColor(grade: Grade): string {
+  if (grade === null) return themeColor("#d0cdc8", "#6b6560");
+  return GRADE_COLOR[grade];
+}
 
 
 // Local static file committed to site/public/
@@ -58,11 +69,14 @@ export default function Map({ towns, dimension }: Props) {
   const mapRef = useRef<HTMLDivElement>(null);
   const leafletMapRef = useRef<import("leaflet").Map | null>(null);
   const layerRef = useRef<import("leaflet").GeoJSON | null>(null);
+  const tileLightRef = useRef<import("leaflet").TileLayer | null>(null);
+  const tileDarkRef = useRef<import("leaflet").TileLayer | null>(null);
   const router = useRouter();
 
   const [search, setSearch] = useState("");
   const [geoError, setGeoError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   const townIndex = useRef(buildTownIndex(towns));
   const dimensionRef = useRef<ActiveDimension>(dimension);
@@ -86,15 +100,18 @@ export default function Map({ towns, dimension }: Props) {
       });
       leafletMapRef.current = map;
 
-      // Light CartoDB base (geography, no labels) — clean gray geographic context
-      L.tileLayer(
+      // Dual tile layers — switch on prefers-color-scheme (listener in separate useEffect)
+      const tileLight = L.tileLayer(
         "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-        {
-          attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
-          subdomains: "abcd",
-          maxZoom: 19,
-        }
-      ).addTo(map);
+        { attribution: "&copy; OpenStreetMap contributors &copy; CARTO", subdomains: "abcd", maxZoom: 19 }
+      );
+      const tileDark = L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png",
+        { attribution: "&copy; OpenStreetMap contributors &copy; CARTO", subdomains: "abcd", maxZoom: 19 }
+      );
+      tileLightRef.current = tileLight;
+      tileDarkRef.current = tileDark;
+      (isDarkMode() ? tileDark : tileLight).addTo(map);
 
       // Tooltip — styles applied via .ma-tooltip in globals.css
       const tooltip = L.tooltip({
@@ -122,11 +139,10 @@ export default function Map({ towns, dimension }: Props) {
         feature: GeoJSON.Feature | undefined,
         grade: Grade
       ) {
-        const color = GRADE_COLOR[grade ?? "null"];
         return {
-          fillColor: color,
+          fillColor: gradeColor(grade),
           fillOpacity: 0.78,
-          color: "#666660",
+          color: themeColor("#666660", "#a0a098"),
           weight: 0.8,
           opacity: 0.6,
         };
@@ -169,20 +185,20 @@ export default function Map({ towns, dimension }: Props) {
             layer.on({
               mouseover(e) {
                 const grade = getGrade(town, dimensionRef.current);
-                const gradeColor = GRADE_COLOR[grade ?? "null"];
+                const gColor = gradeColor(grade);
                 const target = e.target as import("leaflet").Path;
                 target.setStyle({
                   fillOpacity: 0.92,
                   weight: 1.5,
-                  color: "#333330",
+                  color: themeColor("#333330", "#f0ede8"),
                   opacity: 1,
                 });
                 tooltip
                   .setLatLng(e.latlng)
                   .setContent(
-                    `<span style="font-weight:600;color:#1a1816">${townName}</span>` +
-                    `<br/><span style="color:#5a5450;font-size:12px">Grade </span>` +
-                    `<span style="font-family:'DM Mono',monospace;font-weight:500;color:${gradeColor}">${grade ?? "–"}</span>`
+                    `<span style="font-weight:600;color:${themeColor("#1a1816","#f0ede8")}">${townName}</span>` +
+                    `<br/><span style="color:${themeColor("#5a5450","#a0a098")};font-size:12px">Grade </span>` +
+                    `<span style="font-family:'DM Mono',monospace;font-weight:500;color:${gColor}">${grade ?? "–"}</span>`
                   )
                   .addTo(map);
               },
@@ -223,7 +239,7 @@ export default function Map({ towns, dimension }: Props) {
                 (layer as import("leaflet").Path).setStyle({
                   fillOpacity: 0.92,
                   weight: 1.5,
-                  color: "#333330",
+                  color: themeColor("#333330", "#f0ede8"),
                   opacity: 1,
                 });
 
@@ -231,13 +247,13 @@ export default function Map({ towns, dimension }: Props) {
                 const grade = getGrade(town, dimensionRef.current);
                 layer.bindPopup(
                   `<div style="font-family: inherit; min-width: 140px;">
-                    <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px;">${townName}</div>
-                    <div style="font-size: 12px; color: #5a5450; margin-bottom: 10px;">
+                    <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px; color:${themeColor("#1a1816","#f0ede8")}">${townName}</div>
+                    <div style="font-size: 12px; color: ${themeColor("#5a5450","#a0a098")}; margin-bottom: 10px;">
                       ${DIMENSION_LABELS[dimensionRef.current]}: <strong>${grade ?? "N/A"}</strong>
                     </div>
                     <a href="/town/${fips}"
-                       style="display: block; text-align: center; background: #1a1816;
-                              color: #f0ede8; padding: 6px 12px; border-radius: 4px;
+                       style="display: block; text-align: center; background: ${themeColor("#1a1816","#f0ede8")};
+                              color: ${themeColor("#f0ede8","#1a1816")}; padding: 6px 12px; border-radius: 4px;
                               text-decoration: none; font-size: 12px; font-weight: 500;">
                       View profile →
                     </a>
@@ -284,6 +300,40 @@ export default function Map({ towns, dimension }: Props) {
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Sync isDark state and switch tiles/restyle polygons when scheme changes
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDark(mq.matches);
+    const handleSchemeChange = (e: MediaQueryListEvent) => {
+      setIsDark(e.matches);
+      const map = leafletMapRef.current;
+      if (map && tileLightRef.current && tileDarkRef.current) {
+        if (e.matches) {
+          map.removeLayer(tileLightRef.current);
+          tileDarkRef.current.addTo(map);
+        } else {
+          map.removeLayer(tileDarkRef.current);
+          tileLightRef.current.addTo(map);
+        }
+      }
+      layerRef.current?.eachLayer((l) => {
+        const gl = l as import("leaflet").Path & { feature?: GeoJSON.Feature };
+        const props = (gl.feature?.properties ?? {}) as Record<string, unknown>;
+        const geoid = getGeoid(props);
+        const town = geoid ? townIndex.current[geoid] : undefined;
+        const grade = getGrade(town, dimensionRef.current);
+        gl.setStyle({
+          fillColor: gradeColor(grade),
+          fillOpacity: 0.78,
+          color: e.matches ? "#a0a098" : "#666660",
+          opacity: 0.6,
+        });
+      });
+    };
+    mq.addEventListener("change", handleSchemeChange);
+    return () => mq.removeEventListener("change", handleSchemeChange);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Restyle all layers when the active dimension changes
   useEffect(() => {
     dimensionRef.current = dimension;
@@ -296,7 +346,7 @@ export default function Map({ towns, dimension }: Props) {
       const town = geoid ? townIndex.current[geoid] : undefined;
       const grade = getGrade(town, dimension);
       gl.setStyle({
-        fillColor: GRADE_COLOR[grade ?? "null"],
+        fillColor: gradeColor(grade),
         fillOpacity: 0.78,
       });
     });
@@ -345,7 +395,7 @@ export default function Map({ towns, dimension }: Props) {
         // Polygon may not have getBounds
       }
       (matchedLayer as unknown as import("leaflet").Path).setStyle({
-        color: "#1a1816",
+        color: themeColor("#1a1816", "#f0ede8"),
         weight: 2.5,
       });
       setTimeout(() => {
@@ -357,9 +407,9 @@ export default function Map({ towns, dimension }: Props) {
   }
 
   const controlStyle: React.CSSProperties = {
-    backgroundColor: "#ffffff",
-    border: "1px solid #e0ddd8",
-    color: "#1a1816",
+    backgroundColor: "var(--bg-card)",
+    border: "1px solid var(--border)",
+    color: "var(--text-primary)",
     fontSize: "14px",
     borderRadius: "6px",
     boxShadow: "0 1px 4px rgba(0,0,0,0.12)",
@@ -421,14 +471,14 @@ export default function Map({ towns, dimension }: Props) {
       <div
         className="absolute bottom-6 right-3 z-[1000] rounded p-3 text-xs"
         style={{
-          backgroundColor: "#ffffff",
-          border: "1px solid #e0ddd8",
+          backgroundColor: "var(--bg-card)",
+          border: "1px solid var(--border)",
           boxShadow: "0 1px 6px rgba(0,0,0,0.10)",
         }}
       >
         <p
           className="mb-2 uppercase tracking-wide font-mono"
-          style={{ fontSize: "10px", color: "#9a9088" }}
+          style={{ fontSize: "10px", color: "var(--text-muted)" }}
         >
           {DIMENSION_LABELS[dimension]}
         </p>
@@ -449,11 +499,11 @@ export default function Map({ towns, dimension }: Props) {
             <span
               className="inline-block w-3.5 h-3.5 rounded-sm flex-shrink-0"
               style={{
-                backgroundColor: GRADE_COLOR[grade ?? "null"],
+                backgroundColor: grade === null ? (isDark ? "#6b6560" : "#d0cdc8") : GRADE_COLOR[grade],
                 border: "1px solid rgba(0,0,0,0.15)",
               }}
             />
-            <span style={{ color: "#5a5450" }}>
+            <span style={{ color: "var(--text-secondary)" }}>
               {grade ?? "–"} — {label}
             </span>
           </div>

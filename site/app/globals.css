@@ -30,6 +30,33 @@
   --grade-d: #e07b39;
   --grade-f: #c1121f;
   --grade-null: #d0cdc8;
+
+  /* Amber note banner */
+  --badge-coming-soon-bg: #fef3c7;
+  --badge-coming-soon-border: #d97706;
+  --badge-coming-soon-text: #92400e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1a1816;
+    --bg-secondary: #222019;
+    --bg-tertiary: #2a2724;
+    --bg-card: #252220;
+    --border: #3a3733;
+    --border-subtle: #2e2b28;
+    --text-primary: #f0ede8;
+    --text-secondary: #c0bdb8;
+    --text-muted: #7a7570;
+    --accent: #f0ede8;
+    --accent-subtle: #2a2724;
+    --grade-null: #6b6560;
+
+    /* Amber note banner — dark */
+    --badge-coming-soon-bg: #2d2100;
+    --badge-coming-soon-border: #b45309;
+    --badge-coming-soon-text: #fcd34d;
+  }
 }
 
 /* ─── Base ───────────────────────────────────────────────────────────────── */
@@ -169,31 +196,31 @@ body {
   background: var(--bg-secondary) !important;
 }
 .leaflet-control-zoom a {
-  background-color: #ffffff !important;
-  color: #1a1816 !important;
-  border-color: #e0ddd8 !important;
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
 }
 .leaflet-control-zoom a:hover {
-  background-color: #f2f0ec !important;
+  background-color: var(--bg-secondary) !important;
 }
 .leaflet-bar {
-  border-color: #e0ddd8 !important;
+  border-color: var(--border) !important;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15) !important;
 }
 .leaflet-control-attribution {
   background: rgba(255, 255, 255, 0.85) !important;
-  color: #9a9088 !important;
+  color: var(--text-muted) !important;
   font-size: 10px !important;
 }
 .leaflet-control-attribution a {
-  color: #5a5450 !important;
+  color: var(--text-secondary) !important;
 }
 
 /* ─── Map tooltip ────────────────────────────────────────────────────────── */
 .leaflet-tooltip.ma-tooltip {
-  background-color: #ffffff;
-  border: 1px solid #e0ddd8;
-  color: #1a1816;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
   font-family: var(--font-dm-sans), system-ui, sans-serif;
   font-size: 13px;
   padding: 8px 12px;
@@ -201,5 +228,5 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 .leaflet-tooltip.ma-tooltip::before {
-  border-top-color: #e0ddd8;
+  border-top-color: var(--border);
 }
