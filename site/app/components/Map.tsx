@@ -471,12 +471,15 @@ export default function Map({ towns, dimension, search }: Props) {
 
       {/* Legend */}
       {isTouchDevice() ? (
-        /* Mobile: slim horizontal bar */
+        /* Mobile: floating card, bottom-right */
         <div
-          className="absolute bottom-0 left-0 right-0 z-[1000] flex items-center justify-center gap-3 px-3 py-2"
+          className="absolute z-[1000] flex items-center gap-2 px-3 py-2 rounded"
           style={{
+            bottom: "28px",
+            right: "8px",
             backgroundColor: "var(--bg-card)",
-            borderTop: "1px solid var(--border)",
+            border: "1px solid var(--border)",
+            boxShadow: "0 1px 6px rgba(0,0,0,0.10)",
           }}
         >
           {(
