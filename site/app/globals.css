@@ -38,6 +38,13 @@
 
   /* Alternating table row stripe */
   --bg-stripe: rgba(242, 240, 236, 0.6);
+
+  /* MBTA badge backgrounds */
+  --mbta-compliant-bg: #e8f5f0;
+  --mbta-interim-bg: #edf7f2;
+  --mbta-pending-bg: #fdf8e4;
+  --mbta-noncompliant-bg: #fce8e8;
+  --mbta-exempt-bg: #f0efee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +69,13 @@
 
     /* Alternating table row stripe — dark */
     --bg-stripe: rgba(255, 255, 255, 0.04);
+
+    /* MBTA badge backgrounds — dark */
+    --mbta-compliant-bg: #1a2e26;
+    --mbta-interim-bg: #1a2e26;
+    --mbta-pending-bg: #2a2200;
+    --mbta-noncompliant-bg: #2e1a1a;
+    --mbta-exempt-bg: #2a2724;
   }
 }
 
