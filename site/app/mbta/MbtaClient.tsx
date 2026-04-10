@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import type { TownRecord, MbtaStatus, Grade } from "@/src/types/town";
 import GradeBadge from "@/app/components/GradeBadge";
 
@@ -35,11 +35,6 @@ const STATUS_COLOR: Record<NonNullable<MbtaStatus>, string> = {
   exempt: "#9a9088",
 };
 
-function isDarkMode(): boolean {
-  return typeof window !== "undefined" &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-}
-
 const STATUS_BG_LIGHT: Record<string, string> = {
   compliant: "#e8f5f0",
   interim: "#edf7f2",
@@ -56,8 +51,8 @@ const STATUS_BG_DARK: Record<string, string> = {
   exempt: "#2a2724",
 };
 
-function statusBg(status: string): string {
-  return isDarkMode() ? (STATUS_BG_DARK[status] ?? "#2a2724") : (STATUS_BG_LIGHT[status] ?? "#f0efee");
+function statusBg(status: string, isDark: boolean): string {
+  return isDark ? (STATUS_BG_DARK[status] ?? "#2a2724") : (STATUS_BG_LIGHT[status] ?? "#f0efee");
 }
 
 const GRADE_TO_NUM: Record<NonNullable<Grade>, number> = {
@@ -72,13 +67,13 @@ const GRADE_TO_NUM: Record<NonNullable<Grade>, number> = {
 // Sub-components
 // ---------------------------------------------------------------------------
 
-function MbtaBadge({ status }: { status: NonNullable<MbtaStatus> }) {
+function MbtaBadge({ status, isDark }: { status: NonNullable<MbtaStatus>; isDark: boolean }) {
   return (
     <span
       className="inline-block px-2 py-0.5 rounded text-xs font-mono font-medium"
       style={{
         color: STATUS_COLOR[status],
-        backgroundColor: statusBg(status),
+        backgroundColor: statusBg(status, isDark),
         border: `1px solid ${STATUS_COLOR[status]}44`,
       }}
     >
@@ -110,6 +105,18 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
   const [filter, setFilter] = useState<StatusFilter>("all");
   const [sort, setSort] = useState<SortKey>("status");
   const [sortAsc, setSortAsc] = useState(true);
+  const [isDark, setIsDark] = useState(
+    typeof window !== "undefined"
+      ? window.matchMedia("(prefers-color-scheme: dark)").matches
+      : false
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const handler = (e: MediaQueryListEvent) => setIsDark(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   const counts = useMemo(() => {
     const c: Partial<Record<NonNullable<MbtaStatus>, number>> = {};
@@ -239,7 +246,7 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
             onClick={() => setFilter(s)}
             className="px-3 py-1.5 rounded text-sm font-medium"
             style={{
-              backgroundColor: filter === s ? STATUS_COLOR[s] : statusBg(s),
+              backgroundColor: filter === s ? STATUS_COLOR[s] : statusBg(s, isDark),
               color: filter === s ? "var(--bg-primary)" : STATUS_COLOR[s],
               border: `1px solid ${STATUS_COLOR[s]}44`,
             }}
@@ -252,7 +259,7 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
           className="px-3 py-1.5 rounded text-sm font-medium"
           style={{
             backgroundColor:
-              filter === "exempt" ? STATUS_COLOR["exempt"] : statusBg("exempt"),
+              filter === "exempt" ? STATUS_COLOR["exempt"] : statusBg("exempt", isDark),
             color: filter === "exempt" ? "var(--bg-primary)" : STATUS_COLOR["exempt"],
             border: `1px solid ${STATUS_COLOR["exempt"]}44`,
           }}
@@ -347,7 +354,7 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
                   </td>
                   <td style={tdStyle}>
                     {town.mbta_status ? (
-                      <MbtaBadge status={town.mbta_status} />
+                      <MbtaBadge status={town.mbta_status} isDark={isDark} />
                     ) : (
                       <span style={{ color: "var(--text-muted)" }}>—</span>
                     )}
