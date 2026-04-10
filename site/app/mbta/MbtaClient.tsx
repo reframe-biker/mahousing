@@ -35,13 +35,30 @@ const STATUS_COLOR: Record<NonNullable<MbtaStatus>, string> = {
   exempt: "#9a9088",
 };
 
-const STATUS_BG: Record<NonNullable<MbtaStatus>, string> = {
+function isDarkMode(): boolean {
+  return typeof window !== "undefined" &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+
+const STATUS_BG_LIGHT: Record<string, string> = {
   compliant: "#e8f5f0",
   interim: "#edf7f2",
   pending: "#fdf8e4",
   "non-compliant": "#fce8e8",
   exempt: "#f0efee",
 };
+
+const STATUS_BG_DARK: Record<string, string> = {
+  compliant: "#1a2e26",
+  interim: "#1a2e26",
+  pending: "#2a2200",
+  "non-compliant": "#2e1a1a",
+  exempt: "#2a2724",
+};
+
+function statusBg(status: string): string {
+  return isDarkMode() ? (STATUS_BG_DARK[status] ?? "#2a2724") : (STATUS_BG_LIGHT[status] ?? "#f0efee");
+}
 
 const GRADE_TO_NUM: Record<NonNullable<Grade>, number> = {
   A: 4,
@@ -61,7 +78,7 @@ function MbtaBadge({ status }: { status: NonNullable<MbtaStatus> }) {
       className="inline-block px-2 py-0.5 rounded text-xs font-mono font-medium"
       style={{
         color: STATUS_COLOR[status],
-        backgroundColor: STATUS_BG[status],
+        backgroundColor: statusBg(status),
         border: `1px solid ${STATUS_COLOR[status]}44`,
       }}
     >
@@ -209,8 +226,8 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
           className="px-3 py-1.5 rounded text-sm font-medium"
           style={{
             backgroundColor:
-              filter === "all" ? "#1a1816" : "var(--bg-secondary)",
-            color: filter === "all" ? "#faf9f7" : "var(--text-primary)",
+              filter === "all" ? "var(--text-primary)" : "var(--bg-secondary)",
+            color: filter === "all" ? "var(--bg-primary)" : "var(--text-primary)",
             border: "1px solid var(--border)",
           }}
         >
@@ -222,8 +239,8 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
             onClick={() => setFilter(s)}
             className="px-3 py-1.5 rounded text-sm font-medium"
             style={{
-              backgroundColor: filter === s ? STATUS_COLOR[s] : STATUS_BG[s],
-              color: filter === s ? "#fff" : STATUS_COLOR[s],
+              backgroundColor: filter === s ? STATUS_COLOR[s] : statusBg(s),
+              color: filter === s ? "var(--bg-primary)" : STATUS_COLOR[s],
               border: `1px solid ${STATUS_COLOR[s]}44`,
             }}
           >
@@ -235,8 +252,8 @@ export default function MbtaClient({ towns, updatedAt }: Props) {
           className="px-3 py-1.5 rounded text-sm font-medium"
           style={{
             backgroundColor:
-              filter === "exempt" ? STATUS_COLOR["exempt"] : STATUS_BG["exempt"],
-            color: filter === "exempt" ? "#fff" : STATUS_COLOR["exempt"],
+              filter === "exempt" ? STATUS_COLOR["exempt"] : statusBg("exempt"),
+            color: filter === "exempt" ? "var(--bg-primary)" : STATUS_COLOR["exempt"],
             border: `1px solid ${STATUS_COLOR["exempt"]}44`,
           }}
         >
