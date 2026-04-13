@@ -4,7 +4,7 @@
   "county": "Plymouth County",
   "population": 5305,
   "grades": {
-    "zoning": null,
+    "zoning": "F",
     "mbta": null,
     "production": "D",
     "affordability": "C",
@@ -13,7 +13,7 @@
     "composite": "C"
   },
   "metrics": {
-    "pct_land_multifamily_byright": null,
+    "pct_land_multifamily_byright": 0.0,
     "median_home_value": 556500.0,
     "rent_burden_pct": 53.5,
     "permits_per_1000_residents": 0.75,
@@ -55,5 +55,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-13"
 }

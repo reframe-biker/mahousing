@@ -13,7 +13,7 @@
     "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 91.1,
+    "pct_land_multifamily_byright": 92.1,
     "median_home_value": 684900.0,
     "rent_burden_pct": 47.5,
     "permits_per_1000_residents": 3.08,
@@ -296,5 +296,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-13"
 }
