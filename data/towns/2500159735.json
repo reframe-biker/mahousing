@@ -33,9 +33,9 @@
     {
       "name": "Steve Xiarhos",
       "district": "5th Barnstable",
-      "pct_score": 28.6,
+      "pct_score": 31.6,
       "grade": "D",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -56,5 +56,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

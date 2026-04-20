@@ -9,8 +9,8 @@
     "production": null,
     "affordability": "A",
     "votes": null,
-    "legislators": "B",
-    "composite": "B"
+    "legislators": "A",
+    "composite": "A"
   },
   "metrics": {
     "pct_land_multifamily_byright": null,
@@ -33,9 +33,9 @@
     {
       "name": "Brian Ashe",
       "district": "2nd Hampden",
-      "pct_score": 76.2,
-      "grade": "B",
-      "bills_scored": 11,
+      "pct_score": 84.2,
+      "grade": "A",
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -44,5 +44,5 @@
     }
   ],
   "sens": null,
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

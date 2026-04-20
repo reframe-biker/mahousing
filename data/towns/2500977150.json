@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "legislators": "F",
-    "composite": "D"
+    "legislators": null,
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -29,19 +29,7 @@
   "mbta_status": "interim",
   "mbta_deadline": "2025-12-31",
   "mbta_action_date": null,
-  "reps": [
-    {
-      "name": "Adrianne Ramos",
-      "district": "14th Essex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
-      "sessions_scored": [
-        "194"
-      ]
-    }
-  ],
+  "reps": null,
   "sens": [
     {
       "name": "Bruce Tarr",
@@ -56,5 +44,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

@@ -33,9 +33,9 @@
     {
       "name": "Colleen Garry",
       "district": "36th Middlesex",
-      "pct_score": 14.3,
+      "pct_score": 15.8,
       "grade": "F",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -44,5 +44,5 @@
     }
   ],
   "sens": null,
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

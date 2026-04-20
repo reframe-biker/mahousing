@@ -33,9 +33,9 @@
     {
       "name": "Priscila Sousa",
       "district": "6th Middlesex",
-      "pct_score": 90.5,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Jack Lewis",
       "district": "7th Middlesex",
-      "pct_score": 76.2,
-      "grade": "B",
-      "bills_scored": 11,
+      "pct_score": 84.2,
+      "grade": "A",
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -57,9 +57,9 @@
     {
       "name": "Danielle Gregoire",
       "district": "4th Middlesex",
-      "pct_score": 90.5,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

@@ -33,9 +33,9 @@
     {
       "name": "Chris Flanagan",
       "district": "1st Barnstable",
-      "pct_score": 61.9,
+      "pct_score": 68.4,
       "grade": "B",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Kip Diggs",
       "district": "2nd Barnstable",
-      "pct_score": 90.5,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -69,5 +69,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

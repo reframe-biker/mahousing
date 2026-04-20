@@ -33,9 +33,9 @@
     {
       "name": "Jon Zlotnik",
       "district": "2nd Worcester",
-      "pct_score": 81.0,
+      "pct_score": 89.5,
       "grade": "A",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -57,5 +57,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

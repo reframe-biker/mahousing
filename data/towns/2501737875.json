@@ -33,9 +33,9 @@
     {
       "name": "Steve Ultrino",
       "district": "33rd Middlesex",
-      "pct_score": 90.5,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Kate Lipper-Garabedian",
       "district": "32nd Middlesex",
-      "pct_score": 90.5,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -57,9 +57,9 @@
     {
       "name": "Paul Donato",
       "district": "35th Middlesex",
-      "pct_score": 90.5,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 11,
+      "bills_scored": 9,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -81,5 +81,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

@@ -9,8 +9,8 @@
     "production": "C",
     "affordability": "C",
     "votes": null,
-    "legislators": "F",
-    "composite": "C"
+    "legislators": null,
+    "composite": "B"
   },
   "metrics": {
     "pct_land_multifamily_byright": 7.2,
@@ -29,19 +29,7 @@
   "mbta_status": "compliant",
   "mbta_deadline": "2024-12-31",
   "mbta_action_date": null,
-  "reps": [
-    {
-      "name": "Hannah Bowen",
-      "district": "6th Essex",
-      "pct_score": 0.0,
-      "grade": "F",
-      "bills_scored": 1,
-      "bills_available": 4,
-      "sessions_scored": [
-        "194"
-      ]
-    }
-  ],
+  "reps": null,
   "sens": [
     {
       "name": "Joan Lovely",
@@ -56,5 +44,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }

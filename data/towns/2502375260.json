@@ -33,9 +33,9 @@
     {
       "name": "Bridget Plouffe",
       "district": "9th Plymouth",
-      "pct_score": 85.7,
+      "pct_score": 100.0,
       "grade": "A",
-      "bills_scored": 4,
+      "bills_scored": 3,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -43,5 +43,5 @@
     }
   ],
   "sens": null,
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-20"
 }
