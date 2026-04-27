@@ -35,7 +35,7 @@
       "district": "2nd Plymouth",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 3,
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -44,9 +44,9 @@
     {
       "name": "Kathy LaNatra",
       "district": "12th Plymouth",
-      "pct_score": 89.5,
+      "pct_score": 81.0,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -58,7 +58,7 @@
       "district": "12th Bristol",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -79,5 +79,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

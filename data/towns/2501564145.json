@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "A",
     "votes": null,
-    "legislators": null,
+    "legislators": "F",
     "composite": "D"
   },
   "metrics": {
@@ -29,7 +29,19 @@
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
-  "reps": null,
+  "reps": [
+    {
+      "name": "Homar Gomez",
+      "district": "2nd Hampshire",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    }
+  ],
   "sens": null,
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

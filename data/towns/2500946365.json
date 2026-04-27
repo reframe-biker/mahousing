@@ -9,8 +9,8 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "legislators": "A",
-    "composite": "B"
+    "legislators": "F",
+    "composite": "C"
   },
   "metrics": {
     "pct_land_multifamily_byright": 14.1,
@@ -31,11 +31,22 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Adrianne Ramos",
+      "district": "14th Essex",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Tram Nguyen",
       "district": "18th Essex",
-      "pct_score": 84.2,
-      "grade": "A",
-      "bills_scored": 9,
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -69,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

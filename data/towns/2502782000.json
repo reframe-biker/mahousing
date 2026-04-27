@@ -33,9 +33,9 @@
     {
       "name": "Mary Keefe",
       "district": "15th Worcester",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Dan Donahue",
       "district": "16th Worcester",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -57,9 +57,9 @@
     {
       "name": "David LeBoeuf",
       "district": "17th Worcester",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -69,9 +69,9 @@
     {
       "name": "John Mahoney",
       "district": "13th Worcester",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -81,9 +81,9 @@
     {
       "name": "Jim O'Day",
       "district": "14th Worcester",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -129,5 +129,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

@@ -33,9 +33,9 @@
     {
       "name": "Carmine Gentile",
       "district": "13th Middlesex",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -57,5 +57,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

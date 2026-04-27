@@ -35,7 +35,7 @@
       "district": "2nd Plymouth",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 3,
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -55,5 +55,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

@@ -33,9 +33,9 @@
     {
       "name": "Donnie Berthiaume",
       "district": "5th Worcester",
-      "pct_score": 26.3,
+      "pct_score": 23.8,
       "grade": "D",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "David LeBoeuf",
       "district": "17th Worcester",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -59,7 +59,7 @@
       "district": "7th Worcester",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -81,5 +81,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

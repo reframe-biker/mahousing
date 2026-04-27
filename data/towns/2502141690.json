@@ -9,7 +9,7 @@
     "production": "F",
     "affordability": "D",
     "votes": null,
-    "legislators": "B",
+    "legislators": "C",
     "composite": "C"
   },
   "metrics": {
@@ -33,9 +33,9 @@
     {
       "name": "Richard Wells",
       "district": "7th Norfolk",
-      "pct_score": 66.7,
-      "grade": "B",
-      "bills_scored": 3,
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -43,5 +43,5 @@
     }
   ],
   "sens": null,
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

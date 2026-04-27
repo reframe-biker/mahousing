@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "A",
     "votes": null,
-    "legislators": "A",
-    "composite": "C"
+    "legislators": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -31,11 +31,22 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Homar Gomez",
+      "district": "2nd Hampshire",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Mindy Domb",
       "district": "3rd Hampshire",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -44,5 +55,5 @@
     }
   ],
   "sens": null,
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

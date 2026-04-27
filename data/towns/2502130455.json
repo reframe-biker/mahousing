@@ -9,8 +9,8 @@
     "production": "D",
     "affordability": "B",
     "votes": null,
-    "legislators": "A",
-    "composite": "C"
+    "legislators": "F",
+    "composite": "D"
   },
   "metrics": {
     "pct_land_multifamily_byright": 0.0,
@@ -33,12 +33,23 @@
     {
       "name": "Mark Cusack",
       "district": "5th Norfolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
+        "194"
+      ]
+    },
+    {
+      "name": "Ron Mariano",
+      "district": "3rd Norfolk",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
         "194"
       ]
     }
@@ -57,5 +68,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

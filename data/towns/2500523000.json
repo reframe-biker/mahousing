@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "C",
     "votes": null,
-    "legislators": "A",
+    "legislators": "B",
     "composite": "B"
   },
   "metrics": {
@@ -33,9 +33,9 @@
     {
       "name": "Alan Silvia",
       "district": "7th Bristol",
-      "pct_score": 84.2,
-      "grade": "A",
-      "bills_scored": 9,
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Steven Ouellette",
       "district": "8th Bristol",
-      "pct_score": 66.7,
-      "grade": "B",
-      "bills_scored": 3,
+      "pct_score": 57.1,
+      "grade": "C",
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -56,9 +56,9 @@
     {
       "name": "Carole Fiola",
       "district": "6th Bristol",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

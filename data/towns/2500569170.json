@@ -31,11 +31,22 @@
   "mbta_action_date": null,
   "reps": [
     {
+      "name": "Lisa Field",
+      "district": "3rd Bristol",
+      "pct_score": 0.0,
+      "grade": "F",
+      "bills_scored": 1,
+      "bills_available": 4,
+      "sessions_scored": [
+        "194"
+      ]
+    },
+    {
       "name": "Norm Orrall",
       "district": "12th Bristol",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -47,7 +58,7 @@
       "district": "5th Bristol",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 3,
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -67,5 +78,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

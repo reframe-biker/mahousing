@@ -3012,5 +3012,170 @@
     "yeas": 128,
     "nays": 27,
     "nvs": 3
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 142,
+    "bill": "H. 5264",
+    "motion": "On adoption of Consolidated Amendment A",
+    "date": "2026-03-18",
+    "yeas": 151,
+    "nays": 2,
+    "nvs": 4
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 143,
+    "bill": "H. 5264",
+    "motion": "On adoption of amendment #43",
+    "date": "2026-03-18",
+    "yeas": 25,
+    "nays": 128,
+    "nvs": 4
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 144,
+    "bill": "H. 5264",
+    "motion": "On adoption of Consolidated Amendment B",
+    "date": "2026-03-18",
+    "yeas": 149,
+    "nays": 4,
+    "nvs": 4
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 145,
+    "bill": "H. 5264",
+    "motion": "On passing to be engrossed",
+    "date": "2026-03-18",
+    "yeas": 150,
+    "nays": 3,
+    "nvs": 4
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 146,
+    "bill": "H. 5305",
+    "motion": "On adoption of amendment #13, chg",
+    "date": "2026-03-25",
+    "yeas": 151,
+    "nays": 3,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 147,
+    "bill": "H. 5305",
+    "motion": "On adoption of amendment #10, chg",
+    "date": "2026-03-25",
+    "yeas": 130,
+    "nays": 25,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 148,
+    "bill": "H. 5305",
+    "motion": "On adoption of amendment #5, chg",
+    "date": "2026-03-25",
+    "yeas": 155,
+    "nays": 0,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 149,
+    "bill": "H. 5305",
+    "motion": "On adoption of amendment #14, chg",
+    "date": "2026-03-25",
+    "yeas": 136,
+    "nays": 18,
+    "nvs": 3
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 150,
+    "bill": "H. 5305",
+    "motion": "On passing to be engrossed",
+    "date": "2026-03-25",
+    "yeas": 134,
+    "nays": 21,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 151,
+    "bill": "H. 5350",
+    "motion": "On acceptance of the conference report",
+    "date": "2026-04-08",
+    "yeas": 155,
+    "nays": 0,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 152,
+    "bill": "H. 5349",
+    "motion": "On adoption of amendment #15",
+    "date": "2026-04-08",
+    "yeas": 27,
+    "nays": 128,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 153,
+    "bill": "H. 5349",
+    "motion": "On adoption of Consolidated Amendment A",
+    "date": "2026-04-08",
+    "yeas": 155,
+    "nays": 0,
+    "nvs": 2
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 154,
+    "bill": null,
+    "motion": null,
+    "date": "2026-04-08",
+    "yeas": 154,
+    "nays": 0,
+    "nvs": 3
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 155,
+    "bill": "H. 5349",
+    "motion": "On adoption of Consolidated Amendment B",
+    "date": "2026-04-08",
+    "yeas": 144,
+    "nays": 10,
+    "nvs": 3
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 156,
+    "bill": "S. 2581",
+    "motion": null,
+    "date": "2026-04-08",
+    "yeas": 129,
+    "nays": 25,
+    "nvs": 3
   }
 ]

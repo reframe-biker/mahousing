@@ -33,9 +33,9 @@
     {
       "name": "Michelle DuBois",
       "district": "10th Plymouth",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Rita Mendes",
       "district": "11th Plymouth",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -57,9 +57,9 @@
     {
       "name": "Bridget Plouffe",
       "district": "9th Plymouth",
-      "pct_score": 100.0,
+      "pct_score": 85.7,
       "grade": "A",
-      "bills_scored": 3,
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

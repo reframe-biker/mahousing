@@ -33,9 +33,9 @@
     {
       "name": "Adrian Madaro",
       "district": "1st Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Aaron Michlewitz",
       "district": "3rd Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -57,9 +57,9 @@
     {
       "name": "Russell Holmes",
       "district": "6th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -69,9 +69,9 @@
     {
       "name": "Jay Livingstone",
       "district": "8th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -81,9 +81,9 @@
     {
       "name": "Billy MacGregor",
       "district": "10th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -93,9 +93,9 @@
     {
       "name": "Dan Hunt",
       "district": "13th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -105,20 +105,21 @@
     {
       "name": "Sam Monta\u00f1o",
       "district": "15th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 86.7,
       "grade": "A",
-      "bills_scored": 6,
+      "bills_scored": 8,
       "bills_available": 11,
       "sessions_scored": [
-        "193"
+        "193",
+        "194"
       ]
     },
     {
       "name": "Kevin Honan",
       "district": "17th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -128,9 +129,9 @@
     {
       "name": "Mike Moran",
       "district": "18th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -140,9 +141,9 @@
     {
       "name": "David Biele",
       "district": "4th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -152,9 +153,9 @@
     {
       "name": "Chris Worrell",
       "district": "5th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -164,9 +165,9 @@
     {
       "name": "Rob Consalvo",
       "district": "14th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -176,9 +177,9 @@
     {
       "name": "John Moran",
       "district": "9th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -188,9 +189,9 @@
     {
       "name": "Chynah Tyler",
       "district": "7th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -200,9 +201,9 @@
     {
       "name": "Brandy Fluker-Reid",
       "district": "12th Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 85.7,
       "grade": "A",
-      "bills_scored": 3,
+      "bills_scored": 4,
       "bills_available": 4,
       "sessions_scored": [
         "194"
@@ -211,9 +212,9 @@
     {
       "name": "Danny Ryan",
       "district": "2nd Suffolk",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -295,5 +296,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

@@ -9,7 +9,7 @@
     "production": "D",
     "affordability": "A",
     "votes": null,
-    "legislators": "A",
+    "legislators": "B",
     "composite": "C"
   },
   "metrics": {
@@ -33,9 +33,9 @@
     {
       "name": "Angelo Puppolo",
       "district": "12th Hampden",
-      "pct_score": 100.0,
+      "pct_score": 90.5,
       "grade": "A",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -45,9 +45,9 @@
     {
       "name": "Brian Ashe",
       "district": "2nd Hampden",
-      "pct_score": 84.2,
-      "grade": "A",
-      "bills_scored": 9,
+      "pct_score": 76.2,
+      "grade": "B",
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -69,5 +69,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }

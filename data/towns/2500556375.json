@@ -35,7 +35,7 @@
       "district": "4th Bristol",
       "pct_score": 0.0,
       "grade": "F",
-      "bills_scored": 9,
+      "bills_scored": 11,
       "bills_available": 11,
       "sessions_scored": [
         "193",
@@ -56,5 +56,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-20"
+  "updated_at": "2026-04-27"
 }
