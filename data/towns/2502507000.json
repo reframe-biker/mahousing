@@ -4,19 +4,19 @@
   "county": "Suffolk County",
   "population": 665945,
   "grades": {
-    "zoning": "A",
+    "zoning": null,
     "mbta": null,
-    "production": "B",
+    "production": null,
     "affordability": "D",
     "votes": null,
     "legislators": "A",
     "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 92.1,
+    "pct_land_multifamily_byright": null,
     "median_home_value": 684900.0,
     "rent_burden_pct": 47.5,
-    "permits_per_1000_residents": 3.08,
+    "permits_per_1000_residents": null,
     "renter_share_pct": 65.2
   },
   "data_notes": {
@@ -24,7 +24,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": null,
   "has_f4_allowed": null,
   "mbta_status": null,
   "mbta_deadline": null,
@@ -296,5 +296,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-27"
+  "updated_at": "2026-05-04"
 }

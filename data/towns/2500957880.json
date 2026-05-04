@@ -21,7 +21,7 @@
   },
   "data_notes": {
     "zoning": null,
-    "production": "Single-year spike: 2022 had 31 of 44 total permits (70%) \u2014 production grade withheld",
+    "production": null,
     "affordability": null
   },
   "zoning_source": "nza",
@@ -44,5 +44,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-27"
+  "updated_at": "2026-05-04"
 }

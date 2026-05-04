@@ -21,7 +21,7 @@
   },
   "data_notes": {
     "zoning": null,
-    "production": "Single-year spike: 2023 had 1 of 1 total permits (100%) \u2014 production grade withheld",
+    "production": null,
     "affordability": null
   },
   "zoning_source": "nza",
@@ -31,5 +31,5 @@
   "mbta_action_date": null,
   "reps": null,
   "sens": null,
-  "updated_at": "2026-04-27"
+  "updated_at": "2026-05-04"
 }

@@ -4,19 +4,19 @@
   "county": "Barnstable County",
   "population": 14742,
   "grades": {
-    "zoning": "F",
+    "zoning": null,
     "mbta": null,
-    "production": "C",
+    "production": null,
     "affordability": "C",
     "votes": null,
     "legislators": "B",
-    "composite": "C"
+    "composite": "B"
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
+    "pct_land_multifamily_byright": null,
     "median_home_value": 494400.0,
     "rent_burden_pct": 52.2,
-    "permits_per_1000_residents": 1.7,
+    "permits_per_1000_residents": null,
     "renter_share_pct": 21.8
   },
   "data_notes": {
@@ -24,7 +24,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": null,
   "has_f4_allowed": null,
   "mbta_status": null,
   "mbta_deadline": null,
@@ -57,5 +57,5 @@
       ]
     }
   ],
-  "updated_at": "2026-04-27"
+  "updated_at": "2026-05-04"
 }

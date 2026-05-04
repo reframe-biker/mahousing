@@ -4,19 +4,19 @@
   "county": "Franklin County",
   "population": 1740,
   "grades": {
-    "zoning": "F",
+    "zoning": null,
     "mbta": null,
-    "production": "A",
+    "production": null,
     "affordability": "A",
     "votes": null,
     "legislators": null,
-    "composite": "C"
+    "composite": null
   },
   "metrics": {
-    "pct_land_multifamily_byright": 0.0,
+    "pct_land_multifamily_byright": null,
     "median_home_value": 261000.0,
     "rent_burden_pct": 33.6,
-    "permits_per_1000_residents": 5.17,
+    "permits_per_1000_residents": null,
     "renter_share_pct": 18.3
   },
   "data_notes": {
@@ -24,12 +24,12 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": "proxy",
+  "zoning_source": null,
   "has_f4_allowed": null,
   "mbta_status": null,
   "mbta_deadline": null,
   "mbta_action_date": null,
   "reps": null,
   "sens": null,
-  "updated_at": "2026-04-27"
+  "updated_at": "2026-05-04"
 }
