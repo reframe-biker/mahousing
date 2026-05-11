@@ -21,10 +21,10 @@
   },
   "data_notes": {
     "zoning": null,
-    "production": null,
+    "production": "Single-year spike: 2022 had 2 of 2 total permits (100%) \u2014 production grade withheld",
     "affordability": null
   },
-  "zoning_source": null,
+  "zoning_source": "proxy",
   "has_f4_allowed": null,
   "mbta_status": null,
   "mbta_deadline": null,
@@ -44,5 +44,5 @@
     }
   ],
   "sens": null,
-  "updated_at": "2026-05-04"
+  "updated_at": "2026-05-11"
 }

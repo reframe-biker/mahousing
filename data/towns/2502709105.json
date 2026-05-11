@@ -4,19 +4,19 @@
   "county": "Worcester County",
   "population": 3443,
   "grades": {
-    "zoning": null,
+    "zoning": "F",
     "mbta": null,
-    "production": null,
+    "production": "D",
     "affordability": "A",
     "votes": null,
     "legislators": "D",
-    "composite": "C"
+    "composite": "D"
   },
   "metrics": {
-    "pct_land_multifamily_byright": null,
+    "pct_land_multifamily_byright": 0.0,
     "median_home_value": 274000.0,
     "rent_burden_pct": 20.6,
-    "permits_per_1000_residents": null,
+    "permits_per_1000_residents": 1.16,
     "renter_share_pct": 12.5
   },
   "data_notes": {
@@ -24,7 +24,7 @@
     "production": null,
     "affordability": null
   },
-  "zoning_source": null,
+  "zoning_source": "proxy",
   "has_f4_allowed": null,
   "mbta_status": null,
   "mbta_deadline": null,
@@ -57,5 +57,5 @@
       ]
     }
   ],
-  "updated_at": "2026-05-04"
+  "updated_at": "2026-05-11"
 }

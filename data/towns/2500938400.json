@@ -6,7 +6,7 @@
   "grades": {
     "zoning": "F",
     "mbta": "F",
-    "production": null,
+    "production": "D",
     "affordability": "D",
     "votes": null,
     "legislators": "A",
@@ -16,7 +16,7 @@
     "pct_land_multifamily_byright": 0.0,
     "median_home_value": 858900.0,
     "rent_burden_pct": 44.8,
-    "permits_per_1000_residents": null,
+    "permits_per_1000_residents": 0.74,
     "renter_share_pct": 18.5
   },
   "data_notes": {
@@ -57,5 +57,5 @@
       ]
     }
   ],
-  "updated_at": "2026-05-04"
+  "updated_at": "2026-05-11"
 }
