@@ -3881,5 +3881,170 @@
     "yeas": 151,
     "nays": 0,
     "nvs": 7
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 221,
+    "bill": "S. 3106",
+    "motion": "On Engrossment",
+    "date": "2026-07-01",
+    "yeas": 149,
+    "nays": 0,
+    "nvs": 9
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 222,
+    "bill": "S. 2916",
+    "motion": "On passing to be engrossed",
+    "date": "2026-07-01",
+    "yeas": 149,
+    "nays": 0,
+    "nvs": 9
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 223,
+    "bill": "H. 5555",
+    "motion": "On acceptance of conference report",
+    "date": "2026-07-01",
+    "yeas": 142,
+    "nays": 6,
+    "nvs": 10
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 224,
+    "bill": "H. 5555",
+    "motion": "On Enactment Land Taking",
+    "date": "2026-07-01",
+    "yeas": 142,
+    "nays": 6,
+    "nvs": 10
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 225,
+    "bill": "H. 5569",
+    "motion": "On passing to be engrossed",
+    "date": "2026-07-08",
+    "yeas": 150,
+    "nays": 0,
+    "nvs": 8
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 226,
+    "bill": "H. 5562",
+    "motion": "On adoption of consolidated amendment A",
+    "date": "2026-07-08",
+    "yeas": 145,
+    "nays": 6,
+    "nvs": 7
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 227,
+    "bill": "H. 5562",
+    "motion": "On adoption of consolidated amendment B",
+    "date": "2026-07-08",
+    "yeas": 151,
+    "nays": 0,
+    "nvs": 7
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 228,
+    "bill": "H. 5562",
+    "motion": "On adoption of consolidated amendment C",
+    "date": "2026-07-08",
+    "yeas": 151,
+    "nays": 0,
+    "nvs": 7
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 229,
+    "bill": "H. 5562",
+    "motion": "On adoption of consolidated amendment D",
+    "date": "2026-07-08",
+    "yeas": 150,
+    "nays": 0,
+    "nvs": 8
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 230,
+    "bill": "H. 5562",
+    "motion": "On adoption of consolidated amendment E",
+    "date": "2026-07-08",
+    "yeas": 149,
+    "nays": 0,
+    "nvs": 9
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 231,
+    "bill": "H. 5562",
+    "motion": "On passing to be engrossed as amended",
+    "date": "2026-07-08",
+    "yeas": 148,
+    "nays": 2,
+    "nvs": 8
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 232,
+    "bill": "H. 2250",
+    "motion": null,
+    "date": "2026-07-15",
+    "yeas": 153,
+    "nays": 0,
+    "nvs": 5
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 234,
+    "bill": "S. 2735",
+    "motion": "On Enactment Land Taking",
+    "date": "2026-07-22",
+    "yeas": 153,
+    "nays": 0,
+    "nvs": 5
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 235,
+    "bill": "H. 5388",
+    "motion": "On Enactment Land Taking",
+    "date": "2026-07-22",
+    "yeas": 154,
+    "nays": 0,
+    "nvs": 4
+  },
+  {
+    "session": "194",
+    "year": 2026,
+    "rc_number": 236,
+    "bill": "H. 5595",
+    "motion": "On Engrossment",
+    "date": "2026-07-22",
+    "yeas": 119,
+    "nays": 33,
+    "nvs": 6
   }
 ]
