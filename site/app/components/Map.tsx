@@ -4,6 +4,7 @@ import "leaflet/dist/leaflet.css";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { TownRecord, Grade } from "@/src/types/town";
+import { cartoTileUrl, CARTO_ATTRIBUTION } from "@/src/lib/carto";
 
 function isDarkMode(): boolean {
   return typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -119,12 +120,12 @@ export default function Map({ towns, dimension, search }: Props) {
 
       // Dual tile layers — switch on prefers-color-scheme (listener in separate useEffect)
       const tileLight = L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-        { attribution: "&copy; OpenStreetMap contributors &copy; CARTO", subdomains: "abcd", maxZoom: 19 }
+        cartoTileUrl("light_nolabels"),
+        { attribution: CARTO_ATTRIBUTION, subdomains: "abcd", maxZoom: 19 }
       );
       const tileDark = L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png",
-        { attribution: "&copy; OpenStreetMap contributors &copy; CARTO", subdomains: "abcd", maxZoom: 19, opacity: 0.55 }
+        cartoTileUrl("dark_nolabels"),
+        { attribution: CARTO_ATTRIBUTION, subdomains: "abcd", maxZoom: 19, opacity: 0.55 }
       );
       tileLightRef.current = tileLight;
       tileDarkRef.current = tileDark;
